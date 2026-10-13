@@ -1,5 +1,6 @@
 import hashlib
 import json
+import os
 from pathlib import Path
 
 import pytest
@@ -43,7 +44,7 @@ def driver():
 
     from depscope.runtime.config import load_settings
     settings = load_settings()
-    with GraphDatabase.driver(settings.neo4j_uri,
+    with GraphDatabase.driver(os.environ.get("DEPSCOPE_TEST_NEO4J_URI","bolt://127.0.0.1:17688"),
                               auth=(settings.neo4j_user, settings.neo4j_password.get_secret_value())) as db:
         db.verify_connectivity()
         yield db

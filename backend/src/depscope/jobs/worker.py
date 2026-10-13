@@ -47,23 +47,14 @@ class Worker:
 
 
 async def serve(settings):
-    from depscope.graph.driver import connect
-    from depscope.graph.migrations import migrate
-    from depscope.graph.snapshots import SnapshotRepository
-    from depscope.jobs.handlers import import_handler
-    from depscope.jobs.store import JobStore
-    from depscope.sources.records import RecordStore
-    driver=connect(settings)
+    from depscope.api.services import build_services
+    services=await asyncio.to_thread(build_services,settings)
     try:
-        await asyncio.to_thread(migrate,driver)
-        store=JobStore(driver)
-        repo=SnapshotRepository(driver)
-        worker=Worker(store,repo,{"import":import_handler(store,repo,RecordStore(settings.data_root))})
         while True:
-            if not await worker.run_once():
+            if not await services.worker.run_once():
                 await asyncio.sleep(.5)
     finally:
-        driver.close()
+        services.close()
 
 
 if __name__ == "__main__":

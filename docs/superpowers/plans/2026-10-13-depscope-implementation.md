@@ -120,14 +120,14 @@ def source_for():
 
 **Interfaces:** Produces Settings.from_env(env: Mapping[str,str]) -> Settings、Settings.public_summary() -> dict、DomainError(code: str, message: str, pointers: tuple[str,...]=(), retryable: bool=False)、create_app(settings: Settings) -> FastAPI。后续路由通过应用组合增加，不在模块导入时连接数据库或调用模型。
 
-- [ ] Step 1：创建测试运行所需的最小 Python 包配置，安装项目内开发环境；依赖包含 fastapi、uvicorn、pydantic、httpx、neo4j、jsonschema、referencing、packaging、packageurl-python，开发依赖为 pytest、pytest-asyncio、respx、ruff、networkx。pyproject 指定 asyncio_mode=auto；.gitignore 排除 .env、虚拟环境、运行时资料、私有上传和模型文件，保留 .env.example。运行配置实际安装成功后记录版本，最终冻结在任务 18。
+- [x] Step 1：创建测试运行所需的最小 Python 包配置，安装项目内开发环境；依赖包含 fastapi、uvicorn、pydantic、httpx、neo4j、jsonschema、referencing、packaging、packageurl-python，开发依赖为 pytest、pytest-asyncio、respx、ruff、networkx。pyproject 指定 asyncio_mode=auto；.gitignore 排除 .env、虚拟环境、运行时资料、私有上传和模型文件，保留 .env.example。运行配置实际安装成功后记录版本，最终冻结在任务 18。
 
 ~~~bash
 python3 -m venv .venv
 .venv/bin/python -m pip install -e '.[dev]'
 ~~~
 
-- [ ] Step 2：写出不依赖数据库的失败测试。
+- [x] Step 2：写出不依赖数据库的失败测试。
 
 ~~~python
 def test_live_service_never_exposes_api_key():
@@ -138,8 +138,8 @@ def test_live_service_never_exposes_api_key():
     assert "sentinel-secret" not in str(settings.public_summary())
 ~~~
 
-- [ ] Step 3：运行 pytest tests/unit/test_runtime.py -q，确认缺少运行契约导致失败。
-- [ ] Step 4：实现配置和存活端点；密钥字段 repr=False，public_summary 只返回配置状态，不返回值；doctor 只探测明确配置的服务，不发付费生成请求。
+- [x] Step 3：运行 pytest tests/unit/test_runtime.py -q，确认缺少运行契约导致失败。
+- [x] Step 4：实现配置和存活端点；密钥字段 repr=False，public_summary 只返回配置状态，不返回值；doctor 只探测明确配置的服务，不发付费生成请求。
 
 ~~~python
 def create_app(settings: Settings) -> FastAPI:
@@ -151,8 +151,8 @@ def create_app(settings: Settings) -> FastAPI:
     return app
 ~~~
 
-- [ ] Step 5：复测配置缺失、非法端点、负限额和错误字段位置；启动服务访问 /health/live，结果保存到 artifacts/verification/runtime.json。
-- [ ] Step 6：提交 feat: add runtime configuration and service contract。
+- [x] Step 5：复测配置缺失、非法端点、负限额和错误字段位置；启动服务访问 /health/live，结果保存到 artifacts/verification/runtime.json。
+- [x] Step 6：提交 feat: add runtime configuration and service contract。
 
 ~~~bash
 git add backend/pyproject.toml backend/src/depscope/runtime backend/src/depscope/__init__.py backend/tests/unit/test_runtime.py .env.example .gitignore
@@ -165,7 +165,7 @@ git commit -m "feat: add runtime configuration and service contract"
 
 **Interfaces:** Produces Coordinate(ecosystem, name, version, raw_version)、Component(local_id, name, coordinate: Coordinate|None, dependencies_known: bool, pointer: str)、Edge(from_id,to_id,requirement: str|None,pointer: str)、SourceRef(uri,digest,observed_at,parser_version)、Snapshot(snapshot_id,project_id,source_kind,source,components,edges,root_id: str|None,environment: dict,issues: tuple)。Produces identify(name: str, version: str|None, purl: str|None) -> Coordinate|None、snapshot_key(project_id,source_kind,digest) -> str、instance_key(snapshot_id: str,local_id: str) -> str。模型采用 Pydantic strict／extra=forbid 契约，序列化保留 tuple 内容，发布后的不可变性由仓库控制。
 
-- [ ] Step 1：写失败测试，证明归一不掩盖冲突。
+- [x] Step 1：写失败测试，证明归一不掩盖冲突。
 
 ~~~python
 def test_conflicting_purl_is_not_silently_preferred():
@@ -175,8 +175,8 @@ def test_conflicting_purl_is_not_silently_preferred():
     assert identify("opaque-library", None, None) is None
 ~~~
 
-- [ ] Step 2：运行 pytest tests/unit/test_identity.py tests/unit/test_snapshot_models.py -q，检查失败。
-- [ ] Step 3：实现规范名、PEP 440 可解析版本和 PURL 交叉校验。版本身份使用来源给出的规范版本字符串并保留原值；无法比较的版本为 opaque，不以猜测补齐。所有边的来源标识都必须存在。
+- [x] Step 2：运行 pytest tests/unit/test_identity.py tests/unit/test_snapshot_models.py -q，检查失败。
+- [x] Step 3：实现规范名、PEP 440 可解析版本和 PURL 交叉校验。版本身份使用来源给出的规范版本字符串并保留原值；无法比较的版本为 opaque，不以猜测补齐。所有边的来源标识都必须存在。
 
 ~~~python
 def normalized_name(name: str) -> str:
@@ -191,8 +191,8 @@ def instance_key(snapshot_id: str, local_id: str) -> str:
     return hashlib.sha256(payload.encode()).hexdigest()
 ~~~
 
-- [ ] Step 4：增加预发布／本地版本、不同来源相同版本实例、缺少根、重名 local_id 与悬空边断言，复测通过。
-- [ ] Step 5：提交 feat: define package identity and immutable snapshot contracts。
+- [x] Step 4：增加预发布／本地版本、不同来源相同版本实例、缺少根、重名 local_id 与悬空边断言，复测通过。
+- [x] Step 5：提交 feat: define package identity and immutable snapshot contracts。
 
 ~~~bash
 git add backend/src/depscope/identity backend/src/depscope/ingest/models.py backend/tests
@@ -205,7 +205,7 @@ git commit -m "feat: define package identity and immutable snapshot contracts"
 
 **Interfaces:** Consumes Task 2 models。Produces read_limited(chunks: Iterable[bytes], limit: int=10*1024*1024) -> bytes、async_read_limited(chunks: AsyncIterable[bytes],limit: int=10*1024*1024) -> bytes、parse_cyclonedx(raw: bytes, project_id: str, source: SourceRef, environment: dict) -> Snapshot、load_schema_registry(directory: Path) -> Registry。根包含 metadata.component；数量上限包含根和嵌套组件。
 
-- [ ] Step 1：写测试夹具及失败测试。bom 是下面字典的独立深拷贝。
+- [x] Step 1：写测试夹具及失败测试。bom 是下面字典的独立深拷贝。
 
 ~~~python
 BOM = {
@@ -229,8 +229,8 @@ def test_stream_limit_uses_observed_bytes():
         read_limited(iter([b"a" * 6_000_000, b"b" * 6_000_000]))
 ~~~
 
-- [ ] Step 2：运行 pytest tests/unit/test_cyclonedx.py -q，确认失败。
-- [ ] Step 3：保存官方 bom-1.6.schema.json 和实际引用的官方相邻 schema，记录校验值，Registry 仅从本地映射解析引用。解析前限制字节；schema 校验后递归展开组件，检查重复 bom-ref、坐标冲突和悬空 ref；位置用 JSON Pointer 返回。
+- [x] Step 2：运行 pytest tests/unit/test_cyclonedx.py -q，确认失败。
+- [x] Step 3：保存官方 bom-1.6.schema.json 和实际引用的官方相邻 schema，记录校验值，Registry 仅从本地映射解析引用。解析前限制字节；schema 校验后递归展开组件，检查重复 bom-ref、坐标冲突和悬空 ref；位置用 JSON Pointer 返回。
 
 ~~~python
 def read_limited(chunks: Iterable[bytes], limit: int = 10 * 1024 * 1024) -> bytes:
@@ -251,8 +251,8 @@ async def async_read_limited(chunks: AsyncIterable[bytes],
     return bytes(output)
 ~~~
 
-- [ ] Step 4：验证 1.7 格式拒绝、根与嵌套重名、未知生态、明确空依赖、循环、组件／边上限以及 malicious externalReferences 不引发网络请求；复测通过。
-- [ ] Step 5：提交 feat: import CycloneDX with explicit completeness states。
+- [x] Step 4：验证 1.7 格式拒绝、根与嵌套重名、未知生态、明确空依赖、循环、组件／边上限以及 malicious externalReferences 不引发网络请求；复测通过。
+- [x] Step 5：提交 feat: import CycloneDX with explicit completeness states。
 
 ~~~bash
 git add backend/src/depscope/ingest schemas backend/tests
@@ -265,7 +265,7 @@ git commit -m "feat: import CycloneDX with explicit completeness states"
 
 **Interfaces:** Produces RecordStore.put(raw: bytes, uri: str, observed_at: str) -> SourceRef、RecordStore.get(digest: str) -> bytes、PublicClient.get_json(uri: str) -> dict、select_versions(metadata: dict, cutoff: datetime) -> tuple[str,...]、parse_depsdev(raw: bytes,project_id: str,source: SourceRef) -> Snapshot。公共重试接口 async request_with_retry(client: httpx.AsyncClient,method: str,uri: str,payload: dict|None,cancelled: Callable[[],bool]) -> httpx.Response。URI 只由固定 deps.dev／PyPI 坐标构造。
 
-- [ ] Step 1：用已保存真实样本写失败测试。
+- [x] Step 1：用已保存真实样本写失败测试。
 
 ~~~python
 def test_public_graph_preserves_instance_indices(research_dir, source_for):
@@ -276,8 +276,8 @@ def test_public_graph_preserves_instance_indices(research_dir, source_for):
     assert len({c.local_id for c in snap.components}) == 41
 ~~~
 
-- [ ] Step 2：运行 pytest tests/unit/test_public_sources.py tests/unit/test_records.py -q。
-- [ ] Step 3：RecordStore 以 sha256 的前两位分目录，临时文件写完校验后原子替换；每次观察追加来源记录，不能覆盖历史。deps.dev 使用数组索引，不按版本合并实例；错误字段进入 issues。版本选择先过滤 prerelease、dev release、全部文件已撤回或晚于 cutoff 的版本，再选择最新稳定版本及 2024、2025 每年的最早稳定版本，去重。
+- [x] Step 2：运行 pytest tests/unit/test_public_sources.py tests/unit/test_records.py -q。
+- [x] Step 3：RecordStore 以 sha256 的前两位分目录，临时文件写完校验后原子替换；每次观察追加来源记录，不能覆盖历史。deps.dev 使用数组索引，不按版本合并实例；错误字段进入 issues。版本选择先过滤 prerelease、dev release、全部文件已撤回或晚于 cutoff 的版本，再选择最新稳定版本及 2024、2025 每年的最早稳定版本，去重。
 
 ~~~python
 def selected_release_names(releases: list[tuple[str, datetime]]) -> tuple[str, ...]:
@@ -291,8 +291,8 @@ def selected_release_names(releases: list[tuple[str, datetime]]) -> tuple[str, .
     return tuple(dict.fromkeys(picks))
 ~~~
 
-- [ ] Step 4：验证多个相同 PackageVersion 实例、错误图、空版本年、future uploads、所有文件撤回、文件校验失败；HTTP 重试使用注入时钟，取消可中断等待；不下载或执行分发文件。
-- [ ] Step 5：提交 feat: preserve public dependency and source evidence。
+- [x] Step 4：验证多个相同 PackageVersion 实例、错误图、空版本年、future uploads、所有文件撤回、文件校验失败；HTTP 重试使用注入时钟，取消可中断等待；不下载或执行分发文件。
+- [x] Step 5：提交 feat: preserve public dependency and source evidence。
 
 ~~~bash
 git add backend/src/depscope/sources backend/src/depscope/ingest/depsdev.py backend/tests
@@ -305,7 +305,7 @@ git commit -m "feat: preserve public dependency and source evidence"
 
 **Interfaces:** Produces SnapshotRepository(driver)；create_project(name,kind="user_project") -> str；publish(snapshot: Snapshot,job_id: str) -> str；load(snapshot_id: str) -> Snapshot；delete_unpublished(job_id: str) -> int；list_snapshots(project_id,cursor=None,limit=50) -> Page。Page(items,next_cursor,observed_at) 定义在 runtime/pagination.py。
 
-- [ ] Step 1：创建仅绑定本机的 Neo4j 5.26 Compose 服务和持久卷，记录实际可拉取镜像摘要。使用测试项目 ID 命名空间清理集成测试，不能清空用户数据库。写失败测试。
+- [x] Step 1：创建仅绑定本机的 Neo4j 5.26 Compose 服务和持久卷，记录实际可拉取镜像摘要。使用测试项目 ID 命名空间清理集成测试，不能清空用户数据库。写失败测试。
 
 ~~~python
 def test_duplicate_import_and_context_boundary(repo, public_snapshot_factory):
@@ -318,8 +318,8 @@ def test_duplicate_import_and_context_boundary(repo, public_snapshot_factory):
     assert all(e.from_id in {c.local_id for c in loaded.components} for e in loaded.edges)
 ~~~
 
-- [ ] Step 2：启动隔离测试数据库，运行 pytest tests/integration/test_snapshot_repository.py -q。数据库不可用属于未验证，不能以 skip 代替集成验收。
-- [ ] Step 3：建立唯一约束，分批写入 owner_job_id 标记的未发布快照，校验全部端点和数量后发布。已存在 ready 快照返回原 ID；失败只清理任务拥有的未发布实例与关系，保留共享 PackageVersion。
+- [x] Step 2：启动隔离测试数据库，运行 pytest tests/integration/test_snapshot_repository.py -q。数据库不可用属于未验证，不能以 skip 代替集成验收。
+- [x] Step 3：建立唯一约束，分批写入 owner_job_id 标记的未发布快照，校验全部端点和数量后发布。已存在 ready 快照返回原 ID；失败只清理任务拥有的未发布实例与关系，保留共享 PackageVersion。
 
 ~~~cypher
 CREATE CONSTRAINT snapshot_id IF NOT EXISTS
@@ -332,8 +332,8 @@ MERGE (a)-[e:DEPENDS_ON]->(b)
 SET e.requirement = $requirement, e.pointer = $pointer;
 ~~~
 
-- [ ] Step 4：验证同版本不同实例、两个快照的相同 local_id、写入中途异常、ready 不可变、幂等重试、删除范围和分页；迁移运行两次不改变结果。
-- [ ] Step 5：提交 feat: persist isolated snapshots in Neo4j。
+- [x] Step 4：验证同版本不同实例、两个快照的相同 local_id、写入中途异常、ready 不可变、幂等重试、删除范围和分页；迁移运行两次不改变结果。
+- [x] Step 5：提交 feat: persist isolated snapshots in Neo4j。
 
 ~~~bash
 git add backend/src/depscope/graph backend/src/depscope/runtime/pagination.py migrations compose.yaml backend/tests
@@ -346,7 +346,7 @@ git commit -m "feat: persist isolated snapshots in Neo4j"
 
 **Interfaces:** Produces Job(id,kind,payload,status,phase,owner_token,progress,error,next_attempt_at)、JobStore.enqueue(kind,payload) -> Job、get(id) -> Job、claim(job_id,owner_token) -> bool、transition(id,expected,target) -> bool、request_cancel(id) -> None、mark_interrupted() -> int；Worker.run_once() -> bool。导入 handler 签名为 async handle_import(job: Job, cancelled: Callable[[],bool]) -> str；调用 Tasks 3—5。
 
-- [ ] Step 1：写失败测试。
+- [x] Step 1：写失败测试。
 
 ~~~python
 def test_restart_never_discards_published_snapshot(job_store, repo, ready_snapshot):
@@ -357,8 +357,8 @@ def test_restart_never_discards_published_snapshot(job_store, repo, ready_snapsh
     assert job_store.get(job.id).status == "interrupted"
 ~~~
 
-- [ ] Step 2：运行 pytest tests/unit/test_job_transitions.py tests/integration/test_worker_recovery.py -q。
-- [ ] Step 3：实现数据库原子 claim，锁定任务状态后判断条件；修改队列一次只持有一个全局 worker lease。取消检查位于网络等待、批次写入和发布前。允许的状态转换写为显式映射，重启将旧 lease 的非终态任务标为 interrupted，重试使用原导入身份。
+- [x] Step 2：运行 pytest tests/unit/test_job_transitions.py tests/integration/test_worker_recovery.py -q。
+- [x] Step 3：实现数据库原子 claim，锁定任务状态后判断条件；修改队列一次只持有一个全局 worker lease。取消检查位于网络等待、批次写入和发布前。允许的状态转换写为显式映射，重启将旧 lease 的非终态任务标为 interrupted，重试使用原导入身份。
 
 ~~~python
 IMPORT_TRANSITIONS = {
@@ -370,8 +370,8 @@ IMPORT_TRANSITIONS = {
 }
 ~~~
 
-- [ ] Step 4：验证两个 worker 的竞争 claim、取消不删除 ready 数据、重试进度、不可重试错误及 429 等待中的取消；添加独立 worker 入口。
-- [ ] Step 5：提交 feat: add recoverable background jobs。
+- [x] Step 4：验证两个 worker 的竞争 claim、取消不删除 ready 数据、重试进度、不可重试错误及 429 等待中的取消；添加独立 worker 入口。
+- [x] Step 5：提交 feat: add recoverable background jobs。
 
 ~~~bash
 git add backend/src/depscope/jobs backend/src/depscope/graph/jobs.py backend/tests
@@ -384,7 +384,7 @@ git commit -m "feat: add recoverable background jobs"
 
 **Interfaces:** Produces PackageQuery(coordinate,status,record_ids,source_refs,issues)、OsvClient.query(coordinates: tuple[Coordinate,...]) -> tuple[PackageQuery,...]、OsvClient.advisory(id: str) -> AdvisoryRevision；AdvisoryRevision(id,modified,digest,aliases,related,withdrawn,affected,summary,details,source) 定义在 sources/advisories.py。
 
-- [ ] Step 1：以 respx 建立只有第二个查询分页的响应，写失败测试。
+- [x] Step 1：以 respx 建立只有第二个查询分页的响应，写失败测试。
 
 ~~~python
 async def test_pagination_tracks_each_coordinate(mock_osv, coordinates):
@@ -399,8 +399,8 @@ async def test_pagination_tracks_each_coordinate(mock_osv, coordinates):
     assert result[1].status == "matched"
 ~~~
 
-- [ ] Step 2：运行 pytest tests/unit/test_osv.py tests/unit/test_retry.py -q。
-- [ ] Step 3：按输入顺序关联 batch 结果，每批 100，并发 4；分页只继续相关条目。查询键包括生态、规范名、原始版本和采集批次；保存 POST 请求、响应及公告全文。测试夹具 mock_osv 在 tests/helpers/osv.py 定义 batch、single_page、client，通过 respx 截获真实 HTTP 请求。
+- [x] Step 2：运行 pytest tests/unit/test_osv.py tests/unit/test_retry.py -q。
+- [x] Step 3：按输入顺序关联 batch 结果，每批 100，并发 4；分页只继续相关条目。查询键包括生态、规范名、原始版本和采集批次；保存 POST 请求、响应及公告全文。测试夹具 mock_osv 在 tests/helpers/osv.py 定义 batch、single_page、client，通过 respx 截获真实 HTTP 请求。
 
 ~~~python
 def merge_page(current: PackageQuery, page: dict) -> PackageQuery:
@@ -409,8 +409,8 @@ def merge_page(current: PackageQuery, page: dict) -> PackageQuery:
     return current.model_copy(update={"record_ids": ids, "status": status})
 ~~~
 
-- [ ] Step 4：验证分页中途失败保留 partial、批次数量不符返回 error、公告缺失不等于 no_match、撤回字段保留、HTTP 日期／秒数 Retry-After、认证失败不无限重试、日志认证值脱敏。
-- [ ] Step 5：提交 feat: query OSV with complete evidence and failure states。
+- [x] Step 4：验证分页中途失败保留 partial、批次数量不符返回 error、公告缺失不等于 no_match、撤回字段保留、HTTP 日期／秒数 Retry-After、认证失败不无限重试、日志认证值脱敏。
+- [x] Step 5：提交 feat: query OSV with complete evidence and failure states。
 
 ~~~bash
 git add backend/src/depscope/sources backend/tests
@@ -423,7 +423,7 @@ git commit -m "feat: query OSV with complete evidence and failure states"
 
 **Interfaces:** Consumes PackageQuery、AdvisoryRevision、SnapshotRepository。Produces alias_groups(records: tuple[AdvisoryRevision,...]) -> dict[str,tuple[str,...]]；MatchService.collect(snapshot_ids: tuple[str,...],collection_id: str) -> dict[str,MatchRun]；MatchRun(id,snapshot_id,collection_id,observed_at,queries,findings,revision_ids,coverage)；Finding(id,instance_id,group_id,revision_ids,status)。所有实例匹配使用 snapshot_id。
 
-- [ ] Step 1：写失败测试。
+- [x] Step 1：写失败测试。
 
 ~~~python
 def test_related_is_not_alias_and_withdrawn_is_not_active(advisory_factory):
@@ -435,8 +435,8 @@ def test_related_is_not_alias_and_withdrawn_is_not_active(advisory_factory):
     assert "GHSA-old" not in groups
 ~~~
 
-- [ ] Step 2：运行 pytest tests/unit/test_aliases.py tests/integration/test_match_runs.py -q。
-- [ ] Step 3：对有效来源 ID 与 aliases 的连通集合分组，组键为排序标识列表的 SHA-256；related 不参与。affected 中包名／生态与查询坐标不相符的来源记 conflict。一个实例对应同组来源只产生一个 Finding，保留所有来源版本。
+- [x] Step 2：运行 pytest tests/unit/test_aliases.py tests/integration/test_match_runs.py -q。
+- [x] Step 3：对有效来源 ID 与 aliases 的连通集合分组，组键为排序标识列表的 SHA-256；related 不参与。affected 中包名／生态与查询坐标不相符的来源记 conflict。一个实例对应同组来源只产生一个 Finding，保留所有来源版本。
 
 ~~~python
 def alias_group_key(identifiers: set[str]) -> str:
@@ -447,8 +447,8 @@ def confirmed_coverage(queries: tuple[PackageQuery, ...]) -> dict[str, int]:
     return {"total": len(queries), "confirmed": checked, "unknown": len(queries) - checked}
 ~~~
 
-- [ ] Step 4：保存撤回记录但不产生有效 Finding；保留 raw matched 与有效匹配数的差别。验证旧运行不随新别名更改、共享 collection_id、坐标复用、只查询可靠坐标、所有 unknown／error 分母、历史运行选择。
-- [ ] Step 5：提交 feat: persist deduplicated findings and immutable match runs。
+- [x] Step 4：保存撤回记录但不产生有效 Finding；保留 raw matched 与有效匹配数的差别。验证旧运行不随新别名更改、共享 collection_id、坐标复用、只查询可靠坐标、所有 unknown／error 分母、历史运行选择。
+- [x] Step 5：提交 feat: persist deduplicated findings and immutable match runs。
 
 ~~~bash
 git add backend/src/depscope/analysis backend/src/depscope/graph/match_runs.py backend/tests
@@ -461,7 +461,7 @@ git commit -m "feat: persist deduplicated findings and immutable match runs"
 
 **Interfaces:** Produces shortest_path(snapshot: Snapshot,target_id: str) -> tuple[str,...]|None；PathService.paths(finding_id: str,run_map: dict[str,str]) -> PathResult；PathResult(paths,total_reachable,display_nodes,hidden_nodes,completeness,run_map)；GraphService.view(snapshot_id,focus_id=None) -> GraphView。GraphView(snapshot_id,nodes,edges,total_nodes,hidden_nodes,completeness)；GraphNode(id,label,coordinate: Coordinate|None,query_status)、GraphEdge(source,target)。Finding.instance_id 和 GraphNode.id 使用 inst_key；服务先在所属 snapshot 下解析 local_id，再调用 BFS，返回图时转换回 inst_key。路径数据加载完整快照，再做 200 节点／20 路径的展示限制。
 
-- [ ] Step 1：写循环及跨快照失败测试。
+- [x] Step 1：写循环及跨快照失败测试。
 
 ~~~python
 def test_cycle_terminates_without_cross_snapshot_path(snapshot_factory):
@@ -472,8 +472,8 @@ def test_cycle_terminates_without_cross_snapshot_path(snapshot_factory):
     assert shortest_path(b, "z") == ("x", "z")
 ~~~
 
-- [ ] Step 2：运行 pytest tests/unit/test_paths.py tests/integration/test_impact.py -q。
-- [ ] Step 3：实现 BFS 并对缺失根直接返回未知路径，所有仓库路径查询带 snapshot_id。跨项目先匹配全局可靠坐标或来源标识，再分别加载各快照，不对混合图遍历。
+- [x] Step 2：运行 pytest tests/unit/test_paths.py tests/integration/test_impact.py -q。
+- [x] Step 3：实现 BFS 并对缺失根直接返回未知路径，所有仓库路径查询带 snapshot_id。跨项目先匹配全局可靠坐标或来源标识，再分别加载各快照，不对混合图遍历。
 
 ~~~python
 def shortest_path(snapshot: Snapshot, target_id: str) -> tuple[str, ...] | None:
@@ -495,8 +495,8 @@ def shortest_path(snapshot: Snapshot, target_id: str) -> tuple[str, ...] | None:
     return None
 ~~~
 
-- [ ] Step 4：用 NetworkX 独立 oracle 核对构造图和两份真实图；验证大于 200 节点时聚合计数不缩小、未知依赖／缺失根不宣称完整、不同日期 run_map 明示。
-- [ ] Step 5：提交 feat: trace dependency paths and scoped project impact。
+- [x] Step 4：用 NetworkX 独立 oracle 核对构造图和两份真实图；验证大于 200 节点时聚合计数不缩小、未知依赖／缺失根不宣称完整、不同日期 run_map 明示。
+- [x] Step 5：提交 feat: trace dependency paths and scoped project impact。
 
 ~~~bash
 git add backend/src/depscope/analysis backend/src/depscope/graph/queries.py backend/tests
@@ -509,7 +509,7 @@ git commit -m "feat: trace dependency paths and scoped project impact"
 
 **Interfaces:** Produces compare_packages(before: Snapshot,after: Snapshot) -> PackageDiff；PackageDiff(added,removed,versions_changed,opaque_before,opaque_after,environment_comparable)；compare_known_findings(before: MatchRun,after: MatchRun,before_snapshot: Snapshot,after_snapshot: Snapshot) -> MatchingDiff；MatchingDiff(removed_known_matches,unknown)。ComparisonService.create(before_id,after_id,verification_id: str|None) -> Comparison；VerificationRecord(kind,environment,source_hashes,command: tuple[str,...],exit_code: int|None,observed_at,result_digest,producer)；Comparison(id,baseline_id,candidate_id,run_ids,collection_id,diff,removed_known_matches,unknown,level,limitations)。verification_id 只定位本地验证流程已登记的资料，比较接口不接受用户提供的测试成功布尔值。
 
-- [ ] Step 1：写失败测试。
+- [x] Step 1：写失败测试。
 
 ~~~python
 def test_failed_query_cannot_be_counted_as_removed_match(comparison_inputs):
@@ -519,8 +519,8 @@ def test_failed_query_cannot_be_counted_as_removed_match(comparison_inputs):
     assert result.unknown == 1
 ~~~
 
-- [ ] Step 2：运行 pytest tests/unit/test_comparison.py tests/integration/test_comparison_evidence.py -q。
-- [ ] Step 3：创建并集公告采集批次，固定两个 run_id；按包名和多版本集合比较。只有前后覆盖明确的组才计算已知匹配变化；任何缺失或冲突单列。
+- [x] Step 2：运行 pytest tests/unit/test_comparison.py tests/integration/test_comparison_evidence.py -q。
+- [x] Step 3：创建并集公告采集批次，固定两个 run_id；按包名和多版本集合比较。只有前后覆盖明确的组才计算已知匹配变化；任何缺失或冲突单列。
 
 ~~~python
 def verification_level(resolution_ok: bool, tests_ok: bool,
@@ -532,8 +532,8 @@ def verification_level(resolution_ok: bool, tests_ok: bool,
     return "resolution_verified"
 ~~~
 
-- [ ] Step 4：上段布尔量只由本地验证资料校验产生：分别验证 resolution 和 tests 记录、同环境、同候选依赖清单、完整解析、所有可确认约束、可信 producer 和文件校验；单纯上传 SBOM 或 JSON 里的 exit_code 不能升等级。比较已移除包时也需要候选图完整，版本变化按规范包名对应新版本集合。验证公告日期差异、无约束边、私有／opaque 组件、同名多个版本和历史比较不可变。
-- [ ] Step 5：提交 feat: compare upgrade evidence without overstating validation。
+- [x] Step 4：上段布尔量只由本地验证资料校验产生：分别验证 resolution 和 tests 记录、同环境、同候选依赖清单、完整解析、所有可确认约束、可信 producer 和文件校验；单纯上传 SBOM 或 JSON 里的 exit_code 不能升等级。比较已移除包时也需要候选图完整，版本变化按规范包名对应新版本集合。验证公告日期差异、无约束边、私有／opaque 组件、同名多个版本和历史比较不可变。
+- [x] Step 5：提交 feat: compare upgrade evidence without overstating validation。
 
 ~~~bash
 git add backend/src/depscope/analysis backend/src/depscope/graph/comparisons.py backend/tests

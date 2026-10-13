@@ -56,6 +56,21 @@ class JobStore:
             self._cancelled.discard(job_id)
         return claimed
 
+    def bind_import_source(self,job_id: str,owner_token: str,source: dict) -> bool:
+        def bind(tx):
+            locked_lease(tx)
+            row=tx.run("MATCH (j:Job {id:$id,owner_token:$owner,status:'fetching'}),(l:MutationLease {id:'global',job_id:$id,owner_token:$owner}) RETURN j.payload AS payload",id=job_id,owner=owner_token).single()
+            if row is None:
+                return False
+            payload=json.loads(row["payload"])
+            payload.pop("uri",None)
+            payload["digest"]=source["digest"]
+            payload["source_ref"]=source
+            tx.run("MATCH (j:Job {id:$id,owner_token:$owner}) SET j.payload=$payload",id=job_id,owner=owner_token,payload=json.dumps(payload)).consume()
+            return True
+        with self.driver.session() as session:
+            return session.execute_write(bind)
+
     def transition(self, job_id: str, expected: str, target: str, owner_token: str | None = None,
                    error: dict | None = None, result_id: str | None = None) -> bool:
         if not can_transition(expected,target):

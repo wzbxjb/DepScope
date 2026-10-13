@@ -1,0 +1,39 @@
+{
+  "observed_at": "2026-10-13T23:47:05.422059+00:00",
+  "base_url": "http://127.0.0.1:8100",
+  "/health/live": {
+    "status_code": 200,
+    "response": {
+      "status": "alive"
+    }
+  },
+  "/health/ready": {
+    "status_code": 200,
+    "response": {
+      "status": "ready",
+      "database": "ready",
+      "sources": "not_probed",
+      "generation": "configured",
+      "embedding": "configured"
+    }
+  },
+  "/api/projects": {
+    "status_code": 200,
+    "response": {
+      "items": [
+        {
+          "kind": "public_demo",
+          "name": "Verified public sample: langchain-experimental 0.0.50",
+          "created_at": "2026-10-13T23:19:01.475867+00:00",
+          "id": "df28462f-6441-4ab2-8bcf-52548c7dd345"
+        }
+      ],
+      "next_cursor": null,
+      "observed_at": "2026-10-13T23:47:05.514995+00:00"
+    }
+  },
+  "/openapi.json": {
+    "status_code": 200,
+    "path_count": 18
+  }
+}

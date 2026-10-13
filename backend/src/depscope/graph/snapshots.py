@@ -22,6 +22,13 @@ class SnapshotRepository:
                         id=project_id,name=name,kind=kind,time=now()).consume()
         return project_id
 
+    def project(self,project_id: str) -> dict:
+        with self.driver.session() as session:
+            row=session.run("MATCH (p:Project {id:$id}) RETURN properties(p) AS project",id=project_id).single()
+        if row is None:
+            raise DomainError("PROJECT_NOT_FOUND", "Project is unavailable")
+        return row["project"]
+
     def list_projects(self, cursor=None, limit=50) -> Page:
         last = decode_cursor(cursor,"projects")
         limit = page_limit(limit)
@@ -161,7 +168,7 @@ class SnapshotRepository:
         last=decode_cursor(cursor,"snapshots:"+project_id)
         limit=page_limit(limit)
         with self.driver.session() as session:
-            rows=tuple(dict(row["s"]) for row in session.run("MATCH (s:Snapshot {project_id:$p,status:'ready'}) WHERE s.snapshot_id > $last RETURN s ORDER BY s.snapshot_id LIMIT $limit",
+            rows=tuple(dict(row["s"]) for row in session.run("MATCH (s:Snapshot {project_id:$p,status:'ready'}) WHERE s.snapshot_id > $last OPTIONAL MATCH (s)-[:HAS_ROOT]->(root:ComponentInstance) RETURN s{.snapshot_id,.project_id,.source_kind,.observed_at,.component_count,.edge_count,.published_at,root_name:root.name,root_version:root.raw_version} AS s ORDER BY s.snapshot_id LIMIT $limit",
                        p=project_id,last=last,limit=limit+1))
         items=tuple({key:value for key,value in row.items() if key not in ("payload","owner_job_id")} for row in rows[:limit])
         cursor=encode_cursor("snapshots:"+project_id,items[-1]["snapshot_id"]) if len(rows)>limit else None

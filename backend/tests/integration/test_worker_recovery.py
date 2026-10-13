@@ -1,3 +1,4 @@
+import hashlib
 from concurrent.futures import ThreadPoolExecutor
 
 import pytest
@@ -71,3 +72,23 @@ def test_retry_gets_fresh_cancellation_state(job_store):
     assert job_store.transition(job.id,"interrupted","queued")
     assert job_store.claim(job.id,"new-owner")
     assert not job_store.is_cancelled(job.id)
+
+
+async def test_public_import_freezes_fetched_bytes_before_retry(job_store,repo,research_dir,tmp_path,respx_mock):
+    from depscope.jobs.handlers import import_handler
+    from depscope.sources.records import RecordStore
+    raw=(research_dir/"experimental_dependencies.json").read_bytes()
+    uri="https://api.deps.dev/v3/systems/pypi/packages/langchain-experimental/versions/0.0.50:dependencies"
+    route=respx_mock.get(uri).respond(200,content=raw)
+    project=repo.create_project("frozen-input")
+    store=RecordStore(tmp_path)
+    job=job_store.enqueue("import",{"project_id":project,"uri":uri,"source_kind":"public_resolution"})
+    worker=Worker(job_store,repo,{"import":import_handler(job_store,repo,store)})
+    assert await worker.run_once()
+    frozen=job_store.get(job.id)
+    assert frozen.payload["digest"] == hashlib.sha256(raw).hexdigest()
+    assert "uri" not in frozen.payload
+    retry=job_store.enqueue("import",frozen.payload)
+    assert await worker.run_once()
+    assert job_store.get(retry.id).result_id == frozen.result_id
+    assert route.call_count == 1

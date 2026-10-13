@@ -116,5 +116,7 @@ class MatchService:
             results[snapshot.snapshot_id]=MatchRun(id=run_id,snapshot_id=snapshot.snapshot_id,
                         collection_id=collection_id,observed_at=now(),queries=queries,findings=tuple(findings),
                         revision_ids=tuple(sorted(relevant_revision_ids)),coverage=coverage)
+        if self.osv.cancelled():
+            raise DomainError("CANCELLED", "Matching cancelled before publication")
         await asyncio.to_thread(self.runs.save,tuple(results.values()),tuple(revisions.values()))
         return results
