@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "depscope"
+version = "0.1.0"
+description = "Evidence-backed dependency investigation with Neo4j and AI"
+requires-python = ">=3.11"
+dependencies = ["fastapi>=0.115,<1", "uvicorn>=0.30,<1", "pydantic>=2.9,<3", "httpx>=0.27,<1", "neo4j>=5.26,<6", "jsonschema>=4.23,<5", "referencing>=0.35,<1", "packaging>=24", "packageurl-python>=0.16,<1", "python-dotenv>=1,<2"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "pytest-asyncio>=0.24,<2", "respx>=0.21,<1", "ruff>=0.7", "networkx>=3.3,<4"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+markers = ["integration: requires local Neo4j"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100

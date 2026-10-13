@@ -1,0 +1,9 @@
+{
+  "observed_at": "2026-10-13T22:51:56.450180+00:00",
+  "python": "3.11.5",
+  "test": "real_uvicorn_http_health",
+  "status_code": 200,
+  "response": {
+    "status": "alive"
+  }
+}
