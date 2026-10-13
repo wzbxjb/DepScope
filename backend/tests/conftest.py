@@ -104,3 +104,11 @@ def ready_snapshot(repo,public_snapshot_factory):
     snapshot=public_snapshot_factory(repo.create_project("ready"))
     repo.publish(snapshot,"fixture-ready")
     return snapshot
+
+
+@pytest.fixture
+async def mock_osv(respx_mock,tmp_path):
+    from helpers.osv import MockOsv
+    mock=MockOsv(respx_mock,tmp_path)
+    yield mock
+    await mock.http.aclose()
