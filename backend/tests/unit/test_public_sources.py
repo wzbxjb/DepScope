@@ -99,3 +99,15 @@ async def test_public_client_rejects_arbitrary_urls_without_network(respx_mock):
             with pytest.raises(DomainError,match="SOURCE_URL_REJECTED"):
                 await client.get_json(uri)
     assert len(respx_mock.calls) == 0
+
+
+async def test_public_client_can_cancel_during_429_wait(respx_mock):
+    state=[]
+    def rate_limited(request):
+        state.append(True)
+        return httpx.Response(429,headers={"Retry-After":"30"})
+    route=respx_mock.get("https://pypi.org/pypi/requests/json").mock(side_effect=rate_limited)
+    async with httpx.AsyncClient() as http:
+        with pytest.raises(DomainError,match="CANCELLED"):
+            await PublicClient(http).get_raw("https://pypi.org/pypi/requests/json",cancelled=lambda:bool(state))
+    assert route.call_count == 1

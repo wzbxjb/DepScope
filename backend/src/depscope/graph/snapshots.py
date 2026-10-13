@@ -32,7 +32,9 @@ class SnapshotRepository:
         next_cursor = encode_cursor("projects",items[limit-1]["id"]) if len(items)>limit else None
         return Page(items=items[:limit],next_cursor=next_cursor,observed_at=now())
 
-    def stage(self, snapshot: Snapshot, job_id: str) -> bool:
+    def stage(self, snapshot: Snapshot, job_id: str, cancelled=lambda:False) -> bool:
+        if cancelled():
+            raise DomainError("CANCELLED", "Import cancelled before staging")
         expected = snapshot_key(snapshot.project_id,snapshot.source_kind,snapshot.source.digest)
         if snapshot.snapshot_id != expected:
             raise DomainError("SNAPSHOT_ID_MISMATCH", "Snapshot identity must match its source context")
@@ -59,6 +61,8 @@ class SnapshotRepository:
             if not session.execute_write(claim):
                 return False
             for start in range(0,len(snapshot.components),500):
+                if cancelled():
+                    raise DomainError("CANCELLED", "Import cancelled during component staging")
                 rows=[]
                 for component in snapshot.components[start:start+500]:
                     coordinate=component.coordinate
@@ -85,6 +89,8 @@ class SnapshotRepository:
                 if count != len(rows):
                     raise DomainError("STAGE_INTERRUPTED", "Component staging no longer owns its snapshot")
             for start in range(0,len(snapshot.edges),500):
+                if cancelled():
+                    raise DomainError("CANCELLED", "Import cancelled during edge staging")
                 rows=[{"from":edge.from_id,"to":edge.to_id,"requirement":edge.requirement,
                        "pointer":edge.pointer,"key":hashlib.sha256((snapshot.snapshot_id+":"+edge.pointer).encode()).hexdigest()}
                       for edge in snapshot.edges[start:start+500]]
@@ -101,11 +107,13 @@ class SnapshotRepository:
                     raise DomainError("STAGE_INTERRUPTED", "Edge staging failed context validation")
         return True
 
-    def publish(self, snapshot: Snapshot, job_id: str) -> str:
+    def publish(self, snapshot: Snapshot, job_id: str, cancelled=lambda:False) -> str:
         try:
-            if not self.stage(snapshot,job_id):
+            if not self.stage(snapshot,job_id,cancelled=cancelled):
                 return snapshot.snapshot_id
             def finalize(tx):
+                if cancelled():
+                    raise DomainError("CANCELLED", "Import cancelled before publication")
                 node_count=tx.run("MATCH (s:Snapshot {snapshot_id:$sid,status:'writing',owner_job_id:$job})-[:CONTAINS]->(c) RETURN count(c) AS n",
                                   sid=snapshot.snapshot_id,job=job_id).single()["n"]
                 edge_count=tx.run("MATCH (a:ComponentInstance {snapshot_id:$sid})-[e:DEPENDS_ON]->(b:ComponentInstance {snapshot_id:$sid}) RETURN count(e) AS n",

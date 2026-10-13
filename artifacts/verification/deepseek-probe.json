@@ -1,0 +1,26 @@
+{
+  "id": "995e22b0-5eeb-4ee7-a947-301357ced2db",
+  "provider": "deepseek",
+  "configured_model": "deepseek-flash",
+  "observed_at": "2026-10-13T23:08:59.388121+00:00",
+  "status": "verified",
+  "reserved_usd": "0.001",
+  "max_output_tokens": 16,
+  "pricing_source": "https://api-docs.deepseek.com/quick_start/pricing/",
+  "pricing_basis": "conservative peak estimate, not invoice",
+  "http_status": 200,
+  "model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 11,
+    "completion_tokens": 1,
+    "total_tokens": 12,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 11
+  },
+  "request_id": "32682738-5cb9-4e4a-80b9-f9d7feec40db",
+  "response_is_ok": true,
+  "estimated_usd": "0.0000045"
+}

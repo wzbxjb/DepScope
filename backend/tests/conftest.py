@@ -78,3 +78,29 @@ def public_snapshot_factory(research_dir, source_for):
         raw = (research_dir / "experimental_dependencies.json").read_bytes()
         return parse_depsdev(raw, project, source_for(raw))
     return build
+
+
+@pytest.fixture
+def job_store(driver):
+    from depscope.graph.migrations import migrate
+    from depscope.jobs.store import JobStore
+    migrate(driver)
+    store = JobStore(driver)
+    created=[]
+    original=store.enqueue
+    def enqueue(kind,payload):
+        job=original(kind,payload)
+        created.append(job.id)
+        return job
+    store.enqueue=enqueue
+    yield store
+    with driver.session() as session:
+        session.run("MATCH (j:Job) WHERE j.id IN $ids DETACH DELETE j",ids=created).consume()
+        session.run("MATCH (l:MutationLease) WHERE l.job_id IN $ids SET l.owner_token=null,l.job_id=null,l.heartbeat=null",ids=created).consume()
+
+
+@pytest.fixture
+def ready_snapshot(repo,public_snapshot_factory):
+    snapshot=public_snapshot_factory(repo.create_project("ready"))
+    repo.publish(snapshot,"fixture-ready")
+    return snapshot

@@ -91,3 +91,13 @@ def test_exception_between_component_and_edge_writes_cleans_only_owned_stage(rep
     with pytest.raises(DomainError, match="SNAPSHOT_NOT_FOUND"):
         repo.load(candidate.snapshot_id)
     assert repo.load(ready.snapshot_id) == ready
+
+
+def test_cancel_before_write_does_not_publish_or_remove_ready(repo,public_snapshot_factory):
+    protected=public_snapshot_factory(repo.create_project("keep"))
+    repo.publish(protected,"keep-owner")
+    candidate=public_snapshot_factory(repo.create_project("cancel"))
+    with pytest.raises(DomainError,match="CANCELLED"):
+        repo.publish(candidate,"cancel-owner",cancelled=lambda:True)
+    assert repo.list_snapshots(candidate.project_id).items == ()
+    assert repo.load(protected.snapshot_id) == protected
