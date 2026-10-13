@@ -66,6 +66,8 @@ def repo(driver):
     # Only these random test-owned project contexts; no shared PackageVersion deletion.
     with driver.session() as session:
         for project in owned:
+            session.run("MATCH (r:MatchRun {project_id:$p})-[:HAS_FINDING]->(f) DETACH DELETE f", p=project).consume()
+            session.run("MATCH (r:MatchRun {project_id:$p}) DETACH DELETE r", p=project).consume()
             session.run("MATCH (c:ComponentInstance {project_id:$p}) DETACH DELETE c", p=project).consume()
             session.run("MATCH (s:Snapshot {project_id:$p}) DETACH DELETE s", p=project).consume()
             session.run("MATCH (p:Project {id:$p}) DETACH DELETE p", p=project).consume()
@@ -112,3 +114,19 @@ async def mock_osv(respx_mock,tmp_path):
     mock=MockOsv(respx_mock,tmp_path)
     yield mock
     await mock.http.aclose()
+
+
+@pytest.fixture
+def advisory_factory(source_for):
+    from depscope.sources.advisories import AdvisoryRevision
+    def create(id,aliases=(),related=(),withdrawn=None):
+        doc={"id":id,"modified":"2026-10-13T00:00:00Z","aliases":list(aliases),
+             "related":list(related),"withdrawn":withdrawn,
+             "affected":[{"package":{"ecosystem":"PyPI","name":"requests"}}],
+             "summary":"Constructed test advisory","details":"Unit-test-only evidence"}
+        raw=json.dumps(doc).encode()
+        source=source_for(raw)
+        return AdvisoryRevision(id=id,modified=doc["modified"],digest=source.digest,
+                    aliases=aliases,related=related,withdrawn=withdrawn,affected=tuple(doc["affected"]),
+                    summary=doc["summary"],details=doc["details"],source=source)
+    return create
