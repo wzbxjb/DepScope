@@ -1,0 +1,15 @@
+{
+  "source": {
+    "uri": "https://pypi.org/pypi/langchain-experimental/json",
+    "digest": "a690868e37f58210049d724ecb236e69dd184cb1743cd40c6cf66b80528aeda2",
+    "observed_at": "2026-10-13T22:59:55.563822+00:00",
+    "parser_version": "raw-v1"
+  },
+  "selected_versions": [
+    "0.4.2",
+    "0.0.48",
+    "0.4.0"
+  ],
+  "test": "live_pypi_selection",
+  "no_distribution_files_downloaded": true
+}

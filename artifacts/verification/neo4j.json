@@ -1,0 +1,27 @@
+{
+  "observed_at": "2026-10-13T23:05:13.709650+00:00",
+  "repo_digests": [
+    "neo4j@sha256:f1e52d4dc6da122468c4a3c1050a4f5e117f6d3268625237c34d49166f0d6082",
+    "registry-1.docker.io/library/neo4j@sha256:f1e52d4dc6da122468c4a3c1050a4f5e117f6d3268625237c34d49166f0d6082"
+  ],
+  "architecture": "arm64",
+  "database": {
+    "name": "Neo4j Kernel",
+    "versions": [
+      "5.26.32"
+    ],
+    "edition": "community"
+  },
+  "readiness": {
+    "generation": {
+      "status": "not_configured",
+      "tested": false
+    },
+    "database": {
+      "status": "ready"
+    },
+    "embedding": {
+      "status": "model_missing"
+    }
+  }
+}

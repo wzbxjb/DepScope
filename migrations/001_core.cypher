@@ -1,0 +1,16 @@
+CREATE CONSTRAINT project_id IF NOT EXISTS FOR (n:Project) REQUIRE n.id IS UNIQUE;
+CREATE CONSTRAINT snapshot_id IF NOT EXISTS FOR (n:Snapshot) REQUIRE n.snapshot_id IS UNIQUE;
+CREATE CONSTRAINT instance_key IF NOT EXISTS FOR (n:ComponentInstance) REQUIRE n.inst_key IS UNIQUE;
+CREATE CONSTRAINT instance_context IF NOT EXISTS FOR (n:ComponentInstance) REQUIRE (n.snapshot_id, n.local_id) IS UNIQUE;
+CREATE CONSTRAINT package_key IF NOT EXISTS FOR (n:PackageVersion) REQUIRE n.key IS UNIQUE;
+CREATE CONSTRAINT source_digest IF NOT EXISTS FOR (n:SourceRecord) REQUIRE n.digest IS UNIQUE;
+CREATE CONSTRAINT match_run_id IF NOT EXISTS FOR (n:MatchRun) REQUIRE n.id IS UNIQUE;
+CREATE CONSTRAINT finding_id IF NOT EXISTS FOR (n:Finding) REQUIRE n.id IS UNIQUE;
+CREATE CONSTRAINT advisory_revision_id IF NOT EXISTS FOR (n:AdvisoryRevision) REQUIRE n.revision_id IS UNIQUE;
+CREATE CONSTRAINT identifier_id IF NOT EXISTS FOR (n:Identifier) REQUIRE n.id IS UNIQUE;
+CREATE CONSTRAINT comparison_id IF NOT EXISTS FOR (n:Comparison) REQUIRE n.id IS UNIQUE;
+CREATE CONSTRAINT job_id IF NOT EXISTS FOR (n:Job) REQUIRE n.id IS UNIQUE;
+CREATE CONSTRAINT lease_id IF NOT EXISTS FOR (n:MutationLease) REQUIRE n.id IS UNIQUE;
+CREATE INDEX snapshot_project IF NOT EXISTS FOR (n:Snapshot) ON (n.project_id, n.status);
+CREATE INDEX instances_snapshot IF NOT EXISTS FOR (n:ComponentInstance) ON (n.snapshot_id);
+CREATE INDEX run_snapshot IF NOT EXISTS FOR (n:MatchRun) ON (n.snapshot_id, n.observed_at);

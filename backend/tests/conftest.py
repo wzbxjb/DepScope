@@ -35,3 +35,46 @@ def snapshot_factory(source_for):
                                     for n, (a,b) in enumerate(edge_pairs)),
                         root_id=root, environment={}, issues=())
     return build
+
+
+@pytest.fixture
+def driver():
+    from neo4j import GraphDatabase
+
+    from depscope.runtime.config import load_settings
+    settings = load_settings()
+    with GraphDatabase.driver(settings.neo4j_uri,
+                              auth=(settings.neo4j_user, settings.neo4j_password.get_secret_value())) as db:
+        db.verify_connectivity()
+        yield db
+
+
+@pytest.fixture
+def repo(driver):
+    from depscope.graph.migrations import migrate
+    from depscope.graph.snapshots import SnapshotRepository
+    migrate(driver)
+    repository = SnapshotRepository(driver)
+    original = repository.create_project
+    owned = []
+    def create(name, kind="user_project"):
+        project = original("test-only:" + name, kind)
+        owned.append(project)
+        return project
+    repository.create_project = create
+    yield repository
+    # Only these random test-owned project contexts; no shared PackageVersion deletion.
+    with driver.session() as session:
+        for project in owned:
+            session.run("MATCH (c:ComponentInstance {project_id:$p}) DETACH DELETE c", p=project).consume()
+            session.run("MATCH (s:Snapshot {project_id:$p}) DETACH DELETE s", p=project).consume()
+            session.run("MATCH (p:Project {id:$p}) DETACH DELETE p", p=project).consume()
+
+
+@pytest.fixture
+def public_snapshot_factory(research_dir, source_for):
+    from depscope.ingest.depsdev import parse_depsdev
+    def build(project):
+        raw = (research_dir / "experimental_dependencies.json").read_bytes()
+        return parse_depsdev(raw, project, source_for(raw))
+    return build
