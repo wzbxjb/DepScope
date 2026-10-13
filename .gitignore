@@ -1,0 +1,17 @@
+.worktrees/
+.superpowers/
+.env
+.env.*
+!.env.example
+**/.venv*/
+**/__pycache__/
+**/.pytest_cache/
+**/.ruff_cache/
+**/node_modules/
+**/dist/
+**/test-results/
+**/playwright-report/
+data/runtime/
+artifacts/private/
+*.egg-info/
+*.log
