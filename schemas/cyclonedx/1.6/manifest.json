@@ -1,0 +1,26 @@
+{
+  "observed_at": "2026-10-13T22:54:58.873878+00:00",
+  "records": [
+    {
+      "path": "bom-1.6.schema.json",
+      "source_uri": "https://cyclonedx.org/schema/bom-1.6.schema.json",
+      "schema_id": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+      "sha256": "1ebcb88a2c845ecb6ff7bee7aeabdff9422cb0347f3d6875b241bd444b7e098f",
+      "bytes": 190498
+    },
+    {
+      "path": "jsf-0.82.schema.json",
+      "source_uri": "https://cyclonedx.org/schema/jsf-0.82.schema.json",
+      "schema_id": "http://cyclonedx.org/schema/jsf-0.82.schema.json",
+      "sha256": "2faf5eb3651f2ae5f46091a131770d8d847bbd121139d19c85fc7051bfa58c46",
+      "bytes": 5017
+    },
+    {
+      "path": "spdx.schema.json",
+      "source_uri": "https://cyclonedx.org/schema/spdx.schema.json",
+      "schema_id": "http://cyclonedx.org/schema/spdx.schema.json",
+      "sha256": "33863a360fc4d348e183d89c1ca7aa0877f481e7eb55be2d4102a30386188a10",
+      "bytes": 54225
+    }
+  ]
+}
