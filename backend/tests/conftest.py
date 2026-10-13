@@ -66,6 +66,7 @@ def repo(driver):
     # Only these random test-owned project contexts; no shared PackageVersion deletion.
     with driver.session() as session:
         for project in owned:
+            session.run("MATCH (c:Comparison)-[:BASELINE|CANDIDATE]->(s:Snapshot {project_id:$p}) DETACH DELETE c", p=project).consume()
             session.run("MATCH (r:MatchRun {project_id:$p})-[:HAS_FINDING]->(f) DETACH DELETE f", p=project).consume()
             session.run("MATCH (r:MatchRun {project_id:$p}) DETACH DELETE r", p=project).consume()
             session.run("MATCH (c:ComponentInstance {project_id:$p}) DETACH DELETE c", p=project).consume()
@@ -129,4 +130,30 @@ def advisory_factory(source_for):
         return AdvisoryRevision(id=id,modified=doc["modified"],digest=source.digest,
                     aliases=aliases,related=related,withdrawn=withdrawn,affected=tuple(doc["affected"]),
                     summary=doc["summary"],details=doc["details"],source=source)
+    return create
+
+
+@pytest.fixture
+def comparison_inputs(source_for):
+    from depscope.analysis.matching import Finding, MatchRun
+    from depscope.identity.coordinates import identify, instance_key
+    from depscope.sources.advisories import PackageQuery
+    def create(before_status,after_status):
+        snapshots=[]
+        runs=[]
+        for index,status in enumerate((before_status,after_status)):
+            raw=json.dumps({"kind":"constructed-comparison","index":index}).encode()
+            source=source_for(raw)
+            sid=snapshot_key("comparison","constructed",source.digest)
+            coordinate=identify("requests","2.31.0" if index==0 else "2.32.3",None)
+            component=Component(local_id="r",name="requests",coordinate=coordinate,dependencies_known=True,pointer="/components/0")
+            snapshot=Snapshot(snapshot_id=sid,project_id="comparison",source_kind="constructed",source=source,
+                              components=(component,),edges=(),root_id="r",environment={},issues=())
+            findings=(Finding(id="f"+str(index),instance_id=instance_key(sid,"r"),group_id="group-a",revision_ids=("a"*64,)),) if status=="matched" else ()
+            run=MatchRun(id="run-"+str(index),snapshot_id=sid,collection_id="shared",observed_at="2026-10-13T00:00:00Z",
+                         queries=(PackageQuery(coordinate=coordinate,status=status,record_ids=("GHSA-a",) if findings else (),source_refs=(source,)),),
+                         findings=findings,revision_ids=("a"*64,) if findings else (),coverage={"total":1,"confirmed":int(status in ("matched","no_match")),"unknown":int(status not in ("matched","no_match"))})
+            snapshots.append(snapshot)
+            runs.append(run)
+        return runs[0],runs[1],snapshots[0],snapshots[1]
     return create

@@ -1,0 +1,227 @@
+{
+  "observed_at": "2026-10-13T23:31:12.089342+00:00",
+  "candidate_source": {
+    "uri": "https://api.deps.dev/v3/systems/pypi/packages/langchain-experimental/versions/0.4.2:dependencies",
+    "digest": "6aa26f9f61697401ed5c629aae4b850033342f1f4750f77f0bb397236c56c6d4",
+    "observed_at": "2026-10-13T23:31:08.446345+00:00",
+    "parser_version": "raw-v1"
+  },
+  "candidate_nodes": 50,
+  "candidate_edges": 87,
+  "comparison": {
+    "id": "8e69a65a-3397-44a8-88f6-c76c7b9e9beb",
+    "baseline_id": "972f6e7718b9c9d9be313e1fc41d723a8d4e4bb1130e59c1916df11beb10e06f",
+    "candidate_id": "ad00bdf43091d9ec2ce134404c7b2ce82b0556711f80cf7d42418d791680fd80",
+    "run_ids": [
+      "5e1162b0-3327-4b00-a28f-9a96d513390e",
+      "900b2182-1c07-4234-93e8-39904d85605d"
+    ],
+    "collection_id": "0e38ba40-64c4-49b2-97c0-ffe1cbad9265",
+    "diff": {
+      "added": [
+        {
+          "name": "distro",
+          "versions": [
+            "1.9.0"
+          ]
+        },
+        {
+          "name": "httpcore2",
+          "versions": [
+            "2.13.1"
+          ]
+        },
+        {
+          "name": "httpx-sse",
+          "versions": [
+            "0.4.3"
+          ]
+        },
+        {
+          "name": "httpx2",
+          "versions": [
+            "2.13.1"
+          ]
+        },
+        {
+          "name": "langchain-classic",
+          "versions": [
+            "1.0.8"
+          ]
+        },
+        {
+          "name": "langchain-protocol",
+          "versions": [
+            "0.0.19"
+          ]
+        },
+        {
+          "name": "pydantic-settings",
+          "versions": [
+            "2.15.0"
+          ]
+        },
+        {
+          "name": "python-dotenv",
+          "versions": [
+            "1.2.4"
+          ]
+        },
+        {
+          "name": "sniffio",
+          "versions": [
+            "1.3.1"
+          ]
+        },
+        {
+          "name": "truststore",
+          "versions": [
+            "0.10.5"
+          ]
+        },
+        {
+          "name": "uuid-utils",
+          "versions": [
+            "0.17.1"
+          ]
+        },
+        {
+          "name": "websockets",
+          "versions": [
+            "17.2.0"
+          ]
+        },
+        {
+          "name": "xxhash",
+          "versions": [
+            "4.0.1"
+          ]
+        },
+        {
+          "name": "zstandard",
+          "versions": [
+            "0.25.0"
+          ]
+        }
+      ],
+      "removed": [
+        {
+          "name": "dataclasses-json",
+          "versions": [
+            "0.6.7"
+          ]
+        },
+        {
+          "name": "langchain",
+          "versions": [
+            "0.1.20"
+          ]
+        },
+        {
+          "name": "marshmallow",
+          "versions": [
+            "3.26.2"
+          ]
+        },
+        {
+          "name": "mypy-extensions",
+          "versions": [
+            "1.1.0"
+          ]
+        },
+        {
+          "name": "typing-inspect",
+          "versions": [
+            "0.9.0"
+          ]
+        }
+      ],
+      "versions_changed": [
+        {
+          "name": "langchain-community",
+          "before": [
+            "0.0.38"
+          ],
+          "after": [
+            "0.4.2"
+          ]
+        },
+        {
+          "name": "langchain-core",
+          "before": [
+            "0.1.53"
+          ],
+          "after": [
+            "1.6.10"
+          ]
+        },
+        {
+          "name": "langchain-experimental",
+          "before": [
+            "0.0.50"
+          ],
+          "after": [
+            "0.4.2"
+          ]
+        },
+        {
+          "name": "langchain-text-splitters",
+          "before": [
+            "0.0.2"
+          ],
+          "after": [
+            "1.1.3"
+          ]
+        },
+        {
+          "name": "langsmith",
+          "before": [
+            "0.1.147"
+          ],
+          "after": [
+            "0.14.8"
+          ]
+        },
+        {
+          "name": "numpy",
+          "before": [
+            "1.26.4"
+          ],
+          "after": [
+            "2.5.4"
+          ]
+        },
+        {
+          "name": "packaging",
+          "before": [
+            "23.2.0"
+          ],
+          "after": [
+            "26.3.0"
+          ]
+        },
+        {
+          "name": "tenacity",
+          "before": [
+            "8.5.0"
+          ],
+          "after": [
+            "9.2.1"
+          ]
+        }
+      ],
+      "opaque_before": 0,
+      "opaque_after": 0,
+      "environment_comparable": false
+    },
+    "removed_known_matches": 22,
+    "unknown": 0,
+    "level": "metadata_comparison",
+    "limitations": [
+      "No trusted installation and test verification for this candidate.",
+      "Target environments are unknown or differ."
+    ],
+    "observed_at": "2026-10-13T23:31:11.995942+00:00",
+    "verification_id": null
+  }
+}
