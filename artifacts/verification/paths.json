@@ -1,0 +1,1129 @@
+{
+  "observed_at": "2026-10-13T23:23:52.911636+00:00",
+  "oracle": "NetworkX DiGraph independent shortest_path_length",
+  "verified_targets": 41,
+  "source_digest": "8e2ae04ef8faea98dba510ec1ab0ef1326eae67ce556b670a55be97a2b343241",
+  "finding_id": "f5c736d826cefc9d24f87ad9752a69773f243c4109c9d80e9ae3abb3dfd8d83d",
+  "path_result": {
+    "paths": [
+      {
+        "snapshot_id": "972f6e7718b9c9d9be313e1fc41d723a8d4e4bb1130e59c1916df11beb10e06f",
+        "project_id": "df28462f-6441-4ab2-8bcf-52548c7dd345",
+        "run_id": "d443b36e-7d4f-4804-9c71-7afd9664a12d",
+        "finding_id": "053be85df1696369520073acdacbaae827d2a85a352ae154f0a5536fd64d5b01",
+        "observed_at": "2026-10-13T23:19:03.976559+00:00",
+        "instance_ids": [
+          "f826fca6974f35750a28e49b925e8d24b1fbe5e35cac627ea61115a3df41b520",
+          "18a28cb60adf4f4dc07b7427105801bebf3bb8582e61f94ca542bde5d1ff2146",
+          "119f415f696b1199d038599ed9695c77668f871aafd1c6cea080090cdfcaa348"
+        ],
+        "labels": [
+          "langchain-experimental",
+          "langchain",
+          "langchain-community"
+        ],
+        "revision_ids": [
+          "94ef84c5350a960c250394a071908b80f29c8094ea962ea55888c02cfdcf23e3",
+          "d228c2c3afa8a77e364004e4860656df8937f1455fd51498eaa93dd60d690e00"
+        ]
+      },
+      {
+        "snapshot_id": "972f6e7718b9c9d9be313e1fc41d723a8d4e4bb1130e59c1916df11beb10e06f",
+        "project_id": "df28462f-6441-4ab2-8bcf-52548c7dd345",
+        "run_id": "d443b36e-7d4f-4804-9c71-7afd9664a12d",
+        "finding_id": "f5c736d826cefc9d24f87ad9752a69773f243c4109c9d80e9ae3abb3dfd8d83d",
+        "observed_at": "2026-10-13T23:19:03.976559+00:00",
+        "instance_ids": [
+          "f826fca6974f35750a28e49b925e8d24b1fbe5e35cac627ea61115a3df41b520",
+          "18a28cb60adf4f4dc07b7427105801bebf3bb8582e61f94ca542bde5d1ff2146"
+        ],
+        "labels": [
+          "langchain-experimental",
+          "langchain"
+        ],
+        "revision_ids": [
+          "a03cb23e4288daea8981206390778f8e449458c24b86c44af90e6a69df0b14e5",
+          "d228c2c3afa8a77e364004e4860656df8937f1455fd51498eaa93dd60d690e00"
+        ]
+      }
+    ],
+    "total_reachable": 41,
+    "display_nodes": [
+      "f826fca6974f35750a28e49b925e8d24b1fbe5e35cac627ea61115a3df41b520",
+      "18a28cb60adf4f4dc07b7427105801bebf3bb8582e61f94ca542bde5d1ff2146",
+      "119f415f696b1199d038599ed9695c77668f871aafd1c6cea080090cdfcaa348"
+    ],
+    "hidden_nodes": 0,
+    "hidden_paths": 0,
+    "completeness": {
+      "972f6e7718b9c9d9be313e1fc41d723a8d4e4bb1130e59c1916df11beb10e06f": {
+        "state": "complete",
+        "root_known": true,
+        "unknown_dependencies": 0,
+        "issues": []
+      }
+    },
+    "run_map": {
+      "972f6e7718b9c9d9be313e1fc41d723a8d4e4bb1130e59c1916df11beb10e06f": "d443b36e-7d4f-4804-9c71-7afd9664a12d"
+    },
+    "affected_projects": 1,
+    "reachable_matches": 2,
+    "unreachable_matches": 0,
+    "unknown_paths": 0
+  },
+  "graph": {
+    "snapshot_id": "972f6e7718b9c9d9be313e1fc41d723a8d4e4bb1130e59c1916df11beb10e06f",
+    "nodes": [
+      {
+        "id": "f826fca6974f35750a28e49b925e8d24b1fbe5e35cac627ea61115a3df41b520",
+        "local_id": "0",
+        "label": "langchain-experimental@0.0.50",
+        "coordinate": {
+          "ecosystem": "PyPI",
+          "name": "langchain-experimental",
+          "version": "0.0.50",
+          "raw_version": "0.0.50"
+        },
+        "query_status": "matched",
+        "pointer": "/nodes/0"
+      },
+      {
+        "id": "1ed3cee3424f66d4bd258c5fb59a67034a894df8afbb49508622d344ab7ee618",
+        "local_id": "1",
+        "label": "aiohappyeyeballs@2.7.1",
+        "coordinate": {
+          "ecosystem": "PyPI",
+          "name": "aiohappyeyeballs",
+          "version": "2.7.1",
+          "raw_version": "2.7.1"
+        },
+        "query_status": "no_match",
+        "pointer": "/nodes/1"
+      },
+      {
+        "id": "8ad0bede9ff5d52958a71610265449f8afacd8ca65227f42a82f478814e119c9",
+        "local_id": "2",
+        "label": "aiohttp@3.14.5",
+        "coordinate": {
+          "ecosystem": "PyPI",
+          "name": "aiohttp",
+          "version": "3.14.5",
+          "raw_version": "3.14.5"
+        },
+        "query_status": "no_match",
+        "pointer": "/nodes/2"
+      },
+      {
+        "id": "a7fdb5d15099520a172a53e6d862c3e4268bef72e23903bf57fc05ffa3ca2511",
+        "local_id": "3",
+        "label": "aiosignal@1.4.0",
+        "coordinate": {
+          "ecosystem": "PyPI",
+          "name": "aiosignal",
+          "version": "1.4.0",
+          "raw_version": "1.4.0"
+        },
+        "query_status": "no_match",
+        "pointer": "/nodes/3"
+      },
+      {
+        "id": "08302f63ed3d2cc2e43ed4ba3f86303269f5bf080e33aca22b1b2917a123d33f",
+        "local_id": "4",
+        "label": "annotated-types@0.8.0",
+        "coordinate": {
+          "ecosystem": "PyPI",
+          "name": "annotated-types",
+          "version": "0.8.0",
+          "raw_version": "0.8.0"
+        },
+        "query_status": "no_match",
+        "pointer": "/nodes/4"
+      },
+      {
+        "id": "f9b90d66ac529516da0f94a291c4d4613c91315b99867e2d8a593938b770b706",
+        "local_id": "5",
+        "label": "anyio@4.15.1",
+        "coordinate": {
+          "ecosystem": "PyPI",
+          "name": "anyio",
+          "version": "4.15.1",
+          "raw_version": "4.15.1"
+        },
+        "query_status": "no_match",
+        "pointer": "/nodes/5"
+      },
+      {
+        "id": "1104f329396e922f1ec9734cc8cbf1c14450a7dc9cae1d5d06a2e37a87e03bd7",
+        "local_id": "6",
+        "label": "attrs@26.1.0",
+        "coordinate": {
+          "ecosystem": "PyPI",
+          "name": "attrs",
+          "version": "26.1.0",
+          "raw_version": "26.1.0"
+        },
+        "query_status": "no_match",
+        "pointer": "/nodes/6"
+      },
+      {
+        "id": "bef03bb7da8341240d264e8f560f1c9eb76b17ac1fb20e91bcdfa08001b49f1a",
+        "local_id": "7",
+        "label": "certifi@2026.7.22",
+        "coordinate": {
+          "ecosystem": "PyPI",
+          "name": "certifi",
+          "version": "2026.7.22",
+          "raw_version": "2026.7.22"
+        },
+        "query_status": "no_match",
+        "pointer": "/nodes/7"
+      },
+      {
+        "id": "26024647d297bb5a3d6efb632f138cddeaf28e133f6fe979420b3c73d4338e2a",
+        "local_id": "8",
+        "label": "charset-normalizer@3.5.2",
+        "coordinate": {
+          "ecosystem": "PyPI",
+          "name": "charset-normalizer",
+          "version": "3.5.2",
+          "raw_version": "3.5.2"
+        },
+        "query_status": "no_match",
+        "pointer": "/nodes/8"
+      },
+      {
+        "id": "933eee9518d72953006080efab6263e96a7f5f8cbe67c19314db3556f5640116",
+        "local_id": "9",
+        "label": "dataclasses-json@0.6.7",
+        "coordinate": {
+          "ecosystem": "PyPI",
+          "name": "dataclasses-json",
+          "version": "0.6.7",
+          "raw_version": "0.6.7"
+        },
+        "query_status": "no_match",
+        "pointer": "/nodes/9"
+      },
+      {
+        "id": "741a315d83c79824da4fa8b76a75e8419a8a458be544d11d0b6bbb7874f097fe",
+        "local_id": "10",
+        "label": "frozenlist@1.8.0",
+        "coordinate": {
+          "ecosystem": "PyPI",
+          "name": "frozenlist",
+          "version": "1.8.0",
+          "raw_version": "1.8.0"
+        },
+        "query_status": "no_match",
+        "pointer": "/nodes/10"
+      },
+      {
+        "id": "46d0d467a2046eaa3df20244a6ac8db303aa1f531080f516dbad7b6bb78234c3",
+        "local_id": "11",
+        "label": "h11@0.16.0",
+        "coordinate": {
+          "ecosystem": "PyPI",
+          "name": "h11",
+          "version": "0.16.0",
+          "raw_version": "0.16.0"
+        },
+        "query_status": "no_match",
+        "pointer": "/nodes/11"
+      },
+      {
+        "id": "5a28cb6239f908de2146df6af581a39dee07b13a0e1b2a961938766900fbfc4c",
+        "local_id": "12",
+        "label": "httpcore@1.0.9",
+        "coordinate": {
+          "ecosystem": "PyPI",
+          "name": "httpcore",
+          "version": "1.0.9",
+          "raw_version": "1.0.9"
+        },
+        "query_status": "no_match",
+        "pointer": "/nodes/12"
+      },
+      {
+        "id": "d0b1f3d440806762f558a239c5ca4c3f0d91cb0071c1e206132bf7e7a9569eaf",
+        "local_id": "13",
+        "label": "httpx@0.28.1",
+        "coordinate": {
+          "ecosystem": "PyPI",
+          "name": "httpx",
+          "version": "0.28.1",
+          "raw_version": "0.28.1"
+        },
+        "query_status": "no_match",
+        "pointer": "/nodes/13"
+      },
+      {
+        "id": "c91ee8789c8ea7f78833cd173055b4df8bab74db08d7a43a91dc826c08eb98bc",
+        "local_id": "14",
+        "label": "idna@3.20.0",
+        "coordinate": {
+          "ecosystem": "PyPI",
+          "name": "idna",
+          "version": "3.20.0",
+          "raw_version": "3.20.0"
+        },
+        "query_status": "no_match",
+        "pointer": "/nodes/14"
+      },
+      {
+        "id": "184d5edcc5907c3d6e3580c7c29f7602dfe167974da63f10f8856f910d7c3e87",
+        "local_id": "15",
+        "label": "jsonpatch@1.35.0",
+        "coordinate": {
+          "ecosystem": "PyPI",
+          "name": "jsonpatch",
+          "version": "1.35.0",
+          "raw_version": "1.35.0"
+        },
+        "query_status": "no_match",
+        "pointer": "/nodes/15"
+      },
+      {
+        "id": "e8a4c548e0fc9593df0b890c315aa32163407ff2ac74ffc488d2d917c2bdc494",
+        "local_id": "16",
+        "label": "jsonpointer@3.2.1",
+        "coordinate": {
+          "ecosystem": "PyPI",
+          "name": "jsonpointer",
+          "version": "3.2.1",
+          "raw_version": "3.2.1"
+        },
+        "query_status": "no_match",
+        "pointer": "/nodes/16"
+      },
+      {
+        "id": "18a28cb60adf4f4dc07b7427105801bebf3bb8582e61f94ca542bde5d1ff2146",
+        "local_id": "17",
+        "label": "langchain@0.1.20",
+        "coordinate": {
+          "ecosystem": "PyPI",
+          "name": "langchain",
+          "version": "0.1.20",
+          "raw_version": "0.1.20"
+        },
+        "query_status": "matched",
+        "pointer": "/nodes/17"
+      },
+      {
+        "id": "119f415f696b1199d038599ed9695c77668f871aafd1c6cea080090cdfcaa348",
+        "local_id": "18",
+        "label": "langchain-community@0.0.38",
+        "coordinate": {
+          "ecosystem": "PyPI",
+          "name": "langchain-community",
+          "version": "0.0.38",
+          "raw_version": "0.0.38"
+        },
+        "query_status": "matched",
+        "pointer": "/nodes/18"
+      },
+      {
+        "id": "278b2ef9c00a7805865c7d08c04788b5ef588a27ba4d9e131fcc13a8d0d4d7e5",
+        "local_id": "19",
+        "label": "langchain-core@0.1.53",
+        "coordinate": {
+          "ecosystem": "PyPI",
+          "name": "langchain-core",
+          "version": "0.1.53",
+          "raw_version": "0.1.53"
+        },
+        "query_status": "matched",
+        "pointer": "/nodes/19"
+      },
+      {
+        "id": "1df9bbf919b378c8ad36f5f2acd305fc929207c4451e3f914108aac94551d42a",
+        "local_id": "20",
+        "label": "langchain-text-splitters@0.0.2",
+        "coordinate": {
+          "ecosystem": "PyPI",
+          "name": "langchain-text-splitters",
+          "version": "0.0.2",
+          "raw_version": "0.0.2"
+        },
+        "query_status": "matched",
+        "pointer": "/nodes/20"
+      },
+      {
+        "id": "88b6316b4b1d0c5312aca12895bb13b0bbad48453f8e404d2643828d57407a53",
+        "local_id": "21",
+        "label": "langsmith@0.1.147",
+        "coordinate": {
+          "ecosystem": "PyPI",
+          "name": "langsmith",
+          "version": "0.1.147",
+          "raw_version": "0.1.147"
+        },
+        "query_status": "matched",
+        "pointer": "/nodes/21"
+      },
+      {
+        "id": "e3f5e0b29edf366bb07f668d1fba335a11efce2e4a47e31ab0c2d7dce3180a51",
+        "local_id": "22",
+        "label": "marshmallow@3.26.2",
+        "coordinate": {
+          "ecosystem": "PyPI",
+          "name": "marshmallow",
+          "version": "3.26.2",
+          "raw_version": "3.26.2"
+        },
+        "query_status": "no_match",
+        "pointer": "/nodes/22"
+      },
+      {
+        "id": "5b6a6f68ff5d60ad6dd3a36afbc01a16f473bcb95f89b30ad4910daf1a15b787",
+        "local_id": "23",
+        "label": "multidict@7.1.0",
+        "coordinate": {
+          "ecosystem": "PyPI",
+          "name": "multidict",
+          "version": "7.1.0",
+          "raw_version": "7.1.0"
+        },
+        "query_status": "no_match",
+        "pointer": "/nodes/23"
+      },
+      {
+        "id": "249a7b80211da5c9e7c0d78eaa74d01721ee287bd6efc69f53588eb11555d184",
+        "local_id": "24",
+        "label": "mypy-extensions@1.1.0",
+        "coordinate": {
+          "ecosystem": "PyPI",
+          "name": "mypy-extensions",
+          "version": "1.1.0",
+          "raw_version": "1.1.0"
+        },
+        "query_status": "no_match",
+        "pointer": "/nodes/24"
+      },
+      {
+        "id": "2f6568fa1144710d034800d9006dfb16846d0548b8f2165b699f26e22a0bb740",
+        "local_id": "25",
+        "label": "numpy@1.26.4",
+        "coordinate": {
+          "ecosystem": "PyPI",
+          "name": "numpy",
+          "version": "1.26.4",
+          "raw_version": "1.26.4"
+        },
+        "query_status": "no_match",
+        "pointer": "/nodes/25"
+      },
+      {
+        "id": "028b1c9b257a099b1433a77f618358076f48b791e187cb500746562583541128",
+        "local_id": "26",
+        "label": "orjson@3.13.0",
+        "coordinate": {
+          "ecosystem": "PyPI",
+          "name": "orjson",
+          "version": "3.13.0",
+          "raw_version": "3.13.0"
+        },
+        "query_status": "no_match",
+        "pointer": "/nodes/26"
+      },
+      {
+        "id": "03c361a91661af794d2af90ab7e7c652e2ee1f8c961fcd282815013cb41269fc",
+        "local_id": "27",
+        "label": "packaging@23.2.0",
+        "coordinate": {
+          "ecosystem": "PyPI",
+          "name": "packaging",
+          "version": "23.2.0",
+          "raw_version": "23.2.0"
+        },
+        "query_status": "no_match",
+        "pointer": "/nodes/27"
+      },
+      {
+        "id": "d1fe5ab6ac19b519f4b9c684d0b00d257a722f26deacee7bb70cc88e4413a1c9",
+        "local_id": "28",
+        "label": "propcache@0.5.4",
+        "coordinate": {
+          "ecosystem": "PyPI",
+          "name": "propcache",
+          "version": "0.5.4",
+          "raw_version": "0.5.4"
+        },
+        "query_status": "no_match",
+        "pointer": "/nodes/28"
+      },
+      {
+        "id": "40a4664a79a91b107d056ef037b5b1c8ed2007ac4f7640f10987fcab59d75203",
+        "local_id": "29",
+        "label": "pydantic@2.14.1",
+        "coordinate": {
+          "ecosystem": "PyPI",
+          "name": "pydantic",
+          "version": "2.14.1",
+          "raw_version": "2.14.1"
+        },
+        "query_status": "no_match",
+        "pointer": "/nodes/29"
+      },
+      {
+        "id": "b68a6b02cb293fcf978ba5aff684cc98b12a23af6477ffec060845cd84915e24",
+        "local_id": "30",
+        "label": "pydantic-core@2.50.1",
+        "coordinate": {
+          "ecosystem": "PyPI",
+          "name": "pydantic-core",
+          "version": "2.50.1",
+          "raw_version": "2.50.1"
+        },
+        "query_status": "no_match",
+        "pointer": "/nodes/30"
+      },
+      {
+        "id": "2ec8a272341e2f6969c53c1830f7bbe4a5c70f18915b6e21a9e1600e16b2e583",
+        "local_id": "31",
+        "label": "pyyaml@6.0.3",
+        "coordinate": {
+          "ecosystem": "PyPI",
+          "name": "pyyaml",
+          "version": "6.0.3",
+          "raw_version": "6.0.3"
+        },
+        "query_status": "no_match",
+        "pointer": "/nodes/31"
+      },
+      {
+        "id": "cd80c4fcdef6af50313d5eb76e1f9d8d9cd4f42a34d2ee2b0f8cfa5797be0132",
+        "local_id": "32",
+        "label": "requests@2.34.2",
+        "coordinate": {
+          "ecosystem": "PyPI",
+          "name": "requests",
+          "version": "2.34.2",
+          "raw_version": "2.34.2"
+        },
+        "query_status": "no_match",
+        "pointer": "/nodes/32"
+      },
+      {
+        "id": "9b982b480a331a664aae3b1073354ea68ca9ebfe54730124aa4d7d38a31b3284",
+        "local_id": "33",
+        "label": "requests-toolbelt@1.0.0",
+        "coordinate": {
+          "ecosystem": "PyPI",
+          "name": "requests-toolbelt",
+          "version": "1.0.0",
+          "raw_version": "1.0.0"
+        },
+        "query_status": "no_match",
+        "pointer": "/nodes/33"
+      },
+      {
+        "id": "aca443a26b5db977423f08509ca3258e929e0c195c48667eb63d2e012a618ccf",
+        "local_id": "34",
+        "label": "sqlalchemy@2.1.4",
+        "coordinate": {
+          "ecosystem": "PyPI",
+          "name": "sqlalchemy",
+          "version": "2.1.4",
+          "raw_version": "2.1.4"
+        },
+        "query_status": "no_match",
+        "pointer": "/nodes/34"
+      },
+      {
+        "id": "df29660761d17cfdcc8bc3677f45a9158581b670dd1f5252ba31ae6ac5999721",
+        "local_id": "35",
+        "label": "tenacity@8.5.0",
+        "coordinate": {
+          "ecosystem": "PyPI",
+          "name": "tenacity",
+          "version": "8.5.0",
+          "raw_version": "8.5.0"
+        },
+        "query_status": "no_match",
+        "pointer": "/nodes/35"
+      },
+      {
+        "id": "a74cc8400598c91bdc586cffa6fb6238153bb94f6a59b9781e729b60733c8a06",
+        "local_id": "36",
+        "label": "typing-extensions@4.16.0",
+        "coordinate": {
+          "ecosystem": "PyPI",
+          "name": "typing-extensions",
+          "version": "4.16.0",
+          "raw_version": "4.16.0"
+        },
+        "query_status": "no_match",
+        "pointer": "/nodes/36"
+      },
+      {
+        "id": "84c8ba8854ffd23b05653fdc70056b2655b76fe10ff9db88c79f98fa29ad10ef",
+        "local_id": "37",
+        "label": "typing-inspect@0.9.0",
+        "coordinate": {
+          "ecosystem": "PyPI",
+          "name": "typing-inspect",
+          "version": "0.9.0",
+          "raw_version": "0.9.0"
+        },
+        "query_status": "no_match",
+        "pointer": "/nodes/37"
+      },
+      {
+        "id": "8552a2fdfb5c47363875c0f0c267cb834a148e414ae565a92277edf94f2a07e4",
+        "local_id": "38",
+        "label": "typing-inspection@0.4.4",
+        "coordinate": {
+          "ecosystem": "PyPI",
+          "name": "typing-inspection",
+          "version": "0.4.4",
+          "raw_version": "0.4.4"
+        },
+        "query_status": "no_match",
+        "pointer": "/nodes/38"
+      },
+      {
+        "id": "d9174adb9ddaf4447f375ddb5e70f64089b9191515d0bddf214935806f5b5885",
+        "local_id": "39",
+        "label": "urllib3@2.8.0",
+        "coordinate": {
+          "ecosystem": "PyPI",
+          "name": "urllib3",
+          "version": "2.8.0",
+          "raw_version": "2.8.0"
+        },
+        "query_status": "no_match",
+        "pointer": "/nodes/39"
+      },
+      {
+        "id": "d14f99b6e2822250004b3581ef734ce585b97a97bd8585b936a2eff128948a53",
+        "local_id": "40",
+        "label": "yarl@1.25.1",
+        "coordinate": {
+          "ecosystem": "PyPI",
+          "name": "yarl",
+          "version": "1.25.1",
+          "raw_version": "1.25.1"
+        },
+        "query_status": "no_match",
+        "pointer": "/nodes/40"
+      }
+    ],
+    "edges": [
+      {
+        "id": "c02f7ce5f017046998320d0871d25133812ba0ff6a866f8d00d26f3f6db5edfd",
+        "source": "f826fca6974f35750a28e49b925e8d24b1fbe5e35cac627ea61115a3df41b520",
+        "target": "18a28cb60adf4f4dc07b7427105801bebf3bb8582e61f94ca542bde5d1ff2146",
+        "requirement": ">=0.1.5,<0.2.0",
+        "pointer": "/edges/0"
+      },
+      {
+        "id": "64c5988aa3a4e1ee52dccdb51caf3ad11375a74d08648981fb63d26a0b40f8e5",
+        "source": "f826fca6974f35750a28e49b925e8d24b1fbe5e35cac627ea61115a3df41b520",
+        "target": "278b2ef9c00a7805865c7d08c04788b5ef588a27ba4d9e131fcc13a8d0d4d7e5",
+        "requirement": ">=0.1.16,<0.2.0",
+        "pointer": "/edges/1"
+      },
+      {
+        "id": "9d2ef9dcb58fce37802729f620503c9c3799c01212cbf961bc2bbcbda52c7231",
+        "source": "8ad0bede9ff5d52958a71610265449f8afacd8ca65227f42a82f478814e119c9",
+        "target": "1ed3cee3424f66d4bd258c5fb59a67034a894df8afbb49508622d344ab7ee618",
+        "requirement": ">=2.5.0",
+        "pointer": "/edges/2"
+      },
+      {
+        "id": "3dc952a8f14f2cd33ddc086d9593d2cd56cee0798ff849ad3bd114bd95acb06f",
+        "source": "8ad0bede9ff5d52958a71610265449f8afacd8ca65227f42a82f478814e119c9",
+        "target": "a7fdb5d15099520a172a53e6d862c3e4268bef72e23903bf57fc05ffa3ca2511",
+        "requirement": ">=1.4.0",
+        "pointer": "/edges/3"
+      },
+      {
+        "id": "8339c57f1005b2bd11f04ca5a52d6f54049c9a4f3610f48d1498309c1f8304bc",
+        "source": "8ad0bede9ff5d52958a71610265449f8afacd8ca65227f42a82f478814e119c9",
+        "target": "1104f329396e922f1ec9734cc8cbf1c14450a7dc9cae1d5d06a2e37a87e03bd7",
+        "requirement": ">=17.3.0",
+        "pointer": "/edges/4"
+      },
+      {
+        "id": "507417ed9657bff2ed32b0461fbd028374b088f9910f60eefb8a66bb66fe783e",
+        "source": "8ad0bede9ff5d52958a71610265449f8afacd8ca65227f42a82f478814e119c9",
+        "target": "741a315d83c79824da4fa8b76a75e8419a8a458be544d11d0b6bbb7874f097fe",
+        "requirement": ">=1.1.1",
+        "pointer": "/edges/5"
+      },
+      {
+        "id": "dc4b8c934127249b451bfdaf60846c40ea49f195d21261cd8072d77812527ddf",
+        "source": "8ad0bede9ff5d52958a71610265449f8afacd8ca65227f42a82f478814e119c9",
+        "target": "5b6a6f68ff5d60ad6dd3a36afbc01a16f473bcb95f89b30ad4910daf1a15b787",
+        "requirement": "<8.0,>=4.5",
+        "pointer": "/edges/6"
+      },
+      {
+        "id": "0970655836839800783c84aed491c62804e52833444a7e8cdee1fd3cea75220c",
+        "source": "8ad0bede9ff5d52958a71610265449f8afacd8ca65227f42a82f478814e119c9",
+        "target": "d1fe5ab6ac19b519f4b9c684d0b00d257a722f26deacee7bb70cc88e4413a1c9",
+        "requirement": ">=0.2.0",
+        "pointer": "/edges/7"
+      },
+      {
+        "id": "de5765d584837a223e38118a93fa68e06fe7f933d4fda28e793340be813e9a81",
+        "source": "8ad0bede9ff5d52958a71610265449f8afacd8ca65227f42a82f478814e119c9",
+        "target": "d14f99b6e2822250004b3581ef734ce585b97a97bd8585b936a2eff128948a53",
+        "requirement": "<2.0,>=1.25.1",
+        "pointer": "/edges/8"
+      },
+      {
+        "id": "cfbee3dabfbda27e3d76c76426d29e2d2f9c30f05aa2382018526e1eeb07cb29",
+        "source": "a7fdb5d15099520a172a53e6d862c3e4268bef72e23903bf57fc05ffa3ca2511",
+        "target": "741a315d83c79824da4fa8b76a75e8419a8a458be544d11d0b6bbb7874f097fe",
+        "requirement": ">=1.1.0",
+        "pointer": "/edges/9"
+      },
+      {
+        "id": "fda9ac16bc5ccae0bdc179dcab2886b7c42561f8692d2f137393c4fdca83f75b",
+        "source": "f9b90d66ac529516da0f94a291c4d4613c91315b99867e2d8a593938b770b706",
+        "target": "c91ee8789c8ea7f78833cd173055b4df8bab74db08d7a43a91dc826c08eb98bc",
+        "requirement": ">=2.8",
+        "pointer": "/edges/10"
+      },
+      {
+        "id": "403fee7a17d15d10cd3917ab19d27c764e3fb47ee4bfda66c8b3c5a6e94c53dd",
+        "source": "f9b90d66ac529516da0f94a291c4d4613c91315b99867e2d8a593938b770b706",
+        "target": "a74cc8400598c91bdc586cffa6fb6238153bb94f6a59b9781e729b60733c8a06",
+        "requirement": ">=4.16.0",
+        "pointer": "/edges/11"
+      },
+      {
+        "id": "b632a4e9d497079b3e829dc6d0dcbbe6ec7e6f2f4b5ef2284e0c37df74b5aef0",
+        "source": "933eee9518d72953006080efab6263e96a7f5f8cbe67c19314db3556f5640116",
+        "target": "e3f5e0b29edf366bb07f668d1fba335a11efce2e4a47e31ab0c2d7dce3180a51",
+        "requirement": ">=3.18.0,<4.0.0",
+        "pointer": "/edges/12"
+      },
+      {
+        "id": "a58ab1017b0646a24f81ddf264e66dea0ae4d75fac6ac95acc97750cfa0b7dcf",
+        "source": "933eee9518d72953006080efab6263e96a7f5f8cbe67c19314db3556f5640116",
+        "target": "84c8ba8854ffd23b05653fdc70056b2655b76fe10ff9db88c79f98fa29ad10ef",
+        "requirement": ">=0.4.0,<1",
+        "pointer": "/edges/13"
+      },
+      {
+        "id": "1b8356725e1a148aa2b9604db1a161294509639b63c4332387b093aa0d9e280a",
+        "source": "5a28cb6239f908de2146df6af581a39dee07b13a0e1b2a961938766900fbfc4c",
+        "target": "bef03bb7da8341240d264e8f560f1c9eb76b17ac1fb20e91bcdfa08001b49f1a",
+        "requirement": "",
+        "pointer": "/edges/14"
+      },
+      {
+        "id": "02eb9ce2ef9be04fc17a5bee45c0b298b7e105720e711c1fe38b71a0cd24cb72",
+        "source": "5a28cb6239f908de2146df6af581a39dee07b13a0e1b2a961938766900fbfc4c",
+        "target": "46d0d467a2046eaa3df20244a6ac8db303aa1f531080f516dbad7b6bb78234c3",
+        "requirement": ">=0.16",
+        "pointer": "/edges/15"
+      },
+      {
+        "id": "a976dd2660b19c3d4a6fd1274702448051aa956c638f1e2b0ada3470bc8d4ddf",
+        "source": "d0b1f3d440806762f558a239c5ca4c3f0d91cb0071c1e206132bf7e7a9569eaf",
+        "target": "f9b90d66ac529516da0f94a291c4d4613c91315b99867e2d8a593938b770b706",
+        "requirement": "",
+        "pointer": "/edges/16"
+      },
+      {
+        "id": "6936a78a174bf0a65e65c7f8a4be9fd4fdb949a6b1d829143c3ce9b35fc7f12f",
+        "source": "d0b1f3d440806762f558a239c5ca4c3f0d91cb0071c1e206132bf7e7a9569eaf",
+        "target": "bef03bb7da8341240d264e8f560f1c9eb76b17ac1fb20e91bcdfa08001b49f1a",
+        "requirement": "",
+        "pointer": "/edges/17"
+      },
+      {
+        "id": "f6df2f73db534b9bc6c9224cfe59e4cb55b096915ee58f0d992f7b764cf0c140",
+        "source": "d0b1f3d440806762f558a239c5ca4c3f0d91cb0071c1e206132bf7e7a9569eaf",
+        "target": "5a28cb6239f908de2146df6af581a39dee07b13a0e1b2a961938766900fbfc4c",
+        "requirement": "==1.*",
+        "pointer": "/edges/18"
+      },
+      {
+        "id": "0bf8281cd910ebaab558024d3085dcb95bcf40978c474010b92347bc9503269c",
+        "source": "d0b1f3d440806762f558a239c5ca4c3f0d91cb0071c1e206132bf7e7a9569eaf",
+        "target": "c91ee8789c8ea7f78833cd173055b4df8bab74db08d7a43a91dc826c08eb98bc",
+        "requirement": "",
+        "pointer": "/edges/19"
+      },
+      {
+        "id": "bdcc3a3a9916e816df3e6a24c167e913080f980f15ebac35612fa28063455178",
+        "source": "184d5edcc5907c3d6e3580c7c29f7602dfe167974da63f10f8856f910d7c3e87",
+        "target": "e8a4c548e0fc9593df0b890c315aa32163407ff2ac74ffc488d2d917c2bdc494",
+        "requirement": ">=3.2",
+        "pointer": "/edges/20"
+      },
+      {
+        "id": "4835bc48b765cb192864731a18f87404836e8ad817e00e5bf5422404eaab19ae",
+        "source": "18a28cb60adf4f4dc07b7427105801bebf3bb8582e61f94ca542bde5d1ff2146",
+        "target": "8ad0bede9ff5d52958a71610265449f8afacd8ca65227f42a82f478814e119c9",
+        "requirement": ">=3.8.3,<4.0.0",
+        "pointer": "/edges/21"
+      },
+      {
+        "id": "583bfd8f75f233a4d8b32e0c90a6c9fa23aa8ca99b823a4e0443e37e2a5acd23",
+        "source": "18a28cb60adf4f4dc07b7427105801bebf3bb8582e61f94ca542bde5d1ff2146",
+        "target": "933eee9518d72953006080efab6263e96a7f5f8cbe67c19314db3556f5640116",
+        "requirement": ">=0.5.7,<0.7",
+        "pointer": "/edges/22"
+      },
+      {
+        "id": "64bfad61d82d0a7197574fad8d9fafd8adb50206f165aff9f5a205edcf9c6020",
+        "source": "18a28cb60adf4f4dc07b7427105801bebf3bb8582e61f94ca542bde5d1ff2146",
+        "target": "119f415f696b1199d038599ed9695c77668f871aafd1c6cea080090cdfcaa348",
+        "requirement": ">=0.0.38,<0.1",
+        "pointer": "/edges/23"
+      },
+      {
+        "id": "13963bb6ecdf33070a3bad35153dc215f99cc3fb09bd1f94c649543d20dd87b6",
+        "source": "18a28cb60adf4f4dc07b7427105801bebf3bb8582e61f94ca542bde5d1ff2146",
+        "target": "278b2ef9c00a7805865c7d08c04788b5ef588a27ba4d9e131fcc13a8d0d4d7e5",
+        "requirement": ">=0.1.52,<0.2.0",
+        "pointer": "/edges/24"
+      },
+      {
+        "id": "f7b4a914ed187b0256f57b59702746ae18d87983b05b9a1b1e67e944dc04ff59",
+        "source": "18a28cb60adf4f4dc07b7427105801bebf3bb8582e61f94ca542bde5d1ff2146",
+        "target": "1df9bbf919b378c8ad36f5f2acd305fc929207c4451e3f914108aac94551d42a",
+        "requirement": ">=0.0.1,<0.1",
+        "pointer": "/edges/25"
+      },
+      {
+        "id": "afc53d4ae4705a35c9e5190a08d6b31f4d9ae6629505f22f701ec45f3aa92afa",
+        "source": "18a28cb60adf4f4dc07b7427105801bebf3bb8582e61f94ca542bde5d1ff2146",
+        "target": "88b6316b4b1d0c5312aca12895bb13b0bbad48453f8e404d2643828d57407a53",
+        "requirement": ">=0.1.17,<0.2.0",
+        "pointer": "/edges/26"
+      },
+      {
+        "id": "498e28fc0117fe051bc4bd03f209854bc85f4ffdaff122a4ac9d3eddbcfd239b",
+        "source": "18a28cb60adf4f4dc07b7427105801bebf3bb8582e61f94ca542bde5d1ff2146",
+        "target": "2f6568fa1144710d034800d9006dfb16846d0548b8f2165b699f26e22a0bb740",
+        "requirement": ">=1,<2",
+        "pointer": "/edges/27"
+      },
+      {
+        "id": "28279d28a8f3db0781132fb2fefff1e5ee0806ead39501ce7a1c13dd266f0dff",
+        "source": "18a28cb60adf4f4dc07b7427105801bebf3bb8582e61f94ca542bde5d1ff2146",
+        "target": "40a4664a79a91b107d056ef037b5b1c8ed2007ac4f7640f10987fcab59d75203",
+        "requirement": ">=1,<3",
+        "pointer": "/edges/28"
+      },
+      {
+        "id": "a609ecea700dfa658b0db1114bf2139548fabb7c40d8ed53827f4ffb558a8ec9",
+        "source": "18a28cb60adf4f4dc07b7427105801bebf3bb8582e61f94ca542bde5d1ff2146",
+        "target": "2ec8a272341e2f6969c53c1830f7bbe4a5c70f18915b6e21a9e1600e16b2e583",
+        "requirement": ">=5.3",
+        "pointer": "/edges/29"
+      },
+      {
+        "id": "86f3868519d8a1d95347837d83400d0b31b1d7a5a0d93a9d5d39766bb9b9ee2b",
+        "source": "18a28cb60adf4f4dc07b7427105801bebf3bb8582e61f94ca542bde5d1ff2146",
+        "target": "cd80c4fcdef6af50313d5eb76e1f9d8d9cd4f42a34d2ee2b0f8cfa5797be0132",
+        "requirement": ">=2,<3",
+        "pointer": "/edges/30"
+      },
+      {
+        "id": "4e6b083bd4f6ca057c47c292523c76cc59559e120fd38778f33b72d942646758",
+        "source": "18a28cb60adf4f4dc07b7427105801bebf3bb8582e61f94ca542bde5d1ff2146",
+        "target": "aca443a26b5db977423f08509ca3258e929e0c195c48667eb63d2e012a618ccf",
+        "requirement": ">=1.4,<3",
+        "pointer": "/edges/31"
+      },
+      {
+        "id": "323612572113d10eb035f631c0b29123303773858aa2a0d2e13d2770d44d6248",
+        "source": "18a28cb60adf4f4dc07b7427105801bebf3bb8582e61f94ca542bde5d1ff2146",
+        "target": "df29660761d17cfdcc8bc3677f45a9158581b670dd1f5252ba31ae6ac5999721",
+        "requirement": ">=8.1.0,<9.0.0",
+        "pointer": "/edges/32"
+      },
+      {
+        "id": "f6e46da082d7bcace57d98fa75e61b788a48a5f5dd4eb14fb65bb50d758bf959",
+        "source": "119f415f696b1199d038599ed9695c77668f871aafd1c6cea080090cdfcaa348",
+        "target": "8ad0bede9ff5d52958a71610265449f8afacd8ca65227f42a82f478814e119c9",
+        "requirement": ">=3.8.3,<4.0.0",
+        "pointer": "/edges/33"
+      },
+      {
+        "id": "9a3f05755be3227e1563290b8512a1aa528dd202708d1cb051ccb1774b4f6042",
+        "source": "119f415f696b1199d038599ed9695c77668f871aafd1c6cea080090cdfcaa348",
+        "target": "933eee9518d72953006080efab6263e96a7f5f8cbe67c19314db3556f5640116",
+        "requirement": ">=0.5.7,<0.7",
+        "pointer": "/edges/34"
+      },
+      {
+        "id": "02e17d5a1dbbd02da880c39a957d5bcc2fdfd48f4e44d8c61d6ca0ae58ef87f5",
+        "source": "119f415f696b1199d038599ed9695c77668f871aafd1c6cea080090cdfcaa348",
+        "target": "278b2ef9c00a7805865c7d08c04788b5ef588a27ba4d9e131fcc13a8d0d4d7e5",
+        "requirement": ">=0.1.52,<0.2.0",
+        "pointer": "/edges/35"
+      },
+      {
+        "id": "2ff8c8c7aa9794dffa37aba1b0af8357832a86959ecc90808d742914b77670fc",
+        "source": "119f415f696b1199d038599ed9695c77668f871aafd1c6cea080090cdfcaa348",
+        "target": "88b6316b4b1d0c5312aca12895bb13b0bbad48453f8e404d2643828d57407a53",
+        "requirement": ">=0.1.0,<0.2.0",
+        "pointer": "/edges/36"
+      },
+      {
+        "id": "01e70dc8e4b12396885cde16de0e4656d439169c1597a48162f099e86629b555",
+        "source": "119f415f696b1199d038599ed9695c77668f871aafd1c6cea080090cdfcaa348",
+        "target": "2f6568fa1144710d034800d9006dfb16846d0548b8f2165b699f26e22a0bb740",
+        "requirement": ">=1,<2",
+        "pointer": "/edges/37"
+      },
+      {
+        "id": "bfd40af0a15e93f97942f675248d4a342ced2ffe81fa16c64e2a05e4ad0dbb0d",
+        "source": "119f415f696b1199d038599ed9695c77668f871aafd1c6cea080090cdfcaa348",
+        "target": "2ec8a272341e2f6969c53c1830f7bbe4a5c70f18915b6e21a9e1600e16b2e583",
+        "requirement": ">=5.3",
+        "pointer": "/edges/38"
+      },
+      {
+        "id": "5ca54b915d57d209da61b052d7ed5e4dd40ec4366bf607db6cb20cbd1f8bd2b3",
+        "source": "119f415f696b1199d038599ed9695c77668f871aafd1c6cea080090cdfcaa348",
+        "target": "cd80c4fcdef6af50313d5eb76e1f9d8d9cd4f42a34d2ee2b0f8cfa5797be0132",
+        "requirement": ">=2,<3",
+        "pointer": "/edges/39"
+      },
+      {
+        "id": "dd1df95ea9d0380d4551d9602d2b20fe4517c224111b3674505e248f051a0440",
+        "source": "119f415f696b1199d038599ed9695c77668f871aafd1c6cea080090cdfcaa348",
+        "target": "aca443a26b5db977423f08509ca3258e929e0c195c48667eb63d2e012a618ccf",
+        "requirement": ">=1.4,<3",
+        "pointer": "/edges/40"
+      },
+      {
+        "id": "0cbfff72c40b178800b3b3a9e1754b3d2869494511f41d6e5a9933413014d508",
+        "source": "119f415f696b1199d038599ed9695c77668f871aafd1c6cea080090cdfcaa348",
+        "target": "df29660761d17cfdcc8bc3677f45a9158581b670dd1f5252ba31ae6ac5999721",
+        "requirement": ">=8.1.0,<9.0.0",
+        "pointer": "/edges/41"
+      },
+      {
+        "id": "c771671f309331ab9bc7add0cfc2e87a7b4b17d9a65f8a74073c95c638efc6ad",
+        "source": "278b2ef9c00a7805865c7d08c04788b5ef588a27ba4d9e131fcc13a8d0d4d7e5",
+        "target": "184d5edcc5907c3d6e3580c7c29f7602dfe167974da63f10f8856f910d7c3e87",
+        "requirement": ">=1.33,<2.0",
+        "pointer": "/edges/42"
+      },
+      {
+        "id": "0a98a830c1d04b6b1e73eda6a1cee0d3297adf071f95bf155783a9c68b486ca8",
+        "source": "278b2ef9c00a7805865c7d08c04788b5ef588a27ba4d9e131fcc13a8d0d4d7e5",
+        "target": "88b6316b4b1d0c5312aca12895bb13b0bbad48453f8e404d2643828d57407a53",
+        "requirement": ">=0.1.0,<0.2.0",
+        "pointer": "/edges/43"
+      },
+      {
+        "id": "eb2374e15e9f386ce1fea619bfa0b43bfa23ed41d4a4dee3d818127e40b2d8a0",
+        "source": "278b2ef9c00a7805865c7d08c04788b5ef588a27ba4d9e131fcc13a8d0d4d7e5",
+        "target": "03c361a91661af794d2af90ab7e7c652e2ee1f8c961fcd282815013cb41269fc",
+        "requirement": ">=23.2,<24.0",
+        "pointer": "/edges/44"
+      },
+      {
+        "id": "d14c041914001ce51c972c1d8a4b7f7e62e54295b43252804bb9062305903aa0",
+        "source": "278b2ef9c00a7805865c7d08c04788b5ef588a27ba4d9e131fcc13a8d0d4d7e5",
+        "target": "40a4664a79a91b107d056ef037b5b1c8ed2007ac4f7640f10987fcab59d75203",
+        "requirement": ">=1,<3",
+        "pointer": "/edges/45"
+      },
+      {
+        "id": "2a7ab91dc20580f51352cd94099173ebbe490f336f6ebe3aa835403298cd51e9",
+        "source": "278b2ef9c00a7805865c7d08c04788b5ef588a27ba4d9e131fcc13a8d0d4d7e5",
+        "target": "2ec8a272341e2f6969c53c1830f7bbe4a5c70f18915b6e21a9e1600e16b2e583",
+        "requirement": ">=5.3",
+        "pointer": "/edges/46"
+      },
+      {
+        "id": "e47efa8d1aa27c8c9e43e1002cd7570585570de87bac47babc105c1424149341",
+        "source": "278b2ef9c00a7805865c7d08c04788b5ef588a27ba4d9e131fcc13a8d0d4d7e5",
+        "target": "df29660761d17cfdcc8bc3677f45a9158581b670dd1f5252ba31ae6ac5999721",
+        "requirement": ">=8.1.0,<9.0.0",
+        "pointer": "/edges/47"
+      },
+      {
+        "id": "edf6f8cd0fc6af61f607f4c23923b1bd813a1cf0f68b45d1550eb52522c9250a",
+        "source": "1df9bbf919b378c8ad36f5f2acd305fc929207c4451e3f914108aac94551d42a",
+        "target": "278b2ef9c00a7805865c7d08c04788b5ef588a27ba4d9e131fcc13a8d0d4d7e5",
+        "requirement": ">=0.1.28,<0.3",
+        "pointer": "/edges/48"
+      },
+      {
+        "id": "68ea60a85fca48b85808ce519145e10c8c8cdc934e1c1320be8c96dbe6ddc76e",
+        "source": "88b6316b4b1d0c5312aca12895bb13b0bbad48453f8e404d2643828d57407a53",
+        "target": "d0b1f3d440806762f558a239c5ca4c3f0d91cb0071c1e206132bf7e7a9569eaf",
+        "requirement": ">=0.23.0,<1",
+        "pointer": "/edges/49"
+      },
+      {
+        "id": "f5d1b3c470147053b2c0145c58706b03a1c5f8832326addc54ac2b636a67abbf",
+        "source": "88b6316b4b1d0c5312aca12895bb13b0bbad48453f8e404d2643828d57407a53",
+        "target": "028b1c9b257a099b1433a77f618358076f48b791e187cb500746562583541128",
+        "requirement": ">=3.9.14,<4.0.0",
+        "pointer": "/edges/50"
+      },
+      {
+        "id": "637b72c69861cc6d2311feba1f096ce28fa5ed25fd874ae18d57780be6e46a39",
+        "source": "88b6316b4b1d0c5312aca12895bb13b0bbad48453f8e404d2643828d57407a53",
+        "target": "40a4664a79a91b107d056ef037b5b1c8ed2007ac4f7640f10987fcab59d75203",
+        "requirement": ">=2.7.4,<3.0.0",
+        "pointer": "/edges/51"
+      },
+      {
+        "id": "1aa231af932d2e88aba3d4ad5699124753923deb58984ba0e0a4198ed61709f1",
+        "source": "88b6316b4b1d0c5312aca12895bb13b0bbad48453f8e404d2643828d57407a53",
+        "target": "cd80c4fcdef6af50313d5eb76e1f9d8d9cd4f42a34d2ee2b0f8cfa5797be0132",
+        "requirement": ">=2,<3",
+        "pointer": "/edges/52"
+      },
+      {
+        "id": "f4db9ac5ea1e0347f967194a5a65febeb34c5a1764e07dd82d4bfbcf70e3874a",
+        "source": "88b6316b4b1d0c5312aca12895bb13b0bbad48453f8e404d2643828d57407a53",
+        "target": "9b982b480a331a664aae3b1073354ea68ca9ebfe54730124aa4d7d38a31b3284",
+        "requirement": ">=1.0.0,<2.0.0",
+        "pointer": "/edges/53"
+      },
+      {
+        "id": "9edfc89d19ed558eecefa0951ff6d430afc7cb60fe699a1ed01d95ae42cce432",
+        "source": "e3f5e0b29edf366bb07f668d1fba335a11efce2e4a47e31ab0c2d7dce3180a51",
+        "target": "03c361a91661af794d2af90ab7e7c652e2ee1f8c961fcd282815013cb41269fc",
+        "requirement": ">=17.0",
+        "pointer": "/edges/54"
+      },
+      {
+        "id": "01f0d895556ed927cdb84c2f1cdb6a62cd8892f49aab399cd72d821b8128aad3",
+        "source": "40a4664a79a91b107d056ef037b5b1c8ed2007ac4f7640f10987fcab59d75203",
+        "target": "08302f63ed3d2cc2e43ed4ba3f86303269f5bf080e33aca22b1b2917a123d33f",
+        "requirement": ">=0.6.0",
+        "pointer": "/edges/55"
+      },
+      {
+        "id": "30b44c45738f0281dcff4879e7f5357db48294dc05119a5b698aa33958cb9af1",
+        "source": "40a4664a79a91b107d056ef037b5b1c8ed2007ac4f7640f10987fcab59d75203",
+        "target": "b68a6b02cb293fcf978ba5aff684cc98b12a23af6477ffec060845cd84915e24",
+        "requirement": "==2.50.1",
+        "pointer": "/edges/56"
+      },
+      {
+        "id": "6654bfbedc65db4c6fe2997986a73b33363483e96fd88bebd3df78d2b6454a0f",
+        "source": "40a4664a79a91b107d056ef037b5b1c8ed2007ac4f7640f10987fcab59d75203",
+        "target": "a74cc8400598c91bdc586cffa6fb6238153bb94f6a59b9781e729b60733c8a06",
+        "requirement": ">=4.16.0",
+        "pointer": "/edges/57"
+      },
+      {
+        "id": "3544e7a2b0b5c62d4bb3a33efed2d148d44187c5877b5899c9fc7a67d820d9a9",
+        "source": "40a4664a79a91b107d056ef037b5b1c8ed2007ac4f7640f10987fcab59d75203",
+        "target": "8552a2fdfb5c47363875c0f0c267cb834a148e414ae565a92277edf94f2a07e4",
+        "requirement": ">=0.4.4",
+        "pointer": "/edges/58"
+      },
+      {
+        "id": "ca59bce509414c150af494d11bda113cdcbaf431b8afee53a01b7f932201d227",
+        "source": "b68a6b02cb293fcf978ba5aff684cc98b12a23af6477ffec060845cd84915e24",
+        "target": "a74cc8400598c91bdc586cffa6fb6238153bb94f6a59b9781e729b60733c8a06",
+        "requirement": ">=4.16.0",
+        "pointer": "/edges/59"
+      },
+      {
+        "id": "57855e37c01d9d273baf16b75419126c0ddbbc4e2595b01ba0ab8b4fa0715dd9",
+        "source": "cd80c4fcdef6af50313d5eb76e1f9d8d9cd4f42a34d2ee2b0f8cfa5797be0132",
+        "target": "bef03bb7da8341240d264e8f560f1c9eb76b17ac1fb20e91bcdfa08001b49f1a",
+        "requirement": ">=2023.5.7",
+        "pointer": "/edges/60"
+      },
+      {
+        "id": "2ae83327873eafda64c50fe9adeeb284fd93be750f788c5cf254d2ef66ec502d",
+        "source": "cd80c4fcdef6af50313d5eb76e1f9d8d9cd4f42a34d2ee2b0f8cfa5797be0132",
+        "target": "26024647d297bb5a3d6efb632f138cddeaf28e133f6fe979420b3c73d4338e2a",
+        "requirement": "<4,>=2",
+        "pointer": "/edges/61"
+      },
+      {
+        "id": "3670c9b7fe0879a6142857ba6169d0fa2c949b4c57d4b4d094af212c1b207fa8",
+        "source": "cd80c4fcdef6af50313d5eb76e1f9d8d9cd4f42a34d2ee2b0f8cfa5797be0132",
+        "target": "c91ee8789c8ea7f78833cd173055b4df8bab74db08d7a43a91dc826c08eb98bc",
+        "requirement": "<4,>=2.5",
+        "pointer": "/edges/62"
+      },
+      {
+        "id": "1ce876c1bc30163fafe3a21b029e8b27d9e3251457c8cc72b02189add0bfa56e",
+        "source": "cd80c4fcdef6af50313d5eb76e1f9d8d9cd4f42a34d2ee2b0f8cfa5797be0132",
+        "target": "d9174adb9ddaf4447f375ddb5e70f64089b9191515d0bddf214935806f5b5885",
+        "requirement": "<3,>=1.26",
+        "pointer": "/edges/63"
+      },
+      {
+        "id": "ccd8e07b6d3c5ed118dfde876fc41f07ccef0aeb9c716892159c2fb17eab7a92",
+        "source": "9b982b480a331a664aae3b1073354ea68ca9ebfe54730124aa4d7d38a31b3284",
+        "target": "cd80c4fcdef6af50313d5eb76e1f9d8d9cd4f42a34d2ee2b0f8cfa5797be0132",
+        "requirement": "<3.0.0,>=2.0.1",
+        "pointer": "/edges/64"
+      },
+      {
+        "id": "3a7852d290dfd02ae84faecb39429ecde9c680094209820858b9014e6db1afda",
+        "source": "aca443a26b5db977423f08509ca3258e929e0c195c48667eb63d2e012a618ccf",
+        "target": "a74cc8400598c91bdc586cffa6fb6238153bb94f6a59b9781e729b60733c8a06",
+        "requirement": ">=4.6.0",
+        "pointer": "/edges/65"
+      },
+      {
+        "id": "ff937179eedf9e39b66664f613fa8662cab586900d88436d46fb3a7f3a32849a",
+        "source": "84c8ba8854ffd23b05653fdc70056b2655b76fe10ff9db88c79f98fa29ad10ef",
+        "target": "249a7b80211da5c9e7c0d78eaa74d01721ee287bd6efc69f53588eb11555d184",
+        "requirement": ">=0.3.0",
+        "pointer": "/edges/66"
+      },
+      {
+        "id": "1573188bc6dca085230f312921211a7386ee81e2082c1da9f50eb44a9b9ed893",
+        "source": "84c8ba8854ffd23b05653fdc70056b2655b76fe10ff9db88c79f98fa29ad10ef",
+        "target": "a74cc8400598c91bdc586cffa6fb6238153bb94f6a59b9781e729b60733c8a06",
+        "requirement": ">=3.7.4",
+        "pointer": "/edges/67"
+      },
+      {
+        "id": "5a86a6046885c38b7f28aa401b89465a638b1b07643191ffbdbc754793ea15d8",
+        "source": "8552a2fdfb5c47363875c0f0c267cb834a148e414ae565a92277edf94f2a07e4",
+        "target": "a74cc8400598c91bdc586cffa6fb6238153bb94f6a59b9781e729b60733c8a06",
+        "requirement": ">=4.15.0",
+        "pointer": "/edges/68"
+      },
+      {
+        "id": "b42c4bd32b75cd984ad6815ae74240941196ffa62f8c5f75bb67294ae2ca18f7",
+        "source": "d14f99b6e2822250004b3581ef734ce585b97a97bd8585b936a2eff128948a53",
+        "target": "c91ee8789c8ea7f78833cd173055b4df8bab74db08d7a43a91dc826c08eb98bc",
+        "requirement": ">=2.0",
+        "pointer": "/edges/69"
+      },
+      {
+        "id": "88f542ea8b3de75bfc300e14842199949d4a6b876ae110462600dbaf7b9ea544",
+        "source": "d14f99b6e2822250004b3581ef734ce585b97a97bd8585b936a2eff128948a53",
+        "target": "5b6a6f68ff5d60ad6dd3a36afbc01a16f473bcb95f89b30ad4910daf1a15b787",
+        "requirement": ">=4.0",
+        "pointer": "/edges/70"
+      },
+      {
+        "id": "c7e5d2f5046cfc5115e346f4c5a483e2ede4aeb40f352a58f45fb6aae0c7c8dd",
+        "source": "d14f99b6e2822250004b3581ef734ce585b97a97bd8585b936a2eff128948a53",
+        "target": "d1fe5ab6ac19b519f4b9c684d0b00d257a722f26deacee7bb70cc88e4413a1c9",
+        "requirement": ">=0.2.1",
+        "pointer": "/edges/71"
+      }
+    ],
+    "total_nodes": 41,
+    "hidden_nodes": 0,
+    "completeness": {
+      "state": "complete",
+      "root_known": true,
+      "unknown_dependencies": 0,
+      "issues": []
+    },
+    "run_id": "d443b36e-7d4f-4804-9c71-7afd9664a12d",
+    "observed_at": "2026-10-13T23:19:01.444851+00:00",
+    "query_observed_at": "2026-10-13T23:19:03.976559+00:00"
+  }
+}
