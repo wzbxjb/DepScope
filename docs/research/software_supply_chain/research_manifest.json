@@ -1,0 +1,52 @@
+{
+  "checked_on_client_date": "2026-10-13",
+  "status": "topic_research_only",
+  "source_files": {
+    "langchain_dependencies.json": {
+      "source": "https://api.deps.dev/v3/systems/pypi/packages/langchain/versions/0.1.0:dependencies",
+      "sha256": "fb58959a7e1a150231f399cc5c5a3a25bd4a8c5526249b22fa51d20b1700e82f",
+      "bytes": 7780
+    },
+    "langchain_version.json": {
+      "source": "https://api.deps.dev/v3/systems/pypi/packages/langchain/versions/0.1.0",
+      "sha256": "5ec96f3ae0f99de821bfd1f843c373ace026f2c338af96ee390f7c840fd275a5",
+      "bytes": 854
+    },
+    "osv_query.json": {
+      "source": "POST https://api.osv.dev/v1/querybatch request",
+      "sha256": "eef363e38a14a1bfb3515eb38337fd4c1bc45b61141c7fc57300654e585684df",
+      "bytes": 2698
+    },
+    "osv_result.json": {
+      "source": "POST https://api.osv.dev/v1/querybatch response",
+      "sha256": "2010e89a11d877b08aeb6a57291bcde7cbbb5c4b08e9df1c62fa5a1d13cbb5dc",
+      "bytes": 3065
+    },
+    "experimental_dependencies.json": {
+      "source": "https://api.deps.dev/v3/systems/pypi/packages/langchain-experimental/versions/0.0.50:dependencies",
+      "sha256": "8e2ae04ef8faea98dba510ec1ab0ef1326eae67ce556b670a55be97a2b343241",
+      "bytes": 9355
+    },
+    "osv_advisory.json": {
+      "source": "https://api.osv.dev/v1/vulns/GHSA-3hjh-jh2h-vrg6",
+      "sha256": "d4c22930385f433ff1b687051ba1597f9af4832cb09c26316fc8e33adeef44cc",
+      "bytes": 6763
+    }
+  },
+  "langchain_graph": {
+    "nodes": 34,
+    "edges": 61,
+    "nodes_with_advisory_matches": 4,
+    "response_has_next_page": false
+  },
+  "experimental_graph": {
+    "nodes": 41,
+    "edges": 72
+  },
+  "limitations": [
+    "Dependency graph is a deps.dev resolution snapshot, not an observed installed environment.",
+    "Advisory matches do not establish runtime exploitability.",
+    "Advisory record counts are not deduplicated vulnerability counts.",
+    "No project, deployed system or measured product performance exists yet."
+  ]
+}
