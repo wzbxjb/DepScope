@@ -1,0 +1,163 @@
+{
+  "answer": {
+    "body": "",
+    "citations": [
+      "d0fdcdd09179a05a769d90649a3a5d7f7c72f7d0b300706eccbb2e44fd316586",
+      "ba1701a3807ba931f4a34879710037a66b4a624570c1bf88793b532c6e8bed7f",
+      "f4c77eeed240c4e5e58595edd3e7a1fb80205a3e573043843e34b2b2d5803efd"
+    ],
+    "explanation_verified": false,
+    "facts": [
+      {
+        "kind": "query",
+        "source_ids": [
+          "d0fdcdd09179a05a769d90649a3a5d7f7c72f7d0b300706eccbb2e44fd316586"
+        ],
+        "value": {
+          "package": "datasets",
+          "snapshot_id": "0cc10fa856172c618eaaa41cf81b5a67597932af18f2b351c4f0de2901fc358c",
+          "status": "matched",
+          "version": "3.3.0"
+        }
+      },
+      {
+        "kind": "version",
+        "source_ids": [
+          "ba1701a3807ba931f4a34879710037a66b4a624570c1bf88793b532c6e8bed7f"
+        ],
+        "value": {
+          "instance_id": "4cebfa220199c370f763ce3cc31a2af9995acfe4b1f67a09387f4fb7420e7f4e",
+          "package": "datasets",
+          "snapshot_id": "0cc10fa856172c618eaaa41cf81b5a67597932af18f2b351c4f0de2901fc358c",
+          "version": "3.3.0"
+        }
+      },
+      {
+        "kind": "count",
+        "source_ids": [
+          "f4c77eeed240c4e5e58595edd3e7a1fb80205a3e573043843e34b2b2d5803efd"
+        ],
+        "value": {
+          "count": 36,
+          "metric": "instances",
+          "snapshot_id": "0cc10fa856172c618eaaa41cf81b5a67597932af18f2b351c4f0de2901fc358c"
+        }
+      },
+      {
+        "kind": "count",
+        "source_ids": [
+          "f4c77eeed240c4e5e58595edd3e7a1fb80205a3e573043843e34b2b2d5803efd"
+        ],
+        "value": {
+          "count": 2,
+          "metric": "query_coverage.active_findings",
+          "snapshot_id": "0cc10fa856172c618eaaa41cf81b5a67597932af18f2b351c4f0de2901fc358c"
+        }
+      }
+    ],
+    "index_id": "1dd34349ff18aa6b4c9e7bb7f139004a178522180edbd59a8bcaa257d8a24e9d",
+    "limitations": [
+      "No supplied evidence records a successful installation of datasets 3.3.0 on any deployed environment.",
+      "No supplied evidence records integration test execution or results for datasets 3.3.0.",
+      "The supplied evidence covers dependency snapshot composition and vulnerability matching only; it cannot support a conclusion about installation or test success.",
+      "The explanation is generated; citation location does not establish semantic support.",
+      "Some retrieved context was omitted by the fixed context limit."
+    ],
+    "method": "vector",
+    "model_id": "deepseek-flash",
+    "omitted_evidence_ids": [
+      "9b10062aa71c22f27fafac9ef0b5a843427ecf680198b4913ab3b82c29ae0aad",
+      "8ccdb0c06ad3057dc7540cb84068fdb23ac46c5548c2333dd11134c9e04a984b",
+      "350c2191ddb07108211ef0e908c1756465bed54e078d16e20e3c550193923f38",
+      "62a94c5dff1da4dc907d34aed228e082ed2f0668fbcafe97b117227a04e9c48d",
+      "5e16bc65c4b9da8021721d28c907f00f09e6451ebb5fa78f267874a0749a003c",
+      "90e5d86b0842bdaccd5dee9e91675bc4f5b0b2d68f98aa89f538c9d77bc0a76a",
+      "61a2c7017054a3e065d5d25d6f0537c020cad7ba5dd568526629dce6f363f9f9",
+      "e55e6a16a7c8bf9aa97e678a62aceaad973eb2826eb3b4eb47bc56fdf163d76d",
+      "c7ccc5f6101b028f6048a280a6fb3c319b1288ba1c0c5446c3f02a73cbc0f048",
+      "18b36f9ebbc68819894ee10fe524b14e8271fa147aae6f7335270db8fd2353f5",
+      "eb62f9d92260f79c96892e91ea4220d7eebcf3262729351d900628a3ac18ac3d",
+      "cad783f676a5dbcb3da72de7eaabe6aede256063131957c21d3021e821f5a7ad",
+      "c1b1ea1b72691a939e8afe74a2ed684e037fe530e3156961e9835299b20d35c3",
+      "c692b079ec6da05dec1879f51f6d8f1d74a1afdf53cb0428d59b40e8af238711",
+      "c452ce7eea649049732dbbbefc649f946800c6b71c04a395af8e8fc5053508ff",
+      "8be8cec32b6f78dfc34b0becdfd04acb67cf51af3e0ef41e952e6375c39341f1",
+      "50779911fa0d46bf493684ac89d920c0078d3d026fc172c00469e1e8f9cfdc64",
+      "bd524b561a10c68a34b6a16220e864974c71e7de28d8045c8cacd3db15085ae6",
+      "3e7ee17188e29ecceec4c14a5d6a829ce63365968e32920ec1a60a5f39e53806",
+      "6a8092a89dc6907f1500b2931646abd04797c1947554d2d6910b42920a3fcf92",
+      "ebdf9ff6292e7a545aebfc4ceebe10397c8a06054e32a1bf6845b2fec7db4a1c",
+      "6cf985ad737b26e711d482cea622fabdeecdd0edd40059a392959583ee0d3583",
+      "8dfe3da37c13ed28f05ca001daee79d8c783f969d8e3332c5923cd99a553dd6d",
+      "fc8f4bd2d0c39c65f0bedf1bf5f946e814645ab8277b8751d9c15546914d8003",
+      "6029159a2e24ff2253da6bc61932f47f4507e6bca6e304d8d57bb769575df254",
+      "2b2b0c2eb1821cb09477da807597067fe0d5f9c3af9408f075c515f19e384818",
+      "e358631148332c7340783fc0bdb8a8cf13bfd73da76aa3ae779208a7d9f026a7",
+      "d6e377fd6bc30c1c1b3e291a5134fbe1b933315a00184f445d31931f0ee81ec8",
+      "ebd345affc7aabb572c1385957bad2a4c42a4dffca1b611810e2520c675eed0a",
+      "10197ed6abb0606d88297b16d7634b69490e1ac0026afce331094ccdf95dac8e",
+      "233ac9afdcca286d69d56b2edb7fca10d58ac1fa9d01c97343006aaf09c44c48",
+      "e98741bcf2728b43d658588f8558ef55c4bdeac154b7f95ee83c9456320db6ea",
+      "f228037158f7cd12a99e1908d712997bca9c983a8843fd7c785aee873794c850",
+      "1641d29f94039815d8604a69958e525376cb1d6e8628ddc9826da533a1f51ec0",
+      "e72e1d10918af307cddd7410e8a5795fdfa9a29a8a0d05da217274cd0ab491a9",
+      "ab9ee88481d93c41511ed8df53070a7c1cfe14fd567524b1378e85a2a11b4dd6",
+      "e2b008764c230accde873ea08080adae800a134ec5e35e34d04bf473980831ea",
+      "49d9609210a2e4b66c94d61f387538a51f3e8883df9fe309be6e1cfb4f20bed8",
+      "0b8aef7fc362cb6808ad412e0207e3cae728afba043212adf25e3282d0b57a14",
+      "e8418aa6fb9a34985130c781ec16910c784fae3921b4a6979ae487e9f0fc9339"
+    ],
+    "raw_output_digest": "1ca64e50c63730ea9c253249b799f654c615b46031bfc363d2c4702a996f0ac0",
+    "rejection_reasons": [],
+    "request_id": "9443ce2b-9e91-407d-82bc-ad206b62c9b4",
+    "status": "answered",
+    "supplied_evidence_ids": [
+      "d0fdcdd09179a05a769d90649a3a5d7f7c72f7d0b300706eccbb2e44fd316586",
+      "4b16fa5cac410f9709a29869efde6a769af267c10e4647ba2c3da8179818d163",
+      "fce1865ca4b92ec1a1182d7438b5873867ee9a68460eabedb5ad4fc274802504",
+      "f4c77eeed240c4e5e58595edd3e7a1fb80205a3e573043843e34b2b2d5803efd",
+      "ba1701a3807ba931f4a34879710037a66b4a624570c1bf88793b532c6e8bed7f",
+      "c8f411bac9f70e0de394cb726d5bdcdbc1bba89eaa7b5ccba7e5e99de2aeecfb",
+      "7dc38bf9af796543a110d6d685dc19e9548a6840ba060baf04bdfa4eb9c59598",
+      "d2b3956a204fd6f83f0bc18de6b0dbb402713fab03e24a820eae4445355b7f78",
+      "3dddf67875749c64c9452d2356b3ce5a07922e819818c19f94cf35abfff1fef6",
+      "48d59f5835972d69ba0b8c4b98ded9df33f7826c91a82f9d18abe4b16bcd3eef"
+    ],
+    "tool_facts": [],
+    "usage": {
+      "completion_tokens": 708,
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 6642,
+      "prompt_tokens": 6898,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "total_tokens": 7606
+    }
+  },
+  "cluster": "datasets",
+  "family_names": [
+    "datasets"
+  ],
+  "finished_at": "2026-10-14T21:17:50.490897+00:00",
+  "kind": "missing",
+  "latency_seconds": 4.154766709078103,
+  "method": "vector",
+  "order": 190,
+  "question_id": "9f67c94c7cb46a26b38bed8e107fd6bbc96ee49ca539e3ae212daa4f4c43c59e",
+  "run_id": "benchmark-v1-20261014",
+  "scores": {
+    "citation_locatable": 1.0,
+    "citation_semantic_support": null,
+    "correct_abstention": false,
+    "evidence_recall_at_10": null,
+    "exact_fact_accuracy": null,
+    "parse_failure": false,
+    "service_failure": false,
+    "status": "answered",
+    "unsupported_output": false
+  },
+  "split": "dev",
+  "started_at": "2026-10-14T21:17:46.336094+00:00",
+  "suite_digest": "18076e9625595a7cd5fdb43e0fe564553a187b04947afeb4a6b02944be80dcc0"
+}

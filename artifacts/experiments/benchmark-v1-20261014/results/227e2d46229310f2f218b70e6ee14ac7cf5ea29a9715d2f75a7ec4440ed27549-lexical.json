@@ -1,0 +1,107 @@
+{
+  "answer": {
+    "body": "",
+    "citations": [
+      "cd3ff7f1868e3e3b8cb6b47b2d666edfbc5ebaa2fbc7bb28188459cf2f991040"
+    ],
+    "explanation_verified": false,
+    "facts": [
+      {
+        "kind": "version",
+        "source_ids": [
+          "cd3ff7f1868e3e3b8cb6b47b2d666edfbc5ebaa2fbc7bb28188459cf2f991040"
+        ],
+        "value": {
+          "instance_id": "598902061f1d3b6469012c3d67434e355950d739880bf0268ab70414ddab8acd",
+          "package": "charset-normalizer",
+          "snapshot_id": "e0b18c5cabd1fea040544a2d71db0c59a6ce4bbaecf84d9776a054fc3ed2b2fd",
+          "version": "3.5.2"
+        }
+      }
+    ],
+    "index_id": "1dd34349ff18aa6b4c9e7bb7f139004a178522180edbd59a8bcaa257d8a24e9d",
+    "limitations": [
+      "The explanation is generated; citation location does not establish semantic support.",
+      "Some retrieved context was omitted by the fixed context limit."
+    ],
+    "method": "lexical",
+    "model_id": "deepseek-flash",
+    "omitted_evidence_ids": [
+      "b90cca84ddde0cd5e1410a56449d7b23be834c7ae09c1dfe068dc2e302f605b9",
+      "71488a4a0a3aa93371226ef8805f9dc60cc70d853cfe25f67f5fe135ffd891c3",
+      "a842d19d9a0c8cf8332629d9b8dc8a98da95ff882fe43fede0b12327d65bae8b",
+      "0566f313c1e89d6e43b0ef796d6ae20f0d0c0117bb45f4f0da33c4d8e9d0d475",
+      "26a4ffe37808a802699e240342d9ee22922cae339debd01e264b49469573ecb0",
+      "34847599a53b5e5cac830c5bc7e632669362f661cf05cb181ce94fe4f4c2abff",
+      "4abce8a78c4235e3e53592cefb26aa8000bd7b4c47dc0c5a0d8330e946f46880",
+      "5a0eb6aa4ce7d74324d56a29bab1e8c45788778c69104bb2978e4f96aab1b682",
+      "6dbbfb7094f695e6436f63cbc32676fdb543d86968044b1862ffb05b85bdcde2",
+      "727cae0531eb6ab456f198ea30cfe77dd789b5bee63e86a8f151e29d2b6a75fe",
+      "dbe553464e0a216c1ab4d130df6d8cc0a278141e497ea7011973fc0379055f13",
+      "e27c57f63ab27a79611521ff3ed34c998320c6b87baa7cf7f0e9747c4ae133b4",
+      "2aa72c6dfac48c194cdda36ba5e3c6024fd87eeefe09a1162a56d0d6bc03f21e",
+      "32eb2cc80a33599dce66dd9b15cb5430496d25b8d64d0fce4aca853c22400f4f",
+      "8ee62f9ddc375ad8c717210472e4a3087821b4b7c115a4840b91e4f0daac0f0a",
+      "99392a31fe552c09e387135f7070993fec874cee06d40114c4e5b82ea2c75d4f",
+      "9b0b1c4fd186103c7c42867cfbb7c986dcfdc1c656d7331dea4cdf15166c1a01",
+      "9b92f40ec85dcb3543d9a485324b560fea31171d9679b19cebd17578bcedcdb7",
+      "a8f8c76357b13fa1cc4a0dbcd8280c9500e8615ee8fa293a926c8e05c6e037ad",
+      "b14cf6305b18f0279582dc524b4e56ae30eda0a3a79df18a71ea8c712595ca06",
+      "cbd75a64e9258e84a242eb19346debc6517bf668482289285f829ba4e2c7cad6",
+      "ceed16860075b26a93682fdb0af03a3e7bb4aa8d76cc8c59ae32039a50315145",
+      "d70fe0d960c60dcf4149bb24f7dcccc001cd1ea102cae5215a7d98ffd66e058d"
+    ],
+    "raw_output_digest": "09b0677371bebd9711559bc0cb30cb954bbca995a25de3bb7d2396b2cf4a9c14",
+    "rejection_reasons": [],
+    "request_id": "b3e46de1-a770-41a7-a33a-03e5c89c5b0f",
+    "status": "answered",
+    "supplied_evidence_ids": [
+      "cd3ff7f1868e3e3b8cb6b47b2d666edfbc5ebaa2fbc7bb28188459cf2f991040",
+      "2146e213146756906d6e44bbfbd585c909a9cb71613679a8a11abd7051de8fa4",
+      "f045d57808610ad43a6d373fd772cda1fdab80b2600267cc4716af147c3f0f7c",
+      "d5f2bdc95e9ff645cc4557ec9fc4d03eb8169ba18e6d39eed5cffe3f1e1204ac",
+      "62b197456a66122c2e6c984fefe877859cbd7dd945e8b902a9763edac51f2e36",
+      "7eb5bf9699e32e2ecc8b9409ddf962e05dc38ef29116a79b10a30e933ba4b92e",
+      "a163d110672ea5019f8b486b21d6888867f9800a9956bdc117c0bbe683a860d3",
+      "f03e6af848f6672818652e3f5683288267dbb77c81b07ef7c646da6ac3ccd558",
+      "f91ed68a2c0c4c8d9febe92922cc086cadf5c6c7f2542a526eace39dbca20e55",
+      "342771136a3ca7d085fa318f966daced1e53d9b4cab29cec17e9cabd2867b590"
+    ],
+    "tool_facts": [],
+    "usage": {
+      "completion_tokens": 210,
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 5312,
+      "prompt_tokens": 6848,
+      "prompt_tokens_details": {
+        "cached_tokens": 1536
+      },
+      "total_tokens": 7058
+    }
+  },
+  "cluster": "huggingface-hub",
+  "family_names": [
+    "huggingface-hub"
+  ],
+  "finished_at": "2026-10-14T21:23:57.611090+00:00",
+  "kind": "single",
+  "latency_seconds": 1.85085833305493,
+  "method": "lexical",
+  "order": 519,
+  "question_id": "227e2d46229310f2f218b70e6ee14ac7cf5ea29a9715d2f75a7ec4440ed27549",
+  "run_id": "benchmark-v1-20261014",
+  "scores": {
+    "citation_locatable": 1.0,
+    "citation_semantic_support": null,
+    "correct_abstention": null,
+    "evidence_recall_at_10": 1.0,
+    "exact_fact_accuracy": true,
+    "parse_failure": false,
+    "service_failure": false,
+    "status": "answered",
+    "unsupported_output": false
+  },
+  "split": "test",
+  "started_at": "2026-10-14T21:23:55.760203+00:00",
+  "suite_digest": "18076e9625595a7cd5fdb43e0fe564553a187b04947afeb4a6b02944be80dcc0"
+}

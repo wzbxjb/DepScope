@@ -1,0 +1,125 @@
+{
+  "answer": {
+    "body": "",
+    "citations": [
+      "2a56483943a3bc9b5422a9cd913f658d47b676b1a777a601ae8316c1fd172d65"
+    ],
+    "explanation_verified": false,
+    "facts": [
+      {
+        "kind": "query",
+        "source_ids": [
+          "2a56483943a3bc9b5422a9cd913f658d47b676b1a777a601ae8316c1fd172d65"
+        ],
+        "value": {
+          "package": "joblib",
+          "snapshot_id": "7fd5ef51b30fe661d71cf7fad60e21c6c0053be741f7071e8f4dfaa5d294575c",
+          "status": "no_match",
+          "version": "1.6.0"
+        }
+      }
+    ],
+    "index_id": "1dd34349ff18aa6b4c9e7bb7f139004a178522180edbd59a8bcaa257d8a24e9d",
+    "limitations": [
+      "The query status is a frozen OSV lookup result only; it does not establish exploitability, safety, or absence of vulnerabilities.",
+      "The explanation is generated; citation location does not establish semantic support.",
+      "Some retrieved context was omitted by the fixed context limit."
+    ],
+    "method": "vector",
+    "model_id": "deepseek-flash",
+    "omitted_evidence_ids": [
+      "dcb6005317a2a15b533c5a3989e3f374d525b40ef932f722b97acb95ccf97f76",
+      "586f46e247b65aa00a666657d2aeaae3c539c33166813e556457c850d14d43e3",
+      "d938d6f4443a997a51c1644a7381bb0946ac5265864de78d5a1200d242970a14",
+      "29197cb3de524b5dfa35ba54f68dcc7dc3124b0a9ab6952e26273be61f6bf769",
+      "e874d1df59300ffd346feba10a52d207bd887920be34229daffd70c332499a6d",
+      "cc162ced957c168bcbc04778b9b0ff1e4a4b5b742debde0248faf249c91334a6",
+      "a8e2792158099f9544a9b39ba9c469a882cea844d45ae4158d950d83af01aa2a",
+      "9048b15997a8300bb04d8e77cd34b7a70e87b44a96c01a9ab8375b977275a67c",
+      "017871c21bca19d3e36803fa126b53a69281aa4fdca8b46323baccf9a036e379",
+      "1f84f118c9a9a5a3d648cf6fd89ee9c49c4607ef64d1c7d16f667c25da5ad8a0",
+      "4d15f95d29b5aff811684b34163a983a521b71e17309e587bb454f4eb09b6e2a",
+      "444452834f68fe0a2cfc0d0c0cc2852359f95231c46aa751c04e3d0f64034572",
+      "9501051cdab9e68b236cd657d9b41f4930d4525928b4b49da15490d04ce62a6d",
+      "2a16418c9a2873c39b85fd44a09fc4cd8f92f35eacb211b3a6e60f61710a9ba0",
+      "15b73c49875838365274bbe69706e0415832ad970342f4d197befb68af6b243e",
+      "bf09a51b3ba8c96d49418655c2a8fd647be6d2b178a1351c54bcf36975881bae",
+      "06bf17209641d6ba379ca37664bd4cf62467793c6c5fc7e3dd135b1a19467a56",
+      "54b7f145e7355cf1f1050c4fca60c9a6706d383c6ccc9f0a580361ffe7cb2fcb",
+      "20e3f3efa179e7c204e5e98dc0be4cb3ab1a17acbf591327c6ff43d327533d25",
+      "99bba0f7677232c46303fbf930448920d4afa450c40b773effc9af44fa1d3459",
+      "480743a4378a78ea773aa1e3b543411a6d3adbf013aea099132b062e52f693a2",
+      "7baea461c84c7aeb7a6b81051cc978910de3709fc912c8608e9bf403ac52bdf0",
+      "d96fdc0fe9efd9695677deb18dd55150b0ea332a62243f9a3e1cea0b260a2322",
+      "e1d165d410bfe650de5907028a4cbbfdaba227b5b8705a00c3fbf9a9ab79176d",
+      "f3d09b269b551f96d73c9559d1664cc6ac4bc4f064368edf05380151d357ea56",
+      "fb50a4b202ef462684074284826fe601c988494f543f5f21dc97bae2b8943ab6",
+      "1baa6952387dc23803e76943c0e9bbd574e43a9801df0f4ce665411cd660eec4",
+      "5355c97e770b7168c384b65a68b10f54895984ac8da2bed17813d86b3f9fba3d",
+      "0ee3fcc29ed02119c16509a54d3ada8ad859224d70eda74ba0f1b3cdeb1a9188",
+      "5a59086320ed09b5257e88a7ef63bef5f1573abea06f2091ede9c3335dc8683b",
+      "bec9574ab9aab3923f3df71f41046127a2b944ec9ef271f9ef0c3b0d2587ca36",
+      "a99cfc7135087d15f49f91dafa243aa0760b83dd8feca3f1d6d5f796996bad0f",
+      "3685460d6436f48c0987d187f47d70e65028929fd00a2ee6db3304659aa1317e",
+      "66112cb75920a1a0ad33829906c901a32cd0038112b71ed47c2539f1f61a46cc",
+      "3459558d04928accda873e1e5fb331fdf6188332312fc0017f1d9772bc92ec85",
+      "7a9479ea79997465cf85f7d179829cb4b9c1f084ba76f8065e80f74a29d9ccbb",
+      "b59239453723cca65056976f0967fc9681e4b3907bc1f8091b52a8e04c223116",
+      "60f5d78065df60af2bc64db7b158050a92ff0faaa240178ee74b12130538dc48",
+      "6371f5eacdeafbe6227682a467e08ecee083ca3d9bf968bb6fec60c5520369ca",
+      "fc53387473f969c2e02d2783b7fe7a5d1cf924c4e2886d597bfb308ee59afb20"
+    ],
+    "raw_output_digest": "3bbd107871940311fadf2bc0651b0a498dd853f052a7adfe990b83b30bf0b5ad",
+    "rejection_reasons": [],
+    "request_id": "af7e75a1-4e7b-4545-8aee-994b33f20def",
+    "status": "answered",
+    "supplied_evidence_ids": [
+      "bd65fb4ea09c3397f6ed95dc7807ca3e7569052953250ab07a23f1b3a6c6965b",
+      "5cfc856d5935de8d50877031a27435d0182a0855fb6110d16e0a1a71231ff49a",
+      "2a56483943a3bc9b5422a9cd913f658d47b676b1a777a601ae8316c1fd172d65",
+      "e745936b386ce9089afa3edf9c92f9781ef9438d709ab79f679bb507ea26d7a7",
+      "420743faae5186e74d78c88da8194440663c6971d8589665481bf7840dbe00a9",
+      "4b890c804957521224f56a770b8f48ed77f195ea8727e3bc66674a55c7eb5911",
+      "3b5b958fd666dc15fa5810cd616dd0d4fca88832c89a5562d7332668def62c61",
+      "f36e5bfa4f79611fcc03b6682b3998905ffff6e7fd83d0d85e481deb6f0f95d7",
+      "208760463a225bd4b488219af3ad23e146a21733874ad5829772f2ebbde502dc",
+      "106a00ecc0aec8cba60212869814b1cf4168736096af89905e6f8eaddf5cc1f7"
+    ],
+    "tool_facts": [],
+    "usage": {
+      "completion_tokens": 207,
+      "prompt_cache_hit_tokens": 896,
+      "prompt_cache_miss_tokens": 7407,
+      "prompt_tokens": 8303,
+      "prompt_tokens_details": {
+        "cached_tokens": 896
+      },
+      "total_tokens": 8510
+    }
+  },
+  "cluster": "mlflow",
+  "family_names": [
+    "mlflow"
+  ],
+  "finished_at": "2026-10-14T21:20:54.513426+00:00",
+  "kind": "single",
+  "latency_seconds": 2.6354900831356645,
+  "method": "vector",
+  "order": 238,
+  "question_id": "76ef2d4a80785fe59dd21e0b6e404dc0002e0e7a65729e83fbfc53b2508d9647",
+  "run_id": "benchmark-v1-20261014",
+  "scores": {
+    "citation_locatable": 1.0,
+    "citation_semantic_support": null,
+    "correct_abstention": null,
+    "evidence_recall_at_10": 1.0,
+    "exact_fact_accuracy": true,
+    "parse_failure": false,
+    "service_failure": false,
+    "status": "answered",
+    "unsupported_output": false
+  },
+  "split": "test",
+  "started_at": "2026-10-14T21:20:51.877895+00:00",
+  "suite_digest": "18076e9625595a7cd5fdb43e0fe564553a187b04947afeb4a6b02944be80dcc0"
+}

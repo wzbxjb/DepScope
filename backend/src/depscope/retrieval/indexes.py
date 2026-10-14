@@ -73,7 +73,7 @@ class IndexStore:
             ).encode()
         ).hexdigest()
 
-        def persist(tx):
+        def claim(tx):
             row = tx.run(
                 "MERGE (m:IndexManifest {id:$id}) ON CREATE SET m.payload=$payload,m.signature=$signature,m.status='building' RETURN m.payload AS payload,m.signature AS signature",
                 id=manifest.id,
@@ -84,35 +84,39 @@ class IndexStore:
                 raise DomainError(
                     "INDEX_IMMUTABLE", "Index manifest and vectors cannot be modified in place"
                 )
-            for document in documents:
+
+        def bounded(rows):
+            batch = []
+            size = 0
+            for row in rows:
+                amount = len(json.dumps(row, ensure_ascii=False).encode())
+                if batch and (len(batch) >= 128 or size + amount > 1_000_000):
+                    yield tuple(batch)
+                    batch, size = [], 0
+                batch.append(row)
+                size += amount
+            if batch:
+                yield tuple(batch)
+
+        def persist_documents(tx, rows):
+            for document in rows:
                 row = tx.run(
                     "MERGE (d:EvidenceDocument {id:$id}) ON CREATE SET d.payload=$payload RETURN d.payload AS payload",
-                    id=document.id,
-                    payload=document.model_dump_json(),
+                    **document,
                 ).single()
-                if row["payload"] != document.model_dump_json():
+                if row["payload"] != document["payload"]:
                     raise DomainError(
                         "EVIDENCE_IMMUTABLE", "Original evidence document cannot change"
                     )
-            for offset in range(0, len(evidence), 500):
-                rows = [
-                    {
-                        "key": manifest.id + ":" + c.evidence_id,
-                        "evidence": c.evidence_id,
-                        "document": c.document_id,
-                        "payload": c.model_dump_json(),
-                        "text": c.text,
-                        "vector": list(v),
-                    }
-                    for c, v in zip(
-                        evidence[offset : offset + 500], vectors[offset : offset + 500], strict=True
-                    )
-                ]
-                tx.run(
-                    f"UNWIND $rows AS r MERGE (c:EvidenceCopy:{label} {{copy_key:r.key}}) ON CREATE SET c.index_id=$id,c.evidence_id=r.evidence,c.document_id=r.document,c.payload=r.payload,c.text=r.text,c.embedding=r.vector WITH c,r MATCH (d:EvidenceDocument {{id:r.document}}) MERGE (c)-[:CHUNK_OF]->(d)",
-                    rows=rows,
-                    id=manifest.id,
-                ).consume()
+
+        def persist_copies(tx, rows):
+            tx.run(
+                f"UNWIND $rows AS r MERGE (c:EvidenceCopy:{label} {{copy_key:r.key}}) ON CREATE SET c.index_id=$id,c.evidence_id=r.evidence,c.document_id=r.document,c.payload=r.payload,c.text=r.text,c.embedding=r.vector WITH c,r MATCH (d:EvidenceDocument {{id:r.document}}) MERGE (c)-[:CHUNK_OF]->(d)",
+                rows=list(rows),
+                id=manifest.id,
+            ).consume()
+
+        def verify_counts(tx):
             count = tx.run(
                 f"MATCH (c:{label})-[:CHUNK_OF]->(:EvidenceDocument) RETURN count(c) AS n"
             ).single()["n"]
@@ -131,7 +135,22 @@ class IndexStore:
             session.run(
                 "CREATE CONSTRAINT index_manifest_identity IF NOT EXISTS FOR (m:IndexManifest) REQUIRE m.id IS UNIQUE"
             ).consume()
-            session.execute_write(persist)
+            session.execute_write(claim)
+            for batch in bounded({"id": d.id, "payload": d.model_dump_json()} for d in documents):
+                session.execute_write(persist_documents, batch)
+            for batch in bounded(
+                {
+                    "key": manifest.id + ":" + c.evidence_id,
+                    "evidence": c.evidence_id,
+                    "document": c.document_id,
+                    "payload": c.model_dump_json(),
+                    "text": c.text,
+                    "vector": list(v),
+                }
+                for c, v in zip(evidence, vectors, strict=True)
+            ):
+                session.execute_write(persist_copies, batch)
+            session.execute_write(verify_counts)
             session.run(
                 f"CREATE VECTOR INDEX {vec} IF NOT EXISTS FOR (c:{label}) ON (c.embedding) OPTIONS {{indexConfig: {{`vector.dimensions`: $dimension, `vector.similarity_function`: 'cosine'}}}}",
                 dimension=manifest.dimension,

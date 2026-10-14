@@ -1,0 +1,124 @@
+{
+  "answer": {
+    "body": "",
+    "citations": [
+      "14c47bf3301f3aca97365776ba747332610b929ed7c714030f4cf6d0cbdb6a94"
+    ],
+    "explanation_verified": false,
+    "facts": [
+      {
+        "kind": "comparison",
+        "source_ids": [
+          "14c47bf3301f3aca97365776ba747332610b929ed7c714030f4cf6d0cbdb6a94"
+        ],
+        "value": {
+          "comparison_id": "bdad47d1ec7131d0a3821bb59924c30edc9a0b68971a9b833fad1165cdc9526a",
+          "metric": "unknown",
+          "value": 0
+        }
+      }
+    ],
+    "index_id": "1dd34349ff18aa6b4c9e7bb7f139004a178522180edbd59a8bcaa257d8a24e9d",
+    "limitations": [
+      "The recorded unknown metric is 0; this is a metadata comparison only and does not establish security or compatibility.",
+      "The explanation is generated; citation location does not establish semantic support.",
+      "Some retrieved context was omitted by the fixed context limit."
+    ],
+    "method": "vector",
+    "model_id": "deepseek-flash",
+    "omitted_evidence_ids": [
+      "0352f8b28fbdb561061e1b095e6e1480e1d22bb520dc8c01e0b72c54c2270688",
+      "43c16adf37611faa879e0236687895ccae4ee445abaac39e57b8cde067959e00",
+      "a367947c508946f920d2dc717014efb1f0cc0dbdb317676f70ebc97bd2e7fcd4",
+      "9534a3eae53abba7039effd7929dc945f019e916e8ae0998e86cee2a3a71819d",
+      "676a575efec5d2b9def6deaee0dc922f5032310b3765328f328229fde2db041d",
+      "dd8ff70f6506d2d69de5d79127f28eeb1aab4754d257bda43cd45d9350d28506",
+      "90081b35cb007225f2b024fa59e0674b675a02f80d5f687eac913ae200e42da1",
+      "dfd61e1311357759c58a4da1bff706a8291f3f409ec50cdcee892993552ea62e",
+      "8d217be15c166d98f84e90eb5e3e6491bbb0e2ca9cf849ad986b4670a95bf304",
+      "d71f6bc627dd854a8395cef7a8d621d80f654868a90d1037a78ed7470db01579",
+      "bc6e790349e9f9739fb9021e6c6ad09e16ae1b93a1a5ee3c5f3e02d7bb80dc78",
+      "1ea5313f5c8dd9956daaa4a63b33a50c5a3269e4fa49649327a2d9cef2711fa9",
+      "d2b03ccdc4531ea16c78a92e9cacd50ee0515c4ada9d4be98008bcad52d9c8c6",
+      "6834e6744840b130e608fc9d754bb293d8e3ded6f6ada225b73a59721efa7bbb",
+      "9edd06170d65249be742f2922b156a5e7f5a753bfc30e4756a6a167420c29815",
+      "34b351573bbeb6d42c964a412259bb1786dc97e9aeb066b822cacb46ea073346",
+      "e1946d4fd26e3a08ac54820b795548d5c085207bc7ef5faab3b28ca4fd9e36ca",
+      "20d488838781ecff049b81fae017d8ad4f1e181a46027d875b0b595609c854c5",
+      "cb2ae7322f6a3a7c9b86dda527cff7364a26e0643b3e2245e05d8fbacc720942",
+      "cd08ceeee2b4b65a1930c699fb2f768a55e332b9342c5b06840b42589589e937",
+      "7e54a925628fba6b1217693fba87137102454cbedb845d31e798f4883ec8bd18",
+      "97e561bf91e17276cd29ca2568693d972908cbe8e54a9590669d868dcf7837ec",
+      "f2a5c0078d50d4bb620bef5cbebbff5fe9a7825fd3107791c9cb100a7c82adda",
+      "b080b214b3b3c8c4ec3e75ce0ea4f448ffdfba9aedbcf0ef0bdbbb489d517004",
+      "15eadcf754c6b272a9ecb1ecb8fd0a5aa5a8b0d967cd014a73ef29fd3cb36066",
+      "f044a0f2a31fb0b70a20c98f6c47b51a25d5e1058ee05742c565a89997cceafe",
+      "5204b195714b8f1d1e5d9220969ca174228156dec8ad224332634ef6a1a32a2e",
+      "83d1a64e8a387adcb56a2122642052b11dc28fcc6ebd99cd049363c5db7b7782",
+      "f1afef18f63d16c0c5f6f9374932eaf5226b28800c3192fb9bfb9634d2499577",
+      "d930165816d2ccae7105697c0f10873a985aaea500db6bc1ef5e3e25cf6400d2",
+      "730334d4cc6a4b7f091f023a758668018d0ef7d944b41b2ef6a72114ae6290ad",
+      "788fb4516a97646148e338050f62a56995ff69f439814d6567b49b64125768c7",
+      "f5a95d92f8c8c384beaf67c0f425b52561e4235d0c87081f000853a052a76538",
+      "5b6ddfe5c08de45fa037f99ff0484768688be0289be712f11eef6a44fd83d243",
+      "1cfb58675d8ba728cb94491a9b1b1cdf513447830e17bafeb8369e2237d386cb",
+      "1bb8ed171fcf4efea51248d09cc8c694a96fc65c944e0eeea774c2ec1dfe0ee5",
+      "e78710f5ec43052b0550cd4325de0b6bf23ec91b36e74880fc03900948b7fa51",
+      "813974481d348d53c734a69e892c1aeecffd20c56727fa085c6bc21237ccaf7f",
+      "78796b5d1add6f4f46c50e38be886b459144a44d115255ff39ed645f2ae18b6a",
+      "7c5c25443ee9946e20d8422ee4767112a6f8befc297343003077f8ea53a3190f"
+    ],
+    "raw_output_digest": "5557ec86d30b1c6697aea2d6d86ea9c9b15acd37e572a60ae465776f46675aa3",
+    "rejection_reasons": [],
+    "request_id": "f255afe4-3a5c-4631-9711-414055e9d092",
+    "status": "answered",
+    "supplied_evidence_ids": [
+      "7c05b7c37175f4b24e27c3231dae471281c7de0d61ad59086aab66b270461d71",
+      "c2e2b5de45adb26c63009d4c2e5181c47d4e16a61ae53d19e41b6770929eccf2",
+      "14c47bf3301f3aca97365776ba747332610b929ed7c714030f4cf6d0cbdb6a94",
+      "e39f4748d1bf94ca54384929cdfc1bdbfc7d4645a0743ea1d5477faf644fba76",
+      "76652e410ca01baf151808f07a547e31e15065e4a3863e243199e9c09fcd39ef",
+      "1b385e030b26cfb2859ef187ef8651fb7592ef8f729d94b791776ccb63ba8a37",
+      "f460b0ad92acefb8fc91bba1d31fd190dc91604d5b7b9ac97328f793934fa7c1",
+      "897debce18aece3cd4edbdd5714380c33516137e62cb629e7784f5ed5c52136c",
+      "7ddbc3f1fa5ca91e8dab9d4cca9fe705ba29c01780ef8ad58a07e4c792bbed43",
+      "5511eff875792db294c9ae1e3465b44ccef73e5aa39da11dcd3cfa0a3acd3c9c"
+    ],
+    "tool_facts": [],
+    "usage": {
+      "completion_tokens": 175,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 6929,
+      "prompt_tokens": 7057,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 7232
+    }
+  },
+  "cluster": "llama-index",
+  "family_names": [
+    "llama-index"
+  ],
+  "finished_at": "2026-10-14T21:16:37.088372+00:00",
+  "kind": "comparison",
+  "latency_seconds": 1.7295730407349765,
+  "method": "vector",
+  "order": 77,
+  "question_id": "91d17b5fadf4a5b2ba0c02e7f1a0a3534b40b3db4a7e732288bb834760e68b92",
+  "run_id": "benchmark-v1-20261014",
+  "scores": {
+    "citation_locatable": 1.0,
+    "citation_semantic_support": null,
+    "correct_abstention": null,
+    "evidence_recall_at_10": 1.0,
+    "exact_fact_accuracy": true,
+    "parse_failure": false,
+    "service_failure": false,
+    "status": "answered",
+    "unsupported_output": false
+  },
+  "split": "dev",
+  "started_at": "2026-10-14T21:16:35.358772+00:00",
+  "suite_digest": "18076e9625595a7cd5fdb43e0fe564553a187b04947afeb4a6b02944be80dcc0"
+}

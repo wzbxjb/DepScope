@@ -1,0 +1,169 @@
+{
+  "answer": {
+    "body": "",
+    "citations": [
+      "a7c7c79f3d122a035185e1e4c3b92a765459b5644dc895c9ecb3928dc3ca1388",
+      "d9afcf08cf582524f27a3ec11b6792333d876d6df5f59d21cda55365b0c4a211",
+      "546ec3832facfc3821a617914d9ab63681f550d5e753930a4022aa9b693991bb",
+      "d567a368971795adc4fbe892c974955a0a94d664c7762bd601553d5bcb43b5d1"
+    ],
+    "explanation_verified": false,
+    "facts": [
+      {
+        "kind": "path",
+        "source_ids": [
+          "a7c7c79f3d122a035185e1e4c3b92a765459b5644dc895c9ecb3928dc3ca1388"
+        ],
+        "value": {
+          "instance_ids": [
+            "24d94b3f3bff1545e5a866bcf5032778504f4e4275e1bf9cf4095b82d436b6be",
+            "6e7aec61a78765ae73e7c30302f2183565394e5d61af05e1901266c6c5166d1b"
+          ],
+          "snapshot_id": "fd70b0ca4d90e3806ae3d0b6030ad7aedd8fb6efdda50ef0ce41e0427a48f267"
+        }
+      },
+      {
+        "kind": "path",
+        "source_ids": [
+          "d9afcf08cf582524f27a3ec11b6792333d876d6df5f59d21cda55365b0c4a211"
+        ],
+        "value": {
+          "instance_ids": [
+            "bb8e7cda87e98d11ece82a910c7609dfc385b9465ff354267d26245c1f90d347",
+            "5ff8d961d9f40a3f7b6bd8fc6f7fbb86bed2a45d4c803d3f5f5a77b6819b816e"
+          ],
+          "snapshot_id": "a0377acb7c54420c75b966dd1e78acfd3282a400adad16ddfcfec061c3baf477"
+        }
+      },
+      {
+        "kind": "version",
+        "source_ids": [
+          "546ec3832facfc3821a617914d9ab63681f550d5e753930a4022aa9b693991bb"
+        ],
+        "value": {
+          "instance_id": "6e7aec61a78765ae73e7c30302f2183565394e5d61af05e1901266c6c5166d1b",
+          "package": "hf-xet",
+          "snapshot_id": "fd70b0ca4d90e3806ae3d0b6030ad7aedd8fb6efdda50ef0ce41e0427a48f267",
+          "version": "1.7.0"
+        }
+      },
+      {
+        "kind": "version",
+        "source_ids": [
+          "d567a368971795adc4fbe892c974955a0a94d664c7762bd601553d5bcb43b5d1"
+        ],
+        "value": {
+          "instance_id": "5ff8d961d9f40a3f7b6bd8fc6f7fbb86bed2a45d4c803d3f5f5a77b6819b816e",
+          "package": "hf-xet",
+          "snapshot_id": "a0377acb7c54420c75b966dd1e78acfd3282a400adad16ddfcfec061c3baf477",
+          "version": "1.7.0"
+        }
+      }
+    ],
+    "index_id": "1dd34349ff18aa6b4c9e7bb7f139004a178522180edbd59a8bcaa257d8a24e9d",
+    "limitations": [
+      "The supplied evidence contains only direct dependency edges from huggingface-hub to hf-xet; no transitive paths or additional intermediate nodes were provided.",
+      "The evidence does not identify which project corresponds to huggingface-hub 2.2.0 versus transformers 4.48.0; project-to-package mapping is not supplied.",
+      "No advisory, vulnerability, or exploitability evidence linking hf-xet to either snapshot was provided; these paths do not establish exploitability.",
+      "The explanation is generated; citation location does not establish semantic support.",
+      "Some retrieved context was omitted by the fixed context limit."
+    ],
+    "method": "lexical",
+    "model_id": "deepseek-flash",
+    "omitted_evidence_ids": [
+      "306ba8de86dd5ea4831f33d643221572e907c01ccd16ad9eec0006f9ba60691e",
+      "163a04cbf56f4d74422db5abbb5e86f1635f9dc4c19ab2ce31031e3706ffb4a1",
+      "bd420b708214c75bb50a11ea592f51c3fe992514775b7e66ffd41c061c00ed7a",
+      "ac95bf12edb2759e033fe7b308c51670308e40224ef441cee8a146248a9a2673",
+      "b0c4000f45bf6a05f9864518e45ccba6e32ad23c52f80e80e6317f25d2f7e973",
+      "41a20caab291d2c5c14aff8ff96f23a5bc8fec28104b005eb937535bb151f0e3",
+      "67c3e4cdfa38e9bcde87c77ccb2b301a36de439ac05f7f77ef34b8bdcd3fe9c3",
+      "9235c6234608e0fde8f8244bf1d96e342c0f22775bb72d41bcad0950e95e1787",
+      "ca695196e0c37330076718d81feb07ef21da34ff8e73ceeb4f287ace4e9b4f3a",
+      "372c2c49cacd9ef6bd455e80bd43d1142e479a51d7374be99a61ac5e05df271e",
+      "e3f8b9b4d8d157c197a7fb1cc4b872de62978f193f9b6a80ed5bcf612153f0b6",
+      "19b47f125b6c00ce43a7cfbb290feff6dca9ed7ccbd3b0adddbf75bf3f3ab4e2",
+      "646513e74c8e8f2b7a3cec0c1f59cd59c84af4baa5bcde9265c915778e882213",
+      "3dfbd492d289453131792ff53b0d910377f85e9991fa16ddd1aa4c96a3e237ba",
+      "5ad01641800042ee822ada178cb66b03c144d2f325cf646a36cee2c07c3562ee",
+      "d0840b52b12e4ea8cea8495b15ebb302db2e9cecc133482d72cbdc9baa14185d",
+      "18b0e6149e254c58cdc2beb30a50a9f710ad947018c18d8f74fedde98f3c63d7",
+      "28180a14e8e5c5ae3510fe96b6da0552deb2e86c67ea0be221052af3441eff19",
+      "57c82fd20aeb03b79103e47b3011ecc4e5ee721c530a75868da647bab03be0d0",
+      "b7fd31ace144bca5469817d8f3085b1192268591c03ef5173bdc92d43e8db0ab",
+      "c47582a46156749c410cd5dc909b03bd5ead82643d708269acccdbed0e3c8eb3",
+      "6e304530db7588d88043877025059fb5a477f7ead98faf8d6cabd1df5649608f",
+      "cd2a65d9eb6d4157087401d679b3613373fd06c91d3f147ac1d596fa05c93cf1",
+      "e83380178018371c3dd7ad0c9f46921f48261a61a5bd65a9b2d2a664835070df",
+      "c554c6aa8d26b6d14b9d66ebb6a18a257ebfa10cdd115e5cf8ba4ff3ca8c0b84",
+      "f5e7e7de760500e5c49d0efd971060fc9f1caf2cbb1cd85cbc2f627e0c6413d6",
+      "f533ac25ac0298c116656c961b9edb0b587a5d80c4b65032ad332451c094f485",
+      "226eec4f22d2f9f0599da66988698ad9b9dd83921c989a65fe7d74eb33cbc2ee",
+      "d69b14523e5cef1697af631a489967e6731e775715be77267d9b5e911b19cdc1",
+      "2dd9bde44299f905a1e6550a8d6af2b48f51e2de54e820d3174173a96fefb56b",
+      "af96092f01b08515fd939db1ae1913f2ca0f33751a77215594569def8381b1b1",
+      "00d658842ca8da31a23e4aff9adad5091a7aca2484c53e4033be1058463b8aa3",
+      "2a850d8b0554bffc74590ebea38d20536291961739b158d8ec351abb4e0e2e59",
+      "366126adb8ba54293b61669dcaec961122b1a3fbcf15cccbe376cce30a0d727a",
+      "7a03c7f7f0fd2c3c554f2f43759dc70d08c534d9f38f879f41ced41e09c512be",
+      "56079290a7b3123a3d513d9a7d1a7c7bb98dde093a1729161499de99815542dd",
+      "95d7c3086f58347432d7cbbf68c363899e7d1d98197c3746244146c979b40863",
+      "59832c0afb5b36e278e084032027c5690f6982aeaefaf7708d4b8f56cb8557ae",
+      "98ee5dd50a605eccafda3f8a13d6c48d3d19085c493a1387a4c89f6d5fb8f5c8",
+      "0a61b7eb30833645f4f540767b286a81c3e3eeede2391a0466694c6a0a410d3f"
+    ],
+    "raw_output_digest": "66d1ab603edea7f7c3e5a30728e3196a810104ed9dc81c17a5109d7258cd50e9",
+    "rejection_reasons": [],
+    "request_id": "c3abb7c9-3678-4040-bf5a-7d4f0be9f2d9",
+    "status": "answered",
+    "supplied_evidence_ids": [
+      "a7c7c79f3d122a035185e1e4c3b92a765459b5644dc895c9ecb3928dc3ca1388",
+      "d9afcf08cf582524f27a3ec11b6792333d876d6df5f59d21cda55365b0c4a211",
+      "546ec3832facfc3821a617914d9ab63681f550d5e753930a4022aa9b693991bb",
+      "d567a368971795adc4fbe892c974955a0a94d664c7762bd601553d5bcb43b5d1",
+      "49c010f317c48a80b06170a710297f441f07f197ae219213917389b34c5a904c",
+      "ca5a675afc965c249a27e1520dd85447f747e762f93791ec1db418c27956e5bb",
+      "d8a085670e1dd8011b1e9bc80e61f9389ec5c95ee1b5b0f10b028f2cc953cab4",
+      "2a446dff7bec3d22ec13f9d3b820c3993cbe0abde3d3a69831e5069d70e5677c",
+      "4deb8d64e00ec5d8f9c0280691bdf1f31f8585164569c3be107822d6986b3696",
+      "1b1529adadca1128dccd7e6d6087ba531da2c72afbd5c73988b8f8c88a6b20d0"
+    ],
+    "tool_facts": [],
+    "usage": {
+      "completion_tokens": 971,
+      "prompt_cache_hit_tokens": 512,
+      "prompt_cache_miss_tokens": 4649,
+      "prompt_tokens": 5161,
+      "prompt_tokens_details": {
+        "cached_tokens": 512
+      },
+      "total_tokens": 6132
+    }
+  },
+  "cluster": "huggingface-hub|transformers",
+  "family_names": [
+    "huggingface-hub",
+    "transformers"
+  ],
+  "finished_at": "2026-10-14T21:21:45.012718+00:00",
+  "kind": "cross",
+  "latency_seconds": 4.603212416637689,
+  "method": "lexical",
+  "order": 313,
+  "question_id": "a5a2bb7c2fdedfdd92f8d834aa0e3094cba2203a385b80c10a1225521db49241",
+  "run_id": "benchmark-v1-20261014",
+  "scores": {
+    "citation_locatable": 1.0,
+    "citation_semantic_support": null,
+    "correct_abstention": null,
+    "evidence_recall_at_10": 0.6666666666666666,
+    "exact_fact_accuracy": false,
+    "parse_failure": false,
+    "service_failure": false,
+    "status": "answered",
+    "unsupported_output": false
+  },
+  "split": "test",
+  "started_at": "2026-10-14T21:21:40.409460+00:00",
+  "suite_digest": "18076e9625595a7cd5fdb43e0fe564553a187b04947afeb4a6b02944be80dcc0"
+}

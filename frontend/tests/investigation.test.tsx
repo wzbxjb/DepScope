@@ -24,3 +24,20 @@ it('withholds a stale answer after switching snapshots',async()=>{
   await act(async()=>pending.resolve({job_id:'old-job'}));
   expect(screen.queryByText('old-answer')).not.toBeInTheDocument();
 });
+it('submits each additional project with an explicit snapshot and advisory run',async()=>{
+  vi.mocked(request).mockImplementation(url=>url==='/api/ai/status'?Promise.resolve(status):Promise.resolve({job_id:'job-cross'}));
+  render(<InvestigationPage projectId="p" snapshotId="s" runId="run-one" projects={[{id:'p',name:'First',kind:'user_project'},{id:'p2',name:'Second',kind:'user_project'}] as any} loadSnapshots={async()=>[{snapshot_id:'s2',project_id:'p2',root_name:'other-root',root_version:'1.0',source_kind:'public_resolution'}] as any} loadRuns={async()=>[{id:'run-two',snapshot_id:'s2',observed_at:'2026-10-14T00:00:00Z'}] as any}/>);
+  fireEvent.change(screen.getByLabelText('Additional project'),{target:{value:'p2'}});
+  await screen.findByText(/other-root/);
+  fireEvent.change(screen.getByLabelText('Additional snapshot'),{target:{value:'s2'}});
+  await waitFor(()=>expect(screen.getByLabelText('Additional advisory run').querySelectorAll('option')).toHaveLength(2));
+  fireEvent.change(screen.getByLabelText('Additional advisory run'),{target:{value:'run-two'}});
+  fireEvent.click(screen.getByRole('button',{name:'Add to investigation'}));
+  fireEvent.change(screen.getByLabelText('Investigation question'),{target:{value:'cross-project evidence'}});
+  await waitFor(()=>expect(screen.getByRole('button',{name:'Ask with evidence'})).toBeEnabled());
+  fireEvent.click(screen.getByRole('button',{name:'Ask with evidence'}));
+  await waitFor(()=>expect(request).toHaveBeenCalledWith('/api/investigations',expect.anything()));
+  const call=vi.mocked(request).mock.calls.find(([url])=>url==='/api/investigations');
+  const scope=JSON.parse(call![1]!.body as string).scope;
+  expect(scope.project_ids).toEqual(['p','p2']);expect(scope.snapshot_ids).toEqual(['s','s2']);expect(scope.run_map).toEqual({s:'run-one',s2:'run-two'});
+});

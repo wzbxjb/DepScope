@@ -1,0 +1,168 @@
+{
+  "answer": {
+    "body": "",
+    "citations": [
+      "75958e6a5a15dba919eff671301fa720ee18294456956fa2f42bccd9ab2c5454",
+      "a5ab169922ce26b7d6e15e065113d985b3f870539805df3122badb06eac23a1d",
+      "e7e16f24a0ffa54ed66b93225f8567abdf677b26245245891d7b39a31789b8dc",
+      "8168e1d2ddb03fee06347b989fbecc2b81197ea8eb126450845e5d2ebd00d775"
+    ],
+    "explanation_verified": false,
+    "facts": [
+      {
+        "kind": "version",
+        "source_ids": [
+          "75958e6a5a15dba919eff671301fa720ee18294456956fa2f42bccd9ab2c5454"
+        ],
+        "value": {
+          "instance_id": "a8095da604f6157053f4b16c0f2ffa265bb04303e2fb2aaeb69cc25013aee7db",
+          "package": "sentence-transformers",
+          "snapshot_id": "4004057ae146dde1ea2012c29f0cbab78d7fb2bcd9bd02c35138ccc902603bf4",
+          "version": "3.4.0"
+        }
+      },
+      {
+        "kind": "path",
+        "source_ids": [
+          "a5ab169922ce26b7d6e15e065113d985b3f870539805df3122badb06eac23a1d"
+        ],
+        "value": {
+          "instance_ids": [
+            "a8095da604f6157053f4b16c0f2ffa265bb04303e2fb2aaeb69cc25013aee7db",
+            "0c52ce7b0c7b0a743b054c669f647940060ba9d1a04e88322e2d33d61804182b"
+          ],
+          "snapshot_id": "4004057ae146dde1ea2012c29f0cbab78d7fb2bcd9bd02c35138ccc902603bf4"
+        }
+      },
+      {
+        "kind": "path",
+        "source_ids": [
+          "e7e16f24a0ffa54ed66b93225f8567abdf677b26245245891d7b39a31789b8dc"
+        ],
+        "value": {
+          "instance_ids": [
+            "a8095da604f6157053f4b16c0f2ffa265bb04303e2fb2aaeb69cc25013aee7db",
+            "406705ea8bf16251be748f0a449fa9dae8e5e114f917b6b01056f6f2ccd8ad98"
+          ],
+          "snapshot_id": "4004057ae146dde1ea2012c29f0cbab78d7fb2bcd9bd02c35138ccc902603bf4"
+        }
+      },
+      {
+        "kind": "path",
+        "source_ids": [
+          "8168e1d2ddb03fee06347b989fbecc2b81197ea8eb126450845e5d2ebd00d775"
+        ],
+        "value": {
+          "instance_ids": [
+            "a8095da604f6157053f4b16c0f2ffa265bb04303e2fb2aaeb69cc25013aee7db",
+            "a788bfba5c37225c5f7b54af687a6309dc0c363a63cdd219ec60f6784c208a87"
+          ],
+          "snapshot_id": "4004057ae146dde1ea2012c29f0cbab78d7fb2bcd9bd02c35138ccc902603bf4"
+        }
+      }
+    ],
+    "index_id": "1dd34349ff18aa6b4c9e7bb7f139004a178522180edbd59a8bcaa257d8a24e9d",
+    "limitations": [
+      "No supplied evidence contains installation logs, build results, or integration test outcomes for sentence-transformers 3.4.0 in the deployed environment.",
+      "The supplied evidence only covers the component version, its dependency edges, and vulnerability descriptions; it cannot confirm successful installation or passing integration tests.",
+      "The explanation is generated; citation location does not establish semantic support.",
+      "Some retrieved context was omitted by the fixed context limit."
+    ],
+    "method": "lexical",
+    "model_id": "deepseek-flash",
+    "omitted_evidence_ids": [
+      "6b3f7f80c078dea2c5255fb8209ad27c9367e5d3668d9732133ca95ff2b58517",
+      "bc6048577efa39a9fab46045891354559fda8ebab2a68d5264d18247890173bd",
+      "0a88f3a777a68b9eb7c53fe9cd9e53665e073876eb2bb1a6ca4d73fc922310a5",
+      "c363f834e1516b4183c215601c8fd4654635e0e89cdb91f787d60fe5e31f5902",
+      "41a20caab291d2c5c14aff8ff96f23a5bc8fec28104b005eb937535bb151f0e3",
+      "67c3e4cdfa38e9bcde87c77ccb2b301a36de439ac05f7f77ef34b8bdcd3fe9c3",
+      "2336d167b21d45460d0704857f5e584112b8790c90d137a11aec1c99c72a5010",
+      "524f202c349a362d176aa2ecbc8854afc7d1d05c4b959e80c9419ac0bbe6a83d",
+      "c554c6aa8d26b6d14b9d66ebb6a18a257ebfa10cdd115e5cf8ba4ff3ca8c0b84",
+      "f5e7e7de760500e5c49d0efd971060fc9f1caf2cbb1cd85cbc2f627e0c6413d6",
+      "581ba4d962b4c933f10e2e4dce15fc364d757409d527a6f50d883381671fa2ce",
+      "ac95bf12edb2759e033fe7b308c51670308e40224ef441cee8a146248a9a2673",
+      "b0c4000f45bf6a05f9864518e45ccba6e32ad23c52f80e80e6317f25d2f7e973",
+      "ca5a675afc965c249a27e1520dd85447f747e762f93791ec1db418c27956e5bb",
+      "d8a085670e1dd8011b1e9bc80e61f9389ec5c95ee1b5b0f10b028f2cc953cab4",
+      "24bf2327f265b8fec409051e9f15c8e6c8945b2d228ffde6a71f84e00dab1a5d",
+      "e83380178018371c3dd7ad0c9f46921f48261a61a5bd65a9b2d2a664835070df",
+      "cb44aba92d2f2c32f73d97d4f6bbf7af10a9dfa0904892fb8d0343b0d7ab5ab2",
+      "5d56dd0241863794446fa527c6c5d392df455b1ef65fb40e7bae958d7fa871ba",
+      "5e3271d0be15654bf67a4c226139fb788384ae6acaab78be8ace73d66fcac443",
+      "cc6ff0ee7cbfcc03dacfa38433cc41a34df7ff44912ae4a00a43d2afd5ca762b",
+      "2fe481060a94cb440adb60f1d56fe383b2e539b609375a87c171e6bdfdc09f54",
+      "56079290a7b3123a3d513d9a7d1a7c7bb98dde093a1729161499de99815542dd",
+      "247a9735e32e36d544e54781b6ec626c8fc22845b2d31dfe03a9c3dd385d98cd",
+      "c39dda747cdcc221184f0037155d2812a8ae21f12f0b6c1e4851bd5d56454a75",
+      "3508dc50a84177bd07dc92ce1f76ad1178d043133a62ef3e9f63f3ea0b26687b",
+      "ff3c27f8c726722f5a21f65f8275b0dc35271a893319ad88c8980b3739035a54",
+      "613667e2c410c8bccf7d99b0f79fa48e96a30ed741fb66d2f73e8343b43259e1",
+      "b2b2ac0bd9377ce8c94d2008fb284bd8f825ca02bbbe500622784b3ed2ef650d",
+      "88ee0bfeb7d9390a1227277627d69f6d66db5a7cbc48f927ed23ab2d593682d1",
+      "8369f6a256bd78a582232fd4dd2179792cafe69f0e34efbf1e9f9817e8f32d3d",
+      "eb583aa14e6b5a9613d4f6f4c6ddc973238553bff71a0251fd5ba3608f862401",
+      "6c4e51df02e1bda7ad039cb55420453948fbd467b3ebdbdc2d055c5d0a3a5e8f",
+      "bc223de45181d24d37adde29a72fba6ad4cd146cef75666d343ae1bfbc733bec",
+      "c817c899b87664c5760a8f4038e3613d13ff0832030343fb2cdccf12ead45001",
+      "d418abc402654f650b9b3efab70151b1a45876b282f88ff73ce443fb258a4720",
+      "e4324423a694628fe97ad481dd919e47a7ed62e16bbfdf5d060665b0198f1243",
+      "ee28128d5171ee322ae223a7e06118e4aa40cb9b6615876859469382ab18f0b2",
+      "c55f7ec30af723bd522b825bbc5cf0006fc223d5391e32a5077dc33282a9ead0",
+      "66b9226301133f3fecd2cfab601fd502dd9667eac666bcfc2d022aa1bd735f72"
+    ],
+    "raw_output_digest": "5d6308c8a0420bf40025a991cba1b2145ddaa3b49e8a815da630863fe8b3f68b",
+    "rejection_reasons": [],
+    "request_id": "f9e80d28-535c-4b9a-a5bf-f9b771e48fa3",
+    "status": "answered",
+    "supplied_evidence_ids": [
+      "306a01d3444b20e9c91880be5303c6d74a946628e4fae4d93e0a41d6216d2204",
+      "bcd4feee96b13658c0b57cebbc5638ecabcf53f540450261147736064435e0b0",
+      "d404bbe9adf1e7a42a3ba56765599e22de33ab6225949811e01353d0fe29b740",
+      "e11515723806f01af4e1f89ce48e0ab2c9f08cbe73e634bb00aa41e608c0c5ee",
+      "75958e6a5a15dba919eff671301fa720ee18294456956fa2f42bccd9ab2c5454",
+      "a5ab169922ce26b7d6e15e065113d985b3f870539805df3122badb06eac23a1d",
+      "e7e16f24a0ffa54ed66b93225f8567abdf677b26245245891d7b39a31789b8dc",
+      "8168e1d2ddb03fee06347b989fbecc2b81197ea8eb126450845e5d2ebd00d775",
+      "f533ac25ac0298c116656c961b9edb0b587a5d80c4b65032ad332451c094f485",
+      "28180a14e8e5c5ae3510fe96b6da0552deb2e86c67ea0be221052af3441eff19"
+    ],
+    "tool_facts": [],
+    "usage": {
+      "completion_tokens": 879,
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 4199,
+      "prompt_tokens": 4455,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "total_tokens": 5334
+    }
+  },
+  "cluster": "sentence-transformers",
+  "family_names": [
+    "sentence-transformers"
+  ],
+  "finished_at": "2026-10-14T21:21:39.590854+00:00",
+  "kind": "missing",
+  "latency_seconds": 4.103098582942039,
+  "method": "lexical",
+  "order": 305,
+  "question_id": "21f0288fc357274a3cf8cb8ed96f8fab73681c9d4e59d217ddfea652bdea0d0f",
+  "run_id": "benchmark-v1-20261014",
+  "scores": {
+    "citation_locatable": 1.0,
+    "citation_semantic_support": null,
+    "correct_abstention": false,
+    "evidence_recall_at_10": null,
+    "exact_fact_accuracy": null,
+    "parse_failure": false,
+    "service_failure": false,
+    "status": "answered",
+    "unsupported_output": false
+  },
+  "split": "test",
+  "started_at": "2026-10-14T21:21:35.487709+00:00",
+  "suite_digest": "18076e9625595a7cd5fdb43e0fe564553a187b04947afeb4a6b02944be80dcc0"
+}

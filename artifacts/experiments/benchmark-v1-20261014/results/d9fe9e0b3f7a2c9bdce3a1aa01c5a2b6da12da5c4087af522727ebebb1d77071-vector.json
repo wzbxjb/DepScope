@@ -1,0 +1,168 @@
+{
+  "answer": {
+    "body": "",
+    "citations": [
+      "3e7ee17188e29ecceec4c14a5d6a829ce63365968e32920ec1a60a5f39e53806",
+      "6b4012496f132d3d5c0bb20db6773f7abb9f5724e1f3b365e99d5e72cda194a3",
+      "ab9ee88481d93c41511ed8df53070a7c1cfe14fd567524b1378e85a2a11b4dd6",
+      "e3c6973c829f4dd5d70a4af6dc56134b2207e656a5b6a92ad77d3ae323b1c04f"
+    ],
+    "explanation_verified": false,
+    "facts": [
+      {
+        "kind": "version",
+        "source_ids": [
+          "3e7ee17188e29ecceec4c14a5d6a829ce63365968e32920ec1a60a5f39e53806"
+        ],
+        "value": {
+          "instance_id": "0d4d1bf39c13bc42e48ba9b8723538cfeed957cc2f50290e97aafb15750c0611",
+          "package": "aiosignal",
+          "snapshot_id": "0cc10fa856172c618eaaa41cf81b5a67597932af18f2b351c4f0de2901fc358c",
+          "version": "1.4.0"
+        }
+      },
+      {
+        "kind": "version",
+        "source_ids": [
+          "6b4012496f132d3d5c0bb20db6773f7abb9f5724e1f3b365e99d5e72cda194a3"
+        ],
+        "value": {
+          "instance_id": "a0a32fed0b3b69e66f3daa608650f2cffef18735d66f969b0c8586829fde22ef",
+          "package": "aiosignal",
+          "snapshot_id": "0d3f23e7f45a8d321b3a35665e966104a72494d17898905d2ac140d6894cd602",
+          "version": "1.4.0"
+        }
+      },
+      {
+        "kind": "query",
+        "source_ids": [
+          "ab9ee88481d93c41511ed8df53070a7c1cfe14fd567524b1378e85a2a11b4dd6"
+        ],
+        "value": {
+          "package": "aiosignal",
+          "snapshot_id": "0cc10fa856172c618eaaa41cf81b5a67597932af18f2b351c4f0de2901fc358c",
+          "status": "no_match",
+          "version": "1.4.0"
+        }
+      },
+      {
+        "kind": "query",
+        "source_ids": [
+          "e3c6973c829f4dd5d70a4af6dc56134b2207e656a5b6a92ad77d3ae323b1c04f"
+        ],
+        "value": {
+          "package": "aiosignal",
+          "snapshot_id": "0d3f23e7f45a8d321b3a35665e966104a72494d17898905d2ac140d6894cd602",
+          "status": "no_match",
+          "version": "1.4.0"
+        }
+      }
+    ],
+    "index_id": "1dd34349ff18aa6b4c9e7bb7f139004a178522180edbd59a8bcaa257d8a24e9d",
+    "limitations": [
+      "No root-to-aiosignal dependency path is present in the supplied evidence for either snapshot; the only supplied dependency_edge connects openai to sniffio, not to aiosignal.",
+      "The supplied path fact for snapshot 0d3f23e7f45a8d321b3a35665e966104a72494d17898905d2ac140d6894cd602 covers only openai to sniffio and does not reach aiosignal.",
+      "No dependency edges at all are supplied for snapshot 0cc10fa856172c618eaaa41cf81b5a67597932af18f2b351c4f0de2901fc358c, so no path can be constructed.",
+      "The aiosignal query results are no_match; this does not establish exploitability or absence of vulnerabilities.",
+      "The explanation is generated; citation location does not establish semantic support.",
+      "Some retrieved context was omitted by the fixed context limit."
+    ],
+    "method": "vector",
+    "model_id": "deepseek-flash",
+    "omitted_evidence_ids": [
+      "2fdbd03e5bc06b2ba7384f074f3171282211094524b3560eab60247b1799ec84",
+      "e306f0fbbeed89ca5f184279d28e0406f938b469fd8bea8666e1ba0015aec98b",
+      "9d7d53cdb73e23879aa528d4a1b292c098d68286bfa6544a1e8dccab2c1d4d54",
+      "4b16fa5cac410f9709a29869efde6a769af267c10e4647ba2c3da8179818d163",
+      "1bc9a7629ac48abf02ddade3dcacf16146e49a878997d522211f9fe626c5214b",
+      "2d696e973d5141a191518a8572f799daffa538310ddc33c9d18141dc66e4a59a",
+      "a83bd029603f9ddbdd76ebf989427297ffa19098457f930005418a98e629e269",
+      "1505cbc3347f1643af35e416c220c09821981aa4fdc1515b01a8c31ee8822677",
+      "9aaf0e50f1efdf7140abcc6891bc738f3efd72a12e670c9fa64db5101d98bd8d",
+      "532ad3c2b3bafbfb02dd040eceb4ae4842dea4bbdee51ba21e4abbbaf6fc7455",
+      "d705c0dc4332074bc7589d68782a194dc101f0583290898593688b53f05d7fcf",
+      "f803bd3a224ac4523907bc700e0a86abe453062ec11a90db8d16e63aca4c0fde",
+      "278730b7d042b810d9bbfc99540c2f8e8f1a8542d7480efafe644ecabe13def7",
+      "93cdb323829f92a1e01a9a922e96fc74db66ebc03b80b9f6c8aa815fa5830d45",
+      "a4056a648508d7a61fb60c0ed543fb9144edb0572f73488128582a0c5a193a96",
+      "3bc4ac985508d56af52418778d1aaa07a61aa1689a9af72a2edd0d40efd7bd61",
+      "0b3b774bdbef6d4b6ef8879eac6b23c50f517696739595033c433c14d024fd42",
+      "85bdd887a83f93a8819c7c265985c1fe813dfd5bc8bc3bd8bc9ca0a2ad606687",
+      "36b500f3cf2d04a7b8b5e2822b3ed7111e1ee02dcdf2593e9a3594926729e58d",
+      "97751f2e452abb8cb7271abbfecbbb58b4d52d8b8a7c38a9ee48df7f3779d86c",
+      "43de97d7b37f9dde2285d424c9da8a01cc9a235363dc2587f37259895a9ea5b0",
+      "c86dfbfbd9a70a50ce738d5e38552e8c51a13c95acbd43f675e97f1bcf1d07db",
+      "2af212062573ee27abdafe4445528c4159d9d0ca7635014dbe34974967df758a",
+      "0e4095a2795d9dc45d263bdc1a3be79e57d60698be028486d46eb0f08c8046d8",
+      "b61979e559d5fbf28cfc20fab30fcb7a24709f1c76955ff51404f237c7a478c2",
+      "b31a9d8af3931a2a381b970fd537393750b2fc4e50229f2f6bfe5e16910bda33",
+      "806474bcd0df2e6ef5c125a0f43bdc3649f55e31fc3315399de7566f28818f0f",
+      "209c8143075cd5c9f6037ed5baef18055cb111e3e6fd1763134f2e4014500e90",
+      "7378d2b5f6a24a8873c45f512b231b86a048442cb36b4a1f41f495c9c75b751b",
+      "7b57a863e76033dee44f9a99b65df3398383a4dc2cce687d71d490f6ab491c87",
+      "b611099a02c3605a4979ece66957ef222b3c90f4356d3b405bae2854a794e83b",
+      "91c6dd87deb89fc56f49adff9396c49b0d9e6c69afa9572a05dfb06232bdcb13",
+      "75ed2f7e2aef372bbe1bf18659def7e1393cf98f49b6db9cee1e5e02f0012c31",
+      "7717c1826c473ade0a6c9305fb62c549d05fc0316be30ecb5f0607d4ebddd130",
+      "9d72003bffff75326efa3a3a6be81633e8d184a326282c35911751c58e8a352f",
+      "3549b79bb1a2d20e89246a591cab51703bbb1432697afe92b296123903fd713b",
+      "6237c1e437e14da787647411197b714ff7be21e69b1270dcedef948d7807a0e0",
+      "23996efaeea427bfcd319390f8b3625fd4f12490986b153a64757849f9161dbc",
+      "62a94c5dff1da4dc907d34aed228e082ed2f0668fbcafe97b117227a04e9c48d",
+      "fd164e57084cb8dc4db107d4bc3516b5ef261d360f4d5be4b50215ca14ae62e3"
+    ],
+    "raw_output_digest": "d1bf9d63f78fe616e5c0d140b4d00a11a0f10c0f0dbeecb0bbac297641276d8a",
+    "rejection_reasons": [],
+    "request_id": "68648421-4b74-4171-ae1f-15d0635695ad",
+    "status": "answered",
+    "supplied_evidence_ids": [
+      "3e7ee17188e29ecceec4c14a5d6a829ce63365968e32920ec1a60a5f39e53806",
+      "6b4012496f132d3d5c0bb20db6773f7abb9f5724e1f3b365e99d5e72cda194a3",
+      "e3c6973c829f4dd5d70a4af6dc56134b2207e656a5b6a92ad77d3ae323b1c04f",
+      "ab9ee88481d93c41511ed8df53070a7c1cfe14fd567524b1378e85a2a11b4dd6",
+      "6cc6574b033c9a2c0a91678213b50ba503557e1cb503279412c7ae0823af87d0",
+      "abfe21cd7c00c88209726b79afd507d9750d9f8dd727d961e02e8f8439573c5e",
+      "778e918c4457bbc4f2c2b361e6e970bcb079b52a013c3bfa43f443891000b12b",
+      "f4c77eeed240c4e5e58595edd3e7a1fb80205a3e573043843e34b2b2d5803efd",
+      "d2b3956a204fd6f83f0bc18de6b0dbb402713fab03e24a820eae4445355b7f78",
+      "631f9474c567878a84f1e7fe8b57cf8db8c5f80e0effb5d1029b93831845a5a6"
+    ],
+    "tool_facts": [],
+    "usage": {
+      "completion_tokens": 881,
+      "prompt_cache_hit_tokens": 512,
+      "prompt_cache_miss_tokens": 7727,
+      "prompt_tokens": 8239,
+      "prompt_tokens_details": {
+        "cached_tokens": 512
+      },
+      "total_tokens": 9120
+    }
+  },
+  "cluster": "datasets|llama-index",
+  "family_names": [
+    "datasets",
+    "llama-index"
+  ],
+  "finished_at": "2026-10-14T21:16:52.378112+00:00",
+  "kind": "cross",
+  "latency_seconds": 4.127232000231743,
+  "method": "vector",
+  "order": 96,
+  "question_id": "d9fe9e0b3f7a2c9bdce3a1aa01c5a2b6da12da5c4087af522727ebebb1d77071",
+  "run_id": "benchmark-v1-20261014",
+  "scores": {
+    "citation_locatable": 1.0,
+    "citation_semantic_support": null,
+    "correct_abstention": null,
+    "evidence_recall_at_10": 0.0,
+    "exact_fact_accuracy": false,
+    "parse_failure": false,
+    "service_failure": false,
+    "status": "answered",
+    "unsupported_output": false
+  },
+  "split": "dev",
+  "started_at": "2026-10-14T21:16:48.250836+00:00",
+  "suite_digest": "18076e9625595a7cd5fdb43e0fe564553a187b04947afeb4a6b02944be80dcc0"
+}

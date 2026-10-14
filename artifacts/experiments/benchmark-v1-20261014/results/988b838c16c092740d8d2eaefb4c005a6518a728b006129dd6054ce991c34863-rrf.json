@@ -1,0 +1,205 @@
+{
+  "answer": {
+    "body": "",
+    "citations": [
+      "c93f918e2cc62d309e3d5a72d0e8846a886c8806304482d07a35f8c67becc428",
+      "ee1587ec7dcf525c6c0b3c245940f961b663e5c63d2510fa18f4a0cae769d458",
+      "ca4146fcecffa619283e2d4af4ccb486ea2ddb737f3d5b75ed58ddcc5c13d8d2"
+    ],
+    "explanation_verified": false,
+    "facts": [
+      {
+        "kind": "version",
+        "source_ids": [
+          "c93f918e2cc62d309e3d5a72d0e8846a886c8806304482d07a35f8c67becc428"
+        ],
+        "value": {
+          "instance_id": "4ee170aa71c35d48c1511371b85a7065a22e35ccf5ccf7f90c9c8ce8f4b8a44b",
+          "package": "pyyaml",
+          "snapshot_id": "05989409d18cebef7971179c57f0ef8af69afe462932f633f4a2ebd845daee41",
+          "version": "6.0.3"
+        }
+      },
+      {
+        "kind": "version",
+        "source_ids": [
+          "ee1587ec7dcf525c6c0b3c245940f961b663e5c63d2510fa18f4a0cae769d458"
+        ],
+        "value": {
+          "instance_id": "a2d2e967700ed861523041f4ccac759d54a353f882bb900e2c549fae9bbcacfc",
+          "package": "pyyaml",
+          "snapshot_id": "29f4a5b22822d6a5b59faf43e96213a4bb570891ed0d319f0e15b2d6f1fff577",
+          "version": "6.0.3"
+        }
+      },
+      {
+        "kind": "path",
+        "source_ids": [
+          "ca4146fcecffa619283e2d4af4ccb486ea2ddb737f3d5b75ed58ddcc5c13d8d2"
+        ],
+        "value": {
+          "instance_ids": [
+            "544c10308146f442abb1c2674f65797f79771777a39d2aef7ab620fb28bdddbf",
+            "a2d2e967700ed861523041f4ccac759d54a353f882bb900e2c549fae9bbcacfc"
+          ],
+          "snapshot_id": "29f4a5b22822d6a5b59faf43e96213a4bb570891ed0d319f0e15b2d6f1fff577"
+        }
+      }
+    ],
+    "index_id": "1dd34349ff18aa6b4c9e7bb7f139004a178522180edbd59a8bcaa257d8a24e9d",
+    "limitations": [
+      "No dependency edge connecting the gradio 4.13.0 snapshot (05989409d18cebef7971179c57f0ef8af69afe462932f633f4a2ebd845daee41) to pyyaml was supplied, so no root-to-pyyaml path can be constructed for that snapshot.",
+      "Only a single direct edge (langchain -> pyyaml) was supplied for the langchain 0.3.14 snapshot; no multi-hop root-to-pyyaml path evidence was provided.",
+      "The supplied evidence does not establish exploitability, successful installation, or test results.",
+      "The explanation is generated; citation location does not establish semantic support.",
+      "Some retrieved context was omitted by the fixed context limit."
+    ],
+    "method": "rrf",
+    "model_id": "deepseek-flash",
+    "omitted_evidence_ids": [
+      "007ebfbebe4274f157c4f0fdbc4f712ec997a5e975655cd10697484817996db0",
+      "c4d3a6b08cb5ab89b0a996a8954788f58a4bbba4caa12d92e39d24abd49b772b",
+      "342a5d3b5044759f55679ab1b71fa4f6771a4686ddaec75a95a6912aae2b9147",
+      "bc787ebfbc6bee60208439234366e8e100dfd6b4a01086d809f77b54b624b1f0",
+      "345f2faa303f9c54b7915b93dc1d2f7f8c30ac73ff177eb6f668d0e4a54f1dd3",
+      "69543f9c51eed9b859bed66b934ff6e34658815c6f29fd9fedbb3a2a586deefd",
+      "0c6a04756461180e367891ebd3d016b5fd5e082616bf0bdfe08a6697f01c4d3c",
+      "b8842cfa3766019f4a65477f08d13f866d27c2770f16eb665c678b62cb96ea2d",
+      "0a88300b8af243c1c661b84dbb81d2c0b1c646ab656f816bf039f91f264e1ebc",
+      "a988637595e536acca44a59e90aa2b8c2516a19a58fdaf0bd4a9a0388fba8484",
+      "21bc0e2da2aef81ac9bcb690d2d4c50a6da7f6469661cf3a6284e666ec9c7291",
+      "2bbabe6559988fe86b19ef5e023a2b92fa05b5a7123666ec5068d0f9778fc81e",
+      "0d7e5d71db2ca62c4d83cf21995aabcd5f749a8c681b4aca0abea837fd1ceec8",
+      "df2292a0e0efcd0f31cf6aaad2f204590701153ba00b09eeddd670e0831305e8",
+      "33a65f999bd7426de40620e04ead31b718228d4e6f451f980e1e050bf9468b40",
+      "949549286954c444dfef244b061073fd04942ff70bdd541b61e748e2297ded31",
+      "d6fa84b72fb55275c71564d01546f2a299553d264ec29339020bf2706c084a91",
+      "db36a1ab9a7f901c9ab4018675ffec724f8246c2d3c351989cca66700d119935",
+      "763e5067c2b7785b86457b4465ca1b29cb1a5b5c98f3025c2b37de9b853a504e",
+      "d1d6616b2179d013cf53fdf55b2d7a0e7ace5d4847ab85b195a31246c6c4f2ab",
+      "8a85c6472cc7aeab5cda003049e4f55b0410add7e3f24335380b6338c60043c2",
+      "c271d08299c5040cac659fc5a93149b7c44c6d6c44707451a31a88091645418d",
+      "dc740d4bcfb0a481f1e4dccb7a63340b70c0e656177b888bc440a462c5b404d4",
+      "f7d418909a5247cbbdaa7a235ae1fc4390bcf29b04ad2c72be74c1e45f1c44b4",
+      "789cad7bb7cfffd212a2fd1b114090b8107c39c1eeffa8ac29c132ccc4073688",
+      "b6a65618a513408bd60c0610713fcd57589888c003085341466a21235a06abe3",
+      "c58faa22434cbd01080c62927201009a48753a4e0603c9a371def7c1b4dc5143",
+      "d48e58361d7ecf34e96d93d4ab31446dd0da5c5cb5893c059525c4cd557bd50f",
+      "0d5980df5bb1a5d9649ab13e5bf76acc46455d47f1ab14249993b4699fd96a38",
+      "4015fc6d4beca3a12ebd5b921e5d81e87d235fa0a2f2c47b17a410b85e8e7ad3",
+      "c85d95e0ba1ff7538694bf3b3423a2c5e645fd7644f39577a2c84df889a9466a",
+      "fac36f4e76836cd411dfdbd519d03f0568098846f90e8544b0e8e7c2a773c199",
+      "b3f983a7c69ff3243ed2fd5dd21262c119f714f5d0be1f903e7e9cc8deea9378",
+      "d1e07d4cebbe48504b102ded89b5e7c72be9ef4a8a65ff857b613cfd992b559a",
+      "c085de765a31add0072b24f3bd0530e470f7e3a3a4abfa39715e7d2f42d1afa3",
+      "d707211a57626a94c0a70b4d35a730eec0c42bec9a3733b2f8ad88b1882c8981",
+      "7b15bb881bd23d35b277eb5c041e8b6dd265875747197b0a0965f48aeccbb366",
+      "a242526d5e8529dc4a353369abf1290578ca792eb9e6980e3cd325f0118c0e1f",
+      "c95298dcae8220cbf8f9d55aa38800957c5592e71dc3de09c44383bfe1ac9a0a",
+      "dd589c8ba4577260b204872e0532516f468552f75746d52edc2cd20d9e7df3de",
+      "6157ec5801b1de1a5dff54d4538a4f72aebe3b89dee0844c0e3d41b936b7f666",
+      "d9bcdc6b785ccedba29db08d6f1d233a7d0dc3677d0a9eb3b1c82527030d6a48",
+      "96aecd826d2292c497d22b5a71ae4668612b940cc4820ba64648d85174b98ea5",
+      "9b4443ee30e7be72d102049f9f5958dbd55e947c68a26e2f404ff7abe45e8d36",
+      "b3d435c6619000d0dc9a2679b29d77440c410810dcecf0a93b7709b8a0c7f5b9",
+      "dc7cbb47add0d0960509dae8c86b7b2289a335ed1a386abca0c622e8563b5a98",
+      "88e1adfe4a34d1fa44834509112d6558694b2cc3bbb0240db84cff40566028a7",
+      "d0c561825b1925e37b4d551f3bd34df674389e686412db732f6a61fe12ec36ec",
+      "485549ea188f87f340533e2db86913f6fcd52aabbfed919398ab05d16f043484",
+      "d1b211e488b8b23348565fcb74d9cc91ada4f8a2909caacb8b60d4d993f085a9",
+      "940c2f2a55b8ca8aeba6897353f3947a530377255368f054242a24d2bd729d77",
+      "df7d35eb1c361855c48163deded705c58411bec2ed74c1c72fdcb70af90e1667",
+      "25287532c217aeeca93d7289f135dd38316cdd653155693cf0dea9c62c1409a5",
+      "5b09b600aaf8a4338dbc994b3f08f3b0774c0fc9b09765a399d81fef636430d8",
+      "882a4a60792a311a7158759f564f4b40b22ae17be88791984d1a031aded182d2",
+      "d096b3a4d687fbe98c60eb30f7f2527dd969ddfb400c39b9ca179b6597ba5ca2",
+      "4d5eb661704c6acdc1fb1aa764009c62f538bddcd2112cf69633d71adc669692",
+      "7cd1ba985d31baba3c4e81e2218def856e05df9e8d30907347822dad9cdf34f6",
+      "b05c92cd7bb483db4fe80a23308b9b88f6c13c3a656f4d7a1e14dfbe775a5018",
+      "c3d63754c0a964563b630e3dc9c5c733c53026faae18ae9fce95e6d813cbffaf",
+      "282d29d2cd076b73067274e82b7db6fbad88be9b7a466f90a45a49350acd1d12",
+      "5d51b914939791312b08e420f19fb81bb18c17a50d4ddf4d40b6634fda39aa73",
+      "0c62812aa8c9314b37e91fa359305bee2a4ac60147e566f5455fa8ee653c0ad1",
+      "3b177baf1b17d6ad5c6fdfca5006be276a6dfb34f2fca52e73510baa9c0f3d81",
+      "4e42bab55024aa53bd56e4799ef0b9267cdaa82dd0498dcbcb99719a073554fd",
+      "dbddee67d7c30d1ee927728d1cfb4bd6edbfa800641b8a1b63e21ab2e2440b72",
+      "20e2b2d99f9663043c1c4aa0f1578b54aa31bbb15e6be7712ad4a7b5a277b7a7",
+      "c31237c8348be14e165260024b4c65c2495b694770469da0badbc484f06cf0fb",
+      "511ed94118ea64e4b7ad53eb2e8532572d4eafb995e6763da2aeaeee5289b344",
+      "9e14e201d7f503e83f89bddf94a679f6b466aa8fcfeec95bb9fe1175a79493d9",
+      "a7c7f759767257fbc6dbf1eaab10b2d283a4f9ff87905a2b155e4a491ba4db6e",
+      "adf91601ec558d7dbdb8afb46e29e823838e08f65d74bbd96f35882af99d6add",
+      "17c49f3c762140d3281e6ae47b1ff696c666d617d1bec1276fa1c472e7e0be13",
+      "589fde188ab3de40636f0428d13d917c084615ceea836b109831c607f17e036e",
+      "21fa8cc6fec27c586a72e248d5f5de4a24ba4b41849a21e587215dce08df0b11",
+      "a2a4d9b388cac57cc07877eb73caddeb97b1e09244691739d88f08dc7fa24eb9",
+      "91e17da2be39e2719c2ab180d433ab4515ddf118126a5a8a2c323d3fca184154",
+      "9ca62a833525a7109e03ced6a13e3e17108e1d7ac8a430dbce46a1813531c516",
+      "1e990ffe40721e98e85f2cfac1ae4481ca19ae4c5199414096142627387a7a41",
+      "b1b4a1c839507c46e26ee2cba0faa0da80c8b452883fc93c6780e903b6577e14",
+      "779d37db6eb1720d8b55f06e74054736dccc811531c5d5a09820acea8d9ffd36",
+      "d2e01eb602485410d7fa47f8010b733d6746cec322e0aa9c56f2c2d3da87abb5",
+      "12cf3e2d2cc991128fba9e28f26f5deb4207158b153f940562388f6c7b2d9243",
+      "a25ee5c2da3a59078b31d335e9b596f7c1d8e62e60ec9b91011cc08ac8591c00",
+      "9a79e736ba4ce7fd04fa87d90ffb4ab9fd7d815a31b2a09f975ab50fd6089fab",
+      "ba83f701816adef2f36eca7371005520a46d1faafc5c4ea012f3a9ff8d0fbf15",
+      "0c18382832815417d3244ea5ec19ebb51a6b0aab4912e781cbbd682eac39d09d",
+      "91b4f7542f0bde685570106e2b8730edadb3ee652ec85c51612c984f4e155845",
+      "16af57d79ff51baf11de71fc0c99c8cbc9954173987fa484e73f519b8e4b0081",
+      "f92a08d23986df6d85e16d3c574b2d555b1e04a2273bbf9cf39f0e9e596fa7f4"
+    ],
+    "raw_output_digest": "a45b712a5520d51b0dcfafa806c0fc5454e5004151783b551c768cd5258fc46e",
+    "rejection_reasons": [],
+    "request_id": "3c0355b6-459f-4699-b15c-39d1e5bae0ec",
+    "status": "answered",
+    "supplied_evidence_ids": [
+      "1043d199ca91e8f9f063a089543f51f753dceab3af7626dced4a8e3f8c7237b3",
+      "c93f918e2cc62d309e3d5a72d0e8846a886c8806304482d07a35f8c67becc428",
+      "31cd51a45eb7f4d11a2aac4ed766d8d9e627cc00e74603ec5f39af739945b97c",
+      "ee1587ec7dcf525c6c0b3c245940f961b663e5c63d2510fa18f4a0cae769d458",
+      "135899d5202d39e9d2970b5d3543791f0bb5e923a95949d243f7408ad7545600",
+      "ca4146fcecffa619283e2d4af4ccb486ea2ddb737f3d5b75ed58ddcc5c13d8d2",
+      "36ebe00e7ffb0d7fc9545193de40af8da185db74c51ab01313ec7d9b87a099d0",
+      "6a33a60a2013ede86be31708100221a55b3cf45f885de389ccc1607f123899d8",
+      "7cfae8a54d2897aee0755eb5d98c8019a90314747cb436d990945c8dbc512ac7",
+      "97e5cfbffbdeaaad3c391e14235e553b26cf55edc91cc6b7474217bb73ee4bd9"
+    ],
+    "tool_facts": [],
+    "usage": {
+      "completion_tokens": 744,
+      "prompt_cache_hit_tokens": 2304,
+      "prompt_cache_miss_tokens": 4516,
+      "prompt_tokens": 6820,
+      "prompt_tokens_details": {
+        "cached_tokens": 2304
+      },
+      "total_tokens": 7564
+    }
+  },
+  "cluster": "gradio|langchain_family",
+  "family_names": [
+    "gradio",
+    "langchain_family"
+  ],
+  "finished_at": "2026-10-14T21:21:35.485737+00:00",
+  "kind": "cross",
+  "latency_seconds": 3.6069641658104956,
+  "method": "rrf",
+  "order": 300,
+  "question_id": "988b838c16c092740d8d2eaefb4c005a6518a728b006129dd6054ce991c34863",
+  "run_id": "benchmark-v1-20261014",
+  "scores": {
+    "citation_locatable": 1.0,
+    "citation_semantic_support": null,
+    "correct_abstention": null,
+    "evidence_recall_at_10": 0.5,
+    "exact_fact_accuracy": false,
+    "parse_failure": false,
+    "service_failure": false,
+    "status": "answered",
+    "unsupported_output": false
+  },
+  "split": "test",
+  "started_at": "2026-10-14T21:21:31.878730+00:00",
+  "suite_digest": "18076e9625595a7cd5fdb43e0fe564553a187b04947afeb4a6b02944be80dcc0"
+}

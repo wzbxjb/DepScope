@@ -1,0 +1,124 @@
+{
+  "answer": {
+    "body": "",
+    "citations": [
+      "b647745d973fc1445167627fc483a23d4f016f4db454a806b1ef96bf3944a1f7"
+    ],
+    "explanation_verified": false,
+    "facts": [
+      {
+        "kind": "version",
+        "source_ids": [
+          "b647745d973fc1445167627fc483a23d4f016f4db454a806b1ef96bf3944a1f7"
+        ],
+        "value": {
+          "instance_id": "5e609c5cf23c12279a1865359ae9b66dadd1b2fa8c4ad499f64a7fb5e77853f0",
+          "package": "datasets",
+          "snapshot_id": "5703402a4a4561897138fa5ef95d1df1cae574cea54f0eef0985baa02926ae2a",
+          "version": "5.1.0"
+        }
+      }
+    ],
+    "index_id": "1dd34349ff18aa6b4c9e7bb7f139004a178522180edbd59a8bcaa257d8a24e9d",
+    "limitations": [
+      "The explanation is generated; citation location does not establish semantic support.",
+      "Some retrieved context was omitted by the fixed context limit."
+    ],
+    "method": "vector",
+    "model_id": "deepseek-flash",
+    "omitted_evidence_ids": [
+      "16d32dea50981f73f67ab59e7c4f0cb1e2d7092fab95445d8e91b2a4cc2487bb",
+      "de7d87ee5ac9ae2f4fb24fe41fb56c6f0bd869e6b5d44952c99eaf1cd240a801",
+      "7acc356556dfc188d1bd1ab78b87f1c2399e9919ec83d61f223fef49a3a9608d",
+      "99f5747bae1fba418d437a48c7a5dea45626630efefe1dccb9e42a1354d7b2eb",
+      "d924dae255a819878cd125d48872262be5c81b5f66436186f865eb4713ca21f3",
+      "a0f4dd499e2ca82195433cb6623106b66727c7f53d1ecc18ff05d81aee41813f",
+      "7b91b3e3626e5cf9ce9b84191c3727c7f5db5fd4f350efe2d69a830e076e87f5",
+      "4217bb3f2a346c908241a2e008e0b4d5899a95e7ceace7b0b5b8bd2607eac4a6",
+      "7b1b5820d8e387fbf8cf46c89a4a3849d0a1baa29d5d2b19a57d1d1f3ced1417",
+      "0bf4eef3b002a5507ea9da0ba90df0028c834f5ae7427236662bf8a5298c3eaa",
+      "e30d5b2416a638f3f3e23f0cd0a5a5f1ddd0f9798d4aeb198a149f11bfd15dc8",
+      "edc4e5ef939a8f46a8b57c6857a01eed547c44326d14d4e54f86b88c1d7238ac",
+      "9a5f8e9858778e98c0bd6ccace267d13c19d9b55d1486555ed6071951f8f9898",
+      "e9f2aa78ad721ecb6d745a6719ff6eaf5aeda4802b0be8a6f072f35da13bd59d",
+      "f463ddac306a08e38e43d43c313df7fb002fd5f9a5588a8f21c97ddb6c4218b5",
+      "8d87fe269807a6e3409bdb56b10e0c85ca5808ed4065b31c81cc9f37d2045264",
+      "e188c07d9fbaef17b3b030665e92931ee3c377fbbe84273373d16398e6462a27",
+      "e37c2d2b8ea73f4e63d8f72bad268d8a42b751f32e3371511e51649e643552e2",
+      "b98ab69678c1dd51e2a9d93399fc709e2daa0fccdf165a55a0866d396b0e9a10",
+      "3284e7dbd997ab3e74978b06bd2304e2e4fa7c11f2957138467807555704acf2",
+      "68e32e4c96efbf5bd0bfb0febbb7c56823d923de0500d4cdefe428732aadd224",
+      "0e511f28eeb568352e3c1c92cdfcee5e7793547ef567a792b368ee392e61abfe",
+      "14f5c6858d1b4a6aba2785ff861aa39066a2508a8fbd5409958d1b97f19f385a",
+      "618f1d226d8fcc55153aa488298b6bd1de79897dd7accf1353dd15ac458d1cae",
+      "0092d1d7dd57b10adef2da01fad5fe9ca25ba6c01783b165d12b729fde3417ea",
+      "5152fb2b0b8600246ef2d6f058b699e8ef50621f8114cbb210b69e33a9c871a3",
+      "48ccf70df7de389823ec282fc27151c1922268cdc36a1bd0aa1a3db8ee8c5aad",
+      "d7b47209456cf174e78df45ddd91bec30602d02cdbbd771de3bc51311da3e09b",
+      "682a491abfa998653d4662e1d4938ba820d0671a1b91a4918f53f1f4e4036bbe",
+      "b56f9fbb6c30e5d10a7dad15971b7df6442d33e0d0949f1c6e1f35d1aba8e947",
+      "be9d6086cc90610f2d5cde749b7e4b57a2389358b15a8780fb08c62b3bf348f9",
+      "abf5a2703a7f22121f7708998390f3687a74f0143929cc13dcc09858ec3b7f19",
+      "f80ad65f1971bd8140e8be379172bb58e86aea7eee5adcec4ed973e7755f7402",
+      "76748556d684a2ce800c525ebdeeb6f8b5a69e815cb1f6cee8ed66c9355ffda6",
+      "b8efcc3cef9b2351d46bc931f6aaf342641a6abb5b45b21e497d9e1ce2d1e638",
+      "45d129f036cf31ac9747933cb598da6807a5bbb1b7ea2c303717828989f35c52",
+      "e8e6f6660f134313b4a43fd17555d2bb294c3e0eeb3d23246f66fcd4925bdb89",
+      "d89d974e3105faf4a23204bf50ba09ce52e4cb202d4cb9597c2befd915dfe988",
+      "b357c57096d80412524c2bd7a570752786c189e073d7bd149031fb4faaf4bf24",
+      "3396bc8e00726caefcf7ffbd4cab5e502b93178fb4ded4ab450c2ac1edd0f1bc"
+    ],
+    "raw_output_digest": "591fabf91188f2128b593f86b442d6c21e88446c2d4150ee7e053293f60b246e",
+    "rejection_reasons": [],
+    "request_id": "f148e575-f45d-4a49-ba6e-12a3c71c4dfc",
+    "status": "answered",
+    "supplied_evidence_ids": [
+      "b647745d973fc1445167627fc483a23d4f016f4db454a806b1ef96bf3944a1f7",
+      "528f6415d5038aeae564b740f879ea0da85818fb6c19f074561ecb6a06e61159",
+      "21a0fdce0eb406c5841559c9a522a8adb6e74df88d326a9e9ddc634f9f6f59e1",
+      "d41422b043d5ee558070246985dbbedc3a222b1d1c4ea9bbb964aff87e68e6c5",
+      "31689e49899c2ecd51748f774e667937a06eea730a3158f5dd05b47860900cf8",
+      "b1360f6c42fd970187d341e7d13a8e4e804fd1f69470832fd3af96c3d1b114f7",
+      "ac0905e2769ba299b9cc131843c626f81d6248e05ee972c07ddcbf981cc93d49",
+      "8df65dcf8c57e24d0dda16c16b3f80de0c3854fb063c2ae5a0160f979fffdc04",
+      "14945720e3c06e9c74e5e16d02532a41de69ad5b049a1f9b97796e1869b436c8",
+      "dcb7877b9401923f28b1ccba05ace251e5cce466397bddd2a68959fb4442abed"
+    ],
+    "tool_facts": [],
+    "usage": {
+      "completion_tokens": 213,
+      "prompt_cache_hit_tokens": 1280,
+      "prompt_cache_miss_tokens": 6530,
+      "prompt_tokens": 7810,
+      "prompt_tokens_details": {
+        "cached_tokens": 1280
+      },
+      "total_tokens": 8023
+    }
+  },
+  "cluster": "datasets",
+  "family_names": [
+    "datasets"
+  ],
+  "finished_at": "2026-10-14T21:16:29.093015+00:00",
+  "kind": "single",
+  "latency_seconds": 1.8676192499697208,
+  "method": "vector",
+  "order": 64,
+  "question_id": "dfeffbe3c41e4d655715d38031a9ca7e813f408646753eefa1a7d120a2a0df89",
+  "run_id": "benchmark-v1-20261014",
+  "scores": {
+    "citation_locatable": 1.0,
+    "citation_semantic_support": null,
+    "correct_abstention": null,
+    "evidence_recall_at_10": 1.0,
+    "exact_fact_accuracy": true,
+    "parse_failure": false,
+    "service_failure": false,
+    "status": "answered",
+    "unsupported_output": false
+  },
+  "split": "dev",
+  "started_at": "2026-10-14T21:16:27.225368+00:00",
+  "suite_digest": "18076e9625595a7cd5fdb43e0fe564553a187b04947afeb4a6b02944be80dcc0"
+}

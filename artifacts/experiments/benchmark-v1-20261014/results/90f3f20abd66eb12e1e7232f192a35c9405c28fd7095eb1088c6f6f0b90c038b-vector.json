@@ -1,0 +1,124 @@
+{
+  "answer": {
+    "body": "",
+    "citations": [
+      "ab7f48d821bc89a6567964874e33345049459fd0dce3f99c240c505fad570ddc"
+    ],
+    "explanation_verified": false,
+    "facts": [
+      {
+        "kind": "version",
+        "source_ids": [
+          "ab7f48d821bc89a6567964874e33345049459fd0dce3f99c240c505fad570ddc"
+        ],
+        "value": {
+          "instance_id": "d4c6baa5cf5b16af384652e8c77717fbca8cdce51c2a2627d9e8ec069dd38257",
+          "package": "aiohttp-retry",
+          "snapshot_id": "208dc2c88a69273e6949d398007bf1256a0f93bda5f2884f5413dec791f54962",
+          "version": "2.9.1"
+        }
+      }
+    ],
+    "index_id": "1dd34349ff18aa6b4c9e7bb7f139004a178522180edbd59a8bcaa257d8a24e9d",
+    "limitations": [
+      "The explanation is generated; citation location does not establish semantic support.",
+      "Some retrieved context was omitted by the fixed context limit."
+    ],
+    "method": "vector",
+    "model_id": "deepseek-flash",
+    "omitted_evidence_ids": [
+      "7b2e99aa95dc7a73d5ddc3020ca496358025103a53cce3ccba3075ce6d603f92",
+      "95b6dd814278db95e8764f01668a0377b1ee828374d6054b1de0fc1219530ae2",
+      "2eef400bb1bde2b1ee3312d447e57b621194d50fb1e8d362b1f78fbddb7c96e5",
+      "6e3ea8078bcf3a3c6b3ce7da26036143264f43ce572d28d2fd15ea522ee2f588",
+      "cf7eb5f27a38564760412b886c76d2d94512b786983003f09f14e20a9152421c",
+      "de82c68dc8e07d3ee9a8d57d16ec810f52c5d9791c4ab8f29d41999f15e32e7a",
+      "8f87260ae85bccf8f19a601c59286eb661704ddab1d1342e181529ec2a974fe8",
+      "4335dead17edfa10e69c4114de53b16deb7c3627fca0bdf365cb0aabd2d30cc0",
+      "07d45163f67fd505de979606e376de9a0827d6417046bc51f9b3dc2c11f3665e",
+      "6d7326d89fa55b50a510189782462379e4acc2f3a597d6b06517eb41f9afd9ea",
+      "b8ad1286ac65f454ff2d1c15dec1e0f42977de447fb4bfe7ebc819569b8f082c",
+      "97eb46f63ff1fcf653466759a38640a49009597fe32762116a84502f431d980b",
+      "90e51facc5cd09689a986b417ec07ff089ba8006e2c7e04091395902da678b8c",
+      "09ae82593f0771a45ef920bb475574df763e5760588d52afc73a3f0a4fbe888d",
+      "02ea5a1a441d967d8b692bee402a6d7178ef036ec45366646e90fdd81b24b867",
+      "243347da23fa4ff0d7af6394b05d2ea168ed068f80e6603ad6ec85ba3fa1d5f2",
+      "22d5c82b49a71b4dedda229740036ade8cc77fb4ac06e5b9aaaf595cc90648a2",
+      "e37066c34b5808bbb6af1cbd2de59334d215c6e7a8cdf3c0cc2fb4fa3c3f7c4b",
+      "a257758f04a10cdf83ef410fef835ac8bf4d7cccf4cda410fcdb53a0501ed076",
+      "76e865a8df64b5f21aae66ecb4e162969d65187428167c91a6815166b95bc1eb",
+      "257926c55d6e85036a4f0b03644dca698b338468c9b6ca2c32b08878c2c884b1",
+      "35f9baf01b646a8121841943dc03adf8e04e5ee542a2f3229f45ed6513cfa41e",
+      "354d729c2312e868a69f68361748984d42a330ee2e240f284b6a987a0894880f",
+      "074240d255b086d9d3157b6c66fc9a912d2ae287d1b16d4b299e69bcc8abf18c",
+      "44a67af30181bc7af2efd76f879c343986e583f3abd5f232210a9f53ca7206a7",
+      "1a4967298166213b2b923a6a0ff560744d334e31957bda6af56bf8ecc4cd5281",
+      "5945e53020850f0601502075d575803e759f5ffe959bdcfffe071063b4a75f76",
+      "9f06098d7957460419d89dafd28aa187d7305fb3549b1882f9339015ba347061",
+      "e446a6d672dd121f3e8880fd83d5f793e7a014d37dd68f643572a3540050b1d2",
+      "66d021fbc585c3d05d93b05d3053cf6fad09e1693d2ff271c9ddee3c241ec13d",
+      "bb7c33ad1a7882007e4d292260fd3c26946d7487d46c32f9fabbbdf22968f72e",
+      "4c4d6de86817bf79153d5e0af160e19a36748a2072f9bca67d86d82513b85cd1",
+      "6a0ac9b582eca6c85f2eb6e669aa1c82933e41c6cb6e4dfedb357db29d79afc1",
+      "639a0f34eb060d3a47af3059d6983a929abfec858f8f6cc236efcbae843d5654",
+      "232508da181ffba75bd52012e426ccda368af7d6ae75c487fda0ed6657dd947b",
+      "cf198f1d1322b9e28adc4d780cb130bffc5389d8505db05a3838a48c3ba7bfb0",
+      "08e4d5d3c2e3a61f0fe362ea14bca4a63a06165d6e1d889b59e67d665cf38102",
+      "521dc748d9ad807fd4d6c338f23361b669a2a5085a4ff5ff197c86273296bb3f",
+      "ad78bb4cd84e62f3d106b64ce1b2b17a24ec86a5463371b6a538778a8a4000fc",
+      "9845ea492e3638783fdd16c8089c19dbe8ebedd94b425efb5bc3924c7b1d80f6"
+    ],
+    "raw_output_digest": "2fca6a84b7db6804d0024b42168aaccb82967990001c38c00a612d6c82624e30",
+    "rejection_reasons": [],
+    "request_id": "a888db46-f550-48ff-9315-f05186ce2b2a",
+    "status": "answered",
+    "supplied_evidence_ids": [
+      "f34e3134b1a9f0bce77688077c1cbc9b8adeafd4a22f656d58aa18d16442241b",
+      "ab7f48d821bc89a6567964874e33345049459fd0dce3f99c240c505fad570ddc",
+      "e12663331454dd22bc364da004f0da78b8e53302c512333d19fb28e767e1f51e",
+      "a5e2557942e952eceaddefebb10929967d3827bf0dd6b4699fea4001f9f5f798",
+      "db8ad4f63dae570a67ccbfbd110aed9749a682d56c1606373c250812d161ec5e",
+      "0d90c94d63e95b32af94b626c797c741de400eb9f443de3b02c188b20369ecc1",
+      "e3a26c54bb78267c9df4e43d395ead2a1b87e9982493510d09fede09cb07a098",
+      "1d7a1a0a9bed5887f17ea5c508c26a184d247adc25a355f24ffc9aae0087c503",
+      "be4a6693c116b4e84278517601dd40aee790078e41dfdb103e7a10209ce16eba",
+      "bc1f83e778b5ea6de2991aee290c6adafd28a6fbf3cb91a6e827fcf897382274"
+    ],
+    "tool_facts": [],
+    "usage": {
+      "completion_tokens": 199,
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 7157,
+      "prompt_tokens": 7413,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "total_tokens": 7612
+    }
+  },
+  "cluster": "chromadb",
+  "family_names": [
+    "chromadb"
+  ],
+  "finished_at": "2026-10-14T21:23:29.797860+00:00",
+  "kind": "single",
+  "latency_seconds": 2.1952457088045776,
+  "method": "vector",
+  "order": 475,
+  "question_id": "90f3f20abd66eb12e1e7232f192a35c9405c28fd7095eb1088c6f6f0b90c038b",
+  "run_id": "benchmark-v1-20261014",
+  "scores": {
+    "citation_locatable": 1.0,
+    "citation_semantic_support": null,
+    "correct_abstention": null,
+    "evidence_recall_at_10": 1.0,
+    "exact_fact_accuracy": true,
+    "parse_failure": false,
+    "service_failure": false,
+    "status": "answered",
+    "unsupported_output": false
+  },
+  "split": "test",
+  "started_at": "2026-10-14T21:23:27.602591+00:00",
+  "suite_digest": "18076e9625595a7cd5fdb43e0fe564553a187b04947afeb4a6b02944be80dcc0"
+}

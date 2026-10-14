@@ -1,0 +1,73 @@
+{
+  "answer": {
+    "body": "",
+    "citations": [],
+    "explanation_verified": false,
+    "facts": [],
+    "index_id": "1dd34349ff18aa6b4c9e7bb7f139004a178522180edbd59a8bcaa257d8a24e9d",
+    "limitations": [
+      "No recorded dependency path from huggingface-hub to certifi exists in the supplied evidence. The only edges from huggingface-hub lead to packaging, filelock, requests, pyyaml, fsspec, tqdm and typing-extensions; certifi appears only as an isolated component node with no incoming edge from any of those nodes."
+    ],
+    "method": "lexical",
+    "model_id": "deepseek-flash",
+    "omitted_evidence_ids": [
+      "cd3ff7f1868e3e3b8cb6b47b2d666edfbc5ebaa2fbc7bb28188459cf2f991040",
+      "7ff929fa53d3a92a8989d0737c0cb730c0785af7dfc061ba65969dc110da5bd0",
+      "a842d19d9a0c8cf8332629d9b8dc8a98da95ff882fe43fede0b12327d65bae8b",
+      "f045d57808610ad43a6d373fd772cda1fdab80b2600267cc4716af147c3f0f7c",
+      "cbd75a64e9258e84a242eb19346debc6517bf668482289285f829ba4e2c7cad6"
+    ],
+    "raw_output_digest": "2adf5d9f5eae985e7001ab5973d2e0f7b7131e7db49503553dc0f6311ba4bb73",
+    "rejection_reasons": [],
+    "request_id": "2df42357-eb79-4da2-a7ba-3138264604e1",
+    "status": "insufficient_evidence",
+    "supplied_evidence_ids": [
+      "2146e213146756906d6e44bbfbd585c909a9cb71613679a8a11abd7051de8fa4",
+      "d5f2bdc95e9ff645cc4557ec9fc4d03eb8169ba18e6d39eed5cffe3f1e1204ac",
+      "62b197456a66122c2e6c984fefe877859cbd7dd945e8b902a9763edac51f2e36",
+      "7eb5bf9699e32e2ecc8b9409ddf962e05dc38ef29116a79b10a30e933ba4b92e",
+      "a163d110672ea5019f8b486b21d6888867f9800a9956bdc117c0bbe683a860d3",
+      "f03e6af848f6672818652e3f5683288267dbb77c81b07ef7c646da6ac3ccd558",
+      "f91ed68a2c0c4c8d9febe92922cc086cadf5c6c7f2542a526eace39dbca20e55",
+      "b90cca84ddde0cd5e1410a56449d7b23be834c7ae09c1dfe068dc2e302f605b9",
+      "71488a4a0a3aa93371226ef8805f9dc60cc70d853cfe25f67f5fe135ffd891c3",
+      "dbe553464e0a216c1ab4d130df6d8cc0a278141e497ea7011973fc0379055f13"
+    ],
+    "tool_facts": [],
+    "usage": {
+      "completion_tokens": 88,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 6111,
+      "prompt_tokens": 6879,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 6967
+    }
+  },
+  "cluster": "huggingface-hub",
+  "family_names": [
+    "huggingface-hub"
+  ],
+  "finished_at": "2026-10-14T21:22:23.033465+00:00",
+  "kind": "path",
+  "latency_seconds": 1.4563387092202902,
+  "method": "lexical",
+  "order": 371,
+  "question_id": "79d1a61e4024bb590e3529c4036b1c45498c11890e4817dbd583d46c42f239fc",
+  "run_id": "benchmark-v1-20261014",
+  "scores": {
+    "citation_locatable": null,
+    "citation_semantic_support": null,
+    "correct_abstention": null,
+    "evidence_recall_at_10": 0.5,
+    "exact_fact_accuracy": false,
+    "parse_failure": false,
+    "service_failure": false,
+    "status": "insufficient_evidence",
+    "unsupported_output": false
+  },
+  "split": "test",
+  "started_at": "2026-10-14T21:22:21.577099+00:00",
+  "suite_digest": "18076e9625595a7cd5fdb43e0fe564553a187b04947afeb4a6b02944be80dcc0"
+}

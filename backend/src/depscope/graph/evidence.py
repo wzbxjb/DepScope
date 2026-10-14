@@ -32,6 +32,45 @@ class EvidenceBuilder:
             text, (source.digest,) + tuple(source_ids), "/text", snapshot_id, run_id, entities
         )
 
+    def comparison_receipts(self, comparison, source_ids):
+        # Each scalar remains an intact, independently checked receipt after fixed-size chunking.
+        if len(source_ids) > 3:
+            lineage = self.records.put(
+                json.dumps(
+                    {
+                        "comparison_id": comparison.id,
+                        "run_ids": list(comparison.run_ids),
+                        "upstream_source_ids": list(source_ids),
+                    },
+                    sort_keys=True,
+                ).encode(),
+                "derived://depscope/comparison-lineage-v1",
+                now(),
+            )
+            source_ids = tuple(source_ids[:2]) + (lineage.digest,)
+        values = comparison.model_dump(mode="json")
+        facts = [values] + [
+            {"id": comparison.id, metric: values[metric]}
+            for metric in (
+                "level",
+                "removed_known_matches",
+                "added_known_matches",
+                "remaining_known_matches",
+                "unknown",
+            )
+            if values.get(metric) is not None
+        ]
+        return tuple(
+            self.receipt(
+                {"kind": "comparison", "comparison": fact},
+                source_ids,
+                comparison.baseline_id,
+                None,
+                (comparison.id,),
+            ).model_copy(update={"comparison_id": comparison.id})
+            for fact in facts
+        )
+
     def build(self, scope):
         snapshots = validate_scope(scope, self.snapshots, self.runs, self.comparisons)
         documents = []
@@ -187,14 +226,12 @@ class EvidenceBuilder:
             comparison = self.comparisons.load(scope.comparison_id)
             baseline = self.snapshots.load(comparison.baseline_id)
             candidate = self.snapshots.load(comparison.candidate_id)
-            item = self.receipt(
-                {"kind": "comparison", "comparison": comparison.model_dump(mode="json")},
-                (baseline.source.digest, candidate.source.digest),
-                comparison.baseline_id,
-                None,
-                (comparison.id,),
-            )
-            documents.append(item.model_copy(update={"comparison_id": comparison.id}))
+            sources = [baseline.source.digest, candidate.source.digest]
+            for run_id in comparison.run_ids:
+                run = self.runs.load(run_id)
+                sources.extend(ref.digest for query in run.queries for ref in query.source_refs)
+                sources.extend(self.runs.revision(rid).digest for rid in run.revision_ids)
+            documents.extend(self.comparison_receipts(comparison, tuple(dict.fromkeys(sources))))
         return tuple({d.id: d for d in documents}.values())
 
 

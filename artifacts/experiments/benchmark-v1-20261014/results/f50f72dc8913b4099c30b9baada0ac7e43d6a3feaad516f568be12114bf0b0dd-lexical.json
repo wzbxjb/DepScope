@@ -1,0 +1,154 @@
+{
+  "answer": {
+    "body": "",
+    "citations": [
+      "074240d255b086d9d3157b6c66fc9a912d2ae287d1b16d4b299e69bcc8abf18c",
+      "06bd6f9ef62d9945bbc999a3969f441da11c575e28773f58777e1ae7119329d5",
+      "02ea5a1a441d967d8b692bee402a6d7178ef036ec45366646e90fdd81b24b867"
+    ],
+    "explanation_verified": false,
+    "facts": [
+      {
+        "kind": "version",
+        "source_ids": [
+          "074240d255b086d9d3157b6c66fc9a912d2ae287d1b16d4b299e69bcc8abf18c"
+        ],
+        "value": {
+          "instance_id": "ec12dd3683e3bd952d477b44ca6842379345efaa94eb98cab0cea32e707f5104",
+          "package": "chromadb",
+          "snapshot_id": "208dc2c88a69273e6949d398007bf1256a0f93bda5f2884f5413dec791f54962",
+          "version": "0.6.1"
+        }
+      },
+      {
+        "kind": "version",
+        "source_ids": [
+          "06bd6f9ef62d9945bbc999a3969f441da11c575e28773f58777e1ae7119329d5"
+        ],
+        "value": {
+          "instance_id": "81290b6bd3c4ddb272c9db1cef246f68920d658b5dac3a6f7d098c608da7ea2f",
+          "package": "transformers",
+          "snapshot_id": "fb131b55b20a7821c425ed7aaee88348935f34dbb3072a60e5c9b2ff26cc00a8",
+          "version": "5.19.0"
+        }
+      },
+      {
+        "kind": "version",
+        "source_ids": [
+          "02ea5a1a441d967d8b692bee402a6d7178ef036ec45366646e90fdd81b24b867"
+        ],
+        "value": {
+          "instance_id": "aa29dd0c928537bf269c04b53f81f4b17faf61ff945d20e07fb4141cf2e9ae1a",
+          "package": "httpx2",
+          "snapshot_id": "208dc2c88a69273e6949d398007bf1256a0f93bda5f2884f5413dec791f54962",
+          "version": "2.13.1"
+        }
+      }
+    ],
+    "index_id": "1dd34349ff18aa6b4c9e7bb7f139004a178522180edbd59a8bcaa257d8a24e9d",
+    "limitations": [
+      "No root-to-httpx2 dependency path can be constructed for either snapshot: the supplied evidence contains no edge facts linking chromadb 0.6.1 or transformers 5.19.0 to httpx2, and no edge facts at all.",
+      "httpx2 2.13.1 is recorded only in the chromadb snapshot (208dc2c8...); no httpx2 instance is present in the transformers snapshot (fb131b55...), so no path exists for that snapshot in the supplied evidence.",
+      "The supplied evidence does not establish exploitability, successful installation, or test results for any dependency relationship.",
+      "The explanation is generated; citation location does not establish semantic support.",
+      "Some retrieved context was omitted by the fixed context limit."
+    ],
+    "method": "lexical",
+    "model_id": "deepseek-flash",
+    "omitted_evidence_ids": [
+      "1b06ffd78c27c47d5fbe8bd2d3fa17b0b4eb24d7ad9bfcd064726f2ffbbd7dbe",
+      "398d8fedd74dc1f874d6fbc5f1f5db49309f8f9754f1e7687db834104eca6c30",
+      "57e39d1fdebf56d20d64a57ee307ae61e6881423fcb95b31f01d3395577a90a0",
+      "f4dbf09f1790cb3bd049c564f76c6afb8ccd57102f0412c0a45ca7f2acab34ee",
+      "c53617b4f2d110d12367ff182a524a3448a1c0b3f73bc280ac9b15d2dbe87de4",
+      "8f87260ae85bccf8f19a601c59286eb661704ddab1d1342e181529ec2a974fe8",
+      "1bf1df2fc824697f2603f88ef47b52c37f28042df91850d765947a992dedd560",
+      "30e21eea6f967a559c3f2e7690c69388858dbd1e52821e9c2949899d3772a67c",
+      "35f9baf01b646a8121841943dc03adf8e04e5ee542a2f3229f45ed6513cfa41e",
+      "530879ec3e5705710ad895439a6ec76b2f405bc0027a5777d509e5a166bd24b9",
+      "85ddafc71098bce8b4ddff1371958356e387260026ddc9ab87c8f69d2229f02e",
+      "999670046f8af7b8b2ec665c0a8c4dc9fcf748e17d3cf70ee7bfae850cfcb01f",
+      "d8a54c10227bfbd6d913bab1a261b768ca4ccfe6403fbdfe5d5819ec76db7da8",
+      "f446c78d31300f1bcdd38dd0e9c18e609b8a0e325579724b599c212a1dfb4072",
+      "4335dead17edfa10e69c4114de53b16deb7c3627fca0bdf365cb0aabd2d30cc0",
+      "7da41e05fd1b73d8824b2518fdc1b8de940283ca1b46c5f5c43eb028081dcda7",
+      "10592e3c89569450855d81fea27f3266944266e7f84f2cc65523cff65c3463fc",
+      "3e3c01873dd170e9af74743179989458a2631a982f83d70351f2259c84e4b7ba",
+      "7175519fd6996acda2b11dbcf3f489ee1eae473cb051405b0f72d7e7bb90a033",
+      "89bd1a82fe55a134238ceb9972bf9903a01b9ad69d16e75467e7b99c4ee568bb",
+      "f35bd3216e98fbed67e36183bbaf5b452173545ddb51424941150a513293e839",
+      "eddf24138491a22f178649f9b6e6bcc0785d7bec2e11e8b0a669f4c810c5224d",
+      "10d1c52aacb7561d3d3a853f823d9688bc51909d6e2e418ade9910e44efc2724",
+      "5ca249a3c0af52cc3fe85c8506370bd29442f96c065630ddbb782cceedb09ff4",
+      "99ad1f8cb5120d40f02ace934fece6034aa8d33d56628af9fe759450ec5a9fcc",
+      "63233bee71973dfe8adae21f71d909c35aa1c15badaf2c2ee552ec1dc06804bc",
+      "8f9997129007675195f1cebe7c615cf6a169dd055a3be2d3b2ac9d72ccf83275",
+      "76e865a8df64b5f21aae66ecb4e162969d65187428167c91a6815166b95bc1eb",
+      "ce5e23a3407907642397aa30329a9f1236abdc093719aaad528e613482bde415",
+      "8f6673459e44687ea0707fb015e16f42c84940cf01fbe2559dc2c9cbffa79ddd",
+      "e0285211148a7bbdb396d3f4e1b78f8ce97fe47f7b5a5be765d8160993c30946",
+      "1b646308760d854869c28ae57ef6ba9f5226751bd74f2ea531474e72b825d08e",
+      "d5bb77001e2831ab3fccea1425a8254f98f598251e568ac6b98f25e64575e331",
+      "6296b9301ed23dc960a3f0d993c4b987cc504e3dcc2d165cc19b49ff3cfd8c99",
+      "6b4c40ba96e0bddd05e729ba7cf3971be87da7c49e817542c5293faaf5b55165",
+      "cde8e20a7baceb4714187922698a934eba0a661f09768ee7195b725613396eb8",
+      "d99d187a75a3a778f14a372bd4ab3952d527c2f7d8f98e4b7d268eadfcecde8d",
+      "19d8fb06e9f61cce9ba39a3d41638552825581f75ef1b9b2cdac655736fbe7d2",
+      "53423e479769813a2a1621270fae0749d7247179ecfa1277a08e907e9e7190c2",
+      "de82c68dc8e07d3ee9a8d57d16ec810f52c5d9791c4ab8f29d41999f15e32e7a"
+    ],
+    "raw_output_digest": "26dc7dde84e89ffd4338fc5d3d4961ed4ae9a2a32b2eaf9adee13e947b022ce0",
+    "rejection_reasons": [],
+    "request_id": "d051a900-be64-48e7-bd8d-945c30f122ef",
+    "status": "answered",
+    "supplied_evidence_ids": [
+      "38e7a4145f0e34651ccf9ed70cc243b758ba902d666080c40c3a108d2a0ba212",
+      "d0aec6af0f672027153a480373166741f3da462ceff812cc4889c0adad5b38c3",
+      "4db57f47c7c4674b1beefb0f4216ebad93ea791e2787e8c7cf5536790264eade",
+      "5fc9910ee181c159d5c8a2a4cdffec170f18d5c38481bc5cf9d4ebcbaebbf587",
+      "1103befaa59ee9cb3f70edc60b9545dc213a812a577a6607fc1d1f4bc92a9ff4",
+      "1330ad64c15547a13c8aa1bbbc32091d3d3b1810f7f951bb0dba3c3c4ccd2218",
+      "074240d255b086d9d3157b6c66fc9a912d2ae287d1b16d4b299e69bcc8abf18c",
+      "06bd6f9ef62d9945bbc999a3969f441da11c575e28773f58777e1ae7119329d5",
+      "a360d44ea9ebb6bdcd031dc273552ffd13ad09b56e60a584f1663c0042344437",
+      "02ea5a1a441d967d8b692bee402a6d7178ef036ec45366646e90fdd81b24b867"
+    ],
+    "tool_facts": [],
+    "usage": {
+      "completion_tokens": 732,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 5303,
+      "prompt_tokens": 5431,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 6163
+    }
+  },
+  "cluster": "chromadb|transformers",
+  "family_names": [
+    "chromadb",
+    "transformers"
+  ],
+  "finished_at": "2026-10-14T21:21:56.728494+00:00",
+  "kind": "cross",
+  "latency_seconds": 3.337117959279567,
+  "method": "lexical",
+  "order": 331,
+  "question_id": "f50f72dc8913b4099c30b9baada0ac7e43d6a3feaad516f568be12114bf0b0dd",
+  "run_id": "benchmark-v1-20261014",
+  "scores": {
+    "citation_locatable": 1.0,
+    "citation_semantic_support": null,
+    "correct_abstention": null,
+    "evidence_recall_at_10": 0.0,
+    "exact_fact_accuracy": false,
+    "parse_failure": false,
+    "service_failure": false,
+    "status": "answered",
+    "unsupported_output": false
+  },
+  "split": "test",
+  "started_at": "2026-10-14T21:21:53.391336+00:00",
+  "suite_digest": "18076e9625595a7cd5fdb43e0fe564553a187b04947afeb4a6b02944be80dcc0"
+}

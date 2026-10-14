@@ -1,0 +1,114 @@
+{
+  "answer": {
+    "body": "",
+    "citations": [
+      "86394c1442ceb1f4a960b3c6eac90563bcc7e21591613d362899ad0cc93107a2",
+      "2b8f5fbd0db09403815cdc8a113d85531234c2eed734bf7cf3340b9d4aa8d3c3"
+    ],
+    "explanation_verified": false,
+    "facts": [
+      {
+        "kind": "path",
+        "source_ids": [
+          "86394c1442ceb1f4a960b3c6eac90563bcc7e21591613d362899ad0cc93107a2",
+          "2b8f5fbd0db09403815cdc8a113d85531234c2eed734bf7cf3340b9d4aa8d3c3"
+        ],
+        "value": {
+          "instance_ids": [
+            "a923390df45046bf2e516acae724fe6d1e877b0badd6304b9f6878379cbfffcf",
+            "3c42a5da6cae0fab5120012089316e10146daf9db2abdf8a1e18b3544a2af9e9",
+            "fe3bda26e7e3ce724e2b294336fd6bee81ac61ffe6d4c29711ba9d4b02383f1d"
+          ],
+          "snapshot_id": "ed9c60d51633f353775d7af6ce89af72ddc8e30aed96a9bf599867d2d212b225"
+        }
+      }
+    ],
+    "index_id": "1dd34349ff18aa6b4c9e7bb7f139004a178522180edbd59a8bcaa257d8a24e9d",
+    "limitations": [
+      "The path is recorded as a two-hop chain (langchain to langchain-core to tenacity); no shorter recorded path to tenacity appears in the supplied evidence.",
+      "The explanation is generated; citation location does not establish semantic support.",
+      "Some retrieved context was omitted by the fixed context limit."
+    ],
+    "method": "lexical",
+    "model_id": "deepseek-flash",
+    "omitted_evidence_ids": [
+      "14fbe39bfe86ad61dc963f6ef2bdcb9c807514de5fbd6ba504bfe9b1bb59a727",
+      "24ebcbbb52102b8ddfac3cf80720ee60ccf38a2f9788b941d8da92c2fd487f90",
+      "4176ccd89b228ae62323c4912daaa523a98960c151f5dcc49eeb04b20658b0fb",
+      "a75e767741ea7779015a917510c56801269b2159b04eddcb43def89abcbb8c8b",
+      "b0941b5470b350902370ab617dca6143c0288e90acf89e754050bb68c9e80a5e",
+      "d52fe90c9bbdbdc19d66f7eda1fc287b4c724d63c97f87bf571a5a2e17976631",
+      "dab27cbe12f0f0d9c874d7cbc8185053872d016f86e08bda77ba0f5f596e2901",
+      "e2c79259a4f44b6686b212bc961e8ee0c096069ed7800126f0b78cdae705024b",
+      "582b759378663e1652f9af734deb09267bcf486071c36dbc9bfe0dfaf32a88df",
+      "8686c11731d284369eda802535a73f048388eeeea7ca10cfc97fed1b3f279c69",
+      "8dea7a6fc407ccbf17e51bdf2e10b9ebd24830e0d7528412a5fc45a64067fe64",
+      "9741f638aca073b6b4aa67f3632f989be7d381e2b8f25232da132f02d036e95f",
+      "044227617a56d69d8b0ac040c55b97668a94800e3337e8867f2f73dc8e561633",
+      "327e151ddecad9b2e25eab270ac6ab0d6786e6f7fcde9244c123baffe591dd23",
+      "4ef651c3a0f4eb0bddfea8d7724a9e21cf651978c974b380e42787b2a23b7c1b",
+      "b74c461033e2861d86cb97c2875ce10bba2077f8cc7626ca688504c172f08b28",
+      "8def544b11359091d62691e07397325c3c8d441c829f100929ed8b223847b550",
+      "0abaffa81db287d3ced15f66716c4d6942ea3eb96d4208460c20529ed9a98009",
+      "511d8239f75f1a225952c25b6d2eed7d571da5d9cc6c2151443ba54f4ae59686",
+      "ebfee5ded07088b192bd7e5f8b08ec7e72ed57a3e79081ef6a5c8f8cf2abe57a",
+      "1dc52981c01b52e0e8c2e4b7d664aefc26714b3432f98fa46b0672bda49958f5",
+      "be73e27cc2cc4d87ccbdc37c814890668463683239eb984599526d981a8c2c88",
+      "cd1d4567cc06c9aaf01a59f49b2cdcf3df46e5bffe6c310c2fe05280d9cb5892",
+      "33510896a4768d5f2a0d879f5d125b166c0b3672df69e83212b7a002842eaa57",
+      "8d7c3a15a680014328ce3f41d3a7437c630121d2755af6304b25f868ae5ef1c1"
+    ],
+    "raw_output_digest": "cd0ff2d63c7c0fc85e185f1a836736e2b5542f9cd9b5de77aa7fcebe6b0d98ab",
+    "rejection_reasons": [],
+    "request_id": "30bf9126-5f74-488f-b177-3afffa5cfd16",
+    "status": "answered",
+    "supplied_evidence_ids": [
+      "2b8f5fbd0db09403815cdc8a113d85531234c2eed734bf7cf3340b9d4aa8d3c3",
+      "a74c81cd036c68f1bacf1386a5dc5da3e9e55f86b890a6171b254148e11f9aa7",
+      "86394c1442ceb1f4a960b3c6eac90563bcc7e21591613d362899ad0cc93107a2",
+      "d80b918b8ee8aa9537ceef6a90918b9f37b1c93e2280bd354af2e651b227c9e3",
+      "cf34465f718e84b1c17ae285bed401e5b60095b70c36627b78fae7a10d1e4942",
+      "18208ffe0262427d887a142c6bb9f2bf6201e167468328ead76f02db91434ec5",
+      "619329d70c0f36ff290cd89537fc0552526538b5602677fe52ba7fc85ebfde8e",
+      "477490db852976e112df257a897cba74351f76d75f94a2f453ce52587ef85cec",
+      "d8de8b6b512c3ef3fc60caccc7dead014e00722de7a74ef3921c4eb637a8ae64",
+      "00090426e49100e134b993520dd13a13e2a095fdfca5857c49cba87139b17f86"
+    ],
+    "tool_facts": [],
+    "usage": {
+      "completion_tokens": 384,
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 6351,
+      "prompt_tokens": 6607,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "total_tokens": 6991
+    }
+  },
+  "cluster": "langchain_family",
+  "family_names": [
+    "langchain_family"
+  ],
+  "finished_at": "2026-10-14T21:21:57.831698+00:00",
+  "kind": "path",
+  "latency_seconds": 2.419765125028789,
+  "method": "lexical",
+  "order": 334,
+  "question_id": "311ef3c71f2f6b24ef6d1152e94bb8a7e27ae8120ca5d486f4cfe324c1a89758",
+  "run_id": "benchmark-v1-20261014",
+  "scores": {
+    "citation_locatable": 1.0,
+    "citation_semantic_support": null,
+    "correct_abstention": null,
+    "evidence_recall_at_10": 1.0,
+    "exact_fact_accuracy": true,
+    "parse_failure": false,
+    "service_failure": false,
+    "status": "answered",
+    "unsupported_output": false
+  },
+  "split": "test",
+  "started_at": "2026-10-14T21:21:55.411891+00:00",
+  "suite_digest": "18076e9625595a7cd5fdb43e0fe564553a187b04947afeb4a6b02944be80dcc0"
+}

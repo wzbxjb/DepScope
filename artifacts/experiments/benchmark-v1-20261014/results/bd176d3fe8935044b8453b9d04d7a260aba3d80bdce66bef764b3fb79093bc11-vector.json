@@ -1,0 +1,126 @@
+{
+  "answer": {
+    "body": "",
+    "citations": [
+      "97e5cfbffbdeaaad3c391e14235e553b26cf55edc91cc6b7474217bb73ee4bd9"
+    ],
+    "explanation_verified": false,
+    "facts": [
+      {
+        "kind": "query",
+        "source_ids": [
+          "97e5cfbffbdeaaad3c391e14235e553b26cf55edc91cc6b7474217bb73ee4bd9"
+        ],
+        "value": {
+          "package": "langchain",
+          "snapshot_id": "29f4a5b22822d6a5b59faf43e96213a4bb570891ed0d319f0e15b2d6f1fff577",
+          "status": "matched",
+          "version": "0.3.14"
+        }
+      }
+    ],
+    "index_id": "1dd34349ff18aa6b4c9e7bb7f139004a178522180edbd59a8bcaa257d8a24e9d",
+    "limitations": [
+      "The supplied evidence contains no OSV query record for numpy at any version; only langchain, langchain-core and langsmith query records are present, so the requested numpy query status cannot be established.",
+      "A query status is not evidence of exploitability or safety.",
+      "The explanation is generated; citation location does not establish semantic support.",
+      "Some retrieved context was omitted by the fixed context limit."
+    ],
+    "method": "vector",
+    "model_id": "deepseek-flash",
+    "omitted_evidence_ids": [
+      "4015fc6d4beca3a12ebd5b921e5d81e87d235fa0a2f2c47b17a410b85e8e7ad3",
+      "c271d08299c5040cac659fc5a93149b7c44c6d6c44707451a31a88091645418d",
+      "0dc0e596b62c4e1769660e6d05ea6a83ff481e20c4faf74627f82e0ba6fa8a0f",
+      "485549ea188f87f340533e2db86913f6fcd52aabbfed919398ab05d16f043484",
+      "0d7e5d71db2ca62c4d83cf21995aabcd5f749a8c681b4aca0abea837fd1ceec8",
+      "5b09b600aaf8a4338dbc994b3f08f3b0774c0fc9b09765a399d81fef636430d8",
+      "6157ec5801b1de1a5dff54d4538a4f72aebe3b89dee0844c0e3d41b936b7f666",
+      "9b4443ee30e7be72d102049f9f5958dbd55e947c68a26e2f404ff7abe45e8d36",
+      "093dd53e2fc3cdf2d504b9569001538248a09273c0bef557d5a1ee0c988073bf",
+      "df7d35eb1c361855c48163deded705c58411bec2ed74c1c72fdcb70af90e1667",
+      "0c62812aa8c9314b37e91fa359305bee2a4ac60147e566f5455fa8ee653c0ad1",
+      "88e1adfe4a34d1fa44834509112d6558694b2cc3bbb0240db84cff40566028a7",
+      "d2e01eb602485410d7fa47f8010b733d6746cec322e0aa9c56f2c2d3da87abb5",
+      "589fde188ab3de40636f0428d13d917c084615ceea836b109831c607f17e036e",
+      "12cf3e2d2cc991128fba9e28f26f5deb4207158b153f940562388f6c7b2d9243",
+      "dbddee67d7c30d1ee927728d1cfb4bd6edbfa800641b8a1b63e21ab2e2440b72",
+      "bb78a13b1b65d09b4b79d55a6e55080f62837a07c31485f81022e055ad9f0243",
+      "88db7c8bc64ebaaa7ac833977b38058e922764b686324479d021f2ffac93b9ee",
+      "511ac054ff85c0bd7bcdd4e335110591047652a53fc0e76381eb4da67066bc8d",
+      "21fa8cc6fec27c586a72e248d5f5de4a24ba4b41849a21e587215dce08df0b11",
+      "68a760c27e4a0ad0b36d8412a946d633f598b25a27ece0c7ce4e79733e906005",
+      "c31237c8348be14e165260024b4c65c2495b694770469da0badbc484f06cf0fb",
+      "dc83ac8379797f01c7dcaed75b91c416ba1354bd9f4a2f691ea09f7083ed14ce",
+      "bf158f3950fb651fe48e6969cda493e204cb1ffafe6cc337e61128fd62db2a97",
+      "1b9c74a92ebcec037c80ef2c907a8d74e7ded53244bcd6f89d9a8d925b1fd7d4",
+      "bae96cdc870a63ca8c77e428653cc03f083b702883b0ff8e04e7b9461be5f1f2",
+      "edee303dc21280ac3f31355d68c7f7a5b95be0cd7610b0343cb5f6f8ebbc4594",
+      "90d0f841a98d73d5eff20cc237edde0e5461c587777acf8dba2a542212c17639",
+      "ae37b490517a326f2453424af9a39a0c8bcfb6ca3eb230d29805bf4ca9e1a027",
+      "42e451ce229dba5c638cdeaac54f7c39d17af194a3e2932cd4dff33d0b675c40",
+      "d33ff45c53c5edd46eb53296ff63c0afefbfde014c3cb3488e6af70255698c5d",
+      "5f80f7183cb031ebb171da37677dda5d25e7fed91aed783b7a719e06b57baf90",
+      "623f79e9d8b6d3f4fa3125b81df4bfd72332ff169703b02b0dc0b51f990b9bab",
+      "478af0eaee21c6264664c2373d6642446bf8607adafbe33548cdcb539e7b497a",
+      "e8e0c93f63703b212b2e56359d0342cd342b8d9e1a12dad2e32f46ac3fef8621",
+      "c6a7c0c313d4af7c7fbcf8bae9a926a39f6a3d11e52073c18a373b7a80235977",
+      "a294e438a6a634ae3941c410d4f498891b9a36288caf03de925714bd4bd5f947",
+      "826fbc2d6629a9079c941435bf106d7bd45c141b15ead2dd273f7f6258208bdc",
+      "6eede4a743e2269590fb25b51885f6e77555719026bddb2724533d3e3789fd1e",
+      "d48e58361d7ecf34e96d93d4ab31446dd0da5c5cb5893c059525c4cd557bd50f",
+      "13c1bb4d206cdb20d1e4b9369f5e999d9652804fa562862ffb1433af72baeede",
+      "cfc850579fd3b6b32b687a17ec705d832063e766543014c047ac01361559c99f",
+      "14ccb86b109603d40071a4192f16bbf792eeecb4efff57bba6050f70b6c40615"
+    ],
+    "raw_output_digest": "a9e8160c38615cef79dec11b404ad33ac69664f220710da54c02c5a2f8e3bf3a",
+    "rejection_reasons": [],
+    "request_id": "fa97a4a1-f374-4e00-85b5-3bf1791d5afd",
+    "status": "answered",
+    "supplied_evidence_ids": [
+      "97e5cfbffbdeaaad3c391e14235e553b26cf55edc91cc6b7474217bb73ee4bd9",
+      "6a33a60a2013ede86be31708100221a55b3cf45f885de389ccc1607f123899d8",
+      "bc787ebfbc6bee60208439234366e8e100dfd6b4a01086d809f77b54b624b1f0",
+      "21bc0e2da2aef81ac9bcb690d2d4c50a6da7f6469661cf3a6284e666ec9c7291",
+      "7b15bb881bd23d35b277eb5c041e8b6dd265875747197b0a0965f48aeccbb366",
+      "a988637595e536acca44a59e90aa2b8c2516a19a58fdaf0bd4a9a0388fba8484",
+      "b3f983a7c69ff3243ed2fd5dd21262c119f714f5d0be1f903e7e9cc8deea9378"
+    ],
+    "tool_facts": [],
+    "usage": {
+      "completion_tokens": 222,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 8159,
+      "prompt_tokens": 8287,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 8509
+    }
+  },
+  "cluster": "langchain_family",
+  "family_names": [
+    "langchain_family"
+  ],
+  "finished_at": "2026-10-14T21:19:49.506366+00:00",
+  "kind": "single",
+  "latency_seconds": 2.177667874842882,
+  "method": "vector",
+  "order": 133,
+  "question_id": "bd176d3fe8935044b8453b9d04d7a260aba3d80bdce66bef764b3fb79093bc11",
+  "run_id": "benchmark-v1-20261014",
+  "scores": {
+    "citation_locatable": 1.0,
+    "citation_semantic_support": null,
+    "correct_abstention": null,
+    "evidence_recall_at_10": 0.0,
+    "exact_fact_accuracy": false,
+    "parse_failure": false,
+    "service_failure": false,
+    "status": "answered",
+    "unsupported_output": false
+  },
+  "split": "test",
+  "started_at": "2026-10-14T21:19:47.328670+00:00",
+  "suite_digest": "18076e9625595a7cd5fdb43e0fe564553a187b04947afeb4a6b02944be80dcc0"
+}

@@ -1,0 +1,139 @@
+{
+  "answer": {
+    "body": "",
+    "citations": [
+      "074240d255b086d9d3157b6c66fc9a912d2ae287d1b16d4b299e69bcc8abf18c",
+      "f4dbf09f1790cb3bd049c564f76c6afb8ccd57102f0412c0a45ca7f2acab34ee"
+    ],
+    "explanation_verified": false,
+    "facts": [
+      {
+        "kind": "version",
+        "source_ids": [
+          "074240d255b086d9d3157b6c66fc9a912d2ae287d1b16d4b299e69bcc8abf18c"
+        ],
+        "value": {
+          "instance_id": "ec12dd3683e3bd952d477b44ca6842379345efaa94eb98cab0cea32e707f5104",
+          "package": "chromadb",
+          "snapshot_id": "208dc2c88a69273e6949d398007bf1256a0f93bda5f2884f5413dec791f54962",
+          "version": "0.6.1"
+        }
+      },
+      {
+        "kind": "path",
+        "source_ids": [
+          "f4dbf09f1790cb3bd049c564f76c6afb8ccd57102f0412c0a45ca7f2acab34ee"
+        ],
+        "value": {
+          "instance_ids": [
+            "ec12dd3683e3bd952d477b44ca6842379345efaa94eb98cab0cea32e707f5104",
+            "5ff3eb55e368ed83d1faf2073f824e7558a7fefc42fd22dce8542072e543ae0a"
+          ],
+          "snapshot_id": "208dc2c88a69273e6949d398007bf1256a0f93bda5f2884f5413dec791f54962"
+        }
+      }
+    ],
+    "index_id": "1dd34349ff18aa6b4c9e7bb7f139004a178522180edbd59a8bcaa257d8a24e9d",
+    "limitations": [
+      "No supplied evidence records a dependency edge or path terminating at wrapt; the only supplied edge from chromadb points to importlib-resources, so no shortest recorded path from chromadb to wrapt can be constructed from the provided evidence.",
+      "The explanation is generated; citation location does not establish semantic support.",
+      "Some retrieved context was omitted by the fixed context limit."
+    ],
+    "method": "lexical",
+    "model_id": "deepseek-flash",
+    "omitted_evidence_ids": [
+      "3e3c01873dd170e9af74743179989458a2631a982f83d70351f2259c84e4b7ba",
+      "398d8fedd74dc1f874d6fbc5f1f5db49309f8f9754f1e7687db834104eca6c30",
+      "1b646308760d854869c28ae57ef6ba9f5226751bd74f2ea531474e72b825d08e",
+      "d5bb77001e2831ab3fccea1425a8254f98f598251e568ac6b98f25e64575e331",
+      "de82c68dc8e07d3ee9a8d57d16ec810f52c5d9791c4ab8f29d41999f15e32e7a",
+      "23927f7c09cdf85ae720c057936560a13eadaeea6e38139df731a8303b5ea741",
+      "3086b3e2ade986b785851c9f2e6c1c7f4029e8b1378031618558949a38ea1af8",
+      "351112782972177fcb570ed51c00cbe3cd6957eb1356a6fc1aad1d7fbdef6060",
+      "3b12fa5c39f52733dfae5c8f563622b0b6759031f14870b03a399b0869e0dd4e",
+      "44fa48165abc657dcc41048e1bf9f7c793530ff4d7d098b255d36efe3dab0672",
+      "4e41f6b276cbaff182c9943467cf8383dc91da9be7202e793b61270e911e5557",
+      "57e39d1fdebf56d20d64a57ee307ae61e6881423fcb95b31f01d3395577a90a0",
+      "586273c660e3a6fca4e7946b398c28cf2f3f76ef481038445d4ae1f39c530b4a",
+      "6a0ac9b582eca6c85f2eb6e669aa1c82933e41c6cb6e4dfedb357db29d79afc1",
+      "7e1b4b74cc3ff0b772f517a984c4e384a7fa18ba284c45b2f95117b59dca689e",
+      "8f87260ae85bccf8f19a601c59286eb661704ddab1d1342e181529ec2a974fe8",
+      "9421cd7b9dd749cd1131f1c759bcc224c7fbf48b7fdffc8a44ebf31e26e09572",
+      "999671ec6945c207830f952a2c5444789a6087cf996ec0c507ffb7b592eb7528",
+      "bd3e8b7feb822fea566f6a0b55c4d2400302977f25bc9ce49d7519cdec6d426a",
+      "e436b612417bfa9d3b83846904f18a935b41656f8fca2e7693fd7b9a10317ad7",
+      "e6c013305ee62c3d07396c97434eb974c1779df9134b684b0cad63693e96dc8d",
+      "e7c37a77759e14f266ad72e682eee0e78df2f9064415e8b03b16264b897803b8",
+      "e7e39a41513cad5bab98a05bbd44ae3493f1353a90b78a33df382c59f8351e7a",
+      "fe5bdc27dfc8d9528f8d03e4954dab9a8e065c94e0864af5e53c4fa3892677a7",
+      "138019d434d2f95f07ffa5d0c9563eaa974bfe588bcb6b5794346bb72c1859f0",
+      "2986b4e71b17cd13f16042509d87771b4e33dcde70bfdfe7df0cc43987090715",
+      "620f7d454bd8704713c8931d236ed3fe7fd648850865f8cd6fdf4745e8a578f7",
+      "ad78bb4cd84e62f3d106b64ce1b2b17a24ec86a5463371b6a538778a8a4000fc",
+      "2eef400bb1bde2b1ee3312d447e57b621194d50fb1e8d362b1f78fbddb7c96e5",
+      "cf7eb5f27a38564760412b886c76d2d94512b786983003f09f14e20a9152421c",
+      "677d0737da3b67aafce8226b16c1be8ab5fb67dc1587129ebbaf21fbbcaec635",
+      "91bd673188bba68f987be18f513ea11444262bea667e3649ef60795d2e2800a3",
+      "95b6dd814278db95e8764f01668a0377b1ee828374d6054b1de0fc1219530ae2",
+      "8355bade0f7ab25c33b77a5c41c48d16a1f4a44cec83214ec5bf92fc9ac9031a",
+      "1d7a1a0a9bed5887f17ea5c508c26a184d247adc25a355f24ffc9aae0087c503",
+      "be4a6693c116b4e84278517601dd40aee790078e41dfdb103e7a10209ce16eba",
+      "a360d44ea9ebb6bdcd031dc273552ffd13ad09b56e60a584f1663c0042344437",
+      "7a0230073b8f67f6f2a5438b3e5c4ac847c3201f20a11605661a02b3574b0680",
+      "8f9997129007675195f1cebe7c615cf6a169dd055a3be2d3b2ac9d72ccf83275",
+      "7b2e99aa95dc7a73d5ddc3020ca496358025103a53cce3ccba3075ce6d603f92"
+    ],
+    "raw_output_digest": "664366e8fd3a80c3762b5c340772ef59e8e3a02f5890e6efaeeffe66c627619e",
+    "rejection_reasons": [],
+    "request_id": "1d843f77-3294-465e-84f8-37cc203dd735",
+    "status": "answered",
+    "supplied_evidence_ids": [
+      "38e7a4145f0e34651ccf9ed70cc243b758ba902d666080c40c3a108d2a0ba212",
+      "d0aec6af0f672027153a480373166741f3da462ceff812cc4889c0adad5b38c3",
+      "1103befaa59ee9cb3f70edc60b9545dc213a812a577a6607fc1d1f4bc92a9ff4",
+      "1330ad64c15547a13c8aa1bbbc32091d3d3b1810f7f951bb0dba3c3c4ccd2218",
+      "4db57f47c7c4674b1beefb0f4216ebad93ea791e2787e8c7cf5536790264eade",
+      "5fc9910ee181c159d5c8a2a4cdffec170f18d5c38481bc5cf9d4ebcbaebbf587",
+      "89bd1a82fe55a134238ceb9972bf9903a01b9ad69d16e75467e7b99c4ee568bb",
+      "f35bd3216e98fbed67e36183bbaf5b452173545ddb51424941150a513293e839",
+      "074240d255b086d9d3157b6c66fc9a912d2ae287d1b16d4b299e69bcc8abf18c",
+      "f4dbf09f1790cb3bd049c564f76c6afb8ccd57102f0412c0a45ca7f2acab34ee"
+    ],
+    "tool_facts": [],
+    "usage": {
+      "completion_tokens": 480,
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 3263,
+      "prompt_tokens": 3519,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "total_tokens": 3999
+    }
+  },
+  "cluster": "chromadb",
+  "family_names": [
+    "chromadb"
+  ],
+  "finished_at": "2026-10-14T21:19:28.889377+00:00",
+  "kind": "path",
+  "latency_seconds": 2.598755832761526,
+  "method": "lexical",
+  "order": 103,
+  "question_id": "ccc34ced22fed8c3172e57813ab5ed63bae2cfb7080450d15f8c3e48fb707050",
+  "run_id": "benchmark-v1-20261014",
+  "scores": {
+    "citation_locatable": 1.0,
+    "citation_semantic_support": null,
+    "correct_abstention": null,
+    "evidence_recall_at_10": 0.0,
+    "exact_fact_accuracy": false,
+    "parse_failure": false,
+    "service_failure": false,
+    "status": "answered",
+    "unsupported_output": false
+  },
+  "split": "test",
+  "started_at": "2026-10-14T21:19:26.290580+00:00",
+  "suite_digest": "18076e9625595a7cd5fdb43e0fe564553a187b04947afeb4a6b02944be80dcc0"
+}

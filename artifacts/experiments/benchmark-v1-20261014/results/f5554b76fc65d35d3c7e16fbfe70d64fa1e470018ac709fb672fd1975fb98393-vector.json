@@ -1,0 +1,144 @@
+{
+  "answer": {
+    "body": "",
+    "citations": [
+      "fcc0d4f676c1b33c3eddf5352bfbbd58ae629c9680618ccd3f28f4615b6217c7",
+      "47414f0a4ca3727070b470a5354ef5cb41f2463a123c305c43b0a36a7553be01"
+    ],
+    "explanation_verified": false,
+    "facts": [
+      {
+        "kind": "path",
+        "source_ids": [
+          "fcc0d4f676c1b33c3eddf5352bfbbd58ae629c9680618ccd3f28f4615b6217c7"
+        ],
+        "value": {
+          "instance_ids": [
+            "788ae861d9ae007d6ed0fc420404bbd976441ccdaf06979518d498ca3373f98e",
+            "d1569718a2582c2bd73de9f16c6882fb570b2a0153faef3252a25bd7b696801e"
+          ],
+          "snapshot_id": "a4e01f8a92452e206207943d9bef7c11d22c00ad18cf0f007fe0bc91808e0a55"
+        }
+      },
+      {
+        "kind": "path",
+        "source_ids": [
+          "47414f0a4ca3727070b470a5354ef5cb41f2463a123c305c43b0a36a7553be01"
+        ],
+        "value": {
+          "instance_ids": [
+            "5f7a270aa22deed79104a5d7a1b0fffcce9d09b566296023cadbfb72f059d11e",
+            "8a7b4ffca182f10062657d5646faa941cdac4befd27e7e2384ef742b49c6a9a8"
+          ],
+          "snapshot_id": "cf3510a3ba2b6ea56d5a54fa88a57fbc029d9065828f573cc0d7dea27ee07148"
+        }
+      }
+    ],
+    "index_id": "1dd34349ff18aa6b4c9e7bb7f139004a178522180edbd59a8bcaa257d8a24e9d",
+    "limitations": [
+      "The recorded edges are direct single-hop edges from huggingface-hub to httpx2; no multi-hop root-to-httpx2 path from the project root (chromadb or gradio) is present in the supplied evidence.",
+      "The chromadb snapshot evidence contains only a huggingface-hub to httpx2 edge; no edge connecting chromadb to huggingface-hub is supplied, so a root-to-httpx2 path for chromadb cannot be constructed.",
+      "The gradio snapshot evidence contains only a huggingface-hub to httpx2 edge; no edge connecting gradio to huggingface-hub is supplied, so a root-to-httpx2 path for gradio cannot be constructed.",
+      "No exploitability, installation or test evidence is supplied; the httpx2 package queries returned no_match.",
+      "The explanation is generated; citation location does not establish semantic support.",
+      "Some retrieved context was omitted by the fixed context limit."
+    ],
+    "method": "vector",
+    "model_id": "deepseek-flash",
+    "omitted_evidence_ids": [
+      "4d063542cf2de825b797fb87c03dfaba6ea0a82705e4cc03b891e7d8abd93c26",
+      "df3adf7c6d1c704b774a41c5630da48364941d0dfe765faddee91db244a52a37",
+      "08fae6513060686e53519d46a2654d3d9c425c0891bcdc5b124e363490e42e61",
+      "aab735eb0efa5d95647ee741e125ae1f00f2537b59e6f0b044bfc8bb01b04f9c",
+      "be4a6693c116b4e84278517601dd40aee790078e41dfdb103e7a10209ce16eba",
+      "1d7a1a0a9bed5887f17ea5c508c26a184d247adc25a355f24ffc9aae0087c503",
+      "e9f5e1c932a829a8128b0fa7ea0b6efd2a4aab8f2148233c7f0379fccb0b35c3",
+      "9a3771622a115f503c9671037ad56570c8ae265fcb08635d7137e8b36d2b354d",
+      "6ac92a8ebd3a145c21791440c46723666ba967ac825ba2580a54a809918d28d7",
+      "40c714c9fb46f355f62e7d2cd9b219afebd06ecfb0d3b976c0d2942aafe156e9",
+      "c9849665d5242210902d94a151c18aa8813190dbb2f10b105af131df55368907",
+      "965be26e221dab07ab6ba00acc8307f9c1c64ae804b706a08405facb5f024791",
+      "782ba99f6205427ddd193367dc49a866933704f8c6b8e459f7f1c405a3d6b9e1",
+      "751b6930899aea52daf7ddb5000c181c1b8a5c8195bed0a6e8d34ea69cfa4ebd",
+      "66d08d89fff19ff4382e61d22a52fa17b0524f0489b96f4251698c42474e239a",
+      "3da43110d4e9476fe38463b03284cb8210e6eb3aa0e101b2bf97818e3efca776",
+      "e0aa4a983376f8d5f85f0e6a599b58c35ec9c89ed3d4cde4566fad41e0aa8785",
+      "a8af2afed0e13ff6ee0e88cc06e36f0e8d666b488a1ece03b020ceda20893113",
+      "7d528713bd0071b798e0f06886f21263cbb05eba138a3a2f928654bd76ecc409",
+      "31d05cc1039bacc199194d40dc1d2ae2faa8e7d7cb49eac2f8190c7283ad45f8",
+      "2d1572c9813b4d184dd4a0f2ec22d695948181b21d90c74c107f0113be50dd64",
+      "e1ff0a933207c33ef5bacf92089646e01dc9c023911f1ab030011652fd62d99e",
+      "52e3eecbee19d81cae79b33674cb37571baaebc12f4d9085600194e3f8acd9c0",
+      "0fd7a0cc73daf22bc9575eb7d4a9a62eb9434fb1af8744062c2801b2981c1ca0",
+      "b563b32144139277699c2eba48755ac68c0d516aab95952b27d05d8a81fc90b5",
+      "8a1fca5db16a083a5207ce2e772909c3faa397cdb58d923d7666e068140093eb",
+      "dbbf7a3dad10e3135f2ed348febfc4ea621dd34db9f7b4704e0d6d2058a76db0",
+      "2eef400bb1bde2b1ee3312d447e57b621194d50fb1e8d362b1f78fbddb7c96e5",
+      "cf7eb5f27a38564760412b886c76d2d94512b786983003f09f14e20a9152421c",
+      "0559ca1e9099bc03fd044d209b0f8a927e12d7af0b1602647d81a5bfc5ce3f96",
+      "fb64ac10ecfba37d7d98cefe9c2e45754c6d4aa2f4551901e566798372476dec",
+      "acfb7106bb8d48cf444c54d2b8cd598db763cbb844f19f7dd683e5997d870584",
+      "d36f3f53a4ba0da6d6f15149792271937d18692b9594713d5e2930063d80978a",
+      "16af57d79ff51baf11de71fc0c99c8cbc9954173987fa484e73f519b8e4b0081",
+      "f2e8f4b0c8d45f80649660d7fb6c56c5e455a75fdefe580c15bde8663baa6d94",
+      "69a901f626ab77680029b7c6d812c7aea6591553978a6bd0ad85daf5bf668465",
+      "d5bb77001e2831ab3fccea1425a8254f98f598251e568ac6b98f25e64575e331",
+      "1b646308760d854869c28ae57ef6ba9f5226751bd74f2ea531474e72b825d08e",
+      "6883fc033e0587d6e1a98eaf81eb137d5453416d9d1c56b50a866848b17656bd",
+      "e1c81a9fdc076cf19494690e6d4accd826d4b1e92ec2f8a1bda93e9bd38e4519"
+    ],
+    "raw_output_digest": "9cea2609aeb61cad4332c3293959c412f3e4e169f4bcc265444931b58aaec9f4",
+    "rejection_reasons": [],
+    "request_id": "a78e7b79-4d3d-45f9-8238-65f2912273f1",
+    "status": "answered",
+    "supplied_evidence_ids": [
+      "94b416693084b1868392432a1e7c1d6d0bb8d035a7dbc0773904de4b2ff6c771",
+      "f4739902c2706b72fee44c44ebcc940d853fc1f82b7bf7dfbc7ba7ca75036033",
+      "47414f0a4ca3727070b470a5354ef5cb41f2463a123c305c43b0a36a7553be01",
+      "1717e147987c55114a50ea7cd6f7828423d3f0e7563ddda4eaf69e82236b67b0",
+      "fcc0d4f676c1b33c3eddf5352bfbbd58ae629c9680618ccd3f28f4615b6217c7",
+      "f082a7d5bdf7fe7d04300552736eb77ff457f40197f24c082db802de90717a79",
+      "dd589c8ba4577260b204872e0532516f468552f75746d52edc2cd20d9e7df3de",
+      "ea0ea268821f2291498080c17f2d1986d0cbf8b46dce11c91bb64a1d007596c9",
+      "6e9a4d4f9a5ef84153759301f872edc4c9e760c5013a83edfb0a0fe16e1b5e1d",
+      "4f9acada7be001f3b9e7c281d17faf05192603bda22c544627813ebdaf153d36"
+    ],
+    "tool_facts": [],
+    "usage": {
+      "completion_tokens": 626,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 6483,
+      "prompt_tokens": 6611,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 7237
+    }
+  },
+  "cluster": "chromadb|gradio",
+  "family_names": [
+    "chromadb",
+    "gradio"
+  ],
+  "finished_at": "2026-10-14T21:20:45.829849+00:00",
+  "kind": "cross",
+  "latency_seconds": 3.2589119588956237,
+  "method": "vector",
+  "order": 225,
+  "question_id": "f5554b76fc65d35d3c7e16fbfe70d64fa1e470018ac709fb672fd1975fb98393",
+  "run_id": "benchmark-v1-20261014",
+  "scores": {
+    "citation_locatable": 1.0,
+    "citation_semantic_support": null,
+    "correct_abstention": null,
+    "evidence_recall_at_10": 0.4,
+    "exact_fact_accuracy": false,
+    "parse_failure": false,
+    "service_failure": false,
+    "status": "answered",
+    "unsupported_output": false
+  },
+  "split": "test",
+  "started_at": "2026-10-14T21:20:42.570891+00:00",
+  "suite_digest": "18076e9625595a7cd5fdb43e0fe564553a187b04947afeb4a6b02944be80dcc0"
+}

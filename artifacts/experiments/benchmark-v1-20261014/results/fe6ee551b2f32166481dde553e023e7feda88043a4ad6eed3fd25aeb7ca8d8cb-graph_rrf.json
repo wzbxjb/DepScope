@@ -1,0 +1,153 @@
+{
+  "answer": {
+    "body": "",
+    "citations": [
+      "9279a366e0af253c7bda307115a82b70f591fe60ff3adc0f45d9b3b37c85a9ba"
+    ],
+    "explanation_verified": false,
+    "facts": [
+      {
+        "kind": "path",
+        "source_ids": [
+          "9279a366e0af253c7bda307115a82b70f591fe60ff3adc0f45d9b3b37c85a9ba"
+        ],
+        "value": {
+          "instance_ids": [
+            "ee83b7d1c78bec5aa6db61f5b57178ccc1185ce811799292d1c3baca221076c0",
+            "4846e476a8347ae8f2fbed451e6a6c9d10f72638f9c90ec5cd0a7b15dbe4b6f5"
+          ],
+          "snapshot_id": "0d3f23e7f45a8d321b3a35665e966104a72494d17898905d2ac140d6894cd602"
+        }
+      }
+    ],
+    "index_id": "1dd34349ff18aa6b4c9e7bb7f139004a178522180edbd59a8bcaa257d8a24e9d",
+    "limitations": [
+      "The supplied evidence does not include a dependency edge from the root llama-index instance (2845ea2a1decf9cb48bc040aa274a5be7112ccc050bda3f53fe7651c7e678c70) to llama-index-workflows, so a complete recorded path from the root llama-index to typing-extensions cannot be constructed from the supplied same-snapshot edges.",
+      "The only recorded edge to typing-extensions originates from llama-index-workflows, not from the root llama-index.",
+      "The explanation is generated; citation location does not establish semantic support.",
+      "Some retrieved context was omitted by the fixed context limit."
+    ],
+    "method": "graph_rrf",
+    "model_id": "deepseek-flash",
+    "omitted_evidence_ids": [
+      "1c6cd2166e9ab86fec4863a8a92254771b93ac2f0a3adbc14d5a1363f5135dbe",
+      "77ed8897db074ca01e9486f3aa0d2d63963cc626e75714ebf3ef5ecbfa6bd6cf",
+      "470f4301488450df31b91430422515752410c04e5c6af44fa049c068b898d08f",
+      "8c24f31109efe99b9f6d70fb74458b87a597a203e0ff0897d9b7e90fd275dc33",
+      "633f07c0181485f9526c529f445f9686da3c36d19965dd442e2b825f75cbd6eb",
+      "d62ae4921342a32a3303505a3e343930d8368f30807323e758450ea74c85895a",
+      "033bd4bd416ad4da118c8c8ae34b6c47a564efcfaf7d1fa1841e5c085d62befc",
+      "b1ff2f6add0d11abdab5a76658e7d7a1c68e1ce407cfbc4564745a9c93fc28f5",
+      "491c0c7ed1a7355cc7e6985aaf0243978026176884e3ba4ad6d225b8b4e7903f",
+      "869ff0381b0c524291d61abcffa3df189921f6e901f19f07b24fe64f4fbaaf3f",
+      "cc2493621919fd28d6bcfe5ad77fcef527b26d52b29e5dc270d56591cab5cc8b",
+      "93cdb323829f92a1e01a9a922e96fc74db66ebc03b80b9f6c8aa815fa5830d45",
+      "f2f47501382aa5d3df3d5335a2ea5d9390c1369e21aaa9fae6d6e637064fdef7",
+      "4bfaf9c0114f2fd76c6bb27c5607255bb93e83777c866c31e3a4b42f60ca1812",
+      "293c07394f0a22d309610f7ae8fefc74dd8a33dfd67ea192bcb6e02c95290c93",
+      "bbfdaeb98b07c9bf8b7ae0683f3ca0efba148c14fe244c470a44fce0abd5f9c5",
+      "552db79efaf8d12058f118efbbf7a7b4d05f084d116d1a90d0aa80c9d1266cf2",
+      "dcfb096403571af389176238d01d729b1643a84d27a13791e7301d89610b0df9",
+      "6efe5bcca70401844b1f100d0040a5382e3ea95ca7c9969819c69bbeef4db8f7",
+      "50ea2a3cde1f86b33becea220039cd21edd51bf17e0699d127335a6eaa3e46a6",
+      "346c650df881609fa03219b774f078be1e8aedf0baaacc8affde31f8b5262916",
+      "c7526a6e9e95e84ba2627bd285bd357b82bf8a28adb845d1116389d5898483e4",
+      "b436ed00b0df1cb9fe49ae8a14a92e8fad4ee1667b8084d8ac29e124b6f5d43b",
+      "04297b936acbc5f25520221888d2eb3725eaf5acfb246119cc02ae4075fc654d",
+      "b7070a93b46909787bc781ca596f38e91a3d6c35cd53dc4953e6fa91724944a7",
+      "1bb8ed171fcf4efea51248d09cc8c694a96fc65c944e0eeea774c2ec1dfe0ee5",
+      "e78710f5ec43052b0550cd4325de0b6bf23ec91b36e74880fc03900948b7fa51",
+      "f98f92353beb60fb742c1078efd50b1fdbbff541a3313b77843858156ef0a120",
+      "25906ed96ec5ded9f99ed64ac3afa8f37355be21b3b93e5951ab2d699b91b856",
+      "29f20d42d7f78cc3a82e7284327383eb8bd2e19beecc930737c4f045d3549d4f",
+      "2887c18e2529ab90bdd3bb9cf688dac13b6576c708a37acbb46718e6910a30af",
+      "9c16d1236b8c65f1e54edb28c1bd556ac186a6b8a627dfa5dd1e4bf33bc333da",
+      "9d1364dfa9052a2a1baf6c2c73ea6deb608eac30d81b5713e914b66981b5f9f7",
+      "f5ab258b493447baa1ce11d823b5408366072e15582a25353382a67856f6a9d1",
+      "40024fc9e497d20c01717ea5ca343a463ffa1cf8410dfc7d6214bc4b5306ceb5",
+      "e363736603a78afbf404a71345783921bc2b9ea52ee7474d9921af502eb8c36f",
+      "2d9d9b6f3d2ea86b17087e534aeb17ad90d61fdd8d0bf25f9228cbbbd4eb7f93",
+      "dd8ff70f6506d2d69de5d79127f28eeb1aab4754d257bda43cd45d9350d28506",
+      "799c3e5efcb14b5c333d75d73b6b938cd7e2792c3a30bc57edeabff63584d38c",
+      "b067e3d76bad2ca3b1c63ec0522da04b49633b1b0233526b49fbef7bd3fe02b7",
+      "0563ef00b5c0c02ee50f92739f880bc02ae41aebb0c14c7a4afaa4e381164f56",
+      "4911ea8c9af287310eaeca6e6107a8903de403a513a8fdd325b951e83ed8e865",
+      "6899753488185b89eb3176759b098ae4c5b7eac8780bb5916ff3be640bd6c7db",
+      "e25b99ed5d3fb2eaa41dee7461941952e1a903f9d5d689a52856220ae1697833",
+      "80805bee096e218c932e4de483196b02a358ae3bc5cc7b99adffd48f49e5dea9",
+      "3d1c2544fb5ad29b3446bba5c6309b9381df26265d32c6462b5591c123192268",
+      "8a916fc1bba134f788448e4bf68e4233fd89f46853bb248a1b845938ee4acf8f",
+      "efc8f04c0cf671dd0b49bfeb9c1c96679056ce798f4cc199501a46af4d60f332",
+      "730334d4cc6a4b7f091f023a758668018d0ef7d944b41b2ef6a72114ae6290ad",
+      "892ba15a568d88dcff48cf82f9c6efe4afa64181a9f58ea88beb2de404301d28",
+      "8ff6ef3525fbefc4868ba277a541249f3260d58bb3d516056d059590e9c121b1",
+      "7be4b5a41751bee37af88809f830400db8b9aebad8b9d2a24173f8f287e0e52f",
+      "a150c192d998980ecc21d54edaabbc3e13a9bb15b6ad4164decda42b6c3e023c",
+      "e76c46375c52c08802c4ef140b5b872227f1e3fbae355595d99ed384c3b751e7",
+      "5204b195714b8f1d1e5d9220969ca174228156dec8ad224332634ef6a1a32a2e",
+      "7778fc7c71741d2c3466e64f308a4cf77a3c83435b718ccffa73c7bebeed7694",
+      "fe3068e87a68a6a64cf1a0152fdcf928d4cdf42c69282ce1d0668a31c531765e",
+      "7e54a925628fba6b1217693fba87137102454cbedb845d31e798f4883ec8bd18",
+      "5ad12d08beb853d7abaa976a8d001092ed0cb80478282645a40cbcc66d7936c6",
+      "df2c0395fb0ee8097459c12d48c463cc1867857f4537d9e42a87e13c22e1263c",
+      "8455525191aedc02f215481284dab93e4e3df42ebceb05e072df5fa43e2a6da4",
+      "6a281b8270f1a071135a1a8c3ddfaabce461b922020e6f0181c1cf23a89f7ca2",
+      "90da3b9013905121770963aa358af2b45b18372d8cc6979aecc61424a4b7587e",
+      "f203fa6b64ae1bdfde75fe855ed0d3ad8534767563caf9ccb66f8678bde6a85d",
+      "664845557b3eab6a921f9542a06a2974d3791438f2a40352561ac23a541f814d",
+      "025db7239db29220a07917e124379f7466e8ee6006e152130dfda6d5b6fa6f50"
+    ],
+    "raw_output_digest": "937b03752cd57e7fb33bccc2877290bc9a805229d964ca4ab73a75b71acfe21b",
+    "rejection_reasons": [],
+    "request_id": "f53aae2b-8b32-424b-891b-c154590923d8",
+    "status": "answered",
+    "supplied_evidence_ids": [
+      "0bedb222c5f562e28bc6a860a82090afadceffa54682d99d70bdca287ab61103",
+      "0218833e09265db9b15fad8ed4a82de8cbc6d1b505d2903b65db683575da5c96",
+      "9279a366e0af253c7bda307115a82b70f591fe60ff3adc0f45d9b3b37c85a9ba",
+      "5276299f6c8808b85edbf04c147e26990d702e2780c047fb05307d6605765154",
+      "238c5b3672eab5ea77a870c746c20bc7647c82e01590303b07c1b05ffd5b5b17",
+      "da58ccebdeb7ba9221f85f89e0828a02f716bcac60ba09915e17f74c4a09287c",
+      "41cc64624179224420534c814a14844a2ef9f417e34c36c693f9da3dbeef1f2d",
+      "898ad2cb023aec485e27cf91c55d76fd61601f94d67e7329137cb924aa49f48a",
+      "4ce9a13c9652486fba4027990a967790d81f7962ff8c4e38c772d2f76826b79c",
+      "65c68c427aa8198690dbce6d4556533268cc0179757fa3e89c8cd187a86185a1"
+    ],
+    "tool_facts": [],
+    "usage": {
+      "completion_tokens": 349,
+      "prompt_cache_hit_tokens": 1920,
+      "prompt_cache_miss_tokens": 4699,
+      "prompt_tokens": 6619,
+      "prompt_tokens_details": {
+        "cached_tokens": 1920
+      },
+      "total_tokens": 6968
+    }
+  },
+  "cluster": "llama-index",
+  "family_names": [
+    "llama-index"
+  ],
+  "finished_at": "2026-10-14T21:17:01.531356+00:00",
+  "kind": "path",
+  "latency_seconds": 2.470364207867533,
+  "method": "graph_rrf",
+  "order": 113,
+  "question_id": "fe6ee551b2f32166481dde553e023e7feda88043a4ad6eed3fd25aeb7ca8d8cb",
+  "run_id": "benchmark-v1-20261014",
+  "scores": {
+    "citation_locatable": 1.0,
+    "citation_semantic_support": null,
+    "correct_abstention": null,
+    "evidence_recall_at_10": 0.0,
+    "exact_fact_accuracy": false,
+    "parse_failure": false,
+    "service_failure": false,
+    "status": "answered",
+    "unsupported_output": false
+  },
+  "split": "dev",
+  "started_at": "2026-10-14T21:16:59.060963+00:00",
+  "suite_digest": "18076e9625595a7cd5fdb43e0fe564553a187b04947afeb4a6b02944be80dcc0"
+}

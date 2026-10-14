@@ -1,0 +1,105 @@
+{
+  "answer": {
+    "body": "",
+    "citations": [
+      "bb5b7995045a15c1587e37ca5d1bd57712562d87128d227f4a6ade2dd10cb809"
+    ],
+    "explanation_verified": false,
+    "facts": [
+      {
+        "kind": "comparison",
+        "source_ids": [
+          "bb5b7995045a15c1587e37ca5d1bd57712562d87128d227f4a6ade2dd10cb809"
+        ],
+        "value": {
+          "comparison_id": "b80fb3de09d25157e1f0b79bb5f9feca3c307fe9788d2ef880b4c01fb976d9da",
+          "metric": "unknown",
+          "value": 0
+        }
+      }
+    ],
+    "index_id": "1dd34349ff18aa6b4c9e7bb7f139004a178522180edbd59a8bcaa257d8a24e9d",
+    "limitations": [
+      "The recorded unknown metric is 0; this is a metadata comparison and does not establish security or compatibility.",
+      "The explanation is generated; citation location does not establish semantic support.",
+      "Some retrieved context was omitted by the fixed context limit."
+    ],
+    "method": "lexical",
+    "model_id": "deepseek-flash",
+    "omitted_evidence_ids": [
+      "cd3ff7f1868e3e3b8cb6b47b2d666edfbc5ebaa2fbc7bb28188459cf2f991040",
+      "62b197456a66122c2e6c984fefe877859cbd7dd945e8b902a9763edac51f2e36",
+      "95d7c3086f58347432d7cbbf68c363899e7d1d98197c3746244146c979b40863",
+      "42045086b45be8d722a00a8ac8b819824c0c847c9ccee4bfea62c881d9614022",
+      "a842d19d9a0c8cf8332629d9b8dc8a98da95ff882fe43fede0b12327d65bae8b",
+      "de3b2d75bc63600cf6f9723203e02a49e6b2905ca11d12f67cc38b84b84a2773",
+      "f045d57808610ad43a6d373fd772cda1fdab80b2600267cc4716af147c3f0f7c",
+      "7eb5bf9699e32e2ecc8b9409ddf962e05dc38ef29116a79b10a30e933ba4b92e",
+      "13594936bc1337d9c65a3afdd236907e026f1988fb83b67db372eecfcadf3301",
+      "677eae752aed7edd078e536c2b01f5cd79ee8a2ae83146b18385983a14b631ad",
+      "a163d110672ea5019f8b486b21d6888867f9800a9956bdc117c0bbe683a860d3",
+      "d554a82e5a5df4fb71b803ee284d90667225c36d1e5a9397c7d9e10365ba7ae6",
+      "ec435ca4e6e0071fa35022b78123f4736ec2c9855a9af5a991e5ba8e08e5e462",
+      "f03e6af848f6672818652e3f5683288267dbb77c81b07ef7c646da6ac3ccd558",
+      "f91ed68a2c0c4c8d9febe92922cc086cadf5c6c7f2542a526eace39dbca20e55",
+      "422ac525e4686ffa4f6a58dc4eaf7a24f66f27844de9b0e5f1f4d585457cae56",
+      "b90cca84ddde0cd5e1410a56449d7b23be834c7ae09c1dfe068dc2e302f605b9",
+      "eec3a5416ded284894e030dc32ff0829acc21ddc6c59d856b258e7d110113bed",
+      "a7c7c79f3d122a035185e1e4c3b92a765459b5644dc895c9ecb3928dc3ca1388",
+      "14e9255f0fe6f538dfca53f39f34a57b46f44c8c898012449bf71ef578afb3a1",
+      "71488a4a0a3aa93371226ef8805f9dc60cc70d853cfe25f67f5fe135ffd891c3"
+    ],
+    "raw_output_digest": "b859b84bce591c9681745ca468a222c414b5d383529bb59e4355e7b21c42609f",
+    "rejection_reasons": [],
+    "request_id": "2c146b1a-8625-4b69-907e-0ce0dee4a1a6",
+    "status": "answered",
+    "supplied_evidence_ids": [
+      "bb5b7995045a15c1587e37ca5d1bd57712562d87128d227f4a6ade2dd10cb809",
+      "c9a608b0deb35d6e3321455da9f36bfd372d20cbe6ff9ff660237b0965c30a1c",
+      "82b4971c16d06d4846e4f14059503324ab13bda742a0e81f32cd38909ed00b68",
+      "c8f6ae7662a9f86e0ad22297db1c0de1dcbe165f644dd3618aeb83cf8f56944b",
+      "e6a53f19b230c40cae06d0771fd52b2ef55dd40bf2addc3e8504a901daf8af6d",
+      "af96092f01b08515fd939db1ae1913f2ca0f33751a77215594569def8381b1b1",
+      "d5f2bdc95e9ff645cc4557ec9fc4d03eb8169ba18e6d39eed5cffe3f1e1204ac",
+      "2146e213146756906d6e44bbfbd585c909a9cb71613679a8a11abd7051de8fa4",
+      "2dd9bde44299f905a1e6550a8d6af2b48f51e2de54e820d3174173a96fefb56b",
+      "a0fa4614b023f0b89f898c793e4129041df201ed169a90b6070b363048d0302f"
+    ],
+    "tool_facts": [],
+    "usage": {
+      "completion_tokens": 190,
+      "prompt_cache_hit_tokens": 512,
+      "prompt_cache_miss_tokens": 6713,
+      "prompt_tokens": 7225,
+      "prompt_tokens_details": {
+        "cached_tokens": 512
+      },
+      "total_tokens": 7415
+    }
+  },
+  "cluster": "huggingface-hub",
+  "family_names": [
+    "huggingface-hub"
+  ],
+  "finished_at": "2026-10-14T21:20:25.799294+00:00",
+  "kind": "comparison",
+  "latency_seconds": 2.408740875311196,
+  "method": "lexical",
+  "order": 192,
+  "question_id": "077c7c845e00a140c536242369217ebab68d4618e2fdee445da13325c76d2574",
+  "run_id": "benchmark-v1-20261014",
+  "scores": {
+    "citation_locatable": 1.0,
+    "citation_semantic_support": null,
+    "correct_abstention": null,
+    "evidence_recall_at_10": 1.0,
+    "exact_fact_accuracy": true,
+    "parse_failure": false,
+    "service_failure": false,
+    "status": "answered",
+    "unsupported_output": false
+  },
+  "split": "test",
+  "started_at": "2026-10-14T21:20:23.390504+00:00",
+  "suite_digest": "18076e9625595a7cd5fdb43e0fe564553a187b04947afeb4a6b02944be80dcc0"
+}

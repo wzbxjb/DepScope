@@ -1,0 +1,19 @@
+{
+  "budget": {
+    "call_count": 800,
+    "currency": "USD",
+    "estimated_spent": "1.638689922",
+    "known_estimated_spent": "1.638689922",
+    "max_amount": "10",
+    "max_calls": 1200,
+    "price_basis": "Peak-rate upper-bound estimate; not a supplier invoice",
+    "remaining": "8.361310078",
+    "remaining_calls": 400,
+    "reserved": "0E-7",
+    "unknown_usage_calls": 0
+  },
+  "completed": 560,
+  "observed_at": "2026-10-14T21:24:26.929891+00:00",
+  "run_id": "benchmark-v1-20261014",
+  "suite_digest": "18076e9625595a7cd5fdb43e0fe564553a187b04947afeb4a6b02944be80dcc0"
+}

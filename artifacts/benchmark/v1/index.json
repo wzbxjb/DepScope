@@ -1,0 +1,8 @@
+{
+  "chunking_version": "unicode-2000-overlap-200-field-v1",
+  "corpus_digest": "eb8193e129cd6045bb4e8eaa52783df38260230e23b4b54c44630891adf54d4b",
+  "dimension": 1024,
+  "id": "1dd34349ff18aa6b4c9e7bb7f139004a178522180edbd59a8bcaa257d8a24e9d",
+  "model_digest": "ac6da0dfba84a81fdbfbaf330198c33cd77c4cdfc53e8bc50eb581914a15621d",
+  "model_id": "qwen3-embedding:0.6b"
+}

@@ -1,0 +1,153 @@
+{
+  "answer": {
+    "body": "",
+    "citations": [
+      "759560765da6538e29a869f7d96f22034fa84ae6c90c6cc24f69509df165c923"
+    ],
+    "explanation_verified": false,
+    "facts": [
+      {
+        "kind": "query",
+        "source_ids": [
+          "759560765da6538e29a869f7d96f22034fa84ae6c90c6cc24f69509df165c923"
+        ],
+        "value": {
+          "package": "chromadb",
+          "snapshot_id": "ec6ea18443d65b3d2aaa8d1efc2a1ce90fd95a73e03dc98d8d2cee7e7663c748",
+          "status": "matched",
+          "version": "1.5.9"
+        }
+      }
+    ],
+    "index_id": "1dd34349ff18aa6b4c9e7bb7f139004a178522180edbd59a8bcaa257d8a24e9d",
+    "limitations": [
+      "The frozen OSV query status is a match signal only; it does not establish exploitability, successful installation, or safety.",
+      "No evidence in this snapshot records a query for the package 'attrs' at any version; the supplied query fact concerns chromadb 1.5.9.",
+      "The explanation is generated; citation location does not establish semantic support.",
+      "Some retrieved context was omitted by the fixed context limit."
+    ],
+    "method": "graph_rrf",
+    "model_id": "deepseek-flash",
+    "omitted_evidence_ids": [
+      "439fa6d5dd1663a730d7a6d840391b83b29b658187cfd72a99a1ee3aefc0cfa7",
+      "39102807cb9d93a815f2899133434edf6530b7138094842f82d6ae8821065fde",
+      "ad177ddc68c3dbda539d4ab78aa0f0b1bc50d8a0fff48a890e271ad86ff676aa",
+      "1103befaa59ee9cb3f70edc60b9545dc213a812a577a6607fc1d1f4bc92a9ff4",
+      "8f020f65cb471fb2052148d85fd06f48d4de75f22f48f32c08311e708111c8e4",
+      "a5b56a586e63be47243efac314735ab1780b691052b794e02808ba1fb555b746",
+      "1330ad64c15547a13c8aa1bbbc32091d3d3b1810f7f951bb0dba3c3c4ccd2218",
+      "f35bd3216e98fbed67e36183bbaf5b452173545ddb51424941150a513293e839",
+      "89bd1a82fe55a134238ceb9972bf9903a01b9ad69d16e75467e7b99c4ee568bb",
+      "28dde67fe0b724e69bee6ac28b37677711c66646602b30350b9d4435b0b43af4",
+      "06a9a4dc4962f78fd3b8a4e9a8760abd0b29397f563bdb3beb6f979e1b630ae2",
+      "31d1917300f80cdb073c198e17b5f26f62c1000959fecad6b0c4a6511ea29eab",
+      "42a9c3380d690b84d9af81e49b9526742e925e566a9c6c428e0d46445c968dec",
+      "7fad45162a9ae937b7e4ba28da8df6e40f47b1cad3d8e5856c4b13d2490c3497",
+      "1d7a1a0a9bed5887f17ea5c508c26a184d247adc25a355f24ffc9aae0087c503",
+      "95b6dd814278db95e8764f01668a0377b1ee828374d6054b1de0fc1219530ae2",
+      "be4a6693c116b4e84278517601dd40aee790078e41dfdb103e7a10209ce16eba",
+      "de82c68dc8e07d3ee9a8d57d16ec810f52c5d9791c4ab8f29d41999f15e32e7a",
+      "a01f02a3154c002babc66d591f06dc7eac1ffd87d35ddae8bfebc5c9430170d3",
+      "cf7eb5f27a38564760412b886c76d2d94512b786983003f09f14e20a9152421c",
+      "2eef400bb1bde2b1ee3312d447e57b621194d50fb1e8d362b1f78fbddb7c96e5",
+      "bff56b0d796bd4ebe2c6315adb082f1ae6b6ba06814dc9fd12a4cee851c3fab1",
+      "a968aafb9847f951fa6f0a4ad37e7a0e1e2862f943ba8fe8cea8fcb6237d04a4",
+      "becea6c5999137a0ccda3e35f23f9e3008f2b1131cfb62e237ed98f965f17a2f",
+      "6aaba988f0ac4e43ed8fb53ee9f28adbdefe92f41f362119eeb052e105060a8e",
+      "62b427cb3de83fd3e962d5bf4c851c091d32663d60143c0c12db970c4c32594a",
+      "26e96b8c026e50a8c4451b448fb3abc2f40c5732000b8d1516663d7515f79dfd",
+      "969458cabeafc218920a3b626b55b641cbc91930c9470171dc58d26edfc6594b",
+      "e1c81a9fdc076cf19494690e6d4accd826d4b1e92ec2f8a1bda93e9bd38e4519",
+      "2b87befb2a292c4db217f3024d20bb8d2af454a7403b18160ebbbb6c4331a659",
+      "69a901f626ab77680029b7c6d812c7aea6591553978a6bd0ad85daf5bf668465",
+      "7404332ec7e67248f6405bd24c05c04a0ba2f683c1a9f9fbcb3eda018d408673",
+      "0110dbda6357c1fad6999c5eaafc2e711e1454fe89ad5d3a6c00d5cb1c582596",
+      "06195dae09add1e805a2f7d9842744fec15305a1a0c4c5d03661237f14155d80",
+      "09f08b873b5e9fa18390f2f8ac2609ac60e5785ef7ab83793eaf3a5c0a7b6d1b",
+      "0d8a0febf1e6e09db17ede6309d530ef8339d76cd0bacdee34c5498b92c74bed",
+      "62014b7ed6a61de04127b9dfb86cb479cfd8b7d17b5aa1dfbab2f9df775d4cc5",
+      "19bdad32cde47c3c3ab79865d07197cd895ec662ba6dbfd4abfb156696ca2fd0",
+      "bbb855a4332e1247396a0797042250811b425698bf603cb50c8db03042a01a07",
+      "022e2573323f664bd5b570e670d59348ca9df64ee922e5ee251f966b18257264",
+      "1be835f817e65c9d56de9f58d64bcd7421342f86dd863136230629284a7511bd",
+      "1d59b7f01cfbc41c15142d3655e2c0ecc023c0f37893ad270deb654a5865d67d",
+      "c8763b1ff23076c11d8bee723cc23bdb848fd77dabf9414c13fe766286e86db2",
+      "1ed156ba7a6db2c31b9cf6464707d39477c5693624846ae30ae6e7eae6d503bb",
+      "6a9f1f09bdb4419c5913378978b084fba7210379de3128a0f76d3efa09f04264",
+      "20709ed3ddf38a71c7c8011b9586401fcd268563b01c744d3e96a1e36caf707a",
+      "793b00265882a91e59e58007d145a58588f19663656b623a37dc81d1ca44aaae",
+      "20fa4e396cdd25a49acf507a2dd16547b05cff4d8687b76bbab3b3566be8f0bd",
+      "28feb370250aeba82570301a0ca0bac11caf7d372719d3111c66c33bdaa4195d",
+      "2b03250e6460705ec924056b86e60c1b6e9cee85006554a24d4b0ffd2c046658",
+      "2e2b37ab5dcb6cb9935eec0a2c640f948632e1e3c146fa6483a1ca25f4b065d1",
+      "5842c9331c10d6d63624a182b742d39d7f1d4524a3b2081f0b60415e41a1cb6f",
+      "2e757a6dc7756c0b16c5481edbd782282eaaafbee0db1ec08b303421ee5a73a8",
+      "a09d20242b983f0b48513f1188894507bd3701718e9704121ac3ec0b0ad27209",
+      "304cc860f41c0a8891e18b79fc1e583a3a1bafe1d797d159fe1ba2e337796fc0",
+      "30dc9620d12f6520db947d170aacf191f10b711d02e70ea044a1dc0228d355ac",
+      "32bcec213d3c066d399d1a182c746f3b7ceb6c71e62e4f4347911e78fa620d12",
+      "3d861df4b30f2fece557987f3c8564139597ebcc926061e87a8574a8bb8c8beb",
+      "cda03655c50a77fb629e4a53f537597760a799f56cb9384e1dd0ed7f54109281",
+      "e852555d1c60995753ff0ea68676eb3a2480948293c0ffbcecdbf5608e1e6f3f",
+      "44263258f939d2a73e7991f643e4edfbc2e5c5ac5cc3a33106472fc8f86bd959",
+      "68e3b74c3857c92ff5f224bf68c73dfb6540a0712d398356521dbb9b008e8417",
+      "44720fb6dafb6b303bf065cbb8dbb1d68f5adf276831cc17eb7f324b800b6552",
+      "bb3e8fbc15fc5dd3dd822452eb3f90c765f9430a71581ab55dead20d71720c76",
+      "4982aee92e369db38a72eee890ca77acc8cea2379b98d2918136cc272a54b5eb",
+      "d664716bfacbfc97050edc2cace70c6b77400e43486a6b3b82406963d64e9201",
+      "4bb41fee234ba16ac301fe90612ea372568ee0f321118715f13631f8c6107b64"
+    ],
+    "raw_output_digest": "6ea24723bae300938af7d6cb4ad252def93fb3cf252089595837afcc5219b5bb",
+    "rejection_reasons": [],
+    "request_id": "14d01dc0-35d9-4519-b835-d8e97bef9d95",
+    "status": "answered",
+    "supplied_evidence_ids": [
+      "38e7a4145f0e34651ccf9ed70cc243b758ba902d666080c40c3a108d2a0ba212",
+      "926d0540a5b0e02fcec9c5e36acc87ffda456628d7ab3e903aeb04f3de4f7cba",
+      "d0aec6af0f672027153a480373166741f3da462ceff812cc4889c0adad5b38c3",
+      "b91762331e78d1b91404376409046bf2b81e63e44f79453b11ddcdcc72ad7280",
+      "759560765da6538e29a869f7d96f22034fa84ae6c90c6cc24f69509df165c923",
+      "1b646308760d854869c28ae57ef6ba9f5226751bd74f2ea531474e72b825d08e",
+      "d5bb77001e2831ab3fccea1425a8254f98f598251e568ac6b98f25e64575e331",
+      "4db57f47c7c4674b1beefb0f4216ebad93ea791e2787e8c7cf5536790264eade",
+      "5fc9910ee181c159d5c8a2a4cdffec170f18d5c38481bc5cf9d4ebcbaebbf587",
+      "ec1db2cca4cffae8bd28e82f24a2a61935a661e3d545729ad0d0edbff1c015c3"
+    ],
+    "tool_facts": [],
+    "usage": {
+      "completion_tokens": 235,
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 3452,
+      "prompt_tokens": 3836,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "total_tokens": 4071
+    }
+  },
+  "cluster": "chromadb",
+  "family_names": [
+    "chromadb"
+  ],
+  "finished_at": "2026-10-14T21:23:38.631644+00:00",
+  "kind": "single",
+  "latency_seconds": 2.105522916652262,
+  "method": "graph_rrf",
+  "order": 488,
+  "question_id": "229d2ea495da4038fbbff92347f8042ec3ca772459af48f442c847fd4cc3453c",
+  "run_id": "benchmark-v1-20261014",
+  "scores": {
+    "citation_locatable": 1.0,
+    "citation_semantic_support": null,
+    "correct_abstention": null,
+    "evidence_recall_at_10": 0.0,
+    "exact_fact_accuracy": false,
+    "parse_failure": false,
+    "service_failure": false,
+    "status": "answered",
+    "unsupported_output": false
+  },
+  "split": "test",
+  "started_at": "2026-10-14T21:23:36.526088+00:00",
+  "suite_digest": "18076e9625595a7cd5fdb43e0fe564553a187b04947afeb4a6b02944be80dcc0"
+}

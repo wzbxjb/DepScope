@@ -1,0 +1,367 @@
+{
+  "suite_digest": "18076e9625595a7cd5fdb43e0fe564553a187b04947afeb4a6b02944be80dcc0",
+  "real_retrievals": 40,
+  "paid_generation_calls": 0,
+  "results": [
+    {
+      "question_id": "dfeffbe3c41e4d655715d38031a9ca7e813f408646753eefa1a7d120a2a0df89",
+      "kind": "single",
+      "split": "dev",
+      "method": "lexical",
+      "chunks": 10,
+      "text_characters": 4387,
+      "seconds": 0.12935937521979213
+    },
+    {
+      "question_id": "dfeffbe3c41e4d655715d38031a9ca7e813f408646753eefa1a7d120a2a0df89",
+      "kind": "single",
+      "split": "dev",
+      "method": "vector",
+      "chunks": 10,
+      "text_characters": 5536,
+      "seconds": 1.0730491671711206
+    },
+    {
+      "question_id": "dfeffbe3c41e4d655715d38031a9ca7e813f408646753eefa1a7d120a2a0df89",
+      "kind": "single",
+      "split": "dev",
+      "method": "rrf",
+      "chunks": 10,
+      "text_characters": 5110,
+      "seconds": 0.2779866666533053
+    },
+    {
+      "question_id": "dfeffbe3c41e4d655715d38031a9ca7e813f408646753eefa1a7d120a2a0df89",
+      "kind": "single",
+      "split": "dev",
+      "method": "graph_rrf",
+      "chunks": 10,
+      "text_characters": 5127,
+      "seconds": 0.18443587515503168
+    },
+    {
+      "question_id": "327fe6f8b24ee1a14bd1a948058b1a106e692a9d180d7a39cb1cb9cf7e134715",
+      "kind": "path",
+      "split": "dev",
+      "method": "lexical",
+      "chunks": 10,
+      "text_characters": 7085,
+      "seconds": 0.048600166104733944
+    },
+    {
+      "question_id": "327fe6f8b24ee1a14bd1a948058b1a106e692a9d180d7a39cb1cb9cf7e134715",
+      "kind": "path",
+      "split": "dev",
+      "method": "vector",
+      "chunks": 10,
+      "text_characters": 6850,
+      "seconds": 0.16710695810616016
+    },
+    {
+      "question_id": "327fe6f8b24ee1a14bd1a948058b1a106e692a9d180d7a39cb1cb9cf7e134715",
+      "kind": "path",
+      "split": "dev",
+      "method": "rrf",
+      "chunks": 10,
+      "text_characters": 4999,
+      "seconds": 0.13793958397582173
+    },
+    {
+      "question_id": "327fe6f8b24ee1a14bd1a948058b1a106e692a9d180d7a39cb1cb9cf7e134715",
+      "kind": "path",
+      "split": "dev",
+      "method": "graph_rrf",
+      "chunks": 10,
+      "text_characters": 4117,
+      "seconds": 0.1236132918857038
+    },
+    {
+      "question_id": "afd236d49a8c7ad0e8fe96e055109295ceceb27cf2da144f556c8548fe294a93",
+      "kind": "cross",
+      "split": "dev",
+      "method": "lexical",
+      "chunks": 10,
+      "text_characters": 5799,
+      "seconds": 0.20077012479305267
+    },
+    {
+      "question_id": "afd236d49a8c7ad0e8fe96e055109295ceceb27cf2da144f556c8548fe294a93",
+      "kind": "cross",
+      "split": "dev",
+      "method": "vector",
+      "chunks": 10,
+      "text_characters": 5983,
+      "seconds": 0.18986491672694683
+    },
+    {
+      "question_id": "afd236d49a8c7ad0e8fe96e055109295ceceb27cf2da144f556c8548fe294a93",
+      "kind": "cross",
+      "split": "dev",
+      "method": "rrf",
+      "chunks": 10,
+      "text_characters": 5403,
+      "seconds": 0.1524914586916566
+    },
+    {
+      "question_id": "afd236d49a8c7ad0e8fe96e055109295ceceb27cf2da144f556c8548fe294a93",
+      "kind": "cross",
+      "split": "dev",
+      "method": "graph_rrf",
+      "chunks": 10,
+      "text_characters": 4765,
+      "seconds": 0.16272220807150006
+    },
+    {
+      "question_id": "221ba189313e492d02f92399501864afcf3713dc80cff07d8d47c685e3bbf394",
+      "kind": "comparison",
+      "split": "dev",
+      "method": "lexical",
+      "chunks": 10,
+      "text_characters": 9321,
+      "seconds": 0.027482582721859217
+    },
+    {
+      "question_id": "221ba189313e492d02f92399501864afcf3713dc80cff07d8d47c685e3bbf394",
+      "kind": "comparison",
+      "split": "dev",
+      "method": "vector",
+      "chunks": 10,
+      "text_characters": 5491,
+      "seconds": 0.1531344591639936
+    },
+    {
+      "question_id": "221ba189313e492d02f92399501864afcf3713dc80cff07d8d47c685e3bbf394",
+      "kind": "comparison",
+      "split": "dev",
+      "method": "rrf",
+      "chunks": 10,
+      "text_characters": 3997,
+      "seconds": 0.12903300020843744
+    },
+    {
+      "question_id": "221ba189313e492d02f92399501864afcf3713dc80cff07d8d47c685e3bbf394",
+      "kind": "comparison",
+      "split": "dev",
+      "method": "graph_rrf",
+      "chunks": 10,
+      "text_characters": 3997,
+      "seconds": 0.11016766680404544
+    },
+    {
+      "question_id": "3a387b899c50d591b3e96915cbeda83c92f26ff26d3d7f4877eb11cf8f61ae35",
+      "kind": "missing",
+      "split": "dev",
+      "method": "lexical",
+      "chunks": 10,
+      "text_characters": 4426,
+      "seconds": 0.01267545809969306
+    },
+    {
+      "question_id": "3a387b899c50d591b3e96915cbeda83c92f26ff26d3d7f4877eb11cf8f61ae35",
+      "kind": "missing",
+      "split": "dev",
+      "method": "vector",
+      "chunks": 10,
+      "text_characters": 5571,
+      "seconds": 0.13275316590443254
+    },
+    {
+      "question_id": "3a387b899c50d591b3e96915cbeda83c92f26ff26d3d7f4877eb11cf8f61ae35",
+      "kind": "missing",
+      "split": "dev",
+      "method": "rrf",
+      "chunks": 10,
+      "text_characters": 5047,
+      "seconds": 0.14205870917066932
+    },
+    {
+      "question_id": "3a387b899c50d591b3e96915cbeda83c92f26ff26d3d7f4877eb11cf8f61ae35",
+      "kind": "missing",
+      "split": "dev",
+      "method": "graph_rrf",
+      "chunks": 10,
+      "text_characters": 5125,
+      "seconds": 0.12939299969002604
+    },
+    {
+      "question_id": "229d2ea495da4038fbbff92347f8042ec3ca772459af48f442c847fd4cc3453c",
+      "kind": "single",
+      "split": "test",
+      "method": "lexical",
+      "chunks": 10,
+      "text_characters": 2698,
+      "seconds": 0.031907124910503626
+    },
+    {
+      "question_id": "229d2ea495da4038fbbff92347f8042ec3ca772459af48f442c847fd4cc3453c",
+      "kind": "single",
+      "split": "test",
+      "method": "vector",
+      "chunks": 10,
+      "text_characters": 8726,
+      "seconds": 0.15295579191297293
+    },
+    {
+      "question_id": "229d2ea495da4038fbbff92347f8042ec3ca772459af48f442c847fd4cc3453c",
+      "kind": "single",
+      "split": "test",
+      "method": "rrf",
+      "chunks": 10,
+      "text_characters": 3585,
+      "seconds": 0.13630441715940833
+    },
+    {
+      "question_id": "229d2ea495da4038fbbff92347f8042ec3ca772459af48f442c847fd4cc3453c",
+      "kind": "single",
+      "split": "test",
+      "method": "graph_rrf",
+      "chunks": 10,
+      "text_characters": 3585,
+      "seconds": 0.1484456672333181
+    },
+    {
+      "question_id": "840cb93d119ee5c4515ff56cf2d42d285db6184924b8d380037b09fcbe96f438",
+      "kind": "path",
+      "split": "test",
+      "method": "lexical",
+      "chunks": 10,
+      "text_characters": 3068,
+      "seconds": 0.014166000299155712
+    },
+    {
+      "question_id": "840cb93d119ee5c4515ff56cf2d42d285db6184924b8d380037b09fcbe96f438",
+      "kind": "path",
+      "split": "test",
+      "method": "vector",
+      "chunks": 10,
+      "text_characters": 8608,
+      "seconds": 0.14123620791360736
+    },
+    {
+      "question_id": "840cb93d119ee5c4515ff56cf2d42d285db6184924b8d380037b09fcbe96f438",
+      "kind": "path",
+      "split": "test",
+      "method": "rrf",
+      "chunks": 10,
+      "text_characters": 3354,
+      "seconds": 0.14442350016906857
+    },
+    {
+      "question_id": "840cb93d119ee5c4515ff56cf2d42d285db6184924b8d380037b09fcbe96f438",
+      "kind": "path",
+      "split": "test",
+      "method": "graph_rrf",
+      "chunks": 10,
+      "text_characters": 4285,
+      "seconds": 0.1071096658706665
+    },
+    {
+      "question_id": "f5554b76fc65d35d3c7e16fbfe70d64fa1e470018ac709fb672fd1975fb98393",
+      "kind": "cross",
+      "split": "test",
+      "method": "lexical",
+      "chunks": 10,
+      "text_characters": 9061,
+      "seconds": 0.10249395808205009
+    },
+    {
+      "question_id": "f5554b76fc65d35d3c7e16fbfe70d64fa1e470018ac709fb672fd1975fb98393",
+      "kind": "cross",
+      "split": "test",
+      "method": "vector",
+      "chunks": 10,
+      "text_characters": 4795,
+      "seconds": 0.1431098747998476
+    },
+    {
+      "question_id": "f5554b76fc65d35d3c7e16fbfe70d64fa1e470018ac709fb672fd1975fb98393",
+      "kind": "cross",
+      "split": "test",
+      "method": "rrf",
+      "chunks": 10,
+      "text_characters": 6169,
+      "seconds": 0.14254604186862707
+    },
+    {
+      "question_id": "f5554b76fc65d35d3c7e16fbfe70d64fa1e470018ac709fb672fd1975fb98393",
+      "kind": "cross",
+      "split": "test",
+      "method": "graph_rrf",
+      "chunks": 10,
+      "text_characters": 6169,
+      "seconds": 0.14283775025978684
+    },
+    {
+      "question_id": "86308a8463ffb2b8a9726573db38339702ce6477379408178fb81f00c7c483a4",
+      "kind": "comparison",
+      "split": "test",
+      "method": "lexical",
+      "chunks": 10,
+      "text_characters": 2859,
+      "seconds": 0.018975708167999983
+    },
+    {
+      "question_id": "86308a8463ffb2b8a9726573db38339702ce6477379408178fb81f00c7c483a4",
+      "kind": "comparison",
+      "split": "test",
+      "method": "vector",
+      "chunks": 10,
+      "text_characters": 4998,
+      "seconds": 0.15376224974170327
+    },
+    {
+      "question_id": "86308a8463ffb2b8a9726573db38339702ce6477379408178fb81f00c7c483a4",
+      "kind": "comparison",
+      "split": "test",
+      "method": "rrf",
+      "chunks": 10,
+      "text_characters": 2507,
+      "seconds": 0.13386008376255631
+    },
+    {
+      "question_id": "86308a8463ffb2b8a9726573db38339702ce6477379408178fb81f00c7c483a4",
+      "kind": "comparison",
+      "split": "test",
+      "method": "graph_rrf",
+      "chunks": 10,
+      "text_characters": 4030,
+      "seconds": 0.11908933287486434
+    },
+    {
+      "question_id": "d31118c596de335536fa5df5092cd7ad5bc39ab35628f8ea434b93ce49df02b1",
+      "kind": "missing",
+      "split": "test",
+      "method": "lexical",
+      "chunks": 10,
+      "text_characters": 4182,
+      "seconds": 0.014205790590494871
+    },
+    {
+      "question_id": "d31118c596de335536fa5df5092cd7ad5bc39ab35628f8ea434b93ce49df02b1",
+      "kind": "missing",
+      "split": "test",
+      "method": "vector",
+      "chunks": 10,
+      "text_characters": 5932,
+      "seconds": 0.11436229199171066
+    },
+    {
+      "question_id": "d31118c596de335536fa5df5092cd7ad5bc39ab35628f8ea434b93ce49df02b1",
+      "kind": "missing",
+      "split": "test",
+      "method": "rrf",
+      "chunks": 10,
+      "text_characters": 2703,
+      "seconds": 0.11488195927813649
+    },
+    {
+      "question_id": "d31118c596de335536fa5df5092cd7ad5bc39ab35628f8ea434b93ce49df02b1",
+      "kind": "missing",
+      "split": "test",
+      "method": "graph_rrf",
+      "chunks": 10,
+      "text_characters": 3903,
+      "seconds": 0.11530499998480082
+    }
+  ]
+}

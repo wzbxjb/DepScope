@@ -1,0 +1,203 @@
+{
+  "answer": {
+    "body": "",
+    "citations": [
+      "c5f6b08e3dd70eca47bc8d4873f3ab840ec529d5cf08488fd227df86ffd1d27d",
+      "ead44bbd3e420ab39bbc6e9b26bcec0cfe7df5a27a77257bf054c4b71562811f",
+      "928496ceb41e047df3a5ef87429120d15d9e598b0ec23f1c1748a312f8de00eb",
+      "baf3d7cd32ad8ad4134781829c9e8e8e7a1820ecc61bf9cc889bda91ee206cad"
+    ],
+    "explanation_verified": false,
+    "facts": [
+      {
+        "kind": "path",
+        "source_ids": [
+          "c5f6b08e3dd70eca47bc8d4873f3ab840ec529d5cf08488fd227df86ffd1d27d"
+        ],
+        "value": {
+          "instance_ids": [
+            "0f0a1e453653343e80c2b4841fc22314483b478574ac8bf046fa4c3629f3b8a5",
+            "f08de1781f9bf2b8fc985fe150187909112606d6b55bc921bb1a78d13cfc7d90"
+          ],
+          "snapshot_id": "517492ad824ddead14450034dbe7ae602e65945dfba14a6d2adb8f81bf2ffa74"
+        }
+      },
+      {
+        "kind": "path",
+        "source_ids": [
+          "ead44bbd3e420ab39bbc6e9b26bcec0cfe7df5a27a77257bf054c4b71562811f"
+        ],
+        "value": {
+          "instance_ids": [
+            "0e9cb4e63713a58a3fe12965ea35314a179b97a21bea7cfa86edf829169af065",
+            "cf7af7dd667a4b46c622b57536428614f4d9af8491a144d477b58f5e824d2865"
+          ],
+          "snapshot_id": "8a331dcfc95843471f5d84f026adc94c9f2ca2d8ac97390e2518205d8ee607fb"
+        }
+      },
+      {
+        "kind": "version",
+        "source_ids": [
+          "928496ceb41e047df3a5ef87429120d15d9e598b0ec23f1c1748a312f8de00eb"
+        ],
+        "value": {
+          "instance_id": "f08de1781f9bf2b8fc985fe150187909112606d6b55bc921bb1a78d13cfc7d90",
+          "package": "numpy",
+          "snapshot_id": "517492ad824ddead14450034dbe7ae602e65945dfba14a6d2adb8f81bf2ffa74",
+          "version": "2.5.4"
+        }
+      },
+      {
+        "kind": "version",
+        "source_ids": [
+          "baf3d7cd32ad8ad4134781829c9e8e8e7a1820ecc61bf9cc889bda91ee206cad"
+        ],
+        "value": {
+          "instance_id": "cf7af7dd667a4b46c622b57536428614f4d9af8491a144d477b58f5e824d2865",
+          "package": "numpy",
+          "snapshot_id": "8a331dcfc95843471f5d84f026adc94c9f2ca2d8ac97390e2518205d8ee607fb",
+          "version": "2.5.4"
+        }
+      }
+    ],
+    "index_id": "1dd34349ff18aa6b4c9e7bb7f139004a178522180edbd59a8bcaa257d8a24e9d",
+    "limitations": [
+      "Paths are direct dependency edges only; no multi-hop root-to-numpy path was supplied for either snapshot.",
+      "The sentence-transformers snapshot also contains a transformers-to-numpy edge, but no edge connecting sentence-transformers to transformers was supplied, so no longer path can be constructed.",
+      "No exploitability, installation or test evidence is supplied; these paths are dependency relationships only.",
+      "The explanation is generated; citation location does not establish semantic support.",
+      "Some retrieved context was omitted by the fixed context limit."
+    ],
+    "method": "rrf",
+    "model_id": "deepseek-flash",
+    "omitted_evidence_ids": [
+      "5363db37fbd5e2acf51f3f88a88f6060e2cced58b9e284c90b47e3dd17e5ce80",
+      "b98018f6f5f92850cbc186058db91f5421cb091cac06b71a5b96c391664855aa",
+      "0a88f3a777a68b9eb7c53fe9cd9e53665e073876eb2bb1a6ca4d73fc922310a5",
+      "56079290a7b3123a3d513d9a7d1a7c7bb98dde093a1729161499de99815542dd",
+      "f68658b0bce2b829097492915e11e051b01a55c4f7e52c817bf82c0786385d38",
+      "dac34659ace7c5150c67dcea0ca31c905b05ec6f22a531d9d84476f0ed46b96b",
+      "139eb5da4502ee1b3476dfd2ab9c7914c42d169503f2e91d88ed470706c4522c",
+      "41a20caab291d2c5c14aff8ff96f23a5bc8fec28104b005eb937535bb151f0e3",
+      "67c3e4cdfa38e9bcde87c77ccb2b301a36de439ac05f7f77ef34b8bdcd3fe9c3",
+      "ca5a675afc965c249a27e1520dd85447f747e762f93791ec1db418c27956e5bb",
+      "5bfb199432602ac80e5ab168a1e35ba8729061a8a18832c5f42b35b1a2421e42",
+      "d8a085670e1dd8011b1e9bc80e61f9389ec5c95ee1b5b0f10b028f2cc953cab4",
+      "236db161b6977daace47263276deedfbab7e60128c1ba6e28b6fdb4e273af9f2",
+      "306a01d3444b20e9c91880be5303c6d74a946628e4fae4d93e0a41d6216d2204",
+      "bcd4feee96b13658c0b57cebbc5638ecabcf53f540450261147736064435e0b0",
+      "543fb67cbb06ea0d545a638820741bd7942366622e84e0dad551ecd846430bf7",
+      "8bdd6c3f70b7f3ab5e6636e93778c1a1a69143c998e7d952642c2d6b00e78882",
+      "7d957d990b5a345b129daa6bcd44faa340e998a1e1ddabadb3317b9e684033ea",
+      "87ffb6b90424ce4df6f4bda6c28a78b110805d319cc77893d11c6fdfb48d33e1",
+      "28180a14e8e5c5ae3510fe96b6da0552deb2e86c67ea0be221052af3441eff19",
+      "f5719e46db5f9d6a49bb8d538ac7fc84e753872666ed4a190291c7664638ed94",
+      "6b3f7f80c078dea2c5255fb8209ad27c9367e5d3668d9732133ca95ff2b58517",
+      "47b44eb17886c9d0d6f28699e5fb98888617b3e7ca1212493fdce525df06e2b5",
+      "bc6048577efa39a9fab46045891354559fda8ebab2a68d5264d18247890173bd",
+      "ac95bf12edb2759e033fe7b308c51670308e40224ef441cee8a146248a9a2673",
+      "b0c4000f45bf6a05f9864518e45ccba6e32ad23c52f80e80e6317f25d2f7e973",
+      "d404bbe9adf1e7a42a3ba56765599e22de33ab6225949811e01353d0fe29b740",
+      "6522ed2a5229071c1dac98b0a8d2f1062473ef5d02a4f4e2615242b77571f691",
+      "e11515723806f01af4e1f89ce48e0ab2c9f08cbe73e634bb00aa41e608c0c5ee",
+      "a7adae61e5cd83b43a7898e05846c43f03f042bc81ea2fec8c43679f7d79ef43",
+      "2bd5b7aed21e21453c02997a213f69c322d7b9fffb48f20803e4b6d74f5b2195",
+      "c554c6aa8d26b6d14b9d66ebb6a18a257ebfa10cdd115e5cf8ba4ff3ca8c0b84",
+      "8b147ab35241f4fb561196473fe3f4771341ec5619c4ab5dda6d59fbf1a45359",
+      "f5e7e7de760500e5c49d0efd971060fc9f1caf2cbb1cd85cbc2f627e0c6413d6",
+      "a65584a75d41b090ac12fc67c03578b05baf478f8873f7e411336004947ceaeb",
+      "449990fa35eb9e20c6c3b79363198020f3e4e05c0927ca168c245bae97051919",
+      "12199eea4455bb6444de35e00a6ee40c8943164f1f810f7a6cda8ec2e144c008",
+      "e83380178018371c3dd7ad0c9f46921f48261a61a5bd65a9b2d2a664835070df",
+      "bf40a91a48da2a2e3e53a5544df37a19255c28fb74c75e734f0a4c001f0fa9d5",
+      "508e4282a476500d62991781a0afda72b60215954e94c0d075a838b5a5575193",
+      "f533ac25ac0298c116656c961b9edb0b587a5d80c4b65032ad332451c094f485",
+      "18bd060e598f5e155f9d6acdcab55f612a5cee5df2ec3be580d1c10da892640e",
+      "03ca526f3027f27382b5e0c9f8eb77ddcca9bdcd3e1d4d73ba6d0dd628b2803e",
+      "7bea9afafe947cfecf652e50d624819fa193d733a56fa685e1c7349bf36d7ac3",
+      "38fa3c3ee5eb8d0117ab6fcbe6d05a8fe6e4c2dd035be9ec6d39de4bb97ea01e",
+      "5236a7777d2ab9086852a446e3acd210c11ad91bb69cdfa54cd126ec773b930f",
+      "7b0970dc6d18f943f711ff18d0d76846b5d230f24e4733bf626110d7c68d502f",
+      "fe0ac15c9f244f28109e4e8ad654d72716043b63eb828155b4ac1d096c68a2c7",
+      "0626a84400e2c71e568b6e9a72f92811d9e1267c641074d785677a2a94d9e67b",
+      "7094c9742f6e93c34c7088d0934eb1cbbafd4fc7fb8f1e4d82ffef8229c61b09",
+      "29b66805f95e6eb4e08e8c344dd635d3e86d1d0188352bf16a9c4cf98ba2ec6d",
+      "f3e92adc1b69ab0648950ad086e3db83db2762717e861510ad710959a59ad84e",
+      "f72f6c659bafc342509709d6bcba1ab0c9ccd7a7f0a6ff1df7d5a224038f2891",
+      "23dbc03eba2d6c0f23b9474282d422fbf16ef5a9d3e341a6835cfc24fcf04fc5",
+      "c325d1bc0160c699ece035bdd9695650807084d22d466ff47a2282862eb1386f",
+      "613667e2c410c8bccf7d99b0f79fa48e96a30ed741fb66d2f73e8343b43259e1",
+      "ffdb496af772aeac0e330549070c8d8ee38e1f9deb22ea793d783bf6fb2897b2",
+      "9812868f7a438c16b8164c7bdb74eed69ea282bdb6740f9df352e028baf18da0",
+      "b2b2ac0bd9377ce8c94d2008fb284bd8f825ca02bbbe500622784b3ed2ef650d",
+      "1bcb00a539e22f330cae760f75024084a98ae84152565b50173974a52d313793",
+      "25791a4fe5aaac39aaa0f39366cd81b2ca025c3ece68a58ff1a22b6a72cc71da",
+      "39f54716b33f1b0e55233d707cb124e003f0e89a1c4a30bff1b7ed6d68abc6ae",
+      "c012302a3f54f9967164d33b805e0db32b4028bcdba23c48bfce9732681b9a03",
+      "cef6f9781fd65be592e216957ae6544cc190562f827205b41b716f1cd209d5df",
+      "82a48e5b1ece7669a359cb9e89ee4ce4e7a8fece531d29c13fb804096bfdf11a",
+      "f662447089c170e02191fc55f955e16d709734d0d8fca66b502a46d409a47a66",
+      "f7fe0b080d6d4cc727e519d836924fd32b8b2178e778ab9090971858057173ac",
+      "5401dc3b4f89f99c024432d00112cc70c0282419ddb47cd3d55834a410b30373",
+      "752d5c46871db5020ad86cdbe15dbf8675388a5c3fa8bc53989b85ba204ce1f7",
+      "7ad4e96fcef01882f44d038fe269e7e43195d3d3c8746d2eeacf2bf598d6ddc8",
+      "ddf4b935dc2d96c472c310695c639c0fcc1f4fde6e7697561d6a6b8361c5b728",
+      "457640aa2f6dfc6d91c21815e00a1a864aa31fe8e04257d86a1a4db03afa538f",
+      "ddb7793b255803ed8afdfd5714efeec00ad17ed17b3ded3696b545fd020e5245",
+      "ee4bb846f67dd7e1400630f5b2fe440fd54a68e329efd9e31fbee1db240fca97"
+    ],
+    "raw_output_digest": "72764792e0b605eb04fb0529ac3bbccf648ebc883cf8dd7c9ee1b7bb7e75fe55",
+    "rejection_reasons": [],
+    "request_id": "8e03aeb6-4836-4a81-8272-0f8e5aac47e5",
+    "status": "answered",
+    "supplied_evidence_ids": [
+      "ead44bbd3e420ab39bbc6e9b26bcec0cfe7df5a27a77257bf054c4b71562811f",
+      "c5f6b08e3dd70eca47bc8d4873f3ab840ec529d5cf08488fd227df86ffd1d27d",
+      "b0f886078c817a0b327840c646bb2a36924100d84344d016e9fdca67e874f707",
+      "928496ceb41e047df3a5ef87429120d15d9e598b0ec23f1c1748a312f8de00eb",
+      "64fdd78def1a73cce83b49d15b3a20896a20b1d0a0bc84a0c921027118d7e29b",
+      "4a8f4c05157928ff685d2fca7a0e485a66e3289f879b9113dfeb6e045b5bc32d",
+      "4b3adc48a1eabff91fbe57ae4fde81a682f4e3055ac21ce365198be75897bfbb",
+      "5f605c9d8de5111dde062ca6fe36e24b8caef9d3f3fdff58ece7d7079c9f049c",
+      "baf3d7cd32ad8ad4134781829c9e8e8e7a1820ecc61bf9cc889bda91ee206cad",
+      "24bf2327f265b8fec409051e9f15c8e6c8945b2d228ffde6a71f84e00dab1a5d"
+    ],
+    "tool_facts": [],
+    "usage": {
+      "completion_tokens": 920,
+      "prompt_cache_hit_tokens": 2048,
+      "prompt_cache_miss_tokens": 6997,
+      "prompt_tokens": 9045,
+      "prompt_tokens_details": {
+        "cached_tokens": 2048
+      },
+      "total_tokens": 9965
+    }
+  },
+  "cluster": "gradio|sentence-transformers",
+  "family_names": [
+    "gradio",
+    "sentence-transformers"
+  ],
+  "finished_at": "2026-10-14T21:21:53.390339+00:00",
+  "kind": "cross",
+  "latency_seconds": 4.446085958275944,
+  "method": "rrf",
+  "order": 325,
+  "question_id": "6f934b472b0efd434ef5ddffe3873bdb7cf0ad6ee4bc25c6772525c18a2b505a",
+  "run_id": "benchmark-v1-20261014",
+  "scores": {
+    "citation_locatable": 1.0,
+    "citation_semantic_support": null,
+    "correct_abstention": null,
+    "evidence_recall_at_10": 1.0,
+    "exact_fact_accuracy": false,
+    "parse_failure": false,
+    "service_failure": false,
+    "status": "answered",
+    "unsupported_output": false
+  },
+  "split": "test",
+  "started_at": "2026-10-14T21:21:48.944207+00:00",
+  "suite_digest": "18076e9625595a7cd5fdb43e0fe564553a187b04947afeb4a6b02944be80dcc0"
+}

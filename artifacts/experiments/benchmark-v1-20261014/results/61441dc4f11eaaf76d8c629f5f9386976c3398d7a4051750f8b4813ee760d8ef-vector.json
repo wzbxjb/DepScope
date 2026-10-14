@@ -1,0 +1,125 @@
+{
+  "answer": {
+    "body": "",
+    "citations": [
+      "77eea45e1942cb3e9e42f3c11e985b0551b39086db197a0b9dd7fbe8bd4d0a0e"
+    ],
+    "explanation_verified": false,
+    "facts": [
+      {
+        "kind": "query",
+        "source_ids": [
+          "77eea45e1942cb3e9e42f3c11e985b0551b39086db197a0b9dd7fbe8bd4d0a0e"
+        ],
+        "value": {
+          "package": "frozenlist",
+          "snapshot_id": "208dc2c88a69273e6949d398007bf1256a0f93bda5f2884f5413dec791f54962",
+          "status": "no_match",
+          "version": "1.8.0"
+        }
+      }
+    ],
+    "index_id": "1dd34349ff18aa6b4c9e7bb7f139004a178522180edbd59a8bcaa257d8a24e9d",
+    "limitations": [
+      "The frozen OSV query status for frozenlist is a query result only; it does not establish exploitability, safety, or successful installation.",
+      "The explanation is generated; citation location does not establish semantic support.",
+      "Some retrieved context was omitted by the fixed context limit."
+    ],
+    "method": "vector",
+    "model_id": "deepseek-flash",
+    "omitted_evidence_ids": [
+      "1b646308760d854869c28ae57ef6ba9f5226751bd74f2ea531474e72b825d08e",
+      "074240d255b086d9d3157b6c66fc9a912d2ae287d1b16d4b299e69bcc8abf18c",
+      "868ae27aed15df12707b68c42a3a2003cc0dcbf5fef57a9d846a41a2a97675c0",
+      "cde8e20a7baceb4714187922698a934eba0a661f09768ee7195b725613396eb8",
+      "38e7a4145f0e34651ccf9ed70cc243b758ba902d666080c40c3a108d2a0ba212",
+      "d0aec6af0f672027153a480373166741f3da462ceff812cc4889c0adad5b38c3",
+      "45fc4599f70065aa964d7a776d50c8c1af275f5c5b8e3737868b8918d1ec6db5",
+      "6b4c40ba96e0bddd05e729ba7cf3971be87da7c49e817542c5293faaf5b55165",
+      "6296b9301ed23dc960a3f0d993c4b987cc504e3dcc2d165cc19b49ff3cfd8c99",
+      "a360d44ea9ebb6bdcd031dc273552ffd13ad09b56e60a584f1663c0042344437",
+      "26e96b8c026e50a8c4451b448fb3abc2f40c5732000b8d1516663d7515f79dfd",
+      "69a901f626ab77680029b7c6d812c7aea6591553978a6bd0ad85daf5bf668465",
+      "e1c81a9fdc076cf19494690e6d4accd826d4b1e92ec2f8a1bda93e9bd38e4519",
+      "bbb855a4332e1247396a0797042250811b425698bf603cb50c8db03042a01a07",
+      "4db57f47c7c4674b1beefb0f4216ebad93ea791e2787e8c7cf5536790264eade",
+      "6a9f1f09bdb4419c5913378978b084fba7210379de3128a0f76d3efa09f04264",
+      "5fc9910ee181c159d5c8a2a4cdffec170f18d5c38481bc5cf9d4ebcbaebbf587",
+      "022e2573323f664bd5b570e670d59348ca9df64ee922e5ee251f966b18257264",
+      "243347da23fa4ff0d7af6394b05d2ea168ed068f80e6603ad6ec85ba3fa1d5f2",
+      "c5407a6a3511b8cf3210386ae05e26de4f90c26fc705d3e9371e858d5f98c805",
+      "d046d433dff6195e14c0cc4234b047a981f419e1654e3dbed5dba1a02416c218",
+      "b8e09c5d67a8f73ead4288045a893d8b0af2143793034123ecd520396be74d2a",
+      "a35766ee5e476aafa42ea11b836c3451347064cb3a2363677079b530b359a8e7",
+      "5842c9331c10d6d63624a182b742d39d7f1d4524a3b2081f0b60415e41a1cb6f",
+      "cda03655c50a77fb629e4a53f537597760a799f56cb9384e1dd0ed7f54109281",
+      "89bd1a82fe55a134238ceb9972bf9903a01b9ad69d16e75467e7b99c4ee568bb",
+      "f35bd3216e98fbed67e36183bbaf5b452173545ddb51424941150a513293e839",
+      "8df013a654cdfa02833113fd0870952f64f3d6667b40931daa5ea24a57020b79",
+      "ad78bb4cd84e62f3d106b64ce1b2b17a24ec86a5463371b6a538778a8a4000fc",
+      "7d2665748632abd5ff2c76b7870d96b59a2c30b19c0a349d9f6e7f9f6f614dab",
+      "68e3b74c3857c92ff5f224bf68c73dfb6540a0712d398356521dbb9b008e8417",
+      "a331fa5dbe87e8f8796088a4a9f96dade1176dcfa162b967eab04c8a06b1eea7",
+      "b4db114455d6b4bab8fc4e8841b18606c0aa0fd5ae396c33f6d50c814a0182d2",
+      "9af649ee3bb4f487f515f00519e47363aeee9f0150d981289a4af57a1566a852",
+      "da36ebd699252dcd823acf6b9185d4863d0d271f550d1beb2c975dbc17b77ae4",
+      "23bd84d3ee645159edd05ad463abfb33e2c54f8b4af8f9d371115f7baefd38df",
+      "0a93014f70673024125cc72ad19805ed42ccdf75046751bd148e039c264a1e70",
+      "de2344294206669955b34b9434e13da5a3d3498ff549b411c9437d1850d0f54d",
+      "1103befaa59ee9cb3f70edc60b9545dc213a812a577a6607fc1d1f4bc92a9ff4",
+      "81edf0332a08e3dd256247710b70bfc359dc77dc2fb119c1a98bd8f5a34ef427"
+    ],
+    "raw_output_digest": "14e3083bedef982068f3a1a6f3dcac4afc85b4840a26654fc4d319b46f3a3f2e",
+    "rejection_reasons": [],
+    "request_id": "dffe7d49-6e8b-4d43-b08a-e3da9387dcab",
+    "status": "answered",
+    "supplied_evidence_ids": [
+      "7b2e99aa95dc7a73d5ddc3020ca496358025103a53cce3ccba3075ce6d603f92",
+      "1d7a1a0a9bed5887f17ea5c508c26a184d247adc25a355f24ffc9aae0087c503",
+      "be4a6693c116b4e84278517601dd40aee790078e41dfdb103e7a10209ce16eba",
+      "77eea45e1942cb3e9e42f3c11e985b0551b39086db197a0b9dd7fbe8bd4d0a0e",
+      "95b6dd814278db95e8764f01668a0377b1ee828374d6054b1de0fc1219530ae2",
+      "de82c68dc8e07d3ee9a8d57d16ec810f52c5d9791c4ab8f29d41999f15e32e7a",
+      "cf7eb5f27a38564760412b886c76d2d94512b786983003f09f14e20a9152421c",
+      "2eef400bb1bde2b1ee3312d447e57b621194d50fb1e8d362b1f78fbddb7c96e5",
+      "22d5c82b49a71b4dedda229740036ade8cc77fb4ac06e5b9aaaf595cc90648a2",
+      "d5bb77001e2831ab3fccea1425a8254f98f598251e568ac6b98f25e64575e331"
+    ],
+    "tool_facts": [],
+    "usage": {
+      "completion_tokens": 218,
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 7769,
+      "prompt_tokens": 8025,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "total_tokens": 8243
+    }
+  },
+  "cluster": "chromadb",
+  "family_names": [
+    "chromadb"
+  ],
+  "finished_at": "2026-10-14T21:23:36.141521+00:00",
+  "kind": "single",
+  "latency_seconds": 2.097105166874826,
+  "method": "vector",
+  "order": 485,
+  "question_id": "61441dc4f11eaaf76d8c629f5f9386976c3398d7a4051750f8b4813ee760d8ef",
+  "run_id": "benchmark-v1-20261014",
+  "scores": {
+    "citation_locatable": 1.0,
+    "citation_semantic_support": null,
+    "correct_abstention": null,
+    "evidence_recall_at_10": 1.0,
+    "exact_fact_accuracy": true,
+    "parse_failure": false,
+    "service_failure": false,
+    "status": "answered",
+    "unsupported_output": false
+  },
+  "split": "test",
+  "started_at": "2026-10-14T21:23:34.044383+00:00",
+  "suite_digest": "18076e9625595a7cd5fdb43e0fe564553a187b04947afeb4a6b02944be80dcc0"
+}

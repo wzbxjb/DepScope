@@ -1,0 +1,94 @@
+{
+  "answer": {
+    "body": "",
+    "citations": [],
+    "explanation_verified": false,
+    "facts": [],
+    "index_id": "1dd34349ff18aa6b4c9e7bb7f139004a178522180edbd59a8bcaa257d8a24e9d",
+    "limitations": [
+      "No supplied evidence contains a dependency edge or path involving idna; the provided edges from datasets only reach fsspec, aiohttp, filelock and packaging, so no shortest recorded path from datasets to idna can be constructed."
+    ],
+    "method": "lexical",
+    "model_id": "deepseek-flash",
+    "omitted_evidence_ids": [
+      "6a8092a89dc6907f1500b2931646abd04797c1947554d2d6910b42920a3fcf92",
+      "bd524b561a10c68a34b6a16220e864974c71e7de28d8045c8cacd3db15085ae6",
+      "3d7148cb70bbf307b7af7d695559a9a3d3e41396354cd135dbe8eed21390e57d",
+      "71cfa02c6a970790de3a5f4303f0cbb202cc1074bb3276458794caf672f94cae",
+      "c1588a290252739ba5102473f6ec25d7480e75eaf9cfa602856fd53c7c1d26c0",
+      "d6e377fd6bc30c1c1b3e291a5134fbe1b933315a00184f445d31931f0ee81ec8",
+      "e2070cf378fa0433548775aed0dc308455f13361c2b9e8eb19c9aab9856be8bf",
+      "e2b008764c230accde873ea08080adae800a134ec5e35e34d04bf473980831ea",
+      "86a832a30bcdd597074dbb0a5b810605f13c2810aafed22a614dda309a659b7a",
+      "bf48c42288b0836e0736150af59a6a727f9b38094bc6d5e773a49bb31d8cf21d",
+      "e69f7b39bfc1b56d45d694c4d78c11e2e60b7a9fdee2e53c1798628f767b960b",
+      "fce1865ca4b92ec1a1182d7438b5873867ee9a68460eabedb5ad4fc274802504",
+      "3e7ee17188e29ecceec4c14a5d6a829ce63365968e32920ec1a60a5f39e53806",
+      "b61d9648882f156a2e24d03d250e4db43b5c4351e3da59ed6136f3fb9a39d80f",
+      "f4c77eeed240c4e5e58595edd3e7a1fb80205a3e573043843e34b2b2d5803efd",
+      "4b16fa5cac410f9709a29869efde6a769af267c10e4647ba2c3da8179818d163",
+      "5ae978fbbae2031865e8dea3d7d0c6f8828925d286143bc80e2bcf8fafb385f3",
+      "e7be8ff1791556741ed79b92b43e4f690992d20840e555def0dde6dc4bf914ed",
+      "d0fdcdd09179a05a769d90649a3a5d7f7c72f7d0b300706eccbb2e44fd316586",
+      "2b2b0c2eb1821cb09477da807597067fe0d5f9c3af9408f075c515f19e384818",
+      "7667b7f20167d9055d4f549125a318ee4e33eb705558245de9b1e175aa18a00c",
+      "33c7fa62cfcdd852638a8c7fb55b9b912ddf394dd76b9133e6a6c3c787cf3ce8",
+      "c3a3f1aff08b3ae5317e916122fd607c50c8dde4390280ee7fa68783e899e57d",
+      "cd433ea57e715144e442bdfd3269c59028ddf64179b0f34c5f6b53064709550a",
+      "9b10ac26dcd30f13f73de8747d4291ceb99ea7b46595332ba2e8dca0799f1f2e",
+      "89d1b6f9e87445ef60a1613c6a5ff7bb02484952a8abcc10e7ff8b606bfee9fa"
+    ],
+    "raw_output_digest": "f8fb758dc6fe3f034855dc43cfeeb5385deb97cd881c6c6e1fc5b3038d4f11a6",
+    "rejection_reasons": [],
+    "request_id": "0440e556-e4a2-4f74-a821-b8ea7957bd55",
+    "status": "insufficient_evidence",
+    "supplied_evidence_ids": [
+      "7dc38bf9af796543a110d6d685dc19e9548a6840ba060baf04bdfa4eb9c59598",
+      "c8f411bac9f70e0de394cb726d5bdcdbc1bba89eaa7b5ccba7e5e99de2aeecfb",
+      "fc8f4bd2d0c39c65f0bedf1bf5f946e814645ab8277b8751d9c15546914d8003",
+      "90e5d86b0842bdaccd5dee9e91675bc4f5b0b2d68f98aa89f538c9d77bc0a76a",
+      "ba1701a3807ba931f4a34879710037a66b4a624570c1bf88793b532c6e8bed7f",
+      "ebd345affc7aabb572c1385957bad2a4c42a4dffca1b611810e2520c675eed0a",
+      "91c5052d7cd468b7735a7b2cf06938b4ae43b47754c0876e72efe4c2c06063ba",
+      "a11719ff56de255f9dccd0607e46cd01545b1ea3ae434203486daf8ed05ab942",
+      "1641d29f94039815d8604a69958e525376cb1d6e8628ddc9826da533a1f51ec0",
+      "350c2191ddb07108211ef0e908c1756465bed54e078d16e20e3c550193923f38"
+    ],
+    "tool_facts": [],
+    "usage": {
+      "completion_tokens": 65,
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 5554,
+      "prompt_tokens": 5810,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "total_tokens": 5875
+    }
+  },
+  "cluster": "datasets",
+  "family_names": [
+    "datasets"
+  ],
+  "finished_at": "2026-10-14T21:17:08.285614+00:00",
+  "kind": "path",
+  "latency_seconds": 1.6952065830118954,
+  "method": "lexical",
+  "order": 127,
+  "question_id": "7d9aecb9c7c53c493870eb5f5bf940e0d55f4d480fdf4c49eac8d91ada753f43",
+  "run_id": "benchmark-v1-20261014",
+  "scores": {
+    "citation_locatable": null,
+    "citation_semantic_support": null,
+    "correct_abstention": null,
+    "evidence_recall_at_10": 0.0,
+    "exact_fact_accuracy": false,
+    "parse_failure": false,
+    "service_failure": false,
+    "status": "insufficient_evidence",
+    "unsupported_output": false
+  },
+  "split": "dev",
+  "started_at": "2026-10-14T21:17:06.590360+00:00",
+  "suite_digest": "18076e9625595a7cd5fdb43e0fe564553a187b04947afeb4a6b02944be80dcc0"
+}

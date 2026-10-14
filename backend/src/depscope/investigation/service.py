@@ -27,7 +27,7 @@ class Investigator:
     def __init__(self, retriever, generation, records=None):
         self.retriever, self.generation, self.records = retriever, generation, records
 
-    async def answer(self, question, scope, method, run_id):
+    async def answer(self, question, scope, method, run_id, *, evaluation_generate_empty=False):
         if scope is None:
             return Answer(
                 status="needs_scope",
@@ -45,7 +45,7 @@ class Investigator:
             "index_id": retrieval.index_id,
             "method": method,
         }
-        if not retrieval.chunks:
+        if not retrieval.chunks and not evaluation_generate_empty:
             return Answer(
                 status="insufficient_evidence",
                 limitations=("No scoped evidence was retrieved.",),

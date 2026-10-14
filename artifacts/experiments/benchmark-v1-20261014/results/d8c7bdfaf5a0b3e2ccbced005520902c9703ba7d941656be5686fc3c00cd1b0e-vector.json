@@ -1,0 +1,143 @@
+{
+  "answer": {
+    "body": "",
+    "citations": [
+      "d839261df0de93b29faf3c01581c5acd86ab0805b5807230129efb1cffdab22f",
+      "c95a482f802e5a7346c7304a517f2e6cd5e771013f33d9248d180523676d083c"
+    ],
+    "explanation_verified": false,
+    "facts": [
+      {
+        "kind": "path",
+        "source_ids": [
+          "d839261df0de93b29faf3c01581c5acd86ab0805b5807230129efb1cffdab22f"
+        ],
+        "value": {
+          "instance_ids": [
+            "897c440c872bef382085dfc8a8ec5fe535ce3ed3fdce93104d2afd0a143bb668",
+            "67ab4278ec0c14aa442c720ef62d84594517b9c383974724aa9cc66786681c36"
+          ],
+          "snapshot_id": "834153bcb664d46255a80babce90622d4b36d9a58bc23ea5859a846b909d5a6c"
+        }
+      },
+      {
+        "kind": "path",
+        "source_ids": [
+          "c95a482f802e5a7346c7304a517f2e6cd5e771013f33d9248d180523676d083c"
+        ],
+        "value": {
+          "instance_ids": [
+            "7b1f6cee9a6f9bf4cd2a479e8ef8e8265c27333f122abea5741a94c8dee8ccac",
+            "481551cf225b6d154f607bdcbbf6936abee8bbde66eb9df9b00cc7a0efb11077"
+          ],
+          "snapshot_id": "e3e7ace6e3242e5d8314a9bd92acc48fba4a4cb35b1dab3711e1c3135f938c96"
+        }
+      }
+    ],
+    "index_id": "1dd34349ff18aa6b4c9e7bb7f139004a178522180edbd59a8bcaa257d8a24e9d",
+    "limitations": [
+      "Only single-edge paths from a direct dependent to typing-extensions are present in the supplied evidence; no multi-hop root-to-typing-extensions chains were supplied, so the shortest recorded path is the direct edge.",
+      "The llama-index snapshot path originates from llama-index-core, not from a node explicitly labeled as the llama-index root package.",
+      "No evidence establishes exploitability, installation success, or runtime resolution.",
+      "The explanation is generated; citation location does not establish semantic support.",
+      "Some retrieved context was omitted by the fixed context limit."
+    ],
+    "method": "vector",
+    "model_id": "deepseek-flash",
+    "omitted_evidence_ids": [
+      "6bf2889e5c2278e7f7f6ef5c152c11cd7e1cd5d916979664a86091b752b61e9f",
+      "c769b1dde299dc7a79db8c3f8d0165f1629fa49dceedb13899e439d8f161d07f",
+      "f2a5c0078d50d4bb620bef5cbebbff5fe9a7825fd3107791c9cb100a7c82adda",
+      "dfd61e1311357759c58a4da1bff706a8291f3f409ec50cdcee892993552ea62e",
+      "b080b214b3b3c8c4ec3e75ce0ea4f448ffdfba9aedbcf0ef0bdbbb489d517004",
+      "5511eff875792db294c9ae1e3465b44ccef73e5aa39da11dcd3cfa0a3acd3c9c",
+      "8a47bb2aea31edb74401d20f1256637fee52267539e2ba465580994b19fdacc9",
+      "d48423452c93f2799ff81ddd084a2d8966fc537ebd21d8f268d919d3815f8f90",
+      "56e5e3375e06f298027a719d6f1928a0b39e6a42062675a413454dd3e2ab28f7",
+      "676a575efec5d2b9def6deaee0dc922f5032310b3765328f328229fde2db041d",
+      "1ea5313f5c8dd9956daaa4a63b33a50c5a3269e4fa49649327a2d9cef2711fa9",
+      "811977571e13ab5bc96aba06a62bef359dfe9297f20d7eb7ca33ef29a0bef4f0",
+      "367db28bacdf44b796f3b45fcf9966a6abcf56a190de23b05b414c40cc044c8e",
+      "43c16adf37611faa879e0236687895ccae4ee445abaac39e57b8cde067959e00",
+      "0b50dde3dab5679b6092ed69120bd27f77e1e7b4ebbad99e9ddcf185cc1728fe",
+      "d930165816d2ccae7105697c0f10873a985aaea500db6bc1ef5e3e25cf6400d2",
+      "97e561bf91e17276cd29ca2568693d972908cbe8e54a9590669d868dcf7837ec",
+      "7c5c25443ee9946e20d8422ee4767112a6f8befc297343003077f8ea53a3190f",
+      "248370cf7f86856f052fd1ce6202101eb9c0c25d4e68711ffca7e659b0396aab",
+      "844be1eb55b19949be0971a543090f8b468592e2d204a6c7c2d9b0a93ed43fd4",
+      "7d9e08242015550ee6eb1ae4242b7e7053e1eb486d5ab87774e35bab9818511e",
+      "9edd06170d65249be742f2922b156a5e7f5a753bfc30e4756a6a167420c29815",
+      "895a17a9383e713652219a866ae8753f6225e3db36ce70f5eca64cdfcbb20056",
+      "cd08ceeee2b4b65a1930c699fb2f768a55e332b9342c5b06840b42589589e937",
+      "f13cfcd68e83afabe9cdade1bc80a630f4a96157ed8583c78e203c8364bedaa6",
+      "721f006cf6f716e66d49da49868da3723fb0623f8bd96751a9ef4e7f3457de46",
+      "242bfd7974db9f39ff6fc113094dba588497aef15f8b55ea8dd8b4d5179c8e9c",
+      "b99a5c84af3ab0ccb891d982be4e71b00a4e09cc8139e4ad142ec481f26bcf5a",
+      "df6201c3b1bbfe8290d5291a455a3f43d8d6a4889c2520d9f7941ec024d61099",
+      "fe93cb6c5bd205857da4ac41c5df6349859393cf1795b02503c8db7fdd54ec63",
+      "d10716349a407d00a991443c0b71683a9e95c9d4c204b3a529c5a296194e1f4f",
+      "b0b6ef9335d2bc2b2c8cfde07ba846b12f9bf526a410e6606a34361acd2d43e9",
+      "08ab6dd472dc7bbc1b3692b9175bf0188567f47a0b509ed115bf50dff8062e16",
+      "1cfb58675d8ba728cb94491a9b1b1cdf513447830e17bafeb8369e2237d386cb",
+      "824fbe8bfd757afca635a249fbe826adf08735fdd549a4bba2c59ad649b3a3d8",
+      "7bc51f5e48e7cf6cdde1cf89080687c3228789e982ef2de3f888968d71bef867",
+      "a48b143aa0efd8eb07c06cf57fa70fa2def585478767f81e596228cab597624c",
+      "48cd9e84c49cf6ac870f5b190ce77ca82431707e8bf1bed9ed8c87e55c868113",
+      "094e5104c3ae75b829c44fdeb05a03a50f95b50d3a65f06fa41cc2fafa24c148",
+      "90081b35cb007225f2b024fa59e0674b675a02f80d5f687eac913ae200e42da1"
+    ],
+    "raw_output_digest": "94180399a176d61d355836a2f6c80e3d003239c5f56411b6266069ad38950cce",
+    "rejection_reasons": [],
+    "request_id": "a7cb7eb2-e797-4126-a769-62dde741ccb8",
+    "status": "answered",
+    "supplied_evidence_ids": [
+      "f1ca77b18c894969b40eb1e9b2590c37882478ea749f0ec5106eef5c0f2ad66a",
+      "254f6a2f1db85df0b76bbe9cb3728e5f3208287926b80a5de074117f262834a8",
+      "1f75c2a832ae8f0ef4569d97e4e48ad6858e82cdfe4bbdf34635e0895183e4ac",
+      "766c33cdfd53bbee723b4e90474430063c1deb3adfe769acd2188518f3a0012d",
+      "696b6a5f2a872e5a89ba56359732090a1f858727ad0a31a2ffeaa8f6d796c08e",
+      "6ca3ccf86b32381fa86e185b78a8754ab2c5712848a67a43857cc3ea507a491b",
+      "e52af91ec2f9eb0a3e843aa7d56e6604c9044f73208d88d229080fa89b8553d9",
+      "449d149caa337cd5b1c09e64cc4b39ad8cf9850b58bff0218213eac0b914b84f",
+      "c95a482f802e5a7346c7304a517f2e6cd5e771013f33d9248d180523676d083c",
+      "d839261df0de93b29faf3c01581c5acd86ab0805b5807230129efb1cffdab22f"
+    ],
+    "tool_facts": [],
+    "usage": {
+      "completion_tokens": 540,
+      "prompt_cache_hit_tokens": 512,
+      "prompt_cache_miss_tokens": 6754,
+      "prompt_tokens": 7266,
+      "prompt_tokens_details": {
+        "cached_tokens": 512
+      },
+      "total_tokens": 7806
+    }
+  },
+  "cluster": "llama-index|streamlit",
+  "family_names": [
+    "llama-index",
+    "streamlit"
+  ],
+  "finished_at": "2026-10-14T21:17:18.330591+00:00",
+  "kind": "cross",
+  "latency_seconds": 3.3152629169635475,
+  "method": "vector",
+  "order": 138,
+  "question_id": "d8c7bdfaf5a0b3e2ccbced005520902c9703ba7d941656be5686fc3c00cd1b0e",
+  "run_id": "benchmark-v1-20261014",
+  "scores": {
+    "citation_locatable": 1.0,
+    "citation_semantic_support": null,
+    "correct_abstention": null,
+    "evidence_recall_at_10": 0.6666666666666666,
+    "exact_fact_accuracy": false,
+    "parse_failure": false,
+    "service_failure": false,
+    "status": "answered",
+    "unsupported_output": false
+  },
+  "split": "dev",
+  "started_at": "2026-10-14T21:17:15.015282+00:00",
+  "suite_digest": "18076e9625595a7cd5fdb43e0fe564553a187b04947afeb4a6b02944be80dcc0"
+}

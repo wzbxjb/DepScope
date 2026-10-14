@@ -292,3 +292,13 @@ async def test_boolean_cannot_masquerade_as_numeric_fact():
         "count", SCOPE, "lexical", "run"
     )
     assert answer.status == "unsupported_output"
+
+
+async def test_evaluation_explicitly_generates_even_without_retrieved_context():
+    model = FakeModel(
+        {"body": "", "facts": [], "citations": [], "limitations": ["Missing evidence"]}
+    )
+    answer = await Investigator(FakeRetriever(()), model, records=RECORDS).answer(
+        "Proof?", SCOPE, "lexical", "run", evaluation_generate_empty=True
+    )
+    assert model.calls == 1 and answer.status == "insufficient_evidence"

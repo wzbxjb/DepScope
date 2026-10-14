@@ -1,0 +1,141 @@
+{
+  "answer": {
+    "body": "",
+    "citations": [
+      "ad47a9f0df992909c72058c84de38ab27d5e9d25da816a99790202680ee1c105",
+      "8f6e48242f2338a64734a458d367de21f0aa9d8aec18de4ed6c551b72dab64f6"
+    ],
+    "explanation_verified": false,
+    "facts": [
+      {
+        "kind": "path",
+        "source_ids": [
+          "ad47a9f0df992909c72058c84de38ab27d5e9d25da816a99790202680ee1c105"
+        ],
+        "value": {
+          "instance_ids": [
+            "ee35654de246aa0077cbef3005babf3e65ead22e96cb273fdabe2d9e40456dc9",
+            "82f96a34a2775ba6a1fbdff37cf0b76e1a5993be32c2d8579de296e1894e22c0"
+          ],
+          "snapshot_id": "bce88bb2a64f2872cf1a99fcd11a931c92f5c9f480afd8603596b6ad9649ca51"
+        }
+      },
+      {
+        "kind": "path",
+        "source_ids": [
+          "8f6e48242f2338a64734a458d367de21f0aa9d8aec18de4ed6c551b72dab64f6"
+        ],
+        "value": {
+          "instance_ids": [
+            "076f3c254297c6bd62d8d3cfc482a71d11761cb826a0d8d558d73e74df165197",
+            "bee6312e2b5be65cbd839c87004bf0fab03d8085929769cb3a54d63cdcc6a1b0"
+          ],
+          "snapshot_id": "bce88bb2a64f2872cf1a99fcd11a931c92f5c9f480afd8603596b6ad9649ca51"
+        }
+      }
+    ],
+    "index_id": "1dd34349ff18aa6b4c9e7bb7f139004a178522180edbd59a8bcaa257d8a24e9d",
+    "limitations": [
+      "No supplied edge connects langgraph-sdk (or any node reachable from langgraph) to langchain-core, so the two supplied edges cannot be joined into a single recorded path from langgraph to uuid-utils.",
+      "No direct edge from langgraph to uuid-utils is present in the supplied evidence.",
+      "The explanation is generated; citation location does not establish semantic support.",
+      "Some retrieved context was omitted by the fixed context limit."
+    ],
+    "method": "vector",
+    "model_id": "deepseek-flash",
+    "omitted_evidence_ids": [
+      "b780c1117bf0998a9ad982a2b56aaeb251adc8f58861cc6d1a1a984c11a00a3e",
+      "66a11dd38b5f0f73cf3d63d9d118545b27f0b4e653e49896fb9960448e350848",
+      "4f8d61a6b477c518bbe275c2334dc8c00b849de466af8c65c9e9ea80013dc86d",
+      "dcb8625b716337733623a838e019117c9215b3266364d79f679adb77c23a9cc1",
+      "c9663360dc7ce427e012da5cf3905254236b4df2bc6bffa99173f28d14f4065d",
+      "0360837942b616139aa88cd6b2ad478e7d6ff5697262c2435c709165227aa139",
+      "bf6e033d25487fc5b65b4b16b83d183579fbc480e54751f161e64971e923131e",
+      "83888713b895368b833a254c6df8127f65594919bb1ffd326d502ad1a8470149",
+      "be9fe1ffd255d686a616df53ee66d24f7f0444271411cebcdcc6601c32a96ae0",
+      "93986714be04fc7673e07c81b1f8f5b061996bc3888320b0a07250df397f5dbf",
+      "f46113856e2cb8e65fea30d7e3ee1d76f0acf65bfba21018305e6a8adeb662a7",
+      "f458ce999f8e548f7c7abf61715e814f66dcf0d2514920e50778041cd8095ae8",
+      "2b99af1b7495126f24e9975e6b2db82f14df60cf225b9a8fa03c5b0e8027a0dd",
+      "0997477d3c654934d92a4578e5b88999a512f8888a7a18a2e253ce71d770fa80",
+      "3ded5208321b9e3cbc638b1550f1daf73961652f9686a5f49bed02b3b93be342",
+      "889b90cd0c3198ea1dd62441d0a802bc0b3e32ff488dc6949688451be11d2424",
+      "7ee78f3ec5c86cd2333cdffed057eba1f1ed6d142fb379e91b6d27c58b6d16b3",
+      "2f5d94b35ee6e588f10cad1258e93da86fe2fd15b8a2038a8517c57d869b9991",
+      "78a08f0f633a106c2b7b54d5d9a7cd5edc2eb55c58c4867fe03ce26c8f309eca",
+      "229e94ef09b87fec9361fe5d9d3892b157f448ea6e6ffabcd62c2509994f71ed",
+      "84ea1d6e4568121af867c51cc6fa9835b258325dbadabed357dd43ec89544c82",
+      "e71f7a9de0fd0aae5021a6c7703c5299b6e8cdd6009cc81d5b63a73fd1246188",
+      "87aeff4a45adb30b945596b60792baf1ba254b5cd3d489c820821595fc323d9b",
+      "f017a69b5e8b1156abf378778a7b995e5ca2c0978b8eb4d45278969c044091c9",
+      "96281a1956b49b7721445c115d79899408a489bbc58c20a12fd401072d57259f",
+      "5b58e6b7d367897e8ccb1462f4d929ecafd723639f87c3ade192f1191a7f8d6c",
+      "d0c15e9f013e665a08b5bee709ff04d68269ee39abc52eb9ca0bac18879c18d3",
+      "21e6c4df0be1eaa26fbfcc8fbca8c2d436776201b4b225860fc1145dab869ebb",
+      "207bac77a61f5658eac2342cb5c531a057cdf0bc20c81a71e3ad1a91e7e5160f",
+      "8a5e0567f7951adafdf9597787a0e9feb98ebf79bc8e737c8842624cb9b20d14",
+      "b2192fcea971661b96566b08f6c4e6b1b691a0126fa01ee11ef56f36c0cd8b72",
+      "0669b52e5657ceaf15ee8d790219d63354a9efdfe84d6867a5981564b44b292f",
+      "0ac7dd420f242c932b50c592a05f1d64b2221f41f0af251f3ec0359c6478529f",
+      "0bc6d8df0667ea8d8236bd4e08940884c9662a3e6f2380dd93b4bd47d3de9442",
+      "55878a9ef6bf13faa591e0dceb47251c432cfb71442c7e4078b608bc3af3b7be",
+      "5b3a9403a610568a50b1f0b1d34ac12d4a3d8ae13a3a2099d3e44932abd777e4",
+      "6d43c31927072ba41fd99d8750b61c44c1adf7383604b949a644fa497ce33f81",
+      "b0c8b81410c9722782c0565d028aade418e631285d8ad0cc75a4b2fdd9e04050",
+      "e8c0d65c16f60b4cfd8be91a8f74860acd3ba3f21f5c39ab41cacaa38aea1318",
+      "c12d1042f0f231537f4013c8bc3bea1b3331af781b643378b7e6b310ac9e4879"
+    ],
+    "raw_output_digest": "eb562994c20707ce449650590cd7c98d1df948d25da67ff44b24853e23116eec",
+    "rejection_reasons": [],
+    "request_id": "6866d5f6-c74d-48a9-94b4-e70e5919f525",
+    "status": "answered",
+    "supplied_evidence_ids": [
+      "bc2330b70e323d9b42bdc6d6d07796479ed3f9188499d59007a026157c08a3cb",
+      "e8ea8f636331a318c3eff2501b677c02f13c5402de65492faf478cb206d8f4ed",
+      "79077efe961e1bb59568661abd8408e5f4ce48a8e6531ad6f5afe74c004ffdfa",
+      "7e5c3d09e5921a07bed1efa21cd909f7899a8f35eba08fa903c446c45e16d3cf",
+      "947ad71b1b0243d832c15f6329cb0ef04a1bbb47e1581a139b507ed9f22e39f9",
+      "0be3f9ffb1871964a8caefea13f0c618aca3ac65bfc94bc0b174332803ffe1d5",
+      "4020b1f09dae4397b08dfb0decedba9e0f1c27b7308e69c8c2712dc29f0b66c3",
+      "8f6e48242f2338a64734a458d367de21f0aa9d8aec18de4ed6c551b72dab64f6",
+      "d03435aeba2070133e431006da45526e6b175ac57d42baf16135e76813fa33c6",
+      "ad47a9f0df992909c72058c84de38ab27d5e9d25da816a99790202680ee1c105"
+    ],
+    "tool_facts": [],
+    "usage": {
+      "completion_tokens": 525,
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 6737,
+      "prompt_tokens": 6993,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "total_tokens": 7518
+    }
+  },
+  "cluster": "langchain_family",
+  "family_names": [
+    "langchain_family"
+  ],
+  "finished_at": "2026-10-14T21:19:45.884985+00:00",
+  "kind": "path",
+  "latency_seconds": 3.3451875001192093,
+  "method": "vector",
+  "order": 125,
+  "question_id": "a84ca32736cc60c0166eb57ebb28b69662f7d347a636d651f5f32f7dca9f2be0",
+  "run_id": "benchmark-v1-20261014",
+  "scores": {
+    "citation_locatable": 1.0,
+    "citation_semantic_support": null,
+    "correct_abstention": null,
+    "evidence_recall_at_10": 0.5,
+    "exact_fact_accuracy": false,
+    "parse_failure": false,
+    "service_failure": false,
+    "status": "answered",
+    "unsupported_output": false
+  },
+  "split": "test",
+  "started_at": "2026-10-14T21:19:42.539738+00:00",
+  "suite_digest": "18076e9625595a7cd5fdb43e0fe564553a187b04947afeb4a6b02944be80dcc0"
+}

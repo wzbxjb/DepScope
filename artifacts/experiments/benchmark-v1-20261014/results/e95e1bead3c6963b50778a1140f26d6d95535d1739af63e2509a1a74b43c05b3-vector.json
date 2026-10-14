@@ -1,0 +1,153 @@
+{
+  "answer": {
+    "body": "",
+    "citations": [
+      "7b5307b4924c75e75876ebfb6cbd3ab2572d4ff518fa7cf7a5435412fc94ae9f",
+      "df1055b021c836f586138cf208e3f31654137dd4fd24ca507a3defed29a7bac2",
+      "b864d9c80b81fb8ee83044a930dabb625bba5ee5497c79ed2f3099ac36a50f66"
+    ],
+    "explanation_verified": false,
+    "facts": [
+      {
+        "kind": "query",
+        "source_ids": [
+          "7b5307b4924c75e75876ebfb6cbd3ab2572d4ff518fa7cf7a5435412fc94ae9f"
+        ],
+        "value": {
+          "package": "gradio",
+          "snapshot_id": "cf3510a3ba2b6ea56d5a54fa88a57fbc029d9065828f573cc0d7dea27ee07148",
+          "status": "matched",
+          "version": "5.10.0"
+        }
+      },
+      {
+        "kind": "query",
+        "source_ids": [
+          "df1055b021c836f586138cf208e3f31654137dd4fd24ca507a3defed29a7bac2"
+        ],
+        "value": {
+          "package": "gradio-client",
+          "snapshot_id": "cf3510a3ba2b6ea56d5a54fa88a57fbc029d9065828f573cc0d7dea27ee07148",
+          "status": "no_match",
+          "version": "1.5.3"
+        }
+      },
+      {
+        "kind": "version",
+        "source_ids": [
+          "b864d9c80b81fb8ee83044a930dabb625bba5ee5497c79ed2f3099ac36a50f66"
+        ],
+        "value": {
+          "instance_id": "a45b0ae7c5276f3128c0502ddd70c0e189bad75b7de6cfe16a1d60a6144c6ae7",
+          "package": "gradio-client",
+          "snapshot_id": "cf3510a3ba2b6ea56d5a54fa88a57fbc029d9065828f573cc0d7dea27ee07148",
+          "version": "1.5.3"
+        }
+      }
+    ],
+    "index_id": "1dd34349ff18aa6b4c9e7bb7f139004a178522180edbd59a8bcaa257d8a24e9d",
+    "limitations": [
+      "No evidence of a successful installation or deployment of gradio 5.10.0 is present in the supplied evidence.",
+      "No integration test results, CI logs, or test reports are present in the supplied evidence.",
+      "The supplied evidence only contains vulnerability query results and component version metadata, which cannot establish installation or test success.",
+      "The explanation is generated; citation location does not establish semantic support.",
+      "Some retrieved context was omitted by the fixed context limit."
+    ],
+    "method": "vector",
+    "model_id": "deepseek-flash",
+    "omitted_evidence_ids": [
+      "dd589c8ba4577260b204872e0532516f468552f75746d52edc2cd20d9e7df3de",
+      "e671b72e8320cb8171100c099aacf59ea8f107f1bab8b614f3d4bac1e47b8b28",
+      "f544ca64c7c2342baa096f34f89a1659581ec8c656ec403e12933ed1ba47447c",
+      "31d05cc1039bacc199194d40dc1d2ae2faa8e7d7cb49eac2f8190c7283ad45f8",
+      "751b6930899aea52daf7ddb5000c181c1b8a5c8195bed0a6e8d34ea69cfa4ebd",
+      "fa13bb8661c605dcc6ed02ee5924aead1a257e3dc72317f85f19df76fb3e18d1",
+      "f26037798feb329f763bbf8077efe63dee74cfa2eecdd8629ef6dde6d90b1b9e",
+      "70af95492381ada931befcb2f603d1d3438f548c1ecf0f25a6542f2cb6366d1c",
+      "7db8134183d5c563f979f5d9eb30c50167c550f3b38e3357e35e8642b7515058",
+      "3e6e3c6d8d5da112277c7af178175e0c1bbe4ee2fb62a26bffb683902f1123a8",
+      "9d0d6508d45e704650b9a9857a110d43641d48a796f773064741faf832f4c501",
+      "924ff6d9d52ee3066937834be546ee56c27518830635a182affdd8d762fbf766",
+      "e4d3abcc4c17b56cca54f578206a1132d76943780b50abb5cb3b088cf936a6df",
+      "50e469198db9cb560ac8f8d7095bcf901ba5d60c09b4b7e4363fbcb56e402182",
+      "4c40065f47eb2a5aa6c433669a6194c983940a17b36f8428dbb9bdcf405ea52b",
+      "782ba99f6205427ddd193367dc49a866933704f8c6b8e459f7f1c405a3d6b9e1",
+      "965be26e221dab07ab6ba00acc8307f9c1c64ae804b706a08405facb5f024791",
+      "66d08d89fff19ff4382e61d22a52fa17b0524f0489b96f4251698c42474e239a",
+      "f7325fc40ca9c10251b9e103c6ab3a600d382a336b8dc525bd58d02f0baf6393",
+      "fb64ac10ecfba37d7d98cefe9c2e45754c6d4aa2f4551901e566798372476dec",
+      "0559ca1e9099bc03fd044d209b0f8a927e12d7af0b1602647d81a5bfc5ce3f96",
+      "311245a3dcd6dc13495685f1df0c75e6949fdfb181c6f069366cb3f748e128cc",
+      "c5a92d2a6778175e01f432765cf2dd00ca0fced69eae379b219ad9c64852a4ba",
+      "40c714c9fb46f355f62e7d2cd9b219afebd06ecfb0d3b976c0d2942aafe156e9",
+      "dc2d0ddc8143b2c2a375c5bc9dc5f90c6ae01f942df06298ad496434901fb962",
+      "96779fd218aa5c3a6ca3e9cd818a106ce21a3dfbccf273a2dd0a93c2269d074f",
+      "f273c96a32ae85ccb882fcd40646e800b8afe0b96b039bd3d6995b12e205fe7a",
+      "6d1f35fa9227cb79ed4c385b4651a208aef1a3d8ec058c116d73756743030c32",
+      "79d8d30150bf4d84c2cd766a0f4dc65e0342a091f4008e7b998c3058dceb5d12",
+      "b563b32144139277699c2eba48755ac68c0d516aab95952b27d05d8a81fc90b5",
+      "8a1fca5db16a083a5207ce2e772909c3faa397cdb58d923d7666e068140093eb",
+      "06bb1153115c0494dfebd63d7e26caf440b7cb1164f34ba9681733737dda3004",
+      "b9701a5fe224c807c0e31cb4d03081d1367280016076145ce15ce22a9aae5b93",
+      "8a85c6472cc7aeab5cda003049e4f55b0410add7e3f24335380b6338c60043c2",
+      "763e5067c2b7785b86457b4465ca1b29cb1a5b5c98f3025c2b37de9b853a504e",
+      "f14db78cf330d691975bb1088c092d0c57a0fb56fa6ae2122d82a248d56434ef",
+      "99cfd04e29385459b9095fabc0af3bb0367587ab4b7eefa97af5d67fbed0c9e9",
+      "a25ee5c2da3a59078b31d335e9b596f7c1d8e62e60ec9b91011cc08ac8591c00",
+      "3e7cdea1eb1a119a906dbe7f34fec52fab2c1088744041351c5853b1eb07c0fb",
+      "d9e0dfb13aa82c305f13da3b9ef764c52c738b9531776d3b59b1bf35e35fb2af"
+    ],
+    "raw_output_digest": "c3fe00229a6b6aec87d2b4b13adc67ba15591e5e522f7377d03ec4c003a5c2e5",
+    "rejection_reasons": [],
+    "request_id": "e83ae1c8-0952-4b9e-90da-ef4e9ca8d71a",
+    "status": "answered",
+    "supplied_evidence_ids": [
+      "7b5307b4924c75e75876ebfb6cbd3ab2572d4ff518fa7cf7a5435412fc94ae9f",
+      "df3adf7c6d1c704b774a41c5630da48364941d0dfe765faddee91db244a52a37",
+      "08fae6513060686e53519d46a2654d3d9c425c0891bcdc5b124e363490e42e61",
+      "aab735eb0efa5d95647ee741e125ae1f00f2537b59e6f0b044bfc8bb01b04f9c",
+      "df1055b021c836f586138cf208e3f31654137dd4fd24ca507a3defed29a7bac2",
+      "16af57d79ff51baf11de71fc0c99c8cbc9954173987fa484e73f519b8e4b0081",
+      "52e3eecbee19d81cae79b33674cb37571baaebc12f4d9085600194e3f8acd9c0",
+      "e1ff0a933207c33ef5bacf92089646e01dc9c023911f1ab030011652fd62d99e",
+      "e9f5e1c932a829a8128b0fa7ea0b6efd2a4aab8f2148233c7f0379fccb0b35c3",
+      "b864d9c80b81fb8ee83044a930dabb625bba5ee5497c79ed2f3099ac36a50f66"
+    ],
+    "tool_facts": [],
+    "usage": {
+      "completion_tokens": 597,
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 10371,
+      "prompt_tokens": 10627,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "total_tokens": 11224
+    }
+  },
+  "cluster": "gradio",
+  "family_names": [
+    "gradio"
+  ],
+  "finished_at": "2026-10-14T21:21:54.686146+00:00",
+  "kind": "missing",
+  "latency_seconds": 3.303505875170231,
+  "method": "vector",
+  "order": 328,
+  "question_id": "e95e1bead3c6963b50778a1140f26d6d95535d1739af63e2509a1a74b43c05b3",
+  "run_id": "benchmark-v1-20261014",
+  "scores": {
+    "citation_locatable": 1.0,
+    "citation_semantic_support": null,
+    "correct_abstention": false,
+    "evidence_recall_at_10": null,
+    "exact_fact_accuracy": null,
+    "parse_failure": false,
+    "service_failure": false,
+    "status": "answered",
+    "unsupported_output": false
+  },
+  "split": "test",
+  "started_at": "2026-10-14T21:21:51.382596+00:00",
+  "suite_digest": "18076e9625595a7cd5fdb43e0fe564553a187b04947afeb4a6b02944be80dcc0"
+}

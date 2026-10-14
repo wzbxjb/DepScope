@@ -1,0 +1,167 @@
+{
+  "answer": {
+    "body": "",
+    "citations": [
+      "27b3c9ec551af43aa2ff05e5c987e07a733015991f5e98c69792bbf6bb4b452c",
+      "b369a4d94d35ac8a3a3241b03197d2a3d7309b0ec78f738a35ca8dce1609cbff",
+      "7f7acf489fc4c4271a7bc14efa13c868b3ff1f2588a438564cafa66ff174b4f4",
+      "4d15f95d29b5aff811684b34163a983a521b71e17309e587bb454f4eb09b6e2a"
+    ],
+    "explanation_verified": false,
+    "facts": [
+      {
+        "kind": "version",
+        "source_ids": [
+          "27b3c9ec551af43aa2ff05e5c987e07a733015991f5e98c69792bbf6bb4b452c"
+        ],
+        "value": {
+          "instance_id": "168616da18d4e604351f1ff1bfb0e121bee893be20a4bd16e6efb0855a3cd77c",
+          "package": "yarl",
+          "snapshot_id": "c6cce6d15b27ad54d5fa8d941a7c8da61e207115a7e048820695788bef8d92ce",
+          "version": "1.25.1"
+        }
+      },
+      {
+        "kind": "version",
+        "source_ids": [
+          "b369a4d94d35ac8a3a3241b03197d2a3d7309b0ec78f738a35ca8dce1609cbff"
+        ],
+        "value": {
+          "instance_id": "b22c47ec3f4309a103a712db7c5bc18627eabb068020cc0616e3fb64ce5f3620",
+          "package": "yarl",
+          "snapshot_id": "7fd5ef51b30fe661d71cf7fad60e21c6c0053be741f7071e8f4dfaa5d294575c",
+          "version": "1.25.1"
+        }
+      },
+      {
+        "kind": "query",
+        "source_ids": [
+          "7f7acf489fc4c4271a7bc14efa13c868b3ff1f2588a438564cafa66ff174b4f4"
+        ],
+        "value": {
+          "package": "yarl",
+          "snapshot_id": "c6cce6d15b27ad54d5fa8d941a7c8da61e207115a7e048820695788bef8d92ce",
+          "status": "no_match",
+          "version": "1.25.1"
+        }
+      },
+      {
+        "kind": "query",
+        "source_ids": [
+          "4d15f95d29b5aff811684b34163a983a521b71e17309e587bb454f4eb09b6e2a"
+        ],
+        "value": {
+          "package": "yarl",
+          "snapshot_id": "7fd5ef51b30fe661d71cf7fad60e21c6c0053be741f7071e8f4dfaa5d294575c",
+          "status": "no_match",
+          "version": "1.25.1"
+        }
+      }
+    ],
+    "index_id": "1dd34349ff18aa6b4c9e7bb7f139004a178522180edbd59a8bcaa257d8a24e9d",
+    "limitations": [
+      "No root-to-yarl dependency path edges were supplied for either snapshot; only yarl component nodes and yarl package queries are present, so no path fact could be constructed.",
+      "The supplied evidence does not identify the root packages (langchain-community 0.3.14 or mlflow 3.17.1) as graph nodes, nor any intermediate dependency edges linking them to yarl.",
+      "No evidence of exploitability, installation or testing is supplied; the yarl queries returned no_match in both snapshots.",
+      "The explanation is generated; citation location does not establish semantic support.",
+      "Some retrieved context was omitted by the fixed context limit."
+    ],
+    "method": "vector",
+    "model_id": "deepseek-flash",
+    "omitted_evidence_ids": [
+      "a988637595e536acca44a59e90aa2b8c2516a19a58fdaf0bd4a9a0388fba8484",
+      "10934966f52726f76a2db6f3a306e325f105214007a4611876d203ea7ee3ca10",
+      "f36e5bfa4f79611fcc03b6682b3998905ffff6e7fd83d0d85e481deb6f0f95d7",
+      "201999ae671b9defa8f6b7b2f15eb1c3392443916d98916155c3c554f3f55538",
+      "485549ea188f87f340533e2db86913f6fcd52aabbfed919398ab05d16f043484",
+      "5b09b600aaf8a4338dbc994b3f08f3b0774c0fc9b09765a399d81fef636430d8",
+      "5aa9597e5556c310c3fa2076357b31fa1805a34cc9b8b6652d2328089dd48789",
+      "3c368f8aab8ca997c58f75e9c759e7c1dc1d4096f00eb6d42b979abe71535187",
+      "10538e389887af5d960c01ee637ee7a1d085db88d3063801548f096e9d3f7d1f",
+      "5cfc856d5935de8d50877031a27435d0182a0855fb6110d16e0a1a71231ff49a",
+      "bd65fb4ea09c3397f6ed95dc7807ca3e7569052953250ab07a23f1b3a6c6965b",
+      "c271d08299c5040cac659fc5a93149b7c44c6d6c44707451a31a88091645418d",
+      "afc76de715e58faa85cff4ca090ad0329894b22296bf5e7a34332d903727aeab",
+      "f8311c1a2b10f09d766a9c984f072776b84cc4e662c33f466cca353291742db4",
+      "18b5cbe65cf68d6f2d9ebef1322efa30215e0bbe08656364c25189248a824afc",
+      "f0e62163321da63949caefc67ea169195d687fa72d324f8354cdaa0334b89c2f",
+      "4015fc6d4beca3a12ebd5b921e5d81e87d235fa0a2f2c47b17a410b85e8e7ad3",
+      "420743faae5186e74d78c88da8194440663c6971d8589665481bf7840dbe00a9",
+      "e745936b386ce9089afa3edf9c92f9781ef9438d709ab79f679bb507ea26d7a7",
+      "d33ff45c53c5edd46eb53296ff63c0afefbfde014c3cb3488e6af70255698c5d",
+      "4b36bd2a65531a7228afa798fae464245630f94ef5c25c63549bf403b9a8024f",
+      "88db7c8bc64ebaaa7ac833977b38058e922764b686324479d021f2ffac93b9ee",
+      "6157ec5801b1de1a5dff54d4538a4f72aebe3b89dee0844c0e3d41b936b7f666",
+      "478af0eaee21c6264664c2373d6642446bf8607adafbe33548cdcb539e7b497a",
+      "68a760c27e4a0ad0b36d8412a946d633f598b25a27ece0c7ce4e79733e906005",
+      "bf158f3950fb651fe48e6969cda493e204cb1ffafe6cc337e61128fd62db2a97",
+      "c31237c8348be14e165260024b4c65c2495b694770469da0badbc484f06cf0fb",
+      "14ccb86b109603d40071a4192f16bbf792eeecb4efff57bba6050f70b6c40615",
+      "ae37b490517a326f2453424af9a39a0c8bcfb6ca3eb230d29805bf4ca9e1a027",
+      "4b890c804957521224f56a770b8f48ed77f195ea8727e3bc66674a55c7eb5911",
+      "9b4443ee30e7be72d102049f9f5958dbd55e947c68a26e2f404ff7abe45e8d36",
+      "21fa8cc6fec27c586a72e248d5f5de4a24ba4b41849a21e587215dce08df0b11",
+      "e8e0c93f63703b212b2e56359d0342cd342b8d9e1a12dad2e32f46ac3fef8621",
+      "5f80f7183cb031ebb171da37677dda5d25e7fed91aed783b7a719e06b57baf90",
+      "da056000fb65fe610d280b359c37087c20438b0f5c5744cbca774c436ad6d287",
+      "d6053bb7e53adea17000bf473a88ce4f2c2e07501eeb91e1f3dbf88ada7e0eb9",
+      "df7d35eb1c361855c48163deded705c58411bec2ed74c1c72fdcb70af90e1667",
+      "157f4448229cd0b30fa7fb69f70a15d8b236e26fd776342658c06710d456917f",
+      "edee303dc21280ac3f31355d68c7f7a5b95be0cd7610b0343cb5f6f8ebbc4594",
+      "bae96cdc870a63ca8c77e428653cc03f083b702883b0ff8e04e7b9461be5f1f2"
+    ],
+    "raw_output_digest": "d9ae2841626a900e8f6aef6b9f8c3c68a63124ddd297ac64a5120830d461aa9d",
+    "rejection_reasons": [],
+    "request_id": "7584ae65-6332-4f25-b9a3-fdfc7aef1aa2",
+    "status": "answered",
+    "supplied_evidence_ids": [
+      "27b3c9ec551af43aa2ff05e5c987e07a733015991f5e98c69792bbf6bb4b452c",
+      "b369a4d94d35ac8a3a3241b03197d2a3d7309b0ec78f738a35ca8dce1609cbff",
+      "6a33a60a2013ede86be31708100221a55b3cf45f885de389ccc1607f123899d8",
+      "7f7acf489fc4c4271a7bc14efa13c868b3ff1f2588a438564cafa66ff174b4f4",
+      "21bc0e2da2aef81ac9bcb690d2d4c50a6da7f6469661cf3a6284e666ec9c7291",
+      "4d15f95d29b5aff811684b34163a983a521b71e17309e587bb454f4eb09b6e2a",
+      "bc787ebfbc6bee60208439234366e8e100dfd6b4a01086d809f77b54b624b1f0",
+      "df6a5509282d3c63e18554d0a23594dc270a307c928059b02d1b46b17815cfd9",
+      "9428717b77f41939348c06d42d8c0f4f6e00149009c8a94bdfdc8e03e19f083d",
+      "0d7e5d71db2ca62c4d83cf21995aabcd5f749a8c681b4aca0abea837fd1ceec8"
+    ],
+    "tool_facts": [],
+    "usage": {
+      "completion_tokens": 805,
+      "prompt_cache_hit_tokens": 896,
+      "prompt_cache_miss_tokens": 9140,
+      "prompt_tokens": 10036,
+      "prompt_tokens_details": {
+        "cached_tokens": 896
+      },
+      "total_tokens": 10841
+    }
+  },
+  "cluster": "langchain_family|mlflow",
+  "family_names": [
+    "langchain_family",
+    "mlflow"
+  ],
+  "finished_at": "2026-10-14T21:22:19.698286+00:00",
+  "kind": "cross",
+  "latency_seconds": 4.32272387528792,
+  "method": "vector",
+  "order": 362,
+  "question_id": "3d1fe4aa05677d1891669fdc51f3b47a3b871fe36c38012a36d5c1ffb5945162",
+  "run_id": "benchmark-v1-20261014",
+  "scores": {
+    "citation_locatable": 1.0,
+    "citation_semantic_support": null,
+    "correct_abstention": null,
+    "evidence_recall_at_10": 0.0,
+    "exact_fact_accuracy": false,
+    "parse_failure": false,
+    "service_failure": false,
+    "status": "answered",
+    "unsupported_output": false
+  },
+  "split": "test",
+  "started_at": "2026-10-14T21:22:15.375461+00:00",
+  "suite_digest": "18076e9625595a7cd5fdb43e0fe564553a187b04947afeb4a6b02944be80dcc0"
+}

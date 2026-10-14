@@ -1,0 +1,152 @@
+{
+  "answer": {
+    "body": "",
+    "citations": [
+      "074240d255b086d9d3157b6c66fc9a912d2ae287d1b16d4b299e69bcc8abf18c",
+      "c5ca9faa9a1cdfb83fbd06dfa29f8b1cc88594bce7571d84e79489a4bf6ad373",
+      "ad78bb4cd84e62f3d106b64ce1b2b17a24ec86a5463371b6a538778a8a4000fc"
+    ],
+    "explanation_verified": false,
+    "facts": [
+      {
+        "kind": "version",
+        "source_ids": [
+          "074240d255b086d9d3157b6c66fc9a912d2ae287d1b16d4b299e69bcc8abf18c"
+        ],
+        "value": {
+          "instance_id": "ec12dd3683e3bd952d477b44ca6842379345efaa94eb98cab0cea32e707f5104",
+          "package": "chromadb",
+          "snapshot_id": "208dc2c88a69273e6949d398007bf1256a0f93bda5f2884f5413dec791f54962",
+          "version": "0.6.1"
+        }
+      },
+      {
+        "kind": "version",
+        "source_ids": [
+          "c5ca9faa9a1cdfb83fbd06dfa29f8b1cc88594bce7571d84e79489a4bf6ad373"
+        ],
+        "value": {
+          "instance_id": "4cbe589d5d2bcfcf9f1ad43ea9852c5ba41f82d2566c1300b379e2fc4c0b1799",
+          "package": "asgiref",
+          "snapshot_id": "208dc2c88a69273e6949d398007bf1256a0f93bda5f2884f5413dec791f54962",
+          "version": "3.12.1"
+        }
+      },
+      {
+        "kind": "path",
+        "source_ids": [
+          "ad78bb4cd84e62f3d106b64ce1b2b17a24ec86a5463371b6a538778a8a4000fc"
+        ],
+        "value": {
+          "instance_ids": [
+            "ec12dd3683e3bd952d477b44ca6842379345efaa94eb98cab0cea32e707f5104",
+            "340af58f2ba31650b6deec897b97472a38a3d1c133159edf09e7ddf0f45155f2"
+          ],
+          "snapshot_id": "208dc2c88a69273e6949d398007bf1256a0f93bda5f2884f5413dec791f54962"
+        }
+      }
+    ],
+    "index_id": "1dd34349ff18aa6b4c9e7bb7f139004a178522180edbd59a8bcaa257d8a24e9d",
+    "limitations": [
+      "No dependency edge connecting chromadb (or any intermediate component) to asgiref is present in the supplied evidence; the only supplied dependency_edge is chromadb -> chroma-hnswlib, so no shortest path from chromadb to asgiref can be constructed.",
+      "The explanation is generated; citation location does not establish semantic support.",
+      "Some retrieved context was omitted by the fixed context limit."
+    ],
+    "method": "vector",
+    "model_id": "deepseek-flash",
+    "omitted_evidence_ids": [
+      "08e4d5d3c2e3a61f0fe362ea14bca4a63a06165d6e1d889b59e67d665cf38102",
+      "1b646308760d854869c28ae57ef6ba9f5226751bd74f2ea531474e72b825d08e",
+      "d5bb77001e2831ab3fccea1425a8254f98f598251e568ac6b98f25e64575e331",
+      "22d5c82b49a71b4dedda229740036ade8cc77fb4ac06e5b9aaaf595cc90648a2",
+      "7d2665748632abd5ff2c76b7870d96b59a2c30b19c0a349d9f6e7f9f6f614dab",
+      "d0aec6af0f672027153a480373166741f3da462ceff812cc4889c0adad5b38c3",
+      "38e7a4145f0e34651ccf9ed70cc243b758ba902d666080c40c3a108d2a0ba212",
+      "79584a38bc353e7204638943c81a7c605d43d4bf6777eafbe2751bad00fc4464",
+      "f4dbf09f1790cb3bd049c564f76c6afb8ccd57102f0412c0a45ca7f2acab34ee",
+      "f35bd3216e98fbed67e36183bbaf5b452173545ddb51424941150a513293e839",
+      "89bd1a82fe55a134238ceb9972bf9903a01b9ad69d16e75467e7b99c4ee568bb",
+      "3086b3e2ade986b785851c9f2e6c1c7f4029e8b1378031618558949a38ea1af8",
+      "5bebbc8c984bde50b2cf34a41174ffb22af39e8f871da44d6c8d57aa23a7da0f",
+      "18e334c243f0489f5fbc38d5f2fd601df86b7e980ef92e68e3c497a3782d4278",
+      "3e3c01873dd170e9af74743179989458a2631a982f83d70351f2259c84e4b7ba",
+      "7132a28772884b2c09195705ca56885d8265bf2e8e1726b3f665b605842ff8c7",
+      "586273c660e3a6fca4e7946b398c28cf2f3f76ef481038445d4ae1f39c530b4a",
+      "a257758f04a10cdf83ef410fef835ac8bf4d7cccf4cda410fcdb53a0501ed076",
+      "9421cd7b9dd749cd1131f1c759bcc224c7fbf48b7fdffc8a44ebf31e26e09572",
+      "2a59354a4c48ee31b0c505a274e2ae62beff5cbd4d0f1d50f4d8c5a88522727c",
+      "b601f50f8dbf65725059a0463fb76732dc60995e51f7a9c544159b1ec318f043",
+      "6a0ac9b582eca6c85f2eb6e669aa1c82933e41c6cb6e4dfedb357db29d79afc1",
+      "8d3eccab8b21053cfc4d49ae8e67c2c2865ed9c8b15c90c7a4e34bbc58a5b70f",
+      "113cb96d45ce4b349a0d33df470027c3e6a077a03a0196ce887ff2e1c91fdb14",
+      "4aa5999ba64a56bab6a21d56cd7e042d2f21b698fe7e74c6f27703c3bfde8df3",
+      "999671ec6945c207830f952a2c5444789a6087cf996ec0c507ffb7b592eb7528",
+      "60e88910944248ce88e007a238cd7768a4b70af593da7804aa61d50b24034663",
+      "677d0737da3b67aafce8226b16c1be8ab5fb67dc1587129ebbaf21fbbcaec635",
+      "26e96b8c026e50a8c4451b448fb3abc2f40c5732000b8d1516663d7515f79dfd",
+      "e6c013305ee62c3d07396c97434eb974c1779df9134b684b0cad63693e96dc8d",
+      "33b1238b941564a94b42fa38d8850a6553c40b8959461e4fb09c7dad721256ea",
+      "4db57f47c7c4674b1beefb0f4216ebad93ea791e2787e8c7cf5536790264eade",
+      "ef382ea8f65eb96de2009e2bfaa34127b880ef9f7c4aeefb654b394d7b7d6501",
+      "8434b5e0061ff09a6a4739db87b783d4ad844d7b1ce5a42ebf146e8719c73a67",
+      "f0cd1e0a4bfd0a902570502ab8612fc7d3fa44589fc0a7e61a1b7b4bb67d4b1e",
+      "5fc9910ee181c159d5c8a2a4cdffec170f18d5c38481bc5cf9d4ebcbaebbf587",
+      "00d5ebf927b565e415cfd24ae522924772ef75badaf81b4f769ea60d23135502",
+      "7d6ddf65cf69d5560000196b8d0f819a47d1e31d0b533138cd98357132cee327",
+      "7a236bbeb2879b0ac8af28e1b8094058edd4de7543fa1caffe3cc44b23e7fcb7",
+      "58d4e79daa7152ed3ece4d69a2484fd2db050fe8cade3f2e70fbdf11a975f837"
+    ],
+    "raw_output_digest": "8d246e5ad74c434f27e758e20dcde5dd77d7a93b761709da750b3660043db19e",
+    "rejection_reasons": [],
+    "request_id": "5bec9857-277d-4d0b-9e29-f8e6d84b3b3c",
+    "status": "answered",
+    "supplied_evidence_ids": [
+      "074240d255b086d9d3157b6c66fc9a912d2ae287d1b16d4b299e69bcc8abf18c",
+      "1d7a1a0a9bed5887f17ea5c508c26a184d247adc25a355f24ffc9aae0087c503",
+      "95b6dd814278db95e8764f01668a0377b1ee828374d6054b1de0fc1219530ae2",
+      "be4a6693c116b4e84278517601dd40aee790078e41dfdb103e7a10209ce16eba",
+      "7b2e99aa95dc7a73d5ddc3020ca496358025103a53cce3ccba3075ce6d603f92",
+      "c5ca9faa9a1cdfb83fbd06dfa29f8b1cc88594bce7571d84e79489a4bf6ad373",
+      "cf7eb5f27a38564760412b886c76d2d94512b786983003f09f14e20a9152421c",
+      "2eef400bb1bde2b1ee3312d447e57b621194d50fb1e8d362b1f78fbddb7c96e5",
+      "de82c68dc8e07d3ee9a8d57d16ec810f52c5d9791c4ab8f29d41999f15e32e7a",
+      "ad78bb4cd84e62f3d106b64ce1b2b17a24ec86a5463371b6a538778a8a4000fc"
+    ],
+    "tool_facts": [],
+    "usage": {
+      "completion_tokens": 663,
+      "prompt_cache_hit_tokens": 640,
+      "prompt_cache_miss_tokens": 7473,
+      "prompt_tokens": 8113,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      },
+      "total_tokens": 8776
+    }
+  },
+  "cluster": "chromadb",
+  "family_names": [
+    "chromadb"
+  ],
+  "finished_at": "2026-10-14T21:21:39.512264+00:00",
+  "kind": "path",
+  "latency_seconds": 3.502575083170086,
+  "method": "vector",
+  "order": 307,
+  "question_id": "5fb21090a74b7e72f61f1fbbdb1ad81fe504f49657229272b8af36a1f1eb0eef",
+  "run_id": "benchmark-v1-20261014",
+  "scores": {
+    "citation_locatable": 1.0,
+    "citation_semantic_support": null,
+    "correct_abstention": null,
+    "evidence_recall_at_10": 0.0,
+    "exact_fact_accuracy": false,
+    "parse_failure": false,
+    "service_failure": false,
+    "status": "answered",
+    "unsupported_output": false
+  },
+  "split": "test",
+  "started_at": "2026-10-14T21:21:36.009644+00:00",
+  "suite_digest": "18076e9625595a7cd5fdb43e0fe564553a187b04947afeb4a6b02944be80dcc0"
+}

@@ -1,0 +1,140 @@
+{
+  "answer": {
+    "body": "",
+    "citations": [
+      "f42d343f416c3462a373a5459e8b2fe147055cfaac51ef3e6b2b3358e1b60b89",
+      "48caa88f41628a1cb7425b9f8295cd8ac4beaf68eef3a8e24d4d94b3b30c897e"
+    ],
+    "explanation_verified": false,
+    "facts": [
+      {
+        "kind": "query",
+        "source_ids": [
+          "f42d343f416c3462a373a5459e8b2fe147055cfaac51ef3e6b2b3358e1b60b89"
+        ],
+        "value": {
+          "package": "langchain-experimental",
+          "snapshot_id": "fb1e2cf1b0b023b306e4a662031eabc53b36a9db1d45ede38e127ce8de439ad6",
+          "status": "matched",
+          "version": "0.0.48"
+        }
+      },
+      {
+        "kind": "version",
+        "source_ids": [
+          "48caa88f41628a1cb7425b9f8295cd8ac4beaf68eef3a8e24d4d94b3b30c897e"
+        ],
+        "value": {
+          "instance_id": "7daf21f41baf5b7c4a9d4e86cc5a1cd154f59c7a5b1d559b7174baf947b7839a",
+          "package": "langchain-experimental",
+          "snapshot_id": "fb1e2cf1b0b023b306e4a662031eabc53b36a9db1d45ede38e127ce8de439ad6",
+          "version": "0.0.48"
+        }
+      }
+    ],
+    "index_id": "1dd34349ff18aa6b4c9e7bb7f139004a178522180edbd59a8bcaa257d8a24e9d",
+    "limitations": [
+      "No supplied evidence records a successful installation of langchain-experimental 0.0.48 on any deployed environment.",
+      "No supplied evidence records integration test execution or results for langchain-experimental 0.0.48.",
+      "The supplied evidence only covers vulnerability advisories and package/version identification; it cannot support a conclusion about installation or test success.",
+      "The explanation is generated; citation location does not establish semantic support.",
+      "Some retrieved context was omitted by the fixed context limit."
+    ],
+    "method": "vector",
+    "model_id": "deepseek-flash",
+    "omitted_evidence_ids": [
+      "833187f546abe3a29f9e8562f51d84459e5f858649f9fbb4c5060de8e7aee28a",
+      "804ead1e0838e3fac3bc91282f3834b75b898e4e50471ca5291d757224fbe714",
+      "8224b0a3eab940481eed2723253cbc40b47e696ef5a28cebbb0df85b89bd9450",
+      "21bc0e2da2aef81ac9bcb690d2d4c50a6da7f6469661cf3a6284e666ec9c7291",
+      "300d0b49ccf6363a5f79df2c4989f2d32e65cb546f8611fba75e133e99701ebf",
+      "a38f6ba939496816e31b9c409e6d2f2d29bed66830f140e681dcce2689dcd6d4",
+      "27ad5fa0666489bed1f7981db4b9bdcd7e8b22c615d2b98f1db75939cb6505ab",
+      "689e616e7a13a346078d5d5eec23a5c2120413584a45c71e15345ce6b842450b",
+      "6a33a60a2013ede86be31708100221a55b3cf45f885de389ccc1607f123899d8",
+      "a988637595e536acca44a59e90aa2b8c2516a19a58fdaf0bd4a9a0388fba8484",
+      "61956bb280d56d0bab9580641bf03e92f772fc4f665149bb2508db4a4732585c",
+      "f77a303b6cd37a163b1ff90f0048ac6164770170e58599dc2a80ad3f9a966ec1",
+      "6b732565d98d528e953c7d306819605379c82c033a766a3fb8e8b60a2151374a",
+      "d33ff45c53c5edd46eb53296ff63c0afefbfde014c3cb3488e6af70255698c5d",
+      "4e34db309e280944e0532cebcc230ecbfd449a881cdc210dc3327b91839d47ab",
+      "bc787ebfbc6bee60208439234366e8e100dfd6b4a01086d809f77b54b624b1f0",
+      "c3fdffc7ee36fbc42b6af42568096d369c1e48136e99e5fc56f1c6ced11f0e0c",
+      "88e1adfe4a34d1fa44834509112d6558694b2cc3bbb0240db84cff40566028a7",
+      "0c62812aa8c9314b37e91fa359305bee2a4ac60147e566f5455fa8ee653c0ad1",
+      "e2db38122d5c4f1b968bde2e0636048762f6e162ac18c76196141966cb48d9fb",
+      "a5c6732818d21135dda07360ab5f40508342f0b1c0be6c476d912a9337436b34",
+      "9d34471d088e325030432903cc3b16c8a1593f3f55bc6460737dc15e7f12f778",
+      "afc76de715e58faa85cff4ca090ad0329894b22296bf5e7a34332d903727aeab",
+      "56c6b49e9c6a1784dad51226639d50eda15bf4a1886deef28acb4ba6bf62e2cc",
+      "dbddee67d7c30d1ee927728d1cfb4bd6edbfa800641b8a1b63e21ab2e2440b72",
+      "6d36934a787233e76d46f5ec0207c44fb1c0e80c182d902a5654a5c4446475ce",
+      "589fde188ab3de40636f0428d13d917c084615ceea836b109831c607f17e036e",
+      "c271d08299c5040cac659fc5a93149b7c44c6d6c44707451a31a88091645418d",
+      "7b6ea2c35abdfe8a649ecd68988885286cff4d4f83994fdf2fdc55035811f29e",
+      "201999ae671b9defa8f6b7b2f15eb1c3392443916d98916155c3c554f3f55538",
+      "a2faa85be8aa72bd6a83af6bb86ee5b26574a74f0c9829fa214fa07165ec30d7",
+      "4015fc6d4beca3a12ebd5b921e5d81e87d235fa0a2f2c47b17a410b85e8e7ad3",
+      "1041cfbaf6f170e2b72e513fe1d8d432bb7b3d70d375a1a3881a6632dc9a0f65",
+      "3ae8b26cb57cfaec015644e5d073b90b55c302df1b8c89123c62e7f4f2104538",
+      "8f6270cc354012ba2610133f5af7545ebbcc290c0ec3da9c0d61d5e335a7e252",
+      "9b4443ee30e7be72d102049f9f5958dbd55e947c68a26e2f404ff7abe45e8d36",
+      "0d7e5d71db2ca62c4d83cf21995aabcd5f749a8c681b4aca0abea837fd1ceec8",
+      "cbb63c1192030b62441089b178911a876ca570f7904223e1a178e2803be70d3e",
+      "6157ec5801b1de1a5dff54d4538a4f72aebe3b89dee0844c0e3d41b936b7f666",
+      "42e451ce229dba5c638cdeaac54f7c39d17af194a3e2932cd4dff33d0b675c40"
+    ],
+    "raw_output_digest": "6959bfdcbd95df27b873b6d083365752829d04cf6918d2ffad4ba2338dc5892c",
+    "rejection_reasons": [],
+    "request_id": "d3e6dd88-e4a7-40cd-83d4-b60eb5d1e93a",
+    "status": "answered",
+    "supplied_evidence_ids": [
+      "3aa1855e0fee20fcb3c2e41b95c0b45d1f75bfdec5398fd285bfb33cef78528c",
+      "2b2cd82512117b8928ca4283b47f86c596db3523dde00f9e7251c48e1586c092",
+      "b906f1253fd58ea431307abb939155f26163b9d97cbf613ff5dba12cf3b60f79",
+      "1d60dbc0fcebc02f25ceaa536bbe6c4e7a475d3ed00c305b9a36ff329eeb3a20",
+      "6287fe6d331c6ee0adeed29ffce2cd26520ff76d9f61c1a28f87e18c6fb9d8fb",
+      "f7dcb773eab3918058f60ed149bd13f1fe7a389d7d1e8945e29087b495ee47c6",
+      "7285a42b92b85a307763376b68b3965db71a6b2a405a68d1cde053ed06739eab",
+      "29e2832b0f41871efe2637190b228853ac474da06583961af3f5cf76302c6726",
+      "f42d343f416c3462a373a5459e8b2fe147055cfaac51ef3e6b2b3358e1b60b89",
+      "48caa88f41628a1cb7425b9f8295cd8ac4beaf68eef3a8e24d4d94b3b30c897e"
+    ],
+    "tool_facts": [],
+    "usage": {
+      "completion_tokens": 475,
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 5925,
+      "prompt_tokens": 6181,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "total_tokens": 6656
+    }
+  },
+  "cluster": "langchain_family",
+  "family_names": [
+    "langchain_family"
+  ],
+  "finished_at": "2026-10-14T21:20:28.929151+00:00",
+  "kind": "missing",
+  "latency_seconds": 3.127735999878496,
+  "method": "vector",
+  "order": 196,
+  "question_id": "1728543c60f37b07a3a5e10c717ead7109f17a0eecb48d4a8b72a67710445f59",
+  "run_id": "benchmark-v1-20261014",
+  "scores": {
+    "citation_locatable": 1.0,
+    "citation_semantic_support": null,
+    "correct_abstention": false,
+    "evidence_recall_at_10": null,
+    "exact_fact_accuracy": null,
+    "parse_failure": false,
+    "service_failure": false,
+    "status": "answered",
+    "unsupported_output": false
+  },
+  "split": "test",
+  "started_at": "2026-10-14T21:20:25.801370+00:00",
+  "suite_digest": "18076e9625595a7cd5fdb43e0fe564553a187b04947afeb4a6b02944be80dcc0"
+}

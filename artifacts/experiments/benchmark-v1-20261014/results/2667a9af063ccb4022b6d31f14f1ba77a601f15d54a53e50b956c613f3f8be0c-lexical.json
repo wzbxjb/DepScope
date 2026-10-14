@@ -1,0 +1,125 @@
+{
+  "answer": {
+    "body": "",
+    "citations": [
+      "543fb67cbb06ea0d545a638820741bd7942366622e84e0dad551ecd846430bf7"
+    ],
+    "explanation_verified": false,
+    "facts": [
+      {
+        "kind": "version",
+        "source_ids": [
+          "543fb67cbb06ea0d545a638820741bd7942366622e84e0dad551ecd846430bf7"
+        ],
+        "value": {
+          "instance_id": "0e9cb4e63713a58a3fe12965ea35314a179b97a21bea7cfa86edf829169af065",
+          "package": "sentence-transformers",
+          "snapshot_id": "8a331dcfc95843471f5d84f026adc94c9f2ca2d8ac97390e2518205d8ee607fb",
+          "version": "2.3.0"
+        }
+      }
+    ],
+    "index_id": "1dd34349ff18aa6b4c9e7bb7f139004a178522180edbd59a8bcaa257d8a24e9d",
+    "limitations": [
+      "No dependency edge or path evidence connecting sentence-transformers to nvidia-cudnn-cu13 was supplied in this snapshot; only edges to pillow and numpy are present, so no shortest recorded path to nvidia-cudnn-cu13 can be constructed.",
+      "The explanation is generated; citation location does not establish semantic support.",
+      "Some retrieved context was omitted by the fixed context limit."
+    ],
+    "method": "lexical",
+    "model_id": "deepseek-flash",
+    "omitted_evidence_ids": [
+      "67c3e4cdfa38e9bcde87c77ccb2b301a36de439ac05f7f77ef34b8bdcd3fe9c3",
+      "64fdd78def1a73cce83b49d15b3a20896a20b1d0a0bc84a0c921027118d7e29b",
+      "5236a7777d2ab9086852a446e3acd210c11ad91bb69cdfa54cd126ec773b930f",
+      "ac95bf12edb2759e033fe7b308c51670308e40224ef441cee8a146248a9a2673",
+      "b0c4000f45bf6a05f9864518e45ccba6e32ad23c52f80e80e6317f25d2f7e973",
+      "0a88f3a777a68b9eb7c53fe9cd9e53665e073876eb2bb1a6ca4d73fc922310a5",
+      "181ff23b0bb8453eb58138dc8fb4cd9e53bd26b22f249a6229af7e06747e97b1",
+      "0626a84400e2c71e568b6e9a72f92811d9e1267c641074d785677a2a94d9e67b",
+      "a7adae61e5cd83b43a7898e05846c43f03f042bc81ea2fec8c43679f7d79ef43",
+      "b0f886078c817a0b327840c646bb2a36924100d84344d016e9fdca67e874f707",
+      "f3e92adc1b69ab0648950ad086e3db83db2762717e861510ad710959a59ad84e",
+      "f533ac25ac0298c116656c961b9edb0b587a5d80c4b65032ad332451c094f485",
+      "c325d1bc0160c699ece035bdd9695650807084d22d466ff47a2282862eb1386f",
+      "f68658b0bce2b829097492915e11e051b01a55c4f7e52c817bf82c0786385d38",
+      "ca5a675afc965c249a27e1520dd85447f747e762f93791ec1db418c27956e5bb",
+      "d8a085670e1dd8011b1e9bc80e61f9389ec5c95ee1b5b0f10b028f2cc953cab4",
+      "6b3f7f80c078dea2c5255fb8209ad27c9367e5d3668d9732133ca95ff2b58517",
+      "bc6048577efa39a9fab46045891354559fda8ebab2a68d5264d18247890173bd",
+      "c554c6aa8d26b6d14b9d66ebb6a18a257ebfa10cdd115e5cf8ba4ff3ca8c0b84",
+      "f5e7e7de760500e5c49d0efd971060fc9f1caf2cbb1cd85cbc2f627e0c6413d6",
+      "139eb5da4502ee1b3476dfd2ab9c7914c42d169503f2e91d88ed470706c4522c",
+      "0ed3aed33b96325af472f797427f14a221867345a3a79951fed238c0f1531d98",
+      "a58ad1916548b44b93a08a42ff39286f406a077c80dfaea1c062f1e719c97992",
+      "24bf2327f265b8fec409051e9f15c8e6c8945b2d228ffde6a71f84e00dab1a5d",
+      "613667e2c410c8bccf7d99b0f79fa48e96a30ed741fb66d2f73e8343b43259e1",
+      "b2b2ac0bd9377ce8c94d2008fb284bd8f825ca02bbbe500622784b3ed2ef650d",
+      "56079290a7b3123a3d513d9a7d1a7c7bb98dde093a1729161499de99815542dd",
+      "cef6f9781fd65be592e216957ae6544cc190562f827205b41b716f1cd209d5df",
+      "096dcaad14289527afa3eee9f69dc6c30e9f55800ed7ae302e1fb032058eba05",
+      "62efe0213faa2663fc898aaf686fd5de4de1e4316ce79c8258d69a99d910e421",
+      "f1e3a57a27756d533fa8bbb1e72bc21c1dba98aadaa4ef4902d1373617c6dbe4",
+      "ee73f8e07c9313f07c8040ae16aae67e602a55b4a76eb58ecc01d0eb0604895e",
+      "18cd5c9bb1807a7116f5f90e1cc829670a9b4e3543dd8e1feeb4e29d13395945",
+      "49483e474f0b0a1f289e5ee6fbc4b8a5c03d45122f1ce35110a3ea60a27daa0e",
+      "5c8e501ad3ec132c2d23bd4e3134b0e334bc53b3d5e5abac184f8bb96eaa7986",
+      "0e622feb5f22a52fd244b7822b345f3585bc153348b6ac29e40d6275375fa7ae",
+      "3508dc50a84177bd07dc92ce1f76ad1178d043133a62ef3e9f63f3ea0b26687b",
+      "ff3c27f8c726722f5a21f65f8275b0dc35271a893319ad88c8980b3739035a54",
+      "88ee0bfeb7d9390a1227277627d69f6d66db5a7cbc48f927ed23ab2d593682d1",
+      "003bfe162807e206fe7ec6a1af4eb473eba59a87040999eded5a6cdae5caaaf0"
+    ],
+    "raw_output_digest": "bbeb4139a0b314d92eba60185919310fa4f5bcc9b605a7a9ee627c75ad190ec8",
+    "rejection_reasons": [],
+    "request_id": "e8897310-65dd-448e-b34b-f1dc3352e1e3",
+    "status": "answered",
+    "supplied_evidence_ids": [
+      "543fb67cbb06ea0d545a638820741bd7942366622e84e0dad551ecd846430bf7",
+      "306a01d3444b20e9c91880be5303c6d74a946628e4fae4d93e0a41d6216d2204",
+      "bcd4feee96b13658c0b57cebbc5638ecabcf53f540450261147736064435e0b0",
+      "e83380178018371c3dd7ad0c9f46921f48261a61a5bd65a9b2d2a664835070df",
+      "a65584a75d41b090ac12fc67c03578b05baf478f8873f7e411336004947ceaeb",
+      "ead44bbd3e420ab39bbc6e9b26bcec0cfe7df5a27a77257bf054c4b71562811f",
+      "28180a14e8e5c5ae3510fe96b6da0552deb2e86c67ea0be221052af3441eff19",
+      "d404bbe9adf1e7a42a3ba56765599e22de33ab6225949811e01353d0fe29b740",
+      "e11515723806f01af4e1f89ce48e0ab2c9f08cbe73e634bb00aa41e608c0c5ee",
+      "41a20caab291d2c5c14aff8ff96f23a5bc8fec28104b005eb937535bb151f0e3"
+    ],
+    "tool_facts": [],
+    "usage": {
+      "completion_tokens": 254,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 4116,
+      "prompt_tokens": 4244,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 4498
+    }
+  },
+  "cluster": "sentence-transformers",
+  "family_names": [
+    "sentence-transformers"
+  ],
+  "finished_at": "2026-10-14T21:19:03.688250+00:00",
+  "kind": "path",
+  "latency_seconds": 2.311871875077486,
+  "method": "lexical",
+  "order": 66,
+  "question_id": "2667a9af063ccb4022b6d31f14f1ba77a601f15d54a53e50b956c613f3f8be0c",
+  "run_id": "benchmark-v1-20261014",
+  "scores": {
+    "citation_locatable": 1.0,
+    "citation_semantic_support": null,
+    "correct_abstention": null,
+    "evidence_recall_at_10": 0.0,
+    "exact_fact_accuracy": false,
+    "parse_failure": false,
+    "service_failure": false,
+    "status": "answered",
+    "unsupported_output": false
+  },
+  "split": "test",
+  "started_at": "2026-10-14T21:19:01.376353+00:00",
+  "suite_digest": "18076e9625595a7cd5fdb43e0fe564553a187b04947afeb4a6b02944be80dcc0"
+}

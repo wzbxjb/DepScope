@@ -1,0 +1,141 @@
+{
+  "answer": {
+    "body": "",
+    "citations": [
+      "e6b757fa0ec03e112475a8990287108974281944a4b0943a6b5e65847d49c759",
+      "847317c504f33b45dc925744f005532e086c69fe26d73be7a76ce396386cc4bc"
+    ],
+    "explanation_verified": false,
+    "facts": [
+      {
+        "kind": "version",
+        "source_ids": [
+          "e6b757fa0ec03e112475a8990287108974281944a4b0943a6b5e65847d49c759"
+        ],
+        "value": {
+          "instance_id": "0f53cd07abb47fa7e307b6a95949aaee6c813a3877e582f11678f7d098a7c465",
+          "package": "click",
+          "snapshot_id": "2162f6e14a6a2b5c64861037d9c5f66b6489d1bfad0bb4470a44d16716d50650",
+          "version": "8.5.0"
+        }
+      },
+      {
+        "kind": "version",
+        "source_ids": [
+          "847317c504f33b45dc925744f005532e086c69fe26d73be7a76ce396386cc4bc"
+        ],
+        "value": {
+          "instance_id": "b7682038de347bebfcd7d84ab4d9f1a6d4f9be07535427ad633e1e19611efff1",
+          "package": "click",
+          "snapshot_id": "e3e7ace6e3242e5d8314a9bd92acc48fba4a4cb35b1dab3711e1c3135f938c96",
+          "version": "8.5.0"
+        }
+      }
+    ],
+    "index_id": "1dd34349ff18aa6b4c9e7bb7f139004a178522180edbd59a8bcaa257d8a24e9d",
+    "limitations": [
+      "No root-to-click path evidence was supplied for either snapshot; the evidence contains only click component nodes and snapshot counts, with no edge facts linking a root to click.",
+      "The requested shortest recorded root-to-click paths cannot be constructed from the supplied evidence.",
+      "No exploitability, installation or test evidence was supplied.",
+      "The explanation is generated; citation location does not establish semantic support.",
+      "Some retrieved context was omitted by the fixed context limit."
+    ],
+    "method": "vector",
+    "model_id": "deepseek-flash",
+    "omitted_evidence_ids": [
+      "ee7c75dbc1bc9d99311b55d99b09f8daf609a054a178f58e701312d2e800036d",
+      "c053eeed612ed2486cfe7435b4c843665c07f04795a012cba7f29220e58d8b72",
+      "094e5104c3ae75b829c44fdeb05a03a50f95b50d3a65f06fa41cc2fafa24c148",
+      "e6754dc1996492e92c8415ce75711f8a8539d4f0ecc9cec4bfe7345a1acb5473",
+      "8df0660fc7f002634833846f446d7dbdf50795e61f371506cad40feb30545390",
+      "173fb9e0f93f8dcbffba4bb224bb6a5497f77942952fe8a98415ad8c10a0cd02",
+      "c3399b266460d8b61da4c7feab580b5bef808f72568573780fbbe271c915ff3c",
+      "2c2cf136c722b2e673730bd79902f80bcf7b18a8ab6a5bc475a40069c8f7220e",
+      "62a94c5dff1da4dc907d34aed228e082ed2f0668fbcafe97b117227a04e9c48d",
+      "08d4c22736fe95663ca1fac43b63a5bbd80ffa05da3b6558bc545fe4a60d6ae7",
+      "cb019423c85a21c7a548b5372e7a0c21b687fd25da5c0dc492929dd52c08b774",
+      "b99a5c84af3ab0ccb891d982be4e71b00a4e09cc8139e4ad142ec481f26bcf5a",
+      "1a29ee6e3650bfa01e5504ac2e0836590cef8aec2544cefaa28f9c1bbf4b2084",
+      "9e29361b298a405bd1a01594134e980d1a61797eb3372d7b597d4318889bb74f",
+      "770d379397f25c6361b55d5de174c23358e58a2c5adb29e586c0729a9f54f2c3",
+      "af177d720fef145878a3b2987fa61fb4caea75a7b47adb889dd182a8796d1322",
+      "a49957c39acce7c03f2a29580df7fe2b5f6717d79f34627eea2c95c0d656d898",
+      "33d9a03050cdf2545be60d5818b726edc2b3566e32b331e6cab8ebb8e5f8546f",
+      "1727c712ef8eae13cfda3371b342191235944bfc1b6d411f0d28effa38c9a15c",
+      "5e9fe042b613803d0efbd488937f1aff78fe7536ddfb5ee7d22494e40b5ce033",
+      "cfaef33ad8dc4fa3e2462cf7247e557802a6fca39d448ad5886e7988dd3c0577",
+      "5efdcf249ed08730b19a3c3e98776964732824ee6515e9bfbb4872c3f49d8268",
+      "346989f643ebb19d82898972c0c98c104a5f0e0f6cc29a9de03548fd291f7712",
+      "d5a963333b069c1e80317daa0d9ac94ea94cb6850c2d80e1a259df458b3f9240",
+      "3d19d017fcb58c59cee605ae549495473569bbb8adf2e56ac03afc187f7f6825",
+      "059e153709649cb53cafd7d54a6616e08baffb1941811f9ed2f39a2c47a86416",
+      "5de6a37da593e09949180ba90ff273b345674c47510c815d3ac20bdf3868fb8b",
+      "7b36783ef52db9a0c9fc80c54cc393b46cbaeb717a9895cfe7323f9cbe629a08",
+      "7520d26157644e236d7775d963730d3a1a9a924f33cb94d11e46c5031a9f97bf",
+      "47530d915e4229cb94332450aada57ed7e31cb698cb857bff89fcb80ab482c27",
+      "661665b045371f7730aadee557870535585083bd9ff077c687d62b2772249b7e",
+      "0a1c62805f85b3d49b899257e59f1e120da501d77d7575aacce8956a78af6e6a",
+      "1e49d94a9e889e5d6c4d6c6ad2dbd7d0bbf46c406239ebe98ff9591c6b348eef",
+      "4da676f8395310c3e892e13d4ce3eb8b76b6663d9bf7e222a88f352de59adaaf",
+      "7bc51f5e48e7cf6cdde1cf89080687c3228789e982ef2de3f888968d71bef867",
+      "d4773c770a531f7ad721b85bba8b7487337647bf323931a98bea1c5757ada0f8",
+      "5fcef0bff003950f9cab513878988f708c448fbbbaf9e80411535390ed5172e4",
+      "c452ce7eea649049732dbbbefc649f946800c6b71c04a395af8e8fc5053508ff",
+      "6d3d02f9b3d546e90869e64b843319aa2253317e2d24bf8a4f321715ab8230f6",
+      "0bcf9537c8bf6673a89cc145967923ea8590278154f4ec329fa0fef66f920276"
+    ],
+    "raw_output_digest": "c4239854d715568f421844ed80ab78852302552c8b3ba28dbb8449cfc83dc8c9",
+    "rejection_reasons": [],
+    "request_id": "c0987883-0b26-4ede-9c40-7f73b65ae765",
+    "status": "answered",
+    "supplied_evidence_ids": [
+      "e6b757fa0ec03e112475a8990287108974281944a4b0943a6b5e65847d49c759",
+      "847317c504f33b45dc925744f005532e086c69fe26d73be7a76ce396386cc4bc",
+      "844be1eb55b19949be0971a543090f8b468592e2d204a6c7c2d9b0a93ed43fd4",
+      "d2b3956a204fd6f83f0bc18de6b0dbb402713fab03e24a820eae4445355b7f78",
+      "0b50dde3dab5679b6092ed69120bd27f77e1e7b4ebbad99e9ddcf185cc1728fe",
+      "b1ffa32bb83f7732c5feb51d19481a982910f878b65c8cf9e6e56463bcc1eba8",
+      "b327e5fc62bcceaf7a8514e7a21dee885930b47f6c0b347f8eaa1133c26ea4f5",
+      "1e1bb63decc2c6d6bab5d1042ebb1af58f24cb43ac51ab6634b1657e206f11b1",
+      "d75f6b1d315b4f116e5de4e803d40e79ceef6ca6733a0f47be285290d882cd67",
+      "d10716349a407d00a991443c0b71683a9e95c9d4c204b3a529c5a296194e1f4f"
+    ],
+    "tool_facts": [],
+    "usage": {
+      "completion_tokens": 468,
+      "prompt_cache_hit_tokens": 512,
+      "prompt_cache_miss_tokens": 6683,
+      "prompt_tokens": 7195,
+      "prompt_tokens_details": {
+        "cached_tokens": 512
+      },
+      "total_tokens": 7663
+    }
+  },
+  "cluster": "datasets|streamlit",
+  "family_names": [
+    "datasets",
+    "streamlit"
+  ],
+  "finished_at": "2026-10-14T21:16:59.726852+00:00",
+  "kind": "cross",
+  "latency_seconds": 2.759741375222802,
+  "method": "vector",
+  "order": 109,
+  "question_id": "a9fbb4f2241797f58987457fef6af8c7117e39c687ec8a593a0214eb4bd24ba1",
+  "run_id": "benchmark-v1-20261014",
+  "scores": {
+    "citation_locatable": 1.0,
+    "citation_semantic_support": null,
+    "correct_abstention": null,
+    "evidence_recall_at_10": 0.0,
+    "exact_fact_accuracy": false,
+    "parse_failure": false,
+    "service_failure": false,
+    "status": "answered",
+    "unsupported_output": false
+  },
+  "split": "dev",
+  "started_at": "2026-10-14T21:16:56.967079+00:00",
+  "suite_digest": "18076e9625595a7cd5fdb43e0fe564553a187b04947afeb4a6b02944be80dcc0"
+}

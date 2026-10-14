@@ -1,0 +1,102 @@
+{
+  "answer": {
+    "body": "",
+    "citations": [
+      "5e3c2cc8f43e921ae20c83f961d8770b1387d2f5838beb25a2b1b03579bbf05c"
+    ],
+    "explanation_verified": false,
+    "facts": [
+      {
+        "kind": "version",
+        "source_ids": [
+          "5e3c2cc8f43e921ae20c83f961d8770b1387d2f5838beb25a2b1b03579bbf05c"
+        ],
+        "value": {
+          "instance_id": "de9724bd07bc78bbff3ddd626ab20b3d39d01e7a29d1fbd8fe7bebc9d017f7e3",
+          "package": "streamlit",
+          "snapshot_id": "9d747bc7ff2d4e74a34ec61b0e7b0ae63567c439a29cf584e2b8d58fe50282e0",
+          "version": "1.65.0"
+        }
+      }
+    ],
+    "index_id": "1dd34349ff18aa6b4c9e7bb7f139004a178522180edbd59a8bcaa257d8a24e9d",
+    "limitations": [
+      "No evidence in the supplied snapshot contains a node or edge for a dependency named 'six'; all supplied edges from streamlit point to httptools, pydeck, uvicorn, anyio, python-multipart, altair, packaging, protobuf and click, so no recorded path from streamlit to six can be constructed.",
+      "The explanation is generated; citation location does not establish semantic support.",
+      "Some retrieved context was omitted by the fixed context limit."
+    ],
+    "method": "lexical",
+    "model_id": "deepseek-flash",
+    "omitted_evidence_ids": [
+      "40979c078057ff2a0f52f849f135c0447997529eb20f10baba166c37a4dd705a",
+      "4f6d2a65c8aa89c7c8f0242e4e1d7d758385d91a6b63e0aa988344725470ee6d",
+      "5f37ca87e153b842587c16b30efd779f6863d9c7bff708ade14d674d964269f3",
+      "6fdb53c4cd0201d8e477cf8fb551c8894a6cdcc4492b966505fcfc860fb89679",
+      "71c1699c61d134022b1b821b5968e1b1e9ebf20263cd9d4a5c6827cf85696e36",
+      "a323aaa6093da590bc4bc1eaf55d0a8f3efa81427a5d05f8e510a0ad3e78cac0",
+      "a3beb458f45fdce799b4cc302790daca3cb1865a5e9f03f7e6eeb848830f3947",
+      "d8fed99f4fd4adf761a459b9a198118a95936ea5f8e42e6ffe5a52fdf23a31a2",
+      "eb1c10890562113f651bf26f3ba92ab6a2aaeda443e3e9b88b2fda7ec414c3a1",
+      "8e14fe0fc69b3105374c1a4754df750a3ff1c84ec66e42e66467b23b9a0470fe",
+      "b81c6f2fc5d2675fe5d3cf052204710a0f12dc191c27ee05bb9d53cf378a2631",
+      "8d0aca15022d2debf2447da1ae51b25a6b8c6f648097774610a4739ffcfc5b3a",
+      "3d3b0493c9320e18bf5b2121ebc06b1b1ccbd56165bd2c75f1cce5bdb5879b36",
+      "bcd0de88d9e61d2f501faea4b4f185e0a88666c59b98ad7d93a350ef507702cf",
+      "30ba555ac27f33a17c553667d9652a8170c9f7b389c825c8003185fcab283370",
+      "d8d20321936498b1151429eef6e3a1dd89a7a9b8aad92f718ffcd0605c5d0d30",
+      "212b29f4064983b171c5de830339589ce137d18dd867a6cad432a2910c85d7a0"
+    ],
+    "raw_output_digest": "11ff14b92bdfe87c71bb5e77d137762bc74d0cb208ff37dcc05db3b840f77fc1",
+    "rejection_reasons": [],
+    "request_id": "693d03ae-e5f4-407c-956f-0a39d29791af",
+    "status": "answered",
+    "supplied_evidence_ids": [
+      "5e3c2cc8f43e921ae20c83f961d8770b1387d2f5838beb25a2b1b03579bbf05c",
+      "09d9107ff43e9b14433ffc8ad822eafdb990c4bf23ed4796f97e14baefb84b6d",
+      "0cd7bf7b7d5c12a8318f3554dc21b5f5226fa6c5329e0ea730342003ae6bec0d",
+      "a257506513fe3235e5e7561fb3a120912c2ffcebcdd690a403bbb9d8342594b5",
+      "abf83112f7d0987620e568882cd4d52a4bbaa5faa9751d90b418f2849191341e",
+      "a8200e17eaf7fa1984b5ef54f347d2cc32e7c999560b00eb6985c2e482046a95",
+      "5f1f6d33c8186c4f1a505c31f1185790765d0412204ab571ea3f573f4c791b4a",
+      "bf9290d8ee80f2a652f696b0f9b8f5e03063ec25f433adcec3fddea885bc27c3",
+      "219d770f144816403cf339ff237b92d958c44c407389c9d3da7b166ca1d0122a",
+      "30045b2dd292f0ccb3ccb568dd11355fe21d18395ab93a8cfc8375a46289126b"
+    ],
+    "tool_facts": [],
+    "usage": {
+      "completion_tokens": 302,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 6617,
+      "prompt_tokens": 6745,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "total_tokens": 7047
+    }
+  },
+  "cluster": "streamlit",
+  "family_names": [
+    "streamlit"
+  ],
+  "finished_at": "2026-10-14T21:17:01.690295+00:00",
+  "kind": "path",
+  "latency_seconds": 1.962452583014965,
+  "method": "lexical",
+  "order": 114,
+  "question_id": "bac0a66a6e2af095a944d1c4b1c9f542d1e4301f6b11a8f30526073e69219135",
+  "run_id": "benchmark-v1-20261014",
+  "scores": {
+    "citation_locatable": 1.0,
+    "citation_semantic_support": null,
+    "correct_abstention": null,
+    "evidence_recall_at_10": 0.0,
+    "exact_fact_accuracy": false,
+    "parse_failure": false,
+    "service_failure": false,
+    "status": "answered",
+    "unsupported_output": false
+  },
+  "split": "dev",
+  "started_at": "2026-10-14T21:16:59.727819+00:00",
+  "suite_digest": "18076e9625595a7cd5fdb43e0fe564553a187b04947afeb4a6b02944be80dcc0"
+}
