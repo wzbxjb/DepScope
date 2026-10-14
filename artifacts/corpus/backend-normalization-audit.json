@@ -1,0 +1,90 @@
+{
+  "application_source_proven": true,
+  "independently_checked_edges": 44,
+  "independently_checked_nodes": 30,
+  "merged_distribution_ref": "depscope==0.1.0",
+  "original_sha256": "ce8b783c799fc8185eeee800e1209059ebbe955885a8144325d868cd257d54d2",
+  "selected_extras": {
+    "annotated-doc": [],
+    "annotated-types": [],
+    "anyio": [],
+    "attrs": [],
+    "certifi": [],
+    "click": [],
+    "depscope": [],
+    "fastapi": [],
+    "h11": [],
+    "httpcore": [],
+    "httpx": [],
+    "idna": [],
+    "jsonschema": [],
+    "jsonschema-specifications": [],
+    "neo4j": [],
+    "opentelemetry-api": [],
+    "packageurl-python": [],
+    "packaging": [],
+    "pip": [],
+    "pydantic": [],
+    "pydantic-core": [],
+    "python-dotenv": [],
+    "pytz": [],
+    "referencing": [],
+    "rpds-py": [],
+    "setuptools": [],
+    "starlette": [],
+    "typing-extensions": [],
+    "typing-inspection": [],
+    "uvicorn": []
+  },
+  "tool_extra_edges": [
+    [
+      "fastapi==0.143.0",
+      "httpx==0.28.1"
+    ],
+    [
+      "fastapi==0.143.0",
+      "uvicorn==0.54.0"
+    ],
+    [
+      "httpcore==1.0.9",
+      "anyio==4.15.1"
+    ],
+    [
+      "httpx==0.28.1",
+      "click==8.5.0"
+    ],
+    [
+      "jsonschema==4.26.0",
+      "idna==3.20"
+    ],
+    [
+      "packageurl-python==0.17.6",
+      "setuptools==65.5.0"
+    ],
+    [
+      "python-dotenv==1.2.4",
+      "click==8.5.0"
+    ],
+    [
+      "setuptools==65.5.0",
+      "pip==23.2.1"
+    ],
+    [
+      "starlette==1.8.0",
+      "httpx==0.28.1"
+    ],
+    [
+      "starlette==1.8.0",
+      "opentelemetry-api==1.45.1"
+    ],
+    [
+      "uvicorn==0.54.0",
+      "python-dotenv==1.2.4"
+    ],
+    [
+      "uvicorn==0.54.0",
+      "typing_extensions==4.16.0"
+    ]
+  ],
+  "tool_missing_edges": []
+}

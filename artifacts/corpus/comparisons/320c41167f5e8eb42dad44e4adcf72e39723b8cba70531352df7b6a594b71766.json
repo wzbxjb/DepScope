@@ -1,0 +1,172 @@
+{
+  "added_known_matches": 2,
+  "baseline_id": "a4e01f8a92452e206207943d9bef7c11d22c00ad18cf0f007fe0bc91808e0a55",
+  "candidate_id": "ec6ea18443d65b3d2aaa8d1efc2a1ce90fd95a73e03dc98d8d2cee7e7663c748",
+  "collection_id": "859504706c264dfb9b55a28e2b8eb154",
+  "diff": {
+    "added": [
+      {
+        "name": "httpcore",
+        "versions": [
+          "1.0.9"
+        ]
+      },
+      {
+        "name": "httpx",
+        "versions": [
+          "0.28.1"
+        ]
+      },
+      {
+        "name": "jsonschema",
+        "versions": [
+          "4.26.0"
+        ]
+      },
+      {
+        "name": "jsonschema-specifications",
+        "versions": [
+          "2025.9.1"
+        ]
+      },
+      {
+        "name": "orjson",
+        "versions": [
+          "3.13.0"
+        ]
+      },
+      {
+        "name": "pybase64",
+        "versions": [
+          "1.5.1"
+        ]
+      },
+      {
+        "name": "pydantic-settings",
+        "versions": [
+          "2.15.0"
+        ]
+      },
+      {
+        "name": "referencing",
+        "versions": [
+          "0.37.0"
+        ]
+      },
+      {
+        "name": "rpds-py",
+        "versions": [
+          "2026.9.1"
+        ]
+      }
+    ],
+    "environment_comparable": false,
+    "opaque_after": 0,
+    "opaque_before": 0,
+    "removed": [
+      {
+        "name": "asgiref",
+        "versions": [
+          "3.12.1"
+        ]
+      },
+      {
+        "name": "backoff",
+        "versions": [
+          "2.2.1"
+        ]
+      },
+      {
+        "name": "chroma-hnswlib",
+        "versions": [
+          "0.7.3"
+        ]
+      },
+      {
+        "name": "distro",
+        "versions": [
+          "1.9.0"
+        ]
+      },
+      {
+        "name": "fastapi",
+        "versions": [
+          "0.143.0"
+        ]
+      },
+      {
+        "name": "opentelemetry-instrumentation",
+        "versions": [
+          "0.66.0b1"
+        ]
+      },
+      {
+        "name": "opentelemetry-instrumentation-asgi",
+        "versions": [
+          "0.66.0b1"
+        ]
+      },
+      {
+        "name": "opentelemetry-instrumentation-fastapi",
+        "versions": [
+          "0.66.0b1"
+        ]
+      },
+      {
+        "name": "opentelemetry-util-http",
+        "versions": [
+          "0.66.0b1"
+        ]
+      },
+      {
+        "name": "posthog",
+        "versions": [
+          "7.68.0"
+        ]
+      },
+      {
+        "name": "pulsar-client",
+        "versions": [
+          "3.13.0"
+        ]
+      },
+      {
+        "name": "starlette",
+        "versions": [
+          "1.7.0"
+        ]
+      },
+      {
+        "name": "wrapt",
+        "versions": [
+          "2.5.0"
+        ]
+      }
+    ],
+    "versions_changed": [
+      {
+        "after": [
+          "1.5.9"
+        ],
+        "before": [
+          "0.4.22"
+        ],
+        "name": "chromadb"
+      }
+    ]
+  },
+  "id": "320c41167f5e8eb42dad44e4adcf72e39723b8cba70531352df7b6a594b71766",
+  "level": "metadata_comparison",
+  "limitations": [
+    "Current public resolutions; no verified installation or historical deployed environment."
+  ],
+  "observed_at": "2026-10-14T19:26:34.577511+00:00",
+  "remaining_known_matches": 4,
+  "removed_known_matches": 0,
+  "run_ids": [
+    "69146fdd-aca8-4772-a428-f08c3507b4c8",
+    "98a5e53b-f992-48df-85cc-b05e559b375e"
+  ],
+  "unknown": 0,
+  "verification_id": null
+}

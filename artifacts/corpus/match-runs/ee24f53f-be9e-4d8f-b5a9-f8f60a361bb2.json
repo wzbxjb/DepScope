@@ -1,0 +1,1418 @@
+{
+  "collection_id": "859504706c264dfb9b55a28e2b8eb154",
+  "coverage": {
+    "active_findings": 7,
+    "confirmed": 52,
+    "opaque_instances": 0,
+    "raw_matched_records": 13,
+    "total": 52,
+    "total_instances": 52,
+    "unknown": 0
+  },
+  "findings": [
+    {
+      "group_id": "7874466e1818596b890985d86f5e3b522d863b5fb432a2b22074e320b0e13fc9",
+      "id": "0571a552414b13efee9b2f14b9a75362bd07d9499380b587c15b666e625339d9",
+      "instance_id": "a8095da604f6157053f4b16c0f2ffa265bb04303e2fb2aaeb69cc25013aee7db",
+      "revision_ids": [
+        "13021d5be18e436d94c9ebf7777e0521df1de2338bdc6106bef2e3d94d5e516b",
+        "8c2fc8e2d4b52740cf0f89c4238c2d3f29783d0cc555136469871a69e4703e0e"
+      ],
+      "status": "known_match"
+    },
+    {
+      "group_id": "4d4166142bcf618f0f96fec0da8bb90b08c758c6d331578145b86fa3e42fab40",
+      "id": "80e72b5c78dfaa8b87039d6d9b59d4a39e2b4c03fd1fb6d345b6027cdcf0a4f9",
+      "instance_id": "8eace565b8e87265081aba46cfdf3082a456c108361563342d9c038cf332c0fb",
+      "revision_ids": [
+        "030036077501c5676f781ef721f2f7122c5979dd90adb2ee9023dec034a734fb",
+        "e34c67d79c008e68a2772ad0edea7598e9ed1a70e1e0afa628923add38f7f3a9"
+      ],
+      "status": "known_match"
+    },
+    {
+      "group_id": "3caa3744b49e9e6507edf9ac7945141edae50ec3166157a09a4098589203c3a0",
+      "id": "e817a3329f147ac87a05e0cc1f3d9c59085e7debcf4128e0a3157031429de311",
+      "instance_id": "8eace565b8e87265081aba46cfdf3082a456c108361563342d9c038cf332c0fb",
+      "revision_ids": [
+        "0f75c17119dcb2fecfacf263a1415a539caff7ff2cd7d8b7dd6460cdbb74d5a7",
+        "4e6e1f5d5d026b1b4712cb5f09a51554eaa4266bf975f7fc78638c2c12083ff1"
+      ],
+      "status": "known_match"
+    },
+    {
+      "group_id": "016792770bf38e4a77680004ce5a245eee02b8448e229b12f53095d2034a68c3",
+      "id": "81bec5ba0826f0c8b2a8fd5b23a05c505c887979ddeb4a18c8b2c3c9aecd2eb6",
+      "instance_id": "8eace565b8e87265081aba46cfdf3082a456c108361563342d9c038cf332c0fb",
+      "revision_ids": [
+        "39232dde505549f8905cb6a49f2788232e53424b11756ae67934df602678e9e0",
+        "4218d6d91dcdff244f4a901f71addce8bd49d44eaa005ce2cb6d07028f426b50"
+      ],
+      "status": "known_match"
+    },
+    {
+      "group_id": "b82cf8a14be64f57014b4a7eb145096ef07a6e9a5e33f670c094d8096a1d7bde",
+      "id": "2a1d6fb91dc19e1b6f1a36388be13f4a83033ff102003935d6cc6c508839d7fa",
+      "instance_id": "8eace565b8e87265081aba46cfdf3082a456c108361563342d9c038cf332c0fb",
+      "revision_ids": [
+        "09c0e10e2f8a8d6e4580d29f472334cec02a9fcae6f16713e9909790630ef689",
+        "4ef4cca361015a7f54afe247ddbcc3b7bf0a716cd297c85a0037266c331558d1"
+      ],
+      "status": "known_match"
+    },
+    {
+      "group_id": "152291ad4ff22b4dd90761f5abda8aa0e806acf1228b989c792c8b0d9c638677",
+      "id": "dd6915d4d3c6faebcee145aa8aca4ed9b502859069f9d07b72dd5db73994fdc1",
+      "instance_id": "8eace565b8e87265081aba46cfdf3082a456c108361563342d9c038cf332c0fb",
+      "revision_ids": [
+        "433bbe87e68e71cba9e7362edcf869066c76adbab6ad21497c967ad6f7a5387e",
+        "ca45049b0ede7ba17c4abb6a1d0e8b65a6ca76fc3a9214815b2839af1cffdba8"
+      ],
+      "status": "known_match"
+    },
+    {
+      "group_id": "9c0fa3eb0eaed18090b1ec3ea9629d50170f51e99e62c9a530e9de5384d260d5",
+      "id": "9db43464f020bef71e27c490a71546142e79a4d23f92c50b79a123b21aa8e615",
+      "instance_id": "8eace565b8e87265081aba46cfdf3082a456c108361563342d9c038cf332c0fb",
+      "revision_ids": [
+        "4bd901199ed59bc7319096c11cb1e4c76bf453a5c6793c1f2566d0f64080094c"
+      ],
+      "status": "known_match"
+    }
+  ],
+  "id": "ee24f53f-be9e-4d8f-b5a9-f8f60a361bb2",
+  "observed_at": "2026-10-14T19:26:34.570450+00:00",
+  "queries": [
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "sentence-transformers",
+        "raw_version": "3.4.0",
+        "version": "3.4.0"
+      },
+      "issues": [],
+      "record_ids": [
+        "GHSA-jhr6-gm9c-rqjv",
+        "PYSEC-2026-4164"
+      ],
+      "source_refs": [
+        {
+          "digest": "3cae240e282a95a3285a85e8ff0d0bbc2aacd2d78d538caba892feeb88e76890",
+          "observed_at": "2026-10-14T19:26:12.518283+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "84a71749840123194155bf8c1ea78d83a86690db10726aad96a56c80616a93ec",
+          "observed_at": "2026-10-14T19:26:13.095112+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "matched"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "certifi",
+        "raw_version": "2026.7.22",
+        "version": "2026.7.22"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "2c5ca1729e6979b3230ada260557df2b228dea82484f83f150f1319d0883e2af",
+          "observed_at": "2026-10-14T19:26:12.518143+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "2cacc2b28082577276a25d292bb78c166ce08713df2e4217b43f6854434c83ae",
+          "observed_at": "2026-10-14T19:26:13.051696+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "charset-normalizer",
+        "raw_version": "3.5.2",
+        "version": "3.5.2"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "2c5ca1729e6979b3230ada260557df2b228dea82484f83f150f1319d0883e2af",
+          "observed_at": "2026-10-14T19:26:12.518143+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "2cacc2b28082577276a25d292bb78c166ce08713df2e4217b43f6854434c83ae",
+          "observed_at": "2026-10-14T19:26:13.051696+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "cloudpickle",
+        "raw_version": "3.1.2",
+        "version": "3.1.2"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "3cae240e282a95a3285a85e8ff0d0bbc2aacd2d78d538caba892feeb88e76890",
+          "observed_at": "2026-10-14T19:26:12.518283+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "84a71749840123194155bf8c1ea78d83a86690db10726aad96a56c80616a93ec",
+          "observed_at": "2026-10-14T19:26:13.095112+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "cuda-bindings",
+        "raw_version": "13.4.3",
+        "version": "13.4.3"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "3cae240e282a95a3285a85e8ff0d0bbc2aacd2d78d538caba892feeb88e76890",
+          "observed_at": "2026-10-14T19:26:12.518283+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "84a71749840123194155bf8c1ea78d83a86690db10726aad96a56c80616a93ec",
+          "observed_at": "2026-10-14T19:26:13.095112+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "cuda-pathfinder",
+        "raw_version": "1.8.3",
+        "version": "1.8.3"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "3cae240e282a95a3285a85e8ff0d0bbc2aacd2d78d538caba892feeb88e76890",
+          "observed_at": "2026-10-14T19:26:12.518283+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "84a71749840123194155bf8c1ea78d83a86690db10726aad96a56c80616a93ec",
+          "observed_at": "2026-10-14T19:26:13.095112+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "cuda-toolkit",
+        "raw_version": "13.0.3.0",
+        "version": "13.0.3.0"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "3cae240e282a95a3285a85e8ff0d0bbc2aacd2d78d538caba892feeb88e76890",
+          "observed_at": "2026-10-14T19:26:12.518283+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "84a71749840123194155bf8c1ea78d83a86690db10726aad96a56c80616a93ec",
+          "observed_at": "2026-10-14T19:26:13.095112+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "filelock",
+        "raw_version": "4.1.1",
+        "version": "4.1.1"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "2c5ca1729e6979b3230ada260557df2b228dea82484f83f150f1319d0883e2af",
+          "observed_at": "2026-10-14T19:26:12.518143+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "2cacc2b28082577276a25d292bb78c166ce08713df2e4217b43f6854434c83ae",
+          "observed_at": "2026-10-14T19:26:13.051696+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "fsspec",
+        "raw_version": "2026.9.0",
+        "version": "2026.9.0"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "2c5ca1729e6979b3230ada260557df2b228dea82484f83f150f1319d0883e2af",
+          "observed_at": "2026-10-14T19:26:12.518143+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "2cacc2b28082577276a25d292bb78c166ce08713df2e4217b43f6854434c83ae",
+          "observed_at": "2026-10-14T19:26:13.051696+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "hf-xet",
+        "raw_version": "1.7.0",
+        "version": "1.7.0"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "2c5ca1729e6979b3230ada260557df2b228dea82484f83f150f1319d0883e2af",
+          "observed_at": "2026-10-14T19:26:12.518143+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "2cacc2b28082577276a25d292bb78c166ce08713df2e4217b43f6854434c83ae",
+          "observed_at": "2026-10-14T19:26:13.051696+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "huggingface-hub",
+        "raw_version": "0.36.2",
+        "version": "0.36.2"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "3cae240e282a95a3285a85e8ff0d0bbc2aacd2d78d538caba892feeb88e76890",
+          "observed_at": "2026-10-14T19:26:12.518283+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "84a71749840123194155bf8c1ea78d83a86690db10726aad96a56c80616a93ec",
+          "observed_at": "2026-10-14T19:26:13.095112+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "idna",
+        "raw_version": "3.20.0",
+        "version": "3.20.0"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "2c5ca1729e6979b3230ada260557df2b228dea82484f83f150f1319d0883e2af",
+          "observed_at": "2026-10-14T19:26:12.518143+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "2cacc2b28082577276a25d292bb78c166ce08713df2e4217b43f6854434c83ae",
+          "observed_at": "2026-10-14T19:26:13.051696+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "jinja2",
+        "raw_version": "3.1.6",
+        "version": "3.1.6"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "3cae240e282a95a3285a85e8ff0d0bbc2aacd2d78d538caba892feeb88e76890",
+          "observed_at": "2026-10-14T19:26:12.518283+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "84a71749840123194155bf8c1ea78d83a86690db10726aad96a56c80616a93ec",
+          "observed_at": "2026-10-14T19:26:13.095112+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "joblib",
+        "raw_version": "1.6.0",
+        "version": "1.6.0"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "3cae240e282a95a3285a85e8ff0d0bbc2aacd2d78d538caba892feeb88e76890",
+          "observed_at": "2026-10-14T19:26:12.518283+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "84a71749840123194155bf8c1ea78d83a86690db10726aad96a56c80616a93ec",
+          "observed_at": "2026-10-14T19:26:13.095112+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "markupsafe",
+        "raw_version": "3.0.4",
+        "version": "3.0.4"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "3cae240e282a95a3285a85e8ff0d0bbc2aacd2d78d538caba892feeb88e76890",
+          "observed_at": "2026-10-14T19:26:12.518283+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "84a71749840123194155bf8c1ea78d83a86690db10726aad96a56c80616a93ec",
+          "observed_at": "2026-10-14T19:26:13.095112+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "mpmath",
+        "raw_version": "1.3.0",
+        "version": "1.3.0"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "3cae240e282a95a3285a85e8ff0d0bbc2aacd2d78d538caba892feeb88e76890",
+          "observed_at": "2026-10-14T19:26:12.518283+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "84a71749840123194155bf8c1ea78d83a86690db10726aad96a56c80616a93ec",
+          "observed_at": "2026-10-14T19:26:13.095112+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "narwhals",
+        "raw_version": "2.27.1",
+        "version": "2.27.1"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "3cae240e282a95a3285a85e8ff0d0bbc2aacd2d78d538caba892feeb88e76890",
+          "observed_at": "2026-10-14T19:26:12.518283+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "84a71749840123194155bf8c1ea78d83a86690db10726aad96a56c80616a93ec",
+          "observed_at": "2026-10-14T19:26:13.095112+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "networkx",
+        "raw_version": "3.7.0",
+        "version": "3.7.0"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "3cae240e282a95a3285a85e8ff0d0bbc2aacd2d78d538caba892feeb88e76890",
+          "observed_at": "2026-10-14T19:26:12.518283+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "84a71749840123194155bf8c1ea78d83a86690db10726aad96a56c80616a93ec",
+          "observed_at": "2026-10-14T19:26:13.095112+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "numpy",
+        "raw_version": "2.5.4",
+        "version": "2.5.4"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "2c5ca1729e6979b3230ada260557df2b228dea82484f83f150f1319d0883e2af",
+          "observed_at": "2026-10-14T19:26:12.518143+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "2cacc2b28082577276a25d292bb78c166ce08713df2e4217b43f6854434c83ae",
+          "observed_at": "2026-10-14T19:26:13.051696+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "nvidia-cublas",
+        "raw_version": "13.1.1.3",
+        "version": "13.1.1.3"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "3cae240e282a95a3285a85e8ff0d0bbc2aacd2d78d538caba892feeb88e76890",
+          "observed_at": "2026-10-14T19:26:12.518283+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "84a71749840123194155bf8c1ea78d83a86690db10726aad96a56c80616a93ec",
+          "observed_at": "2026-10-14T19:26:13.095112+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "nvidia-cuda-cupti",
+        "raw_version": "13.0.85",
+        "version": "13.0.85"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "3cae240e282a95a3285a85e8ff0d0bbc2aacd2d78d538caba892feeb88e76890",
+          "observed_at": "2026-10-14T19:26:12.518283+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "84a71749840123194155bf8c1ea78d83a86690db10726aad96a56c80616a93ec",
+          "observed_at": "2026-10-14T19:26:13.095112+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "nvidia-cuda-nvrtc",
+        "raw_version": "13.0.88",
+        "version": "13.0.88"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "3cae240e282a95a3285a85e8ff0d0bbc2aacd2d78d538caba892feeb88e76890",
+          "observed_at": "2026-10-14T19:26:12.518283+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "84a71749840123194155bf8c1ea78d83a86690db10726aad96a56c80616a93ec",
+          "observed_at": "2026-10-14T19:26:13.095112+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "nvidia-cuda-runtime",
+        "raw_version": "13.0.96",
+        "version": "13.0.96"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "3cae240e282a95a3285a85e8ff0d0bbc2aacd2d78d538caba892feeb88e76890",
+          "observed_at": "2026-10-14T19:26:12.518283+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "84a71749840123194155bf8c1ea78d83a86690db10726aad96a56c80616a93ec",
+          "observed_at": "2026-10-14T19:26:13.095112+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "nvidia-cudnn-cu13",
+        "raw_version": "9.24.0.43",
+        "version": "9.24.0.43"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "3cae240e282a95a3285a85e8ff0d0bbc2aacd2d78d538caba892feeb88e76890",
+          "observed_at": "2026-10-14T19:26:12.518283+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "84a71749840123194155bf8c1ea78d83a86690db10726aad96a56c80616a93ec",
+          "observed_at": "2026-10-14T19:26:13.095112+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "nvidia-cufft",
+        "raw_version": "12.0.0.61",
+        "version": "12.0.0.61"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "3cae240e282a95a3285a85e8ff0d0bbc2aacd2d78d538caba892feeb88e76890",
+          "observed_at": "2026-10-14T19:26:12.518283+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "84a71749840123194155bf8c1ea78d83a86690db10726aad96a56c80616a93ec",
+          "observed_at": "2026-10-14T19:26:13.095112+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "nvidia-cufile",
+        "raw_version": "1.15.1.6",
+        "version": "1.15.1.6"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "3cae240e282a95a3285a85e8ff0d0bbc2aacd2d78d538caba892feeb88e76890",
+          "observed_at": "2026-10-14T19:26:12.518283+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "84a71749840123194155bf8c1ea78d83a86690db10726aad96a56c80616a93ec",
+          "observed_at": "2026-10-14T19:26:13.095112+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "nvidia-curand",
+        "raw_version": "10.4.0.35",
+        "version": "10.4.0.35"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "3cae240e282a95a3285a85e8ff0d0bbc2aacd2d78d538caba892feeb88e76890",
+          "observed_at": "2026-10-14T19:26:12.518283+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "84a71749840123194155bf8c1ea78d83a86690db10726aad96a56c80616a93ec",
+          "observed_at": "2026-10-14T19:26:13.095112+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "nvidia-cusolver",
+        "raw_version": "12.0.4.66",
+        "version": "12.0.4.66"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "3cae240e282a95a3285a85e8ff0d0bbc2aacd2d78d538caba892feeb88e76890",
+          "observed_at": "2026-10-14T19:26:12.518283+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "84a71749840123194155bf8c1ea78d83a86690db10726aad96a56c80616a93ec",
+          "observed_at": "2026-10-14T19:26:13.095112+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "nvidia-cusparse",
+        "raw_version": "12.6.3.3",
+        "version": "12.6.3.3"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "3cae240e282a95a3285a85e8ff0d0bbc2aacd2d78d538caba892feeb88e76890",
+          "observed_at": "2026-10-14T19:26:12.518283+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "84a71749840123194155bf8c1ea78d83a86690db10726aad96a56c80616a93ec",
+          "observed_at": "2026-10-14T19:26:13.095112+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "nvidia-cusparselt-cu13",
+        "raw_version": "0.8.1",
+        "version": "0.8.1"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "3cae240e282a95a3285a85e8ff0d0bbc2aacd2d78d538caba892feeb88e76890",
+          "observed_at": "2026-10-14T19:26:12.518283+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "84a71749840123194155bf8c1ea78d83a86690db10726aad96a56c80616a93ec",
+          "observed_at": "2026-10-14T19:26:13.095112+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "nvidia-nccl-cu13",
+        "raw_version": "2.30.7",
+        "version": "2.30.7"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "3cae240e282a95a3285a85e8ff0d0bbc2aacd2d78d538caba892feeb88e76890",
+          "observed_at": "2026-10-14T19:26:12.518283+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "84a71749840123194155bf8c1ea78d83a86690db10726aad96a56c80616a93ec",
+          "observed_at": "2026-10-14T19:26:13.095112+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "nvidia-nvjitlink",
+        "raw_version": "13.4.92",
+        "version": "13.4.92"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "3cae240e282a95a3285a85e8ff0d0bbc2aacd2d78d538caba892feeb88e76890",
+          "observed_at": "2026-10-14T19:26:12.518283+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "84a71749840123194155bf8c1ea78d83a86690db10726aad96a56c80616a93ec",
+          "observed_at": "2026-10-14T19:26:13.095112+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "nvidia-nvshmem-cu13",
+        "raw_version": "3.4.5",
+        "version": "3.4.5"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "3cae240e282a95a3285a85e8ff0d0bbc2aacd2d78d538caba892feeb88e76890",
+          "observed_at": "2026-10-14T19:26:12.518283+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "84a71749840123194155bf8c1ea78d83a86690db10726aad96a56c80616a93ec",
+          "observed_at": "2026-10-14T19:26:13.095112+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "nvidia-nvtx",
+        "raw_version": "13.0.85",
+        "version": "13.0.85"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "3cae240e282a95a3285a85e8ff0d0bbc2aacd2d78d538caba892feeb88e76890",
+          "observed_at": "2026-10-14T19:26:12.518283+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "84a71749840123194155bf8c1ea78d83a86690db10726aad96a56c80616a93ec",
+          "observed_at": "2026-10-14T19:26:13.095112+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "packaging",
+        "raw_version": "26.3.0",
+        "version": "26.3.0"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "2c5ca1729e6979b3230ada260557df2b228dea82484f83f150f1319d0883e2af",
+          "observed_at": "2026-10-14T19:26:12.518143+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "2cacc2b28082577276a25d292bb78c166ce08713df2e4217b43f6854434c83ae",
+          "observed_at": "2026-10-14T19:26:13.051696+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "pillow",
+        "raw_version": "12.3.0",
+        "version": "12.3.0"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "3cae240e282a95a3285a85e8ff0d0bbc2aacd2d78d538caba892feeb88e76890",
+          "observed_at": "2026-10-14T19:26:12.518283+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "84a71749840123194155bf8c1ea78d83a86690db10726aad96a56c80616a93ec",
+          "observed_at": "2026-10-14T19:26:13.095112+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "pyyaml",
+        "raw_version": "6.0.3",
+        "version": "6.0.3"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "2c5ca1729e6979b3230ada260557df2b228dea82484f83f150f1319d0883e2af",
+          "observed_at": "2026-10-14T19:26:12.518143+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "2cacc2b28082577276a25d292bb78c166ce08713df2e4217b43f6854434c83ae",
+          "observed_at": "2026-10-14T19:26:13.051696+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "regex",
+        "raw_version": "2026.9.29",
+        "version": "2026.9.29"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "3cae240e282a95a3285a85e8ff0d0bbc2aacd2d78d538caba892feeb88e76890",
+          "observed_at": "2026-10-14T19:26:12.518283+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "84a71749840123194155bf8c1ea78d83a86690db10726aad96a56c80616a93ec",
+          "observed_at": "2026-10-14T19:26:13.095112+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "requests",
+        "raw_version": "2.34.2",
+        "version": "2.34.2"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "2c5ca1729e6979b3230ada260557df2b228dea82484f83f150f1319d0883e2af",
+          "observed_at": "2026-10-14T19:26:12.518143+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "2cacc2b28082577276a25d292bb78c166ce08713df2e4217b43f6854434c83ae",
+          "observed_at": "2026-10-14T19:26:13.051696+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "safetensors",
+        "raw_version": "0.8.0",
+        "version": "0.8.0"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "3cae240e282a95a3285a85e8ff0d0bbc2aacd2d78d538caba892feeb88e76890",
+          "observed_at": "2026-10-14T19:26:12.518283+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "84a71749840123194155bf8c1ea78d83a86690db10726aad96a56c80616a93ec",
+          "observed_at": "2026-10-14T19:26:13.095112+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "scikit-learn",
+        "raw_version": "1.9.1",
+        "version": "1.9.1"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "3cae240e282a95a3285a85e8ff0d0bbc2aacd2d78d538caba892feeb88e76890",
+          "observed_at": "2026-10-14T19:26:12.518283+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "84a71749840123194155bf8c1ea78d83a86690db10726aad96a56c80616a93ec",
+          "observed_at": "2026-10-14T19:26:13.095112+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "scipy",
+        "raw_version": "1.18.1",
+        "version": "1.18.1"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "3cae240e282a95a3285a85e8ff0d0bbc2aacd2d78d538caba892feeb88e76890",
+          "observed_at": "2026-10-14T19:26:12.518283+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "84a71749840123194155bf8c1ea78d83a86690db10726aad96a56c80616a93ec",
+          "observed_at": "2026-10-14T19:26:13.095112+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "setuptools",
+        "raw_version": "84.0.0",
+        "version": "84.0.0"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "3cae240e282a95a3285a85e8ff0d0bbc2aacd2d78d538caba892feeb88e76890",
+          "observed_at": "2026-10-14T19:26:12.518283+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "84a71749840123194155bf8c1ea78d83a86690db10726aad96a56c80616a93ec",
+          "observed_at": "2026-10-14T19:26:13.095112+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "sympy",
+        "raw_version": "1.14.0",
+        "version": "1.14.0"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "3cae240e282a95a3285a85e8ff0d0bbc2aacd2d78d538caba892feeb88e76890",
+          "observed_at": "2026-10-14T19:26:12.518283+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "84a71749840123194155bf8c1ea78d83a86690db10726aad96a56c80616a93ec",
+          "observed_at": "2026-10-14T19:26:13.095112+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "threadpoolctl",
+        "raw_version": "3.7.0",
+        "version": "3.7.0"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "3cae240e282a95a3285a85e8ff0d0bbc2aacd2d78d538caba892feeb88e76890",
+          "observed_at": "2026-10-14T19:26:12.518283+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "84a71749840123194155bf8c1ea78d83a86690db10726aad96a56c80616a93ec",
+          "observed_at": "2026-10-14T19:26:13.095112+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "tokenizers",
+        "raw_version": "0.22.2",
+        "version": "0.22.2"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "3cae240e282a95a3285a85e8ff0d0bbc2aacd2d78d538caba892feeb88e76890",
+          "observed_at": "2026-10-14T19:26:12.518283+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "84a71749840123194155bf8c1ea78d83a86690db10726aad96a56c80616a93ec",
+          "observed_at": "2026-10-14T19:26:13.095112+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "torch",
+        "raw_version": "2.14.1",
+        "version": "2.14.1"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "3cae240e282a95a3285a85e8ff0d0bbc2aacd2d78d538caba892feeb88e76890",
+          "observed_at": "2026-10-14T19:26:12.518283+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "84a71749840123194155bf8c1ea78d83a86690db10726aad96a56c80616a93ec",
+          "observed_at": "2026-10-14T19:26:13.095112+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "tqdm",
+        "raw_version": "4.70.1",
+        "version": "4.70.1"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "3cae240e282a95a3285a85e8ff0d0bbc2aacd2d78d538caba892feeb88e76890",
+          "observed_at": "2026-10-14T19:26:12.518283+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "84a71749840123194155bf8c1ea78d83a86690db10726aad96a56c80616a93ec",
+          "observed_at": "2026-10-14T19:26:13.095112+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "transformers",
+        "raw_version": "4.57.6",
+        "version": "4.57.6"
+      },
+      "issues": [],
+      "record_ids": [
+        "GHSA-29pf-2h5f-8g72",
+        "GHSA-69w3-r845-3855",
+        "GHSA-fgcw-684q-jj6r",
+        "GHSA-x9r9-c232-4q39",
+        "GHSA-xrqw-3rrv-vx5w",
+        "PYSEC-2025-217",
+        "PYSEC-2026-2288",
+        "PYSEC-2026-2289",
+        "PYSEC-2026-2290",
+        "PYSEC-2026-3929",
+        "PYSEC-2026-4174"
+      ],
+      "source_refs": [
+        {
+          "digest": "3cae240e282a95a3285a85e8ff0d0bbc2aacd2d78d538caba892feeb88e76890",
+          "observed_at": "2026-10-14T19:26:12.518283+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "84a71749840123194155bf8c1ea78d83a86690db10726aad96a56c80616a93ec",
+          "observed_at": "2026-10-14T19:26:13.095112+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "matched"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "triton",
+        "raw_version": "3.8.0",
+        "version": "3.8.0"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "3cae240e282a95a3285a85e8ff0d0bbc2aacd2d78d538caba892feeb88e76890",
+          "observed_at": "2026-10-14T19:26:12.518283+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "84a71749840123194155bf8c1ea78d83a86690db10726aad96a56c80616a93ec",
+          "observed_at": "2026-10-14T19:26:13.095112+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "typing-extensions",
+        "raw_version": "4.16.0",
+        "version": "4.16.0"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "2c5ca1729e6979b3230ada260557df2b228dea82484f83f150f1319d0883e2af",
+          "observed_at": "2026-10-14T19:26:12.518143+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "2cacc2b28082577276a25d292bb78c166ce08713df2e4217b43f6854434c83ae",
+          "observed_at": "2026-10-14T19:26:13.051696+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "urllib3",
+        "raw_version": "2.8.0",
+        "version": "2.8.0"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "2c5ca1729e6979b3230ada260557df2b228dea82484f83f150f1319d0883e2af",
+          "observed_at": "2026-10-14T19:26:12.518143+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "2cacc2b28082577276a25d292bb78c166ce08713df2e4217b43f6854434c83ae",
+          "observed_at": "2026-10-14T19:26:13.051696+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    }
+  ],
+  "revision_ids": [
+    "030036077501c5676f781ef721f2f7122c5979dd90adb2ee9023dec034a734fb",
+    "09c0e10e2f8a8d6e4580d29f472334cec02a9fcae6f16713e9909790630ef689",
+    "0f75c17119dcb2fecfacf263a1415a539caff7ff2cd7d8b7dd6460cdbb74d5a7",
+    "13021d5be18e436d94c9ebf7777e0521df1de2338bdc6106bef2e3d94d5e516b",
+    "39232dde505549f8905cb6a49f2788232e53424b11756ae67934df602678e9e0",
+    "4218d6d91dcdff244f4a901f71addce8bd49d44eaa005ce2cb6d07028f426b50",
+    "433bbe87e68e71cba9e7362edcf869066c76adbab6ad21497c967ad6f7a5387e",
+    "4bd901199ed59bc7319096c11cb1e4c76bf453a5c6793c1f2566d0f64080094c",
+    "4e6e1f5d5d026b1b4712cb5f09a51554eaa4266bf975f7fc78638c2c12083ff1",
+    "4ef4cca361015a7f54afe247ddbcc3b7bf0a716cd297c85a0037266c331558d1",
+    "8c2fc8e2d4b52740cf0f89c4238c2d3f29783d0cc555136469871a69e4703e0e",
+    "ca45049b0ede7ba17c4abb6a1d0e8b65a6ca76fc3a9214815b2839af1cffdba8",
+    "e34c67d79c008e68a2772ad0edea7598e9ed1a70e1e0afa628923add38f7f3a9"
+  ],
+  "snapshot_id": "4004057ae146dde1ea2012c29f0cbab78d7fb2bcd9bd02c35138ccc902603bf4"
+}

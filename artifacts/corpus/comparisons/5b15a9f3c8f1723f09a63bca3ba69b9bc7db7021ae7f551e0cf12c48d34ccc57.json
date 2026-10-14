@@ -1,0 +1,160 @@
+{
+  "added_known_matches": 0,
+  "baseline_id": "a0377acb7c54420c75b966dd1e78acfd3282a400adad16ddfcfec061c3baf477",
+  "candidate_id": "fb131b55b20a7821c425ed7aaee88348935f34dbb3072a60e5c9b2ff26cc00a8",
+  "collection_id": "859504706c264dfb9b55a28e2b8eb154",
+  "diff": {
+    "added": [
+      {
+        "name": "annotated-doc",
+        "versions": [
+          "0.0.5"
+        ]
+      },
+      {
+        "name": "anyio",
+        "versions": [
+          "4.15.1"
+        ]
+      },
+      {
+        "name": "click",
+        "versions": [
+          "8.5.0"
+        ]
+      },
+      {
+        "name": "h11",
+        "versions": [
+          "0.16.0"
+        ]
+      },
+      {
+        "name": "httpcore2",
+        "versions": [
+          "2.13.1"
+        ]
+      },
+      {
+        "name": "httpx2",
+        "versions": [
+          "2.13.1"
+        ]
+      },
+      {
+        "name": "markdown-it-py",
+        "versions": [
+          "4.2.0"
+        ]
+      },
+      {
+        "name": "mdurl",
+        "versions": [
+          "0.1.2"
+        ]
+      },
+      {
+        "name": "pygments",
+        "versions": [
+          "2.21.0"
+        ]
+      },
+      {
+        "name": "rich",
+        "versions": [
+          "15.0.0"
+        ]
+      },
+      {
+        "name": "shellingham",
+        "versions": [
+          "1.5.4"
+        ]
+      },
+      {
+        "name": "truststore",
+        "versions": [
+          "0.10.5"
+        ]
+      },
+      {
+        "name": "typer",
+        "versions": [
+          "0.27.3"
+        ]
+      }
+    ],
+    "environment_comparable": false,
+    "opaque_after": 0,
+    "opaque_before": 0,
+    "removed": [
+      {
+        "name": "certifi",
+        "versions": [
+          "2026.7.22"
+        ]
+      },
+      {
+        "name": "charset-normalizer",
+        "versions": [
+          "3.5.2"
+        ]
+      },
+      {
+        "name": "requests",
+        "versions": [
+          "2.34.2"
+        ]
+      },
+      {
+        "name": "urllib3",
+        "versions": [
+          "2.8.0"
+        ]
+      }
+    ],
+    "versions_changed": [
+      {
+        "after": [
+          "2.2.0"
+        ],
+        "before": [
+          "0.36.2"
+        ],
+        "name": "huggingface-hub"
+      },
+      {
+        "after": [
+          "0.23.3"
+        ],
+        "before": [
+          "0.21.4"
+        ],
+        "name": "tokenizers"
+      },
+      {
+        "after": [
+          "5.19.0"
+        ],
+        "before": [
+          "4.48.0"
+        ],
+        "name": "transformers"
+      }
+    ]
+  },
+  "id": "5b15a9f3c8f1723f09a63bca3ba69b9bc7db7021ae7f551e0cf12c48d34ccc57",
+  "level": "metadata_comparison",
+  "limitations": [
+    "Current public resolutions; no verified installation or historical deployed environment."
+  ],
+  "observed_at": "2026-10-14T19:26:34.569756+00:00",
+  "remaining_known_matches": 0,
+  "removed_known_matches": 22,
+  "run_ids": [
+    "3a55a679-dde4-4a3f-9917-618e44310336",
+    "7c05e521-c704-4fca-94b5-9f474cefa2be"
+  ],
+  "unknown": 0,
+  "verification_id": null
+}

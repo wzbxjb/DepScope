@@ -1,0 +1,61 @@
+{
+  "answer": {
+    "status": "answered",
+    "body": "The supplied evidence describes a denial-of-service issue in the SitemapLoader document loader within the langchain-community package. According to the evidence, the parse_sitemap method lacks protection against infinite recursion when a sitemap URL references the sitemap itself, which could lead to an infinite loop and a crash from exceeding Python's maximum recursion depth. The evidence further states this could be exploited to consume server socket or port resources and crash the Python process, affecting service availability. This summary is limited to the single supplied evidence item and does not independently verify the claim.",
+    "facts": [],
+    "citations": [
+      "d4c22930385f433ff1b687051ba1597f9af4832cb09c26316fc8e33adeef44cc"
+    ],
+    "limitations": [
+      "Based on a single supplied evidence item; no independent verification was performed.",
+      "No exploitability or successful testing is claimed or confirmed.",
+      "Affected version details are not restated here.",
+      "Generated explanation; citation membership does not establish semantic support."
+    ],
+    "model_id": "deepseek-flash",
+    "request_id": "2c4187a3-2eaa-46e9-8ec3-a68472f6d03f",
+    "usage": {
+      "prompt_tokens": 377,
+      "completion_tokens": 202,
+      "total_tokens": 579,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 377
+    },
+    "explanation_verified": false,
+    "supplied_evidence_ids": [
+      "d4c22930385f433ff1b687051ba1597f9af4832cb09c26316fc8e33adeef44cc"
+    ],
+    "omitted_evidence_ids": [],
+    "index_id": null,
+    "method": null,
+    "tool_facts": [],
+    "raw_output_digest": null,
+    "rejection_reasons": []
+  },
+  "selected_sources": [
+    {
+      "evidence_id": "d4c22930385f433ff1b687051ba1597f9af4832cb09c26316fc8e33adeef44cc",
+      "file": "osv_advisory.json",
+      "digest": "d4c22930385f433ff1b687051ba1597f9af4832cb09c26316fc8e33adeef44cc",
+      "pointer": "/details",
+      "start": 0,
+      "end": 618
+    }
+  ],
+  "budget": {
+    "reserved": "0E-7",
+    "estimated_spent": "0.0003555",
+    "known_estimated_spent": "0.0003555",
+    "call_count": 1,
+    "remaining": "0.0496445",
+    "remaining_calls": 0,
+    "unknown_usage_calls": 0,
+    "currency": "USD",
+    "price_basis": "Peak-rate upper-bound estimate; not a supplier invoice",
+    "max_amount": "0.05",
+    "max_calls": 1
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "added_known_matches": 0,
+  "baseline_id": "cf3510a3ba2b6ea56d5a54fa88a57fbc029d9065828f573cc0d7dea27ee07148",
+  "candidate_id": "517492ad824ddead14450034dbe7ae602e65945dfba14a6d2adb8f81bf2ffa74",
+  "collection_id": "859504706c264dfb9b55a28e2b8eb154",
+  "diff": {
+    "added": [
+      {
+        "name": "brotli",
+        "versions": [
+          "1.2.0"
+        ]
+      },
+      {
+        "name": "groovy",
+        "versions": [
+          "0.1.2"
+        ]
+      },
+      {
+        "name": "hf-gradio",
+        "versions": [
+          "0.4.1"
+        ]
+      }
+    ],
+    "environment_comparable": false,
+    "opaque_after": 0,
+    "opaque_before": 0,
+    "removed": [
+      {
+        "name": "aiofiles",
+        "versions": [
+          "23.2.1"
+        ]
+      },
+      {
+        "name": "ffmpy",
+        "versions": [
+          "1.0.0"
+        ]
+      },
+      {
+        "name": "ruff",
+        "versions": [
+          "0.17.0"
+        ]
+      },
+      {
+        "name": "tzdata",
+        "versions": [
+          "2026.5.0"
+        ]
+      },
+      {
+        "name": "websockets",
+        "versions": [
+          "14.2.0"
+        ]
+      }
+    ],
+    "versions_changed": [
+      {
+        "after": [
+          "6.30.0"
+        ],
+        "before": [
+          "5.10.0"
+        ],
+        "name": "gradio"
+      },
+      {
+        "after": [
+          "2.7.2"
+        ],
+        "before": [
+          "1.5.3"
+        ],
+        "name": "gradio-client"
+      },
+      {
+        "after": [
+          "3.0.4"
+        ],
+        "before": [
+          "2.1.5"
+        ],
+        "name": "markupsafe"
+      },
+      {
+        "after": [
+          "3.0.6"
+        ],
+        "before": [
+          "2.3.3"
+        ],
+        "name": "pandas"
+      },
+      {
+        "after": [
+          "12.3.0"
+        ],
+        "before": [
+          "11.3.0"
+        ],
+        "name": "pillow"
+      },
+      {
+        "after": [
+          "1.7.0"
+        ],
+        "before": [
+          "0.52.1"
+        ],
+        "name": "starlette"
+      },
+      {
+        "after": [
+          "0.14.0"
+        ],
+        "before": [
+          "0.13.3"
+        ],
+        "name": "tomlkit"
+      }
+    ]
+  },
+  "id": "9fda70b04ce1764eb56e8c55d9cd749fba4918cdca6dc281ef03b05e501647ea",
+  "level": "metadata_comparison",
+  "limitations": [
+    "Current public resolutions; no verified installation or historical deployed environment."
+  ],
+  "observed_at": "2026-10-14T19:26:34.576243+00:00",
+  "remaining_known_matches": 0,
+  "removed_known_matches": 34,
+  "run_ids": [
+    "403dfc0d-874d-41ec-9726-fc7ccb185d53",
+    "73c306d8-4880-4a40-83f3-900b1875bbcd"
+  ],
+  "unknown": 0,
+  "verification_id": null
+}

@@ -1,0 +1,172 @@
+{
+  "added_known_matches": 0,
+  "baseline_id": "c6cce6d15b27ad54d5fa8d941a7c8da61e207115a7e048820695788bef8d92ce",
+  "candidate_id": "7588df35d152e84be3e99b4d14b1244b7d3c2c3f183fd480cb5bb01ab6d14f7b",
+  "collection_id": "859504706c264dfb9b55a28e2b8eb154",
+  "diff": {
+    "added": [
+      {
+        "name": "distro",
+        "versions": [
+          "1.9.0"
+        ]
+      },
+      {
+        "name": "httpcore2",
+        "versions": [
+          "2.13.1"
+        ]
+      },
+      {
+        "name": "httpx2",
+        "versions": [
+          "2.13.1"
+        ]
+      },
+      {
+        "name": "langchain-classic",
+        "versions": [
+          "1.0.8"
+        ]
+      },
+      {
+        "name": "langchain-protocol",
+        "versions": [
+          "0.0.19"
+        ]
+      },
+      {
+        "name": "sniffio",
+        "versions": [
+          "1.3.1"
+        ]
+      },
+      {
+        "name": "truststore",
+        "versions": [
+          "0.10.5"
+        ]
+      },
+      {
+        "name": "uuid-utils",
+        "versions": [
+          "0.17.1"
+        ]
+      },
+      {
+        "name": "websockets",
+        "versions": [
+          "17.2.0"
+        ]
+      },
+      {
+        "name": "xxhash",
+        "versions": [
+          "4.0.1"
+        ]
+      },
+      {
+        "name": "zstandard",
+        "versions": [
+          "0.25.0"
+        ]
+      }
+    ],
+    "environment_comparable": false,
+    "opaque_after": 0,
+    "opaque_before": 0,
+    "removed": [
+      {
+        "name": "dataclasses-json",
+        "versions": [
+          "0.6.7"
+        ]
+      },
+      {
+        "name": "langchain",
+        "versions": [
+          "0.3.25"
+        ]
+      },
+      {
+        "name": "marshmallow",
+        "versions": [
+          "3.26.2"
+        ]
+      },
+      {
+        "name": "mypy-extensions",
+        "versions": [
+          "1.1.0"
+        ]
+      },
+      {
+        "name": "typing-inspect",
+        "versions": [
+          "0.9.0"
+        ]
+      }
+    ],
+    "versions_changed": [
+      {
+        "after": [
+          "0.4.2"
+        ],
+        "before": [
+          "0.3.14"
+        ],
+        "name": "langchain-community"
+      },
+      {
+        "after": [
+          "1.6.10"
+        ],
+        "before": [
+          "0.3.63"
+        ],
+        "name": "langchain-core"
+      },
+      {
+        "after": [
+          "1.1.3"
+        ],
+        "before": [
+          "0.3.8"
+        ],
+        "name": "langchain-text-splitters"
+      },
+      {
+        "after": [
+          "0.14.8"
+        ],
+        "before": [
+          "0.2.11"
+        ],
+        "name": "langsmith"
+      },
+      {
+        "after": [
+          "26.3.0"
+        ],
+        "before": [
+          "24.2.0"
+        ],
+        "name": "packaging"
+      }
+    ]
+  },
+  "id": "25b0bdd5d5e74ca918a66fd6149e15ef99f661d72ff3dc3572079433519f5649",
+  "level": "metadata_comparison",
+  "limitations": [
+    "Current public resolutions; no verified installation or historical deployed environment."
+  ],
+  "observed_at": "2026-10-14T19:26:34.567092+00:00",
+  "remaining_known_matches": 0,
+  "removed_known_matches": 14,
+  "run_ids": [
+    "9b51c366-8434-40ef-81d3-7df2c1f90d9f",
+    "5f8fa59b-3599-40d1-bcc5-729daa02a80d"
+  ],
+  "unknown": 0,
+  "verification_id": null
+}

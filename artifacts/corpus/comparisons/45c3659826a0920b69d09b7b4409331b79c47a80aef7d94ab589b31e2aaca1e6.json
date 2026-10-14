@@ -1,0 +1,112 @@
+{
+  "added_known_matches": 0,
+  "baseline_id": "f02e566a5e3b7a6292d3d277a1bdf183c68655a4b3e80e6671537d9acce1f964",
+  "candidate_id": "76f037943a0ce593469f61183b2216c1721564cc4eaf266de94aa62752f2fbf5",
+  "collection_id": "859504706c264dfb9b55a28e2b8eb154",
+  "diff": {
+    "added": [
+      {
+        "name": "distro",
+        "versions": [
+          "1.9.0"
+        ]
+      },
+      {
+        "name": "httpcore2",
+        "versions": [
+          "2.13.1"
+        ]
+      },
+      {
+        "name": "httpx2",
+        "versions": [
+          "2.13.1"
+        ]
+      },
+      {
+        "name": "packaging",
+        "versions": [
+          "26.3.0"
+        ]
+      },
+      {
+        "name": "sniffio",
+        "versions": [
+          "1.3.1"
+        ]
+      },
+      {
+        "name": "truststore",
+        "versions": [
+          "0.10.5"
+        ]
+      },
+      {
+        "name": "uuid-utils",
+        "versions": [
+          "0.17.1"
+        ]
+      },
+      {
+        "name": "websockets",
+        "versions": [
+          "17.2.0"
+        ]
+      },
+      {
+        "name": "xxhash",
+        "versions": [
+          "4.0.1"
+        ]
+      },
+      {
+        "name": "zstandard",
+        "versions": [
+          "0.25.0"
+        ]
+      }
+    ],
+    "environment_comparable": false,
+    "opaque_after": 0,
+    "opaque_before": 0,
+    "removed": [
+      {
+        "name": "httpcore",
+        "versions": [
+          "1.0.9"
+        ]
+      },
+      {
+        "name": "httpx",
+        "versions": [
+          "0.28.1"
+        ]
+      }
+    ],
+    "versions_changed": [
+      {
+        "after": [
+          "0.14.8"
+        ],
+        "before": [
+          "0.2.8"
+        ],
+        "name": "langsmith"
+      }
+    ]
+  },
+  "id": "45c3659826a0920b69d09b7b4409331b79c47a80aef7d94ab589b31e2aaca1e6",
+  "level": "metadata_comparison",
+  "limitations": [
+    "Current public resolutions; no verified installation or historical deployed environment."
+  ],
+  "observed_at": "2026-10-14T19:26:34.568749+00:00",
+  "remaining_known_matches": 0,
+  "removed_known_matches": 3,
+  "run_ids": [
+    "27771680-7cea-48f3-a017-de6a450f71ac",
+    "927f4c30-6a50-4b87-9a8d-8357d3150958"
+  ],
+  "unknown": 0,
+  "verification_id": null
+}

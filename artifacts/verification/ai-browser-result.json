@@ -1,5 +1,5 @@
 {
-  "id": "ea371cc7-cf77-497e-9eee-ba8818b02976",
+  "id": "25c1f158-4592-41b7-9667-558437d64e04",
   "question": "How many recorded instances are in this snapshot? Report the instances metric.",
   "scope": {
     "project_ids": [
@@ -37,16 +37,16 @@
       "Some retrieved context was omitted by the fixed context limit."
     ],
     "model_id": "deepseek-flash",
-    "request_id": "13f50202-7310-4cf8-8d4e-ee49fbe85979",
+    "request_id": "994f2edd-e6e3-494f-bb5a-8847fd8abce1",
     "usage": {
       "prompt_tokens": 5739,
       "completion_tokens": 174,
       "total_tokens": 5913,
       "prompt_tokens_details": {
-        "cached_tokens": 0
+        "cached_tokens": 5504
       },
-      "prompt_cache_hit_tokens": 0,
-      "prompt_cache_miss_tokens": 5739
+      "prompt_cache_hit_tokens": 5504,
+      "prompt_cache_miss_tokens": 235
     },
     "explanation_verified": false,
     "supplied_evidence_ids": [
@@ -106,7 +106,7 @@
     "index_id": "7705197b7e87e5a411b115d854f18cb5ab0a6de57d555bae83768b3f4bcd398c",
     "method": "lexical",
     "tool_facts": [],
-    "raw_output_digest": "23978ebad992290b01142d4e678adec4dcc7aadf8914b67ba009b455f53e9546",
+    "raw_output_digest": "8dcadb334945e6b07b98bb3dd606da780a822c9d69fef7e2b7992aca07ed133b",
     "rejection_reasons": []
   },
   "evidence_chunks": [
@@ -200,5 +200,5 @@
       "pointer": "/details"
     }
   ],
-  "observed_at": "2026-10-14T18:56:14.047967+00:00"
+  "observed_at": "2026-10-14T19:03:44.617309+00:00"
 }

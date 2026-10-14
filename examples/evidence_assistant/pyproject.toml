@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "depscope-evidence-assistant"
+version = "0.1.0"
+description = "Local-source evidence summarization example"
+requires-python = ">=3.11"
+dependencies = ["httpx==0.28.1", "pydantic==2.14.1", "neo4j==5.28.6", "python-dotenv==1.2.4"]
+
+[tool.setuptools]
+py-modules = ["assistant"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"

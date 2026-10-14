@@ -1,0 +1,37 @@
+{
+  "application_source_proven": true,
+  "independently_checked_edges": 19,
+  "independently_checked_nodes": 17,
+  "merged_distribution_ref": null,
+  "original_sha256": "92b844d3c5974cca07c42b2ed303fd88fed91c2fa98ba247622ba91810d0dcd7",
+  "selected_extras": {
+    "annotated-types": [],
+    "anyio": [],
+    "certifi": [],
+    "depscope-evidence-assistant": [],
+    "h11": [],
+    "httpcore": [],
+    "httpx": [],
+    "idna": [],
+    "neo4j": [],
+    "pip": [],
+    "pydantic": [],
+    "pydantic-core": [],
+    "python-dotenv": [],
+    "pytz": [],
+    "setuptools": [],
+    "typing-extensions": [],
+    "typing-inspection": []
+  },
+  "tool_extra_edges": [
+    [
+      "httpcore==1.0.9",
+      "anyio==4.15.1"
+    ],
+    [
+      "setuptools==65.5.0",
+      "pip==23.2.1"
+    ]
+  ],
+  "tool_missing_edges": []
+}

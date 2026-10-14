@@ -1,0 +1,148 @@
+{
+  "added_known_matches": 1,
+  "baseline_id": "208dc2c88a69273e6949d398007bf1256a0f93bda5f2884f5413dec791f54962",
+  "candidate_id": "ec6ea18443d65b3d2aaa8d1efc2a1ce90fd95a73e03dc98d8d2cee7e7663c748",
+  "collection_id": "859504706c264dfb9b55a28e2b8eb154",
+  "diff": {
+    "added": [
+      {
+        "name": "jsonschema",
+        "versions": [
+          "4.26.0"
+        ]
+      },
+      {
+        "name": "jsonschema-specifications",
+        "versions": [
+          "2025.9.1"
+        ]
+      },
+      {
+        "name": "pybase64",
+        "versions": [
+          "1.5.1"
+        ]
+      },
+      {
+        "name": "pydantic-settings",
+        "versions": [
+          "2.15.0"
+        ]
+      },
+      {
+        "name": "referencing",
+        "versions": [
+          "0.37.0"
+        ]
+      },
+      {
+        "name": "rpds-py",
+        "versions": [
+          "2026.9.1"
+        ]
+      }
+    ],
+    "environment_comparable": false,
+    "opaque_after": 0,
+    "opaque_before": 0,
+    "removed": [
+      {
+        "name": "asgiref",
+        "versions": [
+          "3.12.1"
+        ]
+      },
+      {
+        "name": "backoff",
+        "versions": [
+          "2.2.1"
+        ]
+      },
+      {
+        "name": "chroma-hnswlib",
+        "versions": [
+          "0.7.6"
+        ]
+      },
+      {
+        "name": "distro",
+        "versions": [
+          "1.9.0"
+        ]
+      },
+      {
+        "name": "fastapi",
+        "versions": [
+          "0.143.0"
+        ]
+      },
+      {
+        "name": "opentelemetry-instrumentation",
+        "versions": [
+          "0.66.0b1"
+        ]
+      },
+      {
+        "name": "opentelemetry-instrumentation-asgi",
+        "versions": [
+          "0.66.0b1"
+        ]
+      },
+      {
+        "name": "opentelemetry-instrumentation-fastapi",
+        "versions": [
+          "0.66.0b1"
+        ]
+      },
+      {
+        "name": "opentelemetry-util-http",
+        "versions": [
+          "0.66.0b1"
+        ]
+      },
+      {
+        "name": "posthog",
+        "versions": [
+          "7.68.0"
+        ]
+      },
+      {
+        "name": "starlette",
+        "versions": [
+          "1.7.0"
+        ]
+      },
+      {
+        "name": "wrapt",
+        "versions": [
+          "2.5.0"
+        ]
+      }
+    ],
+    "versions_changed": [
+      {
+        "after": [
+          "1.5.9"
+        ],
+        "before": [
+          "0.6.1"
+        ],
+        "name": "chromadb"
+      }
+    ]
+  },
+  "id": "36530e6c0dbcbf92f74fb0c430b265584f52fb7774d3b7b4af9b1377f0bd7790",
+  "level": "metadata_comparison",
+  "limitations": [
+    "Current public resolutions; no verified installation or historical deployed environment."
+  ],
+  "observed_at": "2026-10-14T19:26:34.577676+00:00",
+  "remaining_known_matches": 4,
+  "removed_known_matches": 0,
+  "run_ids": [
+    "2ffba682-544a-4439-9e77-81f543393722",
+    "98a5e53b-f992-48df-85cc-b05e559b375e"
+  ],
+  "unknown": 0,
+  "verification_id": null
+}

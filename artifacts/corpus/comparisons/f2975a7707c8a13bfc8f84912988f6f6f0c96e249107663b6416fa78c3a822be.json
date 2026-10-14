@@ -1,0 +1,223 @@
+{
+  "added_known_matches": 0,
+  "baseline_id": "29f4a5b22822d6a5b59faf43e96213a4bb570891ed0d319f0e15b2d6f1fff577",
+  "candidate_id": "ed9c60d51633f353775d7af6ce89af72ddc8e30aed96a9bf599867d2d212b225",
+  "collection_id": "859504706c264dfb9b55a28e2b8eb154",
+  "diff": {
+    "added": [
+      {
+        "name": "distro",
+        "versions": [
+          "1.9.0"
+        ]
+      },
+      {
+        "name": "httpcore2",
+        "versions": [
+          "2.13.1"
+        ]
+      },
+      {
+        "name": "httpx2",
+        "versions": [
+          "2.13.1"
+        ]
+      },
+      {
+        "name": "langchain-protocol",
+        "versions": [
+          "0.0.19"
+        ]
+      },
+      {
+        "name": "langgraph",
+        "versions": [
+          "1.2.15"
+        ]
+      },
+      {
+        "name": "langgraph-checkpoint",
+        "versions": [
+          "4.3.0"
+        ]
+      },
+      {
+        "name": "langgraph-prebuilt",
+        "versions": [
+          "1.1.0"
+        ]
+      },
+      {
+        "name": "langgraph-sdk",
+        "versions": [
+          "0.4.7"
+        ]
+      },
+      {
+        "name": "ormsgpack",
+        "versions": [
+          "1.12.2"
+        ]
+      },
+      {
+        "name": "sniffio",
+        "versions": [
+          "1.3.1"
+        ]
+      },
+      {
+        "name": "truststore",
+        "versions": [
+          "0.10.5"
+        ]
+      },
+      {
+        "name": "uuid-utils",
+        "versions": [
+          "0.17.1"
+        ]
+      },
+      {
+        "name": "websockets",
+        "versions": [
+          "16.1.1"
+        ]
+      },
+      {
+        "name": "xxhash",
+        "versions": [
+          "4.0.1"
+        ]
+      },
+      {
+        "name": "zstandard",
+        "versions": [
+          "0.25.0"
+        ]
+      }
+    ],
+    "environment_comparable": false,
+    "opaque_after": 0,
+    "opaque_before": 0,
+    "removed": [
+      {
+        "name": "aiohappyeyeballs",
+        "versions": [
+          "2.7.1"
+        ]
+      },
+      {
+        "name": "aiohttp",
+        "versions": [
+          "3.14.5"
+        ]
+      },
+      {
+        "name": "aiosignal",
+        "versions": [
+          "1.4.0"
+        ]
+      },
+      {
+        "name": "attrs",
+        "versions": [
+          "26.1.0"
+        ]
+      },
+      {
+        "name": "frozenlist",
+        "versions": [
+          "1.8.0"
+        ]
+      },
+      {
+        "name": "langchain-text-splitters",
+        "versions": [
+          "0.3.8"
+        ]
+      },
+      {
+        "name": "multidict",
+        "versions": [
+          "7.1.0"
+        ]
+      },
+      {
+        "name": "numpy",
+        "versions": [
+          "2.5.4"
+        ]
+      },
+      {
+        "name": "propcache",
+        "versions": [
+          "0.5.4"
+        ]
+      },
+      {
+        "name": "sqlalchemy",
+        "versions": [
+          "2.1.4"
+        ]
+      },
+      {
+        "name": "yarl",
+        "versions": [
+          "1.25.1"
+        ]
+      }
+    ],
+    "versions_changed": [
+      {
+        "after": [
+          "1.4.5"
+        ],
+        "before": [
+          "0.3.14"
+        ],
+        "name": "langchain"
+      },
+      {
+        "after": [
+          "1.6.10"
+        ],
+        "before": [
+          "0.3.63"
+        ],
+        "name": "langchain-core"
+      },
+      {
+        "after": [
+          "0.14.8"
+        ],
+        "before": [
+          "0.2.11"
+        ],
+        "name": "langsmith"
+      },
+      {
+        "after": [
+          "26.3.0"
+        ],
+        "before": [
+          "24.2.0"
+        ],
+        "name": "packaging"
+      }
+    ]
+  },
+  "id": "f2975a7707c8a13bfc8f84912988f6f6f0c96e249107663b6416fa78c3a822be",
+  "level": "metadata_comparison",
+  "limitations": [
+    "Current public resolutions; no verified installation or historical deployed environment."
+  ],
+  "observed_at": "2026-10-14T19:26:34.565096+00:00",
+  "remaining_known_matches": 0,
+  "removed_known_matches": 13,
+  "run_ids": [
+    "c1e1ac9f-fb38-4ea9-b0af-f32972656bf7",
+    "016b2fa8-51dc-42bf-a355-d9f5dddd884c"
+  ],
+  "unknown": 0,
+  "verification_id": null
+}

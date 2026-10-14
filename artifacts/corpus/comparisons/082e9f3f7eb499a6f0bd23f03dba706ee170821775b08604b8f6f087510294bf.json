@@ -1,0 +1,38 @@
+{
+  "added_known_matches": 0,
+  "baseline_id": "eaf45e7b74a52ef939f55dbfebefe8c9a21adefed1a58906da1b44445f9bc706",
+  "candidate_id": "e929f2db15dd7e5d1ce2578c58c83ea10e05dbf06cf3da57854f97150c35f186",
+  "collection_id": "859504706c264dfb9b55a28e2b8eb154",
+  "diff": {
+    "added": [],
+    "environment_comparable": false,
+    "opaque_after": 0,
+    "opaque_before": 0,
+    "removed": [],
+    "versions_changed": [
+      {
+        "after": [
+          "0.4.2"
+        ],
+        "before": [
+          "0.4.0"
+        ],
+        "name": "langchain-experimental"
+      }
+    ]
+  },
+  "id": "082e9f3f7eb499a6f0bd23f03dba706ee170821775b08604b8f6f087510294bf",
+  "level": "metadata_comparison",
+  "limitations": [
+    "Current public resolutions; no verified installation or historical deployed environment."
+  ],
+  "observed_at": "2026-10-14T19:26:34.567951+00:00",
+  "remaining_known_matches": 0,
+  "removed_known_matches": 0,
+  "run_ids": [
+    "0fa89396-cd72-488e-b218-b2ae81c9a20f",
+    "dd1ca8c3-966d-46bb-a3f7-1ccad7c900e1"
+  ],
+  "unknown": 0,
+  "verification_id": null
+}

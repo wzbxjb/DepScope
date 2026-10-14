@@ -1,0 +1,117 @@
+{
+  "added_known_matches": 0,
+  "baseline_id": "2e250c72175b67d9ad5cfc6f2aa6005ac7bd2740c86e16f1d8838db7401506d5",
+  "candidate_id": "7252c4bcdd20805e0482d0f5b40b40eeb44cd2ed21c79e510e26acb5f0ea273e",
+  "collection_id": "859504706c264dfb9b55a28e2b8eb154",
+  "diff": {
+    "added": [
+      {
+        "name": "distro",
+        "versions": [
+          "1.9.0"
+        ]
+      },
+      {
+        "name": "httpcore2",
+        "versions": [
+          "2.13.1"
+        ]
+      },
+      {
+        "name": "httpx2",
+        "versions": [
+          "2.13.1"
+        ]
+      },
+      {
+        "name": "langchain-protocol",
+        "versions": [
+          "0.0.19"
+        ]
+      },
+      {
+        "name": "sniffio",
+        "versions": [
+          "1.3.1"
+        ]
+      },
+      {
+        "name": "truststore",
+        "versions": [
+          "0.10.5"
+        ]
+      },
+      {
+        "name": "uuid-utils",
+        "versions": [
+          "0.17.1"
+        ]
+      },
+      {
+        "name": "websockets",
+        "versions": [
+          "17.2.0"
+        ]
+      },
+      {
+        "name": "xxhash",
+        "versions": [
+          "4.0.1"
+        ]
+      },
+      {
+        "name": "zstandard",
+        "versions": [
+          "0.25.0"
+        ]
+      }
+    ],
+    "environment_comparable": false,
+    "opaque_after": 0,
+    "opaque_before": 0,
+    "removed": [],
+    "versions_changed": [
+      {
+        "after": [
+          "1.6.10"
+        ],
+        "before": [
+          "0.3.29"
+        ],
+        "name": "langchain-core"
+      },
+      {
+        "after": [
+          "0.14.8"
+        ],
+        "before": [
+          "0.2.11"
+        ],
+        "name": "langsmith"
+      },
+      {
+        "after": [
+          "26.3.0"
+        ],
+        "before": [
+          "24.2.0"
+        ],
+        "name": "packaging"
+      }
+    ]
+  },
+  "id": "cb19a4f8abd49d45824cf186601b01ce0d8f86a502fa758ff6901fbdfeefed7c",
+  "level": "metadata_comparison",
+  "limitations": [
+    "Current public resolutions; no verified installation or historical deployed environment."
+  ],
+  "observed_at": "2026-10-14T19:26:34.565724+00:00",
+  "remaining_known_matches": 0,
+  "removed_known_matches": 9,
+  "run_ids": [
+    "d6ef01f4-265f-49aa-b441-a4c38212cf26",
+    "a0253a8f-ba69-42d4-97b8-39c84b20f5f8"
+  ],
+  "unknown": 0,
+  "verification_id": null
+}

@@ -1,0 +1,217 @@
+{
+  "added_known_matches": 0,
+  "baseline_id": "fb1e2cf1b0b023b306e4a662031eabc53b36a9db1d45ede38e127ce8de439ad6",
+  "candidate_id": "e929f2db15dd7e5d1ce2578c58c83ea10e05dbf06cf3da57854f97150c35f186",
+  "collection_id": "859504706c264dfb9b55a28e2b8eb154",
+  "diff": {
+    "added": [
+      {
+        "name": "distro",
+        "versions": [
+          "1.9.0"
+        ]
+      },
+      {
+        "name": "httpcore2",
+        "versions": [
+          "2.13.1"
+        ]
+      },
+      {
+        "name": "httpx-sse",
+        "versions": [
+          "0.4.3"
+        ]
+      },
+      {
+        "name": "httpx2",
+        "versions": [
+          "2.13.1"
+        ]
+      },
+      {
+        "name": "langchain-classic",
+        "versions": [
+          "1.0.8"
+        ]
+      },
+      {
+        "name": "langchain-protocol",
+        "versions": [
+          "0.0.19"
+        ]
+      },
+      {
+        "name": "pydantic-settings",
+        "versions": [
+          "2.15.0"
+        ]
+      },
+      {
+        "name": "python-dotenv",
+        "versions": [
+          "1.2.4"
+        ]
+      },
+      {
+        "name": "sniffio",
+        "versions": [
+          "1.3.1"
+        ]
+      },
+      {
+        "name": "truststore",
+        "versions": [
+          "0.10.5"
+        ]
+      },
+      {
+        "name": "uuid-utils",
+        "versions": [
+          "0.17.1"
+        ]
+      },
+      {
+        "name": "websockets",
+        "versions": [
+          "17.2.0"
+        ]
+      },
+      {
+        "name": "xxhash",
+        "versions": [
+          "4.0.1"
+        ]
+      },
+      {
+        "name": "zstandard",
+        "versions": [
+          "0.25.0"
+        ]
+      }
+    ],
+    "environment_comparable": false,
+    "opaque_after": 0,
+    "opaque_before": 0,
+    "removed": [
+      {
+        "name": "dataclasses-json",
+        "versions": [
+          "0.6.7"
+        ]
+      },
+      {
+        "name": "langchain",
+        "versions": [
+          "0.1.20"
+        ]
+      },
+      {
+        "name": "marshmallow",
+        "versions": [
+          "3.26.2"
+        ]
+      },
+      {
+        "name": "mypy-extensions",
+        "versions": [
+          "1.1.0"
+        ]
+      },
+      {
+        "name": "typing-inspect",
+        "versions": [
+          "0.9.0"
+        ]
+      }
+    ],
+    "versions_changed": [
+      {
+        "after": [
+          "0.4.2"
+        ],
+        "before": [
+          "0.0.38"
+        ],
+        "name": "langchain-community"
+      },
+      {
+        "after": [
+          "1.6.10"
+        ],
+        "before": [
+          "0.1.53"
+        ],
+        "name": "langchain-core"
+      },
+      {
+        "after": [
+          "0.4.2"
+        ],
+        "before": [
+          "0.0.48"
+        ],
+        "name": "langchain-experimental"
+      },
+      {
+        "after": [
+          "1.1.3"
+        ],
+        "before": [
+          "0.0.2"
+        ],
+        "name": "langchain-text-splitters"
+      },
+      {
+        "after": [
+          "0.14.8"
+        ],
+        "before": [
+          "0.1.147"
+        ],
+        "name": "langsmith"
+      },
+      {
+        "after": [
+          "2.5.4"
+        ],
+        "before": [
+          "1.26.4"
+        ],
+        "name": "numpy"
+      },
+      {
+        "after": [
+          "26.3.0"
+        ],
+        "before": [
+          "23.2.0"
+        ],
+        "name": "packaging"
+      },
+      {
+        "after": [
+          "9.2.1"
+        ],
+        "before": [
+          "8.5.0"
+        ],
+        "name": "tenacity"
+      }
+    ]
+  },
+  "id": "711f9b60709665efe9d7ba99615431f998b5239cf6a1b68ab0b56061fc166e46",
+  "level": "metadata_comparison",
+  "limitations": [
+    "Current public resolutions; no verified installation or historical deployed environment."
+  ],
+  "observed_at": "2026-10-14T19:26:34.567862+00:00",
+  "remaining_known_matches": 0,
+  "removed_known_matches": 22,
+  "run_ids": [
+    "5dcdcb0f-17df-4ca0-a029-f07a3be3efb1",
+    "dd1ca8c3-966d-46bb-a3f7-1ccad7c900e1"
+  ],
+  "unknown": 0,
+  "verification_id": null
+}

@@ -1,13 +1,13 @@
 {
   "config": {
     "argv": [
-      "/Users/wangzhe/Documents/Codex/2026-10-08/referenced-chatgpt-conversation-this-is-an-2/outputs/IS507_Midterm_Revised/DepScope/.worktrees/development/.superpowers/tools/node-v22.23.3-darwin-arm64/bin/node",
-      "/Users/wangzhe/Documents/Codex/2026-10-08/referenced-chatgpt-conversation-this-is-an-2/outputs/IS507_Midterm_Revised/DepScope/.worktrees/development/frontend/node_modules/.bin/playwright",
+      "/Users/wangzhe/Documents/Codex/DepScope/.worktrees/development/.superpowers/tools/node-v22.23.3-darwin-arm64/bin/node",
+      "/Users/wangzhe/Documents/Codex/DepScope/.worktrees/development/frontend/node_modules/.bin/playwright",
       "test",
-      "e2e/core-workflow.spec.ts"
+      "e2e/investigation-workflow.spec.ts"
     ],
-    "configFile": "/Users/wangzhe/Documents/Codex/2026-10-08/referenced-chatgpt-conversation-this-is-an-2/outputs/IS507_Midterm_Revised/DepScope/.worktrees/development/frontend/playwright.config.ts",
-    "rootDir": "/Users/wangzhe/Documents/Codex/2026-10-08/referenced-chatgpt-conversation-this-is-an-2/outputs/IS507_Midterm_Revised/DepScope/.worktrees/development/frontend/e2e",
+    "configFile": "/Users/wangzhe/Documents/Codex/DepScope/.worktrees/development/frontend/playwright.config.ts",
+    "rootDir": "/Users/wangzhe/Documents/Codex/DepScope/.worktrees/development/frontend/e2e",
     "failOnFlakyTests": false,
     "forbidOnly": false,
     "fullyParallel": false,
@@ -23,7 +23,7 @@
     "preserveOutput": "always",
     "projects": [
       {
-        "outputDir": "/Users/wangzhe/Documents/Codex/2026-10-08/referenced-chatgpt-conversation-this-is-an-2/outputs/IS507_Midterm_Revised/DepScope/.worktrees/development/frontend/test-results",
+        "outputDir": "/Users/wangzhe/Documents/Codex/DepScope/.worktrees/development/frontend/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
@@ -31,7 +31,7 @@
         },
         "id": "",
         "name": "",
-        "testDir": "/Users/wangzhe/Documents/Codex/2026-10-08/referenced-chatgpt-conversation-this-is-an-2/outputs/IS507_Midterm_Revised/DepScope/.worktrees/development/frontend/e2e",
+        "testDir": "/Users/wangzhe/Documents/Codex/DepScope/.worktrees/development/frontend/e2e",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -43,15 +43,15 @@
       {
         "grep": {},
         "grepInvert": null,
-        "outputDir": "/Users/wangzhe/Documents/Codex/2026-10-08/referenced-chatgpt-conversation-this-is-an-2/outputs/IS507_Midterm_Revised/DepScope/.worktrees/development/frontend/test-results",
+        "outputDir": "/Users/wangzhe/Documents/Codex/DepScope/.worktrees/development/frontend/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
           "actualWorkers": 1
         },
         "name": "",
-        "testDir": "/Users/wangzhe/Documents/Codex/2026-10-08/referenced-chatgpt-conversation-this-is-an-2/outputs/IS507_Midterm_Revised/DepScope/.worktrees/development/frontend/e2e",
-        "snapshotDir": "/Users/wangzhe/Documents/Codex/2026-10-08/referenced-chatgpt-conversation-this-is-an-2/outputs/IS507_Midterm_Revised/DepScope/.worktrees/development/frontend/e2e",
+        "testDir": "/Users/wangzhe/Documents/Codex/DepScope/.worktrees/development/frontend/e2e",
+        "snapshotDir": "/Users/wangzhe/Documents/Codex/DepScope/.worktrees/development/frontend/e2e",
         "testIgnore": [],
         "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
         "timeout": 60000,
@@ -98,18 +98,18 @@
   },
   "suites": [
     {
-      "title": "core-workflow.spec.ts",
-      "file": "core-workflow.spec.ts",
+      "title": "investigation-workflow.spec.ts",
+      "file": "investigation-workflow.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "explores verified public source data through the real product",
+          "title": "real scoped AI answer and original source field",
           "ok": true,
           "tags": [],
           "tests": [
             {
-              "timeout": 60000,
+              "timeout": 240000,
               "annotations": [],
               "expectedStatus": "passed",
               "projectId": "",
@@ -119,12 +119,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1845,
+                  "duration": 5949,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-14T00:36:18.846Z",
+                  "startTime": "2026-10-14T19:03:39.262Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -132,43 +132,9 @@
               "status": "expected"
             }
           ],
-          "id": "103b7bf68f721faca5dd-d9910b248e2c564f0a1e",
-          "file": "core-workflow.spec.ts",
-          "line": 2,
-          "column": 1
-        },
-        {
-          "title": "creates a project, resolves two real snapshots, and compares their sources",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 60000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 8303,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-14T00:36:21.783Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "103b7bf68f721faca5dd-2ec6a73bd39f0b293ebf",
-          "file": "core-workflow.spec.ts",
-          "line": 22,
+          "id": "2d8ea91c321b623815d5-3caada3f08fbce171246",
+          "file": "investigation-workflow.spec.ts",
+          "line": 3,
           "column": 1
         }
       ]
@@ -176,9 +142,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-10-14T00:36:18.458Z",
-    "duration": 11769.599,
-    "expected": 2,
+    "startTime": "2026-10-14T19:03:38.997Z",
+    "duration": 7341.575,
+    "expected": 1,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

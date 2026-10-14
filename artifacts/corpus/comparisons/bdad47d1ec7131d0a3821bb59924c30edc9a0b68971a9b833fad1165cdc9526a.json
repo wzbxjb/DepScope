@@ -1,0 +1,238 @@
+{
+  "added_known_matches": 0,
+  "baseline_id": "81f70de832eecf1a15ca565e39ddce7dc25addfe220b24b35f8a620acffbc8f2",
+  "candidate_id": "834153bcb664d46255a80babce90622d4b36d9a58bc23ea5859a846b909d5a6c",
+  "collection_id": "859504706c264dfb9b55a28e2b8eb154",
+  "diff": {
+    "added": [
+      {
+        "name": "aiosqlite",
+        "versions": [
+          "0.22.1"
+        ]
+      },
+      {
+        "name": "banks",
+        "versions": [
+          "2.5.1"
+        ]
+      },
+      {
+        "name": "colorama",
+        "versions": [
+          "0.4.6"
+        ]
+      },
+      {
+        "name": "dirtyjson",
+        "versions": [
+          "1.0.8"
+        ]
+      },
+      {
+        "name": "distro",
+        "versions": [
+          "1.9.0"
+        ]
+      },
+      {
+        "name": "filetype",
+        "versions": [
+          "1.2.0"
+        ]
+      },
+      {
+        "name": "griffe",
+        "versions": [
+          "2.3.2"
+        ]
+      },
+      {
+        "name": "griffecli",
+        "versions": [
+          "2.3.2"
+        ]
+      },
+      {
+        "name": "griffelib",
+        "versions": [
+          "2.3.2"
+        ]
+      },
+      {
+        "name": "jinja2",
+        "versions": [
+          "3.1.6"
+        ]
+      },
+      {
+        "name": "llama-index-core",
+        "versions": [
+          "0.14.25"
+        ]
+      },
+      {
+        "name": "llama-index-embeddings-openai",
+        "versions": [
+          "0.6.0"
+        ]
+      },
+      {
+        "name": "llama-index-instrumentation",
+        "versions": [
+          "0.6.0"
+        ]
+      },
+      {
+        "name": "llama-index-llms-openai",
+        "versions": [
+          "0.7.10"
+        ]
+      },
+      {
+        "name": "llama-index-workflows",
+        "versions": [
+          "2.26.0"
+        ]
+      },
+      {
+        "name": "markupsafe",
+        "versions": [
+          "3.0.4"
+        ]
+      },
+      {
+        "name": "networkx",
+        "versions": [
+          "3.7.0"
+        ]
+      },
+      {
+        "name": "pillow",
+        "versions": [
+          "12.3.0"
+        ]
+      },
+      {
+        "name": "platformdirs",
+        "versions": [
+          "4.13.0"
+        ]
+      },
+      {
+        "name": "pyyaml",
+        "versions": [
+          "6.0.3"
+        ]
+      },
+      {
+        "name": "setuptools",
+        "versions": [
+          "84.0.0"
+        ]
+      },
+      {
+        "name": "tinytag",
+        "versions": [
+          "2.3.2"
+        ]
+      }
+    ],
+    "environment_comparable": false,
+    "opaque_after": 0,
+    "opaque_before": 0,
+    "removed": [
+      {
+        "name": "beautifulsoup4",
+        "versions": [
+          "4.15.0"
+        ]
+      },
+      {
+        "name": "httpcore2",
+        "versions": [
+          "2.13.1"
+        ]
+      },
+      {
+        "name": "httpx2",
+        "versions": [
+          "2.13.1"
+        ]
+      },
+      {
+        "name": "pandas",
+        "versions": [
+          "3.0.6"
+        ]
+      },
+      {
+        "name": "python-dateutil",
+        "versions": [
+          "2.9.0.post0"
+        ]
+      },
+      {
+        "name": "six",
+        "versions": [
+          "1.17.0"
+        ]
+      },
+      {
+        "name": "soupsieve",
+        "versions": [
+          "3.0.3"
+        ]
+      },
+      {
+        "name": "truststore",
+        "versions": [
+          "0.10.5"
+        ]
+      }
+    ],
+    "versions_changed": [
+      {
+        "after": [
+          "0.14.25"
+        ],
+        "before": [
+          "0.9.25"
+        ],
+        "name": "llama-index"
+      },
+      {
+        "after": [
+          "2.54.0"
+        ],
+        "before": [
+          "3.29.0"
+        ],
+        "name": "openai"
+      },
+      {
+        "after": [
+          "9.2.1"
+        ],
+        "before": [
+          "8.5.0"
+        ],
+        "name": "tenacity"
+      }
+    ]
+  },
+  "id": "bdad47d1ec7131d0a3821bb59924c30edc9a0b68971a9b833fad1165cdc9526a",
+  "level": "metadata_comparison",
+  "limitations": [
+    "Current public resolutions; no verified installation or historical deployed environment."
+  ],
+  "observed_at": "2026-10-14T19:26:34.578060+00:00",
+  "remaining_known_matches": 1,
+  "removed_known_matches": 13,
+  "run_ids": [
+    "8989c6cc-7add-48fa-bf41-4ae248c2924c",
+    "7c85fbe9-2e0c-4148-8948-8c90112c1431"
+  ],
+  "unknown": 0,
+  "verification_id": null
+}

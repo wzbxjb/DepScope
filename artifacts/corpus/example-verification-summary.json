@@ -1,0 +1,86 @@
+{
+  "edges": 19,
+  "environment": {
+    "architecture": "arm64",
+    "extras": [],
+    "marker_environment": {
+      "implementation_name": "cpython",
+      "implementation_version": "3.11.5",
+      "os_name": "posix",
+      "platform_machine": "arm64",
+      "platform_python_implementation": "CPython",
+      "platform_release": "25.6.0",
+      "platform_system": "Darwin",
+      "platform_version": "Darwin Kernel Version 25.6.0: Fri Jul 31 19:18:49 PDT 2026; root:xnu-12377.161.14~5/RELEASE_ARM64_T6000",
+      "python_full_version": "3.11.5",
+      "python_version": "3.11",
+      "sys_platform": "darwin"
+    },
+    "os": "Darwin",
+    "private_application_root": true,
+    "python_version": "3.11.5"
+  },
+  "instances": 17,
+  "normalization_audit": {
+    "application_source_proven": true,
+    "independently_checked_edges": 19,
+    "independently_checked_nodes": 17,
+    "merged_distribution_ref": null,
+    "selected_extras": {
+      "annotated-types": [],
+      "anyio": [],
+      "certifi": [],
+      "depscope-evidence-assistant": [],
+      "h11": [],
+      "httpcore": [],
+      "httpx": [],
+      "idna": [],
+      "neo4j": [],
+      "pip": [],
+      "pydantic": [],
+      "pydantic-core": [],
+      "python-dotenv": [],
+      "pytz": [],
+      "setuptools": [],
+      "typing-extensions": [],
+      "typing-inspection": []
+    },
+    "tool_extra_edges": [
+      [
+        "httpcore==1.0.9",
+        "anyio==4.15.1"
+      ],
+      [
+        "setuptools==65.5.0",
+        "pip==23.2.1"
+      ]
+    ],
+    "tool_missing_edges": []
+  },
+  "project_id": "5621f37a-26c0-4c1b-ac7c-cdd48354980d",
+  "resolution_exit_code": 0,
+  "sbom_tool_exit_code": 0,
+  "self_observation_verification_level": "tests_verified",
+  "snapshot_id": "2b6e2e2819bc681f622042fb0c55658d171d6e0480bcb28773bcc752d9ebde6d",
+  "source_hashes": {
+    "application-source-manifest.json": "48e4ad59f9447e978afc579b078bbb518e26141ecaf5901c98f04f6818284f0a",
+    "constraints.json": "3e3f656e2b82ba6be90bb804e015c381008dcf42f93a96f810860cb201706036",
+    "environment-capture.json": "23ccfe447bc44b7e8fc33342df6c17cef381758526f86ddc22f354a863b25717",
+    "environment.cdx.json": "cef4ce19f60825e8a6912fa06a49baa6babd991785e1cea22ee0938483c2396c",
+    "environment.json": "def955b5d9cd0179a54cb16cd9123b3ced33a7f887c630724ddaa1757adc9bdd",
+    "normalization-audit.json": "ddf5958547e5505d04679f81ddb86deecadd89334ae5ba74a6fb25a17308a343",
+    "original-sbom": "92b844d3c5974cca07c42b2ed303fd88fed91c2fa98ba247622ba91810d0dcd7",
+    "pip-check.log": "9261363b733079a641c2e4cc9bc46ffa1d8336945a87f807b6cf68847dbc9b09",
+    "pip-inspect.json": "16b504786c624025b0d387c3133e9ccf365982f437cd7f5c05b6298083678096",
+    "pyproject.toml": "b05bee0593d5b424bf6bfa84d653dda4d668766749f4a6fa73f60b343ddc3955",
+    "pytest.log": "f7da7f86cbf89957a3d2994d522437ec98ca4c257402418f86bbcbd223cc7b9e",
+    "requirements-runtime.lock": "b46dd1684f36d81bb4d5cb5f7d8515bcf6a03f89c1b89c2b3ce0a3cda8fe3882",
+    "resolution-result.json": "03431676f228d7cdfa5539b7b4b88260c004a0fbf249423b18e98940a3d6a21f",
+    "sbom-tool.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "test-result.json": "3e1ee483b6a03a62fa98b56c6640a71f3b8cfad38b503081dfdca4c261a300dc"
+  },
+  "source_kind": "observed_environment",
+  "test_exit_code": 0,
+  "upgrade_executed": false,
+  "verification_id": "1c57bd3645be00e5f7312326a70d271a8e3540a174a775bf7e8057a31036a1cd"
+}

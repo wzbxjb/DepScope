@@ -1,0 +1,156 @@
+{
+  "added_known_matches": 0,
+  "baseline_id": "5dc97b863ea836b47b2a2e787cc7cb6f25dd8806b9d8caaeb2f431a161744993",
+  "candidate_id": "7252c4bcdd20805e0482d0f5b40b40eeb44cd2ed21c79e510e26acb5f0ea273e",
+  "collection_id": "859504706c264dfb9b55a28e2b8eb154",
+  "diff": {
+    "added": [
+      {
+        "name": "distro",
+        "versions": [
+          "1.9.0"
+        ]
+      },
+      {
+        "name": "h11",
+        "versions": [
+          "0.16.0"
+        ]
+      },
+      {
+        "name": "httpcore",
+        "versions": [
+          "1.0.9"
+        ]
+      },
+      {
+        "name": "httpcore2",
+        "versions": [
+          "2.13.1"
+        ]
+      },
+      {
+        "name": "httpx",
+        "versions": [
+          "0.28.1"
+        ]
+      },
+      {
+        "name": "httpx2",
+        "versions": [
+          "2.13.1"
+        ]
+      },
+      {
+        "name": "langchain-protocol",
+        "versions": [
+          "0.0.19"
+        ]
+      },
+      {
+        "name": "orjson",
+        "versions": [
+          "3.13.0"
+        ]
+      },
+      {
+        "name": "requests-toolbelt",
+        "versions": [
+          "1.0.0"
+        ]
+      },
+      {
+        "name": "sniffio",
+        "versions": [
+          "1.3.1"
+        ]
+      },
+      {
+        "name": "truststore",
+        "versions": [
+          "0.10.5"
+        ]
+      },
+      {
+        "name": "uuid-utils",
+        "versions": [
+          "0.17.1"
+        ]
+      },
+      {
+        "name": "websockets",
+        "versions": [
+          "17.2.0"
+        ]
+      },
+      {
+        "name": "xxhash",
+        "versions": [
+          "4.0.1"
+        ]
+      },
+      {
+        "name": "zstandard",
+        "versions": [
+          "0.25.0"
+        ]
+      }
+    ],
+    "environment_comparable": false,
+    "opaque_after": 0,
+    "opaque_before": 0,
+    "removed": [],
+    "versions_changed": [
+      {
+        "after": [
+          "1.6.10"
+        ],
+        "before": [
+          "0.1.6"
+        ],
+        "name": "langchain-core"
+      },
+      {
+        "after": [
+          "0.14.8"
+        ],
+        "before": [
+          "0.0.92"
+        ],
+        "name": "langsmith"
+      },
+      {
+        "after": [
+          "26.3.0"
+        ],
+        "before": [
+          "23.2.0"
+        ],
+        "name": "packaging"
+      },
+      {
+        "after": [
+          "9.2.1"
+        ],
+        "before": [
+          "8.5.0"
+        ],
+        "name": "tenacity"
+      }
+    ]
+  },
+  "id": "371306ee88d000721f796b77fcdb249e39481f5c8f559f453ab7ae9ba5370b9f",
+  "level": "metadata_comparison",
+  "limitations": [
+    "Current public resolutions; no verified installation or historical deployed environment."
+  ],
+  "observed_at": "2026-10-14T19:26:34.565481+00:00",
+  "remaining_known_matches": 0,
+  "removed_known_matches": 11,
+  "run_ids": [
+    "8dd8235f-20c4-4691-878f-607c3b6efc41",
+    "a0253a8f-ba69-42d4-97b8-39c84b20f5f8"
+  ],
+  "unknown": 0,
+  "verification_id": null
+}

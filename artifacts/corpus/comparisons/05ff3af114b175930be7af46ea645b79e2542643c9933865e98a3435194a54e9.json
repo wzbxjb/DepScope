@@ -1,0 +1,123 @@
+{
+  "added_known_matches": 0,
+  "baseline_id": "2e3181307c189bed1c1d346ca25ba93c7dd07159b6d8b678068c9e4ba10b37dc",
+  "candidate_id": "76f037943a0ce593469f61183b2216c1721564cc4eaf266de94aa62752f2fbf5",
+  "collection_id": "859504706c264dfb9b55a28e2b8eb154",
+  "diff": {
+    "added": [
+      {
+        "name": "anyio",
+        "versions": [
+          "4.15.1"
+        ]
+      },
+      {
+        "name": "distro",
+        "versions": [
+          "1.9.0"
+        ]
+      },
+      {
+        "name": "h11",
+        "versions": [
+          "0.16.0"
+        ]
+      },
+      {
+        "name": "httpcore2",
+        "versions": [
+          "2.13.1"
+        ]
+      },
+      {
+        "name": "httpx2",
+        "versions": [
+          "2.13.1"
+        ]
+      },
+      {
+        "name": "orjson",
+        "versions": [
+          "3.13.0"
+        ]
+      },
+      {
+        "name": "packaging",
+        "versions": [
+          "26.3.0"
+        ]
+      },
+      {
+        "name": "requests-toolbelt",
+        "versions": [
+          "1.0.0"
+        ]
+      },
+      {
+        "name": "sniffio",
+        "versions": [
+          "1.3.1"
+        ]
+      },
+      {
+        "name": "truststore",
+        "versions": [
+          "0.10.5"
+        ]
+      },
+      {
+        "name": "uuid-utils",
+        "versions": [
+          "0.17.1"
+        ]
+      },
+      {
+        "name": "websockets",
+        "versions": [
+          "17.2.0"
+        ]
+      },
+      {
+        "name": "xxhash",
+        "versions": [
+          "4.0.1"
+        ]
+      },
+      {
+        "name": "zstandard",
+        "versions": [
+          "0.25.0"
+        ]
+      }
+    ],
+    "environment_comparable": false,
+    "opaque_after": 0,
+    "opaque_before": 0,
+    "removed": [],
+    "versions_changed": [
+      {
+        "after": [
+          "0.14.8"
+        ],
+        "before": [
+          "0.0.76"
+        ],
+        "name": "langsmith"
+      }
+    ]
+  },
+  "id": "05ff3af114b175930be7af46ea645b79e2542643c9933865e98a3435194a54e9",
+  "level": "metadata_comparison",
+  "limitations": [
+    "Current public resolutions; no verified installation or historical deployed environment."
+  ],
+  "observed_at": "2026-10-14T19:26:34.568658+00:00",
+  "remaining_known_matches": 0,
+  "removed_known_matches": 3,
+  "run_ids": [
+    "91bd2ca5-fffb-4959-972b-79baefc790b9",
+    "927f4c30-6a50-4b87-9a8d-8357d3150958"
+  ],
+  "unknown": 0,
+  "verification_id": null
+}

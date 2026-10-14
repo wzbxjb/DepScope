@@ -1,0 +1,1191 @@
+{
+  "components": [
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "gradio",
+        "raw_version": "5.10.0",
+        "version": "5.10.0"
+      },
+      "dependencies_known": true,
+      "local_id": "0",
+      "name": "gradio",
+      "pointer": "/nodes/0"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "aiofiles",
+        "raw_version": "23.2.1",
+        "version": "23.2.1"
+      },
+      "dependencies_known": true,
+      "local_id": "1",
+      "name": "aiofiles",
+      "pointer": "/nodes/1"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "annotated-doc",
+        "raw_version": "0.0.5",
+        "version": "0.0.5"
+      },
+      "dependencies_known": true,
+      "local_id": "2",
+      "name": "annotated-doc",
+      "pointer": "/nodes/2"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "annotated-types",
+        "raw_version": "0.8.0",
+        "version": "0.8.0"
+      },
+      "dependencies_known": true,
+      "local_id": "3",
+      "name": "annotated-types",
+      "pointer": "/nodes/3"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "anyio",
+        "raw_version": "4.15.1",
+        "version": "4.15.1"
+      },
+      "dependencies_known": true,
+      "local_id": "4",
+      "name": "anyio",
+      "pointer": "/nodes/4"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "audioop-lts",
+        "raw_version": "0.2.2",
+        "version": "0.2.2"
+      },
+      "dependencies_known": true,
+      "local_id": "5",
+      "name": "audioop-lts",
+      "pointer": "/nodes/5"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "certifi",
+        "raw_version": "2026.7.22",
+        "version": "2026.7.22"
+      },
+      "dependencies_known": true,
+      "local_id": "6",
+      "name": "certifi",
+      "pointer": "/nodes/6"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "click",
+        "raw_version": "8.5.0",
+        "version": "8.5.0"
+      },
+      "dependencies_known": true,
+      "local_id": "7",
+      "name": "click",
+      "pointer": "/nodes/7"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "fastapi",
+        "raw_version": "0.143.0",
+        "version": "0.143.0"
+      },
+      "dependencies_known": true,
+      "local_id": "8",
+      "name": "fastapi",
+      "pointer": "/nodes/8"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "ffmpy",
+        "raw_version": "1.0.0",
+        "version": "1.0.0"
+      },
+      "dependencies_known": true,
+      "local_id": "9",
+      "name": "ffmpy",
+      "pointer": "/nodes/9"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "filelock",
+        "raw_version": "4.1.1",
+        "version": "4.1.1"
+      },
+      "dependencies_known": true,
+      "local_id": "10",
+      "name": "filelock",
+      "pointer": "/nodes/10"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "fsspec",
+        "raw_version": "2026.9.0",
+        "version": "2026.9.0"
+      },
+      "dependencies_known": true,
+      "local_id": "11",
+      "name": "fsspec",
+      "pointer": "/nodes/11"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "gradio-client",
+        "raw_version": "1.5.3",
+        "version": "1.5.3"
+      },
+      "dependencies_known": true,
+      "local_id": "12",
+      "name": "gradio-client",
+      "pointer": "/nodes/12"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "h11",
+        "raw_version": "0.16.0",
+        "version": "0.16.0"
+      },
+      "dependencies_known": true,
+      "local_id": "13",
+      "name": "h11",
+      "pointer": "/nodes/13"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "hf-xet",
+        "raw_version": "1.7.0",
+        "version": "1.7.0"
+      },
+      "dependencies_known": true,
+      "local_id": "14",
+      "name": "hf-xet",
+      "pointer": "/nodes/14"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "httpcore",
+        "raw_version": "1.0.9",
+        "version": "1.0.9"
+      },
+      "dependencies_known": true,
+      "local_id": "15",
+      "name": "httpcore",
+      "pointer": "/nodes/15"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "httpcore2",
+        "raw_version": "2.13.1",
+        "version": "2.13.1"
+      },
+      "dependencies_known": true,
+      "local_id": "16",
+      "name": "httpcore2",
+      "pointer": "/nodes/16"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "httpx",
+        "raw_version": "0.28.1",
+        "version": "0.28.1"
+      },
+      "dependencies_known": true,
+      "local_id": "17",
+      "name": "httpx",
+      "pointer": "/nodes/17"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "httpx2",
+        "raw_version": "2.13.1",
+        "version": "2.13.1"
+      },
+      "dependencies_known": true,
+      "local_id": "18",
+      "name": "httpx2",
+      "pointer": "/nodes/18"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "huggingface-hub",
+        "raw_version": "2.2.0",
+        "version": "2.2.0"
+      },
+      "dependencies_known": true,
+      "local_id": "19",
+      "name": "huggingface-hub",
+      "pointer": "/nodes/19"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "idna",
+        "raw_version": "3.20.0",
+        "version": "3.20.0"
+      },
+      "dependencies_known": true,
+      "local_id": "20",
+      "name": "idna",
+      "pointer": "/nodes/20"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "jinja2",
+        "raw_version": "3.1.6",
+        "version": "3.1.6"
+      },
+      "dependencies_known": true,
+      "local_id": "21",
+      "name": "jinja2",
+      "pointer": "/nodes/21"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "markdown-it-py",
+        "raw_version": "4.2.0",
+        "version": "4.2.0"
+      },
+      "dependencies_known": true,
+      "local_id": "22",
+      "name": "markdown-it-py",
+      "pointer": "/nodes/22"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "markupsafe",
+        "raw_version": "2.1.5",
+        "version": "2.1.5"
+      },
+      "dependencies_known": true,
+      "local_id": "23",
+      "name": "markupsafe",
+      "pointer": "/nodes/23"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "mdurl",
+        "raw_version": "0.1.2",
+        "version": "0.1.2"
+      },
+      "dependencies_known": true,
+      "local_id": "24",
+      "name": "mdurl",
+      "pointer": "/nodes/24"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "numpy",
+        "raw_version": "2.5.4",
+        "version": "2.5.4"
+      },
+      "dependencies_known": true,
+      "local_id": "25",
+      "name": "numpy",
+      "pointer": "/nodes/25"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "opentelemetry-api",
+        "raw_version": "1.45.1",
+        "version": "1.45.1"
+      },
+      "dependencies_known": true,
+      "local_id": "26",
+      "name": "opentelemetry-api",
+      "pointer": "/nodes/26"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "orjson",
+        "raw_version": "3.13.0",
+        "version": "3.13.0"
+      },
+      "dependencies_known": true,
+      "local_id": "27",
+      "name": "orjson",
+      "pointer": "/nodes/27"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "packaging",
+        "raw_version": "26.3.0",
+        "version": "26.3.0"
+      },
+      "dependencies_known": true,
+      "local_id": "28",
+      "name": "packaging",
+      "pointer": "/nodes/28"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "pandas",
+        "raw_version": "2.3.3",
+        "version": "2.3.3"
+      },
+      "dependencies_known": true,
+      "local_id": "29",
+      "name": "pandas",
+      "pointer": "/nodes/29"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "pillow",
+        "raw_version": "11.3.0",
+        "version": "11.3.0"
+      },
+      "dependencies_known": true,
+      "local_id": "30",
+      "name": "pillow",
+      "pointer": "/nodes/30"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "pydantic",
+        "raw_version": "2.14.1",
+        "version": "2.14.1"
+      },
+      "dependencies_known": true,
+      "local_id": "31",
+      "name": "pydantic",
+      "pointer": "/nodes/31"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "pydantic-core",
+        "raw_version": "2.50.1",
+        "version": "2.50.1"
+      },
+      "dependencies_known": true,
+      "local_id": "32",
+      "name": "pydantic-core",
+      "pointer": "/nodes/32"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "pydub",
+        "raw_version": "0.25.1",
+        "version": "0.25.1"
+      },
+      "dependencies_known": true,
+      "local_id": "33",
+      "name": "pydub",
+      "pointer": "/nodes/33"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "pygments",
+        "raw_version": "2.21.0",
+        "version": "2.21.0"
+      },
+      "dependencies_known": true,
+      "local_id": "34",
+      "name": "pygments",
+      "pointer": "/nodes/34"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "python-dateutil",
+        "raw_version": "2.9.0.post0",
+        "version": "2.9.0.post0"
+      },
+      "dependencies_known": true,
+      "local_id": "35",
+      "name": "python-dateutil",
+      "pointer": "/nodes/35"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "python-multipart",
+        "raw_version": "0.0.32",
+        "version": "0.0.32"
+      },
+      "dependencies_known": true,
+      "local_id": "36",
+      "name": "python-multipart",
+      "pointer": "/nodes/36"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "pytz",
+        "raw_version": "2026.5.0",
+        "version": "2026.5.0"
+      },
+      "dependencies_known": true,
+      "local_id": "37",
+      "name": "pytz",
+      "pointer": "/nodes/37"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "pyyaml",
+        "raw_version": "6.0.3",
+        "version": "6.0.3"
+      },
+      "dependencies_known": true,
+      "local_id": "38",
+      "name": "pyyaml",
+      "pointer": "/nodes/38"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "rich",
+        "raw_version": "15.0.0",
+        "version": "15.0.0"
+      },
+      "dependencies_known": true,
+      "local_id": "39",
+      "name": "rich",
+      "pointer": "/nodes/39"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "ruff",
+        "raw_version": "0.17.0",
+        "version": "0.17.0"
+      },
+      "dependencies_known": true,
+      "local_id": "40",
+      "name": "ruff",
+      "pointer": "/nodes/40"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "safehttpx",
+        "raw_version": "0.1.7",
+        "version": "0.1.7"
+      },
+      "dependencies_known": true,
+      "local_id": "41",
+      "name": "safehttpx",
+      "pointer": "/nodes/41"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "semantic-version",
+        "raw_version": "2.10.0",
+        "version": "2.10.0"
+      },
+      "dependencies_known": true,
+      "local_id": "42",
+      "name": "semantic-version",
+      "pointer": "/nodes/42"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "shellingham",
+        "raw_version": "1.5.4",
+        "version": "1.5.4"
+      },
+      "dependencies_known": true,
+      "local_id": "43",
+      "name": "shellingham",
+      "pointer": "/nodes/43"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "six",
+        "raw_version": "1.17.0",
+        "version": "1.17.0"
+      },
+      "dependencies_known": true,
+      "local_id": "44",
+      "name": "six",
+      "pointer": "/nodes/44"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "starlette",
+        "raw_version": "0.52.1",
+        "version": "0.52.1"
+      },
+      "dependencies_known": true,
+      "local_id": "45",
+      "name": "starlette",
+      "pointer": "/nodes/45"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "tomlkit",
+        "raw_version": "0.13.3",
+        "version": "0.13.3"
+      },
+      "dependencies_known": true,
+      "local_id": "46",
+      "name": "tomlkit",
+      "pointer": "/nodes/46"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "tqdm",
+        "raw_version": "4.70.1",
+        "version": "4.70.1"
+      },
+      "dependencies_known": true,
+      "local_id": "47",
+      "name": "tqdm",
+      "pointer": "/nodes/47"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "truststore",
+        "raw_version": "0.10.5",
+        "version": "0.10.5"
+      },
+      "dependencies_known": true,
+      "local_id": "48",
+      "name": "truststore",
+      "pointer": "/nodes/48"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "typer",
+        "raw_version": "0.27.3",
+        "version": "0.27.3"
+      },
+      "dependencies_known": true,
+      "local_id": "49",
+      "name": "typer",
+      "pointer": "/nodes/49"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "typing-extensions",
+        "raw_version": "4.16.0",
+        "version": "4.16.0"
+      },
+      "dependencies_known": true,
+      "local_id": "50",
+      "name": "typing-extensions",
+      "pointer": "/nodes/50"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "typing-inspection",
+        "raw_version": "0.4.4",
+        "version": "0.4.4"
+      },
+      "dependencies_known": true,
+      "local_id": "51",
+      "name": "typing-inspection",
+      "pointer": "/nodes/51"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "tzdata",
+        "raw_version": "2026.5.0",
+        "version": "2026.5.0"
+      },
+      "dependencies_known": true,
+      "local_id": "52",
+      "name": "tzdata",
+      "pointer": "/nodes/52"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "uvicorn",
+        "raw_version": "0.54.0",
+        "version": "0.54.0"
+      },
+      "dependencies_known": true,
+      "local_id": "53",
+      "name": "uvicorn",
+      "pointer": "/nodes/53"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "websockets",
+        "raw_version": "14.2.0",
+        "version": "14.2.0"
+      },
+      "dependencies_known": true,
+      "local_id": "54",
+      "name": "websockets",
+      "pointer": "/nodes/54"
+    }
+  ],
+  "edges": [
+    {
+      "from_id": "0",
+      "pointer": "/edges/0",
+      "requirement": "<24.0,>=22.0",
+      "to_id": "1"
+    },
+    {
+      "from_id": "0",
+      "pointer": "/edges/1",
+      "requirement": "<5.0,>=3.0",
+      "to_id": "4"
+    },
+    {
+      "from_id": "0",
+      "pointer": "/edges/2",
+      "requirement": "<1.0",
+      "to_id": "5"
+    },
+    {
+      "from_id": "0",
+      "pointer": "/edges/3",
+      "requirement": "<1.0,>=0.115.2",
+      "to_id": "8"
+    },
+    {
+      "from_id": "0",
+      "pointer": "/edges/4",
+      "requirement": "",
+      "to_id": "9"
+    },
+    {
+      "from_id": "0",
+      "pointer": "/edges/5",
+      "requirement": "==1.5.3",
+      "to_id": "12"
+    },
+    {
+      "from_id": "0",
+      "pointer": "/edges/6",
+      "requirement": ">=0.24.1",
+      "to_id": "17"
+    },
+    {
+      "from_id": "0",
+      "pointer": "/edges/7",
+      "requirement": ">=0.25.1",
+      "to_id": "19"
+    },
+    {
+      "from_id": "0",
+      "pointer": "/edges/8",
+      "requirement": "<4.0",
+      "to_id": "21"
+    },
+    {
+      "from_id": "0",
+      "pointer": "/edges/9",
+      "requirement": "~=2.0",
+      "to_id": "23"
+    },
+    {
+      "from_id": "0",
+      "pointer": "/edges/10",
+      "requirement": "<3.0,>=1.0",
+      "to_id": "25"
+    },
+    {
+      "from_id": "0",
+      "pointer": "/edges/11",
+      "requirement": "~=3.0",
+      "to_id": "27"
+    },
+    {
+      "from_id": "0",
+      "pointer": "/edges/12",
+      "requirement": "",
+      "to_id": "28"
+    },
+    {
+      "from_id": "0",
+      "pointer": "/edges/13",
+      "requirement": "<3.0,>=1.0",
+      "to_id": "29"
+    },
+    {
+      "from_id": "0",
+      "pointer": "/edges/14",
+      "requirement": "<12.0,>=8.0",
+      "to_id": "30"
+    },
+    {
+      "from_id": "0",
+      "pointer": "/edges/15",
+      "requirement": ">=2.0",
+      "to_id": "31"
+    },
+    {
+      "from_id": "0",
+      "pointer": "/edges/16",
+      "requirement": "",
+      "to_id": "33"
+    },
+    {
+      "from_id": "0",
+      "pointer": "/edges/17",
+      "requirement": ">=0.0.18",
+      "to_id": "36"
+    },
+    {
+      "from_id": "0",
+      "pointer": "/edges/18",
+      "requirement": "<7.0,>=5.0",
+      "to_id": "38"
+    },
+    {
+      "from_id": "0",
+      "pointer": "/edges/19",
+      "requirement": ">=0.2.2",
+      "to_id": "40"
+    },
+    {
+      "from_id": "0",
+      "pointer": "/edges/20",
+      "requirement": "<0.2.0,>=0.1.6",
+      "to_id": "41"
+    },
+    {
+      "from_id": "0",
+      "pointer": "/edges/21",
+      "requirement": "~=2.0",
+      "to_id": "42"
+    },
+    {
+      "from_id": "0",
+      "pointer": "/edges/22",
+      "requirement": "<1.0,>=0.40.0",
+      "to_id": "45"
+    },
+    {
+      "from_id": "0",
+      "pointer": "/edges/23",
+      "requirement": "<0.14.0,>=0.12.0",
+      "to_id": "46"
+    },
+    {
+      "from_id": "0",
+      "pointer": "/edges/24",
+      "requirement": "<1.0,>=0.12",
+      "to_id": "49"
+    },
+    {
+      "from_id": "0",
+      "pointer": "/edges/25",
+      "requirement": "~=4.0",
+      "to_id": "50"
+    },
+    {
+      "from_id": "0",
+      "pointer": "/edges/26",
+      "requirement": ">=0.14.0",
+      "to_id": "53"
+    },
+    {
+      "from_id": "4",
+      "pointer": "/edges/27",
+      "requirement": ">=2.8",
+      "to_id": "20"
+    },
+    {
+      "from_id": "4",
+      "pointer": "/edges/28",
+      "requirement": ">=4.16.0",
+      "to_id": "50"
+    },
+    {
+      "from_id": "8",
+      "pointer": "/edges/29",
+      "requirement": ">=0.0.2",
+      "to_id": "2"
+    },
+    {
+      "from_id": "8",
+      "pointer": "/edges/30",
+      "requirement": ">=1.44.0",
+      "to_id": "26"
+    },
+    {
+      "from_id": "8",
+      "pointer": "/edges/31",
+      "requirement": ">=2.9.0",
+      "to_id": "31"
+    },
+    {
+      "from_id": "8",
+      "pointer": "/edges/32",
+      "requirement": ">=0.46.0",
+      "to_id": "45"
+    },
+    {
+      "from_id": "8",
+      "pointer": "/edges/33",
+      "requirement": ">=4.8.0",
+      "to_id": "50"
+    },
+    {
+      "from_id": "8",
+      "pointer": "/edges/34",
+      "requirement": ">=0.4.2",
+      "to_id": "51"
+    },
+    {
+      "from_id": "12",
+      "pointer": "/edges/35",
+      "requirement": "",
+      "to_id": "11"
+    },
+    {
+      "from_id": "12",
+      "pointer": "/edges/36",
+      "requirement": ">=0.24.1",
+      "to_id": "17"
+    },
+    {
+      "from_id": "12",
+      "pointer": "/edges/37",
+      "requirement": ">=0.19.3",
+      "to_id": "19"
+    },
+    {
+      "from_id": "12",
+      "pointer": "/edges/38",
+      "requirement": "",
+      "to_id": "28"
+    },
+    {
+      "from_id": "12",
+      "pointer": "/edges/39",
+      "requirement": "~=4.0",
+      "to_id": "50"
+    },
+    {
+      "from_id": "12",
+      "pointer": "/edges/40",
+      "requirement": "<15.0,>=10.0",
+      "to_id": "54"
+    },
+    {
+      "from_id": "15",
+      "pointer": "/edges/41",
+      "requirement": "",
+      "to_id": "6"
+    },
+    {
+      "from_id": "15",
+      "pointer": "/edges/42",
+      "requirement": ">=0.16",
+      "to_id": "13"
+    },
+    {
+      "from_id": "16",
+      "pointer": "/edges/43",
+      "requirement": ">=0.16",
+      "to_id": "13"
+    },
+    {
+      "from_id": "16",
+      "pointer": "/edges/44",
+      "requirement": ">=0.10",
+      "to_id": "48"
+    },
+    {
+      "from_id": "17",
+      "pointer": "/edges/45",
+      "requirement": "",
+      "to_id": "4"
+    },
+    {
+      "from_id": "17",
+      "pointer": "/edges/46",
+      "requirement": "",
+      "to_id": "6"
+    },
+    {
+      "from_id": "17",
+      "pointer": "/edges/47",
+      "requirement": "==1.*",
+      "to_id": "15"
+    },
+    {
+      "from_id": "17",
+      "pointer": "/edges/48",
+      "requirement": "",
+      "to_id": "20"
+    },
+    {
+      "from_id": "18",
+      "pointer": "/edges/49",
+      "requirement": ">=4.10",
+      "to_id": "4"
+    },
+    {
+      "from_id": "18",
+      "pointer": "/edges/50",
+      "requirement": "==2.13.1",
+      "to_id": "16"
+    },
+    {
+      "from_id": "18",
+      "pointer": "/edges/51",
+      "requirement": ">=3.18",
+      "to_id": "20"
+    },
+    {
+      "from_id": "18",
+      "pointer": "/edges/52",
+      "requirement": ">=0.10",
+      "to_id": "48"
+    },
+    {
+      "from_id": "19",
+      "pointer": "/edges/53",
+      "requirement": "<9.0.0,>=8.4.2",
+      "to_id": "7"
+    },
+    {
+      "from_id": "19",
+      "pointer": "/edges/54",
+      "requirement": ">=3.10.0",
+      "to_id": "10"
+    },
+    {
+      "from_id": "19",
+      "pointer": "/edges/55",
+      "requirement": ">=2023.5.0",
+      "to_id": "11"
+    },
+    {
+      "from_id": "19",
+      "pointer": "/edges/56",
+      "requirement": "<2.0.0,>=1.6.0",
+      "to_id": "14"
+    },
+    {
+      "from_id": "19",
+      "pointer": "/edges/57",
+      "requirement": "<3,>=2.0.0",
+      "to_id": "18"
+    },
+    {
+      "from_id": "19",
+      "pointer": "/edges/58",
+      "requirement": ">=20.9",
+      "to_id": "28"
+    },
+    {
+      "from_id": "19",
+      "pointer": "/edges/59",
+      "requirement": ">=5.1",
+      "to_id": "38"
+    },
+    {
+      "from_id": "19",
+      "pointer": "/edges/60",
+      "requirement": ">=4.42.1",
+      "to_id": "47"
+    },
+    {
+      "from_id": "19",
+      "pointer": "/edges/61",
+      "requirement": ">=4.1.0",
+      "to_id": "50"
+    },
+    {
+      "from_id": "21",
+      "pointer": "/edges/62",
+      "requirement": ">=2.0",
+      "to_id": "23"
+    },
+    {
+      "from_id": "22",
+      "pointer": "/edges/63",
+      "requirement": "~=0.1",
+      "to_id": "24"
+    },
+    {
+      "from_id": "26",
+      "pointer": "/edges/64",
+      "requirement": ">=4.5.0",
+      "to_id": "50"
+    },
+    {
+      "from_id": "29",
+      "pointer": "/edges/65",
+      "requirement": ">=1.26.0",
+      "to_id": "25"
+    },
+    {
+      "from_id": "29",
+      "pointer": "/edges/66",
+      "requirement": ">=2.8.2",
+      "to_id": "35"
+    },
+    {
+      "from_id": "29",
+      "pointer": "/edges/67",
+      "requirement": ">=2020.1",
+      "to_id": "37"
+    },
+    {
+      "from_id": "29",
+      "pointer": "/edges/68",
+      "requirement": ">=2022.7",
+      "to_id": "52"
+    },
+    {
+      "from_id": "31",
+      "pointer": "/edges/69",
+      "requirement": ">=0.6.0",
+      "to_id": "3"
+    },
+    {
+      "from_id": "31",
+      "pointer": "/edges/70",
+      "requirement": "==2.50.1",
+      "to_id": "32"
+    },
+    {
+      "from_id": "31",
+      "pointer": "/edges/71",
+      "requirement": ">=4.16.0",
+      "to_id": "50"
+    },
+    {
+      "from_id": "31",
+      "pointer": "/edges/72",
+      "requirement": ">=0.4.4",
+      "to_id": "51"
+    },
+    {
+      "from_id": "32",
+      "pointer": "/edges/73",
+      "requirement": ">=4.16.0",
+      "to_id": "50"
+    },
+    {
+      "from_id": "35",
+      "pointer": "/edges/74",
+      "requirement": ">=1.5",
+      "to_id": "44"
+    },
+    {
+      "from_id": "39",
+      "pointer": "/edges/75",
+      "requirement": ">=2.2.0",
+      "to_id": "22"
+    },
+    {
+      "from_id": "39",
+      "pointer": "/edges/76",
+      "requirement": ">=2.13.0,<3.0.0",
+      "to_id": "34"
+    },
+    {
+      "from_id": "41",
+      "pointer": "/edges/77",
+      "requirement": "",
+      "to_id": "17"
+    },
+    {
+      "from_id": "45",
+      "pointer": "/edges/78",
+      "requirement": "<5,>=3.6.2",
+      "to_id": "4"
+    },
+    {
+      "from_id": "49",
+      "pointer": "/edges/79",
+      "requirement": ">=0.0.2",
+      "to_id": "2"
+    },
+    {
+      "from_id": "49",
+      "pointer": "/edges/80",
+      "requirement": ">=13.8.0",
+      "to_id": "39"
+    },
+    {
+      "from_id": "49",
+      "pointer": "/edges/81",
+      "requirement": ">=1.3.0",
+      "to_id": "43"
+    },
+    {
+      "from_id": "51",
+      "pointer": "/edges/82",
+      "requirement": ">=4.15.0",
+      "to_id": "50"
+    },
+    {
+      "from_id": "53",
+      "pointer": "/edges/83",
+      "requirement": ">=7.0",
+      "to_id": "7"
+    },
+    {
+      "from_id": "53",
+      "pointer": "/edges/84",
+      "requirement": ">=0.8",
+      "to_id": "13"
+    }
+  ],
+  "environment": {
+    "historical_environment": false,
+    "resolution_context": "deps.dev generic Linux"
+  },
+  "issues": [],
+  "project_id": "d56e6cbb-f78c-486e-8c10-48a22aaf3c03",
+  "root_id": "0",
+  "snapshot_id": "cf3510a3ba2b6ea56d5a54fa88a57fbc029d9065828f573cc0d7dea27ee07148",
+  "source": {
+    "digest": "d834554b423f9a2f83add80e0657486bb8fc844500d6382e9cc30b6acf2db684",
+    "observed_at": "2026-10-14T19:26:09.652363+00:00",
+    "parser_version": "raw-v1",
+    "uri": "https://api.deps.dev/v3/systems/pypi/packages/gradio/versions/5.10.0:dependencies"
+  },
+  "source_kind": "public_resolution"
+}

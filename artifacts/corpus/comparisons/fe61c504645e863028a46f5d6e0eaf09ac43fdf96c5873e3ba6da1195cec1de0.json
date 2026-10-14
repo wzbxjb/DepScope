@@ -1,0 +1,250 @@
+{
+  "added_known_matches": 0,
+  "baseline_id": "eba60c6770c4972c4d2eb02126e743e696fbaca1a3c04fedc735cb6b7c521c20",
+  "candidate_id": "7fd5ef51b30fe661d71cf7fad60e21c6c0053be741f7071e8f4dfaa5d294575c",
+  "collection_id": "859504706c264dfb9b55a28e2b8eb154",
+  "diff": {
+    "added": [
+      {
+        "name": "aiohappyeyeballs",
+        "versions": [
+          "2.7.1"
+        ]
+      },
+      {
+        "name": "aiohttp",
+        "versions": [
+          "3.14.5"
+        ]
+      },
+      {
+        "name": "aiosignal",
+        "versions": [
+          "1.4.0"
+        ]
+      },
+      {
+        "name": "annotated-doc",
+        "versions": [
+          "0.0.5"
+        ]
+      },
+      {
+        "name": "anyio",
+        "versions": [
+          "4.15.1"
+        ]
+      },
+      {
+        "name": "attrs",
+        "versions": [
+          "26.1.0"
+        ]
+      },
+      {
+        "name": "fastapi",
+        "versions": [
+          "0.143.0"
+        ]
+      },
+      {
+        "name": "flask-cors",
+        "versions": [
+          "6.0.5"
+        ]
+      },
+      {
+        "name": "frozenlist",
+        "versions": [
+          "1.8.0"
+        ]
+      },
+      {
+        "name": "h11",
+        "versions": [
+          "0.16.0"
+        ]
+      },
+      {
+        "name": "huey",
+        "versions": [
+          "3.4.0"
+        ]
+      },
+      {
+        "name": "mlflow-tracing",
+        "versions": [
+          "3.17.1"
+        ]
+      },
+      {
+        "name": "multidict",
+        "versions": [
+          "7.1.0"
+        ]
+      },
+      {
+        "name": "opentelemetry-proto",
+        "versions": [
+          "1.45.1"
+        ]
+      },
+      {
+        "name": "prettytable",
+        "versions": [
+          "3.18.0"
+        ]
+      },
+      {
+        "name": "propcache",
+        "versions": [
+          "0.5.4"
+        ]
+      },
+      {
+        "name": "python-dotenv",
+        "versions": [
+          "1.2.4"
+        ]
+      },
+      {
+        "name": "skops",
+        "versions": [
+          "0.16.0"
+        ]
+      },
+      {
+        "name": "starlette",
+        "versions": [
+          "1.8.0"
+        ]
+      },
+      {
+        "name": "uvicorn",
+        "versions": [
+          "0.54.0"
+        ]
+      },
+      {
+        "name": "wcwidth",
+        "versions": [
+          "0.9.2"
+        ]
+      },
+      {
+        "name": "yarl",
+        "versions": [
+          "1.25.1"
+        ]
+      }
+    ],
+    "environment_comparable": false,
+    "opaque_after": 0,
+    "opaque_before": 0,
+    "removed": [
+      {
+        "name": "markdown",
+        "versions": [
+          "3.11.1"
+        ]
+      }
+    ],
+    "versions_changed": [
+      {
+        "after": [
+          "7.2.1"
+        ],
+        "before": [
+          "5.5.2"
+        ],
+        "name": "cachetools"
+      },
+      {
+        "after": [
+          "26.2.0"
+        ],
+        "before": [
+          "23.0.0"
+        ],
+        "name": "gunicorn"
+      },
+      {
+        "after": [
+          "9.0.1"
+        ],
+        "before": [
+          "8.9.0"
+        ],
+        "name": "importlib-metadata"
+      },
+      {
+        "after": [
+          "3.17.1"
+        ],
+        "before": [
+          "2.20.0"
+        ],
+        "name": "mlflow"
+      },
+      {
+        "after": [
+          "3.17.1"
+        ],
+        "before": [
+          "2.20.0"
+        ],
+        "name": "mlflow-skinny"
+      },
+      {
+        "after": [
+          "26.3.0"
+        ],
+        "before": [
+          "24.2.0"
+        ],
+        "name": "packaging"
+      },
+      {
+        "after": [
+          "3.1.0rc0"
+        ],
+        "before": [
+          "3.0.0rc2"
+        ],
+        "name": "pandas"
+      },
+      {
+        "after": [
+          "6.33.6"
+        ],
+        "before": [
+          "5.29.6"
+        ],
+        "name": "protobuf"
+      },
+      {
+        "after": [
+          "25.0.1"
+        ],
+        "before": [
+          "18.1.0"
+        ],
+        "name": "pyarrow"
+      }
+    ]
+  },
+  "id": "fe61c504645e863028a46f5d6e0eaf09ac43fdf96c5873e3ba6da1195cec1de0",
+  "level": "metadata_comparison",
+  "limitations": [
+    "Current public resolutions; no verified installation or historical deployed environment."
+  ],
+  "observed_at": "2026-10-14T19:26:34.572763+00:00",
+  "remaining_known_matches": 0,
+  "removed_known_matches": 31,
+  "run_ids": [
+    "eba4ad88-b38a-4131-ac6c-827a04ae8c8b",
+    "5f4ec5c6-fa52-45e6-bf39-12e76f0f1dc8"
+  ],
+  "unknown": 0,
+  "verification_id": null
+}

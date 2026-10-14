@@ -1,0 +1,175 @@
+{
+  "added_known_matches": 0,
+  "baseline_id": "8a331dcfc95843471f5d84f026adc94c9f2ca2d8ac97390e2518205d8ee607fb",
+  "candidate_id": "5728ad280e87194c27f5dc2b076d08039ca637219d726e80328155375d52ad82",
+  "collection_id": "859504706c264dfb9b55a28e2b8eb154",
+  "diff": {
+    "added": [
+      {
+        "name": "annotated-doc",
+        "versions": [
+          "0.0.5"
+        ]
+      },
+      {
+        "name": "anyio",
+        "versions": [
+          "4.15.1"
+        ]
+      },
+      {
+        "name": "h11",
+        "versions": [
+          "0.16.0"
+        ]
+      },
+      {
+        "name": "httpcore",
+        "versions": [
+          "1.0.9"
+        ]
+      },
+      {
+        "name": "httpx",
+        "versions": [
+          "0.28.1"
+        ]
+      },
+      {
+        "name": "markdown-it-py",
+        "versions": [
+          "4.2.0"
+        ]
+      },
+      {
+        "name": "mdurl",
+        "versions": [
+          "0.1.2"
+        ]
+      },
+      {
+        "name": "pygments",
+        "versions": [
+          "2.21.0"
+        ]
+      },
+      {
+        "name": "rich",
+        "versions": [
+          "15.0.0"
+        ]
+      },
+      {
+        "name": "shellingham",
+        "versions": [
+          "1.5.4"
+        ]
+      },
+      {
+        "name": "typer",
+        "versions": [
+          "0.27.3"
+        ]
+      }
+    ],
+    "environment_comparable": false,
+    "opaque_after": 0,
+    "opaque_before": 0,
+    "removed": [
+      {
+        "name": "charset-normalizer",
+        "versions": [
+          "3.5.2"
+        ]
+      },
+      {
+        "name": "defusedxml",
+        "versions": [
+          "0.7.1"
+        ]
+      },
+      {
+        "name": "nltk",
+        "versions": [
+          "3.10.3"
+        ]
+      },
+      {
+        "name": "pillow",
+        "versions": [
+          "12.3.0"
+        ]
+      },
+      {
+        "name": "requests",
+        "versions": [
+          "2.34.2"
+        ]
+      },
+      {
+        "name": "sentencepiece",
+        "versions": [
+          "0.2.2"
+        ]
+      },
+      {
+        "name": "urllib3",
+        "versions": [
+          "2.8.0"
+        ]
+      }
+    ],
+    "versions_changed": [
+      {
+        "after": [
+          "1.33.0"
+        ],
+        "before": [
+          "0.36.2"
+        ],
+        "name": "huggingface-hub"
+      },
+      {
+        "after": [
+          "6.1.0"
+        ],
+        "before": [
+          "2.3.0"
+        ],
+        "name": "sentence-transformers"
+      },
+      {
+        "after": [
+          "0.23.3"
+        ],
+        "before": [
+          "0.22.2"
+        ],
+        "name": "tokenizers"
+      },
+      {
+        "after": [
+          "5.19.0"
+        ],
+        "before": [
+          "4.57.6"
+        ],
+        "name": "transformers"
+      }
+    ]
+  },
+  "id": "98092e2f841e1152651a6a1dd68261f9101f909f4094deefe191f574bc327941",
+  "level": "metadata_comparison",
+  "limitations": [
+    "Current public resolutions; no verified installation or historical deployed environment."
+  ],
+  "observed_at": "2026-10-14T19:26:34.570069+00:00",
+  "remaining_known_matches": 0,
+  "removed_known_matches": 8,
+  "run_ids": [
+    "dd7f83ae-e769-4b71-ba75-f8326ce6c357",
+    "09d423b7-42fe-4d7b-bca6-18f6a689e2ad"
+  ],
+  "unknown": 0,
+  "verification_id": null
+}

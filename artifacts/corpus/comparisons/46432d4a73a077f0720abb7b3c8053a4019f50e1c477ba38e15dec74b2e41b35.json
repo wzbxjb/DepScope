@@ -1,0 +1,90 @@
+{
+  "added_known_matches": 0,
+  "baseline_id": "0cc10fa856172c618eaaa41cf81b5a67597932af18f2b351c4f0de2901fc358c",
+  "candidate_id": "5703402a4a4561897138fa5ef95d1df1cae574cea54f0eef0985baa02926ae2a",
+  "collection_id": "859504706c264dfb9b55a28e2b8eb154",
+  "diff": {
+    "added": [],
+    "environment_comparable": false,
+    "opaque_after": 0,
+    "opaque_before": 0,
+    "removed": [
+      {
+        "name": "certifi",
+        "versions": [
+          "2026.7.22"
+        ]
+      },
+      {
+        "name": "charset-normalizer",
+        "versions": [
+          "3.5.2"
+        ]
+      },
+      {
+        "name": "requests",
+        "versions": [
+          "2.34.2"
+        ]
+      },
+      {
+        "name": "urllib3",
+        "versions": [
+          "2.8.0"
+        ]
+      }
+    ],
+    "versions_changed": [
+      {
+        "after": [
+          "5.1.0"
+        ],
+        "before": [
+          "3.3.0"
+        ],
+        "name": "datasets"
+      },
+      {
+        "after": [
+          "0.4.1"
+        ],
+        "before": [
+          "0.3.8"
+        ],
+        "name": "dill"
+      },
+      {
+        "after": [
+          "2026.7.0"
+        ],
+        "before": [
+          "2024.12.0"
+        ],
+        "name": "fsspec"
+      },
+      {
+        "after": [
+          "0.70.19"
+        ],
+        "before": [
+          "0.70.16"
+        ],
+        "name": "multiprocess"
+      }
+    ]
+  },
+  "id": "46432d4a73a077f0720abb7b3c8053a4019f50e1c477ba38e15dec74b2e41b35",
+  "level": "metadata_comparison",
+  "limitations": [
+    "Current public resolutions; no verified installation or historical deployed environment."
+  ],
+  "observed_at": "2026-10-14T19:26:34.570784+00:00",
+  "remaining_known_matches": 0,
+  "removed_known_matches": 2,
+  "run_ids": [
+    "bd1cfec3-c000-4152-ad52-ab21c90fe1bc",
+    "b783ea79-ae4d-4255-a28a-6d4c67d67822"
+  ],
+  "unknown": 0,
+  "verification_id": null
+}

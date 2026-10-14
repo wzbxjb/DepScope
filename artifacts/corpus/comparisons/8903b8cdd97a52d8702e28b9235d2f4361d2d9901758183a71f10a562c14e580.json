@@ -1,0 +1,96 @@
+{
+  "added_known_matches": 0,
+  "baseline_id": "7c780db9a6a4d7b89724ce06e29f6f1cd4a3e80ffd1b001a0f717583928cc420",
+  "candidate_id": "bce88bb2a64f2872cf1a99fcd11a931c92f5c9f480afd8603596b6ad9649ca51",
+  "collection_id": "859504706c264dfb9b55a28e2b8eb154",
+  "diff": {
+    "added": [
+      {
+        "name": "langchain-protocol",
+        "versions": [
+          "0.0.19"
+        ]
+      },
+      {
+        "name": "langgraph-prebuilt",
+        "versions": [
+          "1.1.0"
+        ]
+      }
+    ],
+    "environment_comparable": false,
+    "opaque_after": 0,
+    "opaque_before": 0,
+    "removed": [],
+    "versions_changed": [
+      {
+        "after": [
+          "1.6.10"
+        ],
+        "before": [
+          "0.3.86"
+        ],
+        "name": "langchain-core"
+      },
+      {
+        "after": [
+          "1.2.15"
+        ],
+        "before": [
+          "0.2.61"
+        ],
+        "name": "langgraph"
+      },
+      {
+        "after": [
+          "4.3.0"
+        ],
+        "before": [
+          "2.1.2"
+        ],
+        "name": "langgraph-checkpoint"
+      },
+      {
+        "after": [
+          "0.4.7"
+        ],
+        "before": [
+          "0.1.74"
+        ],
+        "name": "langgraph-sdk"
+      },
+      {
+        "after": [
+          "26.3.0"
+        ],
+        "before": [
+          "25.0.0"
+        ],
+        "name": "packaging"
+      },
+      {
+        "after": [
+          "16.1.1"
+        ],
+        "before": [
+          "17.2.0"
+        ],
+        "name": "websockets"
+      }
+    ]
+  },
+  "id": "8903b8cdd97a52d8702e28b9235d2f4361d2d9901758183a71f10a562c14e580",
+  "level": "metadata_comparison",
+  "limitations": [
+    "Current public resolutions; no verified installation or historical deployed environment."
+  ],
+  "observed_at": "2026-10-14T19:26:34.568517+00:00",
+  "remaining_known_matches": 0,
+  "removed_known_matches": 9,
+  "run_ids": [
+    "908ac41d-0186-450a-bd1f-a0f077f0a499",
+    "441456fa-f615-49b6-8347-96396e088d6b"
+  ],
+  "unknown": 0,
+  "verification_id": null
+}

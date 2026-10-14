@@ -1,0 +1,106 @@
+{
+  "added_known_matches": 0,
+  "baseline_id": "0e055369c30f1bd204e3117eb51266c6abe418f7f0c21664f71ca20433fb8b6b",
+  "candidate_id": "fd70b0ca4d90e3806ae3d0b6030ad7aedd8fb6efdda50ef0ce41e0427a48f267",
+  "collection_id": "859504706c264dfb9b55a28e2b8eb154",
+  "diff": {
+    "added": [
+      {
+        "name": "anyio",
+        "versions": [
+          "4.15.1"
+        ]
+      },
+      {
+        "name": "click",
+        "versions": [
+          "8.5.0"
+        ]
+      },
+      {
+        "name": "h11",
+        "versions": [
+          "0.16.0"
+        ]
+      },
+      {
+        "name": "hf-xet",
+        "versions": [
+          "1.7.0"
+        ]
+      },
+      {
+        "name": "httpcore2",
+        "versions": [
+          "2.13.1"
+        ]
+      },
+      {
+        "name": "httpx2",
+        "versions": [
+          "2.13.1"
+        ]
+      },
+      {
+        "name": "truststore",
+        "versions": [
+          "0.10.5"
+        ]
+      }
+    ],
+    "environment_comparable": false,
+    "opaque_after": 0,
+    "opaque_before": 0,
+    "removed": [
+      {
+        "name": "certifi",
+        "versions": [
+          "2026.7.22"
+        ]
+      },
+      {
+        "name": "charset-normalizer",
+        "versions": [
+          "3.5.2"
+        ]
+      },
+      {
+        "name": "requests",
+        "versions": [
+          "2.34.2"
+        ]
+      },
+      {
+        "name": "urllib3",
+        "versions": [
+          "2.8.0"
+        ]
+      }
+    ],
+    "versions_changed": [
+      {
+        "after": [
+          "2.2.0"
+        ],
+        "before": [
+          "0.27.1"
+        ],
+        "name": "huggingface-hub"
+      }
+    ]
+  },
+  "id": "ed98a6cb241abf91d676b2538f2300edcbd24e32b0b77f3fd1ec8973c9c67680",
+  "level": "metadata_comparison",
+  "limitations": [
+    "Current public resolutions; no verified installation or historical deployed environment."
+  ],
+  "observed_at": "2026-10-14T19:26:34.570875+00:00",
+  "remaining_known_matches": 0,
+  "removed_known_matches": 0,
+  "run_ids": [
+    "9c3317e5-5562-49c9-b264-c84d18caa9d5",
+    "9184a53d-9f07-4410-8fa4-0325a4a67040"
+  ],
+  "unknown": 0,
+  "verification_id": null
+}

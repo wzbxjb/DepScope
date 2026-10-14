@@ -1,0 +1,139 @@
+{
+  "edges": 44,
+  "environment": {
+    "architecture": "arm64",
+    "extras": [],
+    "marker_environment": {
+      "implementation_name": "cpython",
+      "implementation_version": "3.11.5",
+      "os_name": "posix",
+      "platform_machine": "arm64",
+      "platform_python_implementation": "CPython",
+      "platform_release": "25.6.0",
+      "platform_system": "Darwin",
+      "platform_version": "Darwin Kernel Version 25.6.0: Fri Jul 31 19:18:49 PDT 2026; root:xnu-12377.161.14~5/RELEASE_ARM64_T6000",
+      "python_full_version": "3.11.5",
+      "python_version": "3.11",
+      "sys_platform": "darwin"
+    },
+    "os": "Darwin",
+    "private_application_root": true,
+    "python_version": "3.11.5"
+  },
+  "instances": 30,
+  "normalization_audit": {
+    "application_source_proven": true,
+    "independently_checked_edges": 44,
+    "independently_checked_nodes": 30,
+    "merged_distribution_ref": "depscope==0.1.0",
+    "selected_extras": {
+      "annotated-doc": [],
+      "annotated-types": [],
+      "anyio": [],
+      "attrs": [],
+      "certifi": [],
+      "click": [],
+      "depscope": [],
+      "fastapi": [],
+      "h11": [],
+      "httpcore": [],
+      "httpx": [],
+      "idna": [],
+      "jsonschema": [],
+      "jsonschema-specifications": [],
+      "neo4j": [],
+      "opentelemetry-api": [],
+      "packageurl-python": [],
+      "packaging": [],
+      "pip": [],
+      "pydantic": [],
+      "pydantic-core": [],
+      "python-dotenv": [],
+      "pytz": [],
+      "referencing": [],
+      "rpds-py": [],
+      "setuptools": [],
+      "starlette": [],
+      "typing-extensions": [],
+      "typing-inspection": [],
+      "uvicorn": []
+    },
+    "tool_extra_edges": [
+      [
+        "fastapi==0.143.0",
+        "httpx==0.28.1"
+      ],
+      [
+        "fastapi==0.143.0",
+        "uvicorn==0.54.0"
+      ],
+      [
+        "httpcore==1.0.9",
+        "anyio==4.15.1"
+      ],
+      [
+        "httpx==0.28.1",
+        "click==8.5.0"
+      ],
+      [
+        "jsonschema==4.26.0",
+        "idna==3.20"
+      ],
+      [
+        "packageurl-python==0.17.6",
+        "setuptools==65.5.0"
+      ],
+      [
+        "python-dotenv==1.2.4",
+        "click==8.5.0"
+      ],
+      [
+        "setuptools==65.5.0",
+        "pip==23.2.1"
+      ],
+      [
+        "starlette==1.8.0",
+        "httpx==0.28.1"
+      ],
+      [
+        "starlette==1.8.0",
+        "opentelemetry-api==1.45.1"
+      ],
+      [
+        "uvicorn==0.54.0",
+        "python-dotenv==1.2.4"
+      ],
+      [
+        "uvicorn==0.54.0",
+        "typing_extensions==4.16.0"
+      ]
+    ],
+    "tool_missing_edges": []
+  },
+  "project_id": "fb19f3c5-cd34-4b51-b682-1f3d57857e7c",
+  "resolution_exit_code": 0,
+  "sbom_tool_exit_code": 0,
+  "self_observation_verification_level": "tests_verified",
+  "snapshot_id": "049940464f2dd7299b68321cda3d6cd9fbb035189b2f0c8af1f945e94aa0974b",
+  "source_hashes": {
+    "application-source-manifest.json": "0efca850cd540a1d9a299f2e168c4daae62f11df26a12340ee537361264862bc",
+    "constraints.json": "ebdc77f566cf8e2a5b8511eb6509cf8a6f07d6e446a1547287a3372a1312a516",
+    "environment-capture.json": "23ccfe447bc44b7e8fc33342df6c17cef381758526f86ddc22f354a863b25717",
+    "environment.cdx.json": "c05107f1f7ba9a6e4f310f8ddd829e7584f34a9a6e947b8a39caefd27fcfcd0b",
+    "environment.json": "def955b5d9cd0179a54cb16cd9123b3ced33a7f887c630724ddaa1757adc9bdd",
+    "normalization-audit.json": "333c6fef0b6ac79cc792520d24e889c2b17b1be6df14f21ed9a86e4878c8ad16",
+    "original-sbom": "ce8b783c799fc8185eeee800e1209059ebbe955885a8144325d868cd257d54d2",
+    "pip-check.log": "9261363b733079a641c2e4cc9bc46ffa1d8336945a87f807b6cf68847dbc9b09",
+    "pip-inspect.json": "33acc7f4d3c354b1fa9479cce3ba91474e6411ffbad1479d37770ead6151b562",
+    "pyproject.toml": "35611470f8c5a780613331a4762069bc55678ade0c056e50f72f91928916dec3",
+    "pytest.log": "991900424ca88d7d9e5c0347e178c39d46c07bd239d1d99dbf07f82ed1571dd3",
+    "requirements-runtime.lock": "34d2cfdc7872c92c114314c6fbf704abf5065cebd89bd1a7335ba5dddd7701bd",
+    "resolution-result.json": "9f0ce521fbc6154f6d636fc9edd4d009d1ec6ef874fa8668ed3d09f6751c4365",
+    "sbom-tool.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "test-result.json": "5570dd7d035292e5fd0c25806f4bf8d1df59dc8c2b3c69063803579aa91a1c6a"
+  },
+  "source_kind": "observed_environment",
+  "test_exit_code": 0,
+  "upgrade_executed": false,
+  "verification_id": "5e1989a49e95490fd2aedb5b02b5fdd7ebe960ddfbaf1386fb494f431a0cf1cc"
+}

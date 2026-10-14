@@ -1,0 +1,232 @@
+{
+  "added_known_matches": 0,
+  "baseline_id": "05989409d18cebef7971179c57f0ef8af69afe462932f633f4a2ebd845daee41",
+  "candidate_id": "517492ad824ddead14450034dbe7ae602e65945dfba14a6d2adb8f81bf2ffa74",
+  "collection_id": "859504706c264dfb9b55a28e2b8eb154",
+  "diff": {
+    "added": [
+      {
+        "name": "audioop-lts",
+        "versions": [
+          "0.2.2"
+        ]
+      },
+      {
+        "name": "brotli",
+        "versions": [
+          "1.2.0"
+        ]
+      },
+      {
+        "name": "groovy",
+        "versions": [
+          "0.1.2"
+        ]
+      },
+      {
+        "name": "hf-gradio",
+        "versions": [
+          "0.4.1"
+        ]
+      },
+      {
+        "name": "safehttpx",
+        "versions": [
+          "0.1.7"
+        ]
+      }
+    ],
+    "environment_comparable": false,
+    "opaque_after": 0,
+    "opaque_before": 0,
+    "removed": [
+      {
+        "name": "aiofiles",
+        "versions": [
+          "23.2.1"
+        ]
+      },
+      {
+        "name": "altair",
+        "versions": [
+          "5.5.0"
+        ]
+      },
+      {
+        "name": "attrs",
+        "versions": [
+          "26.1.0"
+        ]
+      },
+      {
+        "name": "contourpy",
+        "versions": [
+          "1.3.3"
+        ]
+      },
+      {
+        "name": "cycler",
+        "versions": [
+          "0.12.1"
+        ]
+      },
+      {
+        "name": "ffmpy",
+        "versions": [
+          "1.0.0"
+        ]
+      },
+      {
+        "name": "fonttools",
+        "versions": [
+          "4.66.1"
+        ]
+      },
+      {
+        "name": "importlib-resources",
+        "versions": [
+          "6.5.2"
+        ]
+      },
+      {
+        "name": "jsonschema",
+        "versions": [
+          "4.26.0"
+        ]
+      },
+      {
+        "name": "jsonschema-specifications",
+        "versions": [
+          "2025.9.1"
+        ]
+      },
+      {
+        "name": "kiwisolver",
+        "versions": [
+          "1.5.1"
+        ]
+      },
+      {
+        "name": "matplotlib",
+        "versions": [
+          "3.11.2"
+        ]
+      },
+      {
+        "name": "narwhals",
+        "versions": [
+          "2.27.1"
+        ]
+      },
+      {
+        "name": "pyparsing",
+        "versions": [
+          "3.3.3"
+        ]
+      },
+      {
+        "name": "referencing",
+        "versions": [
+          "0.37.0"
+        ]
+      },
+      {
+        "name": "rpds-py",
+        "versions": [
+          "2026.9.1"
+        ]
+      },
+      {
+        "name": "tzdata",
+        "versions": [
+          "2026.5.0"
+        ]
+      },
+      {
+        "name": "websockets",
+        "versions": [
+          "11.0.3"
+        ]
+      }
+    ],
+    "versions_changed": [
+      {
+        "after": [
+          "6.30.0"
+        ],
+        "before": [
+          "4.13.0"
+        ],
+        "name": "gradio"
+      },
+      {
+        "after": [
+          "2.7.2"
+        ],
+        "before": [
+          "0.8.0"
+        ],
+        "name": "gradio-client"
+      },
+      {
+        "after": [
+          "3.0.4"
+        ],
+        "before": [
+          "2.1.5"
+        ],
+        "name": "markupsafe"
+      },
+      {
+        "after": [
+          "2.5.4"
+        ],
+        "before": [
+          "1.26.4"
+        ],
+        "name": "numpy"
+      },
+      {
+        "after": [
+          "3.0.6"
+        ],
+        "before": [
+          "2.3.3"
+        ],
+        "name": "pandas"
+      },
+      {
+        "after": [
+          "12.3.0"
+        ],
+        "before": [
+          "10.4.0"
+        ],
+        "name": "pillow"
+      },
+      {
+        "after": [
+          "0.14.0"
+        ],
+        "before": [
+          "0.12.0"
+        ],
+        "name": "tomlkit"
+      }
+    ]
+  },
+  "id": "6653f0ec01777aa63e7ad12dc94c47ff37bd83cd0104deba3b83b0607a383bdb",
+  "level": "metadata_comparison",
+  "limitations": [
+    "Current public resolutions; no verified installation or historical deployed environment."
+  ],
+  "observed_at": "2026-10-14T19:26:34.574506+00:00",
+  "remaining_known_matches": 0,
+  "removed_known_matches": 55,
+  "run_ids": [
+    "ef1a6483-bed1-4202-a6d2-0e21fa6bf706",
+    "73c306d8-4880-4a40-83f3-900b1875bbcd"
+  ],
+  "unknown": 0,
+  "verification_id": null
+}

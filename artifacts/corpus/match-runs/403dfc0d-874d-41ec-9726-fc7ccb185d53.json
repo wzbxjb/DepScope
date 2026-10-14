@@ -1,0 +1,1869 @@
+{
+  "collection_id": "859504706c264dfb9b55a28e2b8eb154",
+  "coverage": {
+    "active_findings": 34,
+    "confirmed": 55,
+    "opaque_instances": 0,
+    "raw_matched_records": 66,
+    "total": 55,
+    "total_instances": 55,
+    "unknown": 0
+  },
+  "findings": [
+    {
+      "group_id": "7903aedaec9202ef61a36618464ecc2f3c4f6b790ba0fb8cb52ffa34fd55d784",
+      "id": "d3ac2850db59e90c86a038dd225bbb12cd430bdf099f4752e3109fb5901d991a",
+      "instance_id": "b9d64ddc141454209fad38e8690391d2970f79a49bc97c5b7061625da6ff3ac9",
+      "revision_ids": [
+        "0722e228bf50c053d1151fbae642084be99fd8990f57c4e29d5277a327e73088",
+        "a0e71c56baba25ec4fb76754eca72a4fb97c82f4f2e7f6dc4106db55c7d45b09"
+      ],
+      "status": "known_match"
+    },
+    {
+      "group_id": "0f26dc01cd7a8dee4f51acd7380e284fc311271a2872158c830963d601560419",
+      "id": "991d38ddd4ccd615a86e95f03f2d9e72d4c5d319110cec9290ff4cbb2f151461",
+      "instance_id": "b9d64ddc141454209fad38e8690391d2970f79a49bc97c5b7061625da6ff3ac9",
+      "revision_ids": [
+        "0a57e82ed81f3ae951cb8694b9b3d4dcca1266bc2def3ba1e5ac352b01b41bce",
+        "0ede1e3b875eca8d4c19c545de24d8a44b16100b52ef2378aef3391418349523"
+      ],
+      "status": "known_match"
+    },
+    {
+      "group_id": "38ba2c4bbb7b65aeeef90bf5c330d582250ea05140d222af74c40238edb71d09",
+      "id": "9a8c232cda4e1b4c16409a817aaab753af80c2b872bfe78f8f1f6ad07dd9f5c2",
+      "instance_id": "b9d64ddc141454209fad38e8690391d2970f79a49bc97c5b7061625da6ff3ac9",
+      "revision_ids": [
+        "303c4294242bd06a0888a66ccc42129a6b5afa954080339fac45373b66956fa1",
+        "47708aeebca412be58a6c8fa89144eeecb67e3e5d7bb39c8c5be7392f68d1470"
+      ],
+      "status": "known_match"
+    },
+    {
+      "group_id": "16c190c59fc36011dec0d90adf0713a204393a278298a9ff257228fa0ef52822",
+      "id": "f3ed190fa8e7d8a1edf72950e7f503daa0bf66c3b4310ad41dd756178f698639",
+      "instance_id": "b9d64ddc141454209fad38e8690391d2970f79a49bc97c5b7061625da6ff3ac9",
+      "revision_ids": [
+        "6e495d7d7b8774a28099f4a275c92cef6f422fea104447182ef50ed1f697eeb0",
+        "ccc2d89f113689183b5085ea1fda9e8aa213131a4d78efbaf2d8e3399a888886"
+      ],
+      "status": "known_match"
+    },
+    {
+      "group_id": "ce181885863f113139f1ef9a45d1ef154c86ecd2a34e5ec3fdd8e659a5333f86",
+      "id": "6b5ccbabdf3b638a980fde644347e7f25f3276d384c8e1c4ea1db0e534ff8981",
+      "instance_id": "b9d64ddc141454209fad38e8690391d2970f79a49bc97c5b7061625da6ff3ac9",
+      "revision_ids": [
+        "f2e037a0121e99eb052df54c53c1df1c78684a07c0334bd564ad845e2303ab59"
+      ],
+      "status": "known_match"
+    },
+    {
+      "group_id": "63c2e291ae09c118531d1098c170eb27b5dde8dd207cf2c339dc38e65707fbce",
+      "id": "ae9a46e84854dbe4e9d7c43dbd935f69d1f43d9ceb7b65b613c818b67a3f8cab",
+      "instance_id": "b9d64ddc141454209fad38e8690391d2970f79a49bc97c5b7061625da6ff3ac9",
+      "revision_ids": [
+        "722b907f67bccabe5b889c3cfa8d3c02f0a3c626f62681ae6df06c71ab1670dc",
+        "c5cc4aa39c3429b5a70e9ae66a4af008cff2906cb7ecb4325cc8a6d7e12c05ca"
+      ],
+      "status": "known_match"
+    },
+    {
+      "group_id": "cbb849e0692f43c925dfcce22663cb8d2db8f709ed0c8dbde992904216f16112",
+      "id": "8aee121e48295f788de3dd66cd7f7c0c8f152032157ad61d88b523f12291290f",
+      "instance_id": "b9d64ddc141454209fad38e8690391d2970f79a49bc97c5b7061625da6ff3ac9",
+      "revision_ids": [
+        "2b8a773b71eb7054d7cac297caaec315317b04eab3945415b2444e43c45dc734"
+      ],
+      "status": "known_match"
+    },
+    {
+      "group_id": "28152a1673e2d75a165f6fae421468b349cd3db31200c7750011eb194473993d",
+      "id": "d128725091d5122025455be658b17d490bcff58276a11ac2717906986c5de7d7",
+      "instance_id": "b9d64ddc141454209fad38e8690391d2970f79a49bc97c5b7061625da6ff3ac9",
+      "revision_ids": [
+        "b2955e713c5b8b93bef515327eb903c6b7e9af257fb295e1c6c3598ab1626198",
+        "cb09d7bd93227510fcfac83bb532258bf2380c7ede0da1102bc634167a7748e8"
+      ],
+      "status": "known_match"
+    },
+    {
+      "group_id": "f044949218d8410c42f18439357c61d7cfda1925f4b2ea0486879971a9192fe9",
+      "id": "44f49f67d59013b369d28cf54b86ff921112e4156bb427b4a3c740bb58c0a1cd",
+      "instance_id": "b9d64ddc141454209fad38e8690391d2970f79a49bc97c5b7061625da6ff3ac9",
+      "revision_ids": [
+        "1e62d0e08ce6085e76f8fe3e08c1785fb4159ae7c528511d9c5cc4b954350967",
+        "ba8256d39767ea31e01c62b71007d3565d263913bfacc74822fb56e630692308"
+      ],
+      "status": "known_match"
+    },
+    {
+      "group_id": "d300979db66617deed973e05ac5588282a76263945755c781ecfaf04b05c62cd",
+      "id": "68aed4b4fa576e34de8cd63da596e44366d509223f7d0666f7794f265bcb6b71",
+      "instance_id": "b9d64ddc141454209fad38e8690391d2970f79a49bc97c5b7061625da6ff3ac9",
+      "revision_ids": [
+        "8e836821ff9f87a2db8398dc843c5796ffab1a660760262c5ced1395967a4e94",
+        "bb1d062fde5abce3d8dfa1871b5a0888eae23fa8a66a4a0aaa48a087a6daa7b7"
+      ],
+      "status": "known_match"
+    },
+    {
+      "group_id": "1d924e90813cbdf5a613d5cd764228cae66d730f65d0523987a954004948a374",
+      "id": "4be233557bbe51b1cb4be653be8ac5f7735a281a36038637d0fb6748bb3b8eca",
+      "instance_id": "b9d64ddc141454209fad38e8690391d2970f79a49bc97c5b7061625da6ff3ac9",
+      "revision_ids": [
+        "045ba46be2e577400ac27b428c852ef057c26d8d39d90251dbfe3a3cdf562429",
+        "84768165ff34c3a466874734d45f0ebd3eeb36cc4b036ea212c3970d15b275ad"
+      ],
+      "status": "known_match"
+    },
+    {
+      "group_id": "0178fe7e13b8a1a3f6c9a45388a23312f27fdafe392ab40bd3e5e160dd424048",
+      "id": "7dd6ffb4e4e621842ea82f73d89f5cbedfa27c643c0d5ab685ea491b5a33c408",
+      "instance_id": "af05c33ed74e2e2c77c0413d6306e3fded4e8c743e8adf011f7b93c1997e1566",
+      "revision_ids": [
+        "0d4be2d1a0b6019eec94ca88d55fd922e142cc5e4c472caa16ad5d4d6ffada5c",
+        "220a8c338cb07b1d068723c0fa1910cef5dc82d5d2409568b4fcada86bc6a1f0"
+      ],
+      "status": "known_match"
+    },
+    {
+      "group_id": "36af482ad8e888ddc4d9f5b3be286200a41f8e881dfd1acd74e4985086898c3a",
+      "id": "d7be99f661cd8b01d179451736ebcd851086c4a3a728aef999694ff8b62fdd96",
+      "instance_id": "af05c33ed74e2e2c77c0413d6306e3fded4e8c743e8adf011f7b93c1997e1566",
+      "revision_ids": [
+        "9ab0b8d9155402f4357b76b0c8f070f739101e1cec7cf6bced007485fbc6ca01",
+        "e572866108e749ac61b07c16573b49a0ced2ee7ba7b6d812da1cbb17b3728584"
+      ],
+      "status": "known_match"
+    },
+    {
+      "group_id": "12de0adad5d22f13a08e22e5f20f4de3e58a78bebe5f19d6f05af15dcdd3aa22",
+      "id": "a28e706ed1c2158ce256fac1e98dee32cfa26868edc691541c629968ba4e08e8",
+      "instance_id": "af05c33ed74e2e2c77c0413d6306e3fded4e8c743e8adf011f7b93c1997e1566",
+      "revision_ids": [
+        "88c6b2e413024a7d40977a694b7f4227fa970467526ea69eed9bc00f89786c57",
+        "df3e2efb5ebbb81c6dab3f3ae1c962e954f5da905064ca328b2c85dd603f8cfe"
+      ],
+      "status": "known_match"
+    },
+    {
+      "group_id": "4798d783c3576e270173ac6460778f5cd009a50c780fc8150776227b9e4c3ee3",
+      "id": "a5050b06f3b0738f4fc68bf8c34be46cab41d420ab3b5e449adffbec019ca804",
+      "instance_id": "af05c33ed74e2e2c77c0413d6306e3fded4e8c743e8adf011f7b93c1997e1566",
+      "revision_ids": [
+        "68225797272b680ce027a15a149a60e6fc5b7cadc9214b8743266485906cbe23",
+        "ffaa60d883480e5aaa8e95a6ac4c6920a815c6130a89bfc9dd77b2c00ae9622d"
+      ],
+      "status": "known_match"
+    },
+    {
+      "group_id": "2ffccb1f91c07e245ea4ff268db23a185ffb42052f91c7664ebe0af5893d1e84",
+      "id": "95cd0b8a0d3a2b7524b5b58e0324feb04792a7e2cbb971d8125574b8e6a6cf2e",
+      "instance_id": "af05c33ed74e2e2c77c0413d6306e3fded4e8c743e8adf011f7b93c1997e1566",
+      "revision_ids": [
+        "279f9a748601c51c56b40b139908918058c87c11f7b6519dd9eca198c10e6cfd",
+        "8fc64751254ba9bbe452d11d7711abe664ce9b245c0c10d843141c442c3dee34"
+      ],
+      "status": "known_match"
+    },
+    {
+      "group_id": "1ac4a183293a29be2dfed32b75ed9eccda9264879c65e7c2e36e2cfe278bf1b0",
+      "id": "249c67ff90268c7e67330497a9267957d44c9ed43e95017257c4e70b9755a2c5",
+      "instance_id": "af05c33ed74e2e2c77c0413d6306e3fded4e8c743e8adf011f7b93c1997e1566",
+      "revision_ids": [
+        "3fe4f9fea2f75d4f9df36059bfee25a511e9f4d4c656b8402cad63bd29774a4c",
+        "adb627ec97413c4c302fdd16df4dc0919085eecb73d98a27ecc3cb1797b7d89a"
+      ],
+      "status": "known_match"
+    },
+    {
+      "group_id": "a520cef1c7dfa6e1ab2a70317290fc26d07b4c7799402abecfa70ad98665f5fa",
+      "id": "4a86aa38039697ed33eae6bca474368ad706c589b7406dff04c11d720ab8ea25",
+      "instance_id": "af05c33ed74e2e2c77c0413d6306e3fded4e8c743e8adf011f7b93c1997e1566",
+      "revision_ids": [
+        "04521b8c7b27e76f625c1e66e7f600d76140b2a3f21900ada28d7b854d15b1c8",
+        "1659659c5e6da444218afe75a0d01d00a33ef615b1c3e3548d942249dcc4c606"
+      ],
+      "status": "known_match"
+    },
+    {
+      "group_id": "ab26210a2bb35f0cef64715faf918bdf3e7b8b3e244c2b204a6af41b6fcdc2a0",
+      "id": "0d42a0212e4027c3e80b82c9cf52bc7b9f8bf1e84448bd49185cedea49e9dbaa",
+      "instance_id": "af05c33ed74e2e2c77c0413d6306e3fded4e8c743e8adf011f7b93c1997e1566",
+      "revision_ids": [
+        "a000d008be8aa9a13ccedffd73025c503b5c3f9675940e175bf11b9d0e25f42e",
+        "b193ad3db0935a5f8d67a8daed3efc079010f917916cfe6679cbfd7b66ff1566"
+      ],
+      "status": "known_match"
+    },
+    {
+      "group_id": "6a6ab7bbfb30f514c1134f7ceb33360719027c94955300951d29439e434b97f7",
+      "id": "e3158f716bb5f24293d170b5508db82d780e4e23f755147937187031111cec35",
+      "instance_id": "af05c33ed74e2e2c77c0413d6306e3fded4e8c743e8adf011f7b93c1997e1566",
+      "revision_ids": [
+        "346e65483208b09b428a143eb2fc4664e459544a5fe40b25b7254bbf3e634569",
+        "7d94af62099c14f044ccfaccd1ac1e593d11bbc354154063b16069b6acefac34"
+      ],
+      "status": "known_match"
+    },
+    {
+      "group_id": "360e88b52161b91f124c2abcf62953eebe842c5490b415e539388ef658a026b9",
+      "id": "763306f4b3b4925f9978ff07f20af8494c411db90e710bf01d2fcd910152c38c",
+      "instance_id": "af05c33ed74e2e2c77c0413d6306e3fded4e8c743e8adf011f7b93c1997e1566",
+      "revision_ids": [
+        "09a7d5515591ebf3d0190efd76713a4d09e905d28f06597bd17146a429c9cf8a",
+        "cc4e31af1c66df7fc00f33d70e3235bcf32d6909f83de940b9ce923bca4a9945"
+      ],
+      "status": "known_match"
+    },
+    {
+      "group_id": "8d49f6200485070b69e514a179e23bc0a6d535c04d422a3066020edc033f4823",
+      "id": "21ad5c70f8dd1800d254d849d63488a14d59993386ee0b150b7a594c394e4bd7",
+      "instance_id": "af05c33ed74e2e2c77c0413d6306e3fded4e8c743e8adf011f7b93c1997e1566",
+      "revision_ids": [
+        "a0897dc1be71cd11b82de6488ae9fde202ceeaa8c6d70a6a957e55272eb44494",
+        "aa4edfa1eced83e1dd2ded03f6229d43e56a3988cf3799aed0c4b88475576042"
+      ],
+      "status": "known_match"
+    },
+    {
+      "group_id": "f185c0109ad1d4b62fa4f63e724eb58dd457aaf5d0c32361458e14ff9fc26e67",
+      "id": "b3b39f80c796d1aeee778ac5c9e3388e0546103ddbc532938fbb58e8e2a143cd",
+      "instance_id": "af05c33ed74e2e2c77c0413d6306e3fded4e8c743e8adf011f7b93c1997e1566",
+      "revision_ids": [
+        "246a8d18554833dc6be66fa85be531f4287cf82498ffb809140c72c201fa7f6a",
+        "ad29b79d0088bc3e93479d8f541fbc6539c5bbf3a80e8a1ab1ec93e20ac3c872"
+      ],
+      "status": "known_match"
+    },
+    {
+      "group_id": "3c348769965a232683596d9e3a4cdf7196e183bf6a5f0712b0b16a1799dced88",
+      "id": "921370f2bb27714a3e9116fe09bbab0b59db76500eefb6284e275f91cc14eb42",
+      "instance_id": "af05c33ed74e2e2c77c0413d6306e3fded4e8c743e8adf011f7b93c1997e1566",
+      "revision_ids": [
+        "b8e51ceff40ee0f7bac069877d9219dd57997d93359875faf0a2d9428d3096bc",
+        "ea7343be72c9cd9517feed6ebf24fc0d06e0b29e8343d884a1413e7756430ea5"
+      ],
+      "status": "known_match"
+    },
+    {
+      "group_id": "0afb0a1eec1229163d7db9415f0697169d8cb3f34e689f541683021a8134a86d",
+      "id": "2e234175abfb2f29abf5c70a1cb4889cc66c9c298a08ea876e5c58a3c300984e",
+      "instance_id": "af05c33ed74e2e2c77c0413d6306e3fded4e8c743e8adf011f7b93c1997e1566",
+      "revision_ids": [
+        "11fe3130d408488d7848e86e98a25c9ea3174da4ac80200f314962a1e9cf058f",
+        "5a183a2b9bb88ef7557b04e3f0722618d5cadb3c6c46c2303695c695eecb8e13"
+      ],
+      "status": "known_match"
+    },
+    {
+      "group_id": "e05a43705197274cb8a1af54135a2d944df4f0365c5517643b84db2ef469e8b0",
+      "id": "261301273286cbffbaea80faccc54fb4a5d21601877f3bf9b0298dee9ab6b8ca",
+      "instance_id": "af05c33ed74e2e2c77c0413d6306e3fded4e8c743e8adf011f7b93c1997e1566",
+      "revision_ids": [
+        "821befaaa4b2c284ab1030db4e93af144ed44b91d7427becba3ec516a0946308",
+        "e1d825729f60d8b5019f6c7775c365cb2d8d01e63f123010cc976ba1c86ebbd6"
+      ],
+      "status": "known_match"
+    },
+    {
+      "group_id": "6c3f8e7b07863cc9648d954fc41bd554bf5ae6846001fe35f370b0e1da4653e3",
+      "id": "395f0c7f4b5ae1e920b6bdac4180e233191288c34a01e7cb4a482f298cb6abf2",
+      "instance_id": "af05c33ed74e2e2c77c0413d6306e3fded4e8c743e8adf011f7b93c1997e1566",
+      "revision_ids": [
+        "a0ca1479cf2c5baf3488b2d8c31a6c5da0ccef73eb0bd4616fceb70cb66789fe",
+        "e5c453cf5b5b212e21d66b133333442c187bd081daced52db46c0f855ead6268"
+      ],
+      "status": "known_match"
+    },
+    {
+      "group_id": "adc1e5402889c6fdb9d34a94b24b0ebc68253a0da5516be789c68d31cc961f14",
+      "id": "809151948576d30ec041ecfd96ca42d960e0e6d233c4b4e5ecd7051f5a6f7e63",
+      "instance_id": "af05c33ed74e2e2c77c0413d6306e3fded4e8c743e8adf011f7b93c1997e1566",
+      "revision_ids": [
+        "046957bad9737e09cced2afc1662668810d4a4ea58f4ca24a4c3da1142f64904",
+        "1cfeecf022de7017368ca7a95ef109dac544c97e5c74d7b55e5b4e7ee253e3c9"
+      ],
+      "status": "known_match"
+    },
+    {
+      "group_id": "a562a5df6ac3a52cda9eba92d41c0a87c393f96e7e32e7983893a0ca65876463",
+      "id": "5eb5f936ccff7abcb07aede2065895471426f8ad266934d95a87deb7dc40b5e7",
+      "instance_id": "af05c33ed74e2e2c77c0413d6306e3fded4e8c743e8adf011f7b93c1997e1566",
+      "revision_ids": [
+        "46475c8fdd33405634fd7218b60635c5f4b55923d0219ad26f9842129e020368",
+        "d83f559b2e68f6825afc358c4fec208c4a6b11d2065249f2de79addf5ce3d285"
+      ],
+      "status": "known_match"
+    },
+    {
+      "group_id": "6355fa71769529e526029cfcd7f3e2f564c812e2f81a5dd3e8e6b1953def82aa",
+      "id": "59445334b6aa1ec9eb90396ec287c5d161bac5a895f9101caae95e1a9d7f0716",
+      "instance_id": "2a7c1969aac9891314bba8e9d0389ad0ff9f8d11d70aff065286b7d1bb254a7c",
+      "revision_ids": [
+        "587e8bfa50fa0399a7d8d7936c96ddebda1a31deeb81210b578abe02a6b6a302",
+        "5f6c8e03212fc55cc9ffd7b5f23f8533c2d61c4fa62904d63dabb15f63156b9c"
+      ],
+      "status": "known_match"
+    },
+    {
+      "group_id": "4d51a3881e30fbb7c370075d666852f4d87f0b553e9ff130f24d15620edd0479",
+      "id": "f9162f93addf7eb4f240d68894a0c9993b1a2be845ec21bf92cc9052aeba4eb0",
+      "instance_id": "2a7c1969aac9891314bba8e9d0389ad0ff9f8d11d70aff065286b7d1bb254a7c",
+      "revision_ids": [
+        "4972b14961b52fa4998390c504cedef3de63dd2d68600eea78117d1f466b5d75",
+        "d35b994bc2e95cb03b3d907be6c94616cfa701790ce3f9656b33a7bb94bb0c8b"
+      ],
+      "status": "known_match"
+    },
+    {
+      "group_id": "721e48d0328dc9f4a515e536b3fc04b0e1c027a72018b994382ef9cc4520caa5",
+      "id": "a0d51d3e3349c0c2aea9df75eb6652be78db2055cb0b92b6b6bfd4b9da0a22c4",
+      "instance_id": "2a7c1969aac9891314bba8e9d0389ad0ff9f8d11d70aff065286b7d1bb254a7c",
+      "revision_ids": [
+        "878a10a045c3a5782bb508ba095b90c92880915dd2b65088568ed5e82896abe2",
+        "a125c1c55df9d6a7aecd64756efbd764b879457518382bb200769d46103e8103"
+      ],
+      "status": "known_match"
+    },
+    {
+      "group_id": "aff7047b98d47e329ca34fd00471ddb8f7315885cb636861c4e59d9ab4ff9d02",
+      "id": "ce95d2b9aec52deebc757d55f218751e0550be351d763f7c28b115a28a6e6458",
+      "instance_id": "2a7c1969aac9891314bba8e9d0389ad0ff9f8d11d70aff065286b7d1bb254a7c",
+      "revision_ids": [
+        "db6e4d00cdbe8668636385349d3840849a35a69426b00e018e18eeff6dc114dd",
+        "ed0c8c880acf67056bc317994c2e1317ac3bed90c2f2ef686f90900f060c2f09"
+      ],
+      "status": "known_match"
+    },
+    {
+      "group_id": "13ae2ada5e213f9699fbcbf68930c449457b2ab8b5295ca38fd03884b646e81f",
+      "id": "f018c289f05fdb6ac3337286a09bbcedc15d41d5f57fba5155ac63430ecd6b9a",
+      "instance_id": "2a7c1969aac9891314bba8e9d0389ad0ff9f8d11d70aff065286b7d1bb254a7c",
+      "revision_ids": [
+        "09f69dda5979696376449ef666f229261f2fbfff9dce459256e70e370b102810",
+        "e883abcd1f064f33454360de3e1d06302dd9a504a48987ef9f1e97b61996f9da"
+      ],
+      "status": "known_match"
+    }
+  ],
+  "id": "403dfc0d-874d-41ec-9726-fc7ccb185d53",
+  "observed_at": "2026-10-14T19:26:34.576243+00:00",
+  "queries": [
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "gradio",
+        "raw_version": "5.10.0",
+        "version": "5.10.0"
+      },
+      "issues": [],
+      "record_ids": [
+        "GHSA-39mp-8hj3-5c49",
+        "GHSA-5cpq-9538-jm2j",
+        "GHSA-6655-8ph2-63j3",
+        "GHSA-7hp7-4p35-3cx2",
+        "GHSA-8jw3-6x8j-v96g",
+        "GHSA-h3h8-3v2v-rg7m",
+        "GHSA-j2jg-fq62-7c3h",
+        "GHSA-j36p-7w88-g82j",
+        "GHSA-jmh7-g254-2cq9",
+        "GHSA-pfjf-5gxr-995x",
+        "GHSA-wmjh-cpqj-4v6x",
+        "PYSEC-2026-1410",
+        "PYSEC-2026-1423",
+        "PYSEC-2026-211",
+        "PYSEC-2026-2178",
+        "PYSEC-2026-2179",
+        "PYSEC-2026-63",
+        "PYSEC-2026-64",
+        "PYSEC-2026-65",
+        "PYSEC-2026-66"
+      ],
+      "source_refs": [
+        {
+          "digest": "ee3c100c4ada6e3936a612a7aeb57af4c243b78fe8a42067c5bf1bd33cd92352",
+          "observed_at": "2026-10-14T19:26:12.519136+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "6108621a40e77ff0a93242c7c9b4b9e8a5d8ad1dd6e5aa3a18003931cc48688e",
+          "observed_at": "2026-10-14T19:26:13.416665+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "matched"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "aiofiles",
+        "raw_version": "23.2.1",
+        "version": "23.2.1"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "ee3c100c4ada6e3936a612a7aeb57af4c243b78fe8a42067c5bf1bd33cd92352",
+          "observed_at": "2026-10-14T19:26:12.519136+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "6108621a40e77ff0a93242c7c9b4b9e8a5d8ad1dd6e5aa3a18003931cc48688e",
+          "observed_at": "2026-10-14T19:26:13.416665+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "annotated-doc",
+        "raw_version": "0.0.5",
+        "version": "0.0.5"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "2c5ca1729e6979b3230ada260557df2b228dea82484f83f150f1319d0883e2af",
+          "observed_at": "2026-10-14T19:26:12.518143+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "2cacc2b28082577276a25d292bb78c166ce08713df2e4217b43f6854434c83ae",
+          "observed_at": "2026-10-14T19:26:13.051696+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "annotated-types",
+        "raw_version": "0.8.0",
+        "version": "0.8.0"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "2c5ca1729e6979b3230ada260557df2b228dea82484f83f150f1319d0883e2af",
+          "observed_at": "2026-10-14T19:26:12.518143+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "2cacc2b28082577276a25d292bb78c166ce08713df2e4217b43f6854434c83ae",
+          "observed_at": "2026-10-14T19:26:13.051696+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "anyio",
+        "raw_version": "4.15.1",
+        "version": "4.15.1"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "2c5ca1729e6979b3230ada260557df2b228dea82484f83f150f1319d0883e2af",
+          "observed_at": "2026-10-14T19:26:12.518143+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "2cacc2b28082577276a25d292bb78c166ce08713df2e4217b43f6854434c83ae",
+          "observed_at": "2026-10-14T19:26:13.051696+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "audioop-lts",
+        "raw_version": "0.2.2",
+        "version": "0.2.2"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "ee3c100c4ada6e3936a612a7aeb57af4c243b78fe8a42067c5bf1bd33cd92352",
+          "observed_at": "2026-10-14T19:26:12.519136+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "6108621a40e77ff0a93242c7c9b4b9e8a5d8ad1dd6e5aa3a18003931cc48688e",
+          "observed_at": "2026-10-14T19:26:13.416665+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "certifi",
+        "raw_version": "2026.7.22",
+        "version": "2026.7.22"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "2c5ca1729e6979b3230ada260557df2b228dea82484f83f150f1319d0883e2af",
+          "observed_at": "2026-10-14T19:26:12.518143+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "2cacc2b28082577276a25d292bb78c166ce08713df2e4217b43f6854434c83ae",
+          "observed_at": "2026-10-14T19:26:13.051696+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "click",
+        "raw_version": "8.5.0",
+        "version": "8.5.0"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "2c5ca1729e6979b3230ada260557df2b228dea82484f83f150f1319d0883e2af",
+          "observed_at": "2026-10-14T19:26:12.518143+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "2cacc2b28082577276a25d292bb78c166ce08713df2e4217b43f6854434c83ae",
+          "observed_at": "2026-10-14T19:26:13.051696+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "fastapi",
+        "raw_version": "0.143.0",
+        "version": "0.143.0"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "3cae240e282a95a3285a85e8ff0d0bbc2aacd2d78d538caba892feeb88e76890",
+          "observed_at": "2026-10-14T19:26:12.518283+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "84a71749840123194155bf8c1ea78d83a86690db10726aad96a56c80616a93ec",
+          "observed_at": "2026-10-14T19:26:13.095112+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "ffmpy",
+        "raw_version": "1.0.0",
+        "version": "1.0.0"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "ee3c100c4ada6e3936a612a7aeb57af4c243b78fe8a42067c5bf1bd33cd92352",
+          "observed_at": "2026-10-14T19:26:12.519136+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "6108621a40e77ff0a93242c7c9b4b9e8a5d8ad1dd6e5aa3a18003931cc48688e",
+          "observed_at": "2026-10-14T19:26:13.416665+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "filelock",
+        "raw_version": "4.1.1",
+        "version": "4.1.1"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "2c5ca1729e6979b3230ada260557df2b228dea82484f83f150f1319d0883e2af",
+          "observed_at": "2026-10-14T19:26:12.518143+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "2cacc2b28082577276a25d292bb78c166ce08713df2e4217b43f6854434c83ae",
+          "observed_at": "2026-10-14T19:26:13.051696+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "fsspec",
+        "raw_version": "2026.9.0",
+        "version": "2026.9.0"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "2c5ca1729e6979b3230ada260557df2b228dea82484f83f150f1319d0883e2af",
+          "observed_at": "2026-10-14T19:26:12.518143+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "2cacc2b28082577276a25d292bb78c166ce08713df2e4217b43f6854434c83ae",
+          "observed_at": "2026-10-14T19:26:13.051696+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "gradio-client",
+        "raw_version": "1.5.3",
+        "version": "1.5.3"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "ee3c100c4ada6e3936a612a7aeb57af4c243b78fe8a42067c5bf1bd33cd92352",
+          "observed_at": "2026-10-14T19:26:12.519136+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "6108621a40e77ff0a93242c7c9b4b9e8a5d8ad1dd6e5aa3a18003931cc48688e",
+          "observed_at": "2026-10-14T19:26:13.416665+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "h11",
+        "raw_version": "0.16.0",
+        "version": "0.16.0"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "2c5ca1729e6979b3230ada260557df2b228dea82484f83f150f1319d0883e2af",
+          "observed_at": "2026-10-14T19:26:12.518143+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "2cacc2b28082577276a25d292bb78c166ce08713df2e4217b43f6854434c83ae",
+          "observed_at": "2026-10-14T19:26:13.051696+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "hf-xet",
+        "raw_version": "1.7.0",
+        "version": "1.7.0"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "2c5ca1729e6979b3230ada260557df2b228dea82484f83f150f1319d0883e2af",
+          "observed_at": "2026-10-14T19:26:12.518143+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "2cacc2b28082577276a25d292bb78c166ce08713df2e4217b43f6854434c83ae",
+          "observed_at": "2026-10-14T19:26:13.051696+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "httpcore",
+        "raw_version": "1.0.9",
+        "version": "1.0.9"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "2c5ca1729e6979b3230ada260557df2b228dea82484f83f150f1319d0883e2af",
+          "observed_at": "2026-10-14T19:26:12.518143+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "2cacc2b28082577276a25d292bb78c166ce08713df2e4217b43f6854434c83ae",
+          "observed_at": "2026-10-14T19:26:13.051696+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "httpcore2",
+        "raw_version": "2.13.1",
+        "version": "2.13.1"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "2c5ca1729e6979b3230ada260557df2b228dea82484f83f150f1319d0883e2af",
+          "observed_at": "2026-10-14T19:26:12.518143+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "2cacc2b28082577276a25d292bb78c166ce08713df2e4217b43f6854434c83ae",
+          "observed_at": "2026-10-14T19:26:13.051696+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "httpx",
+        "raw_version": "0.28.1",
+        "version": "0.28.1"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "2c5ca1729e6979b3230ada260557df2b228dea82484f83f150f1319d0883e2af",
+          "observed_at": "2026-10-14T19:26:12.518143+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "2cacc2b28082577276a25d292bb78c166ce08713df2e4217b43f6854434c83ae",
+          "observed_at": "2026-10-14T19:26:13.051696+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "httpx2",
+        "raw_version": "2.13.1",
+        "version": "2.13.1"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "2c5ca1729e6979b3230ada260557df2b228dea82484f83f150f1319d0883e2af",
+          "observed_at": "2026-10-14T19:26:12.518143+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "2cacc2b28082577276a25d292bb78c166ce08713df2e4217b43f6854434c83ae",
+          "observed_at": "2026-10-14T19:26:13.051696+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "huggingface-hub",
+        "raw_version": "2.2.0",
+        "version": "2.2.0"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "3cae240e282a95a3285a85e8ff0d0bbc2aacd2d78d538caba892feeb88e76890",
+          "observed_at": "2026-10-14T19:26:12.518283+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "84a71749840123194155bf8c1ea78d83a86690db10726aad96a56c80616a93ec",
+          "observed_at": "2026-10-14T19:26:13.095112+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "idna",
+        "raw_version": "3.20.0",
+        "version": "3.20.0"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "2c5ca1729e6979b3230ada260557df2b228dea82484f83f150f1319d0883e2af",
+          "observed_at": "2026-10-14T19:26:12.518143+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "2cacc2b28082577276a25d292bb78c166ce08713df2e4217b43f6854434c83ae",
+          "observed_at": "2026-10-14T19:26:13.051696+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "jinja2",
+        "raw_version": "3.1.6",
+        "version": "3.1.6"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "3cae240e282a95a3285a85e8ff0d0bbc2aacd2d78d538caba892feeb88e76890",
+          "observed_at": "2026-10-14T19:26:12.518283+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "84a71749840123194155bf8c1ea78d83a86690db10726aad96a56c80616a93ec",
+          "observed_at": "2026-10-14T19:26:13.095112+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "markdown-it-py",
+        "raw_version": "4.2.0",
+        "version": "4.2.0"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "3cae240e282a95a3285a85e8ff0d0bbc2aacd2d78d538caba892feeb88e76890",
+          "observed_at": "2026-10-14T19:26:12.518283+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "84a71749840123194155bf8c1ea78d83a86690db10726aad96a56c80616a93ec",
+          "observed_at": "2026-10-14T19:26:13.095112+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "markupsafe",
+        "raw_version": "2.1.5",
+        "version": "2.1.5"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "ee3c100c4ada6e3936a612a7aeb57af4c243b78fe8a42067c5bf1bd33cd92352",
+          "observed_at": "2026-10-14T19:26:12.519136+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "6108621a40e77ff0a93242c7c9b4b9e8a5d8ad1dd6e5aa3a18003931cc48688e",
+          "observed_at": "2026-10-14T19:26:13.416665+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "mdurl",
+        "raw_version": "0.1.2",
+        "version": "0.1.2"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "3cae240e282a95a3285a85e8ff0d0bbc2aacd2d78d538caba892feeb88e76890",
+          "observed_at": "2026-10-14T19:26:12.518283+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "84a71749840123194155bf8c1ea78d83a86690db10726aad96a56c80616a93ec",
+          "observed_at": "2026-10-14T19:26:13.095112+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "numpy",
+        "raw_version": "2.5.4",
+        "version": "2.5.4"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "2c5ca1729e6979b3230ada260557df2b228dea82484f83f150f1319d0883e2af",
+          "observed_at": "2026-10-14T19:26:12.518143+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "2cacc2b28082577276a25d292bb78c166ce08713df2e4217b43f6854434c83ae",
+          "observed_at": "2026-10-14T19:26:13.051696+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "opentelemetry-api",
+        "raw_version": "1.45.1",
+        "version": "1.45.1"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "ee3c100c4ada6e3936a612a7aeb57af4c243b78fe8a42067c5bf1bd33cd92352",
+          "observed_at": "2026-10-14T19:26:12.519136+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "6108621a40e77ff0a93242c7c9b4b9e8a5d8ad1dd6e5aa3a18003931cc48688e",
+          "observed_at": "2026-10-14T19:26:13.416665+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "orjson",
+        "raw_version": "3.13.0",
+        "version": "3.13.0"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "2c5ca1729e6979b3230ada260557df2b228dea82484f83f150f1319d0883e2af",
+          "observed_at": "2026-10-14T19:26:12.518143+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "2cacc2b28082577276a25d292bb78c166ce08713df2e4217b43f6854434c83ae",
+          "observed_at": "2026-10-14T19:26:13.051696+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "packaging",
+        "raw_version": "26.3.0",
+        "version": "26.3.0"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "2c5ca1729e6979b3230ada260557df2b228dea82484f83f150f1319d0883e2af",
+          "observed_at": "2026-10-14T19:26:12.518143+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "2cacc2b28082577276a25d292bb78c166ce08713df2e4217b43f6854434c83ae",
+          "observed_at": "2026-10-14T19:26:13.051696+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "pandas",
+        "raw_version": "2.3.3",
+        "version": "2.3.3"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "ee3c100c4ada6e3936a612a7aeb57af4c243b78fe8a42067c5bf1bd33cd92352",
+          "observed_at": "2026-10-14T19:26:12.519136+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "6108621a40e77ff0a93242c7c9b4b9e8a5d8ad1dd6e5aa3a18003931cc48688e",
+          "observed_at": "2026-10-14T19:26:13.416665+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "pillow",
+        "raw_version": "11.3.0",
+        "version": "11.3.0"
+      },
+      "issues": [],
+      "record_ids": [
+        "GHSA-45hq-cxwh-f6vc",
+        "GHSA-4x4j-2g7c-83w6",
+        "GHSA-5x94-69rx-g8h2",
+        "GHSA-5xmw-vc9v-4wf2",
+        "GHSA-62p4-gmf7-7g93",
+        "GHSA-6r8x-57c9-28j4",
+        "GHSA-8v84-f9pq-wr9x",
+        "GHSA-9hw9-ch79-4vh6",
+        "GHSA-cfh3-3jmp-rvhc",
+        "GHSA-fj7v-r99m-22gq",
+        "GHSA-jjj6-mw9f-p565",
+        "GHSA-phj9-mv4w-65pm",
+        "GHSA-pwv6-vv43-88gr",
+        "GHSA-r73j-pqj5-w3x7",
+        "GHSA-vjc4-5qp5-m44j",
+        "GHSA-whj4-6x5x-4v2j",
+        "GHSA-wjx4-4jcj-g98j",
+        "GHSA-xj96-63gp-2gmr",
+        "PYSEC-2026-165",
+        "PYSEC-2026-2249",
+        "PYSEC-2026-2250",
+        "PYSEC-2026-2251",
+        "PYSEC-2026-2252",
+        "PYSEC-2026-2253",
+        "PYSEC-2026-2254",
+        "PYSEC-2026-2255",
+        "PYSEC-2026-2256",
+        "PYSEC-2026-2257",
+        "PYSEC-2026-2874",
+        "PYSEC-2026-3451",
+        "PYSEC-2026-3453",
+        "PYSEC-2026-3454",
+        "PYSEC-2026-3493",
+        "PYSEC-2026-3494",
+        "PYSEC-2026-3495",
+        "PYSEC-2026-3496"
+      ],
+      "source_refs": [
+        {
+          "digest": "ee3c100c4ada6e3936a612a7aeb57af4c243b78fe8a42067c5bf1bd33cd92352",
+          "observed_at": "2026-10-14T19:26:12.519136+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "6108621a40e77ff0a93242c7c9b4b9e8a5d8ad1dd6e5aa3a18003931cc48688e",
+          "observed_at": "2026-10-14T19:26:13.416665+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "matched"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "pydantic",
+        "raw_version": "2.14.1",
+        "version": "2.14.1"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "2c5ca1729e6979b3230ada260557df2b228dea82484f83f150f1319d0883e2af",
+          "observed_at": "2026-10-14T19:26:12.518143+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "2cacc2b28082577276a25d292bb78c166ce08713df2e4217b43f6854434c83ae",
+          "observed_at": "2026-10-14T19:26:13.051696+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "pydantic-core",
+        "raw_version": "2.50.1",
+        "version": "2.50.1"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "2c5ca1729e6979b3230ada260557df2b228dea82484f83f150f1319d0883e2af",
+          "observed_at": "2026-10-14T19:26:12.518143+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "2cacc2b28082577276a25d292bb78c166ce08713df2e4217b43f6854434c83ae",
+          "observed_at": "2026-10-14T19:26:13.051696+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "pydub",
+        "raw_version": "0.25.1",
+        "version": "0.25.1"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "ee3c100c4ada6e3936a612a7aeb57af4c243b78fe8a42067c5bf1bd33cd92352",
+          "observed_at": "2026-10-14T19:26:12.519136+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "6108621a40e77ff0a93242c7c9b4b9e8a5d8ad1dd6e5aa3a18003931cc48688e",
+          "observed_at": "2026-10-14T19:26:13.416665+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "pygments",
+        "raw_version": "2.21.0",
+        "version": "2.21.0"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "3cae240e282a95a3285a85e8ff0d0bbc2aacd2d78d538caba892feeb88e76890",
+          "observed_at": "2026-10-14T19:26:12.518283+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "84a71749840123194155bf8c1ea78d83a86690db10726aad96a56c80616a93ec",
+          "observed_at": "2026-10-14T19:26:13.095112+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "python-dateutil",
+        "raw_version": "2.9.0.post0",
+        "version": "2.9.0.post0"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "3cae240e282a95a3285a85e8ff0d0bbc2aacd2d78d538caba892feeb88e76890",
+          "observed_at": "2026-10-14T19:26:12.518283+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "84a71749840123194155bf8c1ea78d83a86690db10726aad96a56c80616a93ec",
+          "observed_at": "2026-10-14T19:26:13.095112+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "python-multipart",
+        "raw_version": "0.0.32",
+        "version": "0.0.32"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "ee3c100c4ada6e3936a612a7aeb57af4c243b78fe8a42067c5bf1bd33cd92352",
+          "observed_at": "2026-10-14T19:26:12.519136+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "6108621a40e77ff0a93242c7c9b4b9e8a5d8ad1dd6e5aa3a18003931cc48688e",
+          "observed_at": "2026-10-14T19:26:13.416665+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "pytz",
+        "raw_version": "2026.5.0",
+        "version": "2026.5.0"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "ee3c100c4ada6e3936a612a7aeb57af4c243b78fe8a42067c5bf1bd33cd92352",
+          "observed_at": "2026-10-14T19:26:12.519136+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "6108621a40e77ff0a93242c7c9b4b9e8a5d8ad1dd6e5aa3a18003931cc48688e",
+          "observed_at": "2026-10-14T19:26:13.416665+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "pyyaml",
+        "raw_version": "6.0.3",
+        "version": "6.0.3"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "2c5ca1729e6979b3230ada260557df2b228dea82484f83f150f1319d0883e2af",
+          "observed_at": "2026-10-14T19:26:12.518143+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "2cacc2b28082577276a25d292bb78c166ce08713df2e4217b43f6854434c83ae",
+          "observed_at": "2026-10-14T19:26:13.051696+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "rich",
+        "raw_version": "15.0.0",
+        "version": "15.0.0"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "3cae240e282a95a3285a85e8ff0d0bbc2aacd2d78d538caba892feeb88e76890",
+          "observed_at": "2026-10-14T19:26:12.518283+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "84a71749840123194155bf8c1ea78d83a86690db10726aad96a56c80616a93ec",
+          "observed_at": "2026-10-14T19:26:13.095112+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "ruff",
+        "raw_version": "0.17.0",
+        "version": "0.17.0"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "ee3c100c4ada6e3936a612a7aeb57af4c243b78fe8a42067c5bf1bd33cd92352",
+          "observed_at": "2026-10-14T19:26:12.519136+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "6108621a40e77ff0a93242c7c9b4b9e8a5d8ad1dd6e5aa3a18003931cc48688e",
+          "observed_at": "2026-10-14T19:26:13.416665+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "safehttpx",
+        "raw_version": "0.1.7",
+        "version": "0.1.7"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "ee3c100c4ada6e3936a612a7aeb57af4c243b78fe8a42067c5bf1bd33cd92352",
+          "observed_at": "2026-10-14T19:26:12.519136+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "6108621a40e77ff0a93242c7c9b4b9e8a5d8ad1dd6e5aa3a18003931cc48688e",
+          "observed_at": "2026-10-14T19:26:13.416665+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "semantic-version",
+        "raw_version": "2.10.0",
+        "version": "2.10.0"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "ee3c100c4ada6e3936a612a7aeb57af4c243b78fe8a42067c5bf1bd33cd92352",
+          "observed_at": "2026-10-14T19:26:12.519136+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "6108621a40e77ff0a93242c7c9b4b9e8a5d8ad1dd6e5aa3a18003931cc48688e",
+          "observed_at": "2026-10-14T19:26:13.416665+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "shellingham",
+        "raw_version": "1.5.4",
+        "version": "1.5.4"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "3cae240e282a95a3285a85e8ff0d0bbc2aacd2d78d538caba892feeb88e76890",
+          "observed_at": "2026-10-14T19:26:12.518283+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "84a71749840123194155bf8c1ea78d83a86690db10726aad96a56c80616a93ec",
+          "observed_at": "2026-10-14T19:26:13.095112+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "six",
+        "raw_version": "1.17.0",
+        "version": "1.17.0"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "3cae240e282a95a3285a85e8ff0d0bbc2aacd2d78d538caba892feeb88e76890",
+          "observed_at": "2026-10-14T19:26:12.518283+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "84a71749840123194155bf8c1ea78d83a86690db10726aad96a56c80616a93ec",
+          "observed_at": "2026-10-14T19:26:13.095112+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "starlette",
+        "raw_version": "0.52.1",
+        "version": "0.52.1"
+      },
+      "issues": [],
+      "record_ids": [
+        "GHSA-82w8-qh3p-5jfq",
+        "GHSA-86qp-5c8j-p5mr",
+        "GHSA-jp82-jpqv-5vv3",
+        "GHSA-wqp7-x3pw-xc5r",
+        "GHSA-x746-7m8f-x49c",
+        "PYSEC-2026-161",
+        "PYSEC-2026-2280",
+        "PYSEC-2026-2281",
+        "PYSEC-2026-248",
+        "PYSEC-2026-249"
+      ],
+      "source_refs": [
+        {
+          "digest": "ee3c100c4ada6e3936a612a7aeb57af4c243b78fe8a42067c5bf1bd33cd92352",
+          "observed_at": "2026-10-14T19:26:12.519136+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "6108621a40e77ff0a93242c7c9b4b9e8a5d8ad1dd6e5aa3a18003931cc48688e",
+          "observed_at": "2026-10-14T19:26:13.416665+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "matched"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "tomlkit",
+        "raw_version": "0.13.3",
+        "version": "0.13.3"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "ee3c100c4ada6e3936a612a7aeb57af4c243b78fe8a42067c5bf1bd33cd92352",
+          "observed_at": "2026-10-14T19:26:12.519136+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "6108621a40e77ff0a93242c7c9b4b9e8a5d8ad1dd6e5aa3a18003931cc48688e",
+          "observed_at": "2026-10-14T19:26:13.416665+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "tqdm",
+        "raw_version": "4.70.1",
+        "version": "4.70.1"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "3cae240e282a95a3285a85e8ff0d0bbc2aacd2d78d538caba892feeb88e76890",
+          "observed_at": "2026-10-14T19:26:12.518283+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "84a71749840123194155bf8c1ea78d83a86690db10726aad96a56c80616a93ec",
+          "observed_at": "2026-10-14T19:26:13.095112+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "truststore",
+        "raw_version": "0.10.5",
+        "version": "0.10.5"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "2c5ca1729e6979b3230ada260557df2b228dea82484f83f150f1319d0883e2af",
+          "observed_at": "2026-10-14T19:26:12.518143+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "2cacc2b28082577276a25d292bb78c166ce08713df2e4217b43f6854434c83ae",
+          "observed_at": "2026-10-14T19:26:13.051696+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "typer",
+        "raw_version": "0.27.3",
+        "version": "0.27.3"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "3cae240e282a95a3285a85e8ff0d0bbc2aacd2d78d538caba892feeb88e76890",
+          "observed_at": "2026-10-14T19:26:12.518283+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "84a71749840123194155bf8c1ea78d83a86690db10726aad96a56c80616a93ec",
+          "observed_at": "2026-10-14T19:26:13.095112+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "typing-extensions",
+        "raw_version": "4.16.0",
+        "version": "4.16.0"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "2c5ca1729e6979b3230ada260557df2b228dea82484f83f150f1319d0883e2af",
+          "observed_at": "2026-10-14T19:26:12.518143+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "2cacc2b28082577276a25d292bb78c166ce08713df2e4217b43f6854434c83ae",
+          "observed_at": "2026-10-14T19:26:13.051696+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "typing-inspection",
+        "raw_version": "0.4.4",
+        "version": "0.4.4"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "2c5ca1729e6979b3230ada260557df2b228dea82484f83f150f1319d0883e2af",
+          "observed_at": "2026-10-14T19:26:12.518143+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "2cacc2b28082577276a25d292bb78c166ce08713df2e4217b43f6854434c83ae",
+          "observed_at": "2026-10-14T19:26:13.051696+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "tzdata",
+        "raw_version": "2026.5.0",
+        "version": "2026.5.0"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "ee3c100c4ada6e3936a612a7aeb57af4c243b78fe8a42067c5bf1bd33cd92352",
+          "observed_at": "2026-10-14T19:26:12.519136+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "6108621a40e77ff0a93242c7c9b4b9e8a5d8ad1dd6e5aa3a18003931cc48688e",
+          "observed_at": "2026-10-14T19:26:13.416665+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "uvicorn",
+        "raw_version": "0.54.0",
+        "version": "0.54.0"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "ee3c100c4ada6e3936a612a7aeb57af4c243b78fe8a42067c5bf1bd33cd92352",
+          "observed_at": "2026-10-14T19:26:12.519136+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "6108621a40e77ff0a93242c7c9b4b9e8a5d8ad1dd6e5aa3a18003931cc48688e",
+          "observed_at": "2026-10-14T19:26:13.416665+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "websockets",
+        "raw_version": "14.2.0",
+        "version": "14.2.0"
+      },
+      "issues": [],
+      "record_ids": [],
+      "source_refs": [
+        {
+          "digest": "ee3c100c4ada6e3936a612a7aeb57af4c243b78fe8a42067c5bf1bd33cd92352",
+          "observed_at": "2026-10-14T19:26:12.519136+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        },
+        {
+          "digest": "6108621a40e77ff0a93242c7c9b4b9e8a5d8ad1dd6e5aa3a18003931cc48688e",
+          "observed_at": "2026-10-14T19:26:13.416665+00:00",
+          "parser_version": "raw-v1",
+          "uri": "https://api.osv.dev/v1/querybatch"
+        }
+      ],
+      "status": "no_match"
+    }
+  ],
+  "revision_ids": [
+    "04521b8c7b27e76f625c1e66e7f600d76140b2a3f21900ada28d7b854d15b1c8",
+    "045ba46be2e577400ac27b428c852ef057c26d8d39d90251dbfe3a3cdf562429",
+    "046957bad9737e09cced2afc1662668810d4a4ea58f4ca24a4c3da1142f64904",
+    "0722e228bf50c053d1151fbae642084be99fd8990f57c4e29d5277a327e73088",
+    "09a7d5515591ebf3d0190efd76713a4d09e905d28f06597bd17146a429c9cf8a",
+    "09f69dda5979696376449ef666f229261f2fbfff9dce459256e70e370b102810",
+    "0a57e82ed81f3ae951cb8694b9b3d4dcca1266bc2def3ba1e5ac352b01b41bce",
+    "0d4be2d1a0b6019eec94ca88d55fd922e142cc5e4c472caa16ad5d4d6ffada5c",
+    "0ede1e3b875eca8d4c19c545de24d8a44b16100b52ef2378aef3391418349523",
+    "11fe3130d408488d7848e86e98a25c9ea3174da4ac80200f314962a1e9cf058f",
+    "1659659c5e6da444218afe75a0d01d00a33ef615b1c3e3548d942249dcc4c606",
+    "1cfeecf022de7017368ca7a95ef109dac544c97e5c74d7b55e5b4e7ee253e3c9",
+    "1e62d0e08ce6085e76f8fe3e08c1785fb4159ae7c528511d9c5cc4b954350967",
+    "220a8c338cb07b1d068723c0fa1910cef5dc82d5d2409568b4fcada86bc6a1f0",
+    "246a8d18554833dc6be66fa85be531f4287cf82498ffb809140c72c201fa7f6a",
+    "279f9a748601c51c56b40b139908918058c87c11f7b6519dd9eca198c10e6cfd",
+    "2b8a773b71eb7054d7cac297caaec315317b04eab3945415b2444e43c45dc734",
+    "303c4294242bd06a0888a66ccc42129a6b5afa954080339fac45373b66956fa1",
+    "346e65483208b09b428a143eb2fc4664e459544a5fe40b25b7254bbf3e634569",
+    "3fe4f9fea2f75d4f9df36059bfee25a511e9f4d4c656b8402cad63bd29774a4c",
+    "46475c8fdd33405634fd7218b60635c5f4b55923d0219ad26f9842129e020368",
+    "47708aeebca412be58a6c8fa89144eeecb67e3e5d7bb39c8c5be7392f68d1470",
+    "4972b14961b52fa4998390c504cedef3de63dd2d68600eea78117d1f466b5d75",
+    "587e8bfa50fa0399a7d8d7936c96ddebda1a31deeb81210b578abe02a6b6a302",
+    "5a183a2b9bb88ef7557b04e3f0722618d5cadb3c6c46c2303695c695eecb8e13",
+    "5f6c8e03212fc55cc9ffd7b5f23f8533c2d61c4fa62904d63dabb15f63156b9c",
+    "68225797272b680ce027a15a149a60e6fc5b7cadc9214b8743266485906cbe23",
+    "6e495d7d7b8774a28099f4a275c92cef6f422fea104447182ef50ed1f697eeb0",
+    "722b907f67bccabe5b889c3cfa8d3c02f0a3c626f62681ae6df06c71ab1670dc",
+    "7d94af62099c14f044ccfaccd1ac1e593d11bbc354154063b16069b6acefac34",
+    "821befaaa4b2c284ab1030db4e93af144ed44b91d7427becba3ec516a0946308",
+    "84768165ff34c3a466874734d45f0ebd3eeb36cc4b036ea212c3970d15b275ad",
+    "878a10a045c3a5782bb508ba095b90c92880915dd2b65088568ed5e82896abe2",
+    "88c6b2e413024a7d40977a694b7f4227fa970467526ea69eed9bc00f89786c57",
+    "8e836821ff9f87a2db8398dc843c5796ffab1a660760262c5ced1395967a4e94",
+    "8fc64751254ba9bbe452d11d7711abe664ce9b245c0c10d843141c442c3dee34",
+    "9ab0b8d9155402f4357b76b0c8f070f739101e1cec7cf6bced007485fbc6ca01",
+    "a000d008be8aa9a13ccedffd73025c503b5c3f9675940e175bf11b9d0e25f42e",
+    "a0897dc1be71cd11b82de6488ae9fde202ceeaa8c6d70a6a957e55272eb44494",
+    "a0ca1479cf2c5baf3488b2d8c31a6c5da0ccef73eb0bd4616fceb70cb66789fe",
+    "a0e71c56baba25ec4fb76754eca72a4fb97c82f4f2e7f6dc4106db55c7d45b09",
+    "a125c1c55df9d6a7aecd64756efbd764b879457518382bb200769d46103e8103",
+    "aa4edfa1eced83e1dd2ded03f6229d43e56a3988cf3799aed0c4b88475576042",
+    "ad29b79d0088bc3e93479d8f541fbc6539c5bbf3a80e8a1ab1ec93e20ac3c872",
+    "adb627ec97413c4c302fdd16df4dc0919085eecb73d98a27ecc3cb1797b7d89a",
+    "b193ad3db0935a5f8d67a8daed3efc079010f917916cfe6679cbfd7b66ff1566",
+    "b2955e713c5b8b93bef515327eb903c6b7e9af257fb295e1c6c3598ab1626198",
+    "b8e51ceff40ee0f7bac069877d9219dd57997d93359875faf0a2d9428d3096bc",
+    "ba8256d39767ea31e01c62b71007d3565d263913bfacc74822fb56e630692308",
+    "bb1d062fde5abce3d8dfa1871b5a0888eae23fa8a66a4a0aaa48a087a6daa7b7",
+    "c5cc4aa39c3429b5a70e9ae66a4af008cff2906cb7ecb4325cc8a6d7e12c05ca",
+    "cb09d7bd93227510fcfac83bb532258bf2380c7ede0da1102bc634167a7748e8",
+    "cc4e31af1c66df7fc00f33d70e3235bcf32d6909f83de940b9ce923bca4a9945",
+    "ccc2d89f113689183b5085ea1fda9e8aa213131a4d78efbaf2d8e3399a888886",
+    "d35b994bc2e95cb03b3d907be6c94616cfa701790ce3f9656b33a7bb94bb0c8b",
+    "d83f559b2e68f6825afc358c4fec208c4a6b11d2065249f2de79addf5ce3d285",
+    "db6e4d00cdbe8668636385349d3840849a35a69426b00e018e18eeff6dc114dd",
+    "df3e2efb5ebbb81c6dab3f3ae1c962e954f5da905064ca328b2c85dd603f8cfe",
+    "e1d825729f60d8b5019f6c7775c365cb2d8d01e63f123010cc976ba1c86ebbd6",
+    "e572866108e749ac61b07c16573b49a0ced2ee7ba7b6d812da1cbb17b3728584",
+    "e5c453cf5b5b212e21d66b133333442c187bd081daced52db46c0f855ead6268",
+    "e883abcd1f064f33454360de3e1d06302dd9a504a48987ef9f1e97b61996f9da",
+    "ea7343be72c9cd9517feed6ebf24fc0d06e0b29e8343d884a1413e7756430ea5",
+    "ed0c8c880acf67056bc317994c2e1317ac3bed90c2f2ef686f90900f060c2f09",
+    "f2e037a0121e99eb052df54c53c1df1c78684a07c0334bd564ad845e2303ab59",
+    "ffaa60d883480e5aaa8e95a6ac4c6920a815c6130a89bfc9dd77b2c00ae9622d"
+  ],
+  "snapshot_id": "cf3510a3ba2b6ea56d5a54fa88a57fbc029d9065828f573cc0d7dea27ee07148"
+}

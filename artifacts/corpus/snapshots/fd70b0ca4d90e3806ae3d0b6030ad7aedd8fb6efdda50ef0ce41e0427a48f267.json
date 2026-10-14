@@ -1,0 +1,303 @@
+{
+  "components": [
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "huggingface-hub",
+        "raw_version": "2.2.0",
+        "version": "2.2.0"
+      },
+      "dependencies_known": true,
+      "local_id": "0",
+      "name": "huggingface-hub",
+      "pointer": "/nodes/0"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "anyio",
+        "raw_version": "4.15.1",
+        "version": "4.15.1"
+      },
+      "dependencies_known": true,
+      "local_id": "1",
+      "name": "anyio",
+      "pointer": "/nodes/1"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "click",
+        "raw_version": "8.5.0",
+        "version": "8.5.0"
+      },
+      "dependencies_known": true,
+      "local_id": "2",
+      "name": "click",
+      "pointer": "/nodes/2"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "filelock",
+        "raw_version": "4.1.1",
+        "version": "4.1.1"
+      },
+      "dependencies_known": true,
+      "local_id": "3",
+      "name": "filelock",
+      "pointer": "/nodes/3"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "fsspec",
+        "raw_version": "2026.9.0",
+        "version": "2026.9.0"
+      },
+      "dependencies_known": true,
+      "local_id": "4",
+      "name": "fsspec",
+      "pointer": "/nodes/4"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "h11",
+        "raw_version": "0.16.0",
+        "version": "0.16.0"
+      },
+      "dependencies_known": true,
+      "local_id": "5",
+      "name": "h11",
+      "pointer": "/nodes/5"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "hf-xet",
+        "raw_version": "1.7.0",
+        "version": "1.7.0"
+      },
+      "dependencies_known": true,
+      "local_id": "6",
+      "name": "hf-xet",
+      "pointer": "/nodes/6"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "httpcore2",
+        "raw_version": "2.13.1",
+        "version": "2.13.1"
+      },
+      "dependencies_known": true,
+      "local_id": "7",
+      "name": "httpcore2",
+      "pointer": "/nodes/7"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "httpx2",
+        "raw_version": "2.13.1",
+        "version": "2.13.1"
+      },
+      "dependencies_known": true,
+      "local_id": "8",
+      "name": "httpx2",
+      "pointer": "/nodes/8"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "idna",
+        "raw_version": "3.20.0",
+        "version": "3.20.0"
+      },
+      "dependencies_known": true,
+      "local_id": "9",
+      "name": "idna",
+      "pointer": "/nodes/9"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "packaging",
+        "raw_version": "26.3.0",
+        "version": "26.3.0"
+      },
+      "dependencies_known": true,
+      "local_id": "10",
+      "name": "packaging",
+      "pointer": "/nodes/10"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "pyyaml",
+        "raw_version": "6.0.3",
+        "version": "6.0.3"
+      },
+      "dependencies_known": true,
+      "local_id": "11",
+      "name": "pyyaml",
+      "pointer": "/nodes/11"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "tqdm",
+        "raw_version": "4.70.1",
+        "version": "4.70.1"
+      },
+      "dependencies_known": true,
+      "local_id": "12",
+      "name": "tqdm",
+      "pointer": "/nodes/12"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "truststore",
+        "raw_version": "0.10.5",
+        "version": "0.10.5"
+      },
+      "dependencies_known": true,
+      "local_id": "13",
+      "name": "truststore",
+      "pointer": "/nodes/13"
+    },
+    {
+      "coordinate": {
+        "ecosystem": "PyPI",
+        "name": "typing-extensions",
+        "raw_version": "4.16.0",
+        "version": "4.16.0"
+      },
+      "dependencies_known": true,
+      "local_id": "14",
+      "name": "typing-extensions",
+      "pointer": "/nodes/14"
+    }
+  ],
+  "edges": [
+    {
+      "from_id": "0",
+      "pointer": "/edges/0",
+      "requirement": "<9.0.0,>=8.4.2",
+      "to_id": "2"
+    },
+    {
+      "from_id": "0",
+      "pointer": "/edges/1",
+      "requirement": ">=3.10.0",
+      "to_id": "3"
+    },
+    {
+      "from_id": "0",
+      "pointer": "/edges/2",
+      "requirement": ">=2023.5.0",
+      "to_id": "4"
+    },
+    {
+      "from_id": "0",
+      "pointer": "/edges/3",
+      "requirement": "<2.0.0,>=1.6.0",
+      "to_id": "6"
+    },
+    {
+      "from_id": "0",
+      "pointer": "/edges/4",
+      "requirement": "<3,>=2.0.0",
+      "to_id": "8"
+    },
+    {
+      "from_id": "0",
+      "pointer": "/edges/5",
+      "requirement": ">=20.9",
+      "to_id": "10"
+    },
+    {
+      "from_id": "0",
+      "pointer": "/edges/6",
+      "requirement": ">=5.1",
+      "to_id": "11"
+    },
+    {
+      "from_id": "0",
+      "pointer": "/edges/7",
+      "requirement": ">=4.42.1",
+      "to_id": "12"
+    },
+    {
+      "from_id": "0",
+      "pointer": "/edges/8",
+      "requirement": ">=4.1.0",
+      "to_id": "14"
+    },
+    {
+      "from_id": "1",
+      "pointer": "/edges/9",
+      "requirement": ">=2.8",
+      "to_id": "9"
+    },
+    {
+      "from_id": "1",
+      "pointer": "/edges/10",
+      "requirement": ">=4.16.0",
+      "to_id": "14"
+    },
+    {
+      "from_id": "7",
+      "pointer": "/edges/11",
+      "requirement": ">=0.16",
+      "to_id": "5"
+    },
+    {
+      "from_id": "7",
+      "pointer": "/edges/12",
+      "requirement": ">=0.10",
+      "to_id": "13"
+    },
+    {
+      "from_id": "8",
+      "pointer": "/edges/13",
+      "requirement": ">=4.10",
+      "to_id": "1"
+    },
+    {
+      "from_id": "8",
+      "pointer": "/edges/14",
+      "requirement": "==2.13.1",
+      "to_id": "7"
+    },
+    {
+      "from_id": "8",
+      "pointer": "/edges/15",
+      "requirement": ">=3.18",
+      "to_id": "9"
+    },
+    {
+      "from_id": "8",
+      "pointer": "/edges/16",
+      "requirement": ">=0.10",
+      "to_id": "13"
+    }
+  ],
+  "environment": {
+    "historical_environment": false,
+    "resolution_context": "deps.dev generic Linux"
+  },
+  "issues": [],
+  "project_id": "aeced4e5-a0e1-4a53-90f0-85a22cdbf232",
+  "root_id": "0",
+  "snapshot_id": "fd70b0ca4d90e3806ae3d0b6030ad7aedd8fb6efdda50ef0ce41e0427a48f267",
+  "source": {
+    "digest": "5a520040b27b5c0bfa47bcfbc7e245dbf244f2b326505a675485d21149b1cd32",
+    "observed_at": "2026-10-14T19:26:07.518796+00:00",
+    "parser_version": "raw-v1",
+    "uri": "https://api.deps.dev/v3/systems/pypi/packages/huggingface-hub/versions/2.2.0:dependencies"
+  },
+  "source_kind": "public_resolution"
+}

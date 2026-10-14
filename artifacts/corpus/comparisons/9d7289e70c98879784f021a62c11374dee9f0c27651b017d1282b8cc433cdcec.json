@@ -1,0 +1,229 @@
+{
+  "added_known_matches": 0,
+  "baseline_id": "65c4b5b10a7f67d2758f6a0b1ef0839cf9d4331987e78ad6122443e537e76f50",
+  "candidate_id": "7588df35d152e84be3e99b4d14b1244b7d3c2c3f183fd480cb5bb01ab6d14f7b",
+  "collection_id": "859504706c264dfb9b55a28e2b8eb154",
+  "diff": {
+    "added": [
+      {
+        "name": "distro",
+        "versions": [
+          "1.9.0"
+        ]
+      },
+      {
+        "name": "h11",
+        "versions": [
+          "0.16.0"
+        ]
+      },
+      {
+        "name": "httpcore",
+        "versions": [
+          "1.0.9"
+        ]
+      },
+      {
+        "name": "httpcore2",
+        "versions": [
+          "2.13.1"
+        ]
+      },
+      {
+        "name": "httpx",
+        "versions": [
+          "0.28.1"
+        ]
+      },
+      {
+        "name": "httpx-sse",
+        "versions": [
+          "0.4.3"
+        ]
+      },
+      {
+        "name": "httpx2",
+        "versions": [
+          "2.13.1"
+        ]
+      },
+      {
+        "name": "langchain-classic",
+        "versions": [
+          "1.0.8"
+        ]
+      },
+      {
+        "name": "langchain-protocol",
+        "versions": [
+          "0.0.19"
+        ]
+      },
+      {
+        "name": "langchain-text-splitters",
+        "versions": [
+          "1.1.3"
+        ]
+      },
+      {
+        "name": "orjson",
+        "versions": [
+          "3.13.0"
+        ]
+      },
+      {
+        "name": "pydantic-settings",
+        "versions": [
+          "2.15.0"
+        ]
+      },
+      {
+        "name": "python-dotenv",
+        "versions": [
+          "1.2.4"
+        ]
+      },
+      {
+        "name": "requests-toolbelt",
+        "versions": [
+          "1.0.0"
+        ]
+      },
+      {
+        "name": "sniffio",
+        "versions": [
+          "1.3.1"
+        ]
+      },
+      {
+        "name": "truststore",
+        "versions": [
+          "0.10.5"
+        ]
+      },
+      {
+        "name": "uuid-utils",
+        "versions": [
+          "0.17.1"
+        ]
+      },
+      {
+        "name": "websockets",
+        "versions": [
+          "17.2.0"
+        ]
+      },
+      {
+        "name": "xxhash",
+        "versions": [
+          "4.0.1"
+        ]
+      },
+      {
+        "name": "zstandard",
+        "versions": [
+          "0.25.0"
+        ]
+      }
+    ],
+    "environment_comparable": false,
+    "opaque_after": 0,
+    "opaque_before": 0,
+    "removed": [
+      {
+        "name": "dataclasses-json",
+        "versions": [
+          "0.6.7"
+        ]
+      },
+      {
+        "name": "marshmallow",
+        "versions": [
+          "3.26.2"
+        ]
+      },
+      {
+        "name": "mypy-extensions",
+        "versions": [
+          "1.1.0"
+        ]
+      },
+      {
+        "name": "typing-inspect",
+        "versions": [
+          "0.9.0"
+        ]
+      }
+    ],
+    "versions_changed": [
+      {
+        "after": [
+          "0.4.2"
+        ],
+        "before": [
+          "0.0.8"
+        ],
+        "name": "langchain-community"
+      },
+      {
+        "after": [
+          "1.6.10"
+        ],
+        "before": [
+          "0.1.23"
+        ],
+        "name": "langchain-core"
+      },
+      {
+        "after": [
+          "0.14.8"
+        ],
+        "before": [
+          "0.0.87"
+        ],
+        "name": "langsmith"
+      },
+      {
+        "after": [
+          "2.5.4"
+        ],
+        "before": [
+          "1.26.4"
+        ],
+        "name": "numpy"
+      },
+      {
+        "after": [
+          "26.3.0"
+        ],
+        "before": [
+          "23.2.0"
+        ],
+        "name": "packaging"
+      },
+      {
+        "after": [
+          "9.2.1"
+        ],
+        "before": [
+          "8.5.0"
+        ],
+        "name": "tenacity"
+      }
+    ]
+  },
+  "id": "9d7289e70c98879784f021a62c11374dee9f0c27651b017d1282b8cc433cdcec",
+  "level": "metadata_comparison",
+  "limitations": [
+    "Current public resolutions; no verified installation or historical deployed environment."
+  ],
+  "observed_at": "2026-10-14T19:26:34.566554+00:00",
+  "remaining_known_matches": 0,
+  "removed_known_matches": 18,
+  "run_ids": [
+    "efea4972-fb27-4cea-a98c-41e910e1693f",
+    "5f8fa59b-3599-40d1-bcc5-729daa02a80d"
+  ],
+  "unknown": 0,
+  "verification_id": null
+}

@@ -1,0 +1,253 @@
+{
+  "added_known_matches": 0,
+  "baseline_id": "e3e7ace6e3242e5d8314a9bd92acc48fba4a4cb35b1dab3711e1c3135f938c96",
+  "candidate_id": "9d747bc7ff2d4e74a34ec61b0e7b0ae63567c439a29cf584e2b8d58fe50282e0",
+  "collection_id": "859504706c264dfb9b55a28e2b8eb154",
+  "diff": {
+    "added": [
+      {
+        "name": "anyio",
+        "versions": [
+          "4.15.1"
+        ]
+      },
+      {
+        "name": "h11",
+        "versions": [
+          "0.16.0"
+        ]
+      },
+      {
+        "name": "httptools",
+        "versions": [
+          "0.9.0"
+        ]
+      },
+      {
+        "name": "itsdangerous",
+        "versions": [
+          "2.2.0"
+        ]
+      },
+      {
+        "name": "python-multipart",
+        "versions": [
+          "0.0.32"
+        ]
+      },
+      {
+        "name": "starlette",
+        "versions": [
+          "1.7.0"
+        ]
+      },
+      {
+        "name": "uvicorn",
+        "versions": [
+          "0.54.0"
+        ]
+      },
+      {
+        "name": "websockets",
+        "versions": [
+          "17.2.0"
+        ]
+      }
+    ],
+    "environment_comparable": false,
+    "opaque_after": 0,
+    "opaque_before": 0,
+    "removed": [
+      {
+        "name": "blinker",
+        "versions": [
+          "1.9.0"
+        ]
+      },
+      {
+        "name": "cachetools",
+        "versions": [
+          "5.5.2"
+        ]
+      },
+      {
+        "name": "gitdb",
+        "versions": [
+          "4.0.12"
+        ]
+      },
+      {
+        "name": "gitpython",
+        "versions": [
+          "3.2.0"
+        ]
+      },
+      {
+        "name": "importlib-metadata",
+        "versions": [
+          "7.2.1"
+        ]
+      },
+      {
+        "name": "markdown-it-py",
+        "versions": [
+          "4.2.0"
+        ]
+      },
+      {
+        "name": "mdurl",
+        "versions": [
+          "0.1.2"
+        ]
+      },
+      {
+        "name": "pygments",
+        "versions": [
+          "2.21.0"
+        ]
+      },
+      {
+        "name": "pytz",
+        "versions": [
+          "2026.5.0"
+        ]
+      },
+      {
+        "name": "rich",
+        "versions": [
+          "13.9.4"
+        ]
+      },
+      {
+        "name": "smmap",
+        "versions": [
+          "5.0.3"
+        ]
+      },
+      {
+        "name": "tenacity",
+        "versions": [
+          "8.5.0"
+        ]
+      },
+      {
+        "name": "tornado",
+        "versions": [
+          "6.5.10"
+        ]
+      },
+      {
+        "name": "tzdata",
+        "versions": [
+          "2026.5.0"
+        ]
+      },
+      {
+        "name": "tzlocal",
+        "versions": [
+          "5.4.4"
+        ]
+      },
+      {
+        "name": "validators",
+        "versions": [
+          "0.36.0"
+        ]
+      },
+      {
+        "name": "zipp",
+        "versions": [
+          "4.1.1"
+        ]
+      }
+    ],
+    "versions_changed": [
+      {
+        "after": [
+          "6.3.0"
+        ],
+        "before": [
+          "5.5.0"
+        ],
+        "name": "altair"
+      },
+      {
+        "after": [
+          "2.5.4"
+        ],
+        "before": [
+          "1.26.4"
+        ],
+        "name": "numpy"
+      },
+      {
+        "after": [
+          "26.3.0"
+        ],
+        "before": [
+          "23.2.0"
+        ],
+        "name": "packaging"
+      },
+      {
+        "after": [
+          "3.0.6"
+        ],
+        "before": [
+          "2.3.3"
+        ],
+        "name": "pandas"
+      },
+      {
+        "after": [
+          "12.3.0"
+        ],
+        "before": [
+          "10.4.0"
+        ],
+        "name": "pillow"
+      },
+      {
+        "after": [
+          "7.36.2"
+        ],
+        "before": [
+          "4.25.9"
+        ],
+        "name": "protobuf"
+      },
+      {
+        "after": [
+          "25.0.1"
+        ],
+        "before": [
+          "26.0.0"
+        ],
+        "name": "pyarrow"
+      },
+      {
+        "after": [
+          "1.65.0"
+        ],
+        "before": [
+          "1.30.0"
+        ],
+        "name": "streamlit"
+      }
+    ]
+  },
+  "id": "58e0d76a579dc55f41e4921f582c312b2abfc5d58b143a8c01d26652aed4f73b",
+  "level": "metadata_comparison",
+  "limitations": [
+    "Current public resolutions; no verified installation or historical deployed environment."
+  ],
+  "observed_at": "2026-10-14T19:26:34.576787+00:00",
+  "remaining_known_matches": 0,
+  "removed_known_matches": 21,
+  "run_ids": [
+    "74147768-bd63-407d-9e21-6af042cd8402",
+    "70e25e23-78e4-45f2-9c8e-d24a903753b0"
+  ],
+  "unknown": 0,
+  "verification_id": null
+}

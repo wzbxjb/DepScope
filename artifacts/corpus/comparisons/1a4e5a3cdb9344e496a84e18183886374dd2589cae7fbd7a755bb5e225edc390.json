@@ -1,0 +1,415 @@
+{
+  "added_known_matches": 0,
+  "baseline_id": "e974c4a0ded9e258d32f8096749e28a3fd171fcbc72cebce546a7a36775dad11",
+  "candidate_id": "7fd5ef51b30fe661d71cf7fad60e21c6c0053be741f7071e8f4dfaa5d294575c",
+  "collection_id": "859504706c264dfb9b55a28e2b8eb154",
+  "diff": {
+    "added": [
+      {
+        "name": "aiohappyeyeballs",
+        "versions": [
+          "2.7.1"
+        ]
+      },
+      {
+        "name": "aiohttp",
+        "versions": [
+          "3.14.5"
+        ]
+      },
+      {
+        "name": "aiosignal",
+        "versions": [
+          "1.4.0"
+        ]
+      },
+      {
+        "name": "annotated-doc",
+        "versions": [
+          "0.0.5"
+        ]
+      },
+      {
+        "name": "annotated-types",
+        "versions": [
+          "0.8.0"
+        ]
+      },
+      {
+        "name": "anyio",
+        "versions": [
+          "4.15.1"
+        ]
+      },
+      {
+        "name": "attrs",
+        "versions": [
+          "26.1.0"
+        ]
+      },
+      {
+        "name": "cachetools",
+        "versions": [
+          "7.2.1"
+        ]
+      },
+      {
+        "name": "cffi",
+        "versions": [
+          "2.1.1"
+        ]
+      },
+      {
+        "name": "cryptography",
+        "versions": [
+          "50.0.2"
+        ]
+      },
+      {
+        "name": "databricks-sdk",
+        "versions": [
+          "0.152.0"
+        ]
+      },
+      {
+        "name": "fastapi",
+        "versions": [
+          "0.143.0"
+        ]
+      },
+      {
+        "name": "flask-cors",
+        "versions": [
+          "6.0.5"
+        ]
+      },
+      {
+        "name": "frozenlist",
+        "versions": [
+          "1.8.0"
+        ]
+      },
+      {
+        "name": "google-auth",
+        "versions": [
+          "2.62.0"
+        ]
+      },
+      {
+        "name": "graphene",
+        "versions": [
+          "3.4.3"
+        ]
+      },
+      {
+        "name": "graphql-core",
+        "versions": [
+          "3.2.13"
+        ]
+      },
+      {
+        "name": "graphql-relay",
+        "versions": [
+          "3.2.0"
+        ]
+      },
+      {
+        "name": "h11",
+        "versions": [
+          "0.16.0"
+        ]
+      },
+      {
+        "name": "huey",
+        "versions": [
+          "3.4.0"
+        ]
+      },
+      {
+        "name": "mlflow-skinny",
+        "versions": [
+          "3.17.1"
+        ]
+      },
+      {
+        "name": "mlflow-tracing",
+        "versions": [
+          "3.17.1"
+        ]
+      },
+      {
+        "name": "multidict",
+        "versions": [
+          "7.1.0"
+        ]
+      },
+      {
+        "name": "opentelemetry-api",
+        "versions": [
+          "1.45.1"
+        ]
+      },
+      {
+        "name": "opentelemetry-proto",
+        "versions": [
+          "1.45.1"
+        ]
+      },
+      {
+        "name": "opentelemetry-sdk",
+        "versions": [
+          "1.45.1"
+        ]
+      },
+      {
+        "name": "opentelemetry-semantic-conventions",
+        "versions": [
+          "0.66.0b1"
+        ]
+      },
+      {
+        "name": "prettytable",
+        "versions": [
+          "3.18.0"
+        ]
+      },
+      {
+        "name": "propcache",
+        "versions": [
+          "0.5.4"
+        ]
+      },
+      {
+        "name": "pyasn1",
+        "versions": [
+          "0.6.4"
+        ]
+      },
+      {
+        "name": "pyasn1-modules",
+        "versions": [
+          "0.4.2"
+        ]
+      },
+      {
+        "name": "pycparser",
+        "versions": [
+          "3.11.0"
+        ]
+      },
+      {
+        "name": "pydantic",
+        "versions": [
+          "2.14.1"
+        ]
+      },
+      {
+        "name": "pydantic-core",
+        "versions": [
+          "2.50.1"
+        ]
+      },
+      {
+        "name": "python-dotenv",
+        "versions": [
+          "1.2.4"
+        ]
+      },
+      {
+        "name": "skops",
+        "versions": [
+          "0.16.0"
+        ]
+      },
+      {
+        "name": "starlette",
+        "versions": [
+          "1.8.0"
+        ]
+      },
+      {
+        "name": "typing-inspection",
+        "versions": [
+          "0.4.4"
+        ]
+      },
+      {
+        "name": "uvicorn",
+        "versions": [
+          "0.54.0"
+        ]
+      },
+      {
+        "name": "wcwidth",
+        "versions": [
+          "0.9.2"
+        ]
+      },
+      {
+        "name": "yarl",
+        "versions": [
+          "1.25.1"
+        ]
+      }
+    ],
+    "environment_comparable": false,
+    "opaque_after": 0,
+    "opaque_before": 0,
+    "removed": [
+      {
+        "name": "databricks-cli",
+        "versions": [
+          "0.18.0"
+        ]
+      },
+      {
+        "name": "entrypoints",
+        "versions": [
+          "0.4.0"
+        ]
+      },
+      {
+        "name": "markdown",
+        "versions": [
+          "3.11.1"
+        ]
+      },
+      {
+        "name": "oauthlib",
+        "versions": [
+          "4.0.0"
+        ]
+      },
+      {
+        "name": "pyjwt",
+        "versions": [
+          "2.15.1"
+        ]
+      },
+      {
+        "name": "pytz",
+        "versions": [
+          "2023.4.0"
+        ]
+      },
+      {
+        "name": "querystring-parser",
+        "versions": [
+          "1.2.4"
+        ]
+      },
+      {
+        "name": "tabulate",
+        "versions": [
+          "0.10.0"
+        ]
+      }
+    ],
+    "versions_changed": [
+      {
+        "after": [
+          "1.4.0"
+        ],
+        "before": [
+          "1.3.3"
+        ],
+        "name": "contourpy"
+      },
+      {
+        "after": [
+          "26.2.0"
+        ],
+        "before": [
+          "21.2.0"
+        ],
+        "name": "gunicorn"
+      },
+      {
+        "after": [
+          "9.0.1"
+        ],
+        "before": [
+          "7.2.1"
+        ],
+        "name": "importlib-metadata"
+      },
+      {
+        "after": [
+          "3.17.1"
+        ],
+        "before": [
+          "2.10.0"
+        ],
+        "name": "mlflow"
+      },
+      {
+        "after": [
+          "2.5.4"
+        ],
+        "before": [
+          "1.26.4"
+        ],
+        "name": "numpy"
+      },
+      {
+        "after": [
+          "26.3.0"
+        ],
+        "before": [
+          "23.2.0"
+        ],
+        "name": "packaging"
+      },
+      {
+        "after": [
+          "3.1.0rc0"
+        ],
+        "before": [
+          "3.0.0rc1"
+        ],
+        "name": "pandas"
+      },
+      {
+        "after": [
+          "6.33.6"
+        ],
+        "before": [
+          "4.25.9"
+        ],
+        "name": "protobuf"
+      },
+      {
+        "after": [
+          "25.0.1"
+        ],
+        "before": [
+          "15.0.2"
+        ],
+        "name": "pyarrow"
+      },
+      {
+        "after": [
+          "1.18.1"
+        ],
+        "before": [
+          "1.17.1"
+        ],
+        "name": "scipy"
+      }
+    ]
+  },
+  "id": "1a4e5a3cdb9344e496a84e18183886374dd2589cae7fbd7a755bb5e225edc390",
+  "level": "metadata_comparison",
+  "limitations": [
+    "Current public resolutions; no verified installation or historical deployed environment."
+  ],
+  "observed_at": "2026-10-14T19:26:34.572083+00:00",
+  "remaining_known_matches": 0,
+  "removed_known_matches": 53,
+  "run_ids": [
+    "b8e39b9a-f3ec-4c32-a4d4-4b0dae2b8e85",
+    "5f4ec5c6-fa52-45e6-bf39-12e76f0f1dc8"
+  ],
+  "unknown": 0,
+  "verification_id": null
+}
