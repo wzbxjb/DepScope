@@ -110,5 +110,9 @@ class MatchRunRepository:
         last=decode_cursor(cursor,scope)
         limit=page_limit(limit)
         values=tuple(f.model_dump(mode="json") for f in sorted(run.findings,key=lambda f:f.id) if f.id>last)
+        selected_ids=[row["id"] for row in values[:limit]]
+        with self.driver.session() as session:
+            context={row["id"]:row.data() for row in session.run("MATCH (f:Finding)-[:FOR_INSTANCE]->(c:ComponentInstance {snapshot_id:$sid}) WHERE f.id IN $ids OPTIONAL MATCH (c)-[:INSTANCE_OF]->(p:PackageVersion) OPTIONAL MATCH (f)-[:SUPPORTED_BY]->(a:AdvisoryRevision) RETURN f.id AS id,c.name AS component_name,p.name AS package_name,c.raw_version AS raw_version,collect(a.id) AS advisory_ids",sid=run.snapshot_id,ids=selected_ids)}
+        values=tuple(row | context.get(row["id"],{}) for row in values)
         cursor=encode_cursor(scope,values[limit-1]["id"]) if len(values)>limit else None
         return Page(items=values[:limit],next_cursor=cursor,observed_at=run.observed_at)

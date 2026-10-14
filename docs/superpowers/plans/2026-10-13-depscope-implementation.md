@@ -546,7 +546,7 @@ git commit -m "feat: compare upgrade evidence without overstating validation"
 
 **Interfaces:** Produces build_services(settings: Settings) -> Services，Services 包含 repositories、worker、match_service、path_service、comparison_service。端点路径按规格第 9 节；列表响应 Page，写任务返回 job_id；增加 GET /api/projects、GET /api/projects/{id}/snapshots 和 POST /api/jobs/{id}/cancel 以支持界面操作。
 
-- [ ] Step 1：写失败测试。
+- [x] Step 1：写失败测试。
 
 ~~~python
 def test_streamed_oversize_import_has_no_published_snapshot(client, repo):
@@ -558,8 +558,8 @@ def test_streamed_oversize_import_has_no_published_snapshot(client, repo):
     assert repo.list_snapshots(project).items == ()
 ~~~
 
-- [ ] Step 2：运行 pytest tests/integration/test_core_api.py -q。
-- [ ] Step 3：导入端点接收 application/json 的文件原始字节，前端以 File 作为 body 发送；HTTP 层增量读取 Request.stream() 并计数，超过限制立即停止，异步版与 read_limited 使用相同规则，不依赖 Content-Length。归一错误转 422，超限 413，不存在 404，范围歧义 409，任务读取可重试错误包含码和位置。控制器只做校验和任务调度。
+- [x] Step 2：运行 pytest tests/integration/test_core_api.py -q。
+- [x] Step 3：导入端点接收 application/json 的文件原始字节，前端以 File 作为 body 发送；HTTP 层增量读取 Request.stream() 并计数，超过限制立即停止，异步版与 read_limited 使用相同规则，不依赖 Content-Length。归一错误转 422，超限 413，不存在 404，范围歧义 409，任务读取可重试错误包含码和位置。控制器只做校验和任务调度。
 
 ~~~python
 def page_response(page: Page) -> dict:
@@ -567,8 +567,8 @@ def page_response(page: Page) -> dict:
             "next_cursor": page.next_cursor, "observed_at": page.observed_at}
 ~~~
 
-- [ ] Step 4：验证多页读取、无效 cursor、任务取消、项目／快照 ID 不匹配、来源局部标识不可跨项目访问、服务重启后进度可读；OpenAPI 作为前端类型生成输入。
-- [ ] Step 5：提交 feat: expose core investigation APIs。
+- [x] Step 4：验证多页读取、无效 cursor、任务取消、项目／快照 ID 不匹配、来源局部标识不可跨项目访问、服务重启后进度可读；OpenAPI 作为前端类型生成输入。
+- [x] Step 5：提交 feat: expose core investigation APIs。
 
 ~~~bash
 git add backend/src/depscope/api backend/src/depscope/runtime backend/tests

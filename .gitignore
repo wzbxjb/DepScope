@@ -15,3 +15,5 @@ data/runtime/
 artifacts/private/
 *.egg-info/
 *.log
+
+*.tsbuildinfo

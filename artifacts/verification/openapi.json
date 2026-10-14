@@ -969,6 +969,27 @@
           }
         }
       }
+    },
+    "/api/demo/public-sample": {
+      "post": {
+        "tags": [
+          "demo"
+        ],
+        "summary": "Public Sample",
+        "operationId": "public_sample_api_demo_public_sample_post",
+        "responses": {
+          "202": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/JobSubmitted"
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "components": {
@@ -1041,6 +1062,28 @@
               }
             ],
             "title": "Verification Id"
+          },
+          "added_known_matches": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Added Known Matches"
+          },
+          "remaining_known_matches": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Remaining Known Matches"
           }
         },
         "additionalProperties": false,

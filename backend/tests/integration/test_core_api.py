@@ -98,3 +98,19 @@ def test_job_cancel_is_persistent_and_pages_are_consumable(client,services):
         if not cursor:
             break
     assert project in seen and len(seen)==len(set(seen)) and len(seen)>=5
+
+
+def test_verified_sample_loads_real_archive_through_background_job(client,services,respx_mock):
+    def empty_queries(request):
+        queries=json.loads(request.content)["queries"]
+        return httpx.Response(200,json={"results":[{} for query in queries]})
+    respx_mock.post("https://api.osv.dev/v1/querybatch").mock(side_effect=empty_queries)
+    submitted=client.post("/api/demo/public-sample")
+    assert submitted.status_code==202
+    job_id=submitted.json()["job_id"]
+    assert asyncio.run(services.worker.run_once())
+    job=client.get(f"/api/jobs/{job_id}").json()
+    assert job["status"]=="ready"
+    graph=client.get(f"/api/snapshots/{job['result_id']}/graph").json()
+    assert graph["total_nodes"]==41 and len(graph["edges"])==72
+    assert graph["run_id"] is not None

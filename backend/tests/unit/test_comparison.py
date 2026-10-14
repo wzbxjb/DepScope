@@ -45,3 +45,11 @@ def test_package_diff_preserves_multiple_versions_and_opaque_counts(comparison_i
 ])
 def test_levels_require_all_evidence_conditions(resolution,tests,env,constraints,expected):
     assert verification_level(resolution,tests,env,constraints)==expected
+
+
+def test_comparison_reports_new_matches_as_well_as_removed(comparison_inputs):
+    before,after,bs,as_=comparison_inputs("matched","matched")
+    after=after.model_copy(update={"findings":(after.findings[0].model_copy(update={"group_id":"new-group"}),)})
+    result=compare_known_findings(before,after,bs,as_)
+    assert result.removed_known_matches==1
+    assert result.added_known_matches==1 and result.remaining_known_matches==1

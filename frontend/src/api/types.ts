@@ -1,0 +1,14 @@
+import type { components } from './generated';
+export type GraphView = components['schemas']['GraphView'];
+export type GraphNode = components['schemas']['GraphNode'];
+export type Snapshot = components['schemas']['Snapshot'];
+export type MatchRun = components['schemas']['MatchRun'];
+export type Finding = components['schemas']['Finding'] & { component_name?: string; package_name?: string | null; raw_version?: string | null; advisory_ids?: string[] };
+export type PathResult = components['schemas']['PathResult'];
+export type Comparison = components['schemas']['Comparison'];
+export type Completeness = components['schemas']['Completeness'];
+export type Page<T> = { items: T[]; next_cursor: string | null; observed_at: string };
+export type Project = { id: string; name: string; kind: string; created_at: string };
+export type SnapshotSummary = { snapshot_id: string; project_id: string; source_kind: string; observed_at: string; component_count: number; edge_count: number; root_name: string | null; root_version: string | null };
+export type RunSummary = { id: string; collection_id: string; observed_at: string };
+export type Job = { id: string; kind: string; status: string; phase: string; progress: number; error: { code: string; message: string; pointers: string[]; retryable: boolean } | null; result_id: string | null; cancel_requested: boolean };

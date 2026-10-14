@@ -1,0 +1,186 @@
+{
+  "config": {
+    "argv": [
+      "/Users/wangzhe/Documents/Codex/2026-10-08/referenced-chatgpt-conversation-this-is-an-2/outputs/IS507_Midterm_Revised/DepScope/.worktrees/development/.superpowers/tools/node-v22.23.3-darwin-arm64/bin/node",
+      "/Users/wangzhe/Documents/Codex/2026-10-08/referenced-chatgpt-conversation-this-is-an-2/outputs/IS507_Midterm_Revised/DepScope/.worktrees/development/frontend/node_modules/.bin/playwright",
+      "test",
+      "e2e/core-workflow.spec.ts"
+    ],
+    "configFile": "/Users/wangzhe/Documents/Codex/2026-10-08/referenced-chatgpt-conversation-this-is-an-2/outputs/IS507_Midterm_Revised/DepScope/.worktrees/development/frontend/playwright.config.ts",
+    "rootDir": "/Users/wangzhe/Documents/Codex/2026-10-08/referenced-chatgpt-conversation-this-is-an-2/outputs/IS507_Midterm_Revised/DepScope/.worktrees/development/frontend/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/wangzhe/Documents/Codex/2026-10-08/referenced-chatgpt-conversation-this-is-an-2/outputs/IS507_Midterm_Revised/DepScope/.worktrees/development/frontend/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/Users/wangzhe/Documents/Codex/2026-10-08/referenced-chatgpt-conversation-this-is-an-2/outputs/IS507_Midterm_Revised/DepScope/.worktrees/development/frontend/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/Users/wangzhe/Documents/Codex/2026-10-08/referenced-chatgpt-conversation-this-is-an-2/outputs/IS507_Midterm_Revised/DepScope/.worktrees/development/frontend/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "/Users/wangzhe/Documents/Codex/2026-10-08/referenced-chatgpt-conversation-this-is-an-2/outputs/IS507_Midterm_Revised/DepScope/.worktrees/development/frontend/e2e",
+        "snapshotDir": "/Users/wangzhe/Documents/Codex/2026-10-08/referenced-chatgpt-conversation-this-is-an-2/outputs/IS507_Midterm_Revised/DepScope/.worktrees/development/frontend/e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "http://127.0.0.1:5173",
+          "viewport": {
+            "width": 1440,
+            "height": 1024
+          },
+          "screenshot": "only-on-failure",
+          "launchOptions": {
+            "executablePath": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+          }
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "../artifacts/verification/core-browser-tests.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "core-workflow.spec.ts",
+      "file": "core-workflow.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "explores verified public source data through the real product",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1845,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-14T00:36:18.846Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "103b7bf68f721faca5dd-d9910b248e2c564f0a1e",
+          "file": "core-workflow.spec.ts",
+          "line": 2,
+          "column": 1
+        },
+        {
+          "title": "creates a project, resolves two real snapshots, and compares their sources",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8303,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-14T00:36:21.783Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "103b7bf68f721faca5dd-2ec6a73bd39f0b293ebf",
+          "file": "core-workflow.spec.ts",
+          "line": 22,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-14T00:36:18.458Z",
+    "duration": 11769.599,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

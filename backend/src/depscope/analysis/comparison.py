@@ -33,6 +33,8 @@ class PackageDiff(Contract):
 
 
 class MatchingDiff(Contract):
+    added_known_matches: int
+    remaining_known_matches: int
     removed_known_matches: int
     unknown: int
     unknown_details: tuple[str,...]
@@ -51,6 +53,8 @@ class Comparison(Contract):
     limitations: tuple[str,...]
     observed_at: str
     verification_id: str | None = None
+    added_known_matches: int | None = None
+    remaining_known_matches: int | None = None
 
 
 def package_versions(snapshot) -> dict[str,tuple[str,...]]:
@@ -109,7 +113,9 @@ def compare_known_findings(before,after,before_snapshot,after_snapshot) -> Match
                 else:
                     removed+=1
     details.extend(name+":query_unknown" for name in sorted(unknown_packages-a.keys()))
-    return MatchingDiff(removed_known_matches=removed,unknown=len(details),unknown_details=tuple(details))
+    return MatchingDiff(removed_known_matches=removed,unknown=len(details),unknown_details=tuple(details),
+                        added_known_matches=sum(len(groups-a.get(name,set())) for name,groups in b.items()),
+                        remaining_known_matches=sum(len(groups) for groups in b.values()))
 
 
 class ComparisonService:
@@ -139,6 +145,7 @@ class ComparisonService:
         result=Comparison(id=str(uuid.uuid4()),baseline_id=before_id,candidate_id=after_id,
                     run_ids=(runs[before_id].id,runs[after_id].id),collection_id=collection,diff=diff,
                     removed_known_matches=matching.removed_known_matches,unknown=matching.unknown,
-                    level=level,limitations=tuple(limitations),observed_at=now(),verification_id=verification_id)
+                    level=level,limitations=tuple(limitations),observed_at=now(),verification_id=verification_id,
+                    added_known_matches=matching.added_known_matches,remaining_known_matches=matching.remaining_known_matches)
         await asyncio.to_thread(self.comparisons.save,result)
         return result
