@@ -65,3 +65,14 @@ def test_settlement_is_idempotent_and_preserves_usage_request(ledger):
     with pytest.raises(DomainError):
         ledger.settle(reservation.id, {"prompt_tokens": 999, "completion_tokens": 10})
     assert ledger.calls(run)[0]["request_id"] == "request-1"
+
+
+def test_explicit_limit_increase_preserves_calls_and_rejects_reset(ledger):
+    run = ledger.test_run
+    ledger.open_run(run, BudgetPolicy(currency="USD", max_amount=Decimal("0.10"), max_calls=1))
+    ledger.reserve(run, Decimal("0.03"))
+    ledger.increase_limits(run, Decimal("0.20"), 2)
+    assert ledger.summary(run).call_count == 1 and ledger.summary(run).reserved == Decimal("0.03")
+    assert ledger.summary(run).remaining_calls == 1
+    with pytest.raises(DomainError):
+        ledger.increase_limits(run, Decimal("0.10"), 1)

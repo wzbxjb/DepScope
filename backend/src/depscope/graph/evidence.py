@@ -208,6 +208,20 @@ async def build_index(documents, provider, store):
     )
     if not chunks:
         raise DomainError("EVIDENCE_EMPTY", "No evidence is available for indexing")
+    probe = await provider.embed((chunks[0].text,))
+    manifest = make_manifest(chunks, probe, CHUNKING_VERSION)
+    import asyncio
+
+    try:
+        existing = await asyncio.to_thread(store.manifest, manifest.id)
+        if existing != manifest:
+            raise DomainError(
+                "INDEX_MODEL_MISMATCH", "Persisted index does not match current evidence and model"
+            )
+        return existing
+    except DomainError as exc:
+        if exc.code != "INDEX_NOT_READY":
+            raise
     batches = []
     vectors = []
     for offset in range(0, len(chunks), 32):

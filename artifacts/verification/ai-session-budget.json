@@ -1,0 +1,13 @@
+{
+  "reserved": "0E-7",
+  "estimated_spent": "0.00635184",
+  "known_estimated_spent": "0.00635184",
+  "call_count": 5,
+  "remaining": "9.99364816",
+  "remaining_calls": 15,
+  "unknown_usage_calls": 0,
+  "currency": "USD",
+  "price_basis": "Peak-rate upper-bound estimate; not a supplier invoice",
+  "max_amount": "10",
+  "max_calls": 20
+}

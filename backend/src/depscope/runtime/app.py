@@ -81,7 +81,7 @@ def create_app(settings: Settings,services=None) -> FastAPI:
                     "generation":"configured" if configured["generation_configured"] else "not_configured",
                     "embedding":"configured" if configured["embedding_configured"] else "not_configured"})
 
-    from depscope.api import comparisons, demo, findings, imports, jobs, projects, snapshots
-    for module in (projects,imports,jobs,snapshots,findings,comparisons,demo):
+    from depscope.api import comparisons, demo, findings, imports, investigations, jobs, projects, snapshots
+    for module in (projects,imports,jobs,snapshots,findings,comparisons,demo,investigations):
         app.include_router(module.router)
     return app

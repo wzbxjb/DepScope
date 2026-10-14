@@ -30,6 +30,8 @@ class BudgetSummary(Contract):
     unknown_usage_calls: int
     currency: str
     price_basis: str | None
+    max_amount: Decimal
+    max_calls: int
 
 
 class BudgetLedger:
@@ -52,6 +54,12 @@ class BudgetLedger:
     def summary(self, run_id):
         return self.store.summary(run_id)
 
+    def increase_limits(self, run_id, max_amount, max_calls):
+        return self.store.increase_limits(run_id, max_amount, max_calls)
+
+    def price_for(self, run_id):
+        return self.store.price_for(run_id)
+
     def calls(self, run_id):
         return self.store.calls(run_id)
 
@@ -61,6 +69,12 @@ class BudgetedGeneration:
         self.provider, self.ledger = provider, ledger
 
     async def generate(self, run_id, messages, max_output=1024):
+        if self.ledger.price_for(run_id) != self.ledger.price:
+            from depscope.runtime.errors import DomainError
+
+            raise DomainError(
+                "PRICING_CHANGED", "Use a new recorded budget when the pricing profile changes"
+            )
         amount = reservation_cost(messages, max_output, self.ledger.price)
         reservation = await asyncio.to_thread(self.ledger.reserve, run_id, amount)
         try:

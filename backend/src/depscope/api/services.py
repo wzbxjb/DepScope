@@ -40,6 +40,7 @@ class Services:
     comparison_service: ComparisonService
     worker: Worker
     owns_driver: bool = True
+    investigation: object | None = None
 
     def close(self):
         if self.owns_driver:
@@ -96,8 +97,12 @@ def build_services(settings: Settings,driver=None,snapshots=None,jobs=None) -> S
                 await MatchService(snapshots,runs,OsvClient(records,cancelled=cancelled)).collect((snapshot_id,),str(uuid.uuid4()))
             return snapshot_id
         worker=Worker(jobs,snapshots,{"import":import_handler(jobs,snapshots,records),"match":match,"compare":compare,"sample":sample})
-        return Services(driver,snapshots,runs,comparisons,jobs,records,verifications,matching,
+        container=Services(driver,snapshots,runs,comparisons,jobs,records,verifications,matching,
                         path_service,graph_service,comparison_service,worker,owns)
+        from depscope.investigation.jobs import InvestigationJobs
+        container.investigation=InvestigationJobs(container,settings)
+        worker.handlers["investigate"]=container.investigation.handle
+        return container
     except Exception:
         if owns:
             driver.close()

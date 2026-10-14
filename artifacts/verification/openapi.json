@@ -990,10 +990,345 @@
           }
         }
       }
+    },
+    "/api/investigations": {
+      "post": {
+        "tags": [
+          "investigations"
+        ],
+        "summary": "Submit",
+        "operationId": "submit_api_investigations_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/InvestigationInput"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "202": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/investigations/{id}": {
+      "get": {
+        "tags": [
+          "investigations"
+        ],
+        "summary": "Result",
+        "operationId": "result_api_investigations__id__get",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/InvestigationRecord"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/investigations/{id}/evidence/{evidence_id}": {
+      "get": {
+        "tags": [
+          "investigations"
+        ],
+        "summary": "Evidence",
+        "operationId": "evidence_api_investigations__id__evidence__evidence_id__get",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Id"
+            }
+          },
+          {
+            "name": "evidence_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Evidence Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ai/status": {
+      "get": {
+        "tags": [
+          "investigations"
+        ],
+        "summary": "Status",
+        "operationId": "status_api_ai_status_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ai/limits": {
+      "post": {
+        "tags": [
+          "investigations"
+        ],
+        "summary": "Increase",
+        "operationId": "increase_api_ai_limits_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LimitIncrease"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "components": {
     "schemas": {
+      "Answer": {
+        "properties": {
+          "status": {
+            "type": "string",
+            "title": "Status"
+          },
+          "body": {
+            "type": "string",
+            "title": "Body",
+            "default": ""
+          },
+          "facts": {
+            "items": {
+              "$ref": "#/components/schemas/ToolFact"
+            },
+            "type": "array",
+            "title": "Facts",
+            "default": []
+          },
+          "citations": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Citations",
+            "default": []
+          },
+          "limitations": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Limitations",
+            "default": []
+          },
+          "model_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Model Id"
+          },
+          "request_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Request Id"
+          },
+          "usage": {
+            "anyOf": [
+              {
+                "additionalProperties": true,
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Usage"
+          },
+          "explanation_verified": {
+            "type": "boolean",
+            "title": "Explanation Verified",
+            "default": false
+          },
+          "supplied_evidence_ids": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Supplied Evidence Ids",
+            "default": []
+          },
+          "omitted_evidence_ids": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Omitted Evidence Ids",
+            "default": []
+          },
+          "index_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Index Id"
+          },
+          "method": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Method"
+          },
+          "tool_facts": {
+            "items": {
+              "$ref": "#/components/schemas/ToolFact"
+            },
+            "type": "array",
+            "title": "Tool Facts",
+            "default": []
+          },
+          "raw_output_digest": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Raw Output Digest"
+          },
+          "rejection_reasons": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Rejection Reasons",
+            "default": []
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "status"
+        ],
+        "title": "Answer"
+      },
       "Comparison": {
         "properties": {
           "id": {
@@ -1341,6 +1676,53 @@
         ],
         "title": "Edge"
       },
+      "EvidenceChunk": {
+        "properties": {
+          "evidence_id": {
+            "type": "string",
+            "title": "Evidence Id"
+          },
+          "document_id": {
+            "type": "string",
+            "title": "Document Id"
+          },
+          "text": {
+            "type": "string",
+            "title": "Text"
+          },
+          "start": {
+            "type": "integer",
+            "title": "Start"
+          },
+          "end": {
+            "type": "integer",
+            "title": "End"
+          },
+          "source_ids": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Source Ids"
+          },
+          "pointer": {
+            "type": "string",
+            "title": "Pointer"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "evidence_id",
+          "document_id",
+          "text",
+          "start",
+          "end",
+          "source_ids",
+          "pointer"
+        ],
+        "title": "EvidenceChunk"
+      },
       "Finding": {
         "properties": {
           "id": {
@@ -1551,6 +1933,127 @@
         "type": "object",
         "title": "HTTPValidationError"
       },
+      "InvestigationInput": {
+        "properties": {
+          "question": {
+            "type": "string",
+            "maxLength": 5000,
+            "minLength": 1,
+            "title": "Question"
+          },
+          "scope": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/ScopeInput"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "method": {
+            "type": "string",
+            "enum": [
+              "lexical",
+              "vector",
+              "rrf",
+              "graph_rrf"
+            ],
+            "title": "Method",
+            "default": "graph_rrf"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "question"
+        ],
+        "title": "InvestigationInput"
+      },
+      "InvestigationRecord": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "question": {
+            "type": "string",
+            "title": "Question"
+          },
+          "scope": {
+            "$ref": "#/components/schemas/InvestigationScope"
+          },
+          "answer": {
+            "$ref": "#/components/schemas/Answer"
+          },
+          "evidence_chunks": {
+            "items": {
+              "$ref": "#/components/schemas/EvidenceChunk"
+            },
+            "type": "array",
+            "title": "Evidence Chunks"
+          },
+          "observed_at": {
+            "type": "string",
+            "title": "Observed At"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "id",
+          "question",
+          "scope",
+          "answer",
+          "evidence_chunks",
+          "observed_at"
+        ],
+        "title": "InvestigationRecord"
+      },
+      "InvestigationScope": {
+        "properties": {
+          "project_ids": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Project Ids"
+          },
+          "snapshot_ids": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Snapshot Ids"
+          },
+          "run_map": {
+            "additionalProperties": {
+              "type": "string"
+            },
+            "type": "object",
+            "title": "Run Map"
+          },
+          "comparison_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Comparison Id"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "project_ids",
+          "snapshot_ids",
+          "run_map"
+        ],
+        "title": "InvestigationScope"
+      },
       "JobSubmitted": {
         "properties": {
           "job_id": {
@@ -1574,6 +2077,28 @@
           "job_id"
         ],
         "title": "JobSubmitted"
+      },
+      "LimitIncrease": {
+        "properties": {
+          "max_amount_usd": {
+            "type": "string",
+            "maxLength": 32,
+            "title": "Max Amount Usd"
+          },
+          "max_calls": {
+            "type": "integer",
+            "maximum": 100000.0,
+            "minimum": 0.0,
+            "title": "Max Calls"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "max_amount_usd",
+          "max_calls"
+        ],
+        "title": "LimitIncrease"
       },
       "MatchRun": {
         "properties": {
@@ -1906,6 +2431,50 @@
         ],
         "title": "PublicResolutionInput"
       },
+      "ScopeInput": {
+        "properties": {
+          "project_ids": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Project Ids"
+          },
+          "snapshot_ids": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Snapshot Ids"
+          },
+          "run_map": {
+            "additionalProperties": {
+              "type": "string"
+            },
+            "type": "object",
+            "title": "Run Map"
+          },
+          "comparison_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Comparison Id"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "project_ids",
+          "snapshot_ids",
+          "run_map"
+        ],
+        "title": "ScopeInput"
+      },
       "Snapshot": {
         "properties": {
           "snapshot_id": {
@@ -2014,6 +2583,42 @@
           "parser_version"
         ],
         "title": "SourceRef"
+      },
+      "ToolFact": {
+        "properties": {
+          "kind": {
+            "type": "string",
+            "enum": [
+              "count",
+              "version",
+              "path",
+              "query",
+              "advisory",
+              "comparison"
+            ],
+            "title": "Kind"
+          },
+          "value": {
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Value"
+          },
+          "source_ids": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Source Ids"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "kind",
+          "value",
+          "source_ids"
+        ],
+        "title": "ToolFact"
       },
       "ValidationError": {
         "properties": {

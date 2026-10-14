@@ -706,7 +706,7 @@ git commit -m "feat: integrate generation with persistent usage budgets"
 
 **Interfaces:** Consumes InvestigationScope、Retriever、GenerationProvider、BudgetLedger、PathService、ComparisonService。Produces ToolFact(kind,value,source_ids)、Answer(status,body,facts,citations,limitations,model_id,request_id)、Investigator.answer(question,scope,method,run_id) -> Answer。工具仅提供 path、count、advisory、comparison 四种受限操作；题集模式使用固定 scope，不因检索方法调用不同的隐藏统计工具。
 
-- [ ] Step 1：写注入和错误计数的失败测试。
+- [x] Step 1：写注入和错误计数的失败测试。
 
 ~~~python
 async def test_advisory_cannot_expand_permissions(investigator, fake_model, write_spy):
@@ -719,8 +719,8 @@ async def test_advisory_cannot_expand_permissions(investigator, fake_model, writ
     write_spy.assert_not_called()
 ~~~
 
-- [ ] Step 2：运行 pytest tests/unit/test_investigation.py -q，确认失败。
-- [ ] Step 3：范围歧义返回 needs_scope；工具参数只能使用 scope 中的 ID。证据和工具事实以明确的资料区块传给模型，结构化输出校验后再显示。引用必须属于本次送入模型的证据；数值、版本、路径与工具事实核对。不能核对的开放解释单独标明其生成性质，并纳入引用支持评估。
+- [x] Step 2：运行 pytest tests/unit/test_investigation.py -q，确认失败。
+- [x] Step 3：范围歧义返回 needs_scope；工具参数只能使用 scope 中的 ID。证据和工具事实以明确的资料区块传给模型，结构化输出校验后再显示。引用必须属于本次送入模型的证据；数值、版本、路径与工具事实核对。不能核对的开放解释单独标明其生成性质，并纳入引用支持评估。
 
 ~~~python
 def validate_citations(ids: tuple[str, ...], supplied: tuple[EvidenceChunk, ...]) -> bool:
@@ -728,9 +728,9 @@ def validate_citations(ids: tuple[str, ...], supplied: tuple[EvidenceChunk, ...]
     return bool(ids) and set(ids).issubset(allowed)
 ~~~
 
-- [ ] Step 4：不支持的确定性事实拒绝输出；可单独展示原始图查询事实，标明它是查询结果。验证空资料、错误 JSON、模型故障、同名项目、多运行、分页计数、未知状态和中英文提问。
-- [ ] Step 5：接入 POST /api/investigations、AI 页面引用跳转和限额反馈；无 API 时展示不可用原因。运行真实问答及页面验证，确认引用回到正确公告／JSON 字段，记录实际用量。
-- [ ] Step 6：提交 feat: answer scoped investigations with source evidence。
+- [x] Step 4：不支持的确定性事实拒绝输出；可单独展示原始图查询事实，标明它是查询结果。验证空资料、错误 JSON、模型故障、同名项目、多运行、分页计数、未知状态和中英文提问。
+- [x] Step 5：接入 POST /api/investigations、AI 页面引用跳转和限额反馈；无 API 时展示不可用原因。运行真实问答及页面验证，确认引用回到正确公告／JSON 字段，记录实际用量。
+- [x] Step 6：提交 feat: answer scoped investigations with source evidence。
 
 ~~~bash
 git add backend/src/depscope/investigation backend/src/depscope/api/investigations.py frontend/src/features/investigation frontend/tests/investigation.test.tsx backend/tests

@@ -1,0 +1,191 @@
+{
+  "id": "00161e53-6885-4fda-bdde-3578ea87739b",
+  "question": "How many recorded instances are in this snapshot? Report the instances metric.",
+  "scope": {
+    "project_ids": [
+      "df28462f-6441-4ab2-8bcf-52548c7dd345"
+    ],
+    "snapshot_ids": [
+      "972f6e7718b9c9d9be313e1fc41d723a8d4e4bb1130e59c1916df11beb10e06f"
+    ],
+    "run_map": {
+      "972f6e7718b9c9d9be313e1fc41d723a8d4e4bb1130e59c1916df11beb10e06f": "d443b36e-7d4f-4804-9c71-7afd9664a12d"
+    },
+    "comparison_id": null
+  },
+  "answer": {
+    "status": "unsupported_output",
+    "body": "",
+    "facts": [],
+    "citations": [],
+    "limitations": [
+      "Unsupported facts or citations were withheld."
+    ],
+    "model_id": "deepseek-flash",
+    "request_id": "bce938b1-30c4-4928-9694-3b6221894d3c",
+    "usage": {
+      "prompt_tokens": 5342,
+      "completion_tokens": 217,
+      "total_tokens": 5559,
+      "prompt_tokens_details": {
+        "cached_tokens": 5120
+      },
+      "prompt_cache_hit_tokens": 5120,
+      "prompt_cache_miss_tokens": 222
+    },
+    "explanation_verified": false,
+    "supplied_evidence_ids": [
+      "5f09ca6c325fbd4c95ae3c07c4849b9906feb87aefd4a068cb8cb3c0e71df9a8",
+      "ddf44506b487592baab7ed5965c0eaf682fac3e5417c0b1d9fd9246000960cc7",
+      "f21304454ec767143782efddf2d48c5f62555d19d683e0c6471c0308ac1f854d",
+      "7db957742d68ea6b1d601485230b4ce39521a6fe7abb84541896ca0befa392b0",
+      "8d2e476116a8e33a07982b01fec8f93344e0994d62e0cd12ee19e406bcb00acf",
+      "3d15f7c95a7c963c6181c0ed8e373ac53e57e57ab7c53a2cb503823bf2cf7053",
+      "61f961fedfb60c4c6fc14fa7cbd673bb9a5f3f027d99bc1386b812329f10d603",
+      "727ed1d1cb9b45696c7d02e4363a8af45933511739a15e0a7fb18bfc6283f4f5"
+    ],
+    "omitted_evidence_ids": [
+      "252e97d9b868b5bc395af2d83f1820bfeb295630c40a3e2d534a598c6b52eaa9",
+      "e754393c923548abf3199d1ba96d6cbeb024b5996e085050324a899212f45a4b",
+      "1ba7ea510a09e22908fcd0d7ec5d1318fef130fa4195b62b9b4b21af3334bbe7",
+      "8d977173a26b6f14adf9ca5793eb57721f986ec18e647a9a6b8cd6a67c5310dc",
+      "314e29f2893933364c601e72d08f42483c4bfa524419c630aa02bb4e3aa3d8bf",
+      "c255ddedf5f67af8a839de9847f6753bf9b5beeb3a91c8386dd8fc075d66decb",
+      "e84ca6f052dc9b815cc4d166e7c01d39272616979627774f031ab2a9804658dc",
+      "ff93ffaefcf2e17e5eddb58f38cc2c852e668c84714c88c14a3457c4988769d2",
+      "13806311dc576f6e30310def1a4c9bc6be6e01fe9dceb477ccc504fa6e223d57",
+      "8128ab0c36e2478eb441451b1fa0b802b5b38d3a92b1dbbf0f2245a115dac949",
+      "cd76e7496f370c72dfa631c5541e7847115f46c4edcc043c1575452c36ea1554",
+      "2d566bb0f4757901e13daed7294a96d194b85297475b0d61e1a5d195721b43af",
+      "a5d5efb7f286d2198247e7a6f24d86d6f28196140a26303ca6f39f4baa67dd37",
+      "d789bceafd85cf416fdecce844a907e7eed0f01d85cab508ebda654bf6506217",
+      "8b43a08b41283cece0e4be714929b386aabe0b30e41347da07eb6f7f7d01b941",
+      "c85d95e0ba1ff7538694bf3b3423a2c5e645fd7644f39577a2c84df889a9466a",
+      "2b7e9d5a482e03cd2e80c3b59bb2354917b360a63bc590501ec317868d1434a8",
+      "3e1ffddd929ce5a53a20d5d55f1d8c0bbb2b7973b3dfe4a5b65913554187525e",
+      "80bf8e6d698c0537b7d0d51e8456b5d6d752abc5fab07f45e716b33ab5642177",
+      "abc175dce712daa74ea33e50bd66217a3da7625fa8a0075aef232fde6c1ee155",
+      "ccd3734245ad32884efe7f7465e1aecd69cf977e464c4be5c8087b87f05279e6",
+      "7854bc186ff23610769e02a3e3a4b16cc6da3969cbdd65c5ae24fc9dba59af5c",
+      "064cb26dec6d5977dfa68610f6ea09d6443bc9c0104dc20b85ef33c03646c6c1",
+      "625da4c65ab4075803779e063b5126553e46fa820a5f0589df3f5a5048adf0fa",
+      "39aa9854f273bea8abb65ded415d8a6459213ed1472b24bbe3a0399afcc6a4d8",
+      "48efa66b25fcb18c658c29fde52d5d9365581b93a10602fc3a5a59b00883a3c9",
+      "ab0711a1b7f5c72d74f1a74018954ee82bfb7eaff5bbf1a71294d9784109d1c0",
+      "4677a818b8ac73a003827ac83a9694214b008e8a18bd86c4184fcca3dc06c4a7",
+      "95f46581ee0ed9c9b6d80c1cb581d38f370270696e75d598d22b235705dcf545",
+      "53a4604288cbc9beb76cf7860825e244ccd09615b47cafd0888a71c11662599f",
+      "bdf3a4529e3cf92b2df9cfd859f4993669786ac0acd7a0d58079b393e9cd2207",
+      "f01b51c7a4e89c4e28db9ee5aece763c3c70fdec2fcba6b7460c206bf865e4da",
+      "da50aab377c2072da4e9bf4baa97ad29fc9797d64e39af3a003952f8af833d74",
+      "e97f42ed5a025d998cb9922119410aaa0321813c8b917e80a1f4791c2ef08bca",
+      "5354a0254ecfad6d2dfc90bf576ce250ac24ade03f6d2a82a5636dc61d2de21b",
+      "6fd0bd00653d5b948362cc6fa22d9c98735f1eda35c936ea321a9d7a002448af",
+      "96cb62d42bc495376a6257d23313160ac76680aa41c61e660d43e8764049dcca",
+      "bde1dbd127c02a93cd5e9759235f0f57686231755fe025ec9b6de3f25574cbb9",
+      "154e099edc162db837d419d8267ecbcfe94fbb013691d7eed17d6f40f7479b71",
+      "27ad5fa0666489bed1f7981db4b9bdcd7e8b22c615d2b98f1db75939cb6505ab",
+      "39654d1ae265717c8a80c125c5b7bee5009a7fd16bda49016623b8c20f029d4c",
+      "c3f52f0fc0a8cecb1ddfc124ae41014e8b31ae84f53e48b18a4788d17fe037a4"
+    ],
+    "index_id": "7705197b7e87e5a411b115d854f18cb5ab0a6de57d555bae83768b3f4bcd398c",
+    "method": "lexical",
+    "tool_facts": [],
+    "raw_output_digest": "247ed0b13523073fffb1540260ba96776aafa8f092b7d638d5ca931e13e6e3a5",
+    "rejection_reasons": [
+      "unchecked_precise_body_claim"
+    ]
+  },
+  "evidence_chunks": [
+    {
+      "evidence_id": "5f09ca6c325fbd4c95ae3c07c4849b9906feb87aefd4a068cb8cb3c0e71df9a8",
+      "document_id": "7a2e8c48cf6dc31340ccf9959fed91ec4d14a7231a13954fb57221e88c94da2d",
+      "text": "{\"completeness\": {\"issues\": [], \"root_known\": true, \"state\": \"complete\", \"unknown_dependencies\": 0}, \"instances\": 41, \"kind\": \"snapshot_counts\", \"project_id\": \"df28462f-6441-4ab2-8bcf-52548c7dd345\", \"query_coverage\": {\"active_findings\": 22, \"confirmed\": 41, \"opaque_instances\": 0, \"raw_matched_records\": 42, \"total\": 41, \"total_instances\": 41, \"unknown\": 0}, \"query_observed_at\": \"2026-10-13T23:19:03.976559+00:00\", \"recorded_edges\": 72, \"root_id\": \"0\", \"run_id\": \"d443b36e-7d4f-4804-9c71-7afd9664a12d\", \"snapshot_id\": \"972f6e7718b9c9d9be313e1fc41d723a8d4e4bb1130e59c1916df11beb10e06f\", \"source_observed_at\": \"2026-10-13T23:19:01.444851+00:00\", \"unique_package_versions\": 41}",
+      "start": 0,
+      "end": 675,
+      "source_ids": [
+        "1d17604727cd8106e1953c520d3e6140f1d2ade79d28ede52f2869c01377ba46",
+        "8e2ae04ef8faea98dba510ec1ab0ef1326eae67ce556b670a55be97a2b343241"
+      ],
+      "pointer": "/text"
+    },
+    {
+      "evidence_id": "ddf44506b487592baab7ed5965c0eaf682fac3e5417c0b1d9fd9246000960cc7",
+      "document_id": "ca07fe87a3878dfb9811f23854ce3369399c4ef45d1081e4ec194b79a72ed189",
+      "text": "## Summary\n\nThe LangSmith SDK's output redaction controls (hideOutputs in JS, hide_outputs in Python) do not apply to streaming token events. When an LLM run produces streaming output, each chunk is recorded as a new_token event containing the raw token value. These events bypass the redaction pipeline entirely — prepareRunCreateOrUpdateInputs (JS) and _hide_run_outputs (Python) only process the inputs and outputs fields on a run, never the events array. As a result, applications relying on output redaction to prevent sensitive LLM output from being stored in LangSmith will still leak the full streamed content via run events.\n\n## Details\n\n**Both JS and Python SDKs are affected.** The same pattern exists in both:\n\n- **JS SDK**: `traceable.ts:997-1003` and `traceable.ts:1044-1050`\n- **Python SDK**: `run_helpers.py:1924` and `run_helpers.py:1996`\n\nIn both SDKs, `new_token` events with raw `kwargs.token` values are added during streaming, and the redaction pipeline (`hideOutputs` in JS, `hide_outputs` in Python) only processes `inputs`/`outputs` — never `events`.",
+      "start": 0,
+      "end": 1075,
+      "source_ids": [
+        "789c632fbc5ad27c19364c9e675c0ade47e39fd9d883abc5c531724c8ffb7ffa"
+      ],
+      "pointer": "/details"
+    },
+    {
+      "evidence_id": "f21304454ec767143782efddf2d48c5f62555d19d683e0c6471c0308ac1f854d",
+      "document_id": "c7b2070658a0b05cbffbc599b9c8774f7700fdcc8ab56565e39dacb7d88dcfae",
+      "text": "## Summary\n\nThe LangSmith SDK's output redaction controls (hideOutputs in JS, hide_outputs in Python) do not apply to streaming token events. When an LLM run produces streaming output, each chunk is recorded as a new_token event containing the raw token value. These events bypass the redaction pipeline entirely — prepareRunCreateOrUpdateInputs (JS) and _hide_run_outputs (Python) only process the inputs and outputs fields on a run, never the events array. As a result, applications relying on output redaction to prevent sensitive LLM output from being stored in LangSmith will still leak the full streamed content via run events.\n\n## Details\n\n**Both JS and Python SDKs are affected.** The same pattern exists in both:\n\n- **JS SDK**: `traceable.ts:997-1003` and `traceable.ts:1044-1050`\n- **Python SDK**: `run_helpers.py:1924` and `run_helpers.py:1996`\n\nIn both SDKs, `new_token` events with raw `kwargs.token` values are added during streaming, and the redaction pipeline (`hideOutputs` in JS, `hide_outputs` in Python) only processes `inputs`/`outputs` — never `events`.",
+      "start": 0,
+      "end": 1075,
+      "source_ids": [
+        "93241ae8240844edf7cd2070314087ee7d4902b3101eb7167e1be08a9fb9e7d7"
+      ],
+      "pointer": "/details"
+    },
+    {
+      "evidence_id": "7db957742d68ea6b1d601485230b4ce39521a6fe7abb84541896ca0befa392b0",
+      "document_id": "6f32dc3bab1bbe2f2cbfa42484c4032ccfd2a3000a278a9c23f44787d94195fa",
+      "text": "LangChain's f-string prompt-template validation was incomplete in two respects.\n\nFirst, some prompt template classes accepted f-string templates and formatted them without enforcing the same attribute-access validation as `PromptTemplate`. In particular, `DictPromptTemplate` and `ImagePromptTemplate` could accept templates containing attribute access or indexing expressions and subsequently evaluate those expressions during formatting.\n\nExamples of the affected shape include:\n\n```python\n\"{message.additional_kwargs[secret]}\"\n\"https://example.com/{image.__class__.__name__}.png\"\n```\n\nSecond, f-string validation based on parsed top-level field names did not reject nested replacement fields inside format specifiers. For example:\n\n```python\n\"{name:{name.__class__.__name__}}\"\n```\n\nIn this pattern, the nested replacement field appears in the format specifier rather than in the top-level field name. As a result, earlier validation based on parsed field names did not reject the template even though Python formatting would still attempt to resolve the nested expression at runtime.\n\n## Affected usage\n\nThis issue is only relevant for applications that accept untrusted template strings, rather than only untrusted template variable values.\n\nIn addition, practical impact depends on what objects are passed into template formatting:\n\n- If applications only format simple values such as strings and numbers, impact is limited and may only result in formatting errors.\n- If applications format richer Python objects, attribute access and indexing may interact with internal object state during formatting.\n\nIn many deployments, these conditions are not commonly present together. Applications that allow end users to author arbitrary templates often expose only a narrow set of simple template variables, while applications that work with richer internal Python objects often keep template structure under developer control. As a result, the highest-impact scenario is plausible but is not represen",
+      "start": 0,
+      "end": 2000,
+      "source_ids": [
+        "7973dd5be435620810f64c850ed1e4ce4c5dfbb636c907bad3276202f341e37a"
+      ],
+      "pointer": "/details"
+    },
+    {
+      "evidence_id": "8d2e476116a8e33a07982b01fec8f93344e0994d62e0cd12ee19e406bcb00acf",
+      "document_id": "67303aca9d672c13b9e672e327c47d59918868653f9f490c2f38bbbf967ff027",
+      "text": "LangChain's f-string prompt-template validation was incomplete in two respects.\n\nFirst, some prompt template classes accepted f-string templates and formatted them without enforcing the same attribute-access validation as `PromptTemplate`. In particular, `DictPromptTemplate` and `ImagePromptTemplate` could accept templates containing attribute access or indexing expressions and subsequently evaluate those expressions during formatting.\n\nExamples of the affected shape include:\n\n```python\n\"{message.additional_kwargs[secret]}\"\n\"https://example.com/{image.__class__.__name__}.png\"\n```\n\nSecond, f-string validation based on parsed top-level field names did not reject nested replacement fields inside format specifiers. For example:\n\n```python\n\"{name:{name.__class__.__name__}}\"\n```\n\nIn this pattern, the nested replacement field appears in the format specifier rather than in the top-level field name. As a result, earlier validation based on parsed field names did not reject the template even though Python formatting would still attempt to resolve the nested expression at runtime.\n\n## Affected usage\n\nThis issue is only relevant for applications that accept untrusted template strings, rather than only untrusted template variable values.\n\nIn addition, practical impact depends on what objects are passed into template formatting:\n\n- If applications only format simple values such as strings and numbers, impact is limited and may only result in formatting errors.\n- If applications format richer Python objects, attribute access and indexing may interact with internal object state during formatting.\n\nIn many deployments, these conditions are not commonly present together. Applications that allow end users to author arbitrary templates often expose only a narrow set of simple template variables, while applications that work with richer internal Python objects often keep template structure under developer control. As a result, the highest-impact scenario is plausible but is not represen",
+      "start": 0,
+      "end": 2000,
+      "source_ids": [
+        "deb38dc9239abbedcff354ebc082c4af65002747345f522a6d1abacd40ae645f"
+      ],
+      "pointer": "/details"
+    },
+    {
+      "evidence_id": "3d15f7c95a7c963c6181c0ed8e373ac53e57e57ab7c53a2cb503823bf2cf7053",
+      "document_id": "1357975a439689a5815846f144e0d25c9b0e247714264d9e8b7d9f4e7d4fa7f6",
+      "text": "The HTMLSectionSplitter class in langchain-text-splitters is vulnerable to XML External Entity (XXE) attacks due to unsafe XSLT parsing. This vulnerability arises because the class allows the use of arbitrary XSLT stylesheets, which are parsed using lxml.etree.parse() and lxml.etree.XSLT() without any hardening measures. In lxml versions up to 4.9.x, external entities are resolved by default, allowing attackers to read arbitrary local files or perform outbound HTTP(S) fetches. In lxml versions 5.0 and above, while entity expansion is disabled, the XSLT document() function can still read any URI unless XSLTAccessControl is applied. This vulnerability allows remote attackers to gain read-only access to any file the LangChain process can reach, including sensitive files such as SSH keys, environment files, source code, or cloud metadata. No authentication, special privileges, or user interaction are required, and the issue is exploitable in default deployments that enable custom XSLT.",
+      "start": 0,
+      "end": 996,
+      "source_ids": [
+        "95881ee048583134312736a62cd2132e16351b4e52f8f001baf6d3c27d9a0b3a"
+      ],
+      "pointer": "/details"
+    },
+    {
+      "evidence_id": "61f961fedfb60c4c6fc14fa7cbd673bb9a5f3f027d99bc1386b812329f10d603",
+      "document_id": "a0ecba3b72440db5ba1276d63cdf44ce953c7ae852cd968db00030604690d553",
+      "text": "The HTMLSectionSplitter class in langchain-text-splitters is vulnerable to XML External Entity (XXE) attacks due to unsafe XSLT parsing. This vulnerability arises because the class allows the use of arbitrary XSLT stylesheets, which are parsed using lxml.etree.parse() and lxml.etree.XSLT() without any hardening measures. In lxml versions up to 4.9.x, external entities are resolved by default, allowing attackers to read arbitrary local files or perform outbound HTTP(S) fetches. In lxml versions 5.0 and above, while entity expansion is disabled, the XSLT document() function can still read any URI unless XSLTAccessControl is applied. This vulnerability allows remote attackers to gain read-only access to any file the LangChain process can reach, including sensitive files such as SSH keys, environment files, source code, or cloud metadata. No authentication, special privileges, or user interaction are required, and the issue is exploitable in default deployments that enable custom XSLT.",
+      "start": 0,
+      "end": 996,
+      "source_ids": [
+        "88d949bbc53932a8f0877ea333271edaefbbf94879742246bbf71765d7202289"
+      ],
+      "pointer": "/details"
+    },
+    {
+      "evidence_id": "727ed1d1cb9b45696c7d02e4363a8af45933511739a15e0a7fb18bfc6283f4f5",
+      "document_id": "556c7bb3b1d8e0f14e0af4ebb236ee333ff24bc084b0059f901fec2c827a7ea9",
+      "text": "# Summary\n\nAn attacker who can send an HTTP request to a server running the LangSmith SDK's `TracingMiddleware` can cause that server to read an arbitrary file from its local filesystem and upload the contents to LangSmith as a trace attachment. Depending on how the distributed trace system is deployed, triggering a read may not require authentication. Retrieving the contents requires read access to the LangSmith workspace the traces are sent to. The net effect is a trust-boundary crossing: a party with workspace trace-read access (for example a low-privilege workspace member, a contractor, or a compromised teammate account) gains the ability to read files from any server running `TracingMiddleware`, a capability outside that workspace's intended trust boundary.\n\n# Impact\n\nConfidentiality (High): arbitrary read of files accessible to the server process, exposed to anyone with workspace trace-read access.\n\n# Details\n\nTwo defects combine. A field supplied through a tracing-propagation header was merged into the run without validation, allowing injection of run attributes including attachments (CWE-346). A type check intended to gate filesystem access did not match the type of the decoded input, so the guard never engaged (CWE-843). As a result, an attacker-named file is opened by the server and uploaded as a trace attachment by the background tracing thread (CWE-22).\n\n## Who can exploit this\n\n- Anyone reachable by HTTP can trigger the file read. Depending on how the distributed trace system is deployed, triggering may not require authentication.\n- Retrieving the file contents requires read access to the destination LangSmith workspace. The upload uses the server's own configured API key and workspace, which the attacker cannot redirect, so a zero-access outsider cannot retrieve the result; a workspace member, or anyone who has compromised one, can.\n\n# Remediation\n\nUpgrade the Python SDK to `>= 0.8.18`.\n\n# Workarounds\n\n",
+      "start": 0,
+      "end": 1950,
+      "source_ids": [
+        "18a86969283b986ef00b248eed45976cb0fed0e272524368256598e09d710c62"
+      ],
+      "pointer": "/details"
+    }
+  ],
+  "observed_at": "2026-10-14T18:52:12.707770+00:00"
+}

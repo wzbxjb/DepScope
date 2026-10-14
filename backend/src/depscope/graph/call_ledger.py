@@ -147,7 +147,50 @@ class CallLedger:
             unknown_usage_calls=row["unknown"],
             currency=policy.currency,
             price_basis=price.basis if price else None,
+            max_amount=policy.max_amount,
+            max_calls=policy.max_calls,
         )
+
+    def price_for(self, run_id):
+        with self.driver.session() as session:
+            row = session.run(
+                "MATCH (b:GenerationBudget {id:$id}) RETURN b.price AS price", id=run_id
+            ).single()
+        if not row:
+            raise DomainError("BUDGET_NOT_FOUND", "Generation budget is unavailable")
+        return PriceProfile.model_validate_json(row["price"]) if row["price"] else None
+
+    def increase_limits(self, run_id, max_amount, max_calls):
+        from depscope.generation.budget import BudgetPolicy
+
+        requested = BudgetPolicy(currency="USD", max_amount=max_amount, max_calls=max_calls)
+
+        def persist(tx):
+            row = tx.run(
+                "MATCH (b:GenerationBudget {id:$id}) SET b.lock_version=b.lock_version+1 RETURN b.policy AS policy",
+                id=run_id,
+            ).single()
+            if not row:
+                raise DomainError("BUDGET_NOT_FOUND", "Generation budget is unavailable")
+            old = BudgetPolicy.model_validate_json(row["policy"])
+            if (
+                old.currency != requested.currency
+                or max_amount < old.max_amount
+                or max_calls < old.max_calls
+            ):
+                raise DomainError(
+                    "LIMIT_INCREASE_REQUIRED",
+                    "Existing usage and limits cannot be reset or reduced through this action",
+                )
+            tx.run(
+                "MATCH (b:GenerationBudget {id:$id}) SET b.policy=$policy",
+                id=run_id,
+                policy=requested.model_dump_json(),
+            ).consume()
+
+        with self.driver.session() as session:
+            session.execute_write(persist)
+        return self.summary(run_id)
 
     def calls(self, run_id):
         with self.driver.session() as session:

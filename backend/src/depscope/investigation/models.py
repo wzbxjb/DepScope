@@ -38,6 +38,12 @@ def validate_scope(scope, snapshots, runs, comparisons=None):
         if comparisons is None:
             raise DomainError("SCOPE_MISMATCH", "Comparison selection cannot be validated")
         comparison = comparisons.load(scope.comparison_id)
+        expected_runs = {
+            comparison.baseline_id: comparison.run_ids[0],
+            comparison.candidate_id: comparison.run_ids[1],
+        }
+        if any(scope.run_map.get(sid) != run for sid, run in expected_runs.items()):
+            raise DomainError("SCOPE_MISMATCH", "Comparison requires its own frozen run mapping")
         if not {comparison.baseline_id, comparison.candidate_id} <= set(scope.snapshot_ids):
             raise DomainError("SCOPE_MISMATCH", "Comparison snapshots must both be selected")
     return selected

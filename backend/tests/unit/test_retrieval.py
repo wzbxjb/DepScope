@@ -141,3 +141,44 @@ async def test_same_exact_locator_all_methods_and_foreign_scope_excluded(snapsho
     wrong = scope.model_copy(update={"project_ids": ("other",)})
     with pytest.raises(DomainError):
         await retriever.search("question", wrong, "lexical")
+
+
+async def test_repeated_index_build_reuses_persisted_manifest():
+    from depscope.graph.evidence import build_index
+    from depscope.retrieval.embedding import EmbeddingBatch
+
+    class Provider:
+        def __init__(self):
+            self.calls = []
+
+        async def embed(self, texts):
+            self.calls.append(texts)
+            return EmbeddingBatch(
+                vectors=tuple((1.0, 0.0) for t in texts),
+                model_id="test",
+                model_digest="d" * 64,
+                usage=None,
+            )
+
+    class Store:
+        def __init__(self):
+            self.saved = None
+            self.writes = 0
+
+        def manifest(self, id):
+            if self.saved is None:
+                raise DomainError("INDEX_NOT_READY", "none")
+            assert self.saved.id == id
+            return self.saved
+
+        def write(self, manifest, chunks, vectors, documents):
+            self.saved = manifest
+            self.writes += 1
+
+    provider, store = Provider(), Store()
+    document = doc("a" * 6000)
+    first = await build_index((document,), provider, store)
+    before = len(provider.calls)
+    second = await build_index((document,), provider, store)
+    assert second == first and store.writes == 1
+    assert len(provider.calls) == before + 1 and len(provider.calls[-1]) == 1
