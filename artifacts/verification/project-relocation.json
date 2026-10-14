@@ -1,0 +1,9 @@
+{
+  "checked_at": "2026-10-14T00:44:07.718691+00:00",
+  "project_root": "/Users/wangzhe/Documents/Codex/DepScope",
+  "development_root": "/Users/wangzhe/Documents/Codex/DepScope/.worktrees/development",
+  "course_directory_contains_project": false,
+  "git_worktree_repaired": true,
+  "generation_configured": true,
+  "historical_artifact_paths": "Original execution paths remain in historical logs; current application source and configuration use the independent directory."
+}

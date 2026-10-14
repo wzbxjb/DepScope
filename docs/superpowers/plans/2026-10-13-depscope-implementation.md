@@ -43,7 +43,7 @@
 
 ## 执行准备、文件结构与公共约定
 
-执行前使用 using-git-worktrees 技能检查隔离环境。当前 DepScope 是仅有设计资料的新 Git 仓库，基线提交为 089be5c，没有产品代码；不要将上级 IS507 项目视为待修改仓库。工作目录必须是 DepScope 或其隔离工作树。不存在合适 managed worktree 时，按该技能在允许写入的上级工作目录中创建独立本地工作树。
+执行前使用 using-git-worktrees 技能检查隔离环境。DepScope 是独立 Git 仓库，基线提交为 089be5c。按用户要求，仓库已迁至 /Users/wangzhe/Documents/Codex/DepScope，与课程作业完全分开。开发位于其 .worktrees/development 隔离工作树。
 
 依赖安装、启动 Docker、下载 embedding 模型和使用 API 都在计划获确认后的执行阶段进行。配置仅读取项目内的 .env 及明确的环境变量；不搜索其他项目的密钥。没有凭据时继续非模型任务，真实 API 验收单独保持未完成。
 
