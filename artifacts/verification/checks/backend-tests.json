@@ -1,0 +1,20 @@
+{
+  "payload": {
+    "name": "backend-tests",
+    "command": [
+      "/Users/wangzhe/Documents/Codex/DepScope/.worktrees/development/backend/.venv/bin/python",
+      "-m",
+      "pytest",
+      "tests/unit",
+      "tests/integration",
+      "-q"
+    ],
+    "cwd": "backend",
+    "exit_code": 0,
+    "log_digest": "170d3b34e1d1a680bdcdc811f1cf3acd351271be782651596a1a06abf64b42dc",
+    "observed_at": "2026-10-14T22:02:18.913423+00:00",
+    "commit": "88143e616a874dd239c17c428555201bd013de3c",
+    "paid_opt_in": false
+  },
+  "signature": "0ad4a4fe5e655fdf0891b04879234c153bd81a98068b5587626f886776f6cd2a"
+}

@@ -1,0 +1,23 @@
+{
+  "payload": {
+    "name": "browser-full",
+    "command": [
+      "/Users/wangzhe/Documents/Codex/DepScope/.worktrees/development/.superpowers/tools/node-v22.23.3-darwin-arm64/lib/node_modules/npm/bin/npm-cli.js",
+      "exec",
+      "--",
+      "playwright",
+      "test",
+      "e2e/full-workflow.spec.ts",
+      "-g",
+      "shows scoped evidence",
+      "--reporter=line,json"
+    ],
+    "cwd": "frontend",
+    "exit_code": 0,
+    "log_digest": "dec5a81c315059444c911ad1335593e4d044e146317dc328e4a0e9d514bbd2c2",
+    "observed_at": "2026-10-14T21:58:11.382968+00:00",
+    "commit": "88143e616a874dd239c17c428555201bd013de3c",
+    "paid_opt_in": false
+  },
+  "signature": "e62bf52f72a0d1d02cf3341d5be12529ab86f57fb26b1aab13e0caccc63d6af4"
+}

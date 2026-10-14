@@ -1,6 +1,6 @@
 import { test,expect } from '@playwright/test';
 test('displays actual frozen experiment values and separate citation limitations',async({page})=>{
- const response=await page.request.get('http://127.0.0.1:8100/api/experiments/benchmark-v1-20261014');
+ const response=await page.request.get('/api/experiments/benchmark-v1-20261014');
  expect(response.ok()).toBeTruthy();const recorded=await response.json();
  expect(recorded.manifest.usage.actual_reserved_calls).toBeGreaterThanOrEqual(800);
  await page.goto('/');await page.getByRole('button',{name:'Retrieval experiments',exact:true}).click();

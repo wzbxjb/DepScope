@@ -47,8 +47,35 @@ async def main():
     exported.add_argument("report", type=Path)
     exported.add_argument("--project-id", required=True)
     exported.add_argument("--snapshot-id", required=True)
+    backed_up = commands.add_parser("backup")
+    backed_up.add_argument("--output", type=Path, required=True)
+    backed_up.add_argument("--instance", default="depscope-development")
+    restored = commands.add_parser("restore")
+    restored.add_argument("--input", type=Path, required=True)
+    restored.add_argument("--new-instance", action="store_true")
+    restored.add_argument("--instance", required=True)
+    restored.add_argument("--bolt-port", type=int, default=17790)
+    restored.add_argument("--http-port", type=int, default=17791)
+    restored.add_argument("--api-port", type=int, default=18101)
+    restored.add_argument("--frontend-port", type=int, default=18080)
     args = parser.parse_args()
     settings = load_settings()
+    if args.command in ("backup", "restore"):
+        from depscope.operations.backup import BackupManager
+        from depscope.runtime.config import PROJECT_ROOT
+
+        manager = BackupManager(PROJECT_ROOT, settings)
+        if args.command == "backup":
+            result = await asyncio.to_thread(manager.backup, args.output, args.instance)
+        else:
+            ports = (args.bolt_port, args.http_port, args.api_port, args.frontend_port)
+            if len(set(ports)) != 4 or any(not 1 <= p <= 65535 for p in ports):
+                raise DomainError("INVALID_PORTS", "Choose four distinct valid local ports")
+            result = await asyncio.to_thread(
+                manager.restore, args.input, args.new_instance, args.instance, *ports
+            )
+        print(json.dumps(result, ensure_ascii=False))
+        return
     container = build_services(settings)
     try:
         if args.command == "export-verification":

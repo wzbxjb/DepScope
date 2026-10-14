@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "source_kind": "observed_environment",
+  "source_files": [
+    "backend-environment.cdx.json",
+    "example-environment.cdx.json"
+  ],
+  "same_file_snapshot_idempotent": true,
+  "actual_snapshot_count": 2,
+  "comparison_level": "metadata_comparison",
+  "experiment_run_id": "benchmark-v1-20261014",
+  "paid_calls_in_this_test": 0,
+  "observed_at": "2026-10-14T21:58:10.588Z"
+}

@@ -3,22 +3,77 @@ services:
   neo4j:
     image: registry-1.docker.io/library/neo4j:5.26-community@sha256:f1e52d4dc6da122468c4a3c1050a4f5e117f6d3268625237c34d49166f0d6082
     ports:
-      - "127.0.0.1:17474:7474"
-      - "127.0.0.1:17687:7687"
+      - "127.0.0.1:${DEPSCOPE_NEO4J_HTTP_PORT:-17474}:7474"
+      - "127.0.0.1:${DEPSCOPE_NEO4J_BOLT_PORT:-17687}:7687"
     environment:
       NEO4J_AUTH: "neo4j/${NEO4J_PASSWORD:?Set NEO4J_PASSWORD in .env}"
       NEO4J_server_memory_heap_initial__size: 512m
       NEO4J_server_memory_heap_max__size: 512m
       NEO4J_server_memory_pagecache_size: 256m
-    volumes:
-      - neo4j-data:/data
-      - neo4j-logs:/logs
+    volumes: ["neo4j-data:/data", "neo4j-logs:/logs"]
     healthcheck:
       test: ["CMD-SHELL", "wget -q --spider http://localhost:7474 || exit 1"]
       interval: 5s
       timeout: 3s
       retries: 30
     restart: unless-stopped
+  api:
+    image: depscope-api:local
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+      args: {APP_UID: "${DEPSCOPE_LOCAL_UID:-1000}"}
+    env_file: .env
+    environment: &application-environment
+      NEO4J_URI: bolt://neo4j:7687
+      DEPSCOPE_DATA_ROOT: /app/data/runtime
+      OLLAMA_BASE_URL: "${DEPSCOPE_CONTAINER_OLLAMA_BASE_URL:-http://host.docker.internal:11434}"
+    extra_hosts: ["host.docker.internal:host-gateway"]
+    volumes: ["${DEPSCOPE_RUNTIME_PATH:-./data/runtime}:/app/data/runtime"]
+    ports: ["127.0.0.1:${DEPSCOPE_API_PORT:-8101}:8000"]
+    depends_on: {neo4j: {condition: service_healthy}}
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request;urllib.request.urlopen('http://127.0.0.1:8000/health/ready')"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+    restart: unless-stopped
+  worker:
+    image: depscope-api:local
+    command: ["python", "-m", "depscope.jobs.worker"]
+    env_file: .env
+    environment: *application-environment
+    extra_hosts: ["host.docker.internal:host-gateway"]
+    volumes: ["${DEPSCOPE_RUNTIME_PATH:-./data/runtime}:/app/data/runtime"]
+    depends_on: {api: {condition: service_healthy}}
+    healthcheck:
+      test: ["CMD", "python", "-c", "from pathlib import Path;assert b'depscope.jobs.worker' in Path('/proc/1/cmdline').read_bytes()"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
+    restart: unless-stopped
+  frontend:
+    image: depscope-frontend:local
+    build: {context: ., dockerfile: frontend/Dockerfile}
+    ports: ["127.0.0.1:${DEPSCOPE_FRONTEND_PORT:-8080}:8080"]
+    depends_on: {api: {condition: service_healthy}}
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q --spider http://127.0.0.1:8080 || exit 1"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+    restart: unless-stopped
+  ollama:
+    profiles: [embeddings]
+    image: registry-1.docker.io/ollama/ollama:latest@sha256:926d40fd6eeeebd346b5c358a63de2a10ec995371cd93dd22f1843200694b1a6
+    volumes: ["ollama-models:/root/.ollama"]
+    healthcheck:
+      test: ["CMD", "ollama", "list"]
+      interval: 10s
+      timeout: 5s
+      retries: 20
+    restart: unless-stopped
 volumes:
   neo4j-data:
   neo4j-logs:
+  ollama-models:
