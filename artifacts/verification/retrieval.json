@@ -1,0 +1,808 @@
+{
+  "observed_at": "2026-10-14T00:52:11.076881+00:00",
+  "scope": {
+    "project_ids": [
+      "df28462f-6441-4ab2-8bcf-52548c7dd345"
+    ],
+    "snapshot_ids": [
+      "972f6e7718b9c9d9be313e1fc41d723a8d4e4bb1130e59c1916df11beb10e06f"
+    ],
+    "run_map": {
+      "972f6e7718b9c9d9be313e1fc41d723a8d4e4bb1130e59c1916df11beb10e06f": "d443b36e-7d4f-4804-9c71-7afd9664a12d"
+    },
+    "comparison_id": null
+  },
+  "manifest": {
+    "id": "7705197b7e87e5a411b115d854f18cb5ab0a6de57d555bae83768b3f4bcd398c",
+    "corpus_digest": "829b83fa13467f93f44df4db532d8d305ea56096fed457397075bd121d82d42c",
+    "model_id": "qwen3-embedding:0.6b",
+    "model_digest": "ac6da0dfba84a81fdbfbaf330198c33cd77c4cdfc53e8bc50eb581914a15621d",
+    "dimension": 1024,
+    "chunking_version": "unicode-2000-overlap-200-field-v1"
+  },
+  "documents": 411,
+  "indexed_chunks": 514,
+  "elapsed_seconds": 114.87710858392529,
+  "results": {
+    "lexical": {
+      "chunks": [
+        {
+          "evidence_id": "06b2526e9e92d612e01657cefea79512a955bc2dd875a1d8aacfb1f5e646dc9a",
+          "document_id": "38085329b45f159d043bae88b5f1b79f1e814584b735089f493fba17eb605455",
+          "text": "180\", \"v0.0.179\", \"v0.0.178\", \"v0.0.177\", \"v0.0.175\", \"v0.0.174\", \"v0.0.173\", \"v0.0.172\", \"v0.0.171\", \"v0.0.170\", \"v0.0.169\", \"v0.0.168\", \"v0.0.167\", \"v0.0.166\", \"v0.0.165\", \"v0.0.164\", \"v0.0.163\", \"v0.0.161\", \"v0.0.162\", \"v0.0.160\", \"v0.0.159\", \"v0.0.158\", \"v0.0.157\", \"v0.0.156\", \"v0.0.155\", \"v0.0.154\", \"v0.0.153\", \"v0.0.152\", \"v0.0.151\", \"v0.0.150\", \"v0.0.149\", \"v0.0.147\", \"v0.0.146\", \"v0.0.145\", \"v0.0.144\", \"v0.0.143\", \"v0.0.142\", \"v0.0.141\", \"v0.0.140\", \"v0.0.139\", \"v0.0.138\", \"v0.0.137\", \"v0.0.136\", \"v0.0.135\", \"v0.0.134\", \"v0.0.133\", \"v0.0.132\", \"v0.0.131\", \"v0.0.130\", \"v0.0.129\", \"v0.0.128\", \"v0.0.127\", \"v0.0.126\", \"v0.0.125\", \"v0.0.124\", \"v0.0.123\", \"v0.0.122\", \"v0.0.121\", \"v0.0.120\", \"v0.0.119\", \"v0.0.118\", \"v0.0.117\", \"v0.0.116\", \"v0.0.115\", \"v0.0.114\", \"v0.0.113\", \"v0.0.112\", \"v0.0.111\", \"v0.0.110\", \"v0.0.109\", \"v0.0.108\", \"v0.0.107\", \"v0.0.106\", \"v0.0.105\", \"v0.0.104\", \"v0.0.103\", \"v0.0.102\", \"v0.0.101\", \"v0.0.100\", \"v0.0.99\", \"v0.0.98\", \"v0.0.97\", \"v0.0.96\", \"v0.0.95\", \"v0.0.94\", \"v0.0.93\", \"v0.0.92\", \"v0.0.91\", \"v0.0.90\", \"v0.0.89\", \"v0.0.88\", \"v0.0.87\", \"v0.0.86\", \"v0.0.85\", \"v0.0.84\", \"v0.0.83\", \"v0.0.82\", \"v0.0.81\", \"v0.0.80\", \"v0.0.79\", \"v0.0.78\", \"v0.0.77\", \"v0.0.76\", \"v0.0.75\", \"v0.0.74\", \"v0.0.73\", \"v0.0.72\", \"v0.0.71\", \"v0.0.70\", \"v0.0.69\", \"v0.0.68\", \"v0.0.67\", \"v0.0.66\", \"v0.0.65\", \"v0.0.64\"]}]",
+          "start": 7200,
+          "end": 8539,
+          "source_ids": [
+            "acb0dd586a669d234fd6131f660215f16550e0655e2e9aa322bc16eaee6ebfa4"
+          ],
+          "pointer": "/affected"
+        },
+        {
+          "evidence_id": "13806311dc576f6e30310def1a4c9bc6be6e01fe9dceb477ccc504fa6e223d57",
+          "document_id": "88566fd6c87688abaaaabb1adf4420909b40fb0b41c2ac9fd246daf933dfa97f",
+          "text": "Denial of service in `SitemapLoader` Document Loader in the `langchain-community` package, affecting versions below 0.2.5. The `parse_sitemap` method, responsible for parsing sitemaps and extracting URLs, lacks a mechanism to prevent infinite recursion when a sitemap URL refers to the current sitemap itself. This oversight allows for the possibility of an infinite loop, leading to a crash by exceeding the maximum recursion depth in Python. This vulnerability can be exploited to occupy server socket/port resources and crash the Python process, impacting the availability of services relying on this functionality.",
+          "start": 0,
+          "end": 618,
+          "source_ids": [
+            "cc4f03b6fe18d4613e53da59f8c145b744dc8a27d98224af71e0d8612cd36c1c"
+          ],
+          "pointer": "/details"
+        },
+        {
+          "evidence_id": "1ad050463a2e74e957401a82b51cd523b6a705f3330888981df2e4d456a6cf27",
+          "document_id": "8460db4b428d13908b338594a91191d95edcd595772a5289a45644ee2eb0cce8",
+          "text": "[\"CVE-2024-2965\", \"GHSA-3hjh-jh2h-vrg6\", \"PYSEC-2024-118\"]",
+          "start": 0,
+          "end": 58,
+          "source_ids": [
+            "cc4f03b6fe18d4613e53da59f8c145b744dc8a27d98224af71e0d8612cd36c1c"
+          ],
+          "pointer": "/aliases"
+        },
+        {
+          "evidence_id": "274277c653f3a4e5ef21c29195a713b453e4cd5554b94f432ea2f0e492d8ef09",
+          "document_id": "8efd5656dfa09a93a81724cf3276da1d5d9969b11784a17cca2a4350804c1c56",
+          "text": "2026-07-13T16:43:37.506313050Z",
+          "start": 0,
+          "end": 30,
+          "source_ids": [
+            "08219babe41cb7b9b7f7fb0c29cd3ece73fa5dd9ba7f947374c1f68794ff2199"
+          ],
+          "pointer": "/modified"
+        },
+        {
+          "evidence_id": "2cd3585c2af748eed29d94bb9b19f1f1b2dac988dc4c8609a8e8a64f04b28bd1",
+          "document_id": "835bb23b06809c4ac1f959e3476f58e5efd0df55def507b51caf97dce4f58bb5",
+          "text": "{\"finding\": {\"group_id\": \"6c98b4eb86af56ac996b1c486ff5be7c6ccb3816c611c94905892ecb987763a2\", \"id\": \"053be85df1696369520073acdacbaae827d2a85a352ae154f0a5536fd64d5b01\", \"instance_id\": \"119f415f696b1199d038599ed9695c77668f871aafd1c6cea080090cdfcaa348\", \"revision_ids\": [\"94ef84c5350a960c250394a071908b80f29c8094ea962ea55888c02cfdcf23e3\", \"d228c2c3afa8a77e364004e4860656df8937f1455fd51498eaa93dd60d690e00\"], \"status\": \"known_match\"}, \"interpretation\": \"Known advisory match; exploitability has not been established.\", \"kind\": \"finding\", \"run_id\": \"d443b36e-7d4f-4804-9c71-7afd9664a12d\", \"snapshot_id\": \"972f6e7718b9c9d9be313e1fc41d723a8d4e4bb1130e59c1916df11beb10e06f\"}",
+          "start": 0,
+          "end": 665,
+          "source_ids": [
+            "c0287932240f609df722b3023593d7070ea473ea46b6609b69a3131504832551",
+            "cc4f03b6fe18d4613e53da59f8c145b744dc8a27d98224af71e0d8612cd36c1c",
+            "08219babe41cb7b9b7f7fb0c29cd3ece73fa5dd9ba7f947374c1f68794ff2199"
+          ],
+          "pointer": "/text"
+        },
+        {
+          "evidence_id": "300d0b49ccf6363a5f79df2c4989f2d32e65cb546f8611fba75e133e99701ebf",
+          "document_id": "df6884361f30f2b761cc902d3bb3984c19e1004bb1d5e2237c9a2a57b0135d66",
+          "text": "[{\"database_specific\": {\"source\": \"https://github.com/pypa/advisory-database/blob/main/vulns/langchain-community/PYSEC-2026-2561.yaml\"}, \"package\": {\"ecosystem\": \"PyPI\", \"name\": \"langchain-community\", \"purl\": \"pkg:pypi/langchain-community\"}, \"ranges\": [{\"events\": [{\"introduced\": \"0\"}, {\"fixed\": \"0.2.5\"}], \"type\": \"ECOSYSTEM\"}], \"versions\": [\"0.0.1\", \"0.0.10\", \"0.0.11\", \"0.0.12\", \"0.0.13\", \"0.0.14\", \"0.0.15\", \"0.0.16\", \"0.0.17\", \"0.0.18\", \"0.0.19\", \"0.0.1rc1\", \"0.0.1rc2\", \"0.0.2\", \"0.0.20\", \"0.0.21\", \"0.0.22\", \"0.0.23\", \"0.0.24\", \"0.0.25\", \"0.0.26\", \"0.0.27\", \"0.0.28\", \"0.0.29\", \"0.0.3\", \"0.0.30\", \"0.0.31\", \"0.0.32\", \"0.0.33\", \"0.0.34\", \"0.0.35\", \"0.0.36\", \"0.0.37\", \"0.0.38\", \"0.0.4\", \"0.0.5\", \"0.0.6\", \"0.0.7\", \"0.0.8\", \"0.0.9\", \"0.2.0\", \"0.2.0rc1\", \"0.2.1\", \"0.2.2\", \"0.2.3\", \"0.2.4\"]}]",
+          "start": 0,
+          "end": 796,
+          "source_ids": [
+            "cc4f03b6fe18d4613e53da59f8c145b744dc8a27d98224af71e0d8612cd36c1c"
+          ],
+          "pointer": "/affected"
+        },
+        {
+          "evidence_id": "36a91c3865160bcdcafa7c945b8e9168e4eb490291ad6d5a09dff13a325e710b",
+          "document_id": "04141a366b65504378a353ddbd87e23dc399bbcf641c638a11e8f29ce29c5e8c",
+          "text": "[{\"database_specific\": {\"source\": \"https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/06/GHSA-3hjh-jh2h-vrg6/GHSA-3hjh-jh2h-vrg6.json\"}, \"package\": {\"ecosystem\": \"PyPI\", \"name\": \"langchain-community\", \"purl\": \"pkg:pypi/langchain-community\"}, \"ranges\": [{\"events\": [{\"introduced\": \"0\"}, {\"fixed\": \"0.2.5\"}], \"type\": \"ECOSYSTEM\"}], \"versions\": [\"0.0.1\", \"0.0.10\", \"0.0.11\", \"0.0.12\", \"0.0.13\", \"0.0.14\", \"0.0.15\", \"0.0.16\", \"0.0.17\", \"0.0.18\", \"0.0.19\", \"0.0.1rc1\", \"0.0.1rc2\", \"0.0.2\", \"0.0.20\", \"0.0.21\", \"0.0.22\", \"0.0.23\", \"0.0.24\", \"0.0.25\", \"0.0.26\", \"0.0.27\", \"0.0.28\", \"0.0.29\", \"0.0.3\", \"0.0.30\", \"0.0.31\", \"0.0.32\", \"0.0.33\", \"0.0.34\", \"0.0.35\", \"0.0.36\", \"0.0.37\", \"0.0.38\", \"0.0.4\", \"0.0.5\", \"0.0.6\", \"0.0.7\", \"0.0.8\", \"0.0.9\", \"0.2.0\", \"0.2.0rc1\", \"0.2.1\", \"0.2.2\", \"0.2.3\", \"0.2.4\"]}, {\"database_specific\": {\"source\": \"https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/06/GHSA-3hjh-jh2h-vrg6/GHSA-3hjh-jh2h-vrg6.json\"}, \"package\": {\"ecosystem\": \"PyPI\", \"name\": \"langchain\", \"purl\": \"pkg:pypi/langchain\"}, \"ranges\": [{\"events\": [{\"introduced\": \"0\"}, {\"fixed\": \"0.2.5\"}], \"type\": \"ECOSYSTEM\"}], \"versions\": [\"0.0.1\", \"0.0.10\", \"0.0.100\", \"0.0.101\", \"0.0.101rc0\", \"0.0.102\", \"0.0.102rc0\", \"0.0.103\", \"0.0.104\", \"0.0.105\", \"0.0.106\", \"0.0.107\", \"0.0.108\", \"0.0.109\", \"0.0.11\", \"0.0.110\", \"0.0.111\", \"0.0.112\", \"0.0.113\", \"0.0.114\", \"0.0.115\", \"0.0.116\", \"0.0.117\", \"0.0.118\", \"0.0.119\", \"0.0.12\", \"0.0.120\", \"0.0.121\", \"0.0.122\", \"0.0.123\", \"0.0.124\", \"0.0.125\", \"0.0.126\", \"0.0.127\", \"0.0.128\", \"0.0.129\", \"0.0.13\", \"0.0.130\", \"0.0.131\", \"0.0.132\", \"0.0.133\", \"0.0.134\", \"0.0.135\", \"0.0.136\", \"0.0.137\", \"0.0.138\", \"0.0.139\", \"0.0.14\", \"0.0.140\", \"0.0.141\", \"0.0.142\", \"0.0.143\", \"0.0.144\", \"0.0.145\", \"0.0.146\", \"0.0.147\", \"0.0.148\", \"0.0.149\", \"0.0.15\", \"0.0.150\", \"0.0.151\", \"0.0.152\", \"0.0.153\", \"0.0.154\", \"0.0.155\", \"0.0.156\", \"0.0.157\", \"0.0.158\", \"0.0.159\", \"0.0.16\", \"0.0.160\", \"0.0.161\", \"0.0.162\", \"0.0.163\", ",
+          "start": 0,
+          "end": 2000,
+          "source_ids": [
+            "08219babe41cb7b9b7f7fb0c29cd3ece73fa5dd9ba7f947374c1f68794ff2199"
+          ],
+          "pointer": "/affected"
+        },
+        {
+          "evidence_id": "37efbb7edf6999082a34524aac352d6a3add23dc44ccfb5588707e664a7e5edd",
+          "document_id": "691cb1582289d3b2b4cd1954c0089b754b24f0e0dfc366563f7f18caea598c61",
+          "text": "2026-07-13T16:43:37.506313050Z",
+          "start": 0,
+          "end": 30,
+          "source_ids": [
+            "cc4f03b6fe18d4613e53da59f8c145b744dc8a27d98224af71e0d8612cd36c1c"
+          ],
+          "pointer": "/modified"
+        },
+        {
+          "evidence_id": "4be6fe9c15cefdbe6a39ca7e898219a4ea3dd19ad62523700d2e2eda763e7467",
+          "document_id": "4cca07615ae72be757b642bbe861931bf32264f40ff1b0bdcfc7d3ea14596834",
+          "text": "PYSEC-2024-118",
+          "start": 0,
+          "end": 14,
+          "source_ids": [
+            "acb0dd586a669d234fd6131f660215f16550e0655e2e9aa322bc16eaee6ebfa4"
+          ],
+          "pointer": "/id"
+        },
+        {
+          "evidence_id": "5075a33114113c802a588eb87e59ebddbebe0d21b452da5cfa85ce3998f74e4a",
+          "document_id": "38085329b45f159d043bae88b5f1b79f1e814584b735089f493fba17eb605455",
+          "text": "\"v0.0.322\", \"v0.0.321\", \"v0.0.320\", \"v0.0.319\", \"v0.0.318\", \"v0.0.317\", \"v0.0.316\", \"v0.0.315\", \"v0.0.314\", \"v0.0.313\", \"v0.0.312\", \"v0.0.311\", \"v0.0.310\", \"v0.0.309\", \"v0.0.308\", \"v0.0.307\", \"v0.0.306\", \"v0.0.305\", \"v0.0.304\", \"v0.0.303\", \"v0.0.302\", \"v0.0.301\", \"v0.0.298\", \"v0.0.300\", \"v0.0.299\", \"v0.0.297\", \"v0.0.296\", \"v0.0.295\", \"v0.0.294\", \"v0.0.293\", \"v0.0.292\", \"v0.0.291\", \"v0.0.290\", \"v0.0.289\", \"v0.0.288\", \"v0.0.287\", \"v0.0.286\", \"v0.0.285\", \"v0.0.284\", \"v0.0.283\", \"v0.0.281\", \"v0.0.279\", \"v0.0.278\", \"v0.0.277\", \"v0.0.276\", \"v0.0.275\", \"v0.0.274\", \"v0.0.273\", \"v0.0.272\", \"v0.0.271\", \"v0.0.270\", \"v0.0.269\", \"v0.0.268\", \"v0.0.267\", \"v0.0.266\", \"v0.0.265\", \"v0.0.264\", \"v0.0.263\", \"v0.0.262\", \"v0.0.261\", \"v0.0.260\", \"v0.0.259\", \"v0.0.258\", \"v0.0.257\", \"v0.0.256\", \"v0.0.255\", \"v0.0.254\", \"v0.0.253\", \"v0.0.252\", \"v0.0.251\", \"v0.0.250\", \"v0.0.249\", \"v0.0.248\", \"v0.0.247\", \"v0.0.245\", \"v0.0.5\", \"v0.0.244\", \"v0.0.4\", \"v0.0.243\", \"v0.0.242\", \"v0.0.2\", \"v0.0.240\", \"v0.0.1\", \"v0.0.240rc4\", \"v0.0.1rc4\", \"v0.0.240rc1\", \"v0.0.240rc0\", \"v0.0.1rc3\", \"v0.0.1rc2\", \"v0.0.1rc1\", \"v0.0.1rc0\", \"v0.0.239\", \"v0.0.238\", \"v0.0.237\", \"v0.0.236\", \"v0.0.235\", \"v0.0.234\", \"v0.0.233\", \"v0.0.232\", \"v0.0.231\", \"v0.0.230\", \"v0.0.229\", \"v0.0.228\", \"v0.0.227\", \"v0.0.226\", \"v0.0.225\", \"v0.0.224\", \"v0.0.223\", \"v0.0.222\", \"v0.0.221\", \"v0.0.220\", \"v0.0.219\", \"v0.0.218\", \"v0.0.217\", \"v0.0.216\", \"v0.0.215\", \"v0.0.214\", \"v0.0.213\", \"v0.0.212\", \"v0.0.211\", \"v0.0.210\", \"v0.0.209\", \"v0.0.208\", \"v0.0.207\", \"v0.0.206\", \"v0.0.205\", \"v0.0.204\", \"v0.0.202\", \"v0.0.201\", \"v0.0.200\", \"v0.0.199\", \"v0.0.198\", \"v0.0.197\", \"v0.0.196\", \"v0.0.195\", \"v0.0.194\", \"v0.0.193\", \"v0.0.192\", \"v0.0.191\", \"v0.0.190\", \"v0.0.189\", \"v0.0.188\", \"v0.0.187\", \"v0.0.186\", \"v0.0.185\", \"v0.0.184\", \"v0.0.183\", \"v0.0.182\", \"v0.0.181\", \"v0.0.180\", \"v0.0.179\", \"v0.0.178\", \"v0.0.177\", \"v0.0.175\", \"v0.0.174\", \"v0.0.173\", \"v0.0.172\", \"v0.0.171\", \"v0.0.170\", \"v0.0.169\", \"v0.0.168\", \"v0.0.167\", \"v0.0.166\", \"v0.0.165\", \"v0.0.164\", \"v0.0.163\", \"v",
+          "start": 5400,
+          "end": 7400,
+          "source_ids": [
+            "acb0dd586a669d234fd6131f660215f16550e0655e2e9aa322bc16eaee6ebfa4"
+          ],
+          "pointer": "/affected"
+        }
+      ],
+      "omitted_ids": [
+        "70cfecdacc2600a4ac26b2a45d7de1e9dde6b1ec982e11d12f00a1899b8ef746",
+        "804ead1e0838e3fac3bc91282f3834b75b898e4e50471ca5291d757224fbe714",
+        "8128ab0c36e2478eb441451b1fa0b802b5b38d3a92b1dbbf0f2245a115dac949",
+        "881d66ea2f3dbd0eab976345b0a889c64691cdb99b529b1af5f7ba90a824456b",
+        "9079eb8d621b2a290939ece5ca3a42b2af119f4b3f8090a6fc5b9cdfb38abbbd",
+        "9d34471d088e325030432903cc3b16c8a1593f3f55bc6460737dc15e7f12f778",
+        "b1e927344e29dc11fe3c851b8717dcbdd246378bb4e42d60808fd42a8d03fadf",
+        "bc79ebfe79bafb14f014129fa76e6219b2878dceb9ecc4656eaf43bdd2d1e26b",
+        "ce606b73f608e41aa4ca7acc75c14b7dd1fe8c89e7887df5b7db15c5fa1a4faa",
+        "d789bceafd85cf416fdecce844a907e7eed0f01d85cab508ebda654bf6506217",
+        "daeb2fe1db16eaa3152bda14049bbe9a585aa4ce3bb90da3992a176a10896612",
+        "dc9451cde52af1b83a8dc2c89c2b9c3b0a6edb294f7f880378305d5277d927b4",
+        "ea7a29103d9b9184f9bc9a8b7b16de22d5a3482cf3655243bc31a5fccd79ecd5",
+        "f1d722697df319ae26411553fefa6c4d7487c54312bafb34dde476e1b246c639",
+        "faee03ff6a3f0ab8827429348119882fe69b1b2bf7cd45179e198004a6f95430",
+        "fc2b089a8cde669c59b02c80b3869e0f2142f51ea191eb451a947641c0cf822d",
+        "ffb5f91984ff3b6c1954ff57b9d74e788af52c17e6f9775df7b7129b11d7cd0f",
+        "ddf44506b487592baab7ed5965c0eaf682fac3e5417c0b1d9fd9246000960cc7",
+        "f21304454ec767143782efddf2d48c5f62555d19d683e0c6471c0308ac1f854d",
+        "ece617a1486d446ffd3a008b3e6849f2d3847e02fb2d3f2353aba895fbb144ca",
+        "8b43a08b41283cece0e4be714929b386aabe0b30e41347da07eb6f7f7d01b941",
+        "c85d95e0ba1ff7538694bf3b3423a2c5e645fd7644f39577a2c84df889a9466a",
+        "53a4604288cbc9beb76cf7860825e244ccd09615b47cafd0888a71c11662599f",
+        "bdf3a4529e3cf92b2df9cfd859f4993669786ac0acd7a0d58079b393e9cd2207",
+        "f01b51c7a4e89c4e28db9ee5aece763c3c70fdec2fcba6b7460c206bf865e4da",
+        "727ed1d1cb9b45696c7d02e4363a8af45933511739a15e0a7fb18bfc6283f4f5",
+        "7e7911b8744f857df923d9293af1f209bb092dc868daa15e4e8bc913e805af55",
+        "0ea3b0d026751e41d2472e32bd2058ae5895cef6d92e211c9359cf0b88d1661d",
+        "1973ea5f995f5f93cae326e847d54710b4a60506652f16271386870bbe04bd63",
+        "2a3e5504d82f4ba22e9a0a1622a5c8a8d4cc89946bfc542b424064965acb3e94",
+        "3617e7378804edc298c1e4c23269a3d0d3af3ed88714034fb56e0bcaf424215b",
+        "3f05809c0f005a4e1ea66371c3755621cc29dd7a41818cc74153d8413679a3e8",
+        "51c2b45b5f8a2747c4a6aa1e526cd00ae8f08025a498d8e5b18750f37073e54d",
+        "5247cd654dabedd529e56fe975402d8b53281f3b44e68eaec67e32b85587bd80",
+        "5919117ee93ad864bcf578d74e80240cb472651ea7f17b49aad692f7a739c64a",
+        "5938c8a1f0e7d63bc7f5fb22228b29e75636548dc141e166567fc6cd56ef4fca",
+        "5cc5cdd78b8ec1ff79837208287ce2f38cc8af96a25899fea8b5ff30023ee851",
+        "66ab2564c053a5515067c609a4d8c0bfa235663a3f3d41ea6f8d2b75eb7d44aa",
+        "67575095c0b4cffb8c355284e26a1d6fd924d50e729bf36b61b7e0c00f120a07",
+        "8be9b9011c98473df03193ac26b5cf04c9b649b6d5eb38c23a232d6280c2b974",
+        "bc350d52e2312e3f4bdce8cdf8ea91b97373f28b93e44c95c9d80a0f16c5d6e5",
+        "ddc84f15ae89fe1deac8d460e9f14c1245a734f653aa2824421a4f8a085fb6e5",
+        "ed4db365ee4875439dae534e72e9211ae24de7d7cfb368e559fc97d50174dbf0",
+        "f633ab493bfca98cf1e457e294d8318237aca0655d40ea3b51db72bcc7447dbd",
+        "f678136d31c20513f13904aa9cf34318e18bcacab02fa0fba3703f58d68b10b3",
+        "cfb85e62475b813a1c0ad478dc242214ce05f73c84f98b349c49c6c89fcdf32d",
+        "14ccb86b109603d40071a4192f16bbf792eeecb4efff57bba6050f70b6c40615",
+        "1ecf53db19dbfa473fb66ba0d5e46b905c04912d1f7952cee5cfaf768181fcda",
+        "44049022a092142fadbef8d62125c4309b1dbc2ab34f7f34965d799c4c489bed",
+        "47872217a39c25753f57e69bc5e8df6426c0ca22078c5c31dfba7529b255631f",
+        "478af0eaee21c6264664c2373d6642446bf8607adafbe33548cdcb539e7b497a",
+        "4b36bd2a65531a7228afa798fae464245630f94ef5c25c63549bf403b9a8024f",
+        "5620f71db791bf54f6fdc98687ffb050f4a3b73eacc36539d8e8ff5e7a82dbcb",
+        "5ee7f8a851ab4312593c60e201c1a9c338c729ff0ea8a3a8bced5244eed52f99",
+        "ae37b490517a326f2453424af9a39a0c8bcfb6ca3eb230d29805bf4ca9e1a027",
+        "cfc850579fd3b6b32b687a17ec705d832063e766543014c047ac01361559c99f",
+        "d10422c4267c1802e3f066a5a2bc9c9030266004ebd0a9e67a84a31eaf52c8fc",
+        "dabacf371737a3c34bedf644e7100fa7c2471c6f09d28d688a3c125770bbd27b",
+        "f3eb2e01189d7791a119a78fc7c8fc8ea0692cc1a2a3ebe012a8f715248dfda8",
+        "13a0a9aba72a3eca14d7ad8e846ae6790df832272d579201c256d00ea8df82ad",
+        "0180c2233d0b827676d0c6f9aadbf0f875f1f2d164a9bf0d3afc30b5b3ca59ab"
+      ],
+      "character_count": 7550,
+      "index_id": "7705197b7e87e5a411b115d854f18cb5ab0a6de57d555bae83768b3f4bcd398c",
+      "method": "lexical",
+      "scope_snapshot_ids": [
+        "972f6e7718b9c9d9be313e1fc41d723a8d4e4bb1130e59c1916df11beb10e06f"
+      ]
+    },
+    "vector": {
+      "chunks": [
+        {
+          "evidence_id": "06b2526e9e92d612e01657cefea79512a955bc2dd875a1d8aacfb1f5e646dc9a",
+          "document_id": "38085329b45f159d043bae88b5f1b79f1e814584b735089f493fba17eb605455",
+          "text": "180\", \"v0.0.179\", \"v0.0.178\", \"v0.0.177\", \"v0.0.175\", \"v0.0.174\", \"v0.0.173\", \"v0.0.172\", \"v0.0.171\", \"v0.0.170\", \"v0.0.169\", \"v0.0.168\", \"v0.0.167\", \"v0.0.166\", \"v0.0.165\", \"v0.0.164\", \"v0.0.163\", \"v0.0.161\", \"v0.0.162\", \"v0.0.160\", \"v0.0.159\", \"v0.0.158\", \"v0.0.157\", \"v0.0.156\", \"v0.0.155\", \"v0.0.154\", \"v0.0.153\", \"v0.0.152\", \"v0.0.151\", \"v0.0.150\", \"v0.0.149\", \"v0.0.147\", \"v0.0.146\", \"v0.0.145\", \"v0.0.144\", \"v0.0.143\", \"v0.0.142\", \"v0.0.141\", \"v0.0.140\", \"v0.0.139\", \"v0.0.138\", \"v0.0.137\", \"v0.0.136\", \"v0.0.135\", \"v0.0.134\", \"v0.0.133\", \"v0.0.132\", \"v0.0.131\", \"v0.0.130\", \"v0.0.129\", \"v0.0.128\", \"v0.0.127\", \"v0.0.126\", \"v0.0.125\", \"v0.0.124\", \"v0.0.123\", \"v0.0.122\", \"v0.0.121\", \"v0.0.120\", \"v0.0.119\", \"v0.0.118\", \"v0.0.117\", \"v0.0.116\", \"v0.0.115\", \"v0.0.114\", \"v0.0.113\", \"v0.0.112\", \"v0.0.111\", \"v0.0.110\", \"v0.0.109\", \"v0.0.108\", \"v0.0.107\", \"v0.0.106\", \"v0.0.105\", \"v0.0.104\", \"v0.0.103\", \"v0.0.102\", \"v0.0.101\", \"v0.0.100\", \"v0.0.99\", \"v0.0.98\", \"v0.0.97\", \"v0.0.96\", \"v0.0.95\", \"v0.0.94\", \"v0.0.93\", \"v0.0.92\", \"v0.0.91\", \"v0.0.90\", \"v0.0.89\", \"v0.0.88\", \"v0.0.87\", \"v0.0.86\", \"v0.0.85\", \"v0.0.84\", \"v0.0.83\", \"v0.0.82\", \"v0.0.81\", \"v0.0.80\", \"v0.0.79\", \"v0.0.78\", \"v0.0.77\", \"v0.0.76\", \"v0.0.75\", \"v0.0.74\", \"v0.0.73\", \"v0.0.72\", \"v0.0.71\", \"v0.0.70\", \"v0.0.69\", \"v0.0.68\", \"v0.0.67\", \"v0.0.66\", \"v0.0.65\", \"v0.0.64\"]}]",
+          "start": 7200,
+          "end": 8539,
+          "source_ids": [
+            "acb0dd586a669d234fd6131f660215f16550e0655e2e9aa322bc16eaee6ebfa4"
+          ],
+          "pointer": "/affected"
+        },
+        {
+          "evidence_id": "13806311dc576f6e30310def1a4c9bc6be6e01fe9dceb477ccc504fa6e223d57",
+          "document_id": "88566fd6c87688abaaaabb1adf4420909b40fb0b41c2ac9fd246daf933dfa97f",
+          "text": "Denial of service in `SitemapLoader` Document Loader in the `langchain-community` package, affecting versions below 0.2.5. The `parse_sitemap` method, responsible for parsing sitemaps and extracting URLs, lacks a mechanism to prevent infinite recursion when a sitemap URL refers to the current sitemap itself. This oversight allows for the possibility of an infinite loop, leading to a crash by exceeding the maximum recursion depth in Python. This vulnerability can be exploited to occupy server socket/port resources and crash the Python process, impacting the availability of services relying on this functionality.",
+          "start": 0,
+          "end": 618,
+          "source_ids": [
+            "cc4f03b6fe18d4613e53da59f8c145b744dc8a27d98224af71e0d8612cd36c1c"
+          ],
+          "pointer": "/details"
+        },
+        {
+          "evidence_id": "1ad050463a2e74e957401a82b51cd523b6a705f3330888981df2e4d456a6cf27",
+          "document_id": "8460db4b428d13908b338594a91191d95edcd595772a5289a45644ee2eb0cce8",
+          "text": "[\"CVE-2024-2965\", \"GHSA-3hjh-jh2h-vrg6\", \"PYSEC-2024-118\"]",
+          "start": 0,
+          "end": 58,
+          "source_ids": [
+            "cc4f03b6fe18d4613e53da59f8c145b744dc8a27d98224af71e0d8612cd36c1c"
+          ],
+          "pointer": "/aliases"
+        },
+        {
+          "evidence_id": "274277c653f3a4e5ef21c29195a713b453e4cd5554b94f432ea2f0e492d8ef09",
+          "document_id": "8efd5656dfa09a93a81724cf3276da1d5d9969b11784a17cca2a4350804c1c56",
+          "text": "2026-07-13T16:43:37.506313050Z",
+          "start": 0,
+          "end": 30,
+          "source_ids": [
+            "08219babe41cb7b9b7f7fb0c29cd3ece73fa5dd9ba7f947374c1f68794ff2199"
+          ],
+          "pointer": "/modified"
+        },
+        {
+          "evidence_id": "2cd3585c2af748eed29d94bb9b19f1f1b2dac988dc4c8609a8e8a64f04b28bd1",
+          "document_id": "835bb23b06809c4ac1f959e3476f58e5efd0df55def507b51caf97dce4f58bb5",
+          "text": "{\"finding\": {\"group_id\": \"6c98b4eb86af56ac996b1c486ff5be7c6ccb3816c611c94905892ecb987763a2\", \"id\": \"053be85df1696369520073acdacbaae827d2a85a352ae154f0a5536fd64d5b01\", \"instance_id\": \"119f415f696b1199d038599ed9695c77668f871aafd1c6cea080090cdfcaa348\", \"revision_ids\": [\"94ef84c5350a960c250394a071908b80f29c8094ea962ea55888c02cfdcf23e3\", \"d228c2c3afa8a77e364004e4860656df8937f1455fd51498eaa93dd60d690e00\"], \"status\": \"known_match\"}, \"interpretation\": \"Known advisory match; exploitability has not been established.\", \"kind\": \"finding\", \"run_id\": \"d443b36e-7d4f-4804-9c71-7afd9664a12d\", \"snapshot_id\": \"972f6e7718b9c9d9be313e1fc41d723a8d4e4bb1130e59c1916df11beb10e06f\"}",
+          "start": 0,
+          "end": 665,
+          "source_ids": [
+            "c0287932240f609df722b3023593d7070ea473ea46b6609b69a3131504832551",
+            "cc4f03b6fe18d4613e53da59f8c145b744dc8a27d98224af71e0d8612cd36c1c",
+            "08219babe41cb7b9b7f7fb0c29cd3ece73fa5dd9ba7f947374c1f68794ff2199"
+          ],
+          "pointer": "/text"
+        },
+        {
+          "evidence_id": "300d0b49ccf6363a5f79df2c4989f2d32e65cb546f8611fba75e133e99701ebf",
+          "document_id": "df6884361f30f2b761cc902d3bb3984c19e1004bb1d5e2237c9a2a57b0135d66",
+          "text": "[{\"database_specific\": {\"source\": \"https://github.com/pypa/advisory-database/blob/main/vulns/langchain-community/PYSEC-2026-2561.yaml\"}, \"package\": {\"ecosystem\": \"PyPI\", \"name\": \"langchain-community\", \"purl\": \"pkg:pypi/langchain-community\"}, \"ranges\": [{\"events\": [{\"introduced\": \"0\"}, {\"fixed\": \"0.2.5\"}], \"type\": \"ECOSYSTEM\"}], \"versions\": [\"0.0.1\", \"0.0.10\", \"0.0.11\", \"0.0.12\", \"0.0.13\", \"0.0.14\", \"0.0.15\", \"0.0.16\", \"0.0.17\", \"0.0.18\", \"0.0.19\", \"0.0.1rc1\", \"0.0.1rc2\", \"0.0.2\", \"0.0.20\", \"0.0.21\", \"0.0.22\", \"0.0.23\", \"0.0.24\", \"0.0.25\", \"0.0.26\", \"0.0.27\", \"0.0.28\", \"0.0.29\", \"0.0.3\", \"0.0.30\", \"0.0.31\", \"0.0.32\", \"0.0.33\", \"0.0.34\", \"0.0.35\", \"0.0.36\", \"0.0.37\", \"0.0.38\", \"0.0.4\", \"0.0.5\", \"0.0.6\", \"0.0.7\", \"0.0.8\", \"0.0.9\", \"0.2.0\", \"0.2.0rc1\", \"0.2.1\", \"0.2.2\", \"0.2.3\", \"0.2.4\"]}]",
+          "start": 0,
+          "end": 796,
+          "source_ids": [
+            "cc4f03b6fe18d4613e53da59f8c145b744dc8a27d98224af71e0d8612cd36c1c"
+          ],
+          "pointer": "/affected"
+        },
+        {
+          "evidence_id": "36a91c3865160bcdcafa7c945b8e9168e4eb490291ad6d5a09dff13a325e710b",
+          "document_id": "04141a366b65504378a353ddbd87e23dc399bbcf641c638a11e8f29ce29c5e8c",
+          "text": "[{\"database_specific\": {\"source\": \"https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/06/GHSA-3hjh-jh2h-vrg6/GHSA-3hjh-jh2h-vrg6.json\"}, \"package\": {\"ecosystem\": \"PyPI\", \"name\": \"langchain-community\", \"purl\": \"pkg:pypi/langchain-community\"}, \"ranges\": [{\"events\": [{\"introduced\": \"0\"}, {\"fixed\": \"0.2.5\"}], \"type\": \"ECOSYSTEM\"}], \"versions\": [\"0.0.1\", \"0.0.10\", \"0.0.11\", \"0.0.12\", \"0.0.13\", \"0.0.14\", \"0.0.15\", \"0.0.16\", \"0.0.17\", \"0.0.18\", \"0.0.19\", \"0.0.1rc1\", \"0.0.1rc2\", \"0.0.2\", \"0.0.20\", \"0.0.21\", \"0.0.22\", \"0.0.23\", \"0.0.24\", \"0.0.25\", \"0.0.26\", \"0.0.27\", \"0.0.28\", \"0.0.29\", \"0.0.3\", \"0.0.30\", \"0.0.31\", \"0.0.32\", \"0.0.33\", \"0.0.34\", \"0.0.35\", \"0.0.36\", \"0.0.37\", \"0.0.38\", \"0.0.4\", \"0.0.5\", \"0.0.6\", \"0.0.7\", \"0.0.8\", \"0.0.9\", \"0.2.0\", \"0.2.0rc1\", \"0.2.1\", \"0.2.2\", \"0.2.3\", \"0.2.4\"]}, {\"database_specific\": {\"source\": \"https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/06/GHSA-3hjh-jh2h-vrg6/GHSA-3hjh-jh2h-vrg6.json\"}, \"package\": {\"ecosystem\": \"PyPI\", \"name\": \"langchain\", \"purl\": \"pkg:pypi/langchain\"}, \"ranges\": [{\"events\": [{\"introduced\": \"0\"}, {\"fixed\": \"0.2.5\"}], \"type\": \"ECOSYSTEM\"}], \"versions\": [\"0.0.1\", \"0.0.10\", \"0.0.100\", \"0.0.101\", \"0.0.101rc0\", \"0.0.102\", \"0.0.102rc0\", \"0.0.103\", \"0.0.104\", \"0.0.105\", \"0.0.106\", \"0.0.107\", \"0.0.108\", \"0.0.109\", \"0.0.11\", \"0.0.110\", \"0.0.111\", \"0.0.112\", \"0.0.113\", \"0.0.114\", \"0.0.115\", \"0.0.116\", \"0.0.117\", \"0.0.118\", \"0.0.119\", \"0.0.12\", \"0.0.120\", \"0.0.121\", \"0.0.122\", \"0.0.123\", \"0.0.124\", \"0.0.125\", \"0.0.126\", \"0.0.127\", \"0.0.128\", \"0.0.129\", \"0.0.13\", \"0.0.130\", \"0.0.131\", \"0.0.132\", \"0.0.133\", \"0.0.134\", \"0.0.135\", \"0.0.136\", \"0.0.137\", \"0.0.138\", \"0.0.139\", \"0.0.14\", \"0.0.140\", \"0.0.141\", \"0.0.142\", \"0.0.143\", \"0.0.144\", \"0.0.145\", \"0.0.146\", \"0.0.147\", \"0.0.148\", \"0.0.149\", \"0.0.15\", \"0.0.150\", \"0.0.151\", \"0.0.152\", \"0.0.153\", \"0.0.154\", \"0.0.155\", \"0.0.156\", \"0.0.157\", \"0.0.158\", \"0.0.159\", \"0.0.16\", \"0.0.160\", \"0.0.161\", \"0.0.162\", \"0.0.163\", ",
+          "start": 0,
+          "end": 2000,
+          "source_ids": [
+            "08219babe41cb7b9b7f7fb0c29cd3ece73fa5dd9ba7f947374c1f68794ff2199"
+          ],
+          "pointer": "/affected"
+        },
+        {
+          "evidence_id": "37efbb7edf6999082a34524aac352d6a3add23dc44ccfb5588707e664a7e5edd",
+          "document_id": "691cb1582289d3b2b4cd1954c0089b754b24f0e0dfc366563f7f18caea598c61",
+          "text": "2026-07-13T16:43:37.506313050Z",
+          "start": 0,
+          "end": 30,
+          "source_ids": [
+            "cc4f03b6fe18d4613e53da59f8c145b744dc8a27d98224af71e0d8612cd36c1c"
+          ],
+          "pointer": "/modified"
+        },
+        {
+          "evidence_id": "4be6fe9c15cefdbe6a39ca7e898219a4ea3dd19ad62523700d2e2eda763e7467",
+          "document_id": "4cca07615ae72be757b642bbe861931bf32264f40ff1b0bdcfc7d3ea14596834",
+          "text": "PYSEC-2024-118",
+          "start": 0,
+          "end": 14,
+          "source_ids": [
+            "acb0dd586a669d234fd6131f660215f16550e0655e2e9aa322bc16eaee6ebfa4"
+          ],
+          "pointer": "/id"
+        },
+        {
+          "evidence_id": "5075a33114113c802a588eb87e59ebddbebe0d21b452da5cfa85ce3998f74e4a",
+          "document_id": "38085329b45f159d043bae88b5f1b79f1e814584b735089f493fba17eb605455",
+          "text": "\"v0.0.322\", \"v0.0.321\", \"v0.0.320\", \"v0.0.319\", \"v0.0.318\", \"v0.0.317\", \"v0.0.316\", \"v0.0.315\", \"v0.0.314\", \"v0.0.313\", \"v0.0.312\", \"v0.0.311\", \"v0.0.310\", \"v0.0.309\", \"v0.0.308\", \"v0.0.307\", \"v0.0.306\", \"v0.0.305\", \"v0.0.304\", \"v0.0.303\", \"v0.0.302\", \"v0.0.301\", \"v0.0.298\", \"v0.0.300\", \"v0.0.299\", \"v0.0.297\", \"v0.0.296\", \"v0.0.295\", \"v0.0.294\", \"v0.0.293\", \"v0.0.292\", \"v0.0.291\", \"v0.0.290\", \"v0.0.289\", \"v0.0.288\", \"v0.0.287\", \"v0.0.286\", \"v0.0.285\", \"v0.0.284\", \"v0.0.283\", \"v0.0.281\", \"v0.0.279\", \"v0.0.278\", \"v0.0.277\", \"v0.0.276\", \"v0.0.275\", \"v0.0.274\", \"v0.0.273\", \"v0.0.272\", \"v0.0.271\", \"v0.0.270\", \"v0.0.269\", \"v0.0.268\", \"v0.0.267\", \"v0.0.266\", \"v0.0.265\", \"v0.0.264\", \"v0.0.263\", \"v0.0.262\", \"v0.0.261\", \"v0.0.260\", \"v0.0.259\", \"v0.0.258\", \"v0.0.257\", \"v0.0.256\", \"v0.0.255\", \"v0.0.254\", \"v0.0.253\", \"v0.0.252\", \"v0.0.251\", \"v0.0.250\", \"v0.0.249\", \"v0.0.248\", \"v0.0.247\", \"v0.0.245\", \"v0.0.5\", \"v0.0.244\", \"v0.0.4\", \"v0.0.243\", \"v0.0.242\", \"v0.0.2\", \"v0.0.240\", \"v0.0.1\", \"v0.0.240rc4\", \"v0.0.1rc4\", \"v0.0.240rc1\", \"v0.0.240rc0\", \"v0.0.1rc3\", \"v0.0.1rc2\", \"v0.0.1rc1\", \"v0.0.1rc0\", \"v0.0.239\", \"v0.0.238\", \"v0.0.237\", \"v0.0.236\", \"v0.0.235\", \"v0.0.234\", \"v0.0.233\", \"v0.0.232\", \"v0.0.231\", \"v0.0.230\", \"v0.0.229\", \"v0.0.228\", \"v0.0.227\", \"v0.0.226\", \"v0.0.225\", \"v0.0.224\", \"v0.0.223\", \"v0.0.222\", \"v0.0.221\", \"v0.0.220\", \"v0.0.219\", \"v0.0.218\", \"v0.0.217\", \"v0.0.216\", \"v0.0.215\", \"v0.0.214\", \"v0.0.213\", \"v0.0.212\", \"v0.0.211\", \"v0.0.210\", \"v0.0.209\", \"v0.0.208\", \"v0.0.207\", \"v0.0.206\", \"v0.0.205\", \"v0.0.204\", \"v0.0.202\", \"v0.0.201\", \"v0.0.200\", \"v0.0.199\", \"v0.0.198\", \"v0.0.197\", \"v0.0.196\", \"v0.0.195\", \"v0.0.194\", \"v0.0.193\", \"v0.0.192\", \"v0.0.191\", \"v0.0.190\", \"v0.0.189\", \"v0.0.188\", \"v0.0.187\", \"v0.0.186\", \"v0.0.185\", \"v0.0.184\", \"v0.0.183\", \"v0.0.182\", \"v0.0.181\", \"v0.0.180\", \"v0.0.179\", \"v0.0.178\", \"v0.0.177\", \"v0.0.175\", \"v0.0.174\", \"v0.0.173\", \"v0.0.172\", \"v0.0.171\", \"v0.0.170\", \"v0.0.169\", \"v0.0.168\", \"v0.0.167\", \"v0.0.166\", \"v0.0.165\", \"v0.0.164\", \"v0.0.163\", \"v",
+          "start": 5400,
+          "end": 7400,
+          "source_ids": [
+            "acb0dd586a669d234fd6131f660215f16550e0655e2e9aa322bc16eaee6ebfa4"
+          ],
+          "pointer": "/affected"
+        }
+      ],
+      "omitted_ids": [
+        "70cfecdacc2600a4ac26b2a45d7de1e9dde6b1ec982e11d12f00a1899b8ef746",
+        "804ead1e0838e3fac3bc91282f3834b75b898e4e50471ca5291d757224fbe714",
+        "8128ab0c36e2478eb441451b1fa0b802b5b38d3a92b1dbbf0f2245a115dac949",
+        "881d66ea2f3dbd0eab976345b0a889c64691cdb99b529b1af5f7ba90a824456b",
+        "9079eb8d621b2a290939ece5ca3a42b2af119f4b3f8090a6fc5b9cdfb38abbbd",
+        "9d34471d088e325030432903cc3b16c8a1593f3f55bc6460737dc15e7f12f778",
+        "b1e927344e29dc11fe3c851b8717dcbdd246378bb4e42d60808fd42a8d03fadf",
+        "bc79ebfe79bafb14f014129fa76e6219b2878dceb9ecc4656eaf43bdd2d1e26b",
+        "ce606b73f608e41aa4ca7acc75c14b7dd1fe8c89e7887df5b7db15c5fa1a4faa",
+        "d789bceafd85cf416fdecce844a907e7eed0f01d85cab508ebda654bf6506217",
+        "daeb2fe1db16eaa3152bda14049bbe9a585aa4ce3bb90da3992a176a10896612",
+        "dc9451cde52af1b83a8dc2c89c2b9c3b0a6edb294f7f880378305d5277d927b4",
+        "ea7a29103d9b9184f9bc9a8b7b16de22d5a3482cf3655243bc31a5fccd79ecd5",
+        "f1d722697df319ae26411553fefa6c4d7487c54312bafb34dde476e1b246c639",
+        "faee03ff6a3f0ab8827429348119882fe69b1b2bf7cd45179e198004a6f95430",
+        "fc2b089a8cde669c59b02c80b3869e0f2142f51ea191eb451a947641c0cf822d",
+        "ffb5f91984ff3b6c1954ff57b9d74e788af52c17e6f9775df7b7129b11d7cd0f",
+        "bc350d52e2312e3f4bdce8cdf8ea91b97373f28b93e44c95c9d80a0f16c5d6e5",
+        "f633ab493bfca98cf1e457e294d8318237aca0655d40ea3b51db72bcc7447dbd",
+        "67575095c0b4cffb8c355284e26a1d6fd924d50e729bf36b61b7e0c00f120a07",
+        "ae37b490517a326f2453424af9a39a0c8bcfb6ca3eb230d29805bf4ca9e1a027",
+        "2a3e5504d82f4ba22e9a0a1622a5c8a8d4cc89946bfc542b424064965acb3e94",
+        "4b36bd2a65531a7228afa798fae464245630f94ef5c25c63549bf403b9a8024f",
+        "66ab2564c053a5515067c609a4d8c0bfa235663a3f3d41ea6f8d2b75eb7d44aa",
+        "47872217a39c25753f57e69bc5e8df6426c0ca22078c5c31dfba7529b255631f",
+        "14ccb86b109603d40071a4192f16bbf792eeecb4efff57bba6050f70b6c40615",
+        "51c2b45b5f8a2747c4a6aa1e526cd00ae8f08025a498d8e5b18750f37073e54d",
+        "f3eb2e01189d7791a119a78fc7c8fc8ea0692cc1a2a3ebe012a8f715248dfda8",
+        "dabacf371737a3c34bedf644e7100fa7c2471c6f09d28d688a3c125770bbd27b",
+        "cfc850579fd3b6b32b687a17ec705d832063e766543014c047ac01361559c99f",
+        "478af0eaee21c6264664c2373d6642446bf8607adafbe33548cdcb539e7b497a",
+        "3f05809c0f005a4e1ea66371c3755621cc29dd7a41818cc74153d8413679a3e8",
+        "ddc84f15ae89fe1deac8d460e9f14c1245a734f653aa2824421a4f8a085fb6e5",
+        "f678136d31c20513f13904aa9cf34318e18bcacab02fa0fba3703f58d68b10b3",
+        "5938c8a1f0e7d63bc7f5fb22228b29e75636548dc141e166567fc6cd56ef4fca",
+        "0180c2233d0b827676d0c6f9aadbf0f875f1f2d164a9bf0d3afc30b5b3ca59ab",
+        "5620f71db791bf54f6fdc98687ffb050f4a3b73eacc36539d8e8ff5e7a82dbcb",
+        "8be9b9011c98473df03193ac26b5cf04c9b649b6d5eb38c23a232d6280c2b974",
+        "5cc5cdd78b8ec1ff79837208287ce2f38cc8af96a25899fea8b5ff30023ee851",
+        "5ee7f8a851ab4312593c60e201c1a9c338c729ff0ea8a3a8bced5244eed52f99",
+        "19968b0320fd4b479d40e3605279042b38a37ddf7f8a7bfb18cf57051a8107b7",
+        "1ecf53db19dbfa473fb66ba0d5e46b905c04912d1f7952cee5cfaf768181fcda",
+        "37f42f3b293d62288a888f7755f278a86a73c3742095781d90dea72f370615da",
+        "d10422c4267c1802e3f066a5a2bc9c9030266004ebd0a9e67a84a31eaf52c8fc",
+        "44049022a092142fadbef8d62125c4309b1dbc2ab34f7f34965d799c4c489bed",
+        "ad58ecaea5344bf45f846d7caa5c8cb10dd79e75a74304fbbb5e37dfbd5e29d0",
+        "5919117ee93ad864bcf578d74e80240cb472651ea7f17b49aad692f7a739c64a",
+        "c6e787bc77f8b50626a4d486d2430c610a7c082d922276a50e93f76251e368e8",
+        "0ea3b0d026751e41d2472e32bd2058ae5895cef6d92e211c9359cf0b88d1661d",
+        "5247cd654dabedd529e56fe975402d8b53281f3b44e68eaec67e32b85587bd80",
+        "6fb7cc60d6f78b6d404e5f754e0f5669966c2f0fa4803b53803db46febb00037",
+        "6481e5eaa882235a77c62820469634d0ea97d01b2896d390f2301b457dbb2b03",
+        "3617e7378804edc298c1e4c23269a3d0d3af3ed88714034fb56e0bcaf424215b",
+        "6caec34f6cdec3c17d7d3341e5e9ea593004f4ae5af4c8f07311c7e31d26bcf5",
+        "53a553b7cfa9da8fd4bc4867b0d7179b8abb62a3900942cfbbbd36451060c4f7",
+        "a2a12d29c25ad55f86796a4444dad32954a38694b181e9a85b67462381de82d2",
+        "55de8e5adf47e3dac4a7d2f1bc27e50e9307886e5413d5bfbdf837dbb1d9e0be",
+        "ed4db365ee4875439dae534e72e9211ae24de7d7cfb368e559fc97d50174dbf0",
+        "9b8147d34bdf0f1348f30804dac1f7183d4289207c6ada3dff916569cfa4a9a5",
+        "e35941f0fbc28c2833e7dc9c7e5d04cb6aa3bd4c1491a30cbb0e5581ee1f7466",
+        "61dbd857428ea00f401caa2bc927dcc3220c29135cb7e6f7428fb820c0f5527d",
+        "bf3dc98f4204bc17ea677b247062c9243622e2fee6951537f3987c59521335cf",
+        "250688aac1ae633a5abb81434420f10cb619769d82462c0aea746d0c0eebb085",
+        "b3c63078bde34ce6fc871bb4577429c1b8ea1c555a29297a0f2c4db5f8da079e"
+      ],
+      "character_count": 7550,
+      "index_id": "7705197b7e87e5a411b115d854f18cb5ab0a6de57d555bae83768b3f4bcd398c",
+      "method": "vector",
+      "scope_snapshot_ids": [
+        "972f6e7718b9c9d9be313e1fc41d723a8d4e4bb1130e59c1916df11beb10e06f"
+      ]
+    },
+    "rrf": {
+      "chunks": [
+        {
+          "evidence_id": "06b2526e9e92d612e01657cefea79512a955bc2dd875a1d8aacfb1f5e646dc9a",
+          "document_id": "38085329b45f159d043bae88b5f1b79f1e814584b735089f493fba17eb605455",
+          "text": "180\", \"v0.0.179\", \"v0.0.178\", \"v0.0.177\", \"v0.0.175\", \"v0.0.174\", \"v0.0.173\", \"v0.0.172\", \"v0.0.171\", \"v0.0.170\", \"v0.0.169\", \"v0.0.168\", \"v0.0.167\", \"v0.0.166\", \"v0.0.165\", \"v0.0.164\", \"v0.0.163\", \"v0.0.161\", \"v0.0.162\", \"v0.0.160\", \"v0.0.159\", \"v0.0.158\", \"v0.0.157\", \"v0.0.156\", \"v0.0.155\", \"v0.0.154\", \"v0.0.153\", \"v0.0.152\", \"v0.0.151\", \"v0.0.150\", \"v0.0.149\", \"v0.0.147\", \"v0.0.146\", \"v0.0.145\", \"v0.0.144\", \"v0.0.143\", \"v0.0.142\", \"v0.0.141\", \"v0.0.140\", \"v0.0.139\", \"v0.0.138\", \"v0.0.137\", \"v0.0.136\", \"v0.0.135\", \"v0.0.134\", \"v0.0.133\", \"v0.0.132\", \"v0.0.131\", \"v0.0.130\", \"v0.0.129\", \"v0.0.128\", \"v0.0.127\", \"v0.0.126\", \"v0.0.125\", \"v0.0.124\", \"v0.0.123\", \"v0.0.122\", \"v0.0.121\", \"v0.0.120\", \"v0.0.119\", \"v0.0.118\", \"v0.0.117\", \"v0.0.116\", \"v0.0.115\", \"v0.0.114\", \"v0.0.113\", \"v0.0.112\", \"v0.0.111\", \"v0.0.110\", \"v0.0.109\", \"v0.0.108\", \"v0.0.107\", \"v0.0.106\", \"v0.0.105\", \"v0.0.104\", \"v0.0.103\", \"v0.0.102\", \"v0.0.101\", \"v0.0.100\", \"v0.0.99\", \"v0.0.98\", \"v0.0.97\", \"v0.0.96\", \"v0.0.95\", \"v0.0.94\", \"v0.0.93\", \"v0.0.92\", \"v0.0.91\", \"v0.0.90\", \"v0.0.89\", \"v0.0.88\", \"v0.0.87\", \"v0.0.86\", \"v0.0.85\", \"v0.0.84\", \"v0.0.83\", \"v0.0.82\", \"v0.0.81\", \"v0.0.80\", \"v0.0.79\", \"v0.0.78\", \"v0.0.77\", \"v0.0.76\", \"v0.0.75\", \"v0.0.74\", \"v0.0.73\", \"v0.0.72\", \"v0.0.71\", \"v0.0.70\", \"v0.0.69\", \"v0.0.68\", \"v0.0.67\", \"v0.0.66\", \"v0.0.65\", \"v0.0.64\"]}]",
+          "start": 7200,
+          "end": 8539,
+          "source_ids": [
+            "acb0dd586a669d234fd6131f660215f16550e0655e2e9aa322bc16eaee6ebfa4"
+          ],
+          "pointer": "/affected"
+        },
+        {
+          "evidence_id": "13806311dc576f6e30310def1a4c9bc6be6e01fe9dceb477ccc504fa6e223d57",
+          "document_id": "88566fd6c87688abaaaabb1adf4420909b40fb0b41c2ac9fd246daf933dfa97f",
+          "text": "Denial of service in `SitemapLoader` Document Loader in the `langchain-community` package, affecting versions below 0.2.5. The `parse_sitemap` method, responsible for parsing sitemaps and extracting URLs, lacks a mechanism to prevent infinite recursion when a sitemap URL refers to the current sitemap itself. This oversight allows for the possibility of an infinite loop, leading to a crash by exceeding the maximum recursion depth in Python. This vulnerability can be exploited to occupy server socket/port resources and crash the Python process, impacting the availability of services relying on this functionality.",
+          "start": 0,
+          "end": 618,
+          "source_ids": [
+            "cc4f03b6fe18d4613e53da59f8c145b744dc8a27d98224af71e0d8612cd36c1c"
+          ],
+          "pointer": "/details"
+        },
+        {
+          "evidence_id": "1ad050463a2e74e957401a82b51cd523b6a705f3330888981df2e4d456a6cf27",
+          "document_id": "8460db4b428d13908b338594a91191d95edcd595772a5289a45644ee2eb0cce8",
+          "text": "[\"CVE-2024-2965\", \"GHSA-3hjh-jh2h-vrg6\", \"PYSEC-2024-118\"]",
+          "start": 0,
+          "end": 58,
+          "source_ids": [
+            "cc4f03b6fe18d4613e53da59f8c145b744dc8a27d98224af71e0d8612cd36c1c"
+          ],
+          "pointer": "/aliases"
+        },
+        {
+          "evidence_id": "274277c653f3a4e5ef21c29195a713b453e4cd5554b94f432ea2f0e492d8ef09",
+          "document_id": "8efd5656dfa09a93a81724cf3276da1d5d9969b11784a17cca2a4350804c1c56",
+          "text": "2026-07-13T16:43:37.506313050Z",
+          "start": 0,
+          "end": 30,
+          "source_ids": [
+            "08219babe41cb7b9b7f7fb0c29cd3ece73fa5dd9ba7f947374c1f68794ff2199"
+          ],
+          "pointer": "/modified"
+        },
+        {
+          "evidence_id": "2cd3585c2af748eed29d94bb9b19f1f1b2dac988dc4c8609a8e8a64f04b28bd1",
+          "document_id": "835bb23b06809c4ac1f959e3476f58e5efd0df55def507b51caf97dce4f58bb5",
+          "text": "{\"finding\": {\"group_id\": \"6c98b4eb86af56ac996b1c486ff5be7c6ccb3816c611c94905892ecb987763a2\", \"id\": \"053be85df1696369520073acdacbaae827d2a85a352ae154f0a5536fd64d5b01\", \"instance_id\": \"119f415f696b1199d038599ed9695c77668f871aafd1c6cea080090cdfcaa348\", \"revision_ids\": [\"94ef84c5350a960c250394a071908b80f29c8094ea962ea55888c02cfdcf23e3\", \"d228c2c3afa8a77e364004e4860656df8937f1455fd51498eaa93dd60d690e00\"], \"status\": \"known_match\"}, \"interpretation\": \"Known advisory match; exploitability has not been established.\", \"kind\": \"finding\", \"run_id\": \"d443b36e-7d4f-4804-9c71-7afd9664a12d\", \"snapshot_id\": \"972f6e7718b9c9d9be313e1fc41d723a8d4e4bb1130e59c1916df11beb10e06f\"}",
+          "start": 0,
+          "end": 665,
+          "source_ids": [
+            "c0287932240f609df722b3023593d7070ea473ea46b6609b69a3131504832551",
+            "cc4f03b6fe18d4613e53da59f8c145b744dc8a27d98224af71e0d8612cd36c1c",
+            "08219babe41cb7b9b7f7fb0c29cd3ece73fa5dd9ba7f947374c1f68794ff2199"
+          ],
+          "pointer": "/text"
+        },
+        {
+          "evidence_id": "300d0b49ccf6363a5f79df2c4989f2d32e65cb546f8611fba75e133e99701ebf",
+          "document_id": "df6884361f30f2b761cc902d3bb3984c19e1004bb1d5e2237c9a2a57b0135d66",
+          "text": "[{\"database_specific\": {\"source\": \"https://github.com/pypa/advisory-database/blob/main/vulns/langchain-community/PYSEC-2026-2561.yaml\"}, \"package\": {\"ecosystem\": \"PyPI\", \"name\": \"langchain-community\", \"purl\": \"pkg:pypi/langchain-community\"}, \"ranges\": [{\"events\": [{\"introduced\": \"0\"}, {\"fixed\": \"0.2.5\"}], \"type\": \"ECOSYSTEM\"}], \"versions\": [\"0.0.1\", \"0.0.10\", \"0.0.11\", \"0.0.12\", \"0.0.13\", \"0.0.14\", \"0.0.15\", \"0.0.16\", \"0.0.17\", \"0.0.18\", \"0.0.19\", \"0.0.1rc1\", \"0.0.1rc2\", \"0.0.2\", \"0.0.20\", \"0.0.21\", \"0.0.22\", \"0.0.23\", \"0.0.24\", \"0.0.25\", \"0.0.26\", \"0.0.27\", \"0.0.28\", \"0.0.29\", \"0.0.3\", \"0.0.30\", \"0.0.31\", \"0.0.32\", \"0.0.33\", \"0.0.34\", \"0.0.35\", \"0.0.36\", \"0.0.37\", \"0.0.38\", \"0.0.4\", \"0.0.5\", \"0.0.6\", \"0.0.7\", \"0.0.8\", \"0.0.9\", \"0.2.0\", \"0.2.0rc1\", \"0.2.1\", \"0.2.2\", \"0.2.3\", \"0.2.4\"]}]",
+          "start": 0,
+          "end": 796,
+          "source_ids": [
+            "cc4f03b6fe18d4613e53da59f8c145b744dc8a27d98224af71e0d8612cd36c1c"
+          ],
+          "pointer": "/affected"
+        },
+        {
+          "evidence_id": "36a91c3865160bcdcafa7c945b8e9168e4eb490291ad6d5a09dff13a325e710b",
+          "document_id": "04141a366b65504378a353ddbd87e23dc399bbcf641c638a11e8f29ce29c5e8c",
+          "text": "[{\"database_specific\": {\"source\": \"https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/06/GHSA-3hjh-jh2h-vrg6/GHSA-3hjh-jh2h-vrg6.json\"}, \"package\": {\"ecosystem\": \"PyPI\", \"name\": \"langchain-community\", \"purl\": \"pkg:pypi/langchain-community\"}, \"ranges\": [{\"events\": [{\"introduced\": \"0\"}, {\"fixed\": \"0.2.5\"}], \"type\": \"ECOSYSTEM\"}], \"versions\": [\"0.0.1\", \"0.0.10\", \"0.0.11\", \"0.0.12\", \"0.0.13\", \"0.0.14\", \"0.0.15\", \"0.0.16\", \"0.0.17\", \"0.0.18\", \"0.0.19\", \"0.0.1rc1\", \"0.0.1rc2\", \"0.0.2\", \"0.0.20\", \"0.0.21\", \"0.0.22\", \"0.0.23\", \"0.0.24\", \"0.0.25\", \"0.0.26\", \"0.0.27\", \"0.0.28\", \"0.0.29\", \"0.0.3\", \"0.0.30\", \"0.0.31\", \"0.0.32\", \"0.0.33\", \"0.0.34\", \"0.0.35\", \"0.0.36\", \"0.0.37\", \"0.0.38\", \"0.0.4\", \"0.0.5\", \"0.0.6\", \"0.0.7\", \"0.0.8\", \"0.0.9\", \"0.2.0\", \"0.2.0rc1\", \"0.2.1\", \"0.2.2\", \"0.2.3\", \"0.2.4\"]}, {\"database_specific\": {\"source\": \"https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/06/GHSA-3hjh-jh2h-vrg6/GHSA-3hjh-jh2h-vrg6.json\"}, \"package\": {\"ecosystem\": \"PyPI\", \"name\": \"langchain\", \"purl\": \"pkg:pypi/langchain\"}, \"ranges\": [{\"events\": [{\"introduced\": \"0\"}, {\"fixed\": \"0.2.5\"}], \"type\": \"ECOSYSTEM\"}], \"versions\": [\"0.0.1\", \"0.0.10\", \"0.0.100\", \"0.0.101\", \"0.0.101rc0\", \"0.0.102\", \"0.0.102rc0\", \"0.0.103\", \"0.0.104\", \"0.0.105\", \"0.0.106\", \"0.0.107\", \"0.0.108\", \"0.0.109\", \"0.0.11\", \"0.0.110\", \"0.0.111\", \"0.0.112\", \"0.0.113\", \"0.0.114\", \"0.0.115\", \"0.0.116\", \"0.0.117\", \"0.0.118\", \"0.0.119\", \"0.0.12\", \"0.0.120\", \"0.0.121\", \"0.0.122\", \"0.0.123\", \"0.0.124\", \"0.0.125\", \"0.0.126\", \"0.0.127\", \"0.0.128\", \"0.0.129\", \"0.0.13\", \"0.0.130\", \"0.0.131\", \"0.0.132\", \"0.0.133\", \"0.0.134\", \"0.0.135\", \"0.0.136\", \"0.0.137\", \"0.0.138\", \"0.0.139\", \"0.0.14\", \"0.0.140\", \"0.0.141\", \"0.0.142\", \"0.0.143\", \"0.0.144\", \"0.0.145\", \"0.0.146\", \"0.0.147\", \"0.0.148\", \"0.0.149\", \"0.0.15\", \"0.0.150\", \"0.0.151\", \"0.0.152\", \"0.0.153\", \"0.0.154\", \"0.0.155\", \"0.0.156\", \"0.0.157\", \"0.0.158\", \"0.0.159\", \"0.0.16\", \"0.0.160\", \"0.0.161\", \"0.0.162\", \"0.0.163\", ",
+          "start": 0,
+          "end": 2000,
+          "source_ids": [
+            "08219babe41cb7b9b7f7fb0c29cd3ece73fa5dd9ba7f947374c1f68794ff2199"
+          ],
+          "pointer": "/affected"
+        },
+        {
+          "evidence_id": "37efbb7edf6999082a34524aac352d6a3add23dc44ccfb5588707e664a7e5edd",
+          "document_id": "691cb1582289d3b2b4cd1954c0089b754b24f0e0dfc366563f7f18caea598c61",
+          "text": "2026-07-13T16:43:37.506313050Z",
+          "start": 0,
+          "end": 30,
+          "source_ids": [
+            "cc4f03b6fe18d4613e53da59f8c145b744dc8a27d98224af71e0d8612cd36c1c"
+          ],
+          "pointer": "/modified"
+        },
+        {
+          "evidence_id": "4be6fe9c15cefdbe6a39ca7e898219a4ea3dd19ad62523700d2e2eda763e7467",
+          "document_id": "4cca07615ae72be757b642bbe861931bf32264f40ff1b0bdcfc7d3ea14596834",
+          "text": "PYSEC-2024-118",
+          "start": 0,
+          "end": 14,
+          "source_ids": [
+            "acb0dd586a669d234fd6131f660215f16550e0655e2e9aa322bc16eaee6ebfa4"
+          ],
+          "pointer": "/id"
+        },
+        {
+          "evidence_id": "5075a33114113c802a588eb87e59ebddbebe0d21b452da5cfa85ce3998f74e4a",
+          "document_id": "38085329b45f159d043bae88b5f1b79f1e814584b735089f493fba17eb605455",
+          "text": "\"v0.0.322\", \"v0.0.321\", \"v0.0.320\", \"v0.0.319\", \"v0.0.318\", \"v0.0.317\", \"v0.0.316\", \"v0.0.315\", \"v0.0.314\", \"v0.0.313\", \"v0.0.312\", \"v0.0.311\", \"v0.0.310\", \"v0.0.309\", \"v0.0.308\", \"v0.0.307\", \"v0.0.306\", \"v0.0.305\", \"v0.0.304\", \"v0.0.303\", \"v0.0.302\", \"v0.0.301\", \"v0.0.298\", \"v0.0.300\", \"v0.0.299\", \"v0.0.297\", \"v0.0.296\", \"v0.0.295\", \"v0.0.294\", \"v0.0.293\", \"v0.0.292\", \"v0.0.291\", \"v0.0.290\", \"v0.0.289\", \"v0.0.288\", \"v0.0.287\", \"v0.0.286\", \"v0.0.285\", \"v0.0.284\", \"v0.0.283\", \"v0.0.281\", \"v0.0.279\", \"v0.0.278\", \"v0.0.277\", \"v0.0.276\", \"v0.0.275\", \"v0.0.274\", \"v0.0.273\", \"v0.0.272\", \"v0.0.271\", \"v0.0.270\", \"v0.0.269\", \"v0.0.268\", \"v0.0.267\", \"v0.0.266\", \"v0.0.265\", \"v0.0.264\", \"v0.0.263\", \"v0.0.262\", \"v0.0.261\", \"v0.0.260\", \"v0.0.259\", \"v0.0.258\", \"v0.0.257\", \"v0.0.256\", \"v0.0.255\", \"v0.0.254\", \"v0.0.253\", \"v0.0.252\", \"v0.0.251\", \"v0.0.250\", \"v0.0.249\", \"v0.0.248\", \"v0.0.247\", \"v0.0.245\", \"v0.0.5\", \"v0.0.244\", \"v0.0.4\", \"v0.0.243\", \"v0.0.242\", \"v0.0.2\", \"v0.0.240\", \"v0.0.1\", \"v0.0.240rc4\", \"v0.0.1rc4\", \"v0.0.240rc1\", \"v0.0.240rc0\", \"v0.0.1rc3\", \"v0.0.1rc2\", \"v0.0.1rc1\", \"v0.0.1rc0\", \"v0.0.239\", \"v0.0.238\", \"v0.0.237\", \"v0.0.236\", \"v0.0.235\", \"v0.0.234\", \"v0.0.233\", \"v0.0.232\", \"v0.0.231\", \"v0.0.230\", \"v0.0.229\", \"v0.0.228\", \"v0.0.227\", \"v0.0.226\", \"v0.0.225\", \"v0.0.224\", \"v0.0.223\", \"v0.0.222\", \"v0.0.221\", \"v0.0.220\", \"v0.0.219\", \"v0.0.218\", \"v0.0.217\", \"v0.0.216\", \"v0.0.215\", \"v0.0.214\", \"v0.0.213\", \"v0.0.212\", \"v0.0.211\", \"v0.0.210\", \"v0.0.209\", \"v0.0.208\", \"v0.0.207\", \"v0.0.206\", \"v0.0.205\", \"v0.0.204\", \"v0.0.202\", \"v0.0.201\", \"v0.0.200\", \"v0.0.199\", \"v0.0.198\", \"v0.0.197\", \"v0.0.196\", \"v0.0.195\", \"v0.0.194\", \"v0.0.193\", \"v0.0.192\", \"v0.0.191\", \"v0.0.190\", \"v0.0.189\", \"v0.0.188\", \"v0.0.187\", \"v0.0.186\", \"v0.0.185\", \"v0.0.184\", \"v0.0.183\", \"v0.0.182\", \"v0.0.181\", \"v0.0.180\", \"v0.0.179\", \"v0.0.178\", \"v0.0.177\", \"v0.0.175\", \"v0.0.174\", \"v0.0.173\", \"v0.0.172\", \"v0.0.171\", \"v0.0.170\", \"v0.0.169\", \"v0.0.168\", \"v0.0.167\", \"v0.0.166\", \"v0.0.165\", \"v0.0.164\", \"v0.0.163\", \"v",
+          "start": 5400,
+          "end": 7400,
+          "source_ids": [
+            "acb0dd586a669d234fd6131f660215f16550e0655e2e9aa322bc16eaee6ebfa4"
+          ],
+          "pointer": "/affected"
+        }
+      ],
+      "omitted_ids": [
+        "70cfecdacc2600a4ac26b2a45d7de1e9dde6b1ec982e11d12f00a1899b8ef746",
+        "804ead1e0838e3fac3bc91282f3834b75b898e4e50471ca5291d757224fbe714",
+        "8128ab0c36e2478eb441451b1fa0b802b5b38d3a92b1dbbf0f2245a115dac949",
+        "881d66ea2f3dbd0eab976345b0a889c64691cdb99b529b1af5f7ba90a824456b",
+        "9079eb8d621b2a290939ece5ca3a42b2af119f4b3f8090a6fc5b9cdfb38abbbd",
+        "9d34471d088e325030432903cc3b16c8a1593f3f55bc6460737dc15e7f12f778",
+        "b1e927344e29dc11fe3c851b8717dcbdd246378bb4e42d60808fd42a8d03fadf",
+        "bc79ebfe79bafb14f014129fa76e6219b2878dceb9ecc4656eaf43bdd2d1e26b",
+        "ce606b73f608e41aa4ca7acc75c14b7dd1fe8c89e7887df5b7db15c5fa1a4faa",
+        "d789bceafd85cf416fdecce844a907e7eed0f01d85cab508ebda654bf6506217",
+        "daeb2fe1db16eaa3152bda14049bbe9a585aa4ce3bb90da3992a176a10896612",
+        "dc9451cde52af1b83a8dc2c89c2b9c3b0a6edb294f7f880378305d5277d927b4",
+        "ea7a29103d9b9184f9bc9a8b7b16de22d5a3482cf3655243bc31a5fccd79ecd5",
+        "f1d722697df319ae26411553fefa6c4d7487c54312bafb34dde476e1b246c639",
+        "faee03ff6a3f0ab8827429348119882fe69b1b2bf7cd45179e198004a6f95430",
+        "fc2b089a8cde669c59b02c80b3869e0f2142f51ea191eb451a947641c0cf822d",
+        "ffb5f91984ff3b6c1954ff57b9d74e788af52c17e6f9775df7b7129b11d7cd0f",
+        "2a3e5504d82f4ba22e9a0a1622a5c8a8d4cc89946bfc542b424064965acb3e94",
+        "bc350d52e2312e3f4bdce8cdf8ea91b97373f28b93e44c95c9d80a0f16c5d6e5",
+        "67575095c0b4cffb8c355284e26a1d6fd924d50e729bf36b61b7e0c00f120a07",
+        "f633ab493bfca98cf1e457e294d8318237aca0655d40ea3b51db72bcc7447dbd",
+        "51c2b45b5f8a2747c4a6aa1e526cd00ae8f08025a498d8e5b18750f37073e54d",
+        "66ab2564c053a5515067c609a4d8c0bfa235663a3f3d41ea6f8d2b75eb7d44aa",
+        "3f05809c0f005a4e1ea66371c3755621cc29dd7a41818cc74153d8413679a3e8",
+        "ae37b490517a326f2453424af9a39a0c8bcfb6ca3eb230d29805bf4ca9e1a027",
+        "4b36bd2a65531a7228afa798fae464245630f94ef5c25c63549bf403b9a8024f",
+        "14ccb86b109603d40071a4192f16bbf792eeecb4efff57bba6050f70b6c40615",
+        "47872217a39c25753f57e69bc5e8df6426c0ca22078c5c31dfba7529b255631f",
+        "5938c8a1f0e7d63bc7f5fb22228b29e75636548dc141e166567fc6cd56ef4fca",
+        "ddc84f15ae89fe1deac8d460e9f14c1245a734f653aa2824421a4f8a085fb6e5",
+        "5cc5cdd78b8ec1ff79837208287ce2f38cc8af96a25899fea8b5ff30023ee851",
+        "0ea3b0d026751e41d2472e32bd2058ae5895cef6d92e211c9359cf0b88d1661d",
+        "f678136d31c20513f13904aa9cf34318e18bcacab02fa0fba3703f58d68b10b3",
+        "478af0eaee21c6264664c2373d6642446bf8607adafbe33548cdcb539e7b497a",
+        "8be9b9011c98473df03193ac26b5cf04c9b649b6d5eb38c23a232d6280c2b974",
+        "f3eb2e01189d7791a119a78fc7c8fc8ea0692cc1a2a3ebe012a8f715248dfda8",
+        "dabacf371737a3c34bedf644e7100fa7c2471c6f09d28d688a3c125770bbd27b",
+        "cfc850579fd3b6b32b687a17ec705d832063e766543014c047ac01361559c99f",
+        "5919117ee93ad864bcf578d74e80240cb472651ea7f17b49aad692f7a739c64a",
+        "3617e7378804edc298c1e4c23269a3d0d3af3ed88714034fb56e0bcaf424215b",
+        "5247cd654dabedd529e56fe975402d8b53281f3b44e68eaec67e32b85587bd80",
+        "5620f71db791bf54f6fdc98687ffb050f4a3b73eacc36539d8e8ff5e7a82dbcb",
+        "1ecf53db19dbfa473fb66ba0d5e46b905c04912d1f7952cee5cfaf768181fcda",
+        "5ee7f8a851ab4312593c60e201c1a9c338c729ff0ea8a3a8bced5244eed52f99",
+        "0180c2233d0b827676d0c6f9aadbf0f875f1f2d164a9bf0d3afc30b5b3ca59ab",
+        "44049022a092142fadbef8d62125c4309b1dbc2ab34f7f34965d799c4c489bed",
+        "d10422c4267c1802e3f066a5a2bc9c9030266004ebd0a9e67a84a31eaf52c8fc",
+        "ed4db365ee4875439dae534e72e9211ae24de7d7cfb368e559fc97d50174dbf0",
+        "ddf44506b487592baab7ed5965c0eaf682fac3e5417c0b1d9fd9246000960cc7",
+        "f21304454ec767143782efddf2d48c5f62555d19d683e0c6471c0308ac1f854d",
+        "ece617a1486d446ffd3a008b3e6849f2d3847e02fb2d3f2353aba895fbb144ca",
+        "8b43a08b41283cece0e4be714929b386aabe0b30e41347da07eb6f7f7d01b941",
+        "c85d95e0ba1ff7538694bf3b3423a2c5e645fd7644f39577a2c84df889a9466a",
+        "53a4604288cbc9beb76cf7860825e244ccd09615b47cafd0888a71c11662599f",
+        "bdf3a4529e3cf92b2df9cfd859f4993669786ac0acd7a0d58079b393e9cd2207",
+        "f01b51c7a4e89c4e28db9ee5aece763c3c70fdec2fcba6b7460c206bf865e4da",
+        "727ed1d1cb9b45696c7d02e4363a8af45933511739a15e0a7fb18bfc6283f4f5",
+        "7e7911b8744f857df923d9293af1f209bb092dc868daa15e4e8bc913e805af55",
+        "1973ea5f995f5f93cae326e847d54710b4a60506652f16271386870bbe04bd63",
+        "19968b0320fd4b479d40e3605279042b38a37ddf7f8a7bfb18cf57051a8107b7",
+        "37f42f3b293d62288a888f7755f278a86a73c3742095781d90dea72f370615da",
+        "ad58ecaea5344bf45f846d7caa5c8cb10dd79e75a74304fbbb5e37dfbd5e29d0",
+        "c6e787bc77f8b50626a4d486d2430c610a7c082d922276a50e93f76251e368e8",
+        "cfb85e62475b813a1c0ad478dc242214ce05f73c84f98b349c49c6c89fcdf32d",
+        "6fb7cc60d6f78b6d404e5f754e0f5669966c2f0fa4803b53803db46febb00037",
+        "6481e5eaa882235a77c62820469634d0ea97d01b2896d390f2301b457dbb2b03",
+        "6caec34f6cdec3c17d7d3341e5e9ea593004f4ae5af4c8f07311c7e31d26bcf5",
+        "53a553b7cfa9da8fd4bc4867b0d7179b8abb62a3900942cfbbbd36451060c4f7",
+        "a2a12d29c25ad55f86796a4444dad32954a38694b181e9a85b67462381de82d2",
+        "55de8e5adf47e3dac4a7d2f1bc27e50e9307886e5413d5bfbdf837dbb1d9e0be",
+        "9b8147d34bdf0f1348f30804dac1f7183d4289207c6ada3dff916569cfa4a9a5",
+        "e35941f0fbc28c2833e7dc9c7e5d04cb6aa3bd4c1491a30cbb0e5581ee1f7466",
+        "61dbd857428ea00f401caa2bc927dcc3220c29135cb7e6f7428fb820c0f5527d",
+        "bf3dc98f4204bc17ea677b247062c9243622e2fee6951537f3987c59521335cf",
+        "13a0a9aba72a3eca14d7ad8e846ae6790df832272d579201c256d00ea8df82ad",
+        "250688aac1ae633a5abb81434420f10cb619769d82462c0aea746d0c0eebb085",
+        "b3c63078bde34ce6fc871bb4577429c1b8ea1c555a29297a0f2c4db5f8da079e"
+      ],
+      "character_count": 7550,
+      "index_id": "7705197b7e87e5a411b115d854f18cb5ab0a6de57d555bae83768b3f4bcd398c",
+      "method": "rrf",
+      "scope_snapshot_ids": [
+        "972f6e7718b9c9d9be313e1fc41d723a8d4e4bb1130e59c1916df11beb10e06f"
+      ]
+    },
+    "graph_rrf": {
+      "chunks": [
+        {
+          "evidence_id": "06b2526e9e92d612e01657cefea79512a955bc2dd875a1d8aacfb1f5e646dc9a",
+          "document_id": "38085329b45f159d043bae88b5f1b79f1e814584b735089f493fba17eb605455",
+          "text": "180\", \"v0.0.179\", \"v0.0.178\", \"v0.0.177\", \"v0.0.175\", \"v0.0.174\", \"v0.0.173\", \"v0.0.172\", \"v0.0.171\", \"v0.0.170\", \"v0.0.169\", \"v0.0.168\", \"v0.0.167\", \"v0.0.166\", \"v0.0.165\", \"v0.0.164\", \"v0.0.163\", \"v0.0.161\", \"v0.0.162\", \"v0.0.160\", \"v0.0.159\", \"v0.0.158\", \"v0.0.157\", \"v0.0.156\", \"v0.0.155\", \"v0.0.154\", \"v0.0.153\", \"v0.0.152\", \"v0.0.151\", \"v0.0.150\", \"v0.0.149\", \"v0.0.147\", \"v0.0.146\", \"v0.0.145\", \"v0.0.144\", \"v0.0.143\", \"v0.0.142\", \"v0.0.141\", \"v0.0.140\", \"v0.0.139\", \"v0.0.138\", \"v0.0.137\", \"v0.0.136\", \"v0.0.135\", \"v0.0.134\", \"v0.0.133\", \"v0.0.132\", \"v0.0.131\", \"v0.0.130\", \"v0.0.129\", \"v0.0.128\", \"v0.0.127\", \"v0.0.126\", \"v0.0.125\", \"v0.0.124\", \"v0.0.123\", \"v0.0.122\", \"v0.0.121\", \"v0.0.120\", \"v0.0.119\", \"v0.0.118\", \"v0.0.117\", \"v0.0.116\", \"v0.0.115\", \"v0.0.114\", \"v0.0.113\", \"v0.0.112\", \"v0.0.111\", \"v0.0.110\", \"v0.0.109\", \"v0.0.108\", \"v0.0.107\", \"v0.0.106\", \"v0.0.105\", \"v0.0.104\", \"v0.0.103\", \"v0.0.102\", \"v0.0.101\", \"v0.0.100\", \"v0.0.99\", \"v0.0.98\", \"v0.0.97\", \"v0.0.96\", \"v0.0.95\", \"v0.0.94\", \"v0.0.93\", \"v0.0.92\", \"v0.0.91\", \"v0.0.90\", \"v0.0.89\", \"v0.0.88\", \"v0.0.87\", \"v0.0.86\", \"v0.0.85\", \"v0.0.84\", \"v0.0.83\", \"v0.0.82\", \"v0.0.81\", \"v0.0.80\", \"v0.0.79\", \"v0.0.78\", \"v0.0.77\", \"v0.0.76\", \"v0.0.75\", \"v0.0.74\", \"v0.0.73\", \"v0.0.72\", \"v0.0.71\", \"v0.0.70\", \"v0.0.69\", \"v0.0.68\", \"v0.0.67\", \"v0.0.66\", \"v0.0.65\", \"v0.0.64\"]}]",
+          "start": 7200,
+          "end": 8539,
+          "source_ids": [
+            "acb0dd586a669d234fd6131f660215f16550e0655e2e9aa322bc16eaee6ebfa4"
+          ],
+          "pointer": "/affected"
+        },
+        {
+          "evidence_id": "13806311dc576f6e30310def1a4c9bc6be6e01fe9dceb477ccc504fa6e223d57",
+          "document_id": "88566fd6c87688abaaaabb1adf4420909b40fb0b41c2ac9fd246daf933dfa97f",
+          "text": "Denial of service in `SitemapLoader` Document Loader in the `langchain-community` package, affecting versions below 0.2.5. The `parse_sitemap` method, responsible for parsing sitemaps and extracting URLs, lacks a mechanism to prevent infinite recursion when a sitemap URL refers to the current sitemap itself. This oversight allows for the possibility of an infinite loop, leading to a crash by exceeding the maximum recursion depth in Python. This vulnerability can be exploited to occupy server socket/port resources and crash the Python process, impacting the availability of services relying on this functionality.",
+          "start": 0,
+          "end": 618,
+          "source_ids": [
+            "cc4f03b6fe18d4613e53da59f8c145b744dc8a27d98224af71e0d8612cd36c1c"
+          ],
+          "pointer": "/details"
+        },
+        {
+          "evidence_id": "1ad050463a2e74e957401a82b51cd523b6a705f3330888981df2e4d456a6cf27",
+          "document_id": "8460db4b428d13908b338594a91191d95edcd595772a5289a45644ee2eb0cce8",
+          "text": "[\"CVE-2024-2965\", \"GHSA-3hjh-jh2h-vrg6\", \"PYSEC-2024-118\"]",
+          "start": 0,
+          "end": 58,
+          "source_ids": [
+            "cc4f03b6fe18d4613e53da59f8c145b744dc8a27d98224af71e0d8612cd36c1c"
+          ],
+          "pointer": "/aliases"
+        },
+        {
+          "evidence_id": "274277c653f3a4e5ef21c29195a713b453e4cd5554b94f432ea2f0e492d8ef09",
+          "document_id": "8efd5656dfa09a93a81724cf3276da1d5d9969b11784a17cca2a4350804c1c56",
+          "text": "2026-07-13T16:43:37.506313050Z",
+          "start": 0,
+          "end": 30,
+          "source_ids": [
+            "08219babe41cb7b9b7f7fb0c29cd3ece73fa5dd9ba7f947374c1f68794ff2199"
+          ],
+          "pointer": "/modified"
+        },
+        {
+          "evidence_id": "2cd3585c2af748eed29d94bb9b19f1f1b2dac988dc4c8609a8e8a64f04b28bd1",
+          "document_id": "835bb23b06809c4ac1f959e3476f58e5efd0df55def507b51caf97dce4f58bb5",
+          "text": "{\"finding\": {\"group_id\": \"6c98b4eb86af56ac996b1c486ff5be7c6ccb3816c611c94905892ecb987763a2\", \"id\": \"053be85df1696369520073acdacbaae827d2a85a352ae154f0a5536fd64d5b01\", \"instance_id\": \"119f415f696b1199d038599ed9695c77668f871aafd1c6cea080090cdfcaa348\", \"revision_ids\": [\"94ef84c5350a960c250394a071908b80f29c8094ea962ea55888c02cfdcf23e3\", \"d228c2c3afa8a77e364004e4860656df8937f1455fd51498eaa93dd60d690e00\"], \"status\": \"known_match\"}, \"interpretation\": \"Known advisory match; exploitability has not been established.\", \"kind\": \"finding\", \"run_id\": \"d443b36e-7d4f-4804-9c71-7afd9664a12d\", \"snapshot_id\": \"972f6e7718b9c9d9be313e1fc41d723a8d4e4bb1130e59c1916df11beb10e06f\"}",
+          "start": 0,
+          "end": 665,
+          "source_ids": [
+            "c0287932240f609df722b3023593d7070ea473ea46b6609b69a3131504832551",
+            "cc4f03b6fe18d4613e53da59f8c145b744dc8a27d98224af71e0d8612cd36c1c",
+            "08219babe41cb7b9b7f7fb0c29cd3ece73fa5dd9ba7f947374c1f68794ff2199"
+          ],
+          "pointer": "/text"
+        },
+        {
+          "evidence_id": "300d0b49ccf6363a5f79df2c4989f2d32e65cb546f8611fba75e133e99701ebf",
+          "document_id": "df6884361f30f2b761cc902d3bb3984c19e1004bb1d5e2237c9a2a57b0135d66",
+          "text": "[{\"database_specific\": {\"source\": \"https://github.com/pypa/advisory-database/blob/main/vulns/langchain-community/PYSEC-2026-2561.yaml\"}, \"package\": {\"ecosystem\": \"PyPI\", \"name\": \"langchain-community\", \"purl\": \"pkg:pypi/langchain-community\"}, \"ranges\": [{\"events\": [{\"introduced\": \"0\"}, {\"fixed\": \"0.2.5\"}], \"type\": \"ECOSYSTEM\"}], \"versions\": [\"0.0.1\", \"0.0.10\", \"0.0.11\", \"0.0.12\", \"0.0.13\", \"0.0.14\", \"0.0.15\", \"0.0.16\", \"0.0.17\", \"0.0.18\", \"0.0.19\", \"0.0.1rc1\", \"0.0.1rc2\", \"0.0.2\", \"0.0.20\", \"0.0.21\", \"0.0.22\", \"0.0.23\", \"0.0.24\", \"0.0.25\", \"0.0.26\", \"0.0.27\", \"0.0.28\", \"0.0.29\", \"0.0.3\", \"0.0.30\", \"0.0.31\", \"0.0.32\", \"0.0.33\", \"0.0.34\", \"0.0.35\", \"0.0.36\", \"0.0.37\", \"0.0.38\", \"0.0.4\", \"0.0.5\", \"0.0.6\", \"0.0.7\", \"0.0.8\", \"0.0.9\", \"0.2.0\", \"0.2.0rc1\", \"0.2.1\", \"0.2.2\", \"0.2.3\", \"0.2.4\"]}]",
+          "start": 0,
+          "end": 796,
+          "source_ids": [
+            "cc4f03b6fe18d4613e53da59f8c145b744dc8a27d98224af71e0d8612cd36c1c"
+          ],
+          "pointer": "/affected"
+        },
+        {
+          "evidence_id": "36a91c3865160bcdcafa7c945b8e9168e4eb490291ad6d5a09dff13a325e710b",
+          "document_id": "04141a366b65504378a353ddbd87e23dc399bbcf641c638a11e8f29ce29c5e8c",
+          "text": "[{\"database_specific\": {\"source\": \"https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/06/GHSA-3hjh-jh2h-vrg6/GHSA-3hjh-jh2h-vrg6.json\"}, \"package\": {\"ecosystem\": \"PyPI\", \"name\": \"langchain-community\", \"purl\": \"pkg:pypi/langchain-community\"}, \"ranges\": [{\"events\": [{\"introduced\": \"0\"}, {\"fixed\": \"0.2.5\"}], \"type\": \"ECOSYSTEM\"}], \"versions\": [\"0.0.1\", \"0.0.10\", \"0.0.11\", \"0.0.12\", \"0.0.13\", \"0.0.14\", \"0.0.15\", \"0.0.16\", \"0.0.17\", \"0.0.18\", \"0.0.19\", \"0.0.1rc1\", \"0.0.1rc2\", \"0.0.2\", \"0.0.20\", \"0.0.21\", \"0.0.22\", \"0.0.23\", \"0.0.24\", \"0.0.25\", \"0.0.26\", \"0.0.27\", \"0.0.28\", \"0.0.29\", \"0.0.3\", \"0.0.30\", \"0.0.31\", \"0.0.32\", \"0.0.33\", \"0.0.34\", \"0.0.35\", \"0.0.36\", \"0.0.37\", \"0.0.38\", \"0.0.4\", \"0.0.5\", \"0.0.6\", \"0.0.7\", \"0.0.8\", \"0.0.9\", \"0.2.0\", \"0.2.0rc1\", \"0.2.1\", \"0.2.2\", \"0.2.3\", \"0.2.4\"]}, {\"database_specific\": {\"source\": \"https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/06/GHSA-3hjh-jh2h-vrg6/GHSA-3hjh-jh2h-vrg6.json\"}, \"package\": {\"ecosystem\": \"PyPI\", \"name\": \"langchain\", \"purl\": \"pkg:pypi/langchain\"}, \"ranges\": [{\"events\": [{\"introduced\": \"0\"}, {\"fixed\": \"0.2.5\"}], \"type\": \"ECOSYSTEM\"}], \"versions\": [\"0.0.1\", \"0.0.10\", \"0.0.100\", \"0.0.101\", \"0.0.101rc0\", \"0.0.102\", \"0.0.102rc0\", \"0.0.103\", \"0.0.104\", \"0.0.105\", \"0.0.106\", \"0.0.107\", \"0.0.108\", \"0.0.109\", \"0.0.11\", \"0.0.110\", \"0.0.111\", \"0.0.112\", \"0.0.113\", \"0.0.114\", \"0.0.115\", \"0.0.116\", \"0.0.117\", \"0.0.118\", \"0.0.119\", \"0.0.12\", \"0.0.120\", \"0.0.121\", \"0.0.122\", \"0.0.123\", \"0.0.124\", \"0.0.125\", \"0.0.126\", \"0.0.127\", \"0.0.128\", \"0.0.129\", \"0.0.13\", \"0.0.130\", \"0.0.131\", \"0.0.132\", \"0.0.133\", \"0.0.134\", \"0.0.135\", \"0.0.136\", \"0.0.137\", \"0.0.138\", \"0.0.139\", \"0.0.14\", \"0.0.140\", \"0.0.141\", \"0.0.142\", \"0.0.143\", \"0.0.144\", \"0.0.145\", \"0.0.146\", \"0.0.147\", \"0.0.148\", \"0.0.149\", \"0.0.15\", \"0.0.150\", \"0.0.151\", \"0.0.152\", \"0.0.153\", \"0.0.154\", \"0.0.155\", \"0.0.156\", \"0.0.157\", \"0.0.158\", \"0.0.159\", \"0.0.16\", \"0.0.160\", \"0.0.161\", \"0.0.162\", \"0.0.163\", ",
+          "start": 0,
+          "end": 2000,
+          "source_ids": [
+            "08219babe41cb7b9b7f7fb0c29cd3ece73fa5dd9ba7f947374c1f68794ff2199"
+          ],
+          "pointer": "/affected"
+        },
+        {
+          "evidence_id": "37efbb7edf6999082a34524aac352d6a3add23dc44ccfb5588707e664a7e5edd",
+          "document_id": "691cb1582289d3b2b4cd1954c0089b754b24f0e0dfc366563f7f18caea598c61",
+          "text": "2026-07-13T16:43:37.506313050Z",
+          "start": 0,
+          "end": 30,
+          "source_ids": [
+            "cc4f03b6fe18d4613e53da59f8c145b744dc8a27d98224af71e0d8612cd36c1c"
+          ],
+          "pointer": "/modified"
+        },
+        {
+          "evidence_id": "4be6fe9c15cefdbe6a39ca7e898219a4ea3dd19ad62523700d2e2eda763e7467",
+          "document_id": "4cca07615ae72be757b642bbe861931bf32264f40ff1b0bdcfc7d3ea14596834",
+          "text": "PYSEC-2024-118",
+          "start": 0,
+          "end": 14,
+          "source_ids": [
+            "acb0dd586a669d234fd6131f660215f16550e0655e2e9aa322bc16eaee6ebfa4"
+          ],
+          "pointer": "/id"
+        },
+        {
+          "evidence_id": "5075a33114113c802a588eb87e59ebddbebe0d21b452da5cfa85ce3998f74e4a",
+          "document_id": "38085329b45f159d043bae88b5f1b79f1e814584b735089f493fba17eb605455",
+          "text": "\"v0.0.322\", \"v0.0.321\", \"v0.0.320\", \"v0.0.319\", \"v0.0.318\", \"v0.0.317\", \"v0.0.316\", \"v0.0.315\", \"v0.0.314\", \"v0.0.313\", \"v0.0.312\", \"v0.0.311\", \"v0.0.310\", \"v0.0.309\", \"v0.0.308\", \"v0.0.307\", \"v0.0.306\", \"v0.0.305\", \"v0.0.304\", \"v0.0.303\", \"v0.0.302\", \"v0.0.301\", \"v0.0.298\", \"v0.0.300\", \"v0.0.299\", \"v0.0.297\", \"v0.0.296\", \"v0.0.295\", \"v0.0.294\", \"v0.0.293\", \"v0.0.292\", \"v0.0.291\", \"v0.0.290\", \"v0.0.289\", \"v0.0.288\", \"v0.0.287\", \"v0.0.286\", \"v0.0.285\", \"v0.0.284\", \"v0.0.283\", \"v0.0.281\", \"v0.0.279\", \"v0.0.278\", \"v0.0.277\", \"v0.0.276\", \"v0.0.275\", \"v0.0.274\", \"v0.0.273\", \"v0.0.272\", \"v0.0.271\", \"v0.0.270\", \"v0.0.269\", \"v0.0.268\", \"v0.0.267\", \"v0.0.266\", \"v0.0.265\", \"v0.0.264\", \"v0.0.263\", \"v0.0.262\", \"v0.0.261\", \"v0.0.260\", \"v0.0.259\", \"v0.0.258\", \"v0.0.257\", \"v0.0.256\", \"v0.0.255\", \"v0.0.254\", \"v0.0.253\", \"v0.0.252\", \"v0.0.251\", \"v0.0.250\", \"v0.0.249\", \"v0.0.248\", \"v0.0.247\", \"v0.0.245\", \"v0.0.5\", \"v0.0.244\", \"v0.0.4\", \"v0.0.243\", \"v0.0.242\", \"v0.0.2\", \"v0.0.240\", \"v0.0.1\", \"v0.0.240rc4\", \"v0.0.1rc4\", \"v0.0.240rc1\", \"v0.0.240rc0\", \"v0.0.1rc3\", \"v0.0.1rc2\", \"v0.0.1rc1\", \"v0.0.1rc0\", \"v0.0.239\", \"v0.0.238\", \"v0.0.237\", \"v0.0.236\", \"v0.0.235\", \"v0.0.234\", \"v0.0.233\", \"v0.0.232\", \"v0.0.231\", \"v0.0.230\", \"v0.0.229\", \"v0.0.228\", \"v0.0.227\", \"v0.0.226\", \"v0.0.225\", \"v0.0.224\", \"v0.0.223\", \"v0.0.222\", \"v0.0.221\", \"v0.0.220\", \"v0.0.219\", \"v0.0.218\", \"v0.0.217\", \"v0.0.216\", \"v0.0.215\", \"v0.0.214\", \"v0.0.213\", \"v0.0.212\", \"v0.0.211\", \"v0.0.210\", \"v0.0.209\", \"v0.0.208\", \"v0.0.207\", \"v0.0.206\", \"v0.0.205\", \"v0.0.204\", \"v0.0.202\", \"v0.0.201\", \"v0.0.200\", \"v0.0.199\", \"v0.0.198\", \"v0.0.197\", \"v0.0.196\", \"v0.0.195\", \"v0.0.194\", \"v0.0.193\", \"v0.0.192\", \"v0.0.191\", \"v0.0.190\", \"v0.0.189\", \"v0.0.188\", \"v0.0.187\", \"v0.0.186\", \"v0.0.185\", \"v0.0.184\", \"v0.0.183\", \"v0.0.182\", \"v0.0.181\", \"v0.0.180\", \"v0.0.179\", \"v0.0.178\", \"v0.0.177\", \"v0.0.175\", \"v0.0.174\", \"v0.0.173\", \"v0.0.172\", \"v0.0.171\", \"v0.0.170\", \"v0.0.169\", \"v0.0.168\", \"v0.0.167\", \"v0.0.166\", \"v0.0.165\", \"v0.0.164\", \"v0.0.163\", \"v",
+          "start": 5400,
+          "end": 7400,
+          "source_ids": [
+            "acb0dd586a669d234fd6131f660215f16550e0655e2e9aa322bc16eaee6ebfa4"
+          ],
+          "pointer": "/affected"
+        }
+      ],
+      "omitted_ids": [
+        "70cfecdacc2600a4ac26b2a45d7de1e9dde6b1ec982e11d12f00a1899b8ef746",
+        "804ead1e0838e3fac3bc91282f3834b75b898e4e50471ca5291d757224fbe714",
+        "8128ab0c36e2478eb441451b1fa0b802b5b38d3a92b1dbbf0f2245a115dac949",
+        "881d66ea2f3dbd0eab976345b0a889c64691cdb99b529b1af5f7ba90a824456b",
+        "9079eb8d621b2a290939ece5ca3a42b2af119f4b3f8090a6fc5b9cdfb38abbbd",
+        "9d34471d088e325030432903cc3b16c8a1593f3f55bc6460737dc15e7f12f778",
+        "b1e927344e29dc11fe3c851b8717dcbdd246378bb4e42d60808fd42a8d03fadf",
+        "bc79ebfe79bafb14f014129fa76e6219b2878dceb9ecc4656eaf43bdd2d1e26b",
+        "ce606b73f608e41aa4ca7acc75c14b7dd1fe8c89e7887df5b7db15c5fa1a4faa",
+        "d789bceafd85cf416fdecce844a907e7eed0f01d85cab508ebda654bf6506217",
+        "daeb2fe1db16eaa3152bda14049bbe9a585aa4ce3bb90da3992a176a10896612",
+        "dc9451cde52af1b83a8dc2c89c2b9c3b0a6edb294f7f880378305d5277d927b4",
+        "ea7a29103d9b9184f9bc9a8b7b16de22d5a3482cf3655243bc31a5fccd79ecd5",
+        "f1d722697df319ae26411553fefa6c4d7487c54312bafb34dde476e1b246c639",
+        "faee03ff6a3f0ab8827429348119882fe69b1b2bf7cd45179e198004a6f95430",
+        "fc2b089a8cde669c59b02c80b3869e0f2142f51ea191eb451a947641c0cf822d",
+        "ffb5f91984ff3b6c1954ff57b9d74e788af52c17e6f9775df7b7129b11d7cd0f",
+        "2a3e5504d82f4ba22e9a0a1622a5c8a8d4cc89946bfc542b424064965acb3e94",
+        "bc350d52e2312e3f4bdce8cdf8ea91b97373f28b93e44c95c9d80a0f16c5d6e5",
+        "67575095c0b4cffb8c355284e26a1d6fd924d50e729bf36b61b7e0c00f120a07",
+        "f633ab493bfca98cf1e457e294d8318237aca0655d40ea3b51db72bcc7447dbd",
+        "51c2b45b5f8a2747c4a6aa1e526cd00ae8f08025a498d8e5b18750f37073e54d",
+        "66ab2564c053a5515067c609a4d8c0bfa235663a3f3d41ea6f8d2b75eb7d44aa",
+        "3f05809c0f005a4e1ea66371c3755621cc29dd7a41818cc74153d8413679a3e8",
+        "ae37b490517a326f2453424af9a39a0c8bcfb6ca3eb230d29805bf4ca9e1a027",
+        "4b36bd2a65531a7228afa798fae464245630f94ef5c25c63549bf403b9a8024f",
+        "14ccb86b109603d40071a4192f16bbf792eeecb4efff57bba6050f70b6c40615",
+        "47872217a39c25753f57e69bc5e8df6426c0ca22078c5c31dfba7529b255631f",
+        "5938c8a1f0e7d63bc7f5fb22228b29e75636548dc141e166567fc6cd56ef4fca",
+        "ddc84f15ae89fe1deac8d460e9f14c1245a734f653aa2824421a4f8a085fb6e5",
+        "5cc5cdd78b8ec1ff79837208287ce2f38cc8af96a25899fea8b5ff30023ee851",
+        "0ea3b0d026751e41d2472e32bd2058ae5895cef6d92e211c9359cf0b88d1661d",
+        "f678136d31c20513f13904aa9cf34318e18bcacab02fa0fba3703f58d68b10b3",
+        "478af0eaee21c6264664c2373d6642446bf8607adafbe33548cdcb539e7b497a",
+        "8be9b9011c98473df03193ac26b5cf04c9b649b6d5eb38c23a232d6280c2b974",
+        "f3eb2e01189d7791a119a78fc7c8fc8ea0692cc1a2a3ebe012a8f715248dfda8",
+        "dabacf371737a3c34bedf644e7100fa7c2471c6f09d28d688a3c125770bbd27b",
+        "cfc850579fd3b6b32b687a17ec705d832063e766543014c047ac01361559c99f",
+        "5919117ee93ad864bcf578d74e80240cb472651ea7f17b49aad692f7a739c64a",
+        "3617e7378804edc298c1e4c23269a3d0d3af3ed88714034fb56e0bcaf424215b",
+        "5247cd654dabedd529e56fe975402d8b53281f3b44e68eaec67e32b85587bd80",
+        "5620f71db791bf54f6fdc98687ffb050f4a3b73eacc36539d8e8ff5e7a82dbcb",
+        "1ecf53db19dbfa473fb66ba0d5e46b905c04912d1f7952cee5cfaf768181fcda",
+        "5ee7f8a851ab4312593c60e201c1a9c338c729ff0ea8a3a8bced5244eed52f99",
+        "0180c2233d0b827676d0c6f9aadbf0f875f1f2d164a9bf0d3afc30b5b3ca59ab",
+        "44049022a092142fadbef8d62125c4309b1dbc2ab34f7f34965d799c4c489bed",
+        "d10422c4267c1802e3f066a5a2bc9c9030266004ebd0a9e67a84a31eaf52c8fc",
+        "ed4db365ee4875439dae534e72e9211ae24de7d7cfb368e559fc97d50174dbf0",
+        "ddf44506b487592baab7ed5965c0eaf682fac3e5417c0b1d9fd9246000960cc7",
+        "f21304454ec767143782efddf2d48c5f62555d19d683e0c6471c0308ac1f854d",
+        "ece617a1486d446ffd3a008b3e6849f2d3847e02fb2d3f2353aba895fbb144ca",
+        "8b43a08b41283cece0e4be714929b386aabe0b30e41347da07eb6f7f7d01b941",
+        "c85d95e0ba1ff7538694bf3b3423a2c5e645fd7644f39577a2c84df889a9466a",
+        "53a4604288cbc9beb76cf7860825e244ccd09615b47cafd0888a71c11662599f",
+        "bdf3a4529e3cf92b2df9cfd859f4993669786ac0acd7a0d58079b393e9cd2207",
+        "f01b51c7a4e89c4e28db9ee5aece763c3c70fdec2fcba6b7460c206bf865e4da",
+        "727ed1d1cb9b45696c7d02e4363a8af45933511739a15e0a7fb18bfc6283f4f5",
+        "7e7911b8744f857df923d9293af1f209bb092dc868daa15e4e8bc913e805af55",
+        "1973ea5f995f5f93cae326e847d54710b4a60506652f16271386870bbe04bd63",
+        "19968b0320fd4b479d40e3605279042b38a37ddf7f8a7bfb18cf57051a8107b7",
+        "37f42f3b293d62288a888f7755f278a86a73c3742095781d90dea72f370615da",
+        "ad58ecaea5344bf45f846d7caa5c8cb10dd79e75a74304fbbb5e37dfbd5e29d0",
+        "c6e787bc77f8b50626a4d486d2430c610a7c082d922276a50e93f76251e368e8",
+        "cfb85e62475b813a1c0ad478dc242214ce05f73c84f98b349c49c6c89fcdf32d",
+        "6fb7cc60d6f78b6d404e5f754e0f5669966c2f0fa4803b53803db46febb00037",
+        "6481e5eaa882235a77c62820469634d0ea97d01b2896d390f2301b457dbb2b03",
+        "6caec34f6cdec3c17d7d3341e5e9ea593004f4ae5af4c8f07311c7e31d26bcf5",
+        "53a553b7cfa9da8fd4bc4867b0d7179b8abb62a3900942cfbbbd36451060c4f7",
+        "a2a12d29c25ad55f86796a4444dad32954a38694b181e9a85b67462381de82d2",
+        "55de8e5adf47e3dac4a7d2f1bc27e50e9307886e5413d5bfbdf837dbb1d9e0be",
+        "9b8147d34bdf0f1348f30804dac1f7183d4289207c6ada3dff916569cfa4a9a5",
+        "e35941f0fbc28c2833e7dc9c7e5d04cb6aa3bd4c1491a30cbb0e5581ee1f7466",
+        "61dbd857428ea00f401caa2bc927dcc3220c29135cb7e6f7428fb820c0f5527d",
+        "bf3dc98f4204bc17ea677b247062c9243622e2fee6951537f3987c59521335cf",
+        "13a0a9aba72a3eca14d7ad8e846ae6790df832272d579201c256d00ea8df82ad",
+        "250688aac1ae633a5abb81434420f10cb619769d82462c0aea746d0c0eebb085",
+        "b3c63078bde34ce6fc871bb4577429c1b8ea1c555a29297a0f2c4db5f8da079e"
+      ],
+      "character_count": 7550,
+      "index_id": "7705197b7e87e5a411b115d854f18cb5ab0a6de57d555bae83768b3f4bcd398c",
+      "method": "graph_rrf",
+      "scope_snapshot_ids": [
+        "972f6e7718b9c9d9be313e1fc41d723a8d4e4bb1130e59c1916df11beb10e06f"
+      ]
+    }
+  },
+  "references": [
+    "https://docs.ollama.com/api/embed",
+    "https://neo4j.com/docs/cypher-manual/5/indexes/semantic-indexes/vector-indexes/",
+    "https://neo4j.com/docs/cypher-manual/5/indexes/semantic-indexes/full-text-indexes/"
+  ]
+}

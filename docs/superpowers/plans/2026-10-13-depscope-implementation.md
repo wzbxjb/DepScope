@@ -581,7 +581,7 @@ git commit -m "feat: expose core investigation APIs"
 
 **Interfaces:** API 类型由当前 OpenAPI 生成；fetchPage<T>(url,signal) -> Promise<Page<T>>；api.graph(id: string,signal?: AbortSignal) -> Promise<GraphView>；useSnapshot(snapshotId) -> {data,error,loading}。React 页面只使用当前选择的 snapshot_id 和 run_id；完整性与查询覆盖分别显示。
 
-- [ ] Step 1：建立 Node 22 构建配置，安装 React、Vite、TypeScript、Cytoscape.js、路由和测试依赖，写失败的切换测试。deferred() 在 frontend/tests/helpers.ts 返回 promise、resolve、reject。
+- [x] Step 1：建立 Node 22 构建配置，安装 React、Vite、TypeScript、Cytoscape.js、路由和测试依赖，写失败的切换测试。deferred() 在 frontend/tests/helpers.ts 返回 promise、resolve、reject。
 
 ~~~tsx
 it("ignores a late response from the previous snapshot", async () => {
@@ -596,8 +596,8 @@ it("ignores a late response from the previous snapshot", async () => {
 });
 ~~~
 
-- [ ] Step 2：运行 npm test -- --run tests/core-workflow.test.tsx，确认失败。
-- [ ] Step 3：以 AbortController 和请求序号隔离异步结果；所有页面有加载、空数据、未知、来源失败和服务不可用状态。GraphPage 的 graph-scope 元素绑定实际数据的 snapshot_id，不能只绑定请求参数来掩盖陈旧数据。Cytoscape 只接收有界图，原始来源不完整时显示已观察范围。
+- [x] Step 2：运行 npm test -- --run tests/core-workflow.test.tsx，确认失败。
+- [x] Step 3：以 AbortController 和请求序号隔离异步结果；所有页面有加载、空数据、未知、来源失败和服务不可用状态。GraphPage 的 graph-scope 元素绑定实际数据的 snapshot_id，不能只绑定请求参数来掩盖陈旧数据。Cytoscape 只接收有界图，原始来源不完整时显示已观察范围。
 
 ~~~tsx
 useEffect(() => {
@@ -612,9 +612,9 @@ useEffect(() => {
 }, [snapshotId]);
 ~~~
 
-- [ ] Step 4：实现创建项目、上传、任务进度、选择运行、搜索节点、路径查看和两快照比较；所有列表消费 next_cursor，摘要使用后端总量。验证 200 节点收起提示、未知项、不同公告日期、窄屏布局及键盘操作。
-- [ ] Step 5：在真实 Neo4j 和后端上运行 npm run build、npx playwright test e2e/core-workflow.spec.ts；保留页面截图与执行记录，不能把组件 mock 当成真实演示。
-- [ ] Step 6：提交 feat: ship the core dependency investigation interface。
+- [x] Step 4：实现创建项目、上传、任务进度、选择运行、搜索节点、路径查看和两快照比较；所有列表消费 next_cursor，摘要使用后端总量。验证 200 节点收起提示、未知项、不同公告日期、窄屏布局及键盘操作。
+- [x] Step 5：在真实 Neo4j 和后端上运行 npm run build、npx playwright test e2e/core-workflow.spec.ts；保留页面截图与执行记录，不能把组件 mock 当成真实演示。
+- [x] Step 6：提交 feat: ship the core dependency investigation interface。
 
 ~~~bash
 git add frontend
@@ -627,7 +627,7 @@ git commit -m "feat: ship the core dependency investigation interface"
 
 **Interfaces:** Produces EvidenceDocument(id,text,source_ids,pointers,snapshot_id,run_id,entity_keys)、EvidenceChunk(evidence_id,document_id,text,start,end,source_ids)、IndexManifest(id,corpus_digest,model_id,model_digest,dimension,chunking_version)、EmbeddingBatch(vectors,model_id,model_digest,usage: dict|None)、SearchHit(evidence_id,index_id,score)；EmbeddingProvider.embed(texts: tuple[str,...]) -> EmbeddingBatch；IndexStore.write(manifest,evidence,vectors) -> None、search(manifest,vector) -> tuple[SearchHit,...]；Retriever.search(question: str,scope: InvestigationScope,method: str) -> tuple[EvidenceChunk,...]。InvestigationScope(project_ids,snapshot_ids,run_map,comparison_id: str|None) 在 investigation/models.py 定义。
 
-- [ ] Step 1：写同维度不同模型的失败测试。
+- [x] Step 1：写同维度不同模型的失败测试。
 
 ~~~python
 def test_equal_dimensions_do_not_mix_model_indexes(index_store, evidence):
@@ -638,8 +638,8 @@ def test_equal_dimensions_do_not_mix_model_indexes(index_store, evidence):
     assert all(hit.index_id == new.id for hit in index_store.search(new, [0., 1., 0.]))
 ~~~
 
-- [ ] Step 2：运行 pytest tests/unit/test_retrieval.py tests/integration/test_index_isolation.py -q。
-- [ ] Step 3：按字段切分，文本字符位置以 Unicode code point 计；证据 ID 由来源 digest、pointer、start、end 生成。每个索引副本以 (evidence_id,index_id) 识别；向量和全文索引使用由 manifest SHA-256 生成的隔离标签，标签只能匹配固定十六进制格式。文档主体和来源不因 embedding 改变。
+- [x] Step 2：运行 pytest tests/unit/test_retrieval.py tests/integration/test_index_isolation.py -q。
+- [x] Step 3：按字段切分，文本字符位置以 Unicode code point 计；证据 ID 由来源 digest、pointer、start、end 生成。每个索引副本以 (evidence_id,index_id) 识别；向量和全文索引使用由 manifest SHA-256 生成的隔离标签，标签只能匹配固定十六进制格式。文档主体和来源不因 embedding 改变。
 
 ~~~python
 def rrf(rankings: tuple[tuple[str, ...], ...], k: int = 60) -> tuple[str, ...]:
@@ -650,9 +650,9 @@ def rrf(rankings: tuple[tuple[str, ...], ...], k: int = 60) -> tuple[str, ...]:
     return tuple(sorted(scores, key=lambda item: (-scores[item], item)))
 ~~~
 
-- [ ] Step 4：实现全文、向量、RRF、RRF 加当前快照关系扩展。精确标识定位对四种方法一致；最终统一去重和裁剪为 10 个片段、12,000 字符。测试 2,000／200 分片边界、零向量／NaN／维度错误、索引版本隔离、扩展不跨快照和截断记录。
-- [ ] Step 5：通过真实 Ollama embedding 和 Neo4j 索引做一次契约测试，记录模型摘要、维度和耗时；没有模型不能声称完成向量检索。
-- [ ] Step 6：提交 feat: add versioned evidence retrieval and graph expansion。
+- [x] Step 4：实现全文、向量、RRF、RRF 加当前快照关系扩展。精确标识定位对四种方法一致；最终统一去重和裁剪为 10 个片段、12,000 字符。测试 2,000／200 分片边界、零向量／NaN／维度错误、索引版本隔离、扩展不跨快照和截断记录。
+- [x] Step 5：通过真实 Ollama embedding 和 Neo4j 索引做一次契约测试，记录模型摘要、维度和耗时；没有模型不能声称完成向量检索。
+- [x] Step 6：提交 feat: add versioned evidence retrieval and graph expansion。
 
 ~~~bash
 git add backend/src/depscope/retrieval backend/src/depscope/graph/evidence.py backend/src/depscope/investigation/models.py backend/tests
