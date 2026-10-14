@@ -158,3 +158,14 @@ def comparison_inputs(source_for):
             runs.append(run)
         return runs[0],runs[1],snapshots[0],snapshots[1]
     return create
+
+
+@pytest.fixture
+def ledger(driver):
+    import uuid
+    from depscope.generation.budget import BudgetLedger
+    instance=BudgetLedger(driver)
+    instance.test_run="test-budget:"+uuid.uuid4().hex
+    yield instance
+    with driver.session() as session:
+        session.run("MATCH (b:GenerationBudget {id:$id}) OPTIONAL MATCH (b)-[:HAS_CALL]->(c) DETACH DELETE c,b",id=instance.test_run).consume()

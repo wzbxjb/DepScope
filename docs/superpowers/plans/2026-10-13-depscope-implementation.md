@@ -665,7 +665,7 @@ git commit -m "feat: add versioned evidence retrieval and graph expansion"
 
 **Interfaces:** Produces Message(role,content)、GenerationResult(text,model_id,usage: dict|None,request_id: str|None)、GenerationProvider.generate(messages: tuple[Message,...],max_output: int) -> GenerationResult；BudgetPolicy(currency,max_amount: Decimal,max_calls: int)、Reservation(id,run_id,amount,status)、BudgetSummary(reserved,estimated_spent,call_count,remaining)；BudgetLedger.open_run(run_id,policy) -> None、reserve(run_id,amount: Decimal) -> Reservation、settle(id,usage: dict|None) -> None、summary(run_id) -> BudgetSummary；PriceProfile(provider,model,currency,observed_at,rates,source_uri)。
 
-- [ ] Step 1：写超时后重试的失败测试。
+- [x] Step 1：写超时后重试的失败测试。
 
 ~~~python
 def test_timeout_retains_reservation_and_retry_consumes_limit(ledger):
@@ -678,8 +678,8 @@ def test_timeout_retains_reservation_and_retry_consumes_limit(ledger):
         ledger.reserve("r", Decimal("0.03"))
 ~~~
 
-- [ ] Step 2：运行 pytest tests/unit/test_generation.py tests/integration/test_call_ledger.py -q。
-- [ ] Step 3：使用 httpx 构造 DeepSeek 非思考请求，参数按执行时官方文档验证，最多 1,024 输出 token。价格使用 Decimal，输入、缓存与输出分别记录；费用账本通过 Neo4j 原子操作扣占额度，重启不能重置为零。
+- [x] Step 2：运行 pytest tests/unit/test_generation.py tests/integration/test_call_ledger.py -q。
+- [x] Step 3：使用 httpx 构造 DeepSeek 非思考请求，参数按执行时官方文档验证，最多 1,024 输出 token。价格使用 Decimal，输入、缓存与输出分别记录；费用账本通过 Neo4j 原子操作扣占额度，重启不能重置为零。
 
 ~~~python
 def estimate_cost(usage: dict, price: PriceProfile) -> Decimal | None:
@@ -691,9 +691,9 @@ def estimate_cost(usage: dict, price: PriceProfile) -> Decimal | None:
             + output_tokens * price.rates["output"]) / Decimal(1_000_000)
 ~~~
 
-- [ ] Step 4：以上估算是保守未缓存输入计价；具有可靠缓存细分时再用相应单价，不把它标为真实账单。验证金额限额、并发预留、取消、缺失用量、第三方模型无报价、认证错误日志脱敏、无自动 GPT 付费回退。
-- [ ] Step 5：用户在本地配置凭据和运行限额后执行一条真实生成契约测试；保留模型名、usage 和请求标识，不保存 Authorization；测试未执行保持 A7 未完成。
-- [ ] Step 6：提交 feat: integrate generation with persistent usage budgets。
+- [x] Step 4：以上估算是保守未缓存输入计价；具有可靠缓存细分时再用相应单价，不把它标为真实账单。验证金额限额、并发预留、取消、缺失用量、第三方模型无报价、认证错误日志脱敏、无自动 GPT 付费回退。
+- [x] Step 5：用户在本地配置凭据和运行限额后执行一条真实生成契约测试；保留模型名、usage 和请求标识，不保存 Authorization；测试未执行保持 A7 未完成。
+- [x] Step 6：提交 feat: integrate generation with persistent usage budgets。
 
 ~~~bash
 git add backend/src/depscope/generation backend/src/depscope/graph/call_ledger.py backend/tests

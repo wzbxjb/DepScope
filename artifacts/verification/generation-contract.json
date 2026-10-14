@@ -1,0 +1,69 @@
+{
+  "observed_at": "2026-10-14T00:58:01.150979+00:00",
+  "run_id": "generation-contract-20261014",
+  "result": {
+    "text": "{\"ok\":true}",
+    "model_id": "deepseek-flash",
+    "usage": {
+      "prompt_tokens": 39,
+      "completion_tokens": 5,
+      "total_tokens": 44,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 39
+    },
+    "request_id": "dd591d8e-7cb9-4210-ae44-4da010d70c7a",
+    "finish_reason": "stop"
+  },
+  "budget": {
+    "reserved": "0E-7",
+    "estimated_spent": "0.0000177",
+    "known_estimated_spent": "0.0000177",
+    "call_count": 1,
+    "remaining": "0.0499823",
+    "remaining_calls": 0,
+    "unknown_usage_calls": 0,
+    "currency": "USD",
+    "price_basis": "Peak-rate upper-bound estimate; not a supplier invoice"
+  },
+  "calls": [
+    {
+      "id": "bfa40214-d43c-466b-97ce-569b405352c2",
+      "status": "settled",
+      "reservation": "0.0004731",
+      "estimated_cost": "0.0000177",
+      "usage": "{\"completion_tokens\": 5, \"prompt_cache_hit_tokens\": 0, \"prompt_cache_miss_tokens\": 39, \"prompt_tokens\": 39, \"prompt_tokens_details\": {\"cached_tokens\": 0}, \"total_tokens\": 44}",
+      "model_id": "deepseek-flash",
+      "request_id": "dd591d8e-7cb9-4210-ae44-4da010d70c7a",
+      "observed_at": "2026-10-14T00:57:59.938933+00:00",
+      "over_reservation": false
+    }
+  ],
+  "price": {
+    "provider": "DeepSeek official",
+    "model": "deepseek-flash",
+    "currency": "USD",
+    "observed_at": "2026-10-14",
+    "rates": {
+      "input_hit": "0.006",
+      "input_miss": "0.30",
+      "output": "1.20"
+    },
+    "source_uri": "https://api-docs.deepseek.com/quick_start/pricing/",
+    "basis": "Peak-rate upper-bound estimate; not a supplier invoice"
+  },
+  "legacy_probe_budget": {
+    "reserved": "0.000",
+    "estimated_spent": "0.0000045",
+    "known_estimated_spent": "0.0000045",
+    "call_count": 1,
+    "remaining": "0.0009955",
+    "remaining_calls": 0,
+    "unknown_usage_calls": 0,
+    "currency": "USD",
+    "price_basis": "Peak-rate upper-bound estimate; not a supplier invoice"
+  },
+  "note": "Real usage with a peak-rate upper-bound estimate; not the supplier invoice. The previous actual probe is recorded separately without another API call."
+}
