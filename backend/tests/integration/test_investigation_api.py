@@ -1,25 +1,27 @@
 import json
 import uuid
-from types import SimpleNamespace
 from decimal import Decimal
+
 import pytest
 from fastapi.testclient import TestClient
-from depscope.api.services import build_services
-from depscope.runtime.app import create_app
-from depscope.runtime.config import load_settings
+from pydantic import SecretStr
+
 from depscope.analysis.matching import MatchRun
+from depscope.api.services import build_services
 from depscope.generation.models import GenerationResult
 from depscope.retrieval.embedding import EmbeddingBatch
+from depscope.runtime.app import create_app
+from depscope.runtime.config import Settings
 
 
 @pytest.fixture
 def ai_client(repo, job_store, snapshot_factory, tmp_path):
-    import dataclasses
     from depscope.investigation.jobs import InvestigationJobs
 
-    settings = dataclasses.replace(
-        load_settings(),
+    # Provider calls are injected below; this fixture must not depend on a local API key.
+    settings = Settings(
         data_root=tmp_path,
+        deepseek_api_key=SecretStr("fixture-only-key"),
         embedding_url="http://fixture",
         ai_max_amount_usd=Decimal("1"),
     )
@@ -107,7 +109,7 @@ async def test_actual_job_result_and_citation_are_bound_to_supplied_scope(ai_cli
         "/api/investigations",
         json={"question": "How many instances?", "scope": scope, "method": "lexical"},
     )
-    assert response.status_code == 202
+    assert response.status_code == 202, response.json()
     job_id = response.json()["job_id"]
     assert await services.worker.run_once()
     job = client.get("/api/jobs/" + job_id).json()
@@ -145,8 +147,9 @@ def test_missing_scope_and_foreign_run_are_explicit(ai_client):
 
 async def test_injection_with_real_retrieval_cannot_mutate_inventory(ai_client, monkeypatch):
     from unittest.mock import Mock
-    from depscope.investigation.tools import ReadOnlyTools
+
     from depscope.investigation.models import InvestigationScope
+    from depscope.investigation.tools import ReadOnlyTools
     from depscope.runtime.errors import DomainError
 
     client, services, scope = ai_client
@@ -196,7 +199,7 @@ async def test_injection_with_real_retrieval_cannot_mutate_inventory(ai_client, 
         "/api/investigations",
         json={"question": "How many instances?", "scope": scope, "method": "lexical"},
     )
-    assert response.status_code == 202
+    assert response.status_code == 202, response.json()
     assert await services.worker.run_once()
     job = client.get("/api/jobs/" + response.json()["job_id"]).json()
     answer = client.get("/api/investigations/" + job["result_id"]).json()["answer"]
@@ -218,7 +221,14 @@ async def test_injection_with_real_retrieval_cannot_mutate_inventory(ai_client, 
 
 
 def test_empty_scope_is_a_safe_client_error(ai_client):
-    client,services,scope=ai_client
-    response=client.post("/api/investigations",json={"question":"question","method":"lexical","scope":{"project_ids":[],"snapshot_ids":[],"run_map":{},"comparison_id":None}})
-    assert response.status_code==422
-    assert response.json()["error"]["code"]=="INVALID_SCOPE"
+    client, services, scope = ai_client
+    response = client.post(
+        "/api/investigations",
+        json={
+            "question": "question",
+            "method": "lexical",
+            "scope": {"project_ids": [], "snapshot_ids": [], "run_map": {}, "comparison_id": None},
+        },
+    )
+    assert response.status_code == 422
+    assert response.json()["error"]["code"] == "INVALID_SCOPE"

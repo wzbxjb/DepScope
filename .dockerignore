@@ -1,6 +1,9 @@
 .git
 .worktrees
 .superpowers
+.DS_Store
+**/.DS_Store
+**/._*
 .env
 .env.*
 **/.venv*

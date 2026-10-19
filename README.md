@@ -1,67 +1,128 @@
 # DepScope
 
-Evidence-grounded dependency investigation for Python AI applications, built with **Neo4j, FastAPI, React and a configurable generation API**.
+**Trace Python dependencies, investigate advisory matches, and compare snapshots with source-linked AI answers.**
 
-Explore an exact dependency snapshot, inspect known OSV advisory matches and indirect paths, compare candidate snapshots, and ask a scoped question with locatable sources. Unknown query/dependency states remain visible. Generated explanations are unverified; precise facts are checked against supplied receipts. Nothing automatically changes dependencies.
+DepScope is a local investigation workspace for Python AI applications. Import a software bill of materials (SBOM), follow indirect dependency paths in Neo4j, and inspect the original records behind a finding or generated answer.
 
-[中文说明](README.zh-CN.md) · [Setup](docs/operations/setup.md) · [Actual evaluation](docs/evaluation/results.md) · [Source dictionary](docs/architecture/source_dictionary.md) · [Demo](docs/portfolio/demo_script.md)
+**Python · FastAPI · Neo4j · React · TypeScript · Docker**
 
-![Actual experiment page](artifacts/verification/experiments-desktop.png)
+[中文](README.zh-CN.md) · [Quick start](#quick-start) · [Architecture](#architecture) · [Evaluation](docs/evaluation/results.md) · [Contributing](CONTRIBUTING.md) · [MIT License](LICENSE)
 
-## Run locally
+![DepScope dependency explorer with the recorded LangChain public sample](artifacts/verification/core-desktop.png)
+
+## What you can do
+
+| Workflow | Implementation |
+| --- | --- |
+| Explore dependencies | Import CycloneDX 1.6 JSON or exact PyPI public resolutions; navigate snapshot-scoped graphs, shortest paths, and reverse impact. |
+| Investigate advisories | Query OSV, merge advisory aliases, and inspect source records, query dates, coverage, and unknown states. |
+| Compare snapshots | Compare component and advisory changes within a shared collection, with separate metadata, resolution, and test evidence levels. |
+| Ask with evidence | Select a snapshot and advisory run; retrieve records using full-text, vector, hybrid, or hybrid + graph retrieval. |
+| Inspect AI output | Check structured facts and citation locations against supplied evidence; retain insufficient-evidence and withheld-output states. |
+| Control API usage | Persist call reservations, token usage, estimated costs, and explicit spending limits across restarts. |
+
+## Quick start
+
+**Requirements:** Git, Docker, and Docker Compose v2. Run from the repository root:
 
 ```sh
 cp .env.example .env
-# Set your private Neo4j password; the model API key is optional for core features.
+# Edit .env and set NEO4J_PASSWORD. A model API key is optional.
 export DEPSCOPE_LOCAL_UID=$(id -u)
 docker compose build
 docker compose up -d --wait
 ```
 
-UI: **http://127.0.0.1:8080** · API docs: http://127.0.0.1:8101/docs · Neo4j: http://127.0.0.1:17474
+| Service | Address |
+| --- | --- |
+| Workspace | http://127.0.0.1:8080 |
+| API documentation | http://127.0.0.1:8101/docs |
+| Neo4j browser | http://127.0.0.1:17474 |
 
-All published ports bind loopback. Keep `.env`, `data/runtime` and `artifacts/private` private. Database/log volumes, raw evidence, verification records and cost ledger persist across restarts. Startup does not call paid generation or automatically download a model. See [setup](docs/operations/setup.md) for native development, internal Ollama and explicit model initialization.
+Click **Load verified public sample** to explore the archived LangChain dependency graph. You can also create a project and upload a CycloneDX 1.6 JSON file. Graph exploration and snapshot comparison work without a generation API key.
 
-## What is implemented
+AI investigation additionally requires a configured generation provider, initialized embeddings, and explicit call/cost limits. Startup does not make paid calls or download a model. See [setup and native development](docs/operations/setup.md) for configuration and troubleshooting.
 
-- Strict CycloneDX 1.6 import, exact PyPI public-resolution import, duplicate-file idempotency, immutable snapshot context and a durable single mutation queue.
-- Separate component instances/package versions; scoped bounded graph views, deterministic shortest paths and reverse impact.
-- OSV batching/pagination, withdrawn/alias handling, immutable query runs and explicit coverage/unknown states.
-- Same-collection snapshot comparisons; metadata, resolution and test evidence levels with locally signed controlled verification.
-- Four retrieval methods, versioned full-text/vector indexes, bounded evidence context, structured-fact/citation validation and explicit cross-project selection.
-- Persisted generation reservations, usage/cost estimates and explicit limits that do not reset spending on restart.
-- Actual experiment browser, locked container setup, real Neo4j integration tests, private offline backup and new-instance restore tooling.
+The default deployment binds ports to loopback. Keep `.env`, `data/runtime/`, and `artifacts/private/` private. See [security](SECURITY.md) before changing the deployment model.
+
+## Architecture
 
 ```mermaid
 flowchart LR
-  P[PyPI / deps.dev / OSV] --> R[Content-addressed source receipts]
-  S[Observed CycloneDX] --> V[Bounded validation]
-  V --> N[Neo4j snapshot instances]
+  S[CycloneDX SBOM] --> V[Bounded validation]
+  P[PyPI / deps.dev / OSV] --> R[Source receipts + SHA-256]
+  V --> N[Neo4j snapshot graph]
   R --> N
-  N --> Q[Full-text / vector / hybrid / graph]
-  Q --> A[Scoped generation and fact checks]
-  A --> U[React evidence workspace]
-  A --> B[Persistent cost ledger]
+  N --> Q[Full-text / vector / hybrid / graph retrieval]
+  Q --> A[Scoped generation + fact checks]
+  A --> U[React investigation workspace]
+  A --> B[Persistent usage ledger]
   N --> U
 ```
 
-## Actual evidence, not projected outcomes
+- **Snapshot isolation:** component instances remain distinct from package versions; graph queries retain their project and snapshot context.
+- **Traceable evidence:** original source bytes, hashes, dates, and field locations connect findings to the records used to produce them.
+- **Durable operations:** a single mutation queue supports bounded background jobs, retries, and recovery. Database and evidence storage persist across restarts.
+- **Controlled generation:** retrieval, provider calls, output validation, and budget accounting have separate boundaries and explicit failure states.
 
-The frozen public corpus contains **15 roots, 45 complete current public resolutions, 10 root families and 30 comparisons**. Separately, two repository-owned applications have actual installed-environment SBOMs and recorded installation/tests. Public cases are not enterprise deployments, and older root versions do not reconstruct historical installations.
+```text
+backend/       FastAPI, graph storage, ingestion, investigation, and tests
+frontend/      React + TypeScript workspace and browser tests
+migrations/    Neo4j schema setup
+schemas/       CycloneDX validation schemas
+artifacts/     Frozen corpus, benchmark, experiment results, and demo evidence
+docs/          Setup, architecture, evaluation, and operations
+scripts/       Verification and release evidence tools
+```
 
-The principal evaluation uses **200 questions, 60 development / 140 test, four methods and 800 real generation calls**. Program reference labels come from raw source records and independent NetworkX traversal, not human gold labels or product path code.
+The committed evidence makes the evaluation inspectable from a fresh clone. Runtime data, credentials, local environments, and private backups are excluded from version control.
 
-| Frozen test method | Exact facts, 126 non-missing questions | Evidence Recall@10 |
+## Evaluation
+
+The frozen corpus contains **15 roots, 45 complete public-resolution snapshots, 10 root families, and 30 comparisons**. Two repository-owned applications also have recorded installed-environment SBOMs.
+
+The recorded experiment evaluated **four retrieval methods over 200 questions**: 60 development and 140 test questions, with 800 generation calls across both splits. Reference labels were generated from raw source records and independent NetworkX traversal.
+
+| Method | Exact facts on 126 non-missing test questions | Evidence Recall@10 |
 | --- | ---: | ---: |
 | Full-text | 24.6% (31/126) | 36.9% |
 | Vector | 37.3% (47/126) | 57.7% |
 | Hybrid | 39.7% (50/126) | 62.6% |
 | Hybrid + graph | 38.1% (48/126) | 54.6% |
 
-Graph expansion did **not** improve on hybrid in this configuration. All failures/refusals are retained. The run recorded 5,212,843 input / 246,258 output tokens and **USD 1.638689922 peak-rate upper-bound estimate**, not an invoice. See the [report and denominators](docs/evaluation/results.md). Seven test families and overlapping composite bootstrap groups limit inference. Citation location does not establish semantic support; no human semantic audit or user/business-impact study is claimed.
+Hybrid exceeded full-text by **15.1 percentage points on this test set**. Graph expansion did not improve on hybrid under the fixed context budget. The [evaluation report](docs/evaluation/results.md) includes failures, the 14 missing-evidence questions, latency, cost estimates, and limitations.
 
-## Verification and private data
+These are results for the frozen corpus and configuration. Public resolutions do not reconstruct historical installed environments; program labels are not human gold labels. The test set covers seven underlying families. Citation location checks do not establish semantic support or exploitability.
 
-See [verification](docs/operations/verification.md), [backup/restore](docs/operations/backup.md), and the generated `artifacts/verification/release-manifest.json`. Missing acceptance evidence is not treated as a pass. Ordinary CI uses offline external-service fixtures plus real Neo4j and never secretly runs paid evaluations. A live browser generation check requires explicit opt-in.
+## Development and checks
 
-This is a **local repository**. No GitHub publication, deployed customer system, user count, ROI or proven security-impact reduction is claimed. [Resume evidence](docs/portfolio/resume_evidence.md) links every usable number to actual artifacts.
+Use **Python 3.11** and **Node 22.23.3** (`.nvmrc`). After following [native setup](docs/operations/setup.md#native-development), run:
+
+```sh
+# Backend unit tests: no database or model service required.
+backend/.venv/bin/python -m pytest backend/tests/unit -q
+
+# Start the dedicated test database, then run integration tests.
+docker compose -f compose.yaml -f compose.test.yaml --profile test up -d --wait neo4j-test
+backend/.venv/bin/python -m pytest backend/tests/integration -q
+
+# Frontend tests and production build.
+cd frontend
+npm test -- --run
+npm run build
+```
+
+[GitHub Actions](.github/workflows/ci.yml) runs backend unit and real Neo4j integration tests, frontend tests, and the production build. HTTP/model boundaries use test fixtures; normal checks do not run the paid benchmark. Browser and signed release checks are documented in [verification](docs/operations/verification.md).
+
+## Documentation
+
+- [Installation and troubleshooting](docs/operations/setup.md)
+- [Source dictionary and evidence model](docs/architecture/source_dictionary.md)
+- [Evaluation protocol](docs/evaluation/protocol.md) and [recorded results](docs/evaluation/results.md)
+- [Five-minute demo](docs/portfolio/demo_script.md)
+- [Verification](docs/operations/verification.md) and [backup/restore](docs/operations/backup.md)
+- [Contributing](CONTRIBUTING.md) and [security](SECURITY.md)
+
+## License
+
+Project-authored code and documentation are available under the [MIT License](LICENSE). Third-party dependencies, vendored schemas, and archived upstream records retain their respective licenses and notices.

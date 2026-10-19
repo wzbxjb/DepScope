@@ -1,12 +1,13 @@
-import asyncio
 import json
 from decimal import Decimal
+
 import httpx
 import pytest
 from pydantic import SecretStr
-from depscope.generation.models import Message
+
 from depscope.generation.deepseek import DeepSeekGeneration
-from depscope.generation.pricing import official_price, estimate_cost, reservation_cost
+from depscope.generation.models import Message
+from depscope.generation.pricing import estimate_cost, official_price, reservation_cost
 from depscope.runtime.errors import DomainError
 
 
@@ -66,19 +67,3 @@ async def test_authentication_failure_is_secret_safe_and_no_fallback(respx_mock)
     assert route.call_count == 1
     with pytest.raises(DomainError):
         await provider.generate((Message(role="user", content="test"),), 1025)
-
-
-async def test_cancelled_generation_retains_pending_charge(ledger):
-    from depscope.generation.budget import BudgetPolicy, BudgetedGeneration
-
-    class Cancelled:
-        async def generate(self, *args):
-            raise asyncio.CancelledError
-
-    run = ledger.test_run
-    ledger.open_run(run, BudgetPolicy(currency="USD", max_amount=Decimal("1"), max_calls=2))
-    with pytest.raises(asyncio.CancelledError):
-        await BudgetedGeneration(Cancelled(), ledger).generate(
-            run, (Message(role="user", content="Return JSON"),), 16
-        )
-    assert ledger.summary(run).call_count == 1 and ledger.summary(run).reserved > 0

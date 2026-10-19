@@ -1,5 +1,7 @@
 .worktrees/
 .superpowers/
+.DS_Store
+._*
 .env
 .env.*
 !.env.example
@@ -17,3 +19,6 @@ artifacts/private/
 *.log
 
 *.tsbuildinfo
+.coverage
+htmlcov/
+coverage/

@@ -1,8 +1,12 @@
+import asyncio
 import uuid
 from concurrent.futures import ThreadPoolExecutor
 from decimal import Decimal
+
 import pytest
-from depscope.generation.budget import BudgetPolicy, BudgetLedger
+
+from depscope.generation.budget import BudgetLedger, BudgetPolicy
+from depscope.generation.models import Message
 from depscope.runtime.errors import DomainError
 
 
@@ -76,3 +80,19 @@ def test_explicit_limit_increase_preserves_calls_and_rejects_reset(ledger):
     assert ledger.summary(run).remaining_calls == 1
     with pytest.raises(DomainError):
         ledger.increase_limits(run, Decimal("0.10"), 1)
+
+
+async def test_cancelled_generation_retains_pending_charge(ledger):
+    from depscope.generation.budget import BudgetedGeneration
+
+    class Cancelled:
+        async def generate(self, *args):
+            raise asyncio.CancelledError
+
+    run = ledger.test_run
+    ledger.open_run(run, BudgetPolicy(currency="USD", max_amount=Decimal("1"), max_calls=2))
+    with pytest.raises(asyncio.CancelledError):
+        await BudgetedGeneration(Cancelled(), ledger).generate(
+            run, (Message(role="user", content="Return JSON"),), 16
+        )
+    assert ledger.summary(run).call_count == 1 and ledger.summary(run).reserved > 0

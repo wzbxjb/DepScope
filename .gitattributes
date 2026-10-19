@@ -1,0 +1,8 @@
+* text=auto eol=lf
+
+# Preserve the original bytes of frozen evidence and source receipts.
+artifacts/** -text
+docs/research/** -text
+
+*.png binary
+*.webm binary
